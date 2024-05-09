@@ -1,0 +1,18 @@
+[
+  {
+    "Data": "[{\"Name\":\"Default Price List\",\"PriceListId\":\"23AA1928-3AC8-E611-80FA-5065F38B5281\",\"PrimaryId\":1},{\"Name\":\"Standard\",\"PriceListId\":\"27AA1928-3AC8-E611-80FA-5065F38B5281\",\"PrimaryId\":2}]",
+    "IsSampleData": false,
+    "IsWritable": false,
+    "Name": "CustomerPriceList",
+    "OrderedColumnNames": [
+      "PrimaryId",
+      "Name",
+      "PriceListId"
+    ],
+    "OriginalName": "CustomerPriceList",
+    "OriginalSchema": "*[Name:s, PriceListId:s, PrimaryId:n]",
+    "Schema": "*[Name:s, PriceListId:s, PrimaryId:n]",
+    "Token": "{C4E6E289-142A-4AA9-8341-B20A74CCD247}",
+    "Type": "StaticDataSourceInfo"
+  }
+]

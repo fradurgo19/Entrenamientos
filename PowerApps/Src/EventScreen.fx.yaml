@@ -1,0 +1,197 @@
+EventScreen As screen:
+    Fill: =RGBA(232, 232, 232, 1)
+    Height: =Max(App.Height, App.DesignHeight)
+    Width: =Max(App.Width, App.DesignWidth)
+
+    "GalleryEvent As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
+        '#CopilotOverlayLabel': ="Filtrada"
+        BorderColor: =RGBA(0, 89, 178, 1)
+        DelayItemLoading: =true
+        DisabledBorderColor: =GalleryEvent.BorderColor
+        DisabledFill: =GalleryEvent.Fill
+        Fill: =RGBA(237, 237, 237, 1)
+        Height: =1036
+        HoverBorderColor: =GalleryEvent.BorderColor
+        HoverFill: =GalleryEvent.Fill
+        Items: ='Usuarios Entrenamientos'
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        PressedBorderColor: =GalleryEvent.BorderColor
+        PressedFill: =GalleryEvent.Fill
+        ShowNavigation: =true
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =116
+        Visible: =CountRows(GalleryEvent.AllItems) > 0
+        Y: =100
+        ZIndex: =1
+
+        Title3 As label:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Title
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 86
+            X: =16
+            Y: =(Parent.TemplateHeight - (Self.Size*1.8 + Subtitle3.Size*1.8 + 2 + Body3.Size*1.8)) / 2
+            ZIndex: =1
+
+        Subtitle3 As label:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =21
+            Text: =ThisItem.field_0
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title3.Width
+            X: =Title3.X
+            Y: =Title3.Y + Title3.Height
+            ZIndex: =2
+
+        Body3 As label:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =21
+            Text: =ThisItem.field_1
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title3.Width
+            X: =Title3.X
+            Y: =Subtitle3.Y + Subtitle3.Height
+            ZIndex: =3
+
+        NextArrow3 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(166, 166, 166, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =50
+            Icon: =Icon.ChevronRight
+            OnSelect: =Navigate(UsuarioDetailScreen, ScreenTransition.Fade)
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Tooltip: ="Ver los detalles del elemento"
+            Width: =50
+            X: =Parent.TemplateWidth - Self.Width - 12
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator3 As rectangle:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =5
+
+        Rectangle7 As rectangle:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Fill: =RGBA(0, 89, 178, 1)
+            Height: =Parent.TemplateHeight - Separator3.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =6
+
+    Rectangle1_36 As rectangle:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Fill: =RGBA(6,26,84,1)
+        TabIndex: =0
+        Width: =640
+        ZIndex: =3
+
+    Group3_4 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =6
+
+        Rectangle1_37 As rectangle:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Fill: =RGBA(6, 26, 84, 1)
+            OnSelect: =Back(ScreenTransition.UnCover)
+            TabIndex: =0
+            Width: =100
+            ZIndex: =4
+
+        icon1_4 As icon.ChevronLeft:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =35
+            Icon: =Icon.ChevronLeft
+            OnSelect: =Back(ScreenTransition.UnCover)
+            TabIndex: =0
+            Width: =35
+            X: =32.22222222222222
+            Y: =32.22222222222222
+            ZIndex: =5
+
+    TextBox1_45 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =97
+        HoverBorderColor: =TextBox1_45.BorderColor
+        HoverColor: =TextBox1_45.Color
+        HoverFill: =TextBox1_45.Fill
+        PressedBorderColor: =TextBox1_45.BorderColor
+        PressedColor: =TextBox1_45.Color
+        PressedFill: =TextBox1_45.Fill
+        Size: =28
+        Text: ="Usuarios"
+        Width: =523
+        X: =81
+        ZIndex: =7
+
+    TextBox1_68 As label:
+        Align: =LayoutAlignItems.Center
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(153, 153, 153, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =41
+        HoverBorderColor: =TextBox1_68.BorderColor
+        HoverColor: =TextBox1_68.Color
+        HoverFill: =TextBox1_68.Fill
+        PressedBorderColor: =TextBox1_68.BorderColor
+        PressedColor: =TextBox1_68.Color
+        PressedFill: =TextBox1_68.Fill
+        Size: =18
+        Text: ="No event"
+        Visible: =CountRows(GalleryEvent.AllItems) = 0
+        Width: =496
+        X: =72
+        Y: =595.3333333333322
+        ZIndex: =8
+

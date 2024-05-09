@@ -1,0 +1,39 @@
+{
+  "0ae3c85a-c80f-4d6e-bc0c-c76d72ecebca": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1685/1.0.1685.3700/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://partequipos2.sharepoint.com/sites/servicioposventa": {
+        "dataSources": {
+          "Asignación Entrenamientos": {
+            "tableName": "96aac96a-bb11-4ab2-b176-dbe61be1e77b"
+          },
+          "Ofertas de Entrenamientos": {
+            "tableName": "287b0135-6498-4084-8125-a7573fdd7c66"
+          },
+          "Usuarios Entrenamientos": {
+            "tableName": "7a98c015-b882-45d4-a48b-44c89e6e6930"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Ofertas de Entrenamientos",
+      "Asignación Entrenamientos",
+      "Usuarios Entrenamientos"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "0ae3c85a-c80f-4d6e-bc0c-c76d72ecebca"
+  }
+}

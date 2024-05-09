@@ -1,0 +1,24 @@
+[
+  {
+    "Data": "[{\"City\":\"Seattle\",\"ContactId\":\"11DD80E4-60D7-E611-8100-5065F38B5101\",\"Country\":\"USA\",\"Email\":\"will.corwin@contoso.com\",\"FirstName\":\"Will\",\"LastName\":\"Corwin\",\"Phone\":\"09845106374\",\"PrimaryId\":1,\"State\":\"WA\"},{\"City\":\"Johannesburg\",\"ContactId\":\"49A0E5B9-88DF-E311-B8E5-6C3BE5A8B200\",\"Country\":\"South Africa\",\"Email\":\"angela.swanson@adventure-works.com\",\"FirstName\":\"Angela\",\"LastName\":\"Swanson\",\"Phone\":\"768-555-0156\",\"PrimaryId\":2,\"State\":null},{\"City\":\"Seattle\",\"ContactId\":\"6463D0DE-39C8-E611-80FA-5065F38B5281\",\"Country\":\"USA\",\"Email\":\"floyd.sun@example.com\",\"FirstName\":\"Floyd\",\"LastName\":\"Sun\",\"Phone\":\"555-0108\",\"PrimaryId\":3,\"State\":\"WA\"},{\"City\":\"Duvall\",\"ContactId\":\"5863D0DE-39C8-E611-80FA-5065F38B5281\",\"Country\":null,\"Email\":\"tania.hawkins@example.com\",\"FirstName\":\"Tania\",\"LastName\":\"Hawkins\",\"Phone\":\"555-0102\",\"PrimaryId\":4,\"State\":\"WA\"},{\"City\":\"Seattle\",\"ContactId\":\"520BE79D-8ADC-E611-80FE-5065F38B9151\",\"Country\":\"USA\",\"Email\":\"sheryl.estes@example.com\",\"FirstName\":\"Sheryl\",\"LastName\":\"Estes\",\"Phone\":\"4246789012\",\"PrimaryId\":5,\"State\":\"WA\"}]",
+    "IsSampleData": false,
+    "IsWritable": false,
+    "Name": "CustomerContact",
+    "OrderedColumnNames": [
+      "ContactId",
+      "City",
+      "Country",
+      "Email",
+      "FirstName",
+      "LastName",
+      "Phone",
+      "PrimaryId",
+      "State"
+    ],
+    "OriginalName": "CustomerContact",
+    "OriginalSchema": "*[City:s, ContactId:s, Country:s, Email:s, FirstName:s, LastName:s, Phone:s, PrimaryId:n, State:s]",
+    "Schema": "*[City:s, ContactId:s, Country:s, Email:s, FirstName:s, LastName:s, Phone:s, PrimaryId:n, State:s]",
+    "Token": "{C4E6E289-142A-4AA9-8341-B20A74CCD247}",
+    "Type": "StaticDataSourceInfo"
+  }
+]

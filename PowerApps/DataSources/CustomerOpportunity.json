@@ -1,0 +1,20 @@
+[
+  {
+    "Data": "[{\"CreatedOn\":1484035200000,\"CustomerId\":\"6D6ABEB1-69D7-E611-80FC-5065F38B9151\",\"Description\":\"Laptop test description\",\"Name\":\"Laptop Test a\",\"PrimaryId\":1},{\"CreatedOn\":1484121600000,\"CustomerId\":\"261BB179-CFD7-E611-80FC-5065F38B4251\",\"Description\":null,\"Name\":\"test opp1\",\"PrimaryId\":2},{\"CreatedOn\":1484208000000,\"CustomerId\":\"C805340E-35C8-E611-80F9-5065F38A99E1\",\"Description\":null,\"Name\":\"Test Opportunity by Jatin\",\"PrimaryId\":3},{\"CreatedOn\":1484294400000,\"CustomerId\":\"CC05340E-35C8-E611-80F9-5065F38A99E1\",\"Description\":null,\"Name\":\"test\",\"PrimaryId\":4},{\"CreatedOn\":1484380800000,\"CustomerId\":\"CA05340E-35C8-E611-80F9-5065F38A99E1\",\"Description\":null,\"Name\":\"Test 2 by Ethan\",\"PrimaryId\":5}]",
+    "IsSampleData": false,
+    "IsWritable": false,
+    "Name": "CustomerOpportunity",
+    "OrderedColumnNames": [
+      "CreatedOn",
+      "CustomerId",
+      "Description",
+      "Name",
+      "PrimaryId"
+    ],
+    "OriginalName": "CustomerOpportunity",
+    "OriginalSchema": "*[CreatedOn:d, CustomerId:s, Description:s, Name:s, PrimaryId:n]",
+    "Schema": "*[CreatedOn:d, CustomerId:s, Description:s, Name:s, PrimaryId:n]",
+    "Token": "{C4E6E289-142A-4AA9-8341-B20A74CCD247}",
+    "Type": "StaticDataSourceInfo"
+  }
+]

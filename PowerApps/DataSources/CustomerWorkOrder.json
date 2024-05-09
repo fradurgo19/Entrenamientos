@@ -1,0 +1,31 @@
+[
+  {
+    "Data": "[{\"CreatedOn\":1484035200000,\"CurrencyId\":\"665F767B-2EC8-E611-80FA-5065F38B5281\",\"CustomerId\":\"6D6ABEB1-69D7-E611-80FC-5065F38B9151\",\"EstimateSubTotalAmount\":0,\"IncidentDescription\":\"MRI Cyle\",\"IncidentDuration\":120,\"IncidentTypeId\":\"6BFAC59D-3AC8-E611-80FA-5065F38B5281\",\"PriceListId\":\"23AA1928-3AC8-E611-80FA-5065F38B5281\",\"PrimaryId\":1,\"Status\":690970000,\"SubTotalAmount\":0,\"TerritoryId\":\"D2FA0104-62EF-E411-80EB-C4346BACE124\",\"TotalAmount\":0,\"TotalSalesTax\":0,\"WorkOrderNumber\":\"00054\",\"WorkOrderTypeId\":\"37011084-3AC8-E611-80F9-5065F38A99E1\"},{\"CreatedOn\":1484121600000,\"CurrencyId\":\"665F767B-2EC8-E611-80FA-5065F38B5281\",\"CustomerId\":\"261BB179-CFD7-E611-80FC-5065F38B4251\",\"EstimateSubTotalAmount\":0,\"IncidentDescription\":\"Dsec\",\"IncidentDuration\":120,\"IncidentTypeId\":\"79FAC59D-3AC8-E611-80FA-5065F38B5281\",\"PriceListId\":\"23AA1928-3AC8-E611-80FA-5065F38B5281\",\"PrimaryId\":2,\"Status\":690970000,\"SubTotalAmount\":0,\"TerritoryId\":\"D2FA0104-62EF-E411-80EB-C4346BACE124\",\"TotalAmount\":0,\"TotalSalesTax\":0,\"WorkOrderNumber\":\"00055\",\"WorkOrderTypeId\":\"37011084-3AC8-E611-80F9-5065F38A99E1\"},{\"CreatedOn\":1484208000000,\"CurrencyId\":\"665F767B-2EC8-E611-80FA-5065F38B5281\",\"CustomerId\":\"C805340E-35C8-E611-80F9-5065F38A99E1\",\"EstimateSubTotalAmount\":0,\"IncidentDescription\":\"MRI\",\"IncidentDuration\":120,\"IncidentTypeId\":\"73FAC59D-3AC8-E611-80FA-5065F38B5281\",\"PriceListId\":\"23AA1928-3AC8-E611-80FA-5065F38B5281\",\"PrimaryId\":3,\"Status\":690970000,\"SubTotalAmount\":0,\"TerritoryId\":\"D2FA0104-62EF-E411-80EB-C4346BACE124\",\"TotalAmount\":0,\"TotalSalesTax\":0,\"WorkOrderNumber\":\"00057\",\"WorkOrderTypeId\":\"35011084-3AC8-E611-80F9-5065F38A99E1\"},{\"CreatedOn\":1484294400000,\"CurrencyId\":\"665F767B-2EC8-E611-80FA-5065F38B5281\",\"CustomerId\":\"CC05340E-35C8-E611-80F9-5065F38A99E1\",\"EstimateSubTotalAmount\":0,\"IncidentDescription\":\"Fan\",\"IncidentDuration\":120,\"IncidentTypeId\":\"6DFAC59D-3AC8-E611-80FA-5065F38B5281\",\"PriceListId\":\"23AA1928-3AC8-E611-80FA-5065F38B5281\",\"PrimaryId\":4,\"Status\":690970001,\"SubTotalAmount\":0,\"TerritoryId\":\"D8AC667F-35C8-E611-80FA-5065F38B5281\",\"TotalAmount\":0,\"TotalSalesTax\":0,\"WorkOrderNumber\":\"00001\",\"WorkOrderTypeId\":\"37011084-3AC8-E611-80F9-5065F38A99E1\"},{\"CreatedOn\":1484380800000,\"CurrencyId\":\"665F767B-2EC8-E611-80FA-5065F38B5281\",\"CustomerId\":\"CA05340E-35C8-E611-80F9-5065F38A99E1\",\"EstimateSubTotalAmount\":0,\"IncidentDescription\":\"Regulatory\",\"IncidentDuration\":120,\"IncidentTypeId\":\"75FAC59D-3AC8-E611-80FA-5065F38B5281\",\"PriceListId\":\"23AA1928-3AC8-E611-80FA-5065F38B5281\",\"PrimaryId\":5,\"Status\":690970001,\"SubTotalAmount\":0,\"TerritoryId\":\"D8AC667F-35C8-E611-80FA-5065F38B5281\",\"TotalAmount\":0,\"TotalSalesTax\":0,\"WorkOrderNumber\":\"00002\",\"WorkOrderTypeId\":\"33011084-3AC8-E611-80F9-5065F38A99E1\"}]",
+    "IsSampleData": false,
+    "IsWritable": false,
+    "Name": "CustomerWorkOrder",
+    "OrderedColumnNames": [
+      "WorkOrderNumber",
+      "CreatedOn",
+      "CurrencyId",
+      "CustomerId",
+      "EstimateSubTotalAmount",
+      "IncidentDescription",
+      "IncidentDuration",
+      "IncidentTypeId",
+      "PriceListId",
+      "PrimaryId",
+      "Status",
+      "SubTotalAmount",
+      "TerritoryId",
+      "TotalAmount",
+      "TotalSalesTax",
+      "WorkOrderTypeId"
+    ],
+    "OriginalName": "CustomerWorkOrder",
+    "OriginalSchema": "*[CreatedOn:d, CurrencyId:s, CustomerId:s, EstimateSubTotalAmount:n, IncidentDescription:s, IncidentDuration:n, IncidentTypeId:s, PriceListId:s, PrimaryId:n, Status:n, SubTotalAmount:n, TerritoryId:s, TotalAmount:n, TotalSalesTax:n, WorkOrderNumber:s, WorkOrderTypeId:s]",
+    "Schema": "*[CreatedOn:d, CurrencyId:s, CustomerId:s, EstimateSubTotalAmount:n, IncidentDescription:s, IncidentDuration:n, IncidentTypeId:s, PriceListId:s, PrimaryId:n, Status:n, SubTotalAmount:n, TerritoryId:s, TotalAmount:n, TotalSalesTax:n, WorkOrderNumber:s, WorkOrderTypeId:s]",
+    "Token": "{C4E6E289-142A-4AA9-8341-B20A74CCD247}",
+    "Type": "StaticDataSourceInfo"
+  }
+]

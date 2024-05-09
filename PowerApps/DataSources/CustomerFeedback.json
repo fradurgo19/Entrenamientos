@@ -1,0 +1,24 @@
+[
+  {
+    "Data": "[{\"Comments\":\"testing\",\"CreatedOnDateTime\":1484035200000,\"CustomerId\":\"6D6ABEB1-69D7-E611-80FC-5065F38B9151\",\"PriceRating\":3,\"PrimaryId\":1,\"ServiceCount\":2,\"ServiceRating\":4,\"TechnicalSupportCount\":50,\"VolumeDate\":\"2017-01-11\"},{\"Comments\":\"Test feedback by Jatin\",\"CreatedOnDateTime\":1484121600000,\"CustomerId\":\"261BB179-CFD7-E611-80FC-5065F38B4251\",\"PriceRating\":5,\"PrimaryId\":2,\"ServiceCount\":3,\"ServiceRating\":5,\"TechnicalSupportCount\":100,\"VolumeDate\":\"2017-01-12\"},{\"Comments\":\"m\",\"CreatedOnDateTime\":1484208000000,\"CustomerId\":\"C805340E-35C8-E611-80F9-5065F38A99E1\",\"PriceRating\":5,\"PrimaryId\":3,\"ServiceCount\":1,\"ServiceRating\":5,\"TechnicalSupportCount\":100,\"VolumeDate\":\"2017-01-13\"},{\"Comments\":\"test\",\"CreatedOnDateTime\":1484294400000,\"CustomerId\":\"CC05340E-35C8-E611-80F9-5065F38A99E1\",\"PriceRating\":3,\"PrimaryId\":4,\"ServiceCount\":1,\"ServiceRating\":3,\"TechnicalSupportCount\":63,\"VolumeDate\":\"2017-01-16\"},{\"Comments\":\"Thank you! (Test)\",\"CreatedOnDateTime\":1484380800000,\"CustomerId\":\"CA05340E-35C8-E611-80F9-5065F38A99E1\",\"PriceRating\":5,\"PrimaryId\":5,\"ServiceCount\":3,\"ServiceRating\":5,\"TechnicalSupportCount\":94,\"VolumeDate\":\"2017-01-16\"}]",
+    "IsSampleData": false,
+    "IsWritable": false,
+    "Name": "CustomerFeedback",
+    "OrderedColumnNames": [
+      "PrimaryId",
+      "Comments",
+      "CreatedOnDateTime",
+      "CustomerId",
+      "PriceRating",
+      "ServiceCount",
+      "ServiceRating",
+      "TechnicalSupportCount",
+      "VolumeDate"
+    ],
+    "OriginalName": "CustomerFeedback",
+    "OriginalSchema": "*[Comments:s, CreatedOnDateTime:d, CustomerId:s, PriceRating:n, PrimaryId:n, ServiceCount:n, ServiceRating:n, TechnicalSupportCount:n, VolumeDate:s]",
+    "Schema": "*[Comments:s, CreatedOnDateTime:d, CustomerId:s, PriceRating:n, PrimaryId:n, ServiceCount:n, ServiceRating:n, TechnicalSupportCount:n, VolumeDate:s]",
+    "Token": "{C4E6E289-142A-4AA9-8341-B20A74CCD247}",
+    "Type": "StaticDataSourceInfo"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "Data": "[{\"Name\":\"WA\",\"PrimaryId\":1,\"TerritoryId\":\"D8AC667F-35C8-E611-80FA-5065F38B5281\"},{\"Name\":\"Asia-Pacific\",\"PrimaryId\":2,\"TerritoryId\":\"A25642F7-61EF-E411-80EB-C4346BACE124\"},{\"Name\":\"United States\",\"PrimaryId\":3,\"TerritoryId\":\"D2FA0104-62EF-E411-80EB-C4346BACE124\"},{\"Name\":\"Central America\",\"PrimaryId\":4,\"TerritoryId\":\"B469940B-62EF-E411-80EB-C4346BACE124\"},{\"Name\":\"Canada\",\"PrimaryId\":5,\"TerritoryId\":\"B569940B-62EF-E411-80EB-C4346BACE124\"},{\"Name\":\"South America\",\"PrimaryId\":6,\"TerritoryId\":\"B669940B-62EF-E411-80EB-C4346BACE124\"},{\"Name\":\"EUMA\",\"PrimaryId\":7,\"TerritoryId\":\"CDE3DE29-62EF-E411-80EB-C4346BACE124\"},{\"Name\":\"Africa\",\"PrimaryId\":8,\"TerritoryId\":\"67AA3C35-62EF-E411-80EB-C4346BACE124\"},{\"Name\":\"Middle East\",\"PrimaryId\":9,\"TerritoryId\":\"68AA3C35-62EF-E411-80EB-C4346BACE124\"},{\"Name\":\"Australia - New Zealand\",\"PrimaryId\":10,\"TerritoryId\":\"3337FC3F-62EF-E411-80EB-C4346BACE124\"},{\"Name\":\"Japan\",\"PrimaryId\":11,\"TerritoryId\":\"3437FC3F-62EF-E411-80EB-C4346BACE124\"}]",
+    "IsSampleData": false,
+    "IsWritable": false,
+    "Name": "CustomerTerritory",
+    "OrderedColumnNames": [
+      "PrimaryId",
+      "Name",
+      "TerritoryId"
+    ],
+    "OriginalName": "CustomerTerritory",
+    "OriginalSchema": "*[Name:s, PrimaryId:n, TerritoryId:s]",
+    "Schema": "*[Name:s, PrimaryId:n, TerritoryId:s]",
+    "Token": "{C4E6E289-142A-4AA9-8341-B20A74CCD247}",
+    "Type": "StaticDataSourceInfo"
+  }
+]

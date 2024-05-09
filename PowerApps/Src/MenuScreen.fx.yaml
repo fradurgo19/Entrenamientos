@@ -1,0 +1,189 @@
+MenuScreen As screen:
+    BackgroundImage: ='Captura de pantalla 2024-04-24 090742'
+    Fill: =RGBA(232, 232, 232, 1)
+    Height: =Max(App.Height, App.DesignHeight)
+    ImagePosition: =ImagePosition.Tile
+    Width: =Max(App.Width, App.DesignWidth)
+
+    Button1_5 As button:
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(54,166,182,1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =86
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =23
+        Text: ="Cursos"
+        Width: =640
+        Y: =1029
+        ZIndex: =2
+
+    TextBox4_44 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =41
+        HoverBorderColor: =TextBox4_44.BorderColor
+        HoverColor: =TextBox4_44.Color
+        HoverFill: =TextBox4_44.Fill
+        PressedBorderColor: =TextBox4_44.BorderColor
+        PressedColor: =TextBox4_44.Color
+        PressedFill: =TextBox4_44.Fill
+        Size: =18
+        Text: ="VER"
+        Width: =87
+        X: =45
+        Y: =214
+        ZIndex: =12
+
+    TextBox4_48 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =41
+        HoverBorderColor: =TextBox4_48.BorderColor
+        HoverColor: =TextBox4_48.Color
+        HoverFill: =TextBox4_48.Fill
+        PressedBorderColor: =TextBox4_48.BorderColor
+        PressedColor: =TextBox4_48.Color
+        PressedFill: =TextBox4_48.Fill
+        Size: =18
+        Text: ="AGREGAR"
+        Width: =145
+        X: =45.5
+        Y: =551
+        ZIndex: =13
+
+    Button1 As button:
+        BorderColor: =RGBA(221, 79, 14, 1)
+        BorderThickness: =4
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =53
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =24
+        Text: ="Cursos"
+        Width: =221
+        X: =22
+        Y: =275
+        ZIndex: =14
+
+    Button1_1 As button:
+        BorderColor: =RGBA(221, 79, 14, 1)
+        BorderThickness: =4
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =53
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        OnSelect: =Navigate(ActiveWorkOrderScreen, ScreenTransition.Fade)
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =24
+        Text: ="Asignaciones"
+        Width: =221
+        X: =22
+        Y: =356
+        ZIndex: =15
+
+    Button1_2 As button:
+        BorderColor: =RGBA(221, 79, 14, 1)
+        BorderThickness: =4
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =53
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        OnSelect: =Navigate(EventScreen, ScreenTransition.Fade)
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =24
+        Text: ="Usuarios"
+        Width: =221
+        X: =22
+        Y: =437
+        ZIndex: =16
+
+    Button1_3 As button:
+        BorderColor: =RGBA(152, 208, 70, 1)
+        BorderThickness: =4
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =84
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        OnSelect: =Navigate(AddNewOpportunityScreen, ScreenTransition.Fade)
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =24
+        Text: ="Nueva Asignación"
+        Width: =221
+        X: =22
+        Y: =625
+        ZIndex: =17
+
+    TextBox4_47 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =42
+        HoverBorderColor: =TextBox4_47.BorderColor
+        HoverColor: =TextBox4_47.Color
+        HoverFill: =TextBox4_47.Fill
+        PressedBorderColor: =TextBox4_47.BorderColor
+        PressedColor: =TextBox4_47.Color
+        PressedFill: =TextBox4_47.Fill
+        Size: =18
+        Text: ="OFERTA ENTRENAMIENTOS"
+        Width: =484
+        X: =156
+        Y: =142
+        ZIndex: =18
+

@@ -1,0 +1,26 @@
+[
+  {
+    "Data": "[{\"AnnotationId\":\"47D4FFE7-E3E2-E611-80FF-5065F38B9151\",\"CreatedOn\":1484035200000,\"FileName\":\"pdf-sample.pdf\",\"MimeType\":\"application/pdf\",\"NoteText\":\"cave\",\"ObjectIdType\":\"tasks\",\"ObjectIdValue\":\"365B27C1-E3E2-E611-80FF-5065F38B9151\",\"ObjectTypeCode\":\"task\",\"OwnerId\":\"11DD80E4-60D7-E611-8100-5065F38B5101\",\"PrimaryId\":1,\"Subject\":\"note cave\"}]",
+    "IsSampleData": false,
+    "IsWritable": false,
+    "Name": "CustomerNote",
+    "OrderedColumnNames": [
+      "AnnotationId",
+      "CreatedOn",
+      "FileName",
+      "MimeType",
+      "NoteText",
+      "ObjectIdType",
+      "ObjectIdValue",
+      "ObjectTypeCode",
+      "OwnerId",
+      "PrimaryId",
+      "Subject"
+    ],
+    "OriginalName": "CustomerNote",
+    "OriginalSchema": "*[AnnotationId:s, CreatedOn:d, FileName:s, MimeType:s, NoteText:s, ObjectIdType:s, ObjectIdValue:s, ObjectTypeCode:s, OwnerId:s, PrimaryId:n, Subject:s]",
+    "Schema": "*[AnnotationId:s, CreatedOn:d, FileName:s, MimeType:s, NoteText:s, ObjectIdType:s, ObjectIdValue:s, ObjectTypeCode:s, OwnerId:s, PrimaryId:n, Subject:s]",
+    "Token": "{C4E6E289-142A-4AA9-8341-B20A74CCD247}",
+    "Type": "StaticDataSourceInfo"
+  }
+]

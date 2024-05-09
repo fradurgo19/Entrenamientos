@@ -1,0 +1,516 @@
+"CustomerOverviewScreen As screen.'PhoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    Fill: =RGBA(237, 242, 246, 1)
+    Height: =Max(App.Height, App.DesignHeight)
+    OnVisible: =
+    Width: =Max(App.Width, App.DesignWidth)
+
+    Rectangle1_3 As rectangle:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Fill: =RGBA(6,26,84,1)
+        TabIndex: =0
+        Width: =640
+        ZIndex: =2
+
+    Group3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =8
+
+        Rectangle1_6 As rectangle:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Fill: =RGBA(6, 26, 84, 1)
+            OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =100
+            ZIndex: =6
+
+        icon1 As icon.ChevronLeft:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =35.55555555555556
+            Icon: =Icon.ChevronLeft
+            OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =35.55555555555556
+            X: =32.22222222222222
+            Y: =32.22222222222222
+            ZIndex: =7
+
+    TextBox1_11 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =97.39130434782612
+        HoverBorderColor: =TextBox1_11.BorderColor
+        HoverColor: =TextBox1_11.Color
+        HoverFill: =TextBox1_11.Fill
+        PressedBorderColor: =TextBox1_11.BorderColor
+        PressedColor: =TextBox1_11.Color
+        PressedFill: =TextBox1_11.Fill
+        Size: =28
+        Text: ="Descripción del Curso"
+        Width: =523
+        X: =81
+        ZIndex: =9
+
+    Canvas1 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =953.5844155844004
+        Width: =Parent.Width
+        Y: =98.38961038961031
+        ZIndex: =14
+
+        DataCard1 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =203
+            Width: =Parent.Width
+            WidthFit: =false
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            TextBox1_13 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(0, 0, 0, 0.85098039)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Semibold
+                Height: =181
+                HoverBorderColor: =TextBox1_13.BorderColor
+                HoverColor: =TextBox1_13.Color
+                HoverFill: =TextBox1_13.Fill
+                PaddingBottom: =20
+                PaddingLeft: =30
+                PaddingRight: =30
+                PaddingTop: =20
+                PressedBorderColor: =TextBox1_13.BorderColor
+                PressedColor: =TextBox1_13.Color
+                PressedFill: =TextBox1_13.Fill
+                Size: =28
+                Text: =GalleryCustumer.Selected.field_2
+                Width: =640
+                ZIndex: =1
+
+        DataCard3 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =437.428571428572
+            Width: =Parent.Width
+            WidthFit: =false
+            X: =0
+            Y: =1
+            ZIndex: =3
+
+            Rectangle1_5 As rectangle:
+                BorderColor: =RGBA(230, 229, 229, 1)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =435
+                TabIndex: =0
+                Width: =620
+                X: =10
+                Y: =9.09090909090909
+                ZIndex: =1
+
+            TextBox4_43 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(0,25,83,.8)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Lato Black'
+                Height: =24
+                HoverBorderColor: =TextBox4_43.BorderColor
+                HoverColor: =TextBox4_43.Color
+                HoverFill: =TextBox4_43.Fill
+                PressedBorderColor: =TextBox4_43.BorderColor
+                PressedColor: =TextBox4_43.Color
+                PressedFill: =TextBox4_43.Fill
+                Size: =15
+                Text: ="INFORMACIÓN DEL CURSO"
+                Width: =360
+                X: =40
+                Y: =40
+                ZIndex: =2
+
+            TextBox4_109 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(128, 128, 128, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.Lato
+                Height: =39
+                HoverBorderColor: =TextBox4_109.BorderColor
+                HoverColor: =TextBox4_109.Color
+                HoverFill: =TextBox4_109.Fill
+                PressedBorderColor: =TextBox4_109.BorderColor
+                PressedColor: =TextBox4_109.Color
+                PressedFill: =TextBox4_109.Fill
+                Text: ="ID"
+                Width: =212
+                X: =40.82644628099174
+                Y: =84.53900890264526
+                ZIndex: =3
+
+            TextBox4_110 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(0, 0, 0, 0.70196078)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Lato Light'
+                FontWeight: =FontWeight.Semibold
+                Height: =33
+                HoverBorderColor: =TextBox4_110.BorderColor
+                HoverColor: =TextBox4_110.Color
+                HoverFill: =TextBox4_110.Fill
+                PressedBorderColor: =TextBox4_110.BorderColor
+                PressedColor: =TextBox4_110.Color
+                PressedFill: =TextBox4_110.Fill
+                Size: =15
+                Text: =GalleryCustumer.Selected.field_0
+                VerticalAlign: =VerticalAlign.Top
+                Width: =265
+                X: =40
+                Y: =116.43629343629341
+                ZIndex: =4
+
+            TextBox4_156 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(128, 128, 128, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.Lato
+                Height: =39
+                HoverBorderColor: =TextBox4_156.BorderColor
+                HoverColor: =TextBox4_156.Color
+                HoverFill: =TextBox4_156.Fill
+                PressedBorderColor: =TextBox4_156.BorderColor
+                PressedColor: =TextBox4_156.Color
+                PressedFill: =TextBox4_156.Fill
+                Text: ="TIPO DE ACTIVIDAD"
+                Width: =212
+                X: =370.2222222222222
+                Y: =84
+                ZIndex: =5
+
+            TextBox4_157 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(0, 0, 0, 0.70196078)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Lato Light'
+                FontWeight: =FontWeight.Semibold
+                Height: =33
+                HoverBorderColor: =TextBox4_157.BorderColor
+                HoverColor: =TextBox4_157.Color
+                HoverFill: =TextBox4_157.Fill
+                PressedBorderColor: =TextBox4_157.BorderColor
+                PressedColor: =TextBox4_157.Color
+                PressedFill: =TextBox4_157.Fill
+                Size: =15
+                Text: =GalleryCustumer.Selected.field_1.Value
+                VerticalAlign: =VerticalAlign.Top
+                Width: =212
+                X: =370.2222222222222
+                Y: =114.61111111111111
+                ZIndex: =6
+
+            TextBox4_159 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(128, 128, 128, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.Lato
+                Height: =39
+                HoverBorderColor: =TextBox4_159.BorderColor
+                HoverColor: =TextBox4_159.Color
+                HoverFill: =TextBox4_159.Fill
+                PressedBorderColor: =TextBox4_159.BorderColor
+                PressedColor: =TextBox4_159.Color
+                PressedFill: =TextBox4_159.Fill
+                Text: ="RECURSO"
+                Width: =212
+                X: =40
+                Y: =166.8611111111113
+                ZIndex: =7
+
+            TextBox4_158 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(0, 0, 0, 0.70196078)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Lato Light'
+                FontWeight: =FontWeight.Semibold
+                Height: =33
+                HoverBorderColor: =TextBox4_158.BorderColor
+                HoverColor: =TextBox4_158.Color
+                HoverFill: =TextBox4_158.Fill
+                PressedBorderColor: =TextBox4_158.BorderColor
+                PressedColor: =TextBox4_158.Color
+                PressedFill: =TextBox4_158.Fill
+                Size: =15
+                Text: =GalleryCustumer.Selected.field_6.Value
+                VerticalAlign: =VerticalAlign.Top
+                Width: =265
+                X: =40
+                Y: =198.36111111111114
+                ZIndex: =8
+
+            TextBox4_160 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(128, 128, 128, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.Lato
+                Height: =39
+                HoverBorderColor: =TextBox4_160.BorderColor
+                HoverColor: =TextBox4_160.Color
+                HoverFill: =TextBox4_160.Fill
+                PressedBorderColor: =TextBox4_160.BorderColor
+                PressedColor: =TextBox4_160.Color
+                PressedFill: =TextBox4_160.Fill
+                Text: ="ADJUNTO"
+                Width: =212
+                X: =40
+                Y: =249.72222222222263
+                ZIndex: =9
+
+            TextBox4_162 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(128, 128, 128, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.Lato
+                Height: =39
+                HoverBorderColor: =TextBox4_162.BorderColor
+                HoverColor: =TextBox4_162.Color
+                HoverFill: =TextBox4_162.Fill
+                PressedBorderColor: =TextBox4_162.BorderColor
+                PressedColor: =TextBox4_162.Color
+                PressedFill: =TextBox4_162.Fill
+                Text: ="ESTADO DEL RECURSO"
+                Width: =212
+                X: =370
+                Y: =166
+                ZIndex: =10
+
+            TextBox4_166 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(0, 0, 0, 0.70196078)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Lato Light'
+                FontWeight: =FontWeight.Semibold
+                Height: =33
+                HoverBorderColor: =TextBox4_166.BorderColor
+                HoverColor: =TextBox4_166.Color
+                HoverFill: =TextBox4_166.Fill
+                PressedBorderColor: =TextBox4_166.BorderColor
+                PressedColor: =TextBox4_166.Color
+                PressedFill: =TextBox4_166.Fill
+                Size: =15
+                Text: =GalleryCustumer.Selected.field_7.Value
+                VerticalAlign: =VerticalAlign.Top
+                Width: =212
+                X: =370
+                Y: =198
+                ZIndex: =11
+
+            HtmlText1 As htmlViewer:
+                Color: =RGBA(0, 0, 0, 0.70196078)
+                Font: =Font.'Lato Light'
+                Height: =70
+                HoverBorderColor: =HtmlText1.BorderColor
+                HtmlText: =GalleryCustumer.Selected.Adjunto
+                PressedBorderColor: =HtmlText1.BorderColor
+                Size: =15
+                Width: =277
+                X: =40
+                Y: =280
+                ZIndex: =12
+
+            TextBox4_161 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(128, 128, 128, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.Lato
+                Height: =39
+                HoverBorderColor: =TextBox4_161.BorderColor
+                HoverColor: =TextBox4_161.Color
+                HoverFill: =TextBox4_161.Fill
+                PressedBorderColor: =TextBox4_161.BorderColor
+                PressedColor: =TextBox4_161.Color
+                PressedFill: =TextBox4_161.Fill
+                Text: ="REALIZA CURSO"
+                Width: =212
+                X: =40
+                Y: =342.2857142857142
+                ZIndex: =13
+
+            TextBox1_46 As label:
+                Align: =TextPosition.Left
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(128, 128, 128, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.Lato
+                Height: =42
+                HoverBorderColor: =TextBox1_46.BorderColor
+                HoverColor: =TextBox1_46.Color
+                HoverFill: =TextBox1_46.Fill
+                PressedBorderColor: =TextBox1_46.BorderColor
+                PressedColor: =TextBox1_46.Color
+                PressedFill: =TextBox1_46.Fill
+                Text: ="PRUEBA"
+                Width: =252
+                X: =370.66115702479294
+                Y: =248.47933884297524
+                ZIndex: =15
+
+            Rating1_7 As rating:
+                AccessibleLabel: =""
+                BorderColor: =RGBA(0, 89, 178, 1)
+                BorderStyle: =BorderStyle.Solid
+                BorderThickness: =0
+                ContentLanguage: =""
+                Default: =GalleryCustumer.Selected.Prueba
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =Rating1_7.Fill
+                DisplayMode: =If(false,DisplayMode.Disabled,true,DisplayMode.View,DisplayMode.Edit)
+                Fill: =RGBA(0, 0, 0, 0)
+                FocusedBorderColor: =Self.BorderColor
+                FocusedBorderThickness: =2
+                Height: =22
+                HoverFill: =Rating1_7.Fill
+                Max: =5
+                PressedFill: =Rating1_7.Fill
+                RatingFill: =RGBA(294, 191, 0, 1)
+                ShowValue: =true
+                TabIndex: =0
+                Visible: =Rating1_7.Value > 0
+                Width: =113
+                X: =373.48837209302314
+                Y: =283.4418604651157
+                ZIndex: =16
+
+            Rectangle8_1 As rectangle:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =30
+                TabIndex: =0
+                Visible: =Rating1_7.Value > 0
+                Width: =120
+                X: =374.1627906976744
+                Y: =282.4186046511628
+                ZIndex: =17
+
+            TextBox4_167 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(0, 0, 0, 0.70196078)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Lato Light'
+                FontWeight: =FontWeight.Semibold
+                Height: =33
+                HoverBorderColor: =TextBox4_167.BorderColor
+                HoverColor: =TextBox4_167.Color
+                HoverFill: =TextBox4_167.Fill
+                PressedBorderColor: =TextBox4_167.BorderColor
+                PressedColor: =TextBox4_167.Color
+                PressedFill: =TextBox4_167.Fill
+                Size: =15
+                Text: =GalleryCustumer.Selected.Prueba
+                VerticalAlign: =VerticalAlign.Top
+                Visible: =Rating1_7.Value = 0
+                Width: =212
+                X: =370
+                Y: =282.41
+                ZIndex: =18
+
+        DataCard4 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =373.57142857142844
+            Width: =Parent.Width
+            WidthFit: =false
+            X: =0
+            Y: =2
+            ZIndex: =4
+
+            Rectangle1_7 As rectangle:
+                BorderColor: =RGBA(230, 229, 229, 1)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =344.85714285714283
+                TabIndex: =0
+                Width: =620
+                X: =10
+                Y: =11.14285714285715
+                ZIndex: =1
+
+            Image4_4 As image:
+                ApplyEXIFOrientation: =false
+                BorderColor: =RGBA(0, 89, 178, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Height: =345
+                Image: =GalleryCustumer.Selected.RealizaCurso
+                ImagePosition: =ImagePosition.Fill
+                TabIndex: =0
+                Width: =620
+                X: =10
+                Y: =11
+                ZIndex: =2
+
+            HtmlText1_3 As htmlViewer:
+                Color: =RGBA(0, 0, 0, 0.70196078)
+                Font: =Font.'Lato Light'
+                Height: =232
+                HoverBorderColor: =HtmlText1_3.BorderColor
+                HtmlText: =GalleryCustumer.Selected.RealizaCurso
+                PressedBorderColor: =HtmlText1_3.BorderColor
+                Size: =15
+                Width: =560
+                X: =40
+                Y: =40
+                ZIndex: =3
+
+    Button1_4 As button:
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(54, 166, 182, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =86
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
+        PaddingLeft: =35
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =23
+        Text: ="Menu"
+        Width: =640
+        Y: =1050
+        ZIndex: =15
+
+    icon3 As icon.OptionsList:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =32
+        Icon: =Icon.OptionsList
+        OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
+        TabIndex: =0
+        Width: =32
+        X: =247.28571428571433
+        Y: =1076.8571428571433
+        ZIndex: =16
+

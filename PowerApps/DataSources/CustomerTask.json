@@ -1,0 +1,20 @@
+[
+  {
+    "Data": "[{\"ActivityId\":\"736B44C9-DDE2-E611-80FF-5065F38B9151\",\"PrimaryId\":1,\"RegardingObjectIdType\":\"accounts\",\"RegardingObjectIdValue\":\"261BB179-CFD7-E611-80FC-5065F38B4251\",\"Subject\":\"task birch\"},{\"ActivityId\":\"B0F01C7A-E0E2-E611-80FF-5065F38B9151\",\"PrimaryId\":2,\"RegardingObjectIdType\":\"accounts\",\"RegardingObjectIdValue\":\"261BB179-CFD7-E611-80FC-5065F38B4251\",\"Subject\":\"task birch 2\"},{\"ActivityId\":\"365B27C1-E3E2-E611-80FF-5065F38B9151\",\"PrimaryId\":3,\"RegardingObjectIdType\":\"accounts\",\"RegardingObjectIdValue\":\"6D6ABEB1-69D7-E611-80FC-5065F38B9151\",\"Subject\":\"task cave\"}]",
+    "IsSampleData": false,
+    "IsWritable": false,
+    "Name": "CustomerTask",
+    "OrderedColumnNames": [
+      "ActivityId",
+      "PrimaryId",
+      "RegardingObjectIdType",
+      "RegardingObjectIdValue",
+      "Subject"
+    ],
+    "OriginalName": "CustomerTask",
+    "OriginalSchema": "*[ActivityId:s, PrimaryId:n, RegardingObjectIdType:s, RegardingObjectIdValue:s, Subject:s]",
+    "Schema": "*[ActivityId:s, PrimaryId:n, RegardingObjectIdType:s, RegardingObjectIdValue:s, Subject:s]",
+    "Token": "{C4E6E289-142A-4AA9-8341-B20A74CCD247}",
+    "Type": "StaticDataSourceInfo"
+  }
+]

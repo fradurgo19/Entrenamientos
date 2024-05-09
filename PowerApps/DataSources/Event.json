@@ -1,0 +1,22 @@
+[
+  {
+    "Data": "[{\"Email\":\"mailto:arunprasad.nagarajan@harman.com\",\"Email@display\":\"crystal.keller@contoso.com\",\"End\":1484733600000,\"Location\":\"Seattle\",\"PrimaryId\":1,\"Start\":1484737200000,\"Subject\":\"Meeting\"}]",
+    "IsSampleData": false,
+    "IsWritable": false,
+    "Name": "Event",
+    "OrderedColumnNames": [
+      "PrimaryId",
+      "Email",
+      "Email@display",
+      "Start",
+      "End",
+      "Subject",
+      "Location"
+    ],
+    "OriginalName": "Event",
+    "OriginalSchema": "*[Email:h, 'Email@display':s, End:d, Location:s, PrimaryId:n, Start:d, Subject:s]",
+    "Schema": "*[Email:h, 'Email@display':s, End:d, Location:s, PrimaryId:n, Start:d, Subject:s]",
+    "Token": "{C4E6E289-142A-4AA9-8341-B20A74CCD247}",
+    "Type": "StaticDataSourceInfo"
+  }
+]

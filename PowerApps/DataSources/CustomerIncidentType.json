@@ -1,0 +1,18 @@
+[
+  {
+    "Data": "[{\"IncidentTypeId\":\"6BFAC59D-3AC8-E611-80FA-5065F38B5281\",\"Name\":\"MRI Cycle is too long\",\"PrimaryId\":1},{\"IncidentTypeId\":\"6DFAC59D-3AC8-E611-80FA-5065F38B5281\",\"Name\":\"Fan Out\",\"PrimaryId\":2},{\"IncidentTypeId\":\"71FAC59D-3AC8-E611-80FA-5065F38B5281\",\"Name\":\"MRI\\u00A0Inspection\",\"PrimaryId\":3},{\"IncidentTypeId\":\"6FFAC59D-3AC8-E611-80FA-5065F38B5281\",\"Name\":\"Printer\\u00A0Issue\",\"PrimaryId\":4},{\"IncidentTypeId\":\"73FAC59D-3AC8-E611-80FA-5065F38B5281\",\"Name\":\"MRI\\u00A0Installation\",\"PrimaryId\":5},{\"IncidentTypeId\":\"75FAC59D-3AC8-E611-80FA-5065F38B5281\",\"Name\":\"Regulatory Inspection\",\"PrimaryId\":6},{\"IncidentTypeId\":\"77FAC59D-3AC8-E611-80FA-5065F38B5281\",\"Name\":\"Camera Down\",\"PrimaryId\":7},{\"IncidentTypeId\":\"79FAC59D-3AC8-E611-80FA-5065F38B5281\",\"Name\":\"Thermostat is broken\",\"PrimaryId\":8}]",
+    "IsSampleData": false,
+    "IsWritable": false,
+    "Name": "CustomerIncidentType",
+    "OrderedColumnNames": [
+      "PrimaryId",
+      "IncidentTypeId",
+      "Name"
+    ],
+    "OriginalName": "CustomerIncidentType",
+    "OriginalSchema": "*[IncidentTypeId:s, Name:s, PrimaryId:n]",
+    "Schema": "*[IncidentTypeId:s, Name:s, PrimaryId:n]",
+    "Token": "{C4E6E289-142A-4AA9-8341-B20A74CCD247}",
+    "Type": "StaticDataSourceInfo"
+  }
+]

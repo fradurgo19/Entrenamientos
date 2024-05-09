@@ -1,0 +1,18 @@
+[
+  {
+    "Data": "[{\"CurrencyId\":\"52DDB766-34C8-E611-80FA-5065F38B4241\",\"Name\":\"Canadian Dollar\",\"PrimaryId\":1},{\"CurrencyId\":\"54DDB766-34C8-E611-80FA-5065F38B4241\",\"Name\":\"\\u5186\",\"PrimaryId\":2},{\"CurrencyId\":\"56DDB766-34C8-E611-80FA-5065F38B4241\",\"Name\":\"Euro\",\"PrimaryId\":3},{\"CurrencyId\":\"58DDB766-34C8-E611-80FA-5065F38B4241\",\"Name\":\"Pound Sterling\",\"PrimaryId\":4},{\"CurrencyId\":\"5ADDB766-34C8-E611-80FA-5065F38B4241\",\"Name\":\"Peso\",\"PrimaryId\":5},{\"CurrencyId\":\"5CDDB766-34C8-E611-80FA-5065F38B4241\",\"Name\":\"Australian Dollar\",\"PrimaryId\":6},{\"CurrencyId\":\"5EDDB766-34C8-E611-80FA-5065F38B4241\",\"Name\":\"Real\",\"PrimaryId\":7},{\"CurrencyId\":\"60DDB766-34C8-E611-80FA-5065F38B4241\",\"Name\":\"Dansk krone\",\"PrimaryId\":8},{\"CurrencyId\":\"62DDB766-34C8-E611-80FA-5065F38B4241\",\"Name\":\"Rupee\",\"PrimaryId\":9},{\"CurrencyId\":\"64DDB766-34C8-E611-80FA-5065F38B4241\",\"Name\":\"Norsk krone\",\"PrimaryId\":10},{\"CurrencyId\":\"66DDB766-34C8-E611-80FA-5065F38B4241\",\"Name\":\"Svensk krona\",\"PrimaryId\":11},{\"CurrencyId\":\"68DDB766-34C8-E611-80FA-5065F38B4241\",\"Name\":\"Schweizer Franken\",\"PrimaryId\":12},{\"CurrencyId\":\"6ADDB766-34C8-E611-80FA-5065F38B4241\",\"Name\":\"\\u4EBA\\u6C11\\u5E01\",\"PrimaryId\":13},{\"CurrencyId\":\"6CDDB766-34C8-E611-80FA-5065F38B4241\",\"Name\":\"\\u0441\\u043E\\u043B\\u043A\\u0443\\u043E\\u0431\\u0430\\u0439\",\"PrimaryId\":14},{\"CurrencyId\":\"6EDDB766-34C8-E611-80FA-5065F38B4241\",\"Name\":\"\\u062F\\u0631\\u0647\\u0645 \\u0627\\u0645\\u0627\\u0631\\u0627\\u062A\\u064A\",\"PrimaryId\":15},{\"CurrencyId\":\"70DDB766-34C8-E611-80FA-5065F38B4241\",\"Name\":\"\\uC6D0\",\"PrimaryId\":16},{\"CurrencyId\":\"72DDB766-34C8-E611-80FA-5065F38B4241\",\"Name\":\"Singapore Dollar\",\"PrimaryId\":17},{\"CurrencyId\":\"665F767B-2EC8-E611-80FA-5065F38B5281\",\"Name\":\"US Dollar\",\"PrimaryId\":18}]",
+    "IsSampleData": false,
+    "IsWritable": false,
+    "Name": "CustomerCurrency",
+    "OrderedColumnNames": [
+      "PrimaryId",
+      "CurrencyId",
+      "Name"
+    ],
+    "OriginalName": "CustomerCurrency",
+    "OriginalSchema": "*[CurrencyId:s, Name:s, PrimaryId:n]",
+    "Schema": "*[CurrencyId:s, Name:s, PrimaryId:n]",
+    "Token": "{C4E6E289-142A-4AA9-8341-B20A74CCD247}",
+    "Type": "StaticDataSourceInfo"
+  }
+]

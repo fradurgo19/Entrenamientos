@@ -1,0 +1,18 @@
+[
+  {
+    "Data": "[{\"Name\":\"Installation\",\"PrimaryId\":1,\"WorkOrderTypeId\":\"31011084-3AC8-E611-80F9-5065F38A99E1\"},{\"Name\":\"Inspection\",\"PrimaryId\":2,\"WorkOrderTypeId\":\"33011084-3AC8-E611-80F9-5065F38A99E1\"},{\"Name\":\"Preventative Maintenance\",\"PrimaryId\":3,\"WorkOrderTypeId\":\"35011084-3AC8-E611-80F9-5065F38A99E1\"},{\"Name\":\"Service Call\",\"PrimaryId\":4,\"WorkOrderTypeId\":\"37011084-3AC8-E611-80F9-5065F38A99E1\"}]",
+    "IsSampleData": false,
+    "IsWritable": false,
+    "Name": "CustomerWorkOrderType",
+    "OrderedColumnNames": [
+      "PrimaryId",
+      "Name",
+      "WorkOrderTypeId"
+    ],
+    "OriginalName": "CustomerWorkOrderType",
+    "OriginalSchema": "*[Name:s, PrimaryId:n, WorkOrderTypeId:s]",
+    "Schema": "*[Name:s, PrimaryId:n, WorkOrderTypeId:s]",
+    "Token": "{C4E6E289-142A-4AA9-8341-B20A74CCD247}",
+    "Type": "StaticDataSourceInfo"
+  }
+]

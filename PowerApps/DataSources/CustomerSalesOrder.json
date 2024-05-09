@@ -1,0 +1,21 @@
+[
+  {
+    "Data": "[{\"CustomerId\":\"6D6ABEB1-69D7-E611-80FC-5065F38B9151\",\"InvoiceAccount\":\"DE-001\",\"PrimaryId\":1,\"RequestReceiptDate\":1389772800000,\"SalesOrderNumber\":\"000002\",\"SalesOrderStatus\":\"Invoiced\"},{\"CustomerId\":\"261BB179-CFD7-E611-80FC-5065F38B4251\",\"InvoiceAccount\":\"US-001\",\"PrimaryId\":2,\"RequestReceiptDate\":1389859200000,\"SalesOrderNumber\":\"000003\",\"SalesOrderStatus\":\"Invoiced\"},{\"CustomerId\":\"C805340E-35C8-E611-80F9-5065F38A99E1\",\"InvoiceAccount\":\"US-002\",\"PrimaryId\":3,\"RequestReceiptDate\":1389945600000,\"SalesOrderNumber\":\"000004\",\"SalesOrderStatus\":\"Invoiced\"},{\"CustomerId\":\"CC05340E-35C8-E611-80F9-5065F38A99E1\",\"InvoiceAccount\":\"US-003\",\"PrimaryId\":4,\"RequestReceiptDate\":1390032000000,\"SalesOrderNumber\":\"000005\",\"SalesOrderStatus\":\"Invoiced\"},{\"CustomerId\":\"CA05340E-35C8-E611-80F9-5065F38A99E1\",\"InvoiceAccount\":\"US-004\",\"PrimaryId\":5,\"RequestReceiptDate\":1390118400000,\"SalesOrderNumber\":\"000006\",\"SalesOrderStatus\":\"Invoiced\"}]",
+    "IsSampleData": false,
+    "IsWritable": false,
+    "Name": "CustomerSalesOrder",
+    "OrderedColumnNames": [
+      "SalesOrderNumber",
+      "CustomerId",
+      "InvoiceAccount",
+      "PrimaryId",
+      "RequestReceiptDate",
+      "SalesOrderStatus"
+    ],
+    "OriginalName": "CustomerSalesOrder",
+    "OriginalSchema": "*[CustomerId:s, InvoiceAccount:s, PrimaryId:n, RequestReceiptDate:d, SalesOrderNumber:s, SalesOrderStatus:s]",
+    "Schema": "*[CustomerId:s, InvoiceAccount:s, PrimaryId:n, RequestReceiptDate:d, SalesOrderNumber:s, SalesOrderStatus:s]",
+    "Token": "{C4E6E289-142A-4AA9-8341-B20A74CCD247}",
+    "Type": "StaticDataSourceInfo"
+  }
+]

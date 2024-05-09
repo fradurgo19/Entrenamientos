@@ -1,0 +1,18 @@
+[
+  {
+    "Data": "[{\"PrimaryId\":1,\"ProductName\":\"MidRangeSpeaker\",\"ProductNumber\":\"D0001\"},{\"PrimaryId\":2,\"ProductName\":\"Cabinet\",\"ProductNumber\":\"D0002\"},{\"PrimaryId\":3,\"ProductName\":\"StandardSpeaker\",\"ProductNumber\":\"D0003\"},{\"PrimaryId\":4,\"ProductName\":\"MidRangeSpeaker2\",\"ProductNumber\":\"L0001\"},{\"PrimaryId\":5,\"ProductName\":\"Wiring Harness\",\"ProductNumber\":\"M0001\"},{\"PrimaryId\":6,\"ProductName\":\"Mid-Range Speaker Unit\",\"ProductNumber\":\"M0002\"},{\"PrimaryId\":7,\"ProductName\":\"Tweeter Speaker Unit\",\"ProductNumber\":\"M0003\"},{\"PrimaryId\":8,\"ProductName\":\"Crossover\",\"ProductNumber\":\"M0004\"},{\"PrimaryId\":9,\"ProductName\":\"Enclosure\",\"ProductNumber\":\"M0005\"},{\"PrimaryId\":10,\"ProductName\":\"Binding posts\",\"ProductNumber\":\"M0006\"},{\"PrimaryId\":11,\"ProductName\":\"Standard Cabinet\",\"ProductNumber\":\"M0007\"},{\"PrimaryId\":12,\"ProductName\":\"Protective Corners\",\"ProductNumber\":\"M0009\"},{\"PrimaryId\":13,\"ProductName\":\"Subwoofer\",\"ProductNumber\":\"M0013\"},{\"PrimaryId\":14,\"ProductName\":\"Coupe Wiring Harness\",\"ProductNumber\":\"M0015\"},{\"PrimaryId\":15,\"ProductName\":\"Sedan Wiring Harness\",\"ProductNumber\":\"M0016\"},{\"PrimaryId\":16,\"ProductName\":\"Convertible Wiring Harness\",\"ProductNumber\":\"M0017\"},{\"PrimaryId\":17,\"ProductName\":\"Polyol\",\"ProductNumber\":\"M0018\"},{\"PrimaryId\":18,\"ProductName\":\"Diisocyanate\",\"ProductNumber\":\"M0019\"},{\"PrimaryId\":19,\"ProductName\":\"Carbon Dioxide\",\"ProductNumber\":\"M0020\"},{\"PrimaryId\":20,\"ProductName\":\"Front Grill - Metal\",\"ProductNumber\":\"M0022\"},{\"PrimaryId\":21,\"ProductName\":\"AcousticFoamPanel\",\"ProductNumber\":\"P0001\"},{\"PrimaryId\":22,\"ProductName\":\"Installation services\",\"ProductNumber\":\"S0001\"}]",
+    "IsSampleData": false,
+    "IsWritable": false,
+    "Name": "CustomerProduct",
+    "OrderedColumnNames": [
+      "PrimaryId",
+      "ProductName",
+      "ProductNumber"
+    ],
+    "OriginalName": "CustomerProduct",
+    "OriginalSchema": "*[PrimaryId:n, ProductName:s, ProductNumber:s]",
+    "Schema": "*[PrimaryId:n, ProductName:s, ProductNumber:s]",
+    "Token": "{C4E6E289-142A-4AA9-8341-B20A74CCD247}",
+    "Type": "StaticDataSourceInfo"
+  }
+]
