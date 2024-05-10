@@ -1,20 +1,20 @@
 AddNewOpportunityScreen As screen:
-    Fill: =RGBA(232, 232, 232, 1)
     Height: =Max(App.Height, App.DesignHeight)
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     OnVisible: |-
         =UpdateContext({ResetOpportunity:true});
         UpdateContext({ResetOpportunity:false})
     Width: =Max(App.Width, App.DesignWidth)
 
     Rectangle1_33 As rectangle:
-        BorderColor: =RGBA(0, 89, 178, 1)
+        BorderColor: =RGBA(32, 54, 71, 1)
         Fill: =RGBA(6,26,84,1)
         TabIndex: =0
         Width: =640
         ZIndex: =2
 
     TextBox1_59 As label:
-        BorderColor: =RGBA(0, 89, 178, 1)
+        BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.Lato
@@ -33,7 +33,7 @@ AddNewOpportunityScreen As screen:
         ZIndex: =3
 
     Rectangle1_34 As rectangle:
-        BorderColor: =RGBA(0, 89, 178, 1)
+        BorderColor: =RGBA(32, 54, 71, 1)
         Fill: =RGBA(216, 223, 238, 1)
         Height: =1
         TabIndex: =0
@@ -43,7 +43,7 @@ AddNewOpportunityScreen As screen:
 
     TextBox1_64 As label:
         Align: =TextPosition.Left
-        BorderColor: =RGBA(0, 89, 178, 1)
+        BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(0, 0, 0, 0.70196078)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.Lato
@@ -73,7 +73,7 @@ AddNewOpportunityScreen As screen:
         FontWeight: =FontWeight.Semibold
         Height: =86
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: =SubmitForm(Form1);ResetForm(Form1);NewForm(Form1); Navigate(OpportunityMessageScreen, ScreenTransition.Fade)
         PaddingLeft: =54
         RadiusBottomLeft: =0
@@ -88,7 +88,7 @@ AddNewOpportunityScreen As screen:
 
     Image3_6 As image:
         ApplyEXIFOrientation: =false
-        BorderColor: =RGBA(0, 89, 178, 1)
+        BorderColor: =RGBA(32, 54, 71, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(193, 193, 193, 0)
         DisplayMode: =
@@ -109,7 +109,7 @@ AddNewOpportunityScreen As screen:
         ZIndex: =12
 
         Circle1_10 As circle:
-            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderColor: =RGBA(32, 54, 71, 1)
             Fill: =RGBA(255, 255, 255, 1)
             Height: =55
             OnSelect: =Navigate(CustomerOverviewScreen, ScreenTransition.Fade)
@@ -120,7 +120,7 @@ AddNewOpportunityScreen As screen:
             ZIndex: =4
 
         icon4_6 As icon.Cancel:
-            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(6,26,84,1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -134,7 +134,7 @@ AddNewOpportunityScreen As screen:
             ZIndex: =5
 
     Rectangle9 As rectangle:
-        BorderColor: =RGBA(0, 89, 178, 1)
+        BorderColor: =RGBA(32, 54, 71, 1)
         Fill: =RGBA(212,212,212,1)
         FocusedBorderThickness: =0
         Height: =1
@@ -144,7 +144,7 @@ AddNewOpportunityScreen As screen:
         ZIndex: =15
 
     Form1 As form:
-        BorderColor: =RGBA(0, 89, 178, 1)
+        BorderColor: =RGBA(32, 54, 71, 1)
         DataSource: ='Asignación Entrenamientos'
         DefaultMode: =FormMode.New
         Height: =864
@@ -153,7 +153,7 @@ AddNewOpportunityScreen As screen:
         ZIndex: =16
 
         "'Curso: Adjunto_DataCard1' As typedDataCard.comboBoxViewCard":
-            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Curso_x003a__x0020_Adjunto"
             Default: =ThisItem.Curso_x003a__x0020_Adjunto
@@ -170,7 +170,7 @@ AddNewOpportunityScreen As screen:
 
             DataCardKey31 As label:
                 AutoHeight: =true
-                Color: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
@@ -183,10 +183,10 @@ AddNewOpportunityScreen As screen:
 
             DataCardValue31 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                ChevronBackground: =RGBA(0, 51, 102, 1)
+                ChevronBackground: =RGBA(100, 118, 132, 1)
                 ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -196,14 +196,14 @@ AddNewOpportunityScreen As screen:
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(153, 205, 255, 1)
+                HoverFill: =RGBA(205, 209, 213, 1)
                 Items: =Choices([@'Asignación Entrenamientos'].Curso_x003a__x0020_Adjunto)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(0, 89, 178, 1)
+                PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Asignación Entrenamientos'.Curso_x003a__x0020_Adjunto,DataCardValue31.SearchText)
-                SelectionFill: =RGBA(0, 51, 102, 1)
+                SelectionFill: =RGBA(100, 118, 132, 1)
                 SelectMultiple: =false
                 Size: =21
                 Width: =Parent.Width - 60
@@ -232,7 +232,7 @@ AddNewOpportunityScreen As screen:
 
             StarVisible21 As label:
                 Align: =Align.Center
-                Color: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey31.Height
                 Size: =21
@@ -244,7 +244,7 @@ AddNewOpportunityScreen As screen:
                 ZIndex: =4
 
         "'Curso:Prueba_DataCard1' As typedDataCard.comboBoxViewCard":
-            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Curso_x003a_Prueba"
             Default: =ThisItem.Curso_x003a_Prueba
@@ -261,7 +261,7 @@ AddNewOpportunityScreen As screen:
 
             DataCardKey32 As label:
                 AutoHeight: =true
-                Color: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
@@ -274,10 +274,10 @@ AddNewOpportunityScreen As screen:
 
             DataCardValue32 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                ChevronBackground: =RGBA(0, 51, 102, 1)
+                ChevronBackground: =RGBA(100, 118, 132, 1)
                 ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -287,14 +287,14 @@ AddNewOpportunityScreen As screen:
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(153, 205, 255, 1)
+                HoverFill: =RGBA(205, 209, 213, 1)
                 Items: =Choices([@'Asignación Entrenamientos'].Curso_x003a_Prueba)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(0, 89, 178, 1)
+                PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Asignación Entrenamientos'.Curso_x003a_Prueba,DataCardValue32.SearchText)
-                SelectionFill: =RGBA(0, 51, 102, 1)
+                SelectionFill: =RGBA(100, 118, 132, 1)
                 SelectMultiple: =false
                 Size: =21
                 Width: =Parent.Width - 60
@@ -323,7 +323,7 @@ AddNewOpportunityScreen As screen:
 
             StarVisible22 As label:
                 Align: =Align.Center
-                Color: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey32.Height
                 Size: =21
@@ -335,7 +335,7 @@ AddNewOpportunityScreen As screen:
                 ZIndex: =4
 
         "'Usuarios:Correo_DataCard1' As typedDataCard.comboBoxViewCard":
-            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Usuarios_x003a_Correo"
             Default: =ThisItem.Usuarios_x003a_Correo
@@ -352,7 +352,7 @@ AddNewOpportunityScreen As screen:
 
             DataCardKey33 As label:
                 AutoHeight: =true
-                Color: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
@@ -365,10 +365,10 @@ AddNewOpportunityScreen As screen:
 
             DataCardValue33 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                ChevronBackground: =RGBA(0, 51, 102, 1)
+                ChevronBackground: =RGBA(100, 118, 132, 1)
                 ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -378,14 +378,14 @@ AddNewOpportunityScreen As screen:
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(153, 205, 255, 1)
+                HoverFill: =RGBA(205, 209, 213, 1)
                 Items: =Choices([@'Asignación Entrenamientos'].Usuarios_x003a_Correo)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(0, 89, 178, 1)
+                PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Asignación Entrenamientos'.Usuarios_x003a_Correo,DataCardValue33.SearchText)
-                SelectionFill: =RGBA(0, 51, 102, 1)
+                SelectionFill: =RGBA(100, 118, 132, 1)
                 SelectMultiple: =false
                 Size: =21
                 Width: =Parent.Width - 60
@@ -414,7 +414,7 @@ AddNewOpportunityScreen As screen:
 
             StarVisible23 As label:
                 Align: =Align.Center
-                Color: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey33.Height
                 Size: =21
@@ -426,7 +426,7 @@ AddNewOpportunityScreen As screen:
                 ZIndex: =4
 
         Usuarios_DataCard1 As typedDataCard.comboBoxEditCard:
-            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Usuarios"
             Default: =ThisItem.Usuarios
@@ -443,7 +443,7 @@ AddNewOpportunityScreen As screen:
 
             DataCardKey1 As label:
                 AutoHeight: =true
-                Color: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
@@ -456,10 +456,10 @@ AddNewOpportunityScreen As screen:
 
             DataCardValue1 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                ChevronBackground: =RGBA(0, 51, 102, 1)
+                ChevronBackground: =RGBA(100, 118, 132, 1)
                 ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -469,14 +469,14 @@ AddNewOpportunityScreen As screen:
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(153, 205, 255, 1)
+                HoverFill: =RGBA(205, 209, 213, 1)
                 Items: =Choices([@'Asignación Entrenamientos'].Usuarios)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(0, 89, 178, 1)
+                PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Asignación Entrenamientos'.Usuarios,DataCardValue1.SearchText)
-                SelectionFill: =RGBA(0, 51, 102, 1)
+                SelectionFill: =RGBA(100, 118, 132, 1)
                 SelectMultiple: =false
                 Size: =21
                 Tooltip: =Parent.DisplayName
@@ -506,7 +506,7 @@ AddNewOpportunityScreen As screen:
 
             StarVisible1 As label:
                 Align: =Align.Center
-                Color: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey1.Height
                 Size: =21
@@ -518,7 +518,7 @@ AddNewOpportunityScreen As screen:
                 ZIndex: =4
 
         Estado_DataCard1 As typedDataCard.comboBoxEditCard:
-            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Estado"
             Default: =ThisItem.Estado
@@ -535,7 +535,7 @@ AddNewOpportunityScreen As screen:
 
             DataCardKey2 As label:
                 AutoHeight: =true
-                Color: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
@@ -548,10 +548,10 @@ AddNewOpportunityScreen As screen:
 
             DataCardValue2 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                ChevronBackground: =RGBA(0, 51, 102, 1)
+                ChevronBackground: =RGBA(100, 118, 132, 1)
                 ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -561,14 +561,14 @@ AddNewOpportunityScreen As screen:
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(153, 205, 255, 1)
+                HoverFill: =RGBA(205, 209, 213, 1)
                 Items: =Choices([@'Asignación Entrenamientos'].Estado)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(0, 89, 178, 1)
+                PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Asignación Entrenamientos'.Estado,DataCardValue2.SearchText)
-                SelectionFill: =RGBA(0, 51, 102, 1)
+                SelectionFill: =RGBA(100, 118, 132, 1)
                 SelectMultiple: =false
                 Size: =21
                 Tooltip: =Parent.DisplayName
@@ -598,7 +598,7 @@ AddNewOpportunityScreen As screen:
 
             StarVisible2 As label:
                 Align: =Align.Center
-                Color: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey2.Height
                 Size: =21
@@ -610,7 +610,7 @@ AddNewOpportunityScreen As screen:
                 ZIndex: =4
 
         Calificacion_DataCard1 As typedDataCard.comboBoxEditCard:
-            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Calificacion"
             Default: =ThisItem.Calificacion
@@ -627,7 +627,7 @@ AddNewOpportunityScreen As screen:
 
             DataCardKey3 As label:
                 AutoHeight: =true
-                Color: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
@@ -640,10 +640,10 @@ AddNewOpportunityScreen As screen:
 
             DataCardValue3 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                ChevronBackground: =RGBA(0, 51, 102, 1)
+                ChevronBackground: =RGBA(100, 118, 132, 1)
                 ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -653,14 +653,14 @@ AddNewOpportunityScreen As screen:
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(153, 205, 255, 1)
+                HoverFill: =RGBA(205, 209, 213, 1)
                 Items: =Choices([@'Asignación Entrenamientos'].Calificacion)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(0, 89, 178, 1)
+                PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Asignación Entrenamientos'.Calificacion,DataCardValue3.SearchText)
-                SelectionFill: =RGBA(0, 51, 102, 1)
+                SelectionFill: =RGBA(100, 118, 132, 1)
                 SelectMultiple: =false
                 Size: =21
                 Tooltip: =Parent.DisplayName
@@ -690,7 +690,7 @@ AddNewOpportunityScreen As screen:
 
             StarVisible3 As label:
                 Align: =Align.Center
-                Color: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey3.Height
                 Size: =21
@@ -702,7 +702,7 @@ AddNewOpportunityScreen As screen:
                 ZIndex: =4
 
         Observaciones_DataCard1 As typedDataCard.textualEditCard:
-            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Observaciones"
             Default: =ThisItem.Observaciones
@@ -720,7 +720,7 @@ AddNewOpportunityScreen As screen:
 
             DataCardKey4 As label:
                 AutoHeight: =true
-                Color: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
@@ -743,9 +743,9 @@ AddNewOpportunityScreen As screen:
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
                 Height: =70
-                HoverBorderColor: =RGBA(0, 89, 178, 1)
+                HoverBorderColor: =RGBA(32, 54, 71, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(153, 205, 255, 1)
+                HoverFill: =RGBA(205, 209, 213, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -780,7 +780,7 @@ AddNewOpportunityScreen As screen:
 
             StarVisible4 As label:
                 Align: =Align.Center
-                Color: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey4.Height
                 Size: =21
@@ -792,7 +792,7 @@ AddNewOpportunityScreen As screen:
                 ZIndex: =4
 
         Aprobo_DataCard1 As typedDataCard.toggleEditCard:
-            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Aprobo"
             Default: =ThisItem.Aprobo
@@ -809,7 +809,7 @@ AddNewOpportunityScreen As screen:
 
             DataCardKey5 As label:
                 AutoHeight: =true
-                Color: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
@@ -830,7 +830,7 @@ AddNewOpportunityScreen As screen:
                 Height: =49
                 Size: =21
                 Tooltip: =Parent.DisplayName
-                TrueFill: =RGBA(0, 51, 102, 1)
+                TrueFill: =RGBA(100, 118, 132, 1)
                 Width: =279
                 X: =30
                 Y: =DataCardKey5.Y + DataCardKey5.Height + 5
@@ -857,7 +857,7 @@ AddNewOpportunityScreen As screen:
 
             StarVisible5 As label:
                 Align: =Align.Center
-                Color: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey5.Height
                 Size: =21
@@ -869,7 +869,7 @@ AddNewOpportunityScreen As screen:
                 ZIndex: =4
 
         Curso_DataCard1 As typedDataCard.comboBoxEditCard:
-            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Curso"
             Default: =ThisItem.Curso
@@ -886,7 +886,7 @@ AddNewOpportunityScreen As screen:
 
             DataCardKey6 As label:
                 AutoHeight: =true
-                Color: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
@@ -899,10 +899,10 @@ AddNewOpportunityScreen As screen:
 
             DataCardValue6 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                ChevronBackground: =RGBA(0, 51, 102, 1)
+                ChevronBackground: =RGBA(100, 118, 132, 1)
                 ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -912,14 +912,14 @@ AddNewOpportunityScreen As screen:
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(153, 205, 255, 1)
+                HoverFill: =RGBA(205, 209, 213, 1)
                 Items: =Choices([@'Asignación Entrenamientos'].Curso)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(0, 89, 178, 1)
+                PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Asignación Entrenamientos'.Curso,DataCardValue6.SearchText)
-                SelectionFill: =RGBA(0, 51, 102, 1)
+                SelectionFill: =RGBA(100, 118, 132, 1)
                 SelectMultiple: =false
                 Size: =21
                 Tooltip: =Parent.DisplayName
@@ -949,7 +949,7 @@ AddNewOpportunityScreen As screen:
 
             StarVisible6 As label:
                 Align: =Align.Center
-                Color: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey6.Height
                 Size: =21

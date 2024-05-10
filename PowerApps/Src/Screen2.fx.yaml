@@ -1,15 +1,15 @@
 "Screen2 As screen.'phoneLayout_Email_ver3.0'":
-    Fill: =RGBA(232, 232, 232, 1)
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
 
     RectQuickActionBar2 As rectangle:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Fill: =RGBA(0, 51, 102, 1)
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Fill: =RGBA(100, 118, 132, 1)
         Height: =88
         Width: =Parent.Width
         ZIndex: =1
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
-        BorderColor: =RGBA(0, 89, 178, 1)
+        BorderColor: =RGBA(32, 54, 71, 1)
         DelayItemLoading: =true
         Height: =371
         Items: ='Ofertas de Entrenamientos'
@@ -31,6 +31,7 @@
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
+            Size: =16
             Text: =ThisItem.field_2
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 86
@@ -76,7 +77,7 @@
 
         NextArrow4 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
-            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(166, 166, 166, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -94,7 +95,7 @@
             ZIndex: =4
 
         Separator6 As rectangle:
-            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderColor: =RGBA(32, 54, 71, 1)
             Fill: =RGBA(255, 255, 255, 1)
             Height: =8
             OnSelect: =Select(Parent)
@@ -103,8 +104,8 @@
             ZIndex: =5
 
         Rectangle11 As rectangle:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Fill: =RGBA(0, 89, 178, 1)
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(32, 54, 71, 1)
             Height: =Parent.TemplateHeight - Separator6.Height
             OnSelect: =Select(Parent)
             Visible: =ThisItem.IsSelected
@@ -125,7 +126,7 @@
         ZIndex: =2
 
     iconMail2 As icon.Send:
-        BorderColor: =RGBA(0, 89, 178, 1)
+        BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
@@ -166,7 +167,7 @@
 
     TextSearchBox2 As text:
         AccessibleLabel: ="Busque personas o agregue direcciones de correo electrónico. Se necesita al menos un destinatario para un envío correcto."
-        BorderColor: =RGBA(0, 89, 178, 1)
+        BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =2
         Color: =RGBA(0, 0, 0, 1)
         Default: =""
@@ -176,9 +177,9 @@
         FocusedBorderThickness: =4
         Height: =70
         HintText: ="Buscar personas o agregar una dirección de correo electrónico"
-        HoverBorderColor: =RGBA(0, 89, 178, 1)
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =RGBA(153, 205, 255, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
         PaddingLeft: =70
         Size: =21
         Width: =Parent.Width - Self.X * 2
@@ -187,8 +188,8 @@
         ZIndex: =5
 
     SearchIcon2 As icon.Search:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(0, 89, 178, 1)
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(32, 54, 71, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =Self.Width
@@ -204,8 +205,8 @@
         ZIndex: =6
 
     AddIcon2 As icon.Add:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(0, 89, 178, 1)
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(32, 54, 71, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =TextSearchBox2.Height
@@ -234,7 +235,7 @@
 
     EmailPeopleGallery2 As gallery.SelectedUsersGallery:
         AccessibleLabel: ="Personas seleccionadas por el usuario"
-        BorderColor: =TextSearchBox2.BorderColor
+        BorderColor: =RGBA(32, 54, 71, 1)
         Fill: =TextSearchBox2.Fill
         Height: |-
             =/*Height adjusts to number of items in gallery*/
@@ -252,8 +253,8 @@
         ZIndex: =8
 
         Rectangle6 As rectangle:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Fill: =RGBA(0, 51, 102, 1)
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(100, 118, 132, 1)
             Height: =Parent.TemplateHeight
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
@@ -275,7 +276,7 @@
 
         iconRemove2 As icon.Cancel:
             AccessibleLabel: =iconRemove2.Tooltip
-            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderColor: =RGBA(32, 54, 71, 1)
             Color: =Title5.Color
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -306,7 +307,7 @@
 
     TextEmailSubject2 As text:
         AccessibleLabel: ="Se requiere un asunto para enviar un correo electrónico."
-        BorderColor: =RGBA(0, 89, 178, 1)
+        BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =2
         Color: =RGBA(0, 0, 0, 1)
         Default: =""
@@ -316,9 +317,9 @@
         FocusedBorderThickness: =4
         Height: =70
         HintText: ="Agregar un asunto"
-        HoverBorderColor: =RGBA(0, 89, 178, 1)
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =RGBA(153, 205, 255, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
         Size: =21
         TabIndex: =If(PeopleBrowseGallery2.Visible, -1, 0)
         Width: =Parent.Width - Self.X * 2
@@ -340,19 +341,20 @@
 
     TextEmailMessage2 As text:
         AccessibleLabel: ="Agregar un mensaje"
-        BorderColor: =RGBA(0, 89, 178, 1)
+        BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =2
         Color: =RGBA(0, 0, 0, 1)
-        Default: =""
+        Default: |-
+            ="Por favor Desarrollar el siguiente tema y la prueba con los links:"
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         FocusedBorderThickness: =4
         Height: =180
         HintText: ="Agregar un mensaje"
-        HoverBorderColor: =RGBA(0, 89, 178, 1)
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =RGBA(153, 205, 255, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
         Mode: =TextMode.MultiLine
         Size: =21
         TabIndex: =If(PeopleBrowseGallery2.Visible, -1, 0)
@@ -363,7 +365,7 @@
 
     PeopleBrowseGallery2 As gallery.PeoplePickerGallerySmall:
         AccessibleLabel: ="Resultados de la búsqueda de usuarios"
-        BorderColor: =RGBA(0, 89, 178, 1)
+        BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =2
         Fill: =Parent.Fill
         Height: =If(Self.Visible, Parent.Height / 2 + 200, 0)
@@ -410,7 +412,7 @@
             ZIndex: =2
 
         Subtitle4 As label:
-            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderColor: =RGBA(32, 54, 71, 1)
             Color: =ColorFade(Title6.Color, 0.20)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =2
@@ -424,8 +426,8 @@
             ZIndex: =3
 
         Separator4 As rectangle:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Fill: =RGBA(0, 89, 178, 1)
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(32, 54, 71, 1)
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
