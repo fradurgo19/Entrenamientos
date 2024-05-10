@@ -193,3 +193,29 @@ ActiveWorkOrderScreen As screen:
         Y: =595.3333333333322
         ZIndex: =13
 
+    TextInputSearch_1 As text:
+        BorderColor: =RGBA(163,171,193,1)
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =66.4367816091954
+        HintText: ="Buscar Curso"
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(190, 202, 226, 0), 30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Reset: =ResetSearch
+        Size: =20
+        Width: =578
+        Y: =106
+        ZIndex: =14
+
