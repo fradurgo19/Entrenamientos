@@ -118,18 +118,6 @@ ActiveWorkOrderScreen As screen:
             Width: =4
             ZIndex: =6
 
-        Icon1 As icon.Mail:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(32, 54, 71, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            FocusedBorderThickness: =1
-            Icon: =Icon.Mail
-            OnSelect: =Navigate(Correo, ScreenTransition.Fade)
-            X: =490
-            Y: =19
-            ZIndex: =7
-
     Rectangle1_12 As rectangle:
         BorderColor: =RGBA(32, 54, 71, 1)
         Fill: =RGBA(6,26,84,1)
