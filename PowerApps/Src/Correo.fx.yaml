@@ -147,7 +147,7 @@
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(205, 209, 213, 1)
         PaddingLeft: =70
-        Size: =21
+        Size: =12
         Width: =Parent.Width - Self.X * 2
         X: =32
         Y: =LblRecipientCount2.Y + LblRecipientCount2.Height + 6
@@ -286,7 +286,7 @@
         HoverBorderColor: =RGBA(32, 54, 71, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(205, 209, 213, 1)
-        Size: =21
+        Size: =12
         TabIndex: =If(PeopleBrowseGallery2.Visible, -1, 0)
         Width: =Parent.Width - Self.X * 2
         X: =32
