@@ -136,7 +136,8 @@
         BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =2
         Color: =RGBA(0, 0, 0, 1)
-        Default: =""
+        Default: |
+            =TextSearchBox2.Text = SelectedOption
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -505,6 +506,8 @@
         Items: ='Ofertas de Entrenamientos'
         OnChange: |
             =
+        OnSelect: |
+            =UpdateContext({SelectedOption: ComboBox1.SelectedItems})
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(32, 54, 71, 1)
         SearchFields: =["field_2"]
