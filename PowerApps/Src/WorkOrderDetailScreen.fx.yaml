@@ -120,6 +120,31 @@
             Y: =2
             ZIndex: =4
 
+            iconMail1 As icon.Send:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                DisabledBorderColor: =RGBA(255, 0, 0, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                DisabledFill: =RGBA(240, 240, 240, 0.5)
+                DisplayMode: |-
+                    =/*Email must have a subject and recipients to be sent*/
+                    If(Len(Trim(TextEmailSubject1.Text)) > 0 && !IsEmpty(MyPeople), DisplayMode.Edit, DisplayMode.Disabled)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =83
+                Icon: =Icon.Send
+                OnSelect: |
+                    =Set(Mensaje,"si");
+                    Office365Outlook.SendEmail(DataCardValue36.AccessibleLabel, TextEmailSubject1.Text, TextEmailMessage1.Text, {Importance:"Alta"});           
+                PaddingBottom: =24
+                PaddingLeft: =24
+                PaddingRight: =24
+                PaddingTop: =24
+                PressedFill: =RGBA(255, 255, 255, 0.3)
+                Tooltip: ="Enviar mensaje"
+                Width: =620
+                X: =9
+                Y: =9
+                ZIndex: =1
+
     FormViewer3 As formViewer:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: ='Asignación Entrenamientos'
@@ -368,7 +393,7 @@
                 Size: =21
                 Width: =610
                 X: =30
-                Y: =DataCardKey36.Y + DataCardKey36.Height + 5
+                Y: =42
                 ZIndex: =2
 
             ErrorMessage26 As label:
