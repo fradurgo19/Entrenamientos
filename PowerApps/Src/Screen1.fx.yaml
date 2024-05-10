@@ -35,7 +35,7 @@
         OnSelect: |-
             =/*Create semicolon separated list of people to email, send the email, reset subject & message fields*/           
             Set(_emailRecipientString, Concat(MyPeople, Mail & ";"));           
-            Office365Outlook.SendEmail(_emailRecipientString, TextEmailSubject1.Text, TextEmailMessage1.Text, {Importance:"Normal"});           
+            Office365Outlook.SendEmail(_emailRecipientString, TextEmailSubject1.Text, TextEmailMessage1.Text, {Importance:"Alta"});           
             Reset(TextEmailSubject1);           
             Reset(TextEmailMessage1);           
             Clear(MyPeople)
