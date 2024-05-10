@@ -14,7 +14,7 @@ ActiveWorkOrderScreen As screen:
         HoverBorderColor: =GalleryWorkOrder.BorderColor
         HoverFill: =GalleryWorkOrder.Fill
         Items: |+
-            =Search([@'Asignación Entrenamientos'],TextInputSearch_1.Text,Curso)
+            =Filter([@'Asignación Entrenamientos'],TextInputSearch_1.Text = ThisRecord.Curso)
             
             
         Layout: =Layout.Vertical
