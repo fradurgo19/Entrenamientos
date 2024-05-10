@@ -24,12 +24,13 @@ CustomerScreen As screen:
         Height: =853
         HoverBorderColor: =GalleryCustumer.BorderColor
         HoverFill: =GalleryCustumer.Fill
-        Items: |-
+        Items: |+
             =Filter(
                     [@'Ofertas de Entrenamientos'],
                     (StartsWith(field_2, TextInputSearch.Text) || StartsWith(field_5, TextInputSearch.Text))
                     
                 )
+            
         Layout: =Layout.Vertical
         PressedBorderColor: =GalleryCustumer.BorderColor
         PressedFill: =GalleryCustumer.Fill
