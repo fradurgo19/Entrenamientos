@@ -994,8 +994,8 @@ AddNewOpportunityScreen As screen:
         Height: =30
         PaddingLeft: =0
         Size: =18
-        Text: ="*Hasta (" &CountRows(MyPeople) & ")"
-        Width: =EmailPeopleGallery1.Width
+        Text: =
+        Width: =
         Wrap: =false
         X: =12
         Y: =775
@@ -1050,7 +1050,7 @@ AddNewOpportunityScreen As screen:
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(153, 205, 255, 1)
         Size: =21
-        TabIndex: =If(PeopleBrowseGallery1.Visible, -1, 0)
+        TabIndex: =
         Width: =Parent.Width - Self.X * 2
         Y: =LblEmailSubject1.Y + LblEmailSubject1.Height + 6
         ZIndex: =21
