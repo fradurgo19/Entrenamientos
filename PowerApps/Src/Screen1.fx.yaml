@@ -132,7 +132,7 @@
         BorderColor: =RGBA(0, 89, 178, 1)
         BorderThickness: =2
         Fill: =Parent.Fill
-        Height: =If(Self.Visible, Parent.Height / 2 + 200, 0)
+        Height: =94
         Items: |-
             =/*Only use Office 365 Users operation if user has started searching*/
             If(!IsBlank(Trim(TextSearchBox1.Text)), UsuariosdeOffice365.SearchUser({searchTerm: Trim(TextSearchBox1.Text), top: 15}))
