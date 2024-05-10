@@ -567,7 +567,14 @@
         "Selectable",
         "TemplateMaximumWidth",
         "MaxTemplateSize",
-        "Reset",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "false",
+          "InvariantPropertyName": "Reset",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "AutoHeight",
         "DelayItemLoading",
         "LoadingSpinner",

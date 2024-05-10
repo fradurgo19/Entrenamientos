@@ -13,11 +13,16 @@ ActiveWorkOrderScreen As screen:
         Height: =955
         HoverBorderColor: =GalleryWorkOrder.BorderColor
         HoverFill: =GalleryWorkOrder.Fill
-        Items: ='Asignación Entrenamientos'
+        Items: |+
+            =Search([@'Asignación Entrenamientos'],TextInputSearch_1.Text,Curso)
+            
+            
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         PressedBorderColor: =GalleryWorkOrder.BorderColor
         PressedFill: =GalleryWorkOrder.Fill
+        Reset: |
+            =
         TemplatePadding: =0
         TemplateSize: =116
         Visible: =CountRows(GalleryWorkOrder.AllItems) > 0
@@ -204,7 +209,7 @@ ActiveWorkOrderScreen As screen:
         Fill: =RGBA(0, 0, 0, 0)
         FocusedBorderThickness: =4
         Font: =Font.Lato
-        Height: =66.4367816091954
+        Height: =58
         HintText: ="Buscar Curso"
         HoverBorderColor: =RGBA(32, 54, 71, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
@@ -213,9 +218,9 @@ ActiveWorkOrderScreen As screen:
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Reset: =ResetSearch
+        Reset: =
         Size: =20
-        Width: =578
+        Width: =640
         Y: =106
         ZIndex: =14
 
