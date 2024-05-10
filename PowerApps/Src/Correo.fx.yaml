@@ -503,6 +503,8 @@
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(205, 209, 213, 1)
         Items: ='Ofertas de Entrenamientos'
+        OnChange: |
+            =
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(32, 54, 71, 1)
         SearchFields: =["field_2"]
