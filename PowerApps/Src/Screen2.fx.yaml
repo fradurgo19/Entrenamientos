@@ -30,7 +30,7 @@
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.Prueba
+            Text: =ThisItem.field_2
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 86
             X: =16
@@ -66,7 +66,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =12
-            Text: =ThisItem.field_2
+            Text: =ThisItem.Prueba
             VerticalAlign: =VerticalAlign.Top
             Width: =Title8.Width
             X: =Title8.X
