@@ -13,10 +13,10 @@ ActiveWorkOrderScreen As screen:
         Height: =955
         HoverBorderColor: =GalleryWorkOrder.BorderColor
         HoverFill: =GalleryWorkOrder.Fill
-        Items: |+
-            ='Asignación Entrenamientos'
-            
-            
+        Items: |-
+            =Filter(
+                    'Asignación Entrenamientos',
+                    (StartsWith(Usuarios.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text))||(StartsWith(Curso.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text))||(StartsWith(Curso_x003a_Prueba.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text)))
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         PressedBorderColor: =GalleryWorkOrder.BorderColor
@@ -85,10 +85,9 @@ ActiveWorkOrderScreen As screen:
         NextArrow1 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
             BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(166, 166, 166, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =50
+            Height: =61
             Icon: =Icon.ChevronRight
             OnSelect: =Navigate(WorkOrderDetailScreen, ScreenTransition.Fade)
             PaddingBottom: =16
@@ -96,9 +95,9 @@ ActiveWorkOrderScreen As screen:
             PaddingRight: =16
             PaddingTop: =16
             Tooltip: ="Ver los detalles del elemento"
-            Width: =50
+            Width: =62
             X: =Parent.TemplateWidth - Self.Width - 12
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            Y: =22
             ZIndex: =4
 
         Separator1 As rectangle:
@@ -118,6 +117,18 @@ ActiveWorkOrderScreen As screen:
             Visible: =ThisItem.IsSelected
             Width: =4
             ZIndex: =6
+
+        Icon1 As icon.Mail:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(32, 54, 71, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            FocusedBorderThickness: =1
+            Icon: =Icon.Mail
+            OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
+            X: =490
+            Y: =19
+            ZIndex: =7
 
     Rectangle1_12 As rectangle:
         BorderColor: =RGBA(32, 54, 71, 1)
