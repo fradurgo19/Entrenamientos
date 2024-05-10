@@ -125,9 +125,7 @@
                 DisabledBorderColor: =RGBA(255, 0, 0, 1)
                 DisabledColor: =RGBA(244, 244, 244, 1)
                 DisabledFill: =RGBA(240, 240, 240, 0.5)
-                DisplayMode: |-
-                    =/*Email must have a subject and recipients to be sent*/
-                    If(Len(Trim(TextEmailSubject1.Text)) > 0 && !IsEmpty(MyPeople), DisplayMode.Edit, DisplayMode.Disabled)
+                DisplayMode: =
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =83
                 Icon: =Icon.Send
