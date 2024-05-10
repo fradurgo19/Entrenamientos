@@ -19,7 +19,7 @@
         ShowNavigation: =true
         TemplatePadding: =0
         TemplateSize: =145
-        Width: =351
+        Width: =323
         Y: =725
         ZIndex: =1
 
@@ -310,7 +310,7 @@
         BorderThickness: =2
         Color: =RGBA(0, 0, 0, 1)
         Default: |-
-            ="Por favor Desarrollar el siguiente tema y la prueba con los links:"
+            ="Por favor Desarrollar el Tema y la prueba con los links:"
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -410,8 +410,8 @@
         ShowNavigation: =true
         TemplatePadding: =0
         TemplateSize: =145
-        Width: =289
-        X: =351
+        Width: =296
+        X: =343
         Y: =725
         ZIndex: =14
 
@@ -419,7 +419,7 @@
             Color: =RGBA(50, 49, 48, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =115
+            Height: =43
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -428,7 +428,7 @@
             Size: =16
             Text: =ThisItem.field_2
             VerticalAlign: =VerticalAlign.Top
-            Width: =173
+            Width: =86
             X: =16
             Y: =22
             ZIndex: =1
@@ -446,7 +446,7 @@
             Size: =12
             Text: =ThisItem.field_0
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title8_1.Width
+            Width: =161
             X: =116
             Y: =22
             ZIndex: =2
