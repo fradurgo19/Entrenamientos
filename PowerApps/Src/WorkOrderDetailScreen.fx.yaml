@@ -252,7 +252,7 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Curso_x003a_Prueba)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =129
+            Height: =95
             Required: =false
             Update: =DataCardValue35.Selected
             Width: =640
@@ -343,7 +343,7 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Usuarios_x003a_Correo)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =140
             Required: =false
             Update: =DataCardValue36.Selected
             Width: =640
@@ -352,10 +352,9 @@
             ZIndex: =1
 
             DataCardKey36 As label:
-                AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
+                Height: =60
                 Size: =21
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -377,7 +376,7 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Height: =70
+                Height: =52
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
                 Items: =Choices([@'Asignación Entrenamientos'].Usuarios_x003a_Correo)
@@ -391,7 +390,7 @@
                 Size: =21
                 Width: =610
                 X: =30
-                Y: =42
+                Y: =70
                 ZIndex: =2
 
             ErrorMessage26 As label:
