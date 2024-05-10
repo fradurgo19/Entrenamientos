@@ -27,7 +27,7 @@
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =50
+            Height: =36
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -36,16 +36,16 @@
             Size: =12
             Text: =ThisItem.Adjunto
             VerticalAlign: =VerticalAlign.Top
-            Width: =151
-            X: =200
-            Y: =78
+            Width: =297
+            X: =27
+            Y: =33
             ZIndex: =2
 
         Body2 As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =50
+            Height: =37
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -54,9 +54,9 @@
             Size: =12
             Text: =ThisItem.Prueba
             VerticalAlign: =VerticalAlign.Top
-            Width: =151
-            X: =4
-            Y: =78
+            Width: =297
+            X: =27
+            Y: =100
             ZIndex: =3
 
         Separator6 As rectangle:
