@@ -10,14 +10,16 @@
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
         BorderColor: =RGBA(32, 54, 71, 1)
+        BorderThickness: =3
         DelayItemLoading: =true
-        Height: =371
+        Height: =390
         Items: ='Ofertas de Entrenamientos'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowNavigation: =true
         TemplatePadding: =0
-        TemplateSize: =102
+        TemplateSize: =145
+        Width: =351
         Y: =725
         ZIndex: =1
 
@@ -25,7 +27,7 @@
             Color: =RGBA(50, 49, 48, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
+            Height: =115
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -34,16 +36,16 @@
             Size: =16
             Text: =ThisItem.field_2
             VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 86
+            Width: =161
             X: =16
-            Y: =(Parent.TemplateHeight - (Self.Size*1.8 + Subtitle6.Size*1.8 + 2 + Body2.Size*1.8)) / 2
+            Y: =22
             ZIndex: =1
 
         Subtitle6 As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
+            Height: =41
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -52,16 +54,16 @@
             Size: =12
             Text: =ThisItem.Adjunto
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title8.Width
-            X: =Title8.X
-            Y: =Title8.Y + Title8.Height
+            Width: =151
+            X: =200
+            Y: =22
             ZIndex: =2
 
         Body2 As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
+            Height: =50
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -70,29 +72,10 @@
             Size: =12
             Text: =ThisItem.Prueba
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title8.Width
-            X: =Title8.X
-            Y: =Subtitle6.Y + Subtitle6.Height
+            Width: =151
+            X: =200
+            Y: =87
             ZIndex: =3
-
-        NextArrow4 As icon.ChevronRight:
-            AccessibleLabel: =Self.Tooltip
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(166, 166, 166, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =50
-            Icon: =Icon.ChevronRight
-            OnSelect: =Select(Parent)
-            PaddingBottom: =16
-            PaddingLeft: =16
-            PaddingRight: =16
-            PaddingTop: =16
-            Tooltip: ="Ver los detalles del elemento"
-            Width: =50
-            X: =Parent.TemplateWidth - Self.Width - 12
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =4
 
         Separator6 As rectangle:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -350,7 +333,7 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         FocusedBorderThickness: =4
-        Height: =180
+        Height: =140
         HintText: ="Agregar un mensaje"
         HoverBorderColor: =RGBA(32, 54, 71, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
@@ -433,4 +416,92 @@
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
             ZIndex: =4
+
+    "Gallery1_1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
+        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderThickness: =3
+        DelayItemLoading: =true
+        Height: =390
+        Items: ='Usuarios Entrenamientos'
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowNavigation: =true
+        TemplatePadding: =0
+        TemplateSize: =145
+        Width: =289
+        X: =351
+        Y: =725
+        ZIndex: =14
+
+        Title8_1 As label:
+            Color: =RGBA(50, 49, 48, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =115
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: =ThisItem.field_2
+            VerticalAlign: =VerticalAlign.Top
+            Width: =173
+            X: =16
+            Y: =22
+            ZIndex: =1
+
+        Subtitle6_1 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =43
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =12
+            Text: =ThisItem.field_0
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title8_1.Width
+            X: =116
+            Y: =22
+            ZIndex: =2
+
+        Body2_1 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =37
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =12
+            Text: =ThisItem.field_1
+            VerticalAlign: =VerticalAlign.Top
+            Width: =261
+            X: =16
+            Y: =82
+            ZIndex: =3
+
+        Separator6_1 As rectangle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =5
+
+        Rectangle11_1 As rectangle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(32, 54, 71, 1)
+            Height: =Parent.TemplateHeight - Separator6_1.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =6
 
