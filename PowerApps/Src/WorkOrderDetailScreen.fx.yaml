@@ -142,7 +142,7 @@
             Required: =false
             Update: =DataCardValue34.Selected
             Width: =320
-            X: =0
+            X: =1
             Y: =4
             ZIndex: =1
 
@@ -229,12 +229,12 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Curso_x003a_Prueba)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =129
             Required: =false
             Update: =DataCardValue35.Selected
-            Width: =320
-            X: =1
-            Y: =4
+            Width: =640
+            X: =0
+            Y: =5
             ZIndex: =1
 
             DataCardKey35 As label:
@@ -323,9 +323,9 @@
             Height: =50
             Required: =false
             Update: =DataCardValue36.Selected
-            Width: =320
+            Width: =640
             X: =0
-            Y: =5
+            Y: =6
             ZIndex: =1
 
             DataCardKey36 As label:
@@ -366,7 +366,7 @@
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
                 Size: =21
-                Width: =Parent.Width - 60
+                Width: =610
                 X: =30
                 Y: =DataCardKey36.Y + DataCardKey36.Height + 5
                 ZIndex: =2
@@ -414,7 +414,7 @@
             Height: =50
             Required: =false
             Update: =DataCardValue23.Selected
-            Width: =320
+            Width: =640
             X: =0
             Y: =0
             ZIndex: =16
@@ -506,8 +506,8 @@
             Required: =false
             Update: =DataCardValue24.Selected
             Width: =320
-            X: =1
-            Y: =0
+            X: =0
+            Y: =1
             ZIndex: =16
 
             DataCardKey24 As label:
@@ -597,7 +597,7 @@
             Required: =false
             Update: =DataCardValue25.Selected
             Width: =320
-            X: =0
+            X: =1
             Y: =1
             ZIndex: =16
 
@@ -687,8 +687,8 @@
             Height: =40
             Required: =false
             Width: =320
-            X: =1
-            Y: =1
+            X: =0
+            Y: =2
             ZIndex: =16
 
             DataCardKey26 As label:
@@ -731,7 +731,7 @@
             Height: =50
             Required: =false
             Width: =320
-            X: =0
+            X: =1
             Y: =2
             ZIndex: =16
 
@@ -775,8 +775,8 @@
             Required: =false
             Update: =DataCardValue28.Selected
             Width: =320
-            X: =1
-            Y: =2
+            X: =0
+            Y: =3
             ZIndex: =16
 
             DataCardKey28 As label:
@@ -866,7 +866,7 @@
             Required: =false
             Update: =DataCardValue29.Selected
             Width: =320
-            X: =0
+            X: =1
             Y: =3
             ZIndex: =16
 
@@ -957,8 +957,8 @@
             Required: =false
             Update: =DataCardValue30.Selected
             Width: =320
-            X: =1
-            Y: =3
+            X: =0
+            Y: =4
             ZIndex: =16
 
             DataCardKey30 As label:
