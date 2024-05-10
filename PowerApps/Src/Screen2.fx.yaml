@@ -12,15 +12,16 @@
         BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =3
         DelayItemLoading: =true
-        Height: =390
+        Height: =373
         Items: ='Ofertas de Entrenamientos'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowNavigation: =true
         TemplatePadding: =0
-        TemplateSize: =145
-        Width: =323
-        Y: =725
+        TemplateSize: =121
+        Width: =292
+        X: =31
+        Y: =741
         ZIndex: =1
 
         Subtitle6 As label:
@@ -403,16 +404,16 @@
         BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =3
         DelayItemLoading: =true
-        Height: =390
+        Height: =374
         Items: ='Usuarios Entrenamientos'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowNavigation: =true
         TemplatePadding: =0
-        TemplateSize: =145
-        Width: =296
+        TemplateSize: =124
+        Width: =265
         X: =343
-        Y: =725
+        Y: =741
         ZIndex: =14
 
         Title8_1 As label:
@@ -426,9 +427,9 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =16
-            Text: =ThisItem.field_2
+            Text: =ThisItem.field_1
             VerticalAlign: =VerticalAlign.Top
-            Width: =86
+            Width: =100
             X: =16
             Y: =22
             ZIndex: =1
@@ -462,7 +463,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =12
-            Text: =ThisItem.field_1
+            Text: =ThisItem.field_0
             VerticalAlign: =VerticalAlign.Top
             Width: =261
             X: =16
@@ -508,7 +509,7 @@
         SearchItems: =Search('Ofertas de Entrenamientos',ComboBox1.SearchText,field_2)
         SelectionFill: =RGBA(100, 118, 132, 1)
         Size: =13
-        Width: =571
+        Width: =576
         X: =32
         Y: =581
         ZIndex: =15
