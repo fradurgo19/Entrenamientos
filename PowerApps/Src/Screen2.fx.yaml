@@ -11,13 +11,14 @@
     "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
         BorderColor: =RGBA(0, 89, 178, 1)
         DelayItemLoading: =true
-        Height: =331
+        Height: =371
         Items: ='Ofertas de Entrenamientos'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
+        ShowNavigation: =true
         TemplatePadding: =0
-        TemplateSize: =116
-        Y: =804
+        TemplateSize: =102
+        Y: =725
         ZIndex: =1
 
         Title8 As label:
@@ -347,7 +348,7 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         FocusedBorderThickness: =4
-        Height: =350
+        Height: =180
         HintText: ="Agregar un mensaje"
         HoverBorderColor: =RGBA(0, 89, 178, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
