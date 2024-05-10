@@ -147,7 +147,7 @@ AddNewOpportunityScreen As screen:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: ='Asignación Entrenamientos'
         DefaultMode: =FormMode.New
-        Height: =868
+        Height: =480
         Width: =640
         Y: =186
         ZIndex: =16
@@ -686,4 +686,135 @@ AddNewOpportunityScreen As screen:
                 Wrap: =false
                 Y: =DataCardKey6.Y
                 ZIndex: =4
+
+    iconMail1 As icon.Send:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        DisabledBorderColor: =RGBA(255, 0, 0, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        DisabledFill: =RGBA(240, 240, 240, 0.5)
+        DisplayMode: |-
+            =/*Email must have a subject and recipients to be sent*/
+            If(Len(Trim(TextEmailSubject1.Text)) > 0 && !IsEmpty(MyPeople), DisplayMode.Edit, DisplayMode.Disabled)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =69
+        Icon: =Icon.Send
+        OnSelect: |-
+            =/*Create semicolon separated list of people to email, send the email, reset subject & message fields*/           
+            Set(_emailRecipientString, Concat(MyPeople, Mail & ";"));           
+            Office365Outlook.SendEmail(_emailRecipientString, TextEmailSubject1.Text, TextEmailMessage1.Text, {Importance:"Alta"});           
+            Reset(TextEmailSubject1);           
+            Reset(TextEmailMessage1);           
+            Clear(MyPeople)
+        PaddingBottom: =24
+        PaddingLeft: =24
+        PaddingRight: =24
+        PaddingTop: =24
+        PressedFill: =RGBA(255, 255, 255, 0.3)
+        Tooltip: ="Enviar mensaje"
+        Width: =88
+        X: =532
+        Y: =692
+        ZIndex: =17
+
+    LblRecipientCount1 As label:
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =30
+        PaddingLeft: =0
+        Size: =18
+        Text: ="*Hasta (" &CountRows(MyPeople) & ")"
+        Width: =EmailPeopleGallery1.Width
+        Wrap: =false
+        X: =12
+        Y: =775
+        ZIndex: =18
+
+    TextSearchBox1 As text:
+        AccessibleLabel: ="Busque personas o agregue direcciones de correo electrónico. Se necesita al menos un destinatario para un envío correcto."
+        BorderColor: =RGBA(0, 89, 178, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Height: =18
+        HintText: ="Buscar personas o agregar una dirección de correo electrónico"
+        HoverBorderColor: =RGBA(0, 89, 178, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(153, 205, 255, 1)
+        PaddingLeft: =70
+        Size: =21
+        Width: =Parent.Width - Self.X * 2
+        Y: =821
+        ZIndex: =19
+
+    LblEmailSubject1 As label:
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =34
+        PaddingLeft: =0
+        Size: =18
+        Text: ="*Asunto"
+        Width: =Parent.Width - Self.X * 2
+        Wrap: =false
+        Y: =839
+        ZIndex: =20
+
+    TextEmailSubject1 As text:
+        AccessibleLabel: ="Se requiere un asunto para enviar un correo electrónico."
+        BorderColor: =RGBA(0, 89, 178, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Height: =18
+        HintText: ="Agregar un asunto"
+        HoverBorderColor: =RGBA(0, 89, 178, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(153, 205, 255, 1)
+        Size: =21
+        TabIndex: =If(PeopleBrowseGallery1.Visible, -1, 0)
+        Width: =Parent.Width - Self.X * 2
+        Y: =LblEmailSubject1.Y + LblEmailSubject1.Height + 6
+        ZIndex: =21
+
+    LblEmailMessage1 As label:
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =16
+        PaddingLeft: =0
+        Size: =18
+        Text: ="Mensaje"
+        Width: =586
+        Wrap: =false
+        X: =12
+        Y: =TextEmailSubject1.Y + TextEmailSubject1.Height + 16
+        ZIndex: =22
+
+    TextEmailMessage1 As text:
+        AccessibleLabel: ="Agregar un mensaje"
+        BorderColor: =RGBA(0, 89, 178, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Height: =94
+        HintText: ="Agregar un mensaje"
+        HoverBorderColor: =RGBA(0, 89, 178, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(153, 205, 255, 1)
+        Mode: =TextMode.MultiLine
+        Size: =21
+        TabIndex: =If(PeopleBrowseGallery1.Visible, -1, 0)
+        Width: =Parent.Width - Self.X * 2
+        Y: =LblEmailMessage1.Y + LblEmailMessage1.Height + 6
+        ZIndex: =23
 
