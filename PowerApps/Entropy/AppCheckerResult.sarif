@@ -291,200 +291,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "WorkOrderDetailScreen.Canvas1_1.DataCard2.iconMail1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "WorkOrderDetailScreen.Canvas1_1.DataCard2.iconMail1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 17,
-                  "charOffset": 81,
-                  "snippet": {
-                    "text": "TextEmailSubject1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "WorkOrderDetailScreen",
-                "type": "WorkOrderDetailScreen.Canvas1_1.DataCard2.iconMail1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "TextEmailSubject1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "WorkOrderDetailScreen.Canvas1_1.DataCard2.iconMail1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "WorkOrderDetailScreen.Canvas1_1.DataCard2.iconMail1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 98,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "WorkOrderDetailScreen",
-                "type": "WorkOrderDetailScreen.Canvas1_1.DataCard2.iconMail1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "WorkOrderDetailScreen.Canvas1_1.DataCard2.iconMail1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "WorkOrderDetailScreen.Canvas1_1.DataCard2.iconMail1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 17,
-                  "charOffset": 105,
-                  "snippet": {
-                    "text": "TextEmailMessage1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "WorkOrderDetailScreen",
-                "type": "WorkOrderDetailScreen.Canvas1_1.DataCard2.iconMail1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "TextEmailMessage1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "WorkOrderDetailScreen.Canvas1_1.DataCard2.iconMail1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "WorkOrderDetailScreen.Canvas1_1.DataCard2.iconMail1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 122,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "WorkOrderDetailScreen",
-                "type": "WorkOrderDetailScreen.Canvas1_1.DataCard2.iconMail1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "WorkOrderDetailScreen.Canvas1_1.DataCard2.iconMail1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "WorkOrderDetailScreen.Canvas1_1.DataCard2.iconMail1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 38,
-                  "snippet": {
-                    "text": "SendEmail"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "WorkOrderDetailScreen",
-                "type": "WorkOrderDetailScreen.Canvas1_1.DataCard2.iconMail1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "SendEmail"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "ActiveWorkOrderScreen.Rectangle1_12.AccessibleLabel"
                 }
               ],
@@ -2765,6 +2571,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "WorkOrderDetailScreen.Canvas1_1.DataCard2.iconMail1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "WorkOrderDetailScreen.Canvas1_1.DataCard2.iconMail1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "WorkOrderDetailScreen",
+                "type": "WorkOrderDetailScreen.Canvas1_1.DataCard2.iconMail1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "WorkOrderDetailScreen.Canvas1_1.DataCard2.iconMail1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "WorkOrderDetailScreen.Canvas1_1.DataCard2.iconMail1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "WorkOrderDetailScreen",
+                "type": "WorkOrderDetailScreen.Canvas1_1.DataCard2.iconMail1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "AddNewOpportunityScreen.Form1.'Curso: Adjunto_DataCard1'.DataCardValue31.AccessibleLabel"
                 }
               ],
@@ -2945,36 +2811,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.Mensaje"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.Mensaje",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Mensaje",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.icon (1)"
                 }
               ],
@@ -2998,7 +2834,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 9
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -3028,7 +2864,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 9
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -3058,7 +2894,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 9
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -3088,7 +2924,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 9
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -3118,7 +2954,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 9
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -3147,7 +2983,7 @@
             "level": "Medium"
           },
           "ruleId": "app-DataSourceDefaultMaxRowsLimit",
-          "ruleIndex": 10
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -3177,7 +3013,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 8
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -3800,23 +3636,6 @@
               }
             },
             {
-              "id": "app-UnusedVariables",
-              "messageStrings": {
-                "issue": {
-                  "text": "Variable no utilizada"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Quite la variable no utilizada."
-                ],
-                "level": "Medium",
-                "primaryCategory": "performance",
-                "whyFix": "Esta variable está declarada, pero ningún control hace referencia a ella, por lo que no es necesaria."
-              }
-            },
-            {
               "id": "app-UnusedMediaResources",
               "messageStrings": {
                 "issue": {
@@ -3848,6 +3667,23 @@
                 "level": "Medium",
                 "primaryCategory": "performance",
                 "whyFix": "Un límite de filas de datos superior a 500 puede dar lugar a una aplicación más lenta al ejecutar consultas que no son delegables, ya que la aplicación tendrá que procesar todas las filas, en lugar de ejecutar la consulta en el servidor."
+              }
+            },
+            {
+              "id": "app-UnusedVariables",
+              "messageStrings": {
+                "issue": {
+                  "text": "Variable no utilizada"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Quite la variable no utilizada."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "Esta variable está declarada, pero ningún control hace referencia a ella, por lo que no es necesaria."
               }
             },
             {
