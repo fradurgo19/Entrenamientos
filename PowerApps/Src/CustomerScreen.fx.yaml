@@ -26,11 +26,7 @@ CustomerScreen As screen:
         HoverBorderColor: =GalleryCustumer.BorderColor
         HoverFill: =GalleryCustumer.Fill
         Items: |+
-            =Filter(
-                    [@'Ofertas de Entrenamientos'],
-                    (StartsWith(field_2, TextInputSearch.Text) || StartsWith(field_5, TextInputSearch.Text))
-                    
-                )
+            =Search([@'Ofertas de Entrenamientos'],TextInputSearch.Text,field_2)
             
         Layout: =Layout.Vertical
         PressedBorderColor: =GalleryCustumer.BorderColor
