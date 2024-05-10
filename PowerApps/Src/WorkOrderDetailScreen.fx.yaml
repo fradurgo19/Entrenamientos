@@ -125,6 +125,7 @@
         DataSource: ='Asignación Entrenamientos'
         Height: =849
         Item: =GalleryWorkOrder.Selected
+        NumberOfColumns: =2
         Width: =640
         Y: =107
         ZIndex: =15
@@ -140,9 +141,9 @@
             Height: =50
             Required: =false
             Update: =DataCardValue34.Selected
-            Width: =640
+            Width: =320
             X: =0
-            Y: =8
+            Y: =4
             ZIndex: =1
 
             DataCardKey34 As label:
@@ -231,9 +232,9 @@
             Height: =50
             Required: =false
             Update: =DataCardValue35.Selected
-            Width: =640
-            X: =0
-            Y: =9
+            Width: =320
+            X: =1
+            Y: =4
             ZIndex: =1
 
             DataCardKey35 As label:
@@ -322,9 +323,9 @@
             Height: =50
             Required: =false
             Update: =DataCardValue36.Selected
-            Width: =640
+            Width: =320
             X: =0
-            Y: =10
+            Y: =5
             ZIndex: =1
 
             DataCardKey36 As label:
@@ -413,7 +414,7 @@
             Height: =50
             Required: =false
             Update: =DataCardValue23.Selected
-            Width: =640
+            Width: =320
             X: =0
             Y: =0
             ZIndex: =16
@@ -504,9 +505,9 @@
             Height: =50
             Required: =false
             Update: =DataCardValue24.Selected
-            Width: =640
-            X: =0
-            Y: =1
+            Width: =320
+            X: =1
+            Y: =0
             ZIndex: =16
 
             DataCardKey24 As label:
@@ -595,9 +596,9 @@
             Height: =50
             Required: =false
             Update: =DataCardValue25.Selected
-            Width: =640
+            Width: =320
             X: =0
-            Y: =2
+            Y: =1
             ZIndex: =16
 
             DataCardKey25 As label:
@@ -685,9 +686,9 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =640
-            X: =0
-            Y: =3
+            Width: =320
+            X: =1
+            Y: =1
             ZIndex: =16
 
             DataCardKey26 As label:
@@ -729,9 +730,9 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Width: =640
+            Width: =320
             X: =0
-            Y: =4
+            Y: =2
             ZIndex: =16
 
             DataCardKey27 As label:
@@ -773,9 +774,9 @@
             Height: =50
             Required: =false
             Update: =DataCardValue28.Selected
-            Width: =640
-            X: =0
-            Y: =5
+            Width: =320
+            X: =1
+            Y: =2
             ZIndex: =16
 
             DataCardKey28 As label:
@@ -864,9 +865,9 @@
             Height: =50
             Required: =false
             Update: =DataCardValue29.Selected
-            Width: =640
+            Width: =320
             X: =0
-            Y: =6
+            Y: =3
             ZIndex: =16
 
             DataCardKey29 As label:
@@ -955,9 +956,9 @@
             Height: =50
             Required: =false
             Update: =DataCardValue30.Selected
-            Width: =640
-            X: =0
-            Y: =7
+            Width: =320
+            X: =1
+            Y: =3
             ZIndex: =16
 
             DataCardKey30 As label:
