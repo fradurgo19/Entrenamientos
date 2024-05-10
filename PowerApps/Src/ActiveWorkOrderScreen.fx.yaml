@@ -125,7 +125,7 @@ ActiveWorkOrderScreen As screen:
             DisabledColor: =RGBA(244, 244, 244, 1)
             FocusedBorderThickness: =1
             Icon: =Icon.Mail
-            OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
+            OnSelect: =Navigate(Correo, ScreenTransition.Fade)
             X: =490
             Y: =19
             ZIndex: =7

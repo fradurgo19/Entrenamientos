@@ -1204,36 +1204,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "UsuarioDetailScreen_1.Form2.Titulo_DataCard2.DataCardValue21.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UsuarioDetailScreen_1.Form2.Titulo_DataCard2.DataCardValue21.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "UsuarioDetailScreen_1",
-                "type": "UsuarioDetailScreen_1.Form2.Titulo_DataCard2.DataCardValue21"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "UsuarioDetailScreen_1.Form2.Documento_DataCard2.DataCardValue22.AccessibleLabel"
                 }
               ],
