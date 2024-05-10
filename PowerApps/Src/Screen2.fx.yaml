@@ -508,8 +508,9 @@
         SearchItems: =Search('Ofertas de Entrenamientos',ComboBox1.SearchText,field_2)
         SelectionFill: =RGBA(100, 118, 132, 1)
         Size: =13
-        Width: =289
-        Y: =584
+        Width: =571
+        X: =32
+        Y: =581
         ZIndex: =15
 
     ComboBox1_1 As combobox:
@@ -533,8 +534,8 @@
         SearchItems: =Search('Usuarios Entrenamientos',ComboBox1_1.SearchText,field_1)
         SelectionFill: =RGBA(100, 118, 132, 1)
         Size: =13
-        Width: =289
-        X: =351
-        Y: =584
+        Width: =572
+        X: =31
+        Y: =658
         ZIndex: =16
 
