@@ -1,4 +1,4 @@
-<widget xmlns="http://openajax.org/metadata" spec="1.0" id="http://microsoft.com/appmagic/formViewer" name="formViewer" jsClass="AppMagic.Controls.Form.FormControl" version="2.3.2" styleable="true" runtimeCost="1" xmlns:appMagic="http://schemas.microsoft.com/appMagic">
+<widget xmlns="http://openajax.org/metadata" spec="1.0" id="http://microsoft.com/appmagic/formViewer" name="formViewer" jsClass="AppMagic.Controls.Form.FormControl" version="2.3.3" styleable="true" runtimeCost="1" xmlns:appMagic="http://schemas.microsoft.com/appMagic">
   <author name="Microsoft AppMagic" />
   <license type="text/html"><![CDATA[<p>TODO:  Need license text here.</p>]]></license>
   <description><![CDATA[FormViewer
@@ -92,8 +92,8 @@
       <appMagic:configureFields propertyInvariantName="ShowFields" dataSourcePropertyName="DataSource" supportsCollection="false" isEditable="false" displayFormat="PropertiesDisplayOrder" generateFieldSelectionConfig="true" addCustomFieldType="blankCard" fieldOrderingType="XYProperty" unsupportedFieldTypes="P" />
     </appMagic:section>
     <appMagic:section>
-      <appMagic:property name="SnapToColumns" showOnlyInPropertyPanel="true" hideInRecordingMode="true" promptUserBeforeChanging="true" promptUserTitle="##ControlSidebar_PropertiesPanel_ConfirmDialogMessage_SnapToColumns_Title##" promptUserBody="##ControlSidebar_PropertiesPanel_ConfirmDialogMessage_SnapToColumns_Body##" promptUserOkButtonText="##ControlSidebar_PropertiesPanel_ConfirmDialogMessage_SnapToColumns_OkButtonText##" promptUserOnValue="true" />
-      <appMagic:property name="NumberOfColumns" showOnlyInPropertyPanel="true" hideInRecordingMode="true" displayType="NumberOfColumnsEnum" />
+      <appMagic:property name="SnapToColumns" showOnlyInPropertyPanel="true" promptUserBeforeChanging="true" promptUserTitle="##ControlSidebar_PropertiesPanel_ConfirmDialogMessage_SnapToColumns_Title##" promptUserBody="##ControlSidebar_PropertiesPanel_ConfirmDialogMessage_SnapToColumns_Body##" promptUserOkButtonText="##ControlSidebar_PropertiesPanel_ConfirmDialogMessage_SnapToColumns_OkButtonText##" promptUserOnValue="true" />
+      <appMagic:property name="NumberOfColumns" showOnlyInPropertyPanel="true" displayType="NumberOfColumnsEnum" />
       <appMagic:serverProperty name="ControlLayout" label="##ControlSidebar_PropertiesPanel_Layout_DisplayName##" serverProvidesValue="true" computedValueType="ControlLayout" propertyInvariantName="ControlLayout" />
     </appMagic:section>
     <appMagic:section>
@@ -142,5 +142,8 @@
   </appMagic:conversion>
   <appMagic:conversion from="2.3.1" to="2.3.2">
     <!-- Adding showInCommandBar flag to Fields property -->
+  </appMagic:conversion>
+  <appMagic:conversion from="2.3.2" to="2.3.3">
+    <!-- Removing hideInRecordingMode property attribute -->
   </appMagic:conversion>
 </widget>
