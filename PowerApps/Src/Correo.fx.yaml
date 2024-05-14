@@ -491,9 +491,9 @@
         OnSelect: |
             =UpdateContext({SelectedEmail: Label1_4.Text}); // Guarda el correo seleccionado en una variable temporal
             If(
-                IsBlank(TextSearchBox2.Text),
+                IsBlank(Label2.Text),
                 Set(TextSearchBox2vacio, SelectedEmail), // Si el TextSearchBox2 está vacío, simplemente establece el correo seleccionado
-                Set(TextSearchBox2lleno, Concatenate(TextSearchBox2.Text , "; ", SelectedEmail)) // Si ya hay correos en el TextSearchBox2, concatena el correo seleccionado
+                Set(TextSearchBox2lleno, Concatenate(Label2.Text , "; ", SelectedEmail)) // Si ya hay correos en el TextSearchBox2, concatena el correo seleccionado
             )
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
