@@ -331,61 +331,6 @@
             Y: =Parent.TemplateHeight - 1
             ZIndex: =4
 
-    ComboBox1 As combobox:
-        BorderColor: =RGBA(32, 54, 71, 1)
-        ChevronBackground: =RGBA(100, 118, 132, 1)
-        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        ChevronHoverFill: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        DisplayFields: =["field_2"]
-        Height: =38
-        HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =RGBA(205, 209, 213, 1)
-        Items: ='Ofertas de Entrenamientos'
-        OnChange: |
-            =
-        OnSelect: |
-            =UpdateContext({SelectedOption: ComboBox1.SelectedItems})
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =RGBA(32, 54, 71, 1)
-        SearchFields: =["field_2"]
-        SearchItems: =Search('Ofertas de Entrenamientos',ComboBox1.SearchText,field_2)
-        SelectionFill: =RGBA(100, 118, 132, 1)
-        Size: =13
-        Width: =316
-        Y: =706
-        ZIndex: =15
-
-    ComboBox1_1 As combobox:
-        BorderColor: =RGBA(32, 54, 71, 1)
-        ChevronBackground: =RGBA(100, 118, 132, 1)
-        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        ChevronHoverFill: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        DisplayFields: =["field_1"]
-        Height: =37
-        HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =RGBA(205, 209, 213, 1)
-        Items: ='Usuarios Entrenamientos'
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =RGBA(32, 54, 71, 1)
-        SearchFields: =["field_1"]
-        SearchItems: =Search('Usuarios Entrenamientos',ComboBox1_1.SearchText,field_1)
-        SelectionFill: =RGBA(100, 118, 132, 1)
-        Size: =13
-        Width: =311
-        X: =329
-        Y: =706
-        ZIndex: =16
-
     Gallery1 As gallery.galleryVertical:
         BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =3
@@ -445,7 +390,7 @@
         BorderThickness: =3
         DelayItemLoading: =true
         Height: =380
-        Items: ='Usuarios Entrenamientos'
+        Items: =Search([@'Usuarios Entrenamientos'],ComboBox1_1.Selected,field_2)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowNavigation: =true
@@ -481,4 +426,58 @@
             Width: =301
             Y: =33
             ZIndex: =2
+
+    TextInputSearch_2 As text:
+        BorderColor: =RGBA(163,171,193,1)
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =63
+        HintText: ="Buscar Curso"
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(190, 202, 226, 0), 30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Reset: =ResetSearch
+        Size: =20
+        Width: =311
+        X: =329
+        Y: =677
+        ZIndex: =19
+
+    TextInputSearch_3 As text:
+        BorderColor: =RGBA(163,171,193,1)
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =63
+        HintText: ="Buscar Curso"
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(190, 202, 226, 0), 30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Reset: =ResetSearch
+        Size: =20
+        Width: =311
+        X: =5
+        Y: =677
+        ZIndex: =20
 
