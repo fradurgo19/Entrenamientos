@@ -37,7 +37,7 @@
         Height: =88
         Icon: =Icon.Send
         OnSelect: |-
-            =Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text, TextEmailMessage2.Text, {Importance:"Normal"});           
+            =Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text, TextEmailMessage2.Text, {Importance:"Normal",Bcc:"analista.mantenimiento@partequipos.com",Cc:"auxiliar.garantiasbg@partequipos.com"});           
             Reset(TextEmailSubject2);           
             Reset(TextEmailMessage2);
             UpdateContext({CorreosConcatenados: ""});
