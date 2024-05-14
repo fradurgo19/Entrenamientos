@@ -346,7 +346,7 @@
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowNavigation: =true
-        TemplateSize: =104
+        TemplateSize: =128
         Width: =289
         X: =27
         Y: =756
@@ -358,11 +358,11 @@
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(100, 118, 132, 1)
             FontWeight: =FontWeight.Bold
-            Height: =32
+            Height: =37
             OnSelect: =Select(Parent)
             Size: =10
             Text: =ThisItem.field_2
-            Width: =319
+            Width: =279
             Y: =5
             ZIndex: =1
 
@@ -371,12 +371,12 @@
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(100, 118, 132, 1)
-            Height: =25
+            Height: =24
             OnSelect: =Select(Parent)
             Size: =8
             Text: =ThisItem.Adjunto
-            Width: =319
-            Y: =42
+            Width: =279
+            Y: =50
             ZIndex: =2
 
         Label1_2 As label:
@@ -384,12 +384,12 @@
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(100, 118, 132, 1)
-            Height: =26
+            Height: =24
             OnSelect: =Select(Parent)
             Size: =8
             Text: =ThisItem.Prueba
-            Width: =319
-            Y: =75
+            Width: =279
+            Y: =91
             ZIndex: =3
 
     Gallery1_1 As gallery.galleryVertical:
@@ -431,7 +431,7 @@
             Size: =10
             Text: =ThisItem.field_1
             Width: =301
-            Y: =33
+            Y: =41
             ZIndex: =2
 
     TextInputSearch_2 As text:
@@ -506,7 +506,7 @@
         Text: ="Agregar Correo"
         Width: =289
         X: =329
-        Y: =624
+        Y: =608
         ZIndex: =21
 
     Label3 As label:
@@ -553,10 +553,10 @@
         RadiusTopLeft: =20
         RadiusTopRight: =20
         Size: =12
-        Text: ="Agregar Curso y Adjunto"
+        Text: ="Agregar Tema y Prueba"
         Width: =283
         X: =27
-        Y: =624
+        Y: =608
         ZIndex: =24
 
     Icon1_1 As icon.Reload:
