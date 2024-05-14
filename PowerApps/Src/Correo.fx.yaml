@@ -42,7 +42,8 @@
             Office365Outlook.SendEmail(Label3.Text, TextEmailSubject2.Text, TextEmailMessage2.Text, {Importance:"Normal"});           
             Reset(TextEmailSubject2);           
             Reset(TextEmailMessage2);
-            UpdateContext({CorreosConcatenados: ""});           
+            UpdateContext({CorreosConcatenados: ""});
+            UpdateContext({CorreosConcatenados1: ""});           
             Clear(MyPeople)
         PaddingBottom: =24
         PaddingLeft: =24
@@ -253,7 +254,7 @@
         DisabledFill: =RGBA(244, 244, 244, 1)
         FocusedBorderThickness: =4
         Height: =174
-        HintText: ="Agregar un mensaje"
+        HintText: ="Ingrese información"
         HoverBorderColor: =RGBA(32, 54, 71, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(205, 209, 213, 1)
