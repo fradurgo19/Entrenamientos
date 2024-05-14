@@ -247,7 +247,7 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         FocusedBorderThickness: =4
-        Height: =140
+        Height: =174
         HintText: ="Agregar un mensaje"
         HoverBorderColor: =RGBA(32, 54, 71, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
@@ -342,7 +342,7 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayFields: =["field_2"]
-        Height: =67
+        Height: =38
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(205, 209, 213, 1)
         Items: ='Ofertas de Entrenamientos'
@@ -356,9 +356,8 @@
         SearchItems: =Search('Ofertas de Entrenamientos',ComboBox1.SearchText,field_2)
         SelectionFill: =RGBA(100, 118, 132, 1)
         Size: =13
-        Width: =576
-        X: =32
-        Y: =576
+        Width: =316
+        Y: =706
         ZIndex: =15
 
     ComboBox1_1 As combobox:
@@ -372,7 +371,7 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayFields: =["field_1"]
-        Height: =67
+        Height: =37
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(205, 209, 213, 1)
         Items: ='Usuarios Entrenamientos'
@@ -382,8 +381,104 @@
         SearchItems: =Search('Usuarios Entrenamientos',ComboBox1_1.SearchText,field_1)
         SelectionFill: =RGBA(100, 118, 132, 1)
         Size: =13
-        Width: =572
-        X: =31
-        Y: =658
+        Width: =311
+        X: =329
+        Y: =706
         ZIndex: =16
+
+    Gallery1 As gallery.galleryVertical:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderThickness: =3
+        DelayItemLoading: =true
+        Height: =380
+        Items: ='Ofertas de Entrenamientos'
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowNavigation: =true
+        TemplateSize: =104
+        Width: =316
+        Y: =756
+        ZIndex: =17
+
+        Label1 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(232, 244, 217, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =ThisItem.field_2
+            Width: =319
+            Y: =5
+            ZIndex: =1
+
+        Label1_1 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(253, 222, 207, 1)
+            Height: =25
+            OnSelect: =Select(Parent)
+            Size: =8
+            Text: =ThisItem.Adjunto
+            Width: =319
+            Y: =42
+            ZIndex: =2
+
+        Label1_2 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(253, 222, 207, 1)
+            Height: =26
+            OnSelect: =Select(Parent)
+            Size: =8
+            Text: =ThisItem.Prueba
+            Width: =319
+            Y: =75
+            ZIndex: =3
+
+    Gallery1_1 As gallery.galleryVertical:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderThickness: =3
+        DelayItemLoading: =true
+        Height: =380
+        Items: ='Usuarios Entrenamientos'
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowNavigation: =true
+        TemplateSize: =66
+        Width: =310
+        X: =329
+        Y: =756
+        ZIndex: =18
+
+        Label1_3 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(232, 244, 217, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =27
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =ThisItem.field_0
+            Width: =301
+            ZIndex: =1
+
+        Label1_4 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(253, 222, 207, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =24
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =ThisItem.field_1
+            Width: =301
+            Y: =33
+            ZIndex: =2
 
