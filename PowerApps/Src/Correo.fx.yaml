@@ -488,10 +488,10 @@
         Height: =53
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: |-
+        OnSelect: |
             =UpdateContext({selectedText: Label1_4.Text});
             UpdateContext({searchText: selectedText});
-            UpdateContext({textSearchBox2Text: selectedText})
+            Set(TextSearchBox2, selectedText)
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
