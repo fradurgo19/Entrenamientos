@@ -489,9 +489,12 @@
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: |
-            =UpdateContext({selectedText: Label1_4.Text});
-            UpdateContext({searchText: selectedText});
-            Set(TextSearchBox, selectedText)
+            =UpdateContext({SelectedEmail: Label1_4.Text}); // Guarda el correo seleccionado en una variable temporal
+            If(
+                IsBlank(TextSearchBox2.Text),
+                Set(TextSearchBox2vacio, SelectedEmail), // Si el TextSearchBox2 está vacío, simplemente establece el correo seleccionado
+                Set(TextSearchBox2lleno, Concat(TextSearchBox2 , "; ", SelectedEmail)) // Si ya hay correos en el TextSearchBox2, concatena el correo seleccionado
+            )
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
