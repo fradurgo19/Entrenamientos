@@ -70,7 +70,7 @@
         Width: =EmailPeopleGallery2.Width
         Wrap: =false
         X: =32
-        Y: =RectQuickActionBar2.Height + 15
+        Y: =89
         ZIndex: =4
 
     TextSearchBox2 As text:
@@ -212,7 +212,7 @@
         Width: =Parent.Width - Self.X * 2
         Wrap: =false
         X: =32
-        Y: =EmailPeopleGallery2.Y + EmailPeopleGallery2.Height + 16
+        Y: =251
         ZIndex: =9
 
     TextEmailSubject2 As text:
@@ -234,7 +234,7 @@
         TabIndex: =If(PeopleBrowseGallery2.Visible, -1, 0)
         Width: =586
         X: =32
-        Y: =LblEmailSubject2.Y + LblEmailSubject2.Height + 6
+        Y: =305
         ZIndex: =10
 
     LblEmailMessage2 As label:
@@ -246,7 +246,7 @@
         Width: =200
         Wrap: =false
         X: =32
-        Y: =TextEmailSubject2.Y + TextEmailSubject2.Height + 16
+        Y: =383
         ZIndex: =11
 
     TextEmailMessage2 As text:
@@ -269,7 +269,7 @@
         TabIndex: =If(PeopleBrowseGallery2.Visible, -1, 0)
         Width: =586
         X: =32
-        Y: =LblEmailMessage2.Y + LblEmailMessage2.Height + 6
+        Y: =437
         ZIndex: =12
 
     PeopleBrowseGallery2 As gallery.PeoplePickerGallerySmall:
@@ -503,7 +503,7 @@
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: |-
             =UpdateContext({CorreoSeleccionado: Gallery1_1.Selected.Label1_4.Text});
-            UpdateContext({CorreosConcatenados: Concatenate(Label3.Text," ;", CorreoSeleccionado)})
+            UpdateContext({CorreosConcatenados: Concatenate(Label3.Text, CorreoSeleccionado)})
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
@@ -521,12 +521,12 @@
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =92
+        Height: =112
         Size: =21
         Text: =CorreosConcatenados
         Width: =586
         X: =32
-        Y: =147
+        Y: =139
         ZIndex: =22
 
     Icon1 As icon.Reload:
@@ -539,7 +539,7 @@
             =UpdateContext({CorreosConcatenados1: ""})
         Width: =48
         X: =565
-        Y: =363
+        Y: =371
         ZIndex: =23
 
     Button2_1 As button:
@@ -575,7 +575,7 @@
             =UpdateContext({CorreosConcatenados: ""})
         Width: =55
         X: =566
-        Y: =97
+        Y: =89
         ZIndex: =25
 
     Group3_5 As group:
