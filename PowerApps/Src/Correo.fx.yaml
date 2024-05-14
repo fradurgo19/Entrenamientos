@@ -37,9 +37,7 @@
         Height: =88
         Icon: =Icon.Send
         OnSelect: |-
-            =/*Create semicolon separated list of people to email, send the email, reset subject & message fields*/           
-                       
-            Office365Outlook.SendEmail(Label3.Text, TextEmailSubject2.Text, TextEmailMessage2.Text, {Importance:"Normal"});           
+            =Office365Outlook.SendEmail(Label3.Text, TextEmailSubject2.Text, TextEmailMessage2.Text, {Importance:"Normal"});           
             Reset(TextEmailSubject2);           
             Reset(TextEmailMessage2);
             UpdateContext({CorreosConcatenados: ""});
@@ -497,7 +495,7 @@
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: |-
             =UpdateContext({CorreoSeleccionado: Gallery1_1.Selected.Label1_4.Text});
-            UpdateContext({CorreosConcatenados: Concatenate(Label3.Text, "",";", CorreoSeleccionado)})
+            UpdateContext({CorreosConcatenados: Concatenate(Label3.Text,"",";", CorreoSeleccionado)})
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
