@@ -442,7 +442,7 @@
         FocusedBorderThickness: =4
         Font: =Font.Lato
         Height: =63
-        HintText: ="Buscar Usuario"
+        HintText: ="Buscar y Seleccionar Usuario "
         HoverBorderColor: =RGBA(255, 255, 255, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =ColorFade(RGBA(190, 202, 226, 0), 30%)
@@ -468,7 +468,7 @@
         FocusedBorderThickness: =4
         Font: =Font.Lato
         Height: =63
-        HintText: ="Buscar Curso"
+        HintText: ="Buscar y Seleccionar Curso"
         HoverBorderColor: =RGBA(255, 255, 255, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =ColorFade(RGBA(190, 202, 226, 0), 30%)
@@ -516,7 +516,7 @@
         Text: =CorreosConcatenados
         Width: =586
         X: =27
-        Y: =191
+        Y: =243
         ZIndex: =22
 
     Icon1 As icon.Reload:
@@ -530,4 +530,26 @@
         X: =452
         Y: =12
         ZIndex: =23
+
+    Button2_1 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =53
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: |-
+            =UpdateContext({CorreoSeleccionado: Gallery1_1.Selected.Label1_4.Text});
+            UpdateContext({CorreosConcatenados: Concatenate(Label3.Text, ";", CorreoSeleccionado)})
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =12
+        Text: ="Agregar Curso y Adjunto"
+        Width: =310
+        Y: =624
+        ZIndex: =24
 
