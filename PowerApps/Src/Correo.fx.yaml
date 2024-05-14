@@ -41,7 +41,8 @@
                        
             Office365Outlook.SendEmail(Label3.Text, TextEmailSubject2.Text, TextEmailMessage2.Text, {Importance:"Normal"});           
             Reset(TextEmailSubject2);           
-            Reset(TextEmailMessage2);           
+            Reset(TextEmailMessage2);
+            UpdateContext({CorreosConcatenados: ""});           
             Clear(MyPeople)
         PaddingBottom: =24
         PaddingLeft: =24
