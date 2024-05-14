@@ -507,11 +507,10 @@
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(0, 0, 0, 1)
-        Height: =189
+        Height: =48
         Size: =21
-        Text: |
-            =CorreosConcatenados
-        Width: =560
+        Text: =CorreosConcatenados
+        Width: =586
         X: =27
         Y: =283
         ZIndex: =22
