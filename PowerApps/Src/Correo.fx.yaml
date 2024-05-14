@@ -1,5 +1,8 @@
 "Correo As screen.'phoneLayout_Email_ver3.0'":
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    OnVisible: |-
+        =UpdateContext({CorreoSeleccionado: Gallery1_1.Selected.Label1_4.Text});
+        UpdateContext({CorreosConcatenados: Concatenate(Label3.Text, ";", CorreoSeleccionado)})
 
     RectQuickActionBar2 As rectangle:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -507,7 +510,7 @@
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(0, 0, 0, 1)
-        Height: =48
+        Height: =76
         Size: =21
         Text: =CorreosConcatenados
         Width: =586
