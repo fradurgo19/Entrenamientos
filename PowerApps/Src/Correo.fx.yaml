@@ -37,7 +37,15 @@
         Height: =88
         Icon: =Icon.Send
         OnSelect: |-
-            =Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text, TextEmailMessage2.Text, {Importance:"Normal",Bcc:"analista.mantenimiento@partequipos.com",Cc:"auxiliar.garantiasbg@partequipos.com"});           
+            =Set(EnvioCorreo, "<!DOCTYPE html>
+            <html>
+            <body>
+            
+            <h1 style='color:Black;'>REALIZAR EL ENTRENAMIENTO DE PARTEQUIPOS</h1>
+            
+            </body>
+            </html>");
+            Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text, TextEmailMessage2.Text, {Importance:"Normal",Bcc:"analista.mantenimiento@partequipos.com",Cc:"auxiliar.garantiasbg@partequipos.com"});           
             Reset(TextEmailSubject2);           
             Reset(TextEmailMessage2);
             UpdateContext({CorreosConcatenados: ""});
