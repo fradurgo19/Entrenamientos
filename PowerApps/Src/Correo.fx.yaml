@@ -497,7 +497,7 @@
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: |-
             =UpdateContext({CorreoSeleccionado: Gallery1_1.Selected.Label1_4.Text});
-            UpdateContext({CorreosConcatenados: Concatenate(Label3.Text, " ;", CorreoSeleccionado)})
+            UpdateContext({CorreosConcatenados: Concatenate(Label3.Text, "",";", CorreoSeleccionado)})
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
