@@ -336,7 +336,7 @@
         BorderThickness: =3
         DelayItemLoading: =true
         Height: =380
-        Items: ='Ofertas de Entrenamientos'
+        Items: =Search([@'Ofertas de Entrenamientos'],TextInputSearch_3.Text,field_2)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowNavigation: =true
@@ -439,7 +439,7 @@
         FocusedBorderThickness: =4
         Font: =Font.Lato
         Height: =63
-        HintText: ="Buscar Curso"
+        HintText: ="Buscar Usuario"
         HoverBorderColor: =RGBA(32, 54, 71, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(190, 202, 226, 0), 30%)
@@ -447,8 +447,8 @@
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Reset: =ResetSearch
-        Size: =20
+        Reset: =
+        Size: =12
         Width: =311
         X: =329
         Y: =677
@@ -457,7 +457,7 @@
     TextInputSearch_3 As text:
         BorderColor: =RGBA(163,171,193,1)
         BorderThickness: =2
-        Color: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(0, 0, 0, 1)
         Default: =""
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -474,8 +474,8 @@
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Reset: =ResetSearch
-        Size: =20
+        Reset: =
+        Size: =12
         Width: =311
         X: =5
         Y: =677
