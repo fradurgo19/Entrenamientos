@@ -493,11 +493,8 @@
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: |-
-            =UpdateContext({CorreosConcatenados: Concatenate(Label3.Text, ";", First(Filter([@'Usuarios Entrenamientos'], field_0 = TextInputSearch_2.Text)).field_1)})
-            
-            
-            //UpdateContext({CorreoSeleccionado: Gallery1_1.Selected.Label1_4.Text});;
-            //UpdateContext({CorreosConcatenados: Concatenate(Label3.Text; ";"; CorreoSeleccionado)})
+            =UpdateContext({CorreoSeleccionado: Gallery1_1.Selected.Label1_4.Text});
+            UpdateContext({CorreosConcatenados: Concatenate(Label3.Text, ";", CorreoSeleccionado)})
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
