@@ -21,7 +21,7 @@
         Text: ="Correo electrónico"
         Width: =356
         Wrap: =false
-        X: =32
+        X: =80
         ZIndex: =2
 
     iconMail2 As icon.Send:
@@ -571,4 +571,34 @@
         X: =566
         Y: =97
         ZIndex: =25
+
+    Group3_5 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =28
+
+        Rectangle1_8 As rectangle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(100, 118, 132, 1)
+            Height: =88
+            OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =100
+            ZIndex: =26
+
+        icon1_5 As icon.ChevronLeft:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =35.55555555555556
+            Icon: =Icon.ChevronLeft
+            OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =35.55555555555556
+            X: =29
+            Y: =26
+            ZIndex: =27
 
