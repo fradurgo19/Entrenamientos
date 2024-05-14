@@ -38,8 +38,8 @@
         Icon: =Icon.Send
         OnSelect: |-
             =/*Create semicolon separated list of people to email, send the email, reset subject & message fields*/           
-            Set(_emailRecipientString, Concat(MyPeople, Mail & ";"));           
-            Office365Outlook.SendEmail(_emailRecipientString, TextEmailSubject2.Text, TextEmailMessage2.Text, {Importance:"Normal"});           
+                       
+            Office365Outlook.SendEmail(Label3.Text, TextEmailSubject2.Text, TextEmailMessage2.Text, {Importance:"Normal"});           
             Reset(TextEmailSubject2);           
             Reset(TextEmailMessage2);           
             Clear(MyPeople)
@@ -508,9 +508,9 @@
 
     Label3 As label:
         BorderColor: =RGBA(32, 54, 71, 1)
-        Color: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(255, 255, 255, 1)
         Height: =92
         Size: =21
         Text: =CorreosConcatenados
