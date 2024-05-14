@@ -3573,6 +3573,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Correo.concatenatedText"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Correo.concatenatedText",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "concatenatedText",
+                "module": "Correo",
+                "type": "Correo"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "CustomerOverviewScreen.Canvas1.DataCard1.TextBox1_13.Text"
                 }
               ],

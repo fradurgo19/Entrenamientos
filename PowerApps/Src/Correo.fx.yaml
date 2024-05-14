@@ -488,7 +488,8 @@
         Height: =53
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =TextSearchBox2.Text = Gallery1_1.Selected.Label1_4.Text
+        OnSelect: |
+            =UpdateContext({concatenatedText: TextSearchBox2.Text & Label1_4.Text})
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
