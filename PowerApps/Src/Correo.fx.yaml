@@ -488,13 +488,9 @@
         Height: =53
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: |
-            =UpdateContext({SelectedEmail: Label1_4.Text}); // Guarda el correo seleccionado en una variable temporal
-            If(
-                IsBlank(Label2.Text),
-                Set(TextSearchBox2vacio, SelectedEmail), // Si el TextSearchBox2 está vacío, simplemente establece el correo seleccionado
-                Set(TextSearchBox2lleno, Concatenate(Label2.Text , "; ", SelectedEmail)) // Si ya hay correos en el TextSearchBox2, concatena el correo seleccionado
-            )
+        OnSelect: |-
+            =UpdateContext({CorreoSeleccionado: Gallery1_1.Selected.field_1});
+            UpdateContext({CorreosConcatenados: Concatenate(Label3.Text, ";", CorreoSeleccionado)})
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
@@ -505,4 +501,18 @@
         X: =329
         Y: =624
         ZIndex: =21
+
+    Label3 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =70
+        Size: =21
+        Text: |
+            =CorreosConcatenados
+        Width: =560
+        X: =32
+        Y: =118
+        ZIndex: =22
 
