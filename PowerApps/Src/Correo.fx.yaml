@@ -479,30 +479,24 @@
         Y: =677
         ZIndex: =20
 
-    ComboBox1 As combobox:
-        BorderColor: =RGBA(32, 54, 71, 1)
-        ChevronBackground: =RGBA(100, 118, 132, 1)
-        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        ChevronHoverFill: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(0, 0, 0, 1)
+    Button2 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        DisplayFields: =["field_0"]
-        Height: =50
-        HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =RGBA(205, 209, 213, 1)
-        Items: ='Usuarios Entrenamientos'
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =RGBA(32, 54, 71, 1)
-        SearchFields: =["field_0"]
-        SearchItems: =Search('Usuarios Entrenamientos',ComboBox1.SearchText,field_0)
-        SelectionColor: =RGBA(0, 0, 0, 1)
-        SelectionFill: =RGBA(255, 255, 255, 1)
-        Size: =21
-        Width: =311
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =53
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =TextSearchBox2.Text = Gallery1_1.Selected.Label1_4.Text
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =12
+        Text: ="Agregar Correo"
+        Width: =310
         X: =329
-        Y: =611
+        Y: =624
         ZIndex: =21
 

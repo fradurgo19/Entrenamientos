@@ -94,46 +94,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Correo.ComboBox1.SearchItems"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Correo.ComboBox1.SearchItems",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 54,
-                  "snippet": {
-                    "text": "field_0"
-                  }
-                }
-              },
-              "properties": {
-                "member": "SearchItems",
-                "module": "Correo",
-                "type": "Correo.ComboBox1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Search"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "ActiveWorkOrderScreen.GalleryWorkOrder.Items"
                 }
               ],
@@ -3297,36 +3257,6 @@
                 "member": "AccessibleLabel",
                 "module": "UsuarioDetailScreen_1",
                 "type": "UsuarioDetailScreen_1.Form2.Documento_DataCard2.DataCardValue22"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Correo.ComboBox1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Correo.ComboBox1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Correo",
-                "type": "Correo.ComboBox1"
               }
             }
           ],
