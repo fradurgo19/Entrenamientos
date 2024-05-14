@@ -491,7 +491,7 @@
         OnSelect: |
             =UpdateContext({selectedText: Label1_4.Text});
             UpdateContext({searchText: selectedText});
-            Set(TextSearchBox2, selectedText)
+            Set(TextSearchBox, selectedText)
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
