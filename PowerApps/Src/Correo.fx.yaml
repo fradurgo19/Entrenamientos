@@ -218,7 +218,7 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         FocusedBorderThickness: =4
-        Height: =70
+        Height: =54
         HintText: ="Agregar un asunto"
         HoverBorderColor: =RGBA(32, 54, 71, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
@@ -247,8 +247,7 @@
         BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =2
         Color: =RGBA(0, 0, 0, 1)
-        Default: |-
-            ="Por favor Desarrollar el Tema y la prueba con los Siguientes links:"
+        Default: =CorreosConcatenados1
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -529,7 +528,7 @@
         DisabledColor: =RGBA(244, 244, 244, 1)
         Icon: =Icon.Reload
         OnSelect: |-
-            =UpdateContext({CorreosConcatenados: ""})
+            =UpdateContext({CorreosConcatenados: ""});UpdateContext({CorreosConcatenados1: ""})
         X: =452
         Y: =12
         ZIndex: =23
@@ -544,8 +543,8 @@
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: |-
-            =UpdateContext({CorreoSeleccionado: Gallery1_1.Selected.Label1_4.Text});
-            UpdateContext({CorreosConcatenados: Concatenate(Label3.Text, ";", CorreoSeleccionado)})
+            =UpdateContext({CorreoSeleccionado1: Gallery1.Selected.Label1_1.Text});
+            UpdateContext({CorreosConcatenados1: Concatenate(TextEmailMessage2.Text, ";", CorreoSeleccionado1)})
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
