@@ -10,13 +10,13 @@
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =101
+        Height: =122
         Size: =21
         Text: =CorreosConcatenados
         Width: =586
         Wrap: =false
         X: =32
-        Y: =139
+        Y: =129
         ZIndex: =1
 
     RectQuickActionBar2 As rectangle:
@@ -383,7 +383,7 @@
             DisabledColor: =RGBA(244, 244, 244, 1)
             Fill: =RGBA(0, 0, 0, 1)
             Height: =41
-            Icon: =Icon.Publish
+            Icon: =Icon.Post
             OnSelect: |-
                 =Select(Parent);UpdateContext({CorreoSeleccionado1: Gallery1.Selected.Label1_1.Text});
                 UpdateContext({CorreosConcatenados1: Concatenate(TextEmailMessage2.Text, ";", CorreoSeleccionado1)})
@@ -506,13 +506,13 @@
         BorderColor: =RGBA(32, 54, 71, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =38
+        Height: =35
         Icon: =Icon.Reload
         OnSelect: |-
             =UpdateContext({CorreosConcatenados1: ""})
-        Width: =42
-        X: =566
-        Y: =380
+        Width: =39
+        X: =569
+        Y: =383
         ZIndex: =19
 
     Icon1_1 As icon.Reload:
@@ -524,8 +524,8 @@
         OnSelect: |-
             =UpdateContext({CorreosConcatenados: ""})
         Width: =52
-        X: =566
-        Y: =100
+        X: =569
+        Y: =94
         ZIndex: =21
 
     Button3 As button:
