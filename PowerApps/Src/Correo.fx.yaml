@@ -4,12 +4,27 @@
         =UpdateContext({CorreoSeleccionado: Gallery1_1.Selected.Label1_4.Text});
         UpdateContext({CorreosConcatenados: Concatenate(Label3.Text, ";", CorreoSeleccionado)})
 
+    Label3 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =101
+        Size: =21
+        Text: =CorreosConcatenados
+        Width: =586
+        Wrap: =false
+        X: =32
+        Y: =139
+        ZIndex: =1
+
     RectQuickActionBar2 As rectangle:
         BorderColor: =RGBA(32, 54, 71, 1)
         Fill: =RGBA(100, 118, 132, 1)
         Height: =88
         Width: =Parent.Width
-        ZIndex: =1
+        ZIndex: =2
 
     LblAppName2 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -22,7 +37,7 @@
         Width: =344
         Wrap: =false
         X: =116
-        ZIndex: =2
+        ZIndex: =3
 
     LblRecipientCount2 As label:
         Color: =RGBA(0, 0, 0, 1)
@@ -319,7 +334,7 @@
         Width: =289
         X: =27
         Y: =756
-        ZIndex: =17
+        ZIndex: =14
 
         Label1 As label:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -388,7 +403,7 @@
         Width: =291
         X: =330
         Y: =756
-        ZIndex: =18
+        ZIndex: =15
 
         Label1_3 As label:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -457,7 +472,7 @@
         Width: =289
         X: =329
         Y: =677
-        ZIndex: =19
+        ZIndex: =16
 
     TextInputSearch_3 As text:
         BorderThickness: =3
@@ -483,7 +498,7 @@
         Width: =289
         X: =27
         Y: =677
-        ZIndex: =20
+        ZIndex: =17
 
     Button2 As button:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -506,22 +521,7 @@
         Width: =289
         X: =329
         Y: =617
-        ZIndex: =21
-
-    Label3 As label:
-        AutoHeight: =true
-        BorderColor: =RGBA(32, 54, 71, 1)
-        BorderThickness: =2
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =112
-        Size: =21
-        Text: =CorreosConcatenados
-        Width: =586
-        X: =32
-        Y: =139
-        ZIndex: =22
+        ZIndex: =18
 
     Icon1 As icon.Reload:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -534,7 +534,7 @@
         Width: =42
         X: =566
         Y: =380
-        ZIndex: =23
+        ZIndex: =19
 
     Button2_1 As button:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -557,7 +557,7 @@
         Width: =283
         X: =27
         Y: =617
-        ZIndex: =24
+        ZIndex: =20
 
     Icon1_1 As icon.Reload:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -570,14 +570,15 @@
         Width: =52
         X: =566
         Y: =100
-        ZIndex: =25
+        ZIndex: =21
 
     Button3 As button:
+        BorderThickness: =0
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(100, 118, 132, 1)
-        FontWeight: =FontWeight.Semibold
+        FontWeight: =FontWeight.Bold
         Height: =88
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
@@ -596,11 +597,15 @@
             UpdateContext({CorreosConcatenados: ""});
             UpdateContext({CorreosConcatenados1: ""});           
             Clear(MyPeople)
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
         Size: =19
         Text: ="Enviar"
         Width: =180
         X: =460
-        ZIndex: =28
+        ZIndex: =24
 
     Group3_5 As group:
         Height: =5
@@ -616,7 +621,7 @@
             OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
             TabIndex: =0
             Width: =100
-            ZIndex: =26
+            ZIndex: =22
 
         icon1_5 As icon.ChevronLeft:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -630,5 +635,5 @@
             Width: =35
             X: =29
             Y: =26
-            ZIndex: =27
+            ZIndex: =23
 
