@@ -544,32 +544,12 @@
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: |-
-            =Set(EnvioCorreo, "<!DOCTYPE html>
-            <html lang="es">
-            <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Aviso de Planeación Semanal</title>
-            </head>
-            <body style="font-family: Arial, sans-serif, background-color: #f0f0f0, padding: 20px,">
-            
-            <div style="background-color: #ffffff, padding: 20px, border-radius: 10px, box-shadow: 0 2px 5px rgba(0. 0. 0. 0.1),">
-                <h2 style="color: #333333,">🌟 ¡Hola equipo! 🌟</h2>
-                <p style="color: #333333,">¡Es un buen día para planificar juntos! 😊 Queremos agradecerles por tomarse el tiempo para completar la planeación semanal. Nuestra dedicación es clave para el éxito del equipo. 👏</p>
-                <p style="color: #333333,">Por favor, revisen la siguiente página para acceder a la planeación semanal:</p>
-                <a href="https://partequipos2.sharepoint.com/sites/servicioposventa/SitePages/Planeacion.aspx" style="display: inline-block; background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-bottom: 20px;">Enlace a la Planeación Semanal</a>
-                <p style="color: #333333;">¡Gracias por contribuir al flujo de trabajo de manera tan eficiente! 💼🚀</p>
-                <p style="color: #333333;">¡Sigamos trabajando en equipo hacia nuestros objetivos! 💪✨</p>
-            </div>
-            
-            </body>
-            </html>
-            ");;
-            Office365Outlook.SendEmailV2(Label3.Text; TextEmailSubject2.Text; TextEmailMessage2.Text; {Importance:"Normal";Bcc:"analista.mantenimiento@partequipos.com"});;           
-            Reset(TextEmailSubject2);;           
-            Reset(TextEmailMessage2);;
-            UpdateContext({CorreosConcatenados: ""});;
-            UpdateContext({CorreosConcatenados1: ""});;
+            =Set(EnvioCorreo, "");
+            Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text, TextEmailMessage2.Text, {Importance:"Normal",Bcc:"analista.mantenimiento@partequipos.com"});           
+            Reset(TextEmailSubject2);           
+            Reset(TextEmailMessage2);
+            UpdateContext({CorreosConcatenados: ""});
+            UpdateContext({CorreosConcatenados1: ""});
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
