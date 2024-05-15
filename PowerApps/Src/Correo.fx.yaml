@@ -385,8 +385,13 @@
             Height: =41
             Icon: =Icon.Post
             OnSelect: |-
-                =Select(Parent);UpdateContext({CorreoSeleccionado1: Gallery1.Selected.Label1_1.Text});
-                UpdateContext({CorreosConcatenados1: Concatenate(TextEmailMessage2.Text, ";", CorreoSeleccionado1)})
+                =Select(Parent);
+                
+                UpdateContext({CorreoSeleccionado1: Gallery1.Selected.Label1_1.Text});
+                UpdateContext({CorreosConcatenados1: Concatenate(TextEmailMessage2.Text, ";", CorreoSeleccionado1)});
+                
+                UpdateContext({CorreoSeleccionado2: Gallery1.Selected.Label1_2.Text});
+                UpdateContext({CorreosConcatenados2: Concatenate(TextEmailMessage2.Text, ";", CorreoSeleccionado2)})
             Width: =35
             X: =230
             Y: =42

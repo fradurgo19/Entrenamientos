@@ -3843,6 +3843,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Correo.CorreosConcatenados2"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Correo.CorreosConcatenados2",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "CorreosConcatenados2",
+                "module": "Correo",
+                "type": "Correo"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "WorkOrderDetailScreen.Canvas1_1.DataCard3_1.TextBox4_178.Text"
                 }
               ],
