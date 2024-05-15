@@ -539,20 +539,12 @@
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: |-
-            =Set(EnvioCorreo, "<!DOCTYPE html>
-            <html>
-            <body>
-            
-            <h1 style='color:Black;'>REALIZAR EL ENTRENAMIENTO DE PARTEQUIPOS</h1>
-            
-            </body>
-            </html>");
+            =Set(EnvioCorreo, "");
             Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text, TextEmailMessage2.Text, {Importance:"Normal",Bcc:"analista.mantenimiento@partequipos.com"});           
             Reset(TextEmailSubject2);           
             Reset(TextEmailMessage2);
             UpdateContext({CorreosConcatenados: ""});
-            UpdateContext({CorreosConcatenados1: ""});           
-            Clear(MyPeople)
+            UpdateContext({CorreosConcatenados1: ""});
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
