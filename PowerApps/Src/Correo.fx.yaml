@@ -533,13 +533,13 @@
         BorderColor: =RGBA(32, 54, 71, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =39
+        Height: =38
         Icon: =Icon.Reload
         OnSelect: |-
             =UpdateContext({CorreosConcatenados1: ""})
-        Width: =48
-        X: =565
-        Y: =371
+        Width: =42
+        X: =566
+        Y: =380
         ZIndex: =23
 
     Button2_1 As button:
@@ -569,13 +569,13 @@
         BorderColor: =RGBA(32, 54, 71, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =42
+        Height: =30
         Icon: =Icon.Reload
         OnSelect: |-
             =UpdateContext({CorreosConcatenados: ""})
-        Width: =55
+        Width: =52
         X: =566
-        Y: =89
+        Y: =100
         ZIndex: =25
 
     Group3_5 As group:
