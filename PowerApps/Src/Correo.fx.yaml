@@ -466,7 +466,7 @@
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: |-
             =UpdateContext({CorreoSeleccionado: Gallery1_1.Selected.Label1_4.Text});
-            UpdateContext({CorreosConcatenados: Concatenate(Label3.Text, CorreoSeleccionado)})
+            UpdateContext({CorreosConcatenados: Concatenate(Label3.Text, CorreoSeleccionado, ";")})
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
@@ -559,7 +559,7 @@
             
             </body>
             </html>");
-            Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text, TextEmailMessage2.Text, {Importance:"Normal",Bcc:"analista.mantenimiento@partequipos.com",Cc:"auxiliar.garantiasbg@partequipos.com"});           
+            Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text, TextEmailMessage2.Text, {Importance:"Normal",Bcc:"analista.mantenimiento@partequipos.com"});           
             Reset(TextEmailSubject2);           
             Reset(TextEmailMessage2);
             UpdateContext({CorreosConcatenados: ""});
