@@ -19,47 +19,10 @@
         PaddingLeft: =0
         Size: =27
         Text: ="Correo electrónico"
-        Width: =356
+        Width: =344
         Wrap: =false
-        X: =104
+        X: =116
         ZIndex: =2
-
-    iconMail2 As icon.Send:
-        BorderColor: =RGBA(153, 207, 236, 1)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(116, 116, 116, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        DisabledFill: =RGBA(100, 118, 132, 1)
-        DisplayMode: |-
-            =/*Email must have a subject and recipients to be sent*/
-            If(Len(Trim(TextEmailSubject2.Text)) > 0 && !IsEmpty(MyPeople), DisplayMode.Edit, DisplayMode.Disabled)
-        Fill: =RGBA(100, 118, 132, 1)
-        Height: =88
-        Icon: =Icon.Send
-        OnSelect: |-
-            =Set(EnvioCorreo, "<!DOCTYPE html>
-            <html>
-            <body>
-            
-            <h1 style='color:Black;'>REALIZAR EL ENTRENAMIENTO DE PARTEQUIPOS</h1>
-            
-            </body>
-            </html>");
-            Office365Outlook.SendEmailV2(Label1_4.Text, TextEmailSubject2.Text, TextEmailMessage2.Text, {Importance:"Normal",Bcc:"analista.mantenimiento@partequipos.com",Cc:"auxiliar.garantiasbg@partequipos.com"});           
-            Reset(TextEmailSubject2);           
-            Reset(TextEmailMessage2);
-            UpdateContext({CorreosConcatenados: ""});
-            UpdateContext({CorreosConcatenados1: ""});           
-            Clear(MyPeople)
-        PaddingBottom: =24
-        PaddingLeft: =24
-        PaddingRight: =24
-        PaddingTop: =24
-        PressedFill: =RGBA(255, 255, 255, 0.3)
-        Tooltip: ="Enviar mensaje"
-        Width: =88
-        X: =Parent.Width - Self.Width
-        ZIndex: =3
 
     LblRecipientCount2 As label:
         Color: =RGBA(0, 0, 0, 1)
@@ -577,6 +540,35 @@
         X: =566
         Y: =100
         ZIndex: =25
+
+    Button3 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =88
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: |-
+            =Set(EnvioCorreo, "<!DOCTYPE html>
+            <html>
+            <body>
+            
+            <h1 style='color:Black;'>REALIZAR EL ENTRENAMIENTO DE PARTEQUIPOS</h1>
+            
+            </body>
+            </html>");
+            Office365Outlook.SendEmailV2(Label1_4.Text, TextEmailSubject2.Text, TextEmailMessage2.Text, {Importance:"Normal",Bcc:"analista.mantenimiento@partequipos.com",Cc:"auxiliar.garantiasbg@partequipos.com"});           
+            Reset(TextEmailSubject2);           
+            Reset(TextEmailMessage2);
+            UpdateContext({CorreosConcatenados: ""});
+            UpdateContext({CorreosConcatenados1: ""});           
+            Clear(MyPeople)
+        Size: =19
+        Text: ="Enviar"
+        X: =480
+        ZIndex: =28
 
     Group3_5 As group:
         Height: =5
