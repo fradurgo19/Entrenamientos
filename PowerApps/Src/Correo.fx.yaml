@@ -361,6 +361,20 @@
             Y: =91
             ZIndex: =3
 
+        Icon3 As icon.Folder:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =41
+            Icon: =Icon.Publish
+            OnSelect: =Select(Parent)
+            Width: =35
+            X: =230
+            Y: =42
+            ZIndex: =4
+
     Gallery1_1 As gallery.galleryVertical:
         BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =3
@@ -402,6 +416,22 @@
             Width: =301
             Y: =41
             ZIndex: =2
+
+        Icon2 As icon.Mail:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =39
+            Icon: =Icon.Mail
+            OnSelect: |-
+                =Select(Parent);UpdateContext({CorreoSeleccionado: Gallery1_1.Selected.Label1_4.Text});
+                UpdateContext({CorreosConcatenados: Concatenate(Label3.Text, CorreoSeleccionado,"; ")})
+            Width: =38
+            X: =229
+            Y: =26
+            ZIndex: =3
 
     TextInputSearch_2 As text:
         BorderThickness: =3
@@ -479,6 +509,7 @@
         ZIndex: =21
 
     Label3 As label:
+        AutoHeight: =true
         BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =2
         Color: =RGBA(0, 0, 0, 1)
