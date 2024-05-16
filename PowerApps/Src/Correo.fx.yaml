@@ -526,14 +526,28 @@
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(100, 118, 132, 1)
+        Fill: =RGBA(152, 208, 70, 1)
         FontWeight: =FontWeight.Semibold
         Height: =88
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: |-
-            =Set(EnvioCorreo, "");
-            Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text,EnvioCorreo && TextEmailMessage2.Text, {Importance:"Normal",Bcc:"analista.mantenimiento@partequipos.com"});           
+            =Set(EnvioCorreo, "!DOCTYPE html
+            html
+            head
+            titlePage Title/title
+            /head
+            h1Estimado Colaborador/h1
+            body
+            p1Se les strongnotifica:/strongbr/br/
+            &&
+            br/br/
+            img src=""&&""title=height='80' width='80' /
+            
+            /body
+            h2Saludosbr/Desarrollos Power Platform/h2
+            /html");
+            Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text, EnvioCorreo || TextEmailMessage2.Text, {Importance:"Normal",Bcc:"analista.mantenimiento@partequipos.com"});           
             Reset(TextEmailSubject2);           
             Reset(TextEmailMessage2);
             UpdateContext({CorreosConcatenados: ""});
@@ -571,7 +585,7 @@
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =35
             Icon: =Icon.ChevronLeft
-            OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
+            OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
             TabIndex: =0
             Width: =35
             X: =29
