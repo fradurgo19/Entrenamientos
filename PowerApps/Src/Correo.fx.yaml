@@ -536,7 +536,7 @@
             Set(EnvioCorreo,"<!DOCTYPE html>
                 <html>
                 <head>
-                <title>¡Importante!</title>
+                <title>¡Importante! ENTRENAMIENTOS PARTEQUIPOS</title>
                 <style>
                 body {
                     font-family: Arial, sans-serif;
@@ -562,14 +562,14 @@
                 </head>
                 <body>
                 <div class='message'>
-                <img src='" & varimagen & "' alt='Imagen' style='display: block; margin: 0 auto; max-width: 100%; height: auto;' /><br/>
-                <h1>¡Atención!</h1>
+                <img src='https://imgur.com/a/F4uS215' alt='Imagen' style='display: block; margin: 0 auto; max-width: 100%; height: auto;' /><br/>
+                <h1>¡Atención! ENTRENAMIENTO PARTEQUIPOS</h1>
                 <p>Estimado Colaborador,<br/><br/>
-                Les notificamos sobre el siguiente asunto:<br/><br/>
-                <strong>" & varimagen & "</strong>
+                Le notificamos sobre el curso y la prueba que la encuentra en el siguiente link:<br/><br/>
+                <strong>Links abajo de Curso y de Prueba</strong>
                 </p>
-                <p>Por favor, revisen este mensaje con detenimiento.</p>
-                <p>Saludos,<br/>Desarrollos Power Platform</p>
+                <p>Por favor, revisen este mensaje con detenimiento y realice l actividad en el tiempo contemplado.</p>
+                <p>Saludos,<br/>Desarrollos Power Platform PARTEQUIPOS</p>
                 </div>
                 </body>
                 </html>"
