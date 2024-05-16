@@ -41,7 +41,7 @@ MenuScreen As screen:
         PressedBorderColor: =TextBox4_44.BorderColor
         PressedColor: =TextBox4_44.Color
         PressedFill: =TextBox4_44.Fill
-        Size: =18
+        Size: =25
         Text: ="VER"
         Width: =595
         X: =45
@@ -55,16 +55,16 @@ MenuScreen As screen:
         Fill: =RGBA(255, 0, 0, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
-        Height: =44
+        Height: =42
         HoverBorderColor: =TextBox4_48.BorderColor
         HoverColor: =TextBox4_48.Color
         HoverFill: =TextBox4_48.Fill
         PressedBorderColor: =TextBox4_48.BorderColor
         PressedColor: =TextBox4_48.Color
         PressedFill: =TextBox4_48.Fill
-        Size: =18
+        Size: =25
         Text: ="AGREGAR"
-        Width: =571
+        Width: =595
         X: =45.5
         Y: =551
         ZIndex: =13
@@ -150,7 +150,7 @@ MenuScreen As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =84
+        Height: =51
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: =Navigate(AddNewOpportunityScreen, ScreenTransition.Fade)
@@ -160,9 +160,9 @@ MenuScreen As screen:
         RadiusTopRight: =30
         Size: =24
         Text: ="Nueva Asignación"
-        Width: =221
+        Width: =368
         X: =22
-        Y: =625
+        Y: =630
         ZIndex: =17
 
     TextBox4_47 As label:
@@ -180,7 +180,7 @@ MenuScreen As screen:
         PressedBorderColor: =TextBox4_47.BorderColor
         PressedColor: =TextBox4_47.Color
         PressedFill: =TextBox4_47.Fill
-        Size: =21
+        Size: =25
         Text: ="OFERTA ENTRENAMIENTOS"
         Width: =640
         Y: =142
@@ -207,6 +207,6 @@ MenuScreen As screen:
         Text: ="Correo"
         Width: =221
         X: =22
-        Y: =746
+        Y: =727
         ZIndex: =19
 
