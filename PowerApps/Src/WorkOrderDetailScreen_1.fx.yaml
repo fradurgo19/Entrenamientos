@@ -130,7 +130,7 @@
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =83
                 Icon: =Icon.Send
-                OnSelect: =EditForm(Form3);
+                OnSelect: =EditForm(Form3);Navigate(ActiveWorkOrderScreen, ScreenTransition.Fade)
                 PaddingBottom: =24
                 PaddingLeft: =24
                 PaddingRight: =24
