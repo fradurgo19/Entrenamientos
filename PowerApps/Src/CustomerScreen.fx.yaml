@@ -31,8 +31,9 @@ CustomerScreen As screen:
         Layout: =Layout.Vertical
         PressedBorderColor: =GalleryCustumer.BorderColor
         PressedFill: =GalleryCustumer.Fill
+        ShowNavigation: =true
         TemplatePadding: =0
-        TemplateSize: =123.05555555555554
+        TemplateSize: =123
         Visible: =CountRows(GalleryCustumer.AllItems) > 0
         Y: =224
         ZIndex: =2
@@ -95,7 +96,7 @@ CustomerScreen As screen:
         Rectangle4 As rectangle:
             BorderColor: =RGBA(32, 54, 71, 1)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =123
+            Height: =123.05555555555554
             OnSelect: =Navigate(CustomerOverviewScreen, ScreenTransition.Fade)
             TabIndex: =0
             Width: =640

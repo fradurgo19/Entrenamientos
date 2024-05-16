@@ -200,18 +200,18 @@ ActiveWorkOrderScreen As screen:
     TextInputSearch_1 As text:
         BorderColor: =RGBA(163,171,193,1)
         BorderThickness: =2
-        Color: =RGBA(0, 0, 0, 1)
+        Color: =RGBA(255, 255, 255, 1)
         Default: =""
-        DisabledBorderColor: =RGBA(204, 231, 246, 1)
-        DisabledColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(0, 0, 0, 0)
         FocusedBorderThickness: =4
         Font: =Font.Lato
         Height: =58
         HintText: ="Buscar por Usuario o Curso"
-        HoverBorderColor: =RGBA(204, 231, 246, 1)
-        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(190, 202, 226, 0), 30%)
         RadiusBottomLeft: =0
         RadiusBottomRight: =0

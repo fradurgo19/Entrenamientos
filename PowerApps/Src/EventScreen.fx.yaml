@@ -13,7 +13,7 @@ EventScreen As screen:
         Height: =954
         HoverBorderColor: =GalleryEvent.BorderColor
         HoverFill: =GalleryEvent.Fill
-        Items: =Search([@'Usuarios Entrenamientos'],TextInputSearch_4.Text,field_0)
+        Items: =Search([@'Usuarios Entrenamientos'],TextInputSearch.Text,field_0)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         PressedBorderColor: =GalleryEvent.BorderColor
@@ -198,17 +198,18 @@ EventScreen As screen:
     TextInputSearch_4 As text:
         BorderColor: =RGBA(163,171,193,1)
         BorderThickness: =2
-        Color: =RGBA(0, 0, 0, 1)
+        Color: =RGBA(255, 255, 255, 1)
         Default: =""
-        DisabledBorderColor: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, 0)
         FocusedBorderThickness: =4
         Font: =Font.Lato
         Height: =77
         HintText: ="Buscar Usuario"
-        HoverBorderColor: =RGBA(255, 255, 255, 1)
-        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(190, 202, 226, 0), 30%)
         RadiusBottomLeft: =0
         RadiusBottomRight: =0

@@ -92,7 +92,6 @@
     FormViewer2 As formViewer:
         BorderColor: =RGBA(32, 54, 71, 1)
         DataSource: ='Usuarios Entrenamientos'
-        Fill: =RGBA(255, 255, 255, 1)
         Height: =1021
         Item: =GalleryEvent.Selected
         Width: =640
