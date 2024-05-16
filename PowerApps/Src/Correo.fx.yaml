@@ -539,7 +539,7 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(100, 118, 132, 1)
-        FontWeight: =FontWeight.Bold
+        FontWeight: =FontWeight.Semibold
         Height: =88
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
@@ -554,7 +554,7 @@
         RadiusBottomRight: =20
         RadiusTopLeft: =20
         RadiusTopRight: =20
-        Size: =19
+        Size: =27
         Text: ="Enviar"
         Width: =180
         X: =460
