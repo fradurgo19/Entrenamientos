@@ -55,7 +55,7 @@
         PressedFill: =TextBox1_22.Fill
         Size: =28
         Text: ="Detalles de Asignación"
-        Width: =523
+        Width: =411
         X: =81
         ZIndex: =9
 
@@ -1070,4 +1070,17 @@
                 Wrap: =false
                 Y: =DataCardKey30.Y
                 ZIndex: =4
+
+    Icon4 As icon.Edit:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(6, 26, 84, 1)
+        Height: =58
+        Icon: =Icon.Edit
+        Width: =77
+        X: =548
+        Y: =20
+        ZIndex: =16
 
