@@ -85,9 +85,9 @@ EventScreen As screen:
         NextArrow3 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
             BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(166, 166, 166, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(255, 255, 255, 1)
             Height: =65
             Icon: =Icon.ChevronRight
             OnSelect: =Navigate(UsuarioDetailScreen, ScreenTransition.Fade)
