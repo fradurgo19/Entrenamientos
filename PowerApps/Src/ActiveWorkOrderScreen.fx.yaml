@@ -23,6 +23,7 @@ ActiveWorkOrderScreen As screen:
         PressedFill: =GalleryWorkOrder.Fill
         Reset: |
             =
+        ShowNavigation: =true
         TemplatePadding: =0
         TemplateSize: =116
         Visible: =CountRows(GalleryWorkOrder.AllItems) > 0
