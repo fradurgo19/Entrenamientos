@@ -960,16 +960,3 @@ AddNewOpportunityScreen As screen:
                 Y: =DataCardKey6.Y
                 ZIndex: =4
 
-    LblRecipientCount1 As label:
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Height: =30
-        PaddingLeft: =0
-        Size: =18
-        Text: =
-        Width: =
-        Wrap: =false
-        X: =12
-        Y: =775
-        ZIndex: =18
-
