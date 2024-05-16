@@ -202,12 +202,11 @@ ActiveWorkOrderScreen As screen:
     TextInputSearch_1 As text:
         BorderColor: =RGBA(163,171,193,1)
         BorderThickness: =2
-        Color: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(0, 0, 0, 1)
         Default: =""
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledBorderColor: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(255, 255, 255, 1)
         FocusedBorderThickness: =4
         Font: =Font.Lato
         Height: =58
