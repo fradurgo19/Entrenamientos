@@ -89,31 +89,10 @@
                 Y: =9.09090909090909
                 ZIndex: =1
 
-            TextBox4_192 As label:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(0, 0, 0, 0.70196078)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =Font.'Lato Light'
-                FontWeight: =FontWeight.Semibold
-                Height: =33
-                HoverBorderColor: =TextBox4_192.BorderColor
-                HoverColor: =TextBox4_192.Color
-                HoverFill: =TextBox4_192.Fill
-                PressedBorderColor: =TextBox4_192.BorderColor
-                PressedColor: =TextBox4_192.Color
-                PressedFill: =TextBox4_192.Fill
-                Size: =15
-                Text: =GalleryEvent.Selected.field_5
-                VerticalAlign: =VerticalAlign.Top
-                Width: =560
-                X: =40
-                Y: =447.75555555555615
-                ZIndex: =19
-
     FormViewer2 As formViewer:
         BorderColor: =RGBA(32, 54, 71, 1)
         DataSource: ='Usuarios Entrenamientos'
-        Height: =841
+        Height: =850
         Item: =GalleryEvent.Selected
         Width: =640
         Y: =111
@@ -319,8 +298,8 @@
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =15
+                Y: =56
                 ZIndex: =1
 
             DataCardValue11 As label:

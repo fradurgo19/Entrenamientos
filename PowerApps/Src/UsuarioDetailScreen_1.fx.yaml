@@ -54,7 +54,7 @@
         PressedColor: =TextBox1_27.Color
         PressedFill: =TextBox1_27.Fill
         Size: =28
-        Text: ="Agregar Usuario"
+        Text: ="Editar Usuario"
         Width: =523
         X: =81
         ZIndex: =9
@@ -89,31 +89,42 @@
                 Y: =9.09090909090909
                 ZIndex: =1
 
-            TextBox4_193 As label:
+        DataCard5 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =100
+            Width: =640
+            X: =0
+            Y: =2
+            ZIndex: =4
+
+            iconMail1_2 As icon.Send:
                 BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(0, 0, 0, 0.70196078)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =Font.'Lato Light'
-                FontWeight: =FontWeight.Semibold
-                Height: =33
-                HoverBorderColor: =TextBox4_193.BorderColor
-                HoverColor: =TextBox4_193.Color
-                HoverFill: =TextBox4_193.Fill
-                PressedBorderColor: =TextBox4_193.BorderColor
-                PressedColor: =TextBox4_193.Color
-                PressedFill: =TextBox4_193.Fill
-                Size: =15
-                Text: =GalleryEvent.Selected.field_5
-                VerticalAlign: =VerticalAlign.Top
-                Width: =560
-                X: =40
-                Y: =447.75555555555615
-                ZIndex: =19
+                DisabledBorderColor: =RGBA(255, 0, 0, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                DisabledFill: =RGBA(240, 240, 240, 0.5)
+                DisplayMode: =
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =83
+                Icon: =Icon.Send
+                OnSelect: =EditForm(Form2);SubmitForm(Form2);Navigate(UsuarioDetailScreen, ScreenTransition.Fade)
+                PaddingBottom: =24
+                PaddingLeft: =24
+                PaddingRight: =24
+                PaddingTop: =24
+                PressedFill: =RGBA(255, 255, 255, 0.3)
+                Tooltip: ="Enviar mensaje"
+                Width: =620
+                X: =20
+                Y: =17
+                ZIndex: =1
 
     Form2 As form:
         BorderColor: =RGBA(32, 54, 71, 1)
         DataSource: ='Usuarios Entrenamientos'
-        Height: =840
+        Height: =817
         Item: =GalleryEvent.Selected
         Width: =640
         Y: =116
@@ -357,25 +368,6 @@
                 Y: =DataCardKey17.Y + DataCardKey17.Height + 5
                 ZIndex: =2
 
-            ErrorMessage9 As label:
-                AutoHeight: =true
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FontWeight: =FontWeight.Semibold
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =24
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue17.Y + DataCardValue17.Height
-                ZIndex: =3
-
             StarVisible9 As label:
                 Align: =Align.Center
                 Color: =RGBA(32, 54, 71, 1)
@@ -397,7 +389,7 @@
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Usuarios Entrenamientos'],DataSourceInfo.DisplayName,field_3)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =131
             MaxLength: =DataSourceInfo([@'Usuarios Entrenamientos'], DataSourceInfo.MaxLength, field_3)
             Required: =false
             Update: =DataCardValue18.Text
