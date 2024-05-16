@@ -532,21 +532,22 @@
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: |-
-            =Set(EnvioCorreo, "!DOCTYPE html
-            html
-            head
-            titlePage Title/title
-            /head
-            h1Estimado Colaborador/h1
-            body
-            p1Se les strongnotifica:/strongbr/br/
-            &&
-            br/br/
-            img src=""&&""title=height='80' width='80' /
-            
-            /body
-            h2Saludosbr/Desarrollos Power Platform/h2
-            /html");
+            =Set(
+                EnvioCorreo,
+                "<!DOCTYPE html>
+                <html>
+                <head>
+                <title>ENTRENAMIENTOS PARTEQUIPOS</title>
+                </head>
+                <body>
+                <h1>Estimado Colaborador</h1>
+                <p>Agradecemos validar el link del tema y el link de la prueba:<br/><br/>" & EnvioCorreo & "<br/><br/>
+                <img src="" && "" title="" height='80' width='80' />
+                </p>
+                <h2>Agradecemos validar los temas ante del tiempo previsto<br/>Entrenamientos Partequipos</h2>
+                </body>
+                </html>"
+            );
             Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text, EnvioCorreo &  TextEmailMessage2.Text, {Importance:"Normal",Bcc:"analista.mantenimiento@partequipos.com"});           
             Reset(TextEmailSubject2);           
             Reset(TextEmailMessage2);
