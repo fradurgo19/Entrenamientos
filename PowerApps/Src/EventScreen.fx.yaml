@@ -10,7 +10,7 @@ EventScreen As screen:
         DisabledBorderColor: =GalleryEvent.BorderColor
         DisabledFill: =GalleryEvent.Fill
         Fill: =RGBA(237, 237, 237, 1)
-        Height: =1036
+        Height: =954
         HoverBorderColor: =GalleryEvent.BorderColor
         HoverFill: =GalleryEvent.Fill
         Items: ='Usuarios Entrenamientos'
@@ -23,7 +23,7 @@ EventScreen As screen:
         TemplatePadding: =0
         TemplateSize: =116
         Visible: =CountRows(GalleryEvent.AllItems) > 0
-        Y: =100
+        Y: =180
         ZIndex: =1
 
         Title3 As label:
@@ -148,7 +148,7 @@ EventScreen As screen:
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =35
             Icon: =Icon.ChevronLeft
-            OnSelect: =Back(ScreenTransition.UnCover)
+            OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
             TabIndex: =0
             Width: =35
             X: =32.22222222222222
