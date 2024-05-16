@@ -532,7 +532,7 @@
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: |+
-            =Set(varimagen,JSON(Image3.Image,JSONFormat.IncludeBinaryData);
+            =Set(varimagen,JSON(Image3.Image,JSONFormat.IncludeBinaryData));
             Set(EnvioCorreo,"<!DOCTYPE html>
                 <html>
                 <head>
@@ -574,7 +574,6 @@
                 </body>
                 </html>"
             );
-            
             Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text, EnvioCorreo &  TextEmailMessage2.Text, {Importance:"Normal",Bcc:"analista.mantenimiento@partequipos.com"});           
             Reset(TextEmailSubject2);           
             Reset(TextEmailMessage2);
