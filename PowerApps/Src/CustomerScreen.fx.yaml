@@ -22,7 +22,7 @@ CustomerScreen As screen:
         BorderColor: =RGBA(32, 54, 71, 1)
         DisabledBorderColor: =GalleryCustumer.BorderColor
         DisabledFill: =GalleryCustumer.Fill
-        Height: =829
+        Height: =853
         HoverBorderColor: =GalleryCustumer.BorderColor
         HoverFill: =GalleryCustumer.Fill
         Items: |+
@@ -35,7 +35,7 @@ CustomerScreen As screen:
         TemplatePadding: =0
         TemplateSize: =123
         Visible: =CountRows(GalleryCustumer.AllItems) > 0
-        Y: =224
+        Y: =200
         ZIndex: =2
 
         Rectangle1_2 As rectangle:
@@ -78,7 +78,7 @@ CustomerScreen As screen:
             PressedColor: =TextBox1_1.Color
             PressedFill: =TextBox1_1.Fill
             Size: =16
-            Text: =ThisItem.field_0
+            Text: =ThisItem.field_6.Value
             Width: =592
             X: =24
             Y: =68.70899470899465
@@ -94,7 +94,8 @@ CustomerScreen As screen:
             ZIndex: =4
 
         Rectangle4 As rectangle:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =2
             Fill: =RGBA(0, 0, 0, 0)
             Height: =123.05555555555554
             OnSelect: =Navigate(CustomerOverviewScreen, ScreenTransition.Fade)
