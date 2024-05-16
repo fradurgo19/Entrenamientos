@@ -502,7 +502,8 @@
         Height: =40
         Icon: =Icon.Reload
         OnSelect: |-
-            =UpdateContext({CorreosConcatenados1: ""})
+            =UpdateContext({CorreosConcatenados1: ""});
+            Reset(TextInputSearch_2)
         Width: =38
         X: =570
         Y: =383
