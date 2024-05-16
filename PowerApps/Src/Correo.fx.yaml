@@ -499,11 +499,11 @@
         BorderColor: =RGBA(32, 54, 71, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =35
+        Height: =40
         Icon: =Icon.Reload
         OnSelect: |-
             =UpdateContext({CorreosConcatenados1: ""})
-        Width: =39
+        Width: =38
         X: =569
         Y: =383
         ZIndex: =18
