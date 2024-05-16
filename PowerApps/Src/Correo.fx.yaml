@@ -504,7 +504,7 @@
         OnSelect: |-
             =UpdateContext({CorreosConcatenados1: ""})
         Width: =38
-        X: =569
+        X: =570
         Y: =383
         ZIndex: =18
 
@@ -518,7 +518,7 @@
             =UpdateContext({CorreosConcatenados: ""})
         Width: =63
         X: =558
-        Y: =89
+        Y: =260
         ZIndex: =19
 
     Button3 As button:
