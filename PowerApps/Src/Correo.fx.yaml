@@ -1,8 +1,8 @@
 "Correo As screen.'phoneLayout_Email_ver3.0'":
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
-    OnVisible: |-
+    OnVisible: |
         =UpdateContext({CorreoSeleccionado: Gallery1_1.Selected.Label1_4.Text});
-        UpdateContext({CorreosConcatenados: Concatenate(Label3.Text, ";", CorreoSeleccionado)})
+        UpdateContext({CorreosConcatenados: Concatenate(Label3.Text, ";", CorreoSeleccionado)});
 
     TextSearchBox2 As text:
         AccessibleLabel: ="Busque personas o agregue direcciones de correo electrónico. Se necesita al menos un destinatario para un envío correcto."
@@ -531,16 +531,9 @@
         Height: =88
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: |-
-            =Set(
-                varimagen,
-                JSON(
-                    Image3.Image,
-                    JSONFormat.IncludeBinaryData
-                );
-            Set(
-                EnvioCorreo,
-                "<!DOCTYPE html>
+        OnSelect: |+
+            =Set(varimagen,JSON(Image3.Image,JSONFormat.IncludeBinaryData);
+            Set(EnvioCorreo,"<!DOCTYPE html>
                 <html>
                 <head>
                 <title>¡Importante!</title>
@@ -581,12 +574,14 @@
                 </body>
                 </html>"
             );
+            
             Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text, EnvioCorreo &  TextEmailMessage2.Text, {Importance:"Normal",Bcc:"analista.mantenimiento@partequipos.com"});           
             Reset(TextEmailSubject2);           
             Reset(TextEmailMessage2);
             UpdateContext({CorreosConcatenados: ""});
             UpdateContext({CorreosConcatenados1: ""});
             Navigate(MenuScreen, ScreenTransition.Fade)
+            
         RadiusBottomLeft: =1
         RadiusBottomRight: =1
         RadiusTopLeft: =1
