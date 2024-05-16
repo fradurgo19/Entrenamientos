@@ -71,11 +71,11 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =837.7142857142859
+            Height: =1038
             Width: =Parent.Width
             WidthFit: =false
             X: =0
-            Y: =1
+            Y: =0
             ZIndex: =3
 
             Rectangle1_20 As rectangle:
@@ -92,7 +92,7 @@
     FormViewer2 As formViewer:
         BorderColor: =RGBA(32, 54, 71, 1)
         DataSource: ='Usuarios Entrenamientos'
-        Height: =850
+        Height: =1021
         Item: =GalleryEvent.Selected
         Width: =640
         Y: =111
