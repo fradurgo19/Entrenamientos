@@ -537,14 +537,40 @@
                 "<!DOCTYPE html>
                 <html>
                 <head>
-                <title>ENTRENAMIENTOS PARTEQUIPOS</title>
+                <title>¡Importante!</title>
+                <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f2f2f2;
+                }
+                h1 {
+                    color: #333333;
+                    text-align: center;
+                }
+                .message {
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                    padding: 20px;
+                    margin: 20px auto;
+                    max-width: 600px;
+                }
+                .message img {
+                    display: block;
+                    margin: 0 auto;
+                }
+                </style>
                 </head>
                 <body>
-                <h1>Estimado Colaborador</h1>
-                <p>Agradecemos validar el link del tema y el link de la prueba:<br/><br/>" & EnvioCorreo & "<br/><br/>
-                <img src="" && "" title="" height='80' width='80' />
+                <div class='message'>
+                <h1>¡Atención!</h1>
+                <p>Estimado Colaborador,<br/><br/>
+                Les notificamos sobre el siguiente asunto:<br/><br/>
+                <strong>" & EnvioCorreo & "</strong>
                 </p>
-                <h2>Agradecemos validar los temas ante del tiempo previsto<br/>Entrenamientos Partequipos</h2>
+                <p>Por favor, revisen este mensaje con detenimiento.</p>
+                <p>Saludos,<br/>Desarrollos Power Platform</p>
+                </div>
                 </body>
                 </html>"
             );
@@ -563,6 +589,18 @@
         Width: =180
         X: =460
         ZIndex: =22
+
+    Image3 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =26
+        Image: ='Captura de pantalla 2024-01-12 082706'
+        ImagePosition: =ImagePosition.Fill
+        Width: =204
+        X: =214
+        Y: =94
+        ZIndex: =23
 
     Group3_5 As group:
         Height: =5
