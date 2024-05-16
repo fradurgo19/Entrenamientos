@@ -31,9 +31,10 @@
     Label3 As label:
         BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =2
-        Color: =RGBA(0, 0, 0, 1)
+        Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FocusedBorderThickness: =30
         Height: =122
         PaddingBottom: =1
         PaddingLeft: =1
@@ -225,7 +226,7 @@
         DisabledFill: =RGBA(244, 244, 244, 1)
         FocusedBorderThickness: =4
         Height: =174
-        HintText: ="Ingrese información"
+        HintText: ="Link Tema y Link Prueba."
         HoverBorderColor: =RGBA(32, 54, 71, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(205, 209, 213, 1)
