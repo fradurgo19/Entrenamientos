@@ -552,6 +552,7 @@
             Reset(TextEmailMessage2);
             UpdateContext({CorreosConcatenados: ""});
             UpdateContext({CorreosConcatenados1: ""});
+            Navigate(MenuScreen, ScreenTransition.Fade)
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
