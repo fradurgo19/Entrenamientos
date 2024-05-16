@@ -108,11 +108,13 @@ CustomerScreen As screen:
         BorderColor: =RGBA(32, 54, 71, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =64
+        Height: =58
         Image: =home
         OnSelect: =Navigate(MenuScreen,ScreenTransition.None)
         TabIndex: =0
-        Width: =96
+        Width: =84
+        X: =30
+        Y: =10
         ZIndex: =3
 
     TextBox1_3 As label:
@@ -135,26 +137,6 @@ CustomerScreen As screen:
         X: =457
         Y: =16.428571428571427
         ZIndex: =5
-
-    TextBox1_4 As label:
-        Align: =TextPosition.Right
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Font: =Font.'Lato Hairline'
-        Height: =62
-        HoverBorderColor: =TextBox1_4.BorderColor
-        HoverColor: =TextBox1_4.Color
-        HoverFill: =TextBox1_4.Fill
-        PressedBorderColor: =TextBox1_4.BorderColor
-        PressedColor: =TextBox1_4.Color
-        PressedFill: =TextBox1_4.Fill
-        Size: =22
-        Text: ="Total"
-        Width: =159
-        X: =357
-        Y: =15
-        ZIndex: =6
 
     TextBox1_12 As label:
         BorderColor: =RGBA(32, 54, 71, 1)
