@@ -530,7 +530,7 @@ AddNewOpportunityScreen As screen:
             Update: =DataCardValue2.Selected
             Width: =640
             X: =0
-            Y: =1
+            Y: =2
             ZIndex: =17
 
             DataCardKey2 As label:
@@ -622,7 +622,7 @@ AddNewOpportunityScreen As screen:
             Update: =DataCardValue3.Selected
             Width: =640
             X: =0
-            Y: =2
+            Y: =4
             ZIndex: =17
 
             DataCardKey3 As label:
@@ -804,7 +804,7 @@ AddNewOpportunityScreen As screen:
             Update: =DataCardValue5.Value
             Width: =640
             X: =0
-            Y: =4
+            Y: =5
             ZIndex: =17
 
             DataCardKey5 As label:
@@ -881,7 +881,7 @@ AddNewOpportunityScreen As screen:
             Update: =DataCardValue6.Selected
             Width: =640
             X: =0
-            Y: =5
+            Y: =1
             ZIndex: =17
 
             DataCardKey6 As label:
