@@ -471,3 +471,17 @@
                 Y: =DataCardKey14.Y + DataCardKey14.Height + 5
                 ZIndex: =2
 
+    Icon4_1 As icon.Edit:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(6, 26, 84, 1)
+        Height: =58
+        Icon: =Icon.Edit
+        OnSelect: =Navigate(UsuarioDetailScreen_1, ScreenTransition.Fade)
+        Width: =77
+        X: =548
+        Y: =20
+        ZIndex: =16
+
