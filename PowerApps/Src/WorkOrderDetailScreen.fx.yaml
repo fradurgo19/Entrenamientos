@@ -75,7 +75,7 @@
             Width: =Parent.Width
             WidthFit: =false
             X: =0
-            Y: =1
+            Y: =0
             ZIndex: =3
 
             Rectangle1_13 As rectangle:
@@ -115,10 +115,10 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =100
+            Height: =91
             Width: =640
             X: =0
-            Y: =2
+            Y: =1
             ZIndex: =4
 
             iconMail1 As icon.Send:
@@ -143,6 +143,18 @@
                 X: =9
                 Y: =9
                 ZIndex: =1
+
+            Label2 As label:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =70
+                Size: =21
+                Text: ="ENVIAR CORREO"
+                Width: =560
+                X: =9
+                Y: =15
+                ZIndex: =2
 
     FormViewer3 As formViewer:
         BorderColor: =RGBA(32, 54, 71, 1)
