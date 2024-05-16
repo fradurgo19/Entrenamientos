@@ -48,7 +48,7 @@ AddNewOpportunityScreen As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
-        Height: =67
+        Height: =75
         HoverBorderColor: =TextBox1_64.BorderColor
         HoverColor: =TextBox1_64.Color
         HoverFill: =TextBox1_64.Fill
@@ -57,7 +57,7 @@ AddNewOpportunityScreen As screen:
         PressedFill: =TextBox1_64.Fill
         Size: =25
         Text: ="Asignar"
-        Width: =549.3968253968254
+        Width: =182
         X: =27.285714285714292
         Y: =110
         ZIndex: =8
@@ -959,4 +959,16 @@ AddNewOpportunityScreen As screen:
                 Wrap: =false
                 Y: =DataCardKey5.Y
                 ZIndex: =4
+
+    Image3_1 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =35
+        Image: ='Captura de pantalla 2024-01-12 082706'
+        ImagePosition: =ImagePosition.Fill
+        Width: =426
+        X: =214
+        Y: =108
+        ZIndex: =17
 
