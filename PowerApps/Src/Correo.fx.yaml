@@ -547,7 +547,7 @@
             /body
             h2Saludosbr/Desarrollos Power Platform/h2
             /html");
-            Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text,  TextEmailMessage2.Text, {Importance:"Normal",Bcc:"analista.mantenimiento@partequipos.com"});           
+            Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text, EnvioCorreo &  TextEmailMessage2.Text, {Importance:"Normal",Bcc:"analista.mantenimiento@partequipos.com"});           
             Reset(TextEmailSubject2);           
             Reset(TextEmailMessage2);
             UpdateContext({CorreosConcatenados: ""});
