@@ -107,7 +107,7 @@
     Form4 As form:
         BorderColor: =RGBA(32, 54, 71, 1)
         DataSource: ='Ofertas de Entrenamientos'
-        Height: =528
+        Height: =646
         Item: =GalleryCustumer.Selected
         Width: =640
         Y: =358
@@ -571,7 +571,7 @@
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Ofertas de Entrenamientos'],DataSourceInfo.DisplayName,field_4)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =319
             Required: =false
             Update: =DataCardValue48.SelectedItems
             Width: =640
@@ -605,7 +605,7 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Height: =70
+                Height: =250
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
                 Items: =Choices([@'Ofertas de Entrenamientos'].field_4)
