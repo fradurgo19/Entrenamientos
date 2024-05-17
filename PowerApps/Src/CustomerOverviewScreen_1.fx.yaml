@@ -34,7 +34,7 @@
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =35.55555555555556
             Icon: =Icon.ChevronLeft
-            OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
+            OnSelect: =Navigate(CustomerOverviewScreen, ScreenTransition.Fade)
             TabIndex: =0
             Width: =35.55555555555556
             X: =32.22222222222222
@@ -78,14 +78,14 @@
         Height: =86
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
+        OnSelect: =EditForm([@Form4]);SubmitForm([@Form4]);Navigate(MenuScreen, ScreenTransition.Fade)
         PaddingLeft: =35
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
         Size: =23
-        Text: ="Menu"
+        Text: ="Actualizar"
         Width: =640
         Y: =1050
         ZIndex: =15
@@ -96,12 +96,12 @@
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =32
-        Icon: =Icon.OptionsList
+        Icon: =Icon.Sync
         OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
         TabIndex: =0
         Width: =32
-        X: =247.28571428571433
-        Y: =1076.8571428571433
+        X: =215
+        Y: =1076
         ZIndex: =16
 
     Form4 As form:
@@ -662,7 +662,7 @@
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Ofertas de Entrenamientos'],DataSourceInfo.DisplayName,field_4)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =319
+            Height: =171
             Required: =false
             Update: =DataCardValue48.SelectedItems
             Width: =640

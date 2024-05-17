@@ -515,3 +515,14 @@
         Y: =1076.8571428571433
         ZIndex: =16
 
+    Icon5 As icon.Edit:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Icon: =Icon.Edit
+        OnSelect: =Navigate(CustomerOverviewScreen_1, ScreenTransition.Fade)
+        X: =553
+        Y: =16
+        ZIndex: =17
+
