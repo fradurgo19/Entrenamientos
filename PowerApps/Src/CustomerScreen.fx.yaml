@@ -192,7 +192,8 @@ CustomerScreen As screen:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =32
-        Icon: =Icon.Search
+        Icon: =Icon.Reload
+        OnSelect: =Reset(TextInputSearch)
         TabIndex: =0
         Width: =32
         X: =564.000000000003
