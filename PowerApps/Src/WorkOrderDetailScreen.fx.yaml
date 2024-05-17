@@ -173,9 +173,8 @@
                     </div>
                     </body>
                     </html>
-                    "
-                    );
-                    Office365Outlook.SendEmail(DataCardValue36.Selected.Value, "ENTRENAMIENTOS PARTEQUIPOS", EnvioCorreo, {Importance:"High",Bcc:"analista.mantenimiento@partequipos.com",Cc:"auxiliar.garantiasbg@partequipos.com"});       
+                    ");
+                    Office365Outlook.SendEmailV2(DataCardValue36.Selected.Value, "ENTRENAMIENTOS PARTEQUIPOS", EnvioCorreo, {Importance:"High",Bcc:"analista.mantenimiento@partequipos.com",Cc:"auxiliar.garantiasbg@partequipos.com"});       
                     Navigate(OpportunityMessageScreen,ScreenTransition.Fade)
                 PaddingBottom: =24
                 PaddingLeft: =24
