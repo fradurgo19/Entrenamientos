@@ -132,7 +132,50 @@
                 Icon: =Icon.Send
                 OnSelect: |-
                     =Set(Mensaje,"si");
-                    Office365Outlook.SendEmail(DataCardValue36.Selected.Value, "CORREO DE ENTRENAMIENTOS PARTEQUIPOS", Mensaje, {Importance:"High"});       
+                    Set(varimagen,Image3.Image);
+                    Set(EnvioCorreo,"<!DOCTYPE html>
+                    <html>
+                    <head>
+                    <title>¡Importante! ENTRENAMIENTOS PARTEQUIPOS</title>
+                    <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        background-color: #f2f2f2;
+                    }
+                    h1 {
+                        color: #333333;
+                        text-align: center;
+                    }
+                    .message {
+                        background-color: #ffffff;
+                        border-radius: 10px;
+                        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                        padding: 20px;
+                        margin: 20px auto;
+                        max-width: 600px;
+                    }
+                    .message img {
+                        display: block;
+                        margin: 0 auto;
+                    }
+                    </style>
+                    </head>
+                    <body>
+                    <div class='message'>
+                    <img src='https://i.imgur.com/38jHGbX.png' alt='Imagen' style='display: block; margin: 0 auto; max-width: 100%; height: auto;' /><br/>
+                    <h1>¡Atención! ENTRENAMIENTO PARTEQUIPOS ⚡️🚀</h1>
+                    <p>Estimado Colaborador,<br/><br/>
+                    Le notificamos sobre el curso y la prueba Asignada:<br/><br/>
+                    <strong>Links al final del correo, encontrará el link del Curso y de la Prueba</strong>
+                    </p>
+                    <p>Por favor, revisen este mensaje con detenimiento y realice la actividad en el tiempo contemplado. 🔍🕒</p>
+                    <p>Saludos,<br/>Desarrollos Power Platform PARTEQUIPOS 💻🌟</p>
+                    </div>
+                    </body>
+                    </html>
+                    "
+                    );
+                    Office365Outlook.SendEmail(DataCardValue36.Selected.Value, "ENTRENAMIENTOS PARTEQUIPOS", EnvioCorreo, {Importance:"High",Bcc:"analista.mantenimiento@partequipos.com",Cc:"auxiliar.garantiasbg@partequipos.com"});       
                     Navigate(OpportunityMessageScreen,ScreenTransition.Fade)
                 PaddingBottom: =24
                 PaddingLeft: =24
