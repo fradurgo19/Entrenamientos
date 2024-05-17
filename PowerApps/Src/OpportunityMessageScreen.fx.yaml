@@ -87,13 +87,13 @@ OpportunityMessageScreen As screen:
         Height: =86
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        OnSelect: =Navigate(CustomerOverviewScreen, ScreenTransition.Fade)
+        OnSelect: =Navigate(EventScreen, ScreenTransition.Fade)
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
         Size: =23
-        Text: ="Retornar a la descripcion del curso"
+        Text: ="Retornar a la lista de Usuarios"
         Width: =552
         X: =44
         Y: =894.5
