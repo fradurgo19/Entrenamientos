@@ -246,6 +246,7 @@
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
                 Height: =70
+                HintText: ="Link Recurso"
                 HoverBorderColor: =RGBA(32, 54, 71, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
@@ -336,6 +337,7 @@
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
                 Height: =70
+                HintText: ="Link Cuestionario"
                 HoverBorderColor: =RGBA(32, 54, 71, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
@@ -787,6 +789,7 @@
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
                 Height: =70
+                HintText: ="Escriba Alcance"
                 HoverBorderColor: =RGBA(32, 54, 71, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
