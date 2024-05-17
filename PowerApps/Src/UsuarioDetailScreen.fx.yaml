@@ -1,11 +1,10 @@
 "UsuarioDetailScreen As screen.'PhoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Fill: =RGBA(237, 242, 246, 1)
     Height: =Max(App.Height, App.DesignHeight)
-    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     Width: =Max(App.Width, App.DesignWidth)
 
     Rectangle1_14 As rectangle:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Fill: =RGBA(6,26,84,1)
         TabIndex: =0
         Width: =640
@@ -19,7 +18,7 @@
         ZIndex: =8
 
         Rectangle1_15 As rectangle:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Fill: =RGBA(6, 26, 84, 1)
             OnSelect: =Back()
             TabIndex: =0
@@ -27,7 +26,7 @@
             ZIndex: =6
 
         icon1_2 As icon.ChevronLeft:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -41,7 +40,7 @@
             ZIndex: =7
 
     TextBox1_26 As label:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.Lato
@@ -88,7 +87,7 @@
                 ZIndex: =1
 
     FormViewer2 As formViewer:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: ='Usuarios Entrenamientos'
         Fill: =RGBA(255, 255, 255, 1)
         Height: =968
@@ -98,7 +97,7 @@
         ZIndex: =15
 
         Nombre_DataCard1 As typedDataCard.textualViewCard:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_0"
             Default: =ThisItem.field_0
@@ -114,7 +113,7 @@
 
             DataCardKey7 As label:
                 AutoHeight: =true
-                Color: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
@@ -127,7 +126,7 @@
 
             DataCardValue7 As label:
                 AutoHeight: =true
-                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderColor: =RGBA(0, 89, 178, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
@@ -142,7 +141,7 @@
                 ZIndex: =2
 
         Correo_DataCard1 As typedDataCard.textualViewCard:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_1"
             Default: =ThisItem.field_1
@@ -158,7 +157,7 @@
 
             DataCardKey8 As label:
                 AutoHeight: =true
-                Color: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
@@ -171,7 +170,7 @@
 
             DataCardValue8 As label:
                 AutoHeight: =true
-                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderColor: =RGBA(0, 89, 178, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
@@ -186,7 +185,7 @@
                 ZIndex: =2
 
         Sede_DataCard1 As typedDataCard.textualViewCard:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_2"
             Default: =ThisItem.field_2
@@ -202,7 +201,7 @@
 
             DataCardKey9 As label:
                 AutoHeight: =true
-                Color: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
@@ -215,7 +214,7 @@
 
             DataCardValue9 As label:
                 AutoHeight: =true
-                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderColor: =RGBA(0, 89, 178, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
@@ -230,7 +229,7 @@
                 ZIndex: =2
 
         Cargo_DataCard1 As typedDataCard.textualViewCard:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_3"
             Default: =ThisItem.field_3
@@ -246,7 +245,7 @@
 
             DataCardKey10 As label:
                 AutoHeight: =true
-                Color: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
@@ -259,7 +258,7 @@
 
             DataCardValue10 As label:
                 AutoHeight: =true
-                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderColor: =RGBA(0, 89, 178, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
@@ -274,7 +273,7 @@
                 ZIndex: =2
 
         "'Cargo Entrenamientos_DataCard1' As typedDataCard.textualViewCard":
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_4"
             Default: =ThisItem.field_4
@@ -290,7 +289,7 @@
 
             DataCardKey11 As label:
                 AutoHeight: =true
-                Color: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
@@ -303,7 +302,7 @@
 
             DataCardValue11 As label:
                 AutoHeight: =true
-                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderColor: =RGBA(0, 89, 178, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
@@ -318,7 +317,7 @@
                 ZIndex: =2
 
         Celular_DataCard1 As typedDataCard.textualViewCard:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_5"
             Default: =ThisItem.field_5
@@ -334,7 +333,7 @@
 
             DataCardKey12 As label:
                 AutoHeight: =true
-                Color: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
@@ -347,7 +346,7 @@
 
             DataCardValue12 As label:
                 AutoHeight: =true
-                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderColor: =RGBA(0, 89, 178, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
@@ -362,7 +361,7 @@
                 ZIndex: =2
 
         Titulo_DataCard1 As typedDataCard.textualViewCard:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
             Default: =ThisItem.Title
@@ -378,7 +377,7 @@
 
             DataCardKey13 As label:
                 AutoHeight: =true
-                Color: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
@@ -391,7 +390,7 @@
 
             DataCardValue13 As label:
                 AutoHeight: =true
-                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderColor: =RGBA(0, 89, 178, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
@@ -406,7 +405,7 @@
                 ZIndex: =2
 
         Documento_DataCard1 As typedDataCard.textualViewCard:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Documento"
             Default: =ThisItem.Documento
@@ -422,7 +421,7 @@
 
             DataCardKey14 As label:
                 AutoHeight: =true
-                Color: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
@@ -435,7 +434,7 @@
 
             DataCardValue14 As label:
                 AutoHeight: =true
-                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderColor: =RGBA(0, 89, 178, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
@@ -450,7 +449,7 @@
                 ZIndex: =2
 
     Icon4_1 As icon.Edit:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
@@ -464,7 +463,7 @@
         ZIndex: =16
 
     Image3_3 As image:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =35

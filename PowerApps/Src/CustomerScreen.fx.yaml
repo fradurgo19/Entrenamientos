@@ -1,7 +1,6 @@
 CustomerScreen As screen:
     Fill: =RGBA(250, 250, 250, 1)
     Height: =Max(App.Height, App.DesignHeight)
-    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     OnVisible: |-
         =UpdateContext({ResetSearch:true});
         UpdateContext({ResetSearch:false});
@@ -10,7 +9,7 @@ CustomerScreen As screen:
     Width: =Max(App.Width, App.DesignWidth)
 
     Rectangle1 As rectangle:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Fill: =RGBA(6, 26, 84, 1)
         Height: =200
         TabIndex: =0
@@ -19,7 +18,7 @@ CustomerScreen As screen:
 
     GalleryCustumer As gallery.galleryVertical:
         '#CopilotOverlayLabel': ="Filtrada"
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         BorderThickness: =2
         DisabledBorderColor: =GalleryCustumer.BorderColor
         DisabledFill: =GalleryCustumer.Fill
@@ -41,7 +40,7 @@ CustomerScreen As screen:
         ZIndex: =2
 
         Rectangle1_2 As rectangle:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =121.00000000000001
             TabIndex: =0
@@ -49,7 +48,7 @@ CustomerScreen As screen:
             ZIndex: =1
 
         TextBox1 As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(61,171,186,1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.Lato
@@ -68,7 +67,7 @@ CustomerScreen As screen:
             ZIndex: =2
 
         TextBox1_1 As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(153, 153, 153, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.Lato
@@ -87,7 +86,7 @@ CustomerScreen As screen:
             ZIndex: =3
 
         Rectangle1_1 As rectangle:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Fill: =RGBA(204, 204, 204, 1)
             Height: =1
             TabIndex: =0
@@ -106,7 +105,7 @@ CustomerScreen As screen:
             ZIndex: =5
 
     TextBox1_12 As label:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.Lato
@@ -137,7 +136,7 @@ CustomerScreen As screen:
         Font: =Font.Lato
         Height: =66.4367816091954
         HintText: ="Buscar Curso"
-        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverBorderColor: =RGBA(0, 89, 178, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(190, 202, 226, 0), 30%)
         RadiusBottomLeft: =0
@@ -152,7 +151,7 @@ CustomerScreen As screen:
         ZIndex: =8
 
     icon2 As icon.Search:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(179, 179, 179, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
@@ -167,7 +166,7 @@ CustomerScreen As screen:
 
     TextBoxNoCustomer As label:
         Align: =LayoutAlignItems.Center
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(153, 153, 153, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.Lato
@@ -187,7 +186,7 @@ CustomerScreen As screen:
         ZIndex: =10
 
     Icon6 As icon.Add:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
@@ -205,7 +204,7 @@ CustomerScreen As screen:
         ZIndex: =15
 
         Rectangle1_19 As rectangle:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Fill: =RGBA(54, 166, 182, 1)
             Height: =82.5400390625
             OnSelect: =Navigate(EventScreen, ScreenTransition.Cover)
@@ -215,7 +214,7 @@ CustomerScreen As screen:
             ZIndex: =11
 
         TextBox1_17 As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.Lato
@@ -236,7 +235,7 @@ CustomerScreen As screen:
             ZIndex: =12
 
         icon9 As icon.ArrowRight:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -250,7 +249,7 @@ CustomerScreen As screen:
             ZIndex: =14
 
     Rectangle1_38 As rectangle:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Fill: =RGBA(6, 26, 84, 1)
         OnSelect: =Back(ScreenTransition.UnCover)
         TabIndex: =0
@@ -258,7 +257,7 @@ CustomerScreen As screen:
         ZIndex: =16
 
     icon1_9 As icon.ChevronLeft:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)

@@ -1,12 +1,12 @@
 "Correo As screen.'phoneLayout_Email_ver3.0'":
-    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    Fill: =RGBA(232, 232, 232, 1)
     OnVisible: |
         =UpdateContext({CorreoSeleccionado: Gallery1_1.Selected.Label1_4.Text});
         UpdateContext({CorreosConcatenados: Concatenate(Label3.Text, ";", CorreoSeleccionado)});
 
     TextSearchBox2 As text:
         AccessibleLabel: ="Busque personas o agregue direcciones de correo electrónico. Se necesita al menos un destinatario para un envío correcto."
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         BorderThickness: =2
         Color: =RGBA(0, 0, 0, 1)
         Default: |
@@ -17,9 +17,9 @@
         FocusedBorderThickness: =4
         Height: =76
         HintText: ="Buscar personas o agregar una dirección de correo electrónico"
-        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverBorderColor: =RGBA(0, 89, 178, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =RGBA(205, 209, 213, 1)
+        HoverFill: =RGBA(153, 205, 255, 1)
         PaddingLeft: =70
         Size: =12
         Visible: =false
@@ -29,7 +29,7 @@
         ZIndex: =1
 
     Label3 As label:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         BorderThickness: =3
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -49,8 +49,8 @@
         ZIndex: =2
 
     RectQuickActionBar2 As rectangle:
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Fill: =RGBA(100, 118, 132, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Fill: =RGBA(6, 26, 84, 1)
         Height: =88
         Width: =Parent.Width
         ZIndex: =3
@@ -58,7 +58,7 @@
     LblAppName2 As label:
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(58, 58, 58, 0)
+        Fill: =RGBA(6, 26, 84, 1)
         Height: =88
         PaddingLeft: =0
         Size: =27
@@ -81,8 +81,8 @@
         ZIndex: =5
 
     AddIcon2 As icon.Add:
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Color: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 89, 178, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =TextSearchBox2.Height
@@ -111,7 +111,7 @@
 
     EmailPeopleGallery2 As gallery.SelectedUsersGallery:
         AccessibleLabel: ="Personas seleccionadas por el usuario"
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Fill: =TextSearchBox2.Fill
         Height: |-
             =/*Height adjusts to number of items in gallery*/
@@ -129,8 +129,8 @@
         ZIndex: =8
 
         Rectangle6 As rectangle:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Fill: =RGBA(100, 118, 132, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Fill: =RGBA(0, 51, 102, 1)
             Height: =Parent.TemplateHeight
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
@@ -152,7 +152,7 @@
 
         iconRemove2 As icon.Cancel:
             AccessibleLabel: =iconRemove2.Tooltip
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =Title5.Color
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -183,7 +183,7 @@
 
     TextEmailSubject2 As text:
         AccessibleLabel: ="Se requiere un asunto para enviar un correo electrónico."
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         BorderThickness: =2
         Color: =RGBA(0, 0, 0, 1)
         Default: ="ENTRENAMIENTOS PARTEQUIPOS"
@@ -193,9 +193,9 @@
         FocusedBorderThickness: =4
         Height: =54
         HintText: ="Agregar un asunto"
-        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverBorderColor: =RGBA(0, 89, 178, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =RGBA(205, 209, 213, 1)
+        HoverFill: =RGBA(153, 205, 255, 1)
         Size: =12
         TabIndex: =If(PeopleBrowseGallery2.Visible, -1, 0)
         Width: =586
@@ -217,7 +217,7 @@
 
     TextEmailMessage2 As text:
         AccessibleLabel: ="Agregar un mensaje"
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         BorderThickness: =2
         Color: =RGBA(0, 0, 0, 1)
         Default: =CorreosConcatenados1
@@ -227,9 +227,9 @@
         FocusedBorderThickness: =4
         Height: =174
         HintText: ="Links Temas y Pruebas."
-        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverBorderColor: =RGBA(0, 89, 178, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =RGBA(205, 209, 213, 1)
+        HoverFill: =RGBA(153, 205, 255, 1)
         Mode: =TextMode.MultiLine
         Size: =21
         TabIndex: =If(PeopleBrowseGallery2.Visible, -1, 0)
@@ -240,7 +240,7 @@
 
     PeopleBrowseGallery2 As gallery.PeoplePickerGallerySmall:
         AccessibleLabel: ="Resultados de la búsqueda de usuarios"
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         BorderThickness: =2
         Fill: =Parent.Fill
         Height: =If(Self.Visible, Parent.Height / 2 + 200, 0)
@@ -287,7 +287,7 @@
             ZIndex: =2
 
         Subtitle4 As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =ColorFade(Title6.Color, 0.20)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =2
@@ -301,8 +301,8 @@
             ZIndex: =3
 
         Separator4 As rectangle:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Fill: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Fill: =RGBA(0, 89, 178, 1)
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
@@ -310,7 +310,7 @@
             ZIndex: =4
 
     Gallery1 As gallery.galleryVertical:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         BorderThickness: =3
         DelayItemLoading: =true
         Height: =449
@@ -325,7 +325,7 @@
         ZIndex: =14
 
         Label1 As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(100, 118, 132, 1)
@@ -339,7 +339,7 @@
             ZIndex: =1
 
         Label1_1 As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(100, 118, 132, 1)
@@ -352,7 +352,7 @@
             ZIndex: =2
 
         Label1_2 As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(100, 118, 132, 1)
@@ -365,7 +365,7 @@
             ZIndex: =3
 
         Icon3 As icon.Folder:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 0, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -386,7 +386,7 @@
             ZIndex: =4
 
     Gallery1_1 As gallery.galleryVertical:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         BorderThickness: =3
         DelayItemLoading: =true
         Height: =450
@@ -401,7 +401,7 @@
         ZIndex: =15
 
         Label1_3 As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(100, 118, 132, 1)
@@ -414,7 +414,7 @@
             ZIndex: =1
 
         Label1_4 As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(100, 118, 132, 1)
@@ -428,7 +428,7 @@
             ZIndex: =2
 
         Icon2 As icon.Mail:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 0, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -496,7 +496,7 @@
         ZIndex: =17
 
     Icon1 As icon.Reload:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =40
@@ -510,7 +510,7 @@
         ZIndex: =18
 
     Icon1_1 As icon.Reload:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =36
@@ -531,7 +531,7 @@
         FontWeight: =FontWeight.Semibold
         Height: =88
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: |+
             =Set(varimagen,Image3.Image);
             Set(EnvioCorreo,"<!DOCTYPE html>
@@ -594,7 +594,7 @@
         ZIndex: =22
 
     Image3 As image:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =35
@@ -613,7 +613,7 @@
         ZIndex: =28
 
         Rectangle1_8 As rectangle:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Fill: =RGBA(100, 118, 132, 1)
             Height: =88
             OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
@@ -622,7 +622,7 @@
             ZIndex: =20
 
         icon1_5 As icon.ChevronLeft:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)

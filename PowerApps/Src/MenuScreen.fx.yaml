@@ -1,8 +1,8 @@
 MenuScreen As screen:
     BackgroundImage: ='Captura de pantalla 2024-04-24 090742'
+    Fill: =RGBA(232, 232, 232, 1)
     Height: =Max(App.Height, App.DesignHeight)
     ImagePosition: =ImagePosition.Tile
-    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     Width: =Max(App.Width, App.DesignWidth)
 
     Button1_5 As button:
@@ -15,7 +15,7 @@ MenuScreen As screen:
         FontWeight: =FontWeight.Semibold
         Height: =86
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
@@ -28,7 +28,7 @@ MenuScreen As screen:
         ZIndex: =2
 
     TextBox4_44 As label:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 0, 0, 1)
@@ -49,7 +49,7 @@ MenuScreen As screen:
         ZIndex: =12
 
     TextBox4_48 As label:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 0, 0, 1)
@@ -80,7 +80,7 @@ MenuScreen As screen:
         FontWeight: =FontWeight.Bold
         Height: =53
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
@@ -104,7 +104,7 @@ MenuScreen As screen:
         FontWeight: =FontWeight.Bold
         Height: =53
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(ActiveWorkOrderScreen, ScreenTransition.Fade)
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
@@ -128,7 +128,7 @@ MenuScreen As screen:
         FontWeight: =FontWeight.Bold
         Height: =53
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(EventScreen, ScreenTransition.Fade)
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
@@ -152,7 +152,7 @@ MenuScreen As screen:
         FontWeight: =FontWeight.Bold
         Height: =77
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(AddNewOpportunityScreen, ScreenTransition.Fade)
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
@@ -167,7 +167,7 @@ MenuScreen As screen:
 
     TextBox4_47 As label:
         Align: =Align.Center
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 0, 0, 1)
@@ -197,7 +197,7 @@ MenuScreen As screen:
         FontWeight: =FontWeight.Bold
         Height: =45
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(Correo, ScreenTransition.Fade)
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
@@ -221,7 +221,7 @@ MenuScreen As screen:
         FontWeight: =FontWeight.Bold
         Height: =45
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(CustomerOverviewScreen_2, ScreenTransition.Fade)
         RadiusBottomLeft: =30
         RadiusBottomRight: =30

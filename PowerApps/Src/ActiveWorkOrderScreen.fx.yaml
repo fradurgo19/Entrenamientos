@@ -1,12 +1,11 @@
 ActiveWorkOrderScreen As screen:
     Fill: =RGBA(237,242,246,1)
     Height: =Max(App.Height, App.DesignHeight)
-    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     Width: =Max(App.Width, App.DesignWidth)
 
     "GalleryWorkOrder As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
         '#CopilotOverlayLabel': ="Filtrada"
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         DelayItemLoading: =true
         DisabledBorderColor: =GalleryWorkOrder.BorderColor
         DisabledFill: =GalleryWorkOrder.Fill
@@ -86,7 +85,7 @@ ActiveWorkOrderScreen As screen:
 
         NextArrow1 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =83
@@ -103,7 +102,7 @@ ActiveWorkOrderScreen As screen:
             ZIndex: =4
 
         Separator1 As rectangle:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Fill: =RGBA(255, 255, 255, 1)
             Height: =8
             OnSelect: =Select(Parent)
@@ -112,8 +111,8 @@ ActiveWorkOrderScreen As screen:
             ZIndex: =5
 
         Rectangle2 As rectangle:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Fill: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Fill: =RGBA(0, 89, 178, 1)
             Height: =Parent.TemplateHeight - Separator1.Height
             OnSelect: =Select(Parent)
             Visible: =ThisItem.IsSelected
@@ -121,14 +120,14 @@ ActiveWorkOrderScreen As screen:
             ZIndex: =6
 
     Rectangle1_12 As rectangle:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Fill: =RGBA(6,26,84,1)
         TabIndex: =0
         Width: =640
         ZIndex: =2
 
     TextBox1_24 As label:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.Lato
@@ -154,7 +153,7 @@ ActiveWorkOrderScreen As screen:
         ZIndex: =12
 
         Circle1 As circle:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Fill: =RGBA(255, 255, 255, 1)
             Height: =55
             OnSelect: =Navigate(CustomerOverviewScreen, ScreenTransition.Fade)
@@ -165,7 +164,7 @@ ActiveWorkOrderScreen As screen:
             ZIndex: =5
 
         icon4 As icon.Cancel:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(6,26,84,1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -180,7 +179,7 @@ ActiveWorkOrderScreen As screen:
 
     TextBox1_55 As label:
         Align: =LayoutAlignItems.Center
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(153, 153, 153, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.Lato

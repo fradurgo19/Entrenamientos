@@ -1,7 +1,6 @@
 OpportunityMessageScreen As screen:
     Fill: =RGBA(237,242,246,1)
     Height: =Max(App.Height, App.DesignHeight)
-    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     Width: =Max(App.Width, App.DesignWidth)
 
     Button1_8 As button:
@@ -14,7 +13,7 @@ OpportunityMessageScreen As screen:
         FontWeight: =FontWeight.Semibold
         Height: =86
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
@@ -29,7 +28,7 @@ OpportunityMessageScreen As screen:
 
     TextBox1_39 As label:
         Align: =LayoutAlignItems.Center
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(0, 0, 0, 0.70196078)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.Lato
@@ -55,7 +54,7 @@ OpportunityMessageScreen As screen:
         ZIndex: =6
 
         Circle2_1 As circle:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Fill: =RGBA(97,189,126,1)
             Height: =176
             TabIndex: =0
@@ -65,7 +64,7 @@ OpportunityMessageScreen As screen:
             ZIndex: =4
 
         icon5_1 As icon.Check:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -87,7 +86,7 @@ OpportunityMessageScreen As screen:
         FontWeight: =FontWeight.Semibold
         Height: =86
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(CustomerOverviewScreen, ScreenTransition.Fade)
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
@@ -110,7 +109,7 @@ OpportunityMessageScreen As screen:
         FontWeight: =FontWeight.Semibold
         Height: =86
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(AddNewOpportunityScreen, ScreenTransition.Fade)
         RadiusBottomLeft: =0
         RadiusBottomRight: =0

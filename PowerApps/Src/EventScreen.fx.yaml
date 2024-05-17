@@ -1,11 +1,11 @@
 EventScreen As screen:
+    Fill: =RGBA(232, 232, 232, 1)
     Height: =Max(App.Height, App.DesignHeight)
-    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     Width: =Max(App.Width, App.DesignWidth)
 
     "GalleryEvent As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
         '#CopilotOverlayLabel': ="Filtrada"
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         DelayItemLoading: =true
         DisabledBorderColor: =GalleryEvent.BorderColor
         DisabledFill: =GalleryEvent.Fill
@@ -27,7 +27,7 @@ EventScreen As screen:
         ZIndex: =1
 
         Title3 As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -45,7 +45,7 @@ EventScreen As screen:
             ZIndex: =1
 
         Subtitle3 As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -64,7 +64,7 @@ EventScreen As screen:
             ZIndex: =2
 
         Body3 As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -84,7 +84,7 @@ EventScreen As screen:
 
         NextArrow3 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
             Fill: =RGBA(255, 255, 255, 1)
@@ -102,7 +102,7 @@ EventScreen As screen:
             ZIndex: =4
 
         Separator3 As rectangle:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Fill: =RGBA(255, 255, 255, 1)
             Height: =8
             OnSelect: =Select(Parent)
@@ -111,8 +111,8 @@ EventScreen As screen:
             ZIndex: =5
 
         Rectangle7 As rectangle:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Fill: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Fill: =RGBA(0, 89, 178, 1)
             Height: =Parent.TemplateHeight - Separator3.Height
             OnSelect: =Select(Parent)
             Visible: =ThisItem.IsSelected
@@ -120,7 +120,7 @@ EventScreen As screen:
             ZIndex: =6
 
     Rectangle1_36 As rectangle:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Fill: =RGBA(6,26,84,1)
         TabIndex: =0
         Width: =640
@@ -134,7 +134,7 @@ EventScreen As screen:
         ZIndex: =6
 
         Rectangle1_37 As rectangle:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Fill: =RGBA(6, 26, 84, 1)
             OnSelect: =Back(ScreenTransition.UnCover)
             TabIndex: =0
@@ -142,7 +142,7 @@ EventScreen As screen:
             ZIndex: =4
 
         icon1_4 As icon.ChevronLeft:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -156,7 +156,7 @@ EventScreen As screen:
             ZIndex: =5
 
     TextBox1_45 As label:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.Lato
@@ -176,7 +176,7 @@ EventScreen As screen:
 
     TextBox1_68 As label:
         Align: =LayoutAlignItems.Center
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(153, 153, 153, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.Lato
@@ -222,7 +222,7 @@ EventScreen As screen:
         ZIndex: =9
 
     icon2_1 As icon.Search:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(179, 179, 179, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
