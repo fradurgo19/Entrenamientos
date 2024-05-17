@@ -107,6 +107,7 @@
     Form4_1 As form:
         BorderColor: =RGBA(32, 54, 71, 1)
         DataSource: ='Ofertas de Entrenamientos'
+        DefaultMode: =FormMode.New
         Height: =951
         Width: =640
         Y: =100
