@@ -20,6 +20,7 @@ CustomerScreen As screen:
     GalleryCustumer As gallery.galleryVertical:
         '#CopilotOverlayLabel': ="Filtrada"
         BorderColor: =RGBA(32, 54, 71, 1)
+        BorderThickness: =2
         DisabledBorderColor: =GalleryCustumer.BorderColor
         DisabledFill: =GalleryCustumer.Fill
         Height: =853
@@ -32,8 +33,9 @@ CustomerScreen As screen:
         PressedBorderColor: =GalleryCustumer.BorderColor
         PressedFill: =GalleryCustumer.Fill
         ShowNavigation: =true
-        TemplatePadding: =0
+        TemplatePadding: =
         TemplateSize: =123
+        Transition: =Transition.Pop
         Visible: =CountRows(GalleryCustumer.AllItems) > 0
         Y: =200
         ZIndex: =2
@@ -97,7 +99,7 @@ CustomerScreen As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =2
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =123.05555555555554
+            Height: =122
             OnSelect: =Navigate(CustomerOverviewScreen, ScreenTransition.Fade)
             TabIndex: =0
             Width: =640
