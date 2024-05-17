@@ -130,9 +130,10 @@
                 Fill: =RGBA(6, 26, 84, 1)
                 Height: =83
                 Icon: =Icon.Send
-                OnSelect: |
+                OnSelect: |-
                     =Set(Mensaje,"si");
-                    Office365Outlook.SendEmail(DataCardValue36.Selected.Value, "CORREO DE ENTRENAMIENTOS PARTEQUIPOS", Mensaje, {Importance:"High"})       
+                    Office365Outlook.SendEmail(DataCardValue36.Selected.Value, "CORREO DE ENTRENAMIENTOS PARTEQUIPOS", Mensaje, {Importance:"High"});       
+                    Navigate(OpportunityMessageScreen,ScreenTransition.Fade)
                 PaddingBottom: =24
                 PaddingLeft: =24
                 PaddingRight: =24
