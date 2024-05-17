@@ -34,8 +34,8 @@
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(100, 118, 132, 1)
-        FocusedBorderThickness: =30
-        Height: =122
+        FocusedBorderThickness: =20
+        Height: =116
         PaddingBottom: =1
         PaddingLeft: =1
         PaddingRight: =1
@@ -45,7 +45,7 @@
         VerticalAlign: =VerticalAlign.Top
         Width: =586
         X: =32
-        Y: =129
+        Y: =135
         ZIndex: =2
 
     RectQuickActionBar2 As rectangle:
