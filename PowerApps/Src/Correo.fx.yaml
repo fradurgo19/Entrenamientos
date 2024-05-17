@@ -33,7 +33,7 @@
         BorderThickness: =3
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(100, 118, 132, 1)
+        Fill: =RGBA(6, 26, 84, 1)
         FocusedBorderThickness: =20
         Height: =116
         PaddingBottom: =1
@@ -328,7 +328,7 @@
             BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(100, 118, 132, 1)
+            Fill: =RGBA(6, 26, 84, 1)
             FontWeight: =FontWeight.Bold
             Height: =37
             OnSelect: =Select(Parent)
@@ -342,7 +342,7 @@
             BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(100, 118, 132, 1)
+            Fill: =RGBA(6, 26, 84, 1)
             Height: =24
             OnSelect: =Select(Parent)
             Size: =8
@@ -355,7 +355,7 @@
             BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(100, 118, 132, 1)
+            Fill: =RGBA(6, 26, 84, 1)
             Height: =24
             OnSelect: =Select(Parent)
             Size: =8
@@ -404,7 +404,7 @@
             BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(100, 118, 132, 1)
+            Fill: =RGBA(6, 26, 84, 1)
             FontWeight: =FontWeight.Bold
             Height: =27
             OnSelect: =Select(Parent)
@@ -417,7 +417,7 @@
             BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(100, 118, 132, 1)
+            Fill: =RGBA(6, 26, 84, 1)
             FontWeight: =FontWeight.Bold
             Height: =24
             OnSelect: =Select(Parent)
@@ -605,20 +605,20 @@
         Y: =94
         ZIndex: =23
 
-    Group3_5 As group:
+    Group1 As group:
         Height: =5
         Width: =5
-        X: =20
-        Y: =20
-        ZIndex: =28
+        X: =40
+        Y: =40
+        ZIndex: =24
 
         Rectangle1_8 As rectangle:
             BorderColor: =RGBA(0, 89, 178, 1)
-            Fill: =RGBA(100, 118, 132, 1)
+            Fill: =RGBA(6, 26, 84, 1)
             Height: =88
             OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
             TabIndex: =0
-            Width: =100
+            Width: =98
             ZIndex: =20
 
         icon1_5 As icon.ChevronLeft:
@@ -630,5 +630,6 @@
             Icon: =Icon.ChevronLeft
             OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
             TabIndex: =0
+            Width: =63
             ZIndex: =21
 
