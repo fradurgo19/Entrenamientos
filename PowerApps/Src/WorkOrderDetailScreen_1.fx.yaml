@@ -123,11 +123,12 @@
 
             iconMail1_1 As icon.Send:
                 BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(255, 255, 255, 1)
                 DisabledBorderColor: =RGBA(255, 0, 0, 1)
                 DisabledColor: =RGBA(244, 244, 244, 1)
                 DisabledFill: =RGBA(240, 240, 240, 0.5)
                 DisplayMode: =
-                Fill: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(6, 26, 84, 1)
                 Height: =83
                 Icon: =Icon.Send
                 OnSelect: =EditForm(Form3);SubmitForm(Form3);Navigate(ActiveWorkOrderScreen, ScreenTransition.Fade)
@@ -144,7 +145,7 @@
 
             Label2_1 As label:
                 BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =77
                 Size: =21
