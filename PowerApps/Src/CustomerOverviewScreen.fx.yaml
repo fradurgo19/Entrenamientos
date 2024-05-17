@@ -327,6 +327,7 @@
                 HtmlText: =GalleryCustumer.Selected.Adjunto
                 PressedBorderColor: =HtmlText1.BorderColor
                 Size: =15
+                Tooltip: ="Link Tema"
                 Width: =277
                 X: =40
                 Y: =280
@@ -412,7 +413,7 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =Font.'Lato Light'
                 FontWeight: =FontWeight.Semibold
-                Height: =33
+                Height: =68
                 HoverBorderColor: =TextBox4_167.BorderColor
                 HoverColor: =TextBox4_167.Color
                 HoverFill: =TextBox4_167.Fill
@@ -421,6 +422,7 @@
                 PressedFill: =TextBox4_167.Fill
                 Size: =15
                 Text: =GalleryCustumer.Selected.Prueba
+                Tooltip: ="Link Cuestionario"
                 VerticalAlign: =VerticalAlign.Top
                 Visible: =Rating1_7.Value = 0
                 Width: =212
