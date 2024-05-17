@@ -67,19 +67,6 @@
         Y: =98.38961038961031
         ZIndex: =14
 
-        DataCard1_1 As dataCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            BorderThickness: =0
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =203
-            Width: =Parent.Width
-            WidthFit: =false
-            X: =0
-            Y: =0
-            ZIndex: =1
-
     Button1_7 As button:
         BorderThickness: =0
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -120,10 +107,10 @@
     Form4 As form:
         BorderColor: =RGBA(32, 54, 71, 1)
         DataSource: ='Ofertas de Entrenamientos'
-        Height: =118
+        Height: =528
         Item: =GalleryCustumer.Selected
         Width: =640
-        Y: =100
+        Y: =358
         ZIndex: =17
 
         Adjunto_DataCard1 As typedDataCard.textualEditCard:
@@ -140,7 +127,7 @@
             Update: =DataCardValue52.Text
             Width: =640
             X: =0
-            Y: =7
+            Y: =6
             ZIndex: =1
 
             DataCardKey52 As label:
@@ -230,7 +217,7 @@
             Update: =DataCardValue53.Text
             Width: =640
             X: =0
-            Y: =8
+            Y: =7
             ZIndex: =1
 
             DataCardKey53 As label:
@@ -320,7 +307,7 @@
             Update: =DataCardValue54.Text
             Width: =640
             X: =0
-            Y: =9
+            Y: =8
             ZIndex: =1
 
             DataCardKey54 As label:
@@ -576,98 +563,6 @@
                 Y: =DataCardKey45.Y
                 ZIndex: =4
 
-        "'Tipo de actividad_DataCard1' As typedDataCard.comboBoxEditCard":
-            BorderColor: =RGBA(32, 54, 71, 1)
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_1"
-            Default: =ThisItem.field_1
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Ofertas de Entrenamientos'],DataSourceInfo.DisplayName,field_1)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =171
-            Required: =false
-            Update: =DataCardValue46.Selected
-            Width: =640
-            X: =0
-            Y: =3
-            ZIndex: =18
-
-            DataCardKey46 As label:
-                AutoHeight: =true
-                Color: =RGBA(32, 54, 71, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue46 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                ChevronBackground: =RGBA(100, 118, 132, 1)
-                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-                ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                DefaultSelectedItems: =Parent.Default
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Height: =70
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(205, 209, 213, 1)
-                Items: =Choices([@'Ofertas de Entrenamientos'].field_1)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(32, 54, 71, 1)
-                SearchFields: =["Value"]
-                SearchItems: =Choices('Ofertas de Entrenamientos'.field_1,DataCardValue46.SearchText)
-                SelectionFill: =RGBA(100, 118, 132, 1)
-                SelectMultiple: =false
-                Size: =21
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey46.Y + DataCardKey46.Height + 5
-                ZIndex: =2
-
-            ErrorMessage35 As label:
-                AutoHeight: =true
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FontWeight: =FontWeight.Semibold
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =24
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue46.Y + DataCardValue46.Height
-                ZIndex: =3
-
-            StarVisible36 As label:
-                Align: =Align.Center
-                Color: =RGBA(32, 54, 71, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =DataCardKey46.Height
-                Size: =21
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey46.Y
-                ZIndex: =4
-
         Modelo_DataCard1 As typedDataCard.comboBoxMultiSelectEditCard:
             BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
@@ -773,7 +668,7 @@
             Update: =DataCardValue49.Text
             Width: =640
             X: =0
-            Y: =4
+            Y: =3
             ZIndex: =18
 
             DataCardKey49 As label:
@@ -862,7 +757,7 @@
             Update: =DataCardValue50.Selected
             Width: =640
             X: =0
-            Y: =6
+            Y: =5
             ZIndex: =18
 
             DataCardKey50 As label:
@@ -954,7 +849,7 @@
             Update: =DataCardValue51.Selected
             Width: =640
             X: =0
-            Y: =5
+            Y: =4
             ZIndex: =18
 
             DataCardKey51 As label:

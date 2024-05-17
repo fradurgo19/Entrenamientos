@@ -4334,36 +4334,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.'Tipo de actividad_DataCard1'.DataCardValue46.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.'Tipo de actividad_DataCard1'.DataCardValue46.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "CustomerOverviewScreen_1",
-                "type": "CustomerOverviewScreen_1.Form4.'Tipo de actividad_DataCard1'.DataCardValue46"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.Consecutivo_DataCard1.DataCardValue45.AccessibleLabel"
                 }
               ],
