@@ -136,10 +136,10 @@
     Form2 As form:
         BorderColor: =RGBA(32, 54, 71, 1)
         DataSource: ='Usuarios Entrenamientos'
-        Height: =817
+        Height: =769
         Item: =GalleryEvent.Selected
         Width: =640
-        Y: =116
+        Y: =163
         ZIndex: =15
 
         Nombre_DataCard2 As typedDataCard.textualEditCard:
