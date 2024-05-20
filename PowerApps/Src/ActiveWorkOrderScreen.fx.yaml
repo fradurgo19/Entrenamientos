@@ -46,7 +46,7 @@ ActiveWorkOrderScreen As screen:
             Color: =RGBA(50, 49, 48, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
+            Height: =32
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -55,7 +55,7 @@ ActiveWorkOrderScreen As screen:
             Size: =18
             Text: =ThisItem.Usuarios.Value
             VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 86
+            Width: =525
             X: =16
             Y: =20
             ZIndex: =1
@@ -64,7 +64,7 @@ ActiveWorkOrderScreen As screen:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =42
+            Height: =64
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -101,7 +101,7 @@ ActiveWorkOrderScreen As screen:
             BorderColor: =RGBA(0, 89, 178, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =83
+            Height: =118
             Icon: =Icon.ChevronRight
             OnSelect: =Navigate(WorkOrderDetailScreen, ScreenTransition.Fade)
             PaddingBottom: =16
@@ -110,8 +110,8 @@ ActiveWorkOrderScreen As screen:
             PaddingTop: =16
             Tooltip: ="Ver los detalles del elemento"
             Width: =103
-            X: =519
-            Y: =12
+            X: =524
+            Y: =26
             ZIndex: =4
 
         Separator1 As rectangle:
