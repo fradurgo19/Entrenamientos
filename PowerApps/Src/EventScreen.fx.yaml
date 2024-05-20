@@ -200,14 +200,14 @@ EventScreen As screen:
         BorderThickness: =2
         Color: =RGBA(255, 255, 255, 1)
         Default: =""
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledBorderColor: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(0, 0, 0, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         FocusedBorderThickness: =4
         Font: =Font.Lato
         Height: =77
         HintText: ="Buscar Usuario"
-        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverBorderColor: =RGBA(255, 255, 255, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =ColorFade(RGBA(190, 202, 226, 0), 30%)
         RadiusBottomLeft: =0
@@ -231,4 +231,17 @@ EventScreen As screen:
         X: =564.000000000003
         Y: =114
         ZIndex: =10
+
+    Icon6_1 As icon.Add:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =69
+        Icon: =Icon.Add
+        OnSelect: =Navigate(UsuarioDetailScreen_2, ScreenTransition.Fade)
+        Width: =94
+        X: =546
+        Y: =20
+        ZIndex: =11
 
