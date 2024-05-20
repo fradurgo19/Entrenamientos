@@ -221,7 +221,7 @@ ActiveWorkOrderScreen As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
-        Height: =100
+        Height: =77
         HoverBorderColor: =TextBox1_24.BorderColor
         HoverColor: =TextBox1_24.Color
         HoverFill: =TextBox1_24.Fill
@@ -230,8 +230,8 @@ ActiveWorkOrderScreen As screen:
         PressedFill: =TextBox1_24.Fill
         Size: =28
         Text: ="Asignaciones Activas"
-        Width: =514.142857142857
-        X: =23.857142857142985
+        Width: =404
+        X: =133
         ZIndex: =4
 
     Group5 As group:
@@ -248,8 +248,8 @@ ActiveWorkOrderScreen As screen:
             OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
             TabIndex: =0
             Width: =55
-            X: =565.4285714285676
-            Y: =22.428571428571384
+            X: =26
+            Y: =22
             ZIndex: =5
 
         icon4 As icon.Cancel:
@@ -262,8 +262,8 @@ ActiveWorkOrderScreen As screen:
             OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
             TabIndex: =0
             Width: =37.71428571428555
-            X: =574.0714285714248
-            Y: =30.999999999999968
+            X: =35
+            Y: =31
             ZIndex: =6
 
     TextBox1_55 As label:
@@ -311,4 +311,17 @@ ActiveWorkOrderScreen As screen:
         Width: =640
         Y: =106
         ZIndex: =14
+
+    Icon6_2 As icon.Add:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =69
+        Icon: =Icon.Add
+        OnSelect: =Navigate(AddNewOpportunityScreen, ScreenTransition.Fade)
+        Width: =94
+        X: =546
+        Y: =8
+        ZIndex: =15
 
