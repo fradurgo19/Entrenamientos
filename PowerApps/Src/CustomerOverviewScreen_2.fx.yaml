@@ -33,7 +33,7 @@
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =97
             Icon: =Icon.ChevronLeft
-            OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
+            OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
             TabIndex: =0
             Width: =67
             ZIndex: =7

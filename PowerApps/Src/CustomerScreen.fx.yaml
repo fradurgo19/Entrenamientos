@@ -150,7 +150,6 @@ CustomerScreen As screen:
 
     icon2 As icon.Search:
         BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(179, 179, 179, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =66
@@ -188,10 +187,11 @@ CustomerScreen As screen:
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =69
         Icon: =Icon.Add
         OnSelect: =Navigate(CustomerOverviewScreen_2, ScreenTransition.Fade)
+        Width: =94
         X: =546
-        Y: =16
         ZIndex: =15
 
     Group4 As group:
@@ -237,13 +237,13 @@ CustomerScreen As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =36.27001953125
+            Height: =60
             Icon: =Icon.ArrowRight
             OnSelect: =Navigate(EventScreen, ScreenTransition.Cover)
             TabIndex: =0
-            Width: =36.27001953125
-            X: =574.6363636363635
-            Y: =1077.820889559659
+            Width: =82
+            X: =546
+            Y: =1064
             ZIndex: =14
 
     Rectangle1_38 As rectangle:
