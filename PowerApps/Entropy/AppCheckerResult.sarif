@@ -24,7 +24,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 57,
+                  "charOffset": 59,
                   "snippet": {
                     "text": "field_0"
                   }
@@ -6036,36 +6036,6 @@
                 "member": "Item",
                 "module": "UsuarioDetailScreen_1",
                 "type": "UsuarioDetailScreen_1.Form2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EventScreen.GalleryEvent.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EventScreen.GalleryEvent.Items",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "EventScreen",
-                "type": "EventScreen.GalleryEvent"
               }
             }
           ],

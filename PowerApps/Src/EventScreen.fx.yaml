@@ -13,7 +13,7 @@ EventScreen As screen:
         Height: =954
         HoverBorderColor: =GalleryEvent.BorderColor
         HoverFill: =GalleryEvent.Fill
-        Items: =Search([@'Usuarios Entrenamientos'],TextInputSearch.Text,field_0)
+        Items: =Search([@'Usuarios Entrenamientos'],TextInputSearch_4.Text,field_0)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         PressedBorderColor: =GalleryEvent.BorderColor
