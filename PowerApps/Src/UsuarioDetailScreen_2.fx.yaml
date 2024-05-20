@@ -68,11 +68,11 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =837.7142857142859
+            Height: =797
             Width: =Parent.Width
             WidthFit: =false
             X: =0
-            Y: =1
+            Y: =0
             ZIndex: =3
 
             Rectangle1_28 As rectangle:
@@ -94,7 +94,7 @@
             Height: =100
             Width: =640
             X: =0
-            Y: =2
+            Y: =1
             ZIndex: =4
 
             iconMail1_3 As icon.Send:
@@ -135,9 +135,9 @@
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: ='Usuarios Entrenamientos'
         DefaultMode: =FormMode.New
-        Height: =769
+        Height: =835
         Width: =640
-        Y: =163
+        Y: =97
         ZIndex: =15
 
         Nombre_DataCard2_1 As typedDataCard.textualEditCard:
@@ -758,6 +758,6 @@
         ImagePosition: =ImagePosition.Fill
         Width: =426
         X: =214
-        Y: =108
+        Y: =100
         ZIndex: =16
 
