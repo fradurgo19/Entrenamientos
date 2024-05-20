@@ -5924,36 +5924,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.1096735706"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.1096735706",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "1096735706",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App"
                 }
               ],
