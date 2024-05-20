@@ -119,8 +119,8 @@ CustomerScreen As screen:
         PressedFill: =TextBox1_12.Fill
         Size: =28
         Text: ="Cursos"
-        Width: =135
-        X: =231
+        Width: =285
+        X: =198
         ZIndex: =7
 
     TextInputSearch As text:
@@ -225,7 +225,7 @@ CustomerScreen As screen:
             PressedBorderColor: =TextBox1_17.BorderColor
             PressedColor: =TextBox1_17.Color
             PressedFill: =TextBox1_17.Fill
-            Size: =23
+            Size: =28
             Text: ="USUARIOS"
             Width: =452
             X: =32
