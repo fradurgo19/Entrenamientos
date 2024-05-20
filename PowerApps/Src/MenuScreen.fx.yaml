@@ -16,13 +16,13 @@ MenuScreen As screen:
         Height: =86
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
+        OnSelect: =Navigate(Correo, ScreenTransition.Fade)
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
         Size: =28
-        Text: ="Cursos"
+        Text: ="CORREO"
         Width: =640
         Y: =1029
         ZIndex: =2
@@ -187,30 +187,6 @@ MenuScreen As screen:
         Width: =640
         Y: =108
         ZIndex: =18
-
-    Button1_6 As button:
-        BorderColor: =RGBA(152, 208, 70, 1)
-        BorderThickness: =4
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =45
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        OnSelect: =Navigate(Correo, ScreenTransition.Fade)
-        RadiusBottomLeft: =30
-        RadiusBottomRight: =30
-        RadiusTopLeft: =30
-        RadiusTopRight: =30
-        Size: =24
-        Text: ="Correo"
-        Width: =221
-        X: =402
-        Y: =699
-        ZIndex: =19
 
     Button1_11 As button:
         BorderColor: =RGBA(152, 208, 70, 1)
