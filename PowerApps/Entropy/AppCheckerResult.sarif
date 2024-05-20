@@ -64,7 +64,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 73,
+                  "charOffset": 74,
                   "snippet": {
                     "text": ".Value"
                   }
@@ -103,10 +103,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 50,
-                  "charOffset": 54,
+                  "charLength": 72,
+                  "charOffset": 46,
                   "snippet": {
-                    "text": "StartsWith(Usuarios.Value; TextInputSearch_1.Text)"
+                    "text": "StartsWith(\n        Usuarios.Value;\n        TextInputSearch_1.Text\n    )"
                   }
                 }
               },
@@ -144,7 +144,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 105,
+                  "charOffset": 119,
                   "snippet": {
                     "text": "||"
                   }
@@ -184,7 +184,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 140,
+                  "charOffset": 155,
                   "snippet": {
                     "text": "||"
                   }
@@ -224,7 +224,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 226,
+                  "charOffset": 265,
                   "snippet": {
                     "text": "||"
                   }

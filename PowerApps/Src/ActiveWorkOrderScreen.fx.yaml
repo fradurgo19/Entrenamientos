@@ -14,8 +14,18 @@ ActiveWorkOrderScreen As screen:
         HoverFill: =GalleryWorkOrder.Fill
         Items: |-
             =Filter(
-                    'Asignación Entrenamientos',
-                    (StartsWith(Usuarios.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text))||(StartsWith(Curso.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text))||(StartsWith(Curso_x003a_Prueba.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text)))
+                'Asignación Entrenamientos',
+                (StartsWith(
+                    Usuarios.Value,
+                    TextInputSearch_1.Text
+                ) || IsBlank(TextInputSearch_1.Text)) || (StartsWith(
+                    Curso.Value,
+                    TextInputSearch_1.Text
+                ) || IsBlank(TextInputSearch_1.Text)) || (StartsWith(
+                    Calificacion.Value,
+                    TextInputSearch_1.Text
+                ) || IsBlank(TextInputSearch_1.Text))
+            )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         PressedBorderColor: =GalleryWorkOrder.BorderColor
