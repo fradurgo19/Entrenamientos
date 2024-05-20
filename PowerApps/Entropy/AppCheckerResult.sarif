@@ -5784,6 +5784,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "CustomerOverviewScreen_2.icon2_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CustomerOverviewScreen_2.icon2_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "CustomerOverviewScreen_2",
+                "type": "CustomerOverviewScreen_2.icon2_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.varimagen"
                 }
               ],
