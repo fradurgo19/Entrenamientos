@@ -56,7 +56,7 @@ MenuScreen_1 As screen:
         Duration: =5000
         Fill: =RGBA(62,96,170,1)
         Height: =70
-        OnTimerEnd: =Set(varCargar,false);Navigate('My Expenses',ScreenTransition.Fade)
+        OnTimerEnd: =Set(varCargar,false);Navigate(MenuScreen,ScreenTransition.Fade)
         Visible: =false
         Width: =280
         X: =166
