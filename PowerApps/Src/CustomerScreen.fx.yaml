@@ -1,5 +1,5 @@
 CustomerScreen As screen:
-    Fill: =RGBA(250, 250, 250, 1)
+    Fill: =RGBA(247, 247, 247, 1)
     Height: =Max(App.Height, App.DesignHeight)
     OnVisible: |-
         =UpdateContext({ResetSearch:true});
@@ -119,7 +119,7 @@ CustomerScreen As screen:
         PressedFill: =TextBox1_12.Fill
         Size: =28
         Text: ="Cursos"
-        Width: =285
+        Width: =194
         X: =198
         ZIndex: =7
 
