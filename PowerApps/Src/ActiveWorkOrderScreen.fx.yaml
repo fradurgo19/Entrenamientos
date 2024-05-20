@@ -24,7 +24,7 @@ ActiveWorkOrderScreen As screen:
             =
         ShowNavigation: =true
         TemplatePadding: =0
-        TemplateSize: =116
+        TemplateSize: =201
         Visible: =CountRows(GalleryWorkOrder.AllItems) > 0
         Y: =164
         ZIndex: =1
@@ -44,14 +44,14 @@ ActiveWorkOrderScreen As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 86
             X: =16
-            Y: =(Parent.TemplateHeight - (Self.Size*1.8 + Subtitle1.Size*1.8 + 2 + Body1.Size*1.8)) / 2
+            Y: =20
             ZIndex: =1
 
         Subtitle1 As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
+            Height: =42
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -60,8 +60,8 @@ ActiveWorkOrderScreen As screen:
             Size: =15
             Text: =ThisItem.Curso.Value
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title1.Width
-            X: =Title1.X
+            Width: =438
+            X: =103
             Y: =Title1.Y + Title1.Height
             ZIndex: =2
 
@@ -69,7 +69,7 @@ ActiveWorkOrderScreen As screen:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
+            Height: =27
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -78,9 +78,9 @@ ActiveWorkOrderScreen As screen:
             Size: =15
             Text: =ThisItem.Usuarios_x003a_Cargo.Value
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title1.Width
-            X: =Title1.X
-            Y: =Subtitle1.Y + Subtitle1.Height
+            Width: =313
+            X: =268
+            Y: =117
             ZIndex: =3
 
         NextArrow1 As icon.ChevronRight:
@@ -118,6 +118,78 @@ ActiveWorkOrderScreen As screen:
             Visible: =ThisItem.IsSelected
             Width: =4
             ZIndex: =6
+
+        Body1_1 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =21
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: =ThisItem.Calificacion.Value
+            VerticalAlign: =VerticalAlign.Top
+            Width: =256
+            X: =268
+            Y: =161
+            ZIndex: =7
+
+        Subtitle1_1 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =31
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: ="Curso"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =69
+            X: =16
+            Y: =Title1.Y + Title1.Height
+            ZIndex: =8
+
+        Subtitle1_2 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =23
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: ="Cargo"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =208
+            X: =16
+            Y: =119
+            ZIndex: =9
+
+        Subtitle1_3 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =21
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: ="Calificación"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =174
+            X: =16
+            Y: =157
+            ZIndex: =10
 
     Rectangle1_12 As rectangle:
         BorderColor: =RGBA(0, 89, 178, 1)
