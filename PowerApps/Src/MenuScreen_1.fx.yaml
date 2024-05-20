@@ -1,9 +1,18 @@
 MenuScreen_1 As screen:
-    BackgroundImage: ='Captura de pantalla 2024-04-24 090742'
-    Fill: =RGBA(232, 232, 232, 1)
+    BackgroundImage: =
     Height: =Max(App.Height, App.DesignHeight)
-    ImagePosition: =ImagePosition.Tile
     Width: =Max(App.Width, App.DesignWidth)
+
+    Image7 As image:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =440
+        Image: ='Captura de pantalla 2024-04-24 090742'
+        ImagePosition: =ImagePosition.Stretch
+        Width: =640
+        Y: =691
+        ZIndex: =1
 
     TextBox4_49 As label:
         Align: =Align.Center
@@ -23,8 +32,7 @@ MenuScreen_1 As screen:
         Size: =28
         Text: ="OFERTA ENTRENAMIENTOS"
         Width: =640
-        Y: =108
-        ZIndex: =18
+        ZIndex: =2
 
     Button1_14 As button:
         BorderColor: =RGBA(221, 79, 14, 1)
@@ -47,13 +55,13 @@ MenuScreen_1 As screen:
         Text: ="Ingresar"
         Width: =221
         X: =209
-        Y: =780
-        ZIndex: =19
+        Y: =627
+        ZIndex: =3
 
     Timer1 As timer:
         AutoStart: =varTiempo
         Color: =RGBA(255,255,255,1)
-        Duration: =5000
+        Duration: =6000
         Fill: =RGBA(62,96,170,1)
         Height: =70
         OnTimerEnd: =Set(varCargar,false);Navigate(MenuScreen,ScreenTransition.Fade)
@@ -61,5 +69,42 @@ MenuScreen_1 As screen:
         Width: =280
         X: =166
         Y: =642
-        ZIndex: =20
+        ZIndex: =4
+
+    Image8 As image:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =425
+        Image: ='cargador-frontal'
+        Visible: =varCargar
+        Width: =320
+        Y: =202
+        ZIndex: =5
+
+    Image9 As image:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =426
+        Image: =minicargador
+        Visible: =varCargar
+        Width: =304
+        X: =336
+        Y: =202
+        ZIndex: =6
+
+    Label1_5 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(101, 128, 187, 1)
+        Color: =RGBA(255, 0, 0, 1)
+        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        FontWeight: =FontWeight.Bold
+        Height: =76
+        Size: =30
+        Text: ="Bienvenido a la App"
+        Underline: =true
+        Width: =640
+        Y: =126
+        ZIndex: =7
 
