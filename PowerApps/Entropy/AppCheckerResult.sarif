@@ -6143,36 +6143,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "WorkOrderDetailScreen_1.Canvas1_4.DataCard3_4.TextBox4_179.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "WorkOrderDetailScreen_1.Canvas1_4.DataCard3_4.TextBox4_179.Text",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "WorkOrderDetailScreen_1",
-                "type": "WorkOrderDetailScreen_1.Canvas1_4.DataCard3_4.TextBox4_179"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "WorkOrderDetailScreen_1.Form3.Item"
                 }
               ],

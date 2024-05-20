@@ -103,7 +103,7 @@ ActiveWorkOrderScreen As screen:
             BorderColor: =RGBA(0, 89, 178, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =118
+            Height: =152
             Icon: =Icon.ChevronRight
             OnSelect: =Navigate(WorkOrderDetailScreen, ScreenTransition.Fade)
             PaddingBottom: =16
@@ -245,7 +245,7 @@ ActiveWorkOrderScreen As screen:
             BorderColor: =RGBA(0, 89, 178, 1)
             Fill: =RGBA(255, 255, 255, 1)
             Height: =55
-            OnSelect: =Navigate(CustomerOverviewScreen, ScreenTransition.Fade)
+            OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
             TabIndex: =0
             Width: =55
             X: =565.4285714285676

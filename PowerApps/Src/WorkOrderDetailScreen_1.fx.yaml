@@ -86,27 +86,6 @@
                 Y: =10
                 ZIndex: =1
 
-            TextBox4_179 As label:
-                BorderColor: =RGBA(0, 89, 178, 1)
-                Color: =RGBA(0, 0, 0, 0.70196078)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =Font.'Lato Light'
-                FontWeight: =FontWeight.Semibold
-                Height: =33
-                HoverBorderColor: =TextBox4_179.BorderColor
-                HoverColor: =TextBox4_179.Color
-                HoverFill: =TextBox4_179.Fill
-                PressedBorderColor: =TextBox4_179.BorderColor
-                PressedColor: =TextBox4_179.Color
-                PressedFill: =TextBox4_179.Fill
-                Size: =15
-                Text: =GalleryWorkOrder.Selected.Calificacion.Value
-                VerticalAlign: =VerticalAlign.Top
-                Width: =560
-                X: =40
-                Y: =547
-                ZIndex: =19
-
         DataCard2_1 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
@@ -155,7 +134,7 @@
     Form3 As form:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: ='Asignación Entrenamientos'
-        Height: =807
+        Height: =834
         Item: =GalleryWorkOrder.Selected
         Width: =640
         Y: =126
@@ -613,7 +592,7 @@
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Curso)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =135
             Required: =false
             Update: =DataCardValue41.Selected
             Width: =640
