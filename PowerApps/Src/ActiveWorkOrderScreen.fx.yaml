@@ -58,7 +58,7 @@ ActiveWorkOrderScreen As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =525
             X: =16
-            Y: =20
+            Y: =8
             ZIndex: =1
 
         Subtitle1 As label:
@@ -77,7 +77,7 @@ ActiveWorkOrderScreen As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =438
             X: =103
-            Y: =Title1.Y + Title1.Height
+            Y: =52
             ZIndex: =2
 
         Body1 As label:
@@ -169,7 +169,7 @@ ActiveWorkOrderScreen As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =69
             X: =16
-            Y: =Title1.Y + Title1.Height
+            Y: =64
             ZIndex: =8
 
         Subtitle1_2 As label:
