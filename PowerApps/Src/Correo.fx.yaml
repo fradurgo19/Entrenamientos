@@ -226,13 +226,13 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         FocusedBorderThickness: =4
-        Height: =174
+        Height: =121
         HintText: ="Links Temas y Pruebas."
         HoverBorderColor: =RGBA(0, 89, 178, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(153, 205, 255, 1)
         Mode: =TextMode.MultiLine
-        Size: =21
+        Size: =12
         TabIndex: =If(PeopleBrowseGallery2.Visible, -1, 0)
         Width: =586
         X: =32
@@ -314,7 +314,7 @@
         BorderColor: =RGBA(0, 89, 178, 1)
         BorderThickness: =3
         DelayItemLoading: =true
-        Height: =449
+        Height: =510
         Items: =Search([@'Ofertas de Entrenamientos'],TextInputSearch_3.Text,field_2)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -322,7 +322,7 @@
         TemplateSize: =128
         Width: =289
         X: =27
-        Y: =686
+        Y: =624
         ZIndex: =14
 
         Label1 As label:
@@ -390,7 +390,7 @@
         BorderColor: =RGBA(0, 89, 178, 1)
         BorderThickness: =3
         DelayItemLoading: =true
-        Height: =450
+        Height: =512
         Items: =Search([@'Usuarios Entrenamientos'],TextInputSearch_2.Text,field_0)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -398,7 +398,7 @@
         TemplateSize: =66
         Width: =291
         X: =330
-        Y: =686
+        Y: =623
         ZIndex: =15
 
         Label1_3 As label:
@@ -467,7 +467,7 @@
         Size: =12
         Width: =289
         X: =329
-        Y: =627
+        Y: =562
         ZIndex: =16
 
     TextInputSearch_3 As text:
@@ -493,7 +493,7 @@
         Size: =12
         Width: =289
         X: =27
-        Y: =627
+        Y: =562
         ZIndex: =17
 
     Icon1 As icon.Reload:
