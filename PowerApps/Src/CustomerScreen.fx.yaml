@@ -98,7 +98,7 @@ CustomerScreen As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =2
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =122
+            Height: =123
             OnSelect: =Navigate(CustomerOverviewScreen, ScreenTransition.Fade)
             TabIndex: =0
             Width: =640
