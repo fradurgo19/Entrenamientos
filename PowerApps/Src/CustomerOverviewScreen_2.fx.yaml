@@ -9,34 +9,7 @@
         Fill: =RGBA(6,26,84,1)
         TabIndex: =0
         Width: =640
-        ZIndex: =2
-
-    Group3_8 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =8
-
-        Rectangle1_25 As rectangle:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Fill: =RGBA(6, 26, 84, 1)
-            OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
-            TabIndex: =0
-            Width: =100
-            ZIndex: =6
-
-        icon1_8 As icon.ChevronLeft:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =97
-            Icon: =Icon.ChevronLeft
-            OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
-            TabIndex: =0
-            Width: =67
-            ZIndex: =7
+        ZIndex: =1
 
     TextBox1_15 As label:
         BorderColor: =RGBA(0, 89, 178, 1)
@@ -55,14 +28,14 @@
         Text: ="Nuevo Curso"
         Width: =523
         X: =81
-        ZIndex: =9
+        ZIndex: =4
 
     Canvas1_6 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
         Height: =953.5844155844004
         Width: =Parent.Width
         Y: =98.38961038961031
-        ZIndex: =14
+        ZIndex: =5
 
     Button1_12 As button:
         BorderThickness: =0
@@ -85,7 +58,7 @@
         Text: ="Nuevo"
         Width: =640
         Y: =1050
-        ZIndex: =15
+        ZIndex: =6
 
     icon3_2 As icon.OptionsList:
         BorderColor: =RGBA(0, 89, 178, 1)
@@ -99,7 +72,7 @@
         Width: =49
         X: =198
         Y: =1076
-        ZIndex: =16
+        ZIndex: =7
 
     Form4_1 As form:
         BorderColor: =RGBA(0, 89, 178, 1)
@@ -108,7 +81,7 @@
         Height: =951
         Width: =640
         Y: =100
-        ZIndex: =17
+        ZIndex: =8
 
         Marca_DataCard2_1 As typedDataCard.comboBoxMultiSelectEditCard:
             BorderColor: =RGBA(0, 89, 178, 1)
@@ -1018,4 +991,31 @@
                 Wrap: =false
                 Y: =DataCardKey50_1.Y
                 ZIndex: =4
+
+    Group3_8 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =8
+
+        Rectangle1_25 As rectangle:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Fill: =RGBA(6, 26, 84, 1)
+            OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =100
+            ZIndex: =2
+
+        icon1_8 As icon.ChevronLeft:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =97
+            Icon: =Icon.ChevronLeft
+            OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =67
+            ZIndex: =3
 
