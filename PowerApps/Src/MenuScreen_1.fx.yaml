@@ -61,7 +61,7 @@ MenuScreen_1 As screen:
     Timer1 As timer:
         AutoStart: =varTiempo
         Color: =RGBA(255,255,255,1)
-        Duration: =6000
+        Duration: =7000
         Fill: =RGBA(62,96,170,1)
         Height: =70
         OnTimerEnd: =Set(varCargar,false);Navigate(MenuScreen,ScreenTransition.Fade)
