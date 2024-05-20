@@ -575,9 +575,8 @@
             <p>Saludos,<br/>Desarrollos Power Platform PARTEQUIPOS 💻🌟</p>
             </div>
             </body>
-            </html>
-            "
-            );
+            </html>");
+            
             Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text, EnvioCorreo &  TextEmailMessage2.Text, {Importance:"High",Bcc:"analista.mantenimiento@partequipos.com",Cc:"auxiliar.garantiasbg@partequipos.com"});           
             Reset(TextEmailSubject2);           
             Reset(TextEmailMessage2);
