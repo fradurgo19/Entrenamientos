@@ -182,6 +182,7 @@ AddNewOpportunityScreen As screen:
                 ZIndex: =1
 
             DataCardValue31 As combobox:
+                AccessibleLabel: ="Valor Automatico"
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 ChevronBackground: =RGBA(0, 51, 102, 1)
                 ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
@@ -197,6 +198,7 @@ AddNewOpportunityScreen As screen:
                 Height: =70
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
+                InputTextPlaceholder: ="Valor Automatico"
                 Items: =Choices([@'Asignación Entrenamientos'].Curso_x003a__x0020_Adjunto)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedColor: =RGBA(255, 255, 255, 1)
@@ -206,6 +208,7 @@ AddNewOpportunityScreen As screen:
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
                 Size: =21
+                Tooltip: ="Valor Automatico"
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey31.Y + DataCardKey31.Height + 5
