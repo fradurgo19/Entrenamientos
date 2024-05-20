@@ -1,0 +1,28 @@
+MenuScreen_1 As screen:
+    BackgroundImage: ='Captura de pantalla 2024-04-24 090742'
+    Fill: =RGBA(232, 232, 232, 1)
+    Height: =Max(App.Height, App.DesignHeight)
+    ImagePosition: =ImagePosition.Tile
+    Width: =Max(App.Width, App.DesignWidth)
+
+    TextBox4_49 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 0, 0, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =81
+        HoverBorderColor: =TextBox4_49.BorderColor
+        HoverColor: =TextBox4_49.Color
+        HoverFill: =TextBox4_49.Fill
+        PressedBorderColor: =TextBox4_49.BorderColor
+        PressedColor: =TextBox4_49.Color
+        PressedFill: =TextBox4_49.Fill
+        Size: =28
+        Text: ="OFERTA ENTRENAMIENTOS"
+        Width: =640
+        Y: =108
+        ZIndex: =18
+
