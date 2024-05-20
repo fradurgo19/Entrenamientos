@@ -21,7 +21,7 @@ MenuScreen As screen:
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Size: =23
+        Size: =28
         Text: ="Cursos"
         Width: =640
         Y: =1029
@@ -34,18 +34,19 @@ MenuScreen As screen:
         Fill: =RGBA(255, 0, 0, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
-        Height: =44
+        Height: =53
         HoverBorderColor: =TextBox4_44.BorderColor
         HoverColor: =TextBox4_44.Color
         HoverFill: =TextBox4_44.Fill
         PressedBorderColor: =TextBox4_44.BorderColor
         PressedColor: =TextBox4_44.Color
         PressedFill: =TextBox4_44.Fill
-        Size: =25
+        Size: =28
         Text: ="VER"
+        Underline: =true
         Width: =595
         X: =45
-        Y: =214
+        Y: =203
         ZIndex: =12
 
     TextBox4_48 As label:
@@ -55,18 +56,19 @@ MenuScreen As screen:
         Fill: =RGBA(255, 0, 0, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
-        Height: =42
+        Height: =72
         HoverBorderColor: =TextBox4_48.BorderColor
         HoverColor: =TextBox4_48.Color
         HoverFill: =TextBox4_48.Fill
         PressedBorderColor: =TextBox4_48.BorderColor
         PressedColor: =TextBox4_48.Color
         PressedFill: =TextBox4_48.Fill
-        Size: =25
+        Size: =28
         Text: ="AGREGAR"
+        Underline: =true
         Width: =595
         X: =45.5
-        Y: =551
+        Y: =521
         ZIndex: =13
 
     Button1 As button:
@@ -173,17 +175,17 @@ MenuScreen As screen:
         Fill: =RGBA(255, 0, 0, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
-        Height: =48
+        Height: =81
         HoverBorderColor: =TextBox4_47.BorderColor
         HoverColor: =TextBox4_47.Color
         HoverFill: =TextBox4_47.Fill
         PressedBorderColor: =TextBox4_47.BorderColor
         PressedColor: =TextBox4_47.Color
         PressedFill: =TextBox4_47.Fill
-        Size: =25
+        Size: =28
         Text: ="OFERTA ENTRENAMIENTOS"
         Width: =640
-        Y: =142
+        Y: =108
         ZIndex: =18
 
     Button1_6 As button:
