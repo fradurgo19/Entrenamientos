@@ -392,7 +392,7 @@
         BorderThickness: =3
         DelayItemLoading: =true
         Height: =512
-        Items: =Search([@'Usuarios Entrenamientos'],TextInputSearch_2.Text,field_0)
+        Items: =Search([@'Usuarios Entrenamientos'],TextInputSearch_2.Text,field_4)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowNavigation: =true
@@ -444,6 +444,19 @@
             X: =229
             Y: =26
             ZIndex: =3
+
+        Label5 As label:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =15
+            OnSelect: =Select(Parent)
+            Size: =
+            Text: =ThisItem.field_4
+            Width: =281
+            Y: =26
+            ZIndex: =4
 
     TextInputSearch_2 As text:
         BorderThickness: =3
