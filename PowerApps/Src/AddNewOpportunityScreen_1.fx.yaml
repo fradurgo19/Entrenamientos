@@ -74,7 +74,24 @@ AddNewOpportunityScreen_1 As screen:
         Height: =86
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        OnSelect: =SubmitForm(Form1_1);ResetForm(Form1_1);NewForm(Form1_1); Navigate(OpportunityMessageScreen, ScreenTransition.Fade)
+        OnSelect: |-
+            =SubmitForm(Form1_1);
+            ResetForm(Form1_1);
+            NewForm(Form1_1); 
+            
+            SubmitForm(Form1_2);
+            ResetForm(Form1_2);
+            NewForm(Form1_2); 
+            
+            SubmitForm(Form1_3);
+            ResetForm(Form1_3);
+            NewForm(Form1_3); 
+            
+            SubmitForm(Form1_4);
+            ResetForm(Form1_4);
+            NewForm(Form1_4); 
+            
+            Navigate(OpportunityMessageScreen, ScreenTransition.Fade)
         PaddingLeft: =54
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
