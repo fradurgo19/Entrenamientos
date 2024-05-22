@@ -152,7 +152,7 @@ MenuScreen As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =48
+        Height: =37
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(AddNewOpportunityScreen, ScreenTransition.Fade)
@@ -197,7 +197,7 @@ MenuScreen As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =32
+        Height: =39
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(CustomerOverviewScreen_2, ScreenTransition.Fade)
@@ -209,7 +209,7 @@ MenuScreen As screen:
         Text: ="Nuevo Curso"
         Width: =253
         X: =35
-        Y: =777
+        Y: =751
         ZIndex: =20
 
     Button1_13 As button:
@@ -233,7 +233,7 @@ MenuScreen As screen:
         Text: ="Nuevo Usuario"
         Width: =253
         X: =35
-        Y: =699
+        Y: =686
         ZIndex: =21
 
     Button1_6 As button:
@@ -245,7 +245,6 @@ MenuScreen As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =51
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(AddNewOpportunityScreen_1, ScreenTransition.Fade)
