@@ -743,10 +743,10 @@ AddNewOpportunityScreen_1 As screen:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: ='Asignación Entrenamientos'
         DefaultMode: =FormMode.New
-        Height: =282
+        Height: =290
         Width: =200
         X: =440
-        Y: =193
+        Y: =185
         ZIndex: =19
 
         Usuarios_DataCard1_3 As typedDataCard.comboBoxEditCard:
