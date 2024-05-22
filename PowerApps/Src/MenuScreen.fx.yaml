@@ -152,7 +152,7 @@ MenuScreen As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =53
+        Height: =48
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(AddNewOpportunityScreen, ScreenTransition.Fade)
@@ -161,8 +161,8 @@ MenuScreen As screen:
         RadiusTopLeft: =30
         RadiusTopRight: =30
         Size: =24
-        Text: ="Nueva Asignación"
-        Width: =313
+        Text: ="Asignación"
+        Width: =253
         X: =35
         Y: =625
         ZIndex: =17
@@ -235,4 +235,28 @@ MenuScreen As screen:
         X: =35
         Y: =699
         ZIndex: =21
+
+    Button1_6 As button:
+        BorderColor: =RGBA(152, 208, 70, 1)
+        BorderThickness: =4
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =51
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        OnSelect: =Navigate(AddNewOpportunityScreen_1, ScreenTransition.Fade)
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =24
+        Text: ="Asignación Masiva"
+        Width: =315
+        X: =303
+        Y: =622
+        ZIndex: =22
 
