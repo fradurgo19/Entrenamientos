@@ -22,7 +22,7 @@ MenuScreen As screen:
         RadiusTopLeft: =0
         RadiusTopRight: =0
         Size: =28
-        Text: ="Correo"
+        Text: ="Correo Masivo"
         Width: =640
         Y: =1029
         ZIndex: =2
@@ -197,7 +197,7 @@ MenuScreen As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =53
+        Height: =32
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(CustomerOverviewScreen_2, ScreenTransition.Fade)
@@ -207,7 +207,7 @@ MenuScreen As screen:
         RadiusTopRight: =30
         Size: =24
         Text: ="Nuevo Curso"
-        Width: =221
+        Width: =253
         X: =35
         Y: =777
         ZIndex: =20
@@ -221,7 +221,7 @@ MenuScreen As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =53
+        Height: =37
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(UsuarioDetailScreen_2, ScreenTransition.Fade)
@@ -231,7 +231,7 @@ MenuScreen As screen:
         RadiusTopRight: =30
         Size: =24
         Text: ="Nuevo Usuario"
-        Width: =268
+        Width: =253
         X: =35
         Y: =699
         ZIndex: =21
