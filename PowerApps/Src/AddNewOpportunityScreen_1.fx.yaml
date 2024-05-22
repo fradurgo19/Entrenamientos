@@ -91,6 +91,26 @@ AddNewOpportunityScreen_1 As screen:
             ResetForm(Form1_4);
             NewForm(Form1_4); 
             
+            SubmitForm(Form1_5);
+            ResetForm(Form1_5);
+            NewForm(Form1_5);
+            
+            SubmitForm(Form1_6);
+            ResetForm(Form1_6);
+            NewForm(Form1_6);
+            
+            SubmitForm(Form1_7);
+            ResetForm(Form1_7);
+            NewForm(Form1_7);
+            
+            SubmitForm(Form1_8);
+            ResetForm(Form1_8);
+            NewForm(Form1_8);
+            
+            SubmitForm(Form1_9);
+            ResetForm(Form1_9);
+            NewForm(Form1_9);
+            
             Navigate(OpportunityMessageScreen, ScreenTransition.Fade)
         PaddingLeft: =54
         RadiusBottomLeft: =0
