@@ -458,7 +458,7 @@ AddNewOpportunityScreen_2 As screen:
         Height: =29
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        OnSelect: |+
+        OnSelect: |
             =// Este código se puede agregar en el evento OnSelect del botón
             
             // Incrementa el número del ID
@@ -481,9 +481,8 @@ AddNewOpportunityScreen_2 As screen:
             
                    )
                 )
-            );Clear(colSelected);Reset(Checkbox1)
-                        
-            
+            );
+            Clear(colSelected)
         RadiusBottomLeft: =15
         RadiusBottomRight: =15
         RadiusTopLeft: =15
