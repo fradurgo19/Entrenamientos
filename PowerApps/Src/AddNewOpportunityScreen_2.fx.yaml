@@ -3,7 +3,8 @@ AddNewOpportunityScreen_2 As screen:
     Height: =Max(App.Height, App.DesignHeight)
     OnVisible: |-
         =UpdateContext({ResetOpportunity:true});
-        UpdateContext({ResetOpportunity:false})
+        UpdateContext({ResetOpportunity:false});
+        ClearCollect(colAsigna,'Asignación Entrenamientos')
     Width: =Max(App.Width, App.DesignWidth)
 
     Rectangle1_40 As rectangle:
@@ -160,7 +161,7 @@ AddNewOpportunityScreen_2 As screen:
         BorderThickness: =1
         DelayItemLoading: =true
         Height: =734
-        Items: ='Asignación Entrenamientos'
+        Items: =colAsigna
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =27
