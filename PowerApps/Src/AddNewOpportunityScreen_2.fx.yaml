@@ -163,7 +163,7 @@ AddNewOpportunityScreen_2 As screen:
         Items: ='Asignación Entrenamientos'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =32
+        TemplateSize: =33
         Y: =332
         ZIndex: =18
 
@@ -278,6 +278,7 @@ AddNewOpportunityScreen_2 As screen:
             CheckboxBorderColor: =RGBA(0, 89, 178, 1)
             CheckboxSize: =25
             Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(0, 51, 102, 1)
             Height: =31
             HoverColor: =RGBA(0, 89, 178, 1)
             OnSelect: =Select(Parent)
