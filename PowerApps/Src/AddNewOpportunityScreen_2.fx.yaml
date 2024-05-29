@@ -159,12 +159,12 @@ AddNewOpportunityScreen_2 As screen:
         BorderColor: =RGBA(0, 89, 178, 1)
         BorderThickness: =1
         DelayItemLoading: =true
-        Height: =662
+        Height: =734
         Items: ='Asignación Entrenamientos'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =33
-        Y: =332
+        TemplateSize: =29
+        Y: =260
         ZIndex: =18
 
         Dropdown1 As dropdown:
@@ -262,13 +262,13 @@ AddNewOpportunityScreen_2 As screen:
         Toggle1 As toggleSwitch:
             BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(0, 0, 0, 1)
-            FalseFill: =RGBA(128, 130, 133, 1)
+            FalseFill: =RGBA(246, 88, 16, 1)
             HandleFill: =RGBA(255, 255, 255, 1)
             Height: =31
             OnChange: =ThisItem.Aprobo
             OnSelect: =Select(Parent)
             Size: =21
-            TrueFill: =RGBA(0, 51, 102, 1)
+            TrueFill: =RGBA(141, 198, 63, 1)
             Width: =53
             X: =577
             ZIndex: =5
@@ -289,4 +289,100 @@ AddNewOpportunityScreen_2 As screen:
             Text: =
             Width: =26
             ZIndex: =6
+
+    Checkbox2 As checkbox:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        CheckboxBorderColor: =RGBA(0, 89, 178, 1)
+        CheckboxSize: =30
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =25
+        HoverColor: =RGBA(0, 89, 178, 1)
+        OnCheck: =ClearCollect(colSelected,'Asignación Entrenamientos')
+        OnUncheck: =Clear(colSelected)
+        Size: =21
+        Text: =""
+        VerticalAlign: =VerticalAlign.Bottom
+        Width: =27
+        Y: =229
+        ZIndex: =25
+
+    Group2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =25
+
+        Rectangle3 As rectangle:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Fill: =RGBA(0, 51, 102, 1)
+            Height: =36
+            Width: =640
+            Y: =224
+            ZIndex: =19
+
+        Label6 As label:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =36
+            Size: =12
+            Text: ="Usuario"
+            Width: =77
+            X: =68
+            Y: =224
+            ZIndex: =20
+
+        Label6_1 As label:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =36
+            Size: =12
+            Text: ="Curso"
+            Width: =77
+            X: =214
+            Y: =224
+            ZIndex: =21
+
+        Label6_2 As label:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =36
+            Size: =12
+            Text: ="Estado"
+            Width: =77
+            X: =355
+            Y: =224
+            ZIndex: =22
+
+        Label6_3 As label:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =36
+            Size: =12
+            Text: ="Puntaje"
+            Width: =77
+            X: =464
+            Y: =224
+            ZIndex: =23
+
+        Label6_4 As label:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =36
+            Size: =12
+            Text: ="Aprobo"
+            Width: =77
+            X: =563
+            Y: =224
+            ZIndex: =24
 
