@@ -164,7 +164,7 @@ AddNewOpportunityScreen_2 As screen:
         Items: =colAsigna
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =34
+        TemplateSize: =27
         Y: =260
         ZIndex: =18
 
@@ -331,7 +331,7 @@ AddNewOpportunityScreen_2 As screen:
             Size: =12
             Text: ="Usuario"
             Width: =77
-            X: =68
+            X: =61
             Y: =224
             ZIndex: =20
 
@@ -344,7 +344,7 @@ AddNewOpportunityScreen_2 As screen:
             Size: =12
             Text: ="Curso"
             Width: =77
-            X: =214
+            X: =218
             Y: =224
             ZIndex: =21
 
@@ -357,7 +357,7 @@ AddNewOpportunityScreen_2 As screen:
             Size: =12
             Text: ="Estado"
             Width: =77
-            X: =355
+            X: =366
             Y: =224
             ZIndex: =22
 
@@ -370,7 +370,7 @@ AddNewOpportunityScreen_2 As screen:
             Size: =12
             Text: ="Puntaje"
             Width: =77
-            X: =464
+            X: =486
             Y: =224
             ZIndex: =23
 
@@ -384,7 +384,7 @@ AddNewOpportunityScreen_2 As screen:
             Text: ="Aprobo"
             Width: =77
             X: =563
-            Y: =224
+            Y: =222
             ZIndex: =24
 
     Button2 As button:
@@ -444,7 +444,7 @@ AddNewOpportunityScreen_2 As screen:
         RadiusTopLeft: =15
         RadiusTopRight: =15
         Size: =10
-        Width: =77
+        Width: =33
         X: =214
         Y: =193
         ZIndex: =27
@@ -490,8 +490,8 @@ AddNewOpportunityScreen_2 As screen:
         Size: =10
         Text: ="Copiar"
         Width: =70
-        X: =301
-        Y: =190
+        X: =260
+        Y: =193
         ZIndex: =28
 
     Button2_2 As button:
@@ -515,6 +515,6 @@ AddNewOpportunityScreen_2 As screen:
         Text: ="Eliminar"
         Width: =70
         X: =68
-        Y: =190
+        Y: =193
         ZIndex: =29
 
