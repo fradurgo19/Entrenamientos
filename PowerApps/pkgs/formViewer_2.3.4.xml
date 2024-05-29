@@ -1,4 +1,4 @@
-<widget xmlns="http://openajax.org/metadata" spec="1.0" id="http://microsoft.com/appmagic/formViewer" name="formViewer" jsClass="AppMagic.Controls.Form.FormControl" version="2.3.3" styleable="true" runtimeCost="1" xmlns:appMagic="http://schemas.microsoft.com/appMagic">
+<widget xmlns="http://openajax.org/metadata" spec="1.0" id="http://microsoft.com/appmagic/formViewer" name="formViewer" jsClass="AppMagic.Controls.Form.FormControl" version="2.3.4" styleable="true" runtimeCost="1" xmlns:appMagic="http://schemas.microsoft.com/appMagic">
   <author name="Microsoft AppMagic" />
   <license type="text/html"><![CDATA[<p>TODO:  Need license text here.</p>]]></license>
   <description><![CDATA[FormViewer
@@ -83,11 +83,11 @@
   <!-- Display metadata providing property visibility, order, sections, and grouping in UI (e.g. properties panel) -->
   <appMagic:displayMetadata>
     <appMagic:section>
-      <appMagic:property name="DataSource" serverProvidesValue="true" computedValueType="ConnectedDataSourceName" showInCommandBar="true" />
+      <appMagic:property name="DataSource" serverProvidesValue="true" computedValueType="ConnectedDataSourceName" showInCommandBar="true" showInCanvasInlineActionBar="true" />
       <appMagic:dataSourceSelectionCallout dataSourcePropertyName="DataSource" />
       <appMagic:configureCdsViews propertyToReplace="DataSource" />
       <appMagic:wizardPropertyGroup>
-        <appMagic:wizardStep label="##ControlSidebar_PropertiesPanel_Fields_DisplayName##" panelTitle="##ControlSidebar_PropertiesPanel_Fields_DisplayName##" linkedLocation="FieldSelection" computedValueType="FieldSummaryEditFields" propertyInvariantName="Fields" serverProvidesValue="true" showInCommandBar="true" />
+        <appMagic:wizardStep label="##ControlSidebar_PropertiesPanel_Fields_DisplayName##" panelTitle="##ControlSidebar_PropertiesPanel_Fields_DisplayName##" linkedLocation="FieldSelection" computedValueType="FieldSummaryEditFields" propertyInvariantName="Fields" serverProvidesValue="true" showInCommandBar="true" showInCanvasInlineActionBar="true" />
       </appMagic:wizardPropertyGroup>
       <appMagic:configureFields propertyInvariantName="ShowFields" dataSourcePropertyName="DataSource" supportsCollection="false" isEditable="false" displayFormat="PropertiesDisplayOrder" generateFieldSelectionConfig="true" addCustomFieldType="blankCard" fieldOrderingType="XYProperty" unsupportedFieldTypes="P" />
     </appMagic:section>
@@ -145,5 +145,8 @@
   </appMagic:conversion>
   <appMagic:conversion from="2.3.2" to="2.3.3">
     <!-- Removing hideInRecordingMode property attribute -->
+  </appMagic:conversion>
+  <appMagic:conversion from="2.3.3" to="2.3.4">
+    <!-- Adding showInCanvasInlineActionBar flag-->
   </appMagic:conversion>
 </widget>
