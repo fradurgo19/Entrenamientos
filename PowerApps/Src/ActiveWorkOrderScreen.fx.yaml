@@ -325,3 +325,26 @@ ActiveWorkOrderScreen As screen:
         Y: =8
         ZIndex: =15
 
+    Button1_15 As button:
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(54, 166, 182, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =86
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        OnSelect: =Navigate(AddNewOpportunityScreen_2, ScreenTransition.Fade)
+        PaddingLeft: =35
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =28
+        Text: ="Asignación Masiva"
+        Width: =640
+        Y: =1050
+        ZIndex: =16
+
