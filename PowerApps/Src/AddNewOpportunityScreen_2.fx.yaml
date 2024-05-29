@@ -157,13 +157,14 @@ AddNewOpportunityScreen_2 As screen:
 
     Gallery2 As gallery.galleryVertical:
         BorderColor: =RGBA(0, 89, 178, 1)
+        BorderThickness: =1
         DelayItemLoading: =true
-        Height: =687
+        Height: =662
         Items: ='Asignación Entrenamientos'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
-        Y: =307
+        TemplateSize: =32
+        Y: =332
         ZIndex: =18
 
         Dropdown1 As dropdown:
@@ -176,7 +177,7 @@ AddNewOpportunityScreen_2 As screen:
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
-            Height: =36
+            Height: =31
             HoverColor: =RGBA(0, 0, 0, 1)
             HoverFill: =RGBA(153, 205, 255, 1)
             Items: =ThisItem.Usuarios
@@ -185,8 +186,103 @@ AddNewOpportunityScreen_2 As screen:
             PressedFill: =RGBA(0, 89, 178, 1)
             SelectionFill: =RGBA(0, 51, 102, 1)
             Size: =10
-            Width: =250
-            X: =4
-            Y: =42
+            Width: =173
+            X: =26
             ZIndex: =1
+
+        Dropdown1_1 As dropdown:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            ChevronBackground: =RGBA(0, 51, 102, 1)
+            ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+            ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+            ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =31
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(153, 205, 255, 1)
+            Items: =ThisItem.Curso
+            OnSelect: =Select(Parent)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(0, 89, 178, 1)
+            SelectionFill: =RGBA(0, 51, 102, 1)
+            Size: =10
+            Width: =152
+            X: =199
+            ZIndex: =2
+
+        Dropdown1_2 As dropdown:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            ChevronBackground: =RGBA(0, 51, 102, 1)
+            ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+            ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+            ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =31
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(153, 205, 255, 1)
+            Items: =ThisItem.Estado
+            OnSelect: =Select(Parent)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(0, 89, 178, 1)
+            SelectionFill: =RGBA(0, 51, 102, 1)
+            Size: =10
+            Width: =125
+            X: =351
+            ZIndex: =3
+
+        Dropdown1_3 As dropdown:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            ChevronBackground: =RGBA(0, 51, 102, 1)
+            ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+            ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+            ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =31
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(153, 205, 255, 1)
+            Items: =ThisItem.Calificacion
+            OnSelect: =Select(Parent)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(0, 89, 178, 1)
+            SelectionFill: =RGBA(0, 51, 102, 1)
+            Size: =10
+            Width: =89
+            X: =476
+            ZIndex: =4
+
+        Toggle1 As toggleSwitch:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            FalseFill: =RGBA(128, 130, 133, 1)
+            HandleFill: =RGBA(255, 255, 255, 1)
+            Height: =31
+            OnChange: =ThisItem.Aprobo
+            OnSelect: =Select(Parent)
+            Size: =21
+            TrueFill: =RGBA(0, 51, 102, 1)
+            Width: =53
+            X: =577
+            ZIndex: =5
+
+        Checkbox1 As checkbox:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            CheckboxBorderColor: =RGBA(0, 89, 178, 1)
+            CheckboxSize: =25
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =31
+            HoverColor: =RGBA(0, 89, 178, 1)
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =
+            Width: =26
+            ZIndex: =6
 
