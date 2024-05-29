@@ -397,18 +397,22 @@ AddNewOpportunityScreen_2 As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: |
-            =Set(
-                varNumber,
-                varNumber + 1
-            );
-            ForAll(Value(TextInput1.Text)),
-            Collect(
-                colgriData,
+            =// Este código se puede agregar en el evento OnSelect del botón
+            
+            // Incrementa el número del ID
+            Set(varNumber, varNumber + 1);
+            
+            // Crea un nuevo registro utilizando Patch
+            Set(
+                varNewRecord,
                 Patch(
-                    varNewRecord,
-                    (ID: varNumber)
+                    Defaults(colAsigna), // Esto asume que colAsigna es la colección donde se agregan los registros
+                    {ID: varNumber} // Puedes agregar más campos si es necesario
                 )
-            ))  
+            );
+            
+            // Agrega el nuevo registro a la colección
+            Collect(colAsigna, varNewRecord)
         RadiusBottomLeft: =15
         RadiusBottomRight: =15
         RadiusTopLeft: =15
@@ -429,7 +433,9 @@ AddNewOpportunityScreen_2 As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         FocusedBorderThickness: =4
+        Format: =TextFormat.Number
         Height: =29
+        HintText: ="1"
         HoverBorderColor: =RGBA(0, 89, 178, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(153, 205, 255, 1)
