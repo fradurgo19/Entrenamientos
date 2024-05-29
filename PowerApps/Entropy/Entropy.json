@@ -41,6 +41,7 @@
     "Button1_9": 374,
     "Button2": 780,
     "Button2_1": 782,
+    "Button2_2": 783,
     "Button3": 97,
     "Calificacion_DataCard1": 33,
     "Calificacion_DataCard2": 327,
@@ -786,7 +787,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "05/29/2024 17:50:36",
+  "HeaderLastSavedDateTimeUTC": "05/29/2024 18:00:45",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0ae3c85a-c80f-4d6e-bc0c-c76d72ecebca": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/5213d63d377249a2a92e74be5730ff0a\"",
@@ -826,6 +827,7 @@
   "OrderDataSource": {
     "Asignación Entrenamientos": 22,
     "colAsigna": 30,
+    "colDelete": 31,
     "colSelected": 29,
     "ComboBoxSample": 24,
     "Customer": 20,
@@ -993,6 +995,7 @@
     "Button1_9": {},
     "Button2": {},
     "Button2_1": {},
+    "Button2_2": {},
     "Button3": {},
     "Calificacion_DataCard1": {},
     "Calificacion_DataCard2": {},
@@ -1778,6 +1781,7 @@
     "Button1_9": 713,
     "Button2": 0,
     "Button2_1": 0,
+    "Button2_2": 0,
     "Button3": 719,
     "Calificacion_DataCard1": 498,
     "Calificacion_DataCard2": 233,
@@ -2549,7 +2553,7 @@
   "VolatileProperties": {
     "AnalysisLoadTime": 3.5880538,
     "ControlCount": {
-      "button": 21,
+      "button": 22,
       "checkbox": 2,
       "circle": 5,
       "combobox": 57,
@@ -2564,7 +2568,7 @@
       "htmlViewer": 2,
       "icon": 41,
       "image": 14,
-      "label": 353,
+      "label": 360,
       "rating": 1,
       "rectangle": 52,
       "screen": 18,
