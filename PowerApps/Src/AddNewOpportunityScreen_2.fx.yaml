@@ -298,7 +298,7 @@ AddNewOpportunityScreen_2 As screen:
         Color: =RGBA(0, 0, 0, 1)
         Height: =24
         HoverColor: =RGBA(0, 89, 178, 1)
-        OnCheck: =ClearCollect(colSelected,'Asignación Entrenamientos')
+        OnCheck: =ClearCollect(colSelected,colAsigna)
         OnUncheck: =Clear(colSelected)
         Size: =21
         Text: =""

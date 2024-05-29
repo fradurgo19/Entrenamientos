@@ -7494,36 +7494,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddNewOpportunityScreen_2.Checkbox2.OnCheck"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNewOpportunityScreen_2.Checkbox2.OnCheck",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "OnCheck",
-                "module": "AddNewOpportunityScreen_2",
-                "type": "AddNewOpportunityScreen_2.Checkbox2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-CollectDelegatableDataSource",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "AddNewOpportunityScreen_2.OnVisible"
                 }
               ],
@@ -8334,7 +8304,7 @@
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Limite los datos recopilados del origen de datos actualizando la fórmula \"ClearCollect(colSelected; 'Asignación Entrenamientos')\" para incluir una función de filtrado, como \"Filter\" o \"Search\"."
+                  "Limite los datos recopilados del origen de datos actualizando la fórmula \"ClearCollect(colAsigna; 'Asignación Entrenamientos')\" para incluir una función de filtrado, como \"Filter\" o \"Search\"."
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
