@@ -165,7 +165,8 @@ ActiveWorkOrderScreen As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =15
-            Text: ="Curso"
+            Text: |-
+                ="Curso:"
             VerticalAlign: =VerticalAlign.Top
             Width: =69
             X: =16
@@ -183,7 +184,8 @@ ActiveWorkOrderScreen As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =15
-            Text: ="Cargo"
+            Text: |-
+                ="Cargo:"
             VerticalAlign: =VerticalAlign.Top
             Width: =69
             X: =16
@@ -201,7 +203,8 @@ ActiveWorkOrderScreen As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =15
-            Text: ="Calificación"
+            Text: |-
+                ="Calificación:"
             VerticalAlign: =VerticalAlign.Top
             Width: =133
             X: =16
@@ -374,7 +377,7 @@ ActiveWorkOrderScreen As screen:
         Height: =86
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        OnSelect: =Navigate(AddNewOpportunityScreen_2, ScreenTransition.Fade)
+        OnSelect: =Navigate(AddNewOpportunityScreen_1, ScreenTransition.Fade)
         PaddingLeft: =35
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
