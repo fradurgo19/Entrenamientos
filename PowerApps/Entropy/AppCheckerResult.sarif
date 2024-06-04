@@ -5284,6 +5284,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "ActiveWorkOrderScreen.DatePicker1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ActiveWorkOrderScreen.DatePicker1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ActiveWorkOrderScreen",
+                "type": "ActiveWorkOrderScreen.DatePicker1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Correo.Rectangle1_8.AccessibleLabel"
                 }
               ],
