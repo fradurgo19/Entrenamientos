@@ -103,7 +103,7 @@ ActiveWorkOrderScreen As screen:
             BorderColor: =RGBA(0, 89, 178, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =152
+            Height: =109
             Icon: =Icon.ChevronRight
             OnSelect: =Navigate(WorkOrderDetailScreen, ScreenTransition.Fade)
             PaddingBottom: =16
@@ -222,11 +222,11 @@ ActiveWorkOrderScreen As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =18
+            Size: =10
             Text: =ThisItem.Created
             VerticalAlign: =VerticalAlign.Top
-            Width: =257
-            X: =383
+            Width: =203
+            X: =396
             Y: =163
             ZIndex: =11
 
@@ -234,20 +234,58 @@ ActiveWorkOrderScreen As screen:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =28
+            Height: =26
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =15
+            Size: =11
             Text: |-
                 ="Asignado:"
             VerticalAlign: =VerticalAlign.Top
-            Width: =110
-            X: =283
-            Y: =165
+            Width: =77
+            X: =319
+            Y: =167
             ZIndex: =12
+
+        Subtitle1_5 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =26
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =11
+            Text: |-
+                ="Asignó:"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =77
+            X: =319
+            Y: =135
+            ZIndex: =13
+
+        Title1_2 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(6, 26, 84, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =24
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =10
+            Text: =ThisItem.Author.DisplayName
+            VerticalAlign: =VerticalAlign.Top
+            Width: =244
+            X: =396
+            Y: =137
+            ZIndex: =14
 
     Rectangle1_12 As rectangle:
         BorderColor: =RGBA(0, 89, 178, 1)
