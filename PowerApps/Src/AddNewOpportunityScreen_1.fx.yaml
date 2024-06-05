@@ -184,6 +184,7 @@ AddNewOpportunityScreen_1 As screen:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: ='Asignación Entrenamientos'
         DefaultMode: =FormMode.New
+        Fill: =RGBA(204, 222, 240, 1)
         Height: =289
         Width: =215
         Y: =186
@@ -473,6 +474,7 @@ AddNewOpportunityScreen_1 As screen:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: ='Asignación Entrenamientos'
         DefaultMode: =FormMode.New
+        Fill: =RGBA(232, 244, 217, 1)
         Height: =282
         Width: =203
         X: =225
@@ -751,6 +753,7 @@ AddNewOpportunityScreen_1 As screen:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: ='Asignación Entrenamientos'
         DefaultMode: =FormMode.New
+        Fill: =RGBA(204, 231, 246, 1)
         Height: =290
         Width: =200
         X: =440
@@ -865,8 +868,9 @@ AddNewOpportunityScreen_1 As screen:
                 Height: =31
                 Size: =9
                 Text: =Parent.DisplayName
-                Width: =197
+                Width: =170
                 Wrap: =false
+                X: =30
                 Y: =10
                 ZIndex: =1
 
@@ -897,7 +901,8 @@ AddNewOpportunityScreen_1 As screen:
                 Size: =9
                 Tooltip: =Parent.DisplayName
                 Width: =160
-                Y: =DataCardKey1_3.Y + DataCardKey1_3.Height + 5
+                X: =21
+                Y: =41
                 ZIndex: =2
 
             ErrorMessage1_3 As label:
@@ -954,9 +959,9 @@ AddNewOpportunityScreen_1 As screen:
                 Height: =31
                 Size: =9
                 Text: =Parent.DisplayName
-                Width: =195
+                Width: =190
                 Wrap: =false
-                X: =5
+                X: =10
                 ZIndex: =1
 
             DataCardValue6_3 As combobox:
@@ -986,7 +991,7 @@ AddNewOpportunityScreen_1 As screen:
                 Size: =9
                 Tooltip: =Parent.DisplayName
                 Width: =160
-                X: =20
+                X: =30
                 Y: =41
                 ZIndex: =2
 
@@ -1026,6 +1031,7 @@ AddNewOpportunityScreen_1 As screen:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: ='Asignación Entrenamientos'
         DefaultMode: =FormMode.New
+        Fill: =RGBA(204, 231, 246, 1)
         Height: =288
         Width: =207
         X: =227
@@ -1304,6 +1310,7 @@ AddNewOpportunityScreen_1 As screen:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: ='Asignación Entrenamientos'
         DefaultMode: =FormMode.New
+        Fill: =RGBA(232, 244, 217, 1)
         Height: =287
         Width: =213
         X: =227
@@ -1582,6 +1589,7 @@ AddNewOpportunityScreen_1 As screen:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: ='Asignación Entrenamientos'
         DefaultMode: =FormMode.New
+        Fill: =RGBA(253, 222, 207, 1)
         Height: =288
         Width: =212
         X: =428
@@ -1860,6 +1868,7 @@ AddNewOpportunityScreen_1 As screen:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: ='Asignación Entrenamientos'
         DefaultMode: =FormMode.New
+        Fill: =RGBA(232, 244, 217, 1)
         Height: =288
         Width: =225
         Y: =475
@@ -2137,6 +2146,7 @@ AddNewOpportunityScreen_1 As screen:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: ='Asignación Entrenamientos'
         DefaultMode: =FormMode.New
+        Fill: =RGBA(253, 222, 207, 1)
         Height: =287
         Width: =227
         Y: =763
@@ -2414,6 +2424,7 @@ AddNewOpportunityScreen_1 As screen:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: ='Asignación Entrenamientos'
         DefaultMode: =FormMode.New
+        Fill: =RGBA(204, 231, 246, 1)
         Height: =283
         Width: =212
         X: =428
