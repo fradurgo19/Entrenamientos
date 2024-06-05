@@ -28,7 +28,7 @@ ActiveWorkOrderScreen As screen:
                     Usuarios_x003a_Cargo.Value,
                     TextInputSearch_1.Text
                 ) || IsBlank(TextInputSearch_1.Text)) && 
-                (DateValue(FechaLimite) = DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate))
+                (FechaLimite = DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate))
             )
             
         Layout: =Layout.Vertical
