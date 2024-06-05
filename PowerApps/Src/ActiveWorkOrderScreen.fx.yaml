@@ -9,7 +9,7 @@ ActiveWorkOrderScreen As screen:
         DelayItemLoading: =true
         DisabledBorderColor: =GalleryWorkOrder.BorderColor
         DisabledFill: =GalleryWorkOrder.Fill
-        Height: =970
+        Height: =886
         HoverBorderColor: =GalleryWorkOrder.BorderColor
         HoverFill: =GalleryWorkOrder.Fill
         Items: |
@@ -37,7 +37,7 @@ ActiveWorkOrderScreen As screen:
             =
         ShowNavigation: =true
         TemplatePadding: =0
-        TemplateSize: =201
+        TemplateSize: =216
         Visible: =CountRows(GalleryWorkOrder.AllItems) > 0
         Y: =164
         ZIndex: =1
