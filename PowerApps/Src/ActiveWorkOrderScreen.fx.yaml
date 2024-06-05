@@ -15,21 +15,14 @@ ActiveWorkOrderScreen As screen:
         Items: |+
             =Filter(
                 'Asignación Entrenamientos',
-                (StartsWith(
-                    Usuarios.Value,
-                    TextInputSearch_1.Text
-                ) || IsBlank(TextInputSearch_1.Text)) || (StartsWith(
-                    Curso.Value,
-                    TextInputSearch_1.Text
-                ) || IsBlank(TextInputSearch_1.Text)) || (StartsWith(
-                    Calificacion.Value,
-                    TextInputSearch_1.Text
-                ) || IsBlank(TextInputSearch_1.Text)) || (StartsWith(
-                    Usuarios_x003a_Cargo.Value,
-                    TextInputSearch_1.Text
-                ) || IsBlank(TextInputSearch_1.Text)) &&
-                (FechaLimite >= DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate)) &&  (FechaLimite <= DatePicker1_1.SelectedDate || IsBlank(DatePicker1_1.SelectedDate))
+                (StartsWith(Usuarios.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text)) ||
+                (StartsWith(Curso.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text)) ||
+                (StartsWith(Calificacion.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text)) ||
+                (StartsWith(Usuarios_x003a_Cargo.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text)) &&
+                (FechaLimite >= DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate)) &&
+                (FechaLimite <= DatePicker1_1.SelectedDate || IsBlank(DatePicker1_1.SelectedDate))
             )
+            
             
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
