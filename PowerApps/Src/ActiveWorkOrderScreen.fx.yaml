@@ -234,7 +234,7 @@ ActiveWorkOrderScreen As screen:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =26
+            Height: =24
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -242,11 +242,11 @@ ActiveWorkOrderScreen As screen:
             PaddingTop: =0
             Size: =11
             Text: |-
-                ="Asignado:"
+                ="Asignado el:"
             VerticalAlign: =VerticalAlign.Top
-            Width: =77
-            X: =319
-            Y: =167
+            Width: =101
+            X: =294
+            Y: =169
             ZIndex: =12
 
         Subtitle1_5 As label:
