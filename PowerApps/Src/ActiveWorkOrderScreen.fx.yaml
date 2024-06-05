@@ -12,7 +12,7 @@ ActiveWorkOrderScreen As screen:
         Height: =886
         HoverBorderColor: =GalleryWorkOrder.BorderColor
         HoverFill: =GalleryWorkOrder.Fill
-        Items: |+
+        Items: |
             =Filter(
                 'Asignación Entrenamientos',
                 (StartsWith(
@@ -30,7 +30,6 @@ ActiveWorkOrderScreen As screen:
                 ) || IsBlank(TextInputSearch_1.Text)) || 
                 (FechaLimite = DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate))
             )
-            
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         PressedBorderColor: =GalleryWorkOrder.BorderColor
