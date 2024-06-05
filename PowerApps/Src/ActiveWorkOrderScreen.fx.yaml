@@ -12,7 +12,7 @@ ActiveWorkOrderScreen As screen:
         Height: =886
         HoverBorderColor: =GalleryWorkOrder.BorderColor
         HoverFill: =GalleryWorkOrder.Fill
-        Items: |
+        Items: |+
             =Filter(
                 'Asignación Entrenamientos',
                 (StartsWith(
@@ -28,8 +28,9 @@ ActiveWorkOrderScreen As screen:
                     Usuarios_x003a_Cargo.Value,
                     TextInputSearch_1.Text
                 ) || IsBlank(TextInputSearch_1.Text)) &&
-                (FechaLimite = DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate))
+                (FechaLimite >= DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate)) &&  (FechaLimite <= DatePicker1_1.SelectedDate || IsBlank(DatePicker1_1.SelectedDate))
             )
+            
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         PressedBorderColor: =GalleryWorkOrder.BorderColor
@@ -425,7 +426,7 @@ ActiveWorkOrderScreen As screen:
         RadiusTopRight: =0
         Reset: =
         Size: =15
-        Width: =428
+        Width: =326
         Y: =106
         ZIndex: =14
 
@@ -480,8 +481,30 @@ ActiveWorkOrderScreen As screen:
         IconBackground: =RGBA(0, 51, 102, 1)
         SelectedDateFill: =RGBA(0, 51, 102, 1)
         Size: =15
-        Width: =212
-        X: =428
+        Tooltip: ="Inicio"
+        Width: =152
+        X: =326
         Y: =106
         ZIndex: =17
+
+    DatePicker1_1 As datepicker:
+        BorderColor: =RGBA(204, 231, 246, 1)
+        CalendarHeaderFill: =RGBA(0, 51, 102, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: =
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Lighter
+        Height: =58
+        HoverDateFill: =RGBA(153, 205, 255, 1)
+        IconBackground: =RGBA(0, 51, 102, 1)
+        SelectedDateFill: =RGBA(0, 51, 102, 1)
+        Size: =15
+        Tooltip: ="Fin"
+        Width: =161
+        X: =478
+        Y: =106
+        ZIndex: =18
 
