@@ -28,7 +28,7 @@ ActiveWorkOrderScreen As screen:
                     Usuarios_x003a_Cargo.Value,
                     TextInputSearch_1.Text
                 ) || IsBlank(TextInputSearch_1.Text)) ||
-                (DateValue(FechaLimite) = DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate))
+                (FechaLimite = DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate))
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -405,7 +405,7 @@ ActiveWorkOrderScreen As screen:
         ZIndex: =13
 
     TextInputSearch_1 As text:
-        BorderColor: =RGBA(163,171,193,1)
+        BorderColor: =RGBA(232, 232, 232, 1)
         BorderThickness: =2
         Color: =RGBA(0, 0, 0, 1)
         Default: =""
@@ -466,13 +466,15 @@ ActiveWorkOrderScreen As screen:
         ZIndex: =16
 
     DatePicker1 As datepicker:
-        BorderColor: =RGBA(0, 89, 178, 1)
+        BorderColor: =RGBA(204, 231, 246, 1)
         CalendarHeaderFill: =RGBA(0, 51, 102, 1)
         Color: =RGBA(0, 0, 0, 1)
         DefaultDate: =
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Lighter
         Height: =58
         HoverDateFill: =RGBA(153, 205, 255, 1)
         IconBackground: =RGBA(0, 51, 102, 1)
