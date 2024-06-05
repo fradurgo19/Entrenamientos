@@ -27,7 +27,7 @@ ActiveWorkOrderScreen As screen:
                 ) || IsBlank(TextInputSearch_1.Text)) || (StartsWith(
                     Usuarios_x003a_Cargo.Value,
                     TextInputSearch_1.Text
-                ) || IsBlank(TextInputSearch_1.Text)) && 
+                ) || IsBlank(TextInputSearch_1.Text)) || 
                 (Created = DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate))
             )
         Layout: =Layout.Vertical
