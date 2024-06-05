@@ -146,7 +146,7 @@
                   "charLength": 2,
                   "charOffset": 151,
                   "snippet": {
-                    "text": "&&"
+                    "text": "||"
                   }
                 }
               },
@@ -186,7 +186,7 @@
                   "charLength": 2,
                   "charOffset": 247,
                   "snippet": {
-                    "text": "&&"
+                    "text": "||"
                   }
                 }
               },
@@ -226,87 +226,7 @@
                   "charLength": 2,
                   "charOffset": 350,
                   "snippet": {
-                    "text": "&&"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "ActiveWorkOrderScreen",
-                "type": "ActiveWorkOrderScreen.GalleryWorkOrder"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ActiveWorkOrderScreen.GalleryWorkOrder.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ActiveWorkOrderScreen.GalleryWorkOrder.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 460,
-                  "snippet": {
-                    "text": "&&"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "ActiveWorkOrderScreen",
-                "type": "ActiveWorkOrderScreen.GalleryWorkOrder"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ActiveWorkOrderScreen.GalleryWorkOrder.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ActiveWorkOrderScreen.GalleryWorkOrder.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 550,
-                  "snippet": {
-                    "text": "&&"
+                    "text": "||"
                   }
                 }
               },
