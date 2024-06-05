@@ -421,7 +421,7 @@ ActiveWorkOrderScreen As screen:
         RadiusTopRight: =0
         Reset: =
         Size: =15
-        Width: =326
+        Width: =639
         Y: =106
         ZIndex: =14
 
@@ -477,6 +477,7 @@ ActiveWorkOrderScreen As screen:
         SelectedDateFill: =RGBA(0, 51, 102, 1)
         Size: =15
         Tooltip: ="Inicio"
+        Visible: =false
         Width: =152
         X: =326
         Y: =106
@@ -498,6 +499,7 @@ ActiveWorkOrderScreen As screen:
         SelectedDateFill: =RGBA(0, 51, 102, 1)
         Size: =15
         Tooltip: ="Fin"
+        Visible: =false
         Width: =161
         X: =478
         Y: =106
