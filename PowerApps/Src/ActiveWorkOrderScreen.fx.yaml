@@ -64,7 +64,6 @@ ActiveWorkOrderScreen As screen:
             ZIndex: =1
 
         Subtitle1 As label:
-            Align: =Align.Center
             Color: =RGBA(6, 26, 84, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -74,7 +73,7 @@ ActiveWorkOrderScreen As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =15
+            Size: =13
             Text: =ThisItem.Curso.Value
             VerticalAlign: =VerticalAlign.Top
             Width: =438
@@ -216,9 +215,9 @@ ActiveWorkOrderScreen As screen:
         Title1_1 As label:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(39, 113, 194, 1)
+            Fill: =RGBA(6, 26, 84, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =28
+            Height: =19
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -248,14 +247,14 @@ ActiveWorkOrderScreen As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =101
             X: =294
-            Y: =169
+            Y: =156
             ZIndex: =12
 
         Subtitle1_5 As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =26
+            Height: =21
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -273,7 +272,7 @@ ActiveWorkOrderScreen As screen:
         Title1_2 As label:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(39, 113, 194, 1)
+            Fill: =RGBA(6, 26, 84, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =24
             OnSelect: =Select(Parent)
@@ -288,6 +287,44 @@ ActiveWorkOrderScreen As screen:
             X: =396
             Y: =137
             ZIndex: =14
+
+        Subtitle1_6 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =24
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =11
+            Text: |-
+                ="Fecha Limite:"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =101
+            X: =294
+            Y: =180
+            ZIndex: =15
+
+        Title1_3 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(6, 26, 84, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =19
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =10
+            Text: =ThisItem.FechaLimite
+            VerticalAlign: =VerticalAlign.Top
+            Width: =203
+            X: =396
+            Y: =184
+            ZIndex: =16
 
     Rectangle1_12 As rectangle:
         BorderColor: =RGBA(0, 89, 178, 1)
