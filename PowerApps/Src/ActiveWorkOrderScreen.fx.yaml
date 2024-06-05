@@ -27,8 +27,8 @@ ActiveWorkOrderScreen As screen:
                 ) || IsBlank(TextInputSearch_1.Text)) || (StartsWith(
                     Usuarios_x003a_Cargo.Value,
                     TextInputSearch_1.Text
-                ) || IsBlank(TextInputSearch_1.Text)) || 
-                (DateValue(Created) = DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate))
+                ) || IsBlank(TextInputSearch_1.Text)) && 
+                (DateValue(FechaLimite) = DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate))
             )
             
         Layout: =Layout.Vertical
@@ -224,7 +224,7 @@ ActiveWorkOrderScreen As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =10
-            Text: =ThisItem.Created
+            Text: =ThisItem.FechaAsignacion
             VerticalAlign: =VerticalAlign.Top
             Width: =203
             X: =396
@@ -243,7 +243,7 @@ ActiveWorkOrderScreen As screen:
             PaddingTop: =0
             Size: =11
             Text: |-
-                ="Asignado el:"
+                ="Asignación:"
             VerticalAlign: =VerticalAlign.Top
             Width: =101
             X: =294
