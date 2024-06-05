@@ -27,7 +27,7 @@ ActiveWorkOrderScreen As screen:
                 ) || IsBlank(TextInputSearch_1.Text)) || (StartsWith(
                     Usuarios_x003a_Cargo.Value,
                     TextInputSearch_1.Text
-                ) || IsBlank(TextInputSearch_1.Text)) & 
+                ) || IsBlank(TextInputSearch_1.Text)) && 
                 (Created = DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate))
             )
         Layout: =Layout.Vertical
@@ -432,6 +432,7 @@ ActiveWorkOrderScreen As screen:
         BorderColor: =RGBA(0, 89, 178, 1)
         CalendarHeaderFill: =RGBA(0, 51, 102, 1)
         Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: =
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
