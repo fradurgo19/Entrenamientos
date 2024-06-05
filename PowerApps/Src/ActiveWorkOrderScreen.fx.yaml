@@ -12,18 +12,19 @@ ActiveWorkOrderScreen As screen:
         Height: =886
         HoverBorderColor: =GalleryWorkOrder.BorderColor
         HoverFill: =GalleryWorkOrder.Fill
-        Items: |+
-            =Filter(
-                'Asignación Entrenamientos',
-                (StartsWith(Usuarios.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text)) ||
-                (StartsWith(Curso.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text)) ||
-                (StartsWith(Calificacion.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text)) ||
-                (StartsWith(Usuarios_x003a_Cargo.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text)) &&
-                (FechaLimite >= DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate)) &&
-                (FechaLimite <= DatePicker1_1.SelectedDate || IsBlank(DatePicker1_1.SelectedDate))
+        Items: |-
+            =Sort(
+                Filter(
+                    'Asignación Entrenamientos',
+                    (StartsWith(Usuarios.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text)) &&
+                    (StartsWith(Curso.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text)) &&
+                    (StartsWith(Calificacion.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text)) &&
+                    (StartsWith(Usuarios_x003a_Cargo.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text))&&
+                    (FechaLimite >= DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate)) && (FechaLimite <= DatePicker1_1.SelectedDate || IsBlank(DatePicker1_1.SelectedDate))
+                ),
+                Modified,
+                SortOrder.Descending
             )
-            
-            
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         PressedBorderColor: =GalleryWorkOrder.BorderColor
@@ -341,8 +342,9 @@ ActiveWorkOrderScreen As screen:
         PressedFill: =TextBox1_24.Fill
         Size: =28
         Text: ="Asignaciones Activas"
-        Width: =404
-        X: =133
+        Width: =276
+        X: =140
+        Y: =8
         ZIndex: =4
 
     Group5 As group:
@@ -500,4 +502,17 @@ ActiveWorkOrderScreen As screen:
         X: =478
         Y: =106
         ZIndex: =18
+
+    Icon7 As icon.History:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =100
+        Icon: =Icon.History
+        OnSelect: |-
+            =Reset(DatePicker1);
+            Reset(DatePicker1_1);
+        X: =465
+        ZIndex: =19
 
