@@ -162,12 +162,12 @@ AddNewOpportunityScreen_1 As screen:
     Gallery3 As gallery.galleryVertical:
         BorderColor: =RGBA(0, 89, 178, 1)
         DelayItemLoading: =true
-        Height: =504
+        Height: =654
         Items: ='Asignación Entrenamientos'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =118
-        Y: =472
+        Y: =322
         ZIndex: =18
 
         Label6 As label:
@@ -310,7 +310,9 @@ AddNewOpportunityScreen_1 As screen:
                     Calificacion: ComboBox1_2.Selected,
                     Estado: ComboBox1_3.Selected
                 }
-            )
+            );
+            
+            Reset(ComboBox1); Reset(ComboBox1_1);Reset(ComboBox1_3);Reset(DatePicker2);Reset(ComboBox1_2)
         Width: =72
         X: =452
         Y: =22
@@ -439,4 +441,17 @@ AddNewOpportunityScreen_1 As screen:
         X: =512
         Y: =197
         ZIndex: =29
+
+    Icon9 As icon.Sync:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(6, 26, 84, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =39
+        Icon: =Icon.Sync
+        OnSelect: =Reset(ComboBox1); Reset(ComboBox1_1);Reset(ComboBox1_3);Reset(DatePicker2);Reset(ComboBox1_2)
+        Width: =55
+        X: =510
+        Y: =234
+        ZIndex: =30
 
