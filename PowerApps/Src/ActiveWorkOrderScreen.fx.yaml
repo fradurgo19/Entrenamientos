@@ -326,10 +326,11 @@ ActiveWorkOrderScreen As screen:
             Color: =RGBA(6, 26, 84, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =29
             Icon: =Icon.Trash
             OnSelect: =Remove('Asignación Entrenamientos',ThisItem)
             X: =460
-            Y: =47
+            Y: =80
             ZIndex: =17
 
         Title1_4 As label:
