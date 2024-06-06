@@ -442,12 +442,12 @@ ActiveWorkOrderScreen As screen:
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =92
+        Height: =58
         Icon: =Icon.Add
         OnSelect: =Navigate(AddNewOpportunityScreen, ScreenTransition.Fade)
-        Width: =94
-        X: =546
-        Y: =8
+        Width: =59
+        X: =580
+        Y: =17
         ZIndex: =15
 
     Button1_15 As button:
@@ -522,12 +522,12 @@ ActiveWorkOrderScreen As screen:
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =100
+        Height: =69
         Icon: =Icon.History
-        OnSelect: |-
-            =Reset(DatePicker1);
-            Reset(DatePicker1_1);
-        X: =465
+        OnSelect: =
+        Width: =51
+        X: =529
+        Y: =11
         ZIndex: =19
 
     DatePicker2_1 As datepicker:
@@ -699,7 +699,8 @@ ActiveWorkOrderScreen As screen:
         Icon: =Icon.Sync
         OnSelect: |-
             =Set(gallSelected,Blank());
-            Reset(ComboBox1); Reset(ComboBox1_1);Reset(ComboBox1_3);Reset(DatePicker2);Reset(ComboBox1_2)
+            Reset(ComboBox1); Reset(ComboBox1_1);Reset(ComboBox1_3);Reset(DatePicker2);Reset(ComboBox1_2);Reset(DatePicker1);
+            Reset(DatePicker1_1);
         Width: =55
         X: =465
         Y: =232
