@@ -1,7 +1,8 @@
 "Correo As screen.'phoneLayout_Email_ver3.0'":
     Fill: =RGBA(232, 232, 232, 1)
     OnVisible: |
-        =UpdateContext({CorreoSeleccionado: Gallery1_1.Selected.Label1_4.Text});
+        =Refresh('Ofertas de Entrenamientos');
+        UpdateContext({CorreoSeleccionado: Gallery1_1.Selected.Label1_4.Text});
         UpdateContext({CorreosConcatenados: Concatenate(Label3.Text, ";", CorreoSeleccionado)});
 
     TextSearchBox2 As text:
