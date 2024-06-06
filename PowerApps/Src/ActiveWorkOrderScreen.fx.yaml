@@ -337,18 +337,18 @@ ActiveWorkOrderScreen As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(6, 26, 84, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =29
+            Height: =27
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =10
+            Size: =15
             Text: =ThisItem.Estado.Value
             VerticalAlign: =VerticalAlign.Top
             Width: =102
-            X: =306
-            Y: =90
+            X: =446
+            Y: =13
             ZIndex: =18
 
     Rectangle1_12 As rectangle:
