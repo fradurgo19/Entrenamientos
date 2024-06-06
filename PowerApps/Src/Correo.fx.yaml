@@ -519,7 +519,7 @@
         Height: =40
         Icon: =Icon.Reload
         OnSelect: |-
-            =UpdateContext({CorreosConcatenados1: ""});UpdateContext({CorreosConcatenados2: ""});
+            =UpdateContext({CorreosConcatenados1: ""});UpdateContext({CorreosConcatenados2: ""});Reset(TextInputSearch_3);
             Reset(TextInputSearch_2);Reset(TextEmailMessage2_1)
         Width: =38
         X: =570
