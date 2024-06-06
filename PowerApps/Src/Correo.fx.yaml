@@ -319,7 +319,7 @@
         Height: =510
         Items: |-
             =
-            Search([@'Ofertas de Entrenamientos'],TextInputSearch_3.Text,field_2)
+            Search('Ofertas de Entrenamientos',TextInputSearch_3.Text,field_2)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowNavigation: =true
