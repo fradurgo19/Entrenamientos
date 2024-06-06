@@ -1881,7 +1881,14 @@
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "DefaultDate",
-        "DateTimeZone",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DateTimeZone",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Format",
         "InputTextPlaceholder",
         "StartYear",
