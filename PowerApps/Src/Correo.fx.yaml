@@ -215,7 +215,7 @@
         Width: =200
         Wrap: =false
         X: =32
-        Y: =383
+        Y: =357
         ZIndex: =11
 
     TextEmailMessage2 As text:
@@ -238,7 +238,7 @@
         TabIndex: =If(PeopleBrowseGallery2.Visible, -1, 0)
         Width: =586
         X: =32
-        Y: =423
+        Y: =397
         ZIndex: =12
 
     PeopleBrowseGallery2 As gallery.PeoplePickerGallerySmall:
@@ -513,18 +513,6 @@
         Y: =562
         ZIndex: =17
 
-    Icon1 As icon.Reload:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =40
-        Icon: =Icon.Reload
-        OnSelect: =
-        Width: =38
-        X: =570
-        Y: =370
-        ZIndex: =18
-
     Icon1_1 As icon.Reload:
         BorderColor: =RGBA(0, 89, 178, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -592,7 +580,7 @@
                 <p>Url Recurso: <a href='" & TextEmailMessage2.Text & "' target='_blank'>Link al Recurso</a></p>
                 <p>Url Cuestionario: <a href='" & TextEmailMessage2_1.Text & "' target='_blank'>Link al Cuestionario</a></p>⚡️🚀
             </h1>
-            <h1>¡Atención! ENTRENAMIENTO PARTEQUIPOS ⚡️🚀</h1>
+            <h1>¡Atención! ENTRENAMIENTO PARTEQUIPOS Fecha Limite: "&DatePicker3.SelectedDate&"⚡️🚀</h1>
             </div>
             </body>
             </html>");
@@ -648,7 +636,7 @@
         TabIndex: =If(PeopleBrowseGallery2.Visible, -1, 0)
         Width: =586
         X: =32
-        Y: =489
+        Y: =450
         ZIndex: =24
 
     Group1 As group:
@@ -678,4 +666,21 @@
             TabIndex: =0
             Width: =63
             ZIndex: =21
+
+    DatePicker3 As datepicker:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        CalendarHeaderFill: =RGBA(0, 51, 102, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =50
+        HoverDateFill: =RGBA(153, 205, 255, 1)
+        IconBackground: =RGBA(0, 51, 102, 1)
+        SelectedDateFill: =RGBA(0, 51, 102, 1)
+        Size: =15
+        Width: =589
+        X: =32
+        Y: =512
+        ZIndex: =25
 
