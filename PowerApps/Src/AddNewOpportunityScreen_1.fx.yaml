@@ -47,11 +47,11 @@ AddNewOpportunityScreen_1 As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =12
-            Text: =ThisItem.Usuarios_x003a_Cargo.Value
+            Text: =ThisItem.FechaLimite
             VerticalAlign: =VerticalAlign.Top
             Width: =Title10.Width
-            X: =Title10.X
-            Y: =Title10.Y + Title10.Height
+            X: =14
+            Y: =60
             ZIndex: =2
 
         Body4 As label:
@@ -68,8 +68,8 @@ AddNewOpportunityScreen_1 As screen:
             Text: =ThisItem.Usuarios.Value
             VerticalAlign: =VerticalAlign.Top
             Width: =Title10.Width
-            X: =Title10.X
-            Y: =Subtitle8.Y + Subtitle8.Height
+            X: =14
+            Y: =33
             ZIndex: =3
 
         NextArrow5 As icon.ChevronRight:
@@ -108,6 +108,42 @@ AddNewOpportunityScreen_1 As screen:
             Visible: =ThisItem.IsSelected
             Width: =4
             ZIndex: =6
+
+        Body4_3 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =23
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =12
+            Text: =ThisItem.Calificacion.Value
+            VerticalAlign: =VerticalAlign.Top
+            Width: =55
+            X: =577
+            Y: =8
+            ZIndex: =9
+
+        Subtitle8_1 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =12
+            Text: =ThisItem.Estado.Value
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title10.Width
+            X: =16
+            Y: =81
+            ZIndex: =10
 
     Rectangle1_40 As rectangle:
         BorderColor: =RGBA(0, 89, 178, 1)
@@ -272,7 +308,7 @@ AddNewOpportunityScreen_1 As screen:
         OnSelect: |-
             =Patch(
                 'Asignación Entrenamientos',
-                Defaults('Asignación Entrenamientos'),
+                If(IsBlank(gallSelected),Defaults('Asignación Entrenamientos'),gallSelected),
                 {
                     Usuarios: ComboBox1.Selected,
                     Curso: ComboBox1_1.Selected,
@@ -292,6 +328,7 @@ AddNewOpportunityScreen_1 As screen:
         BorderColor: =RGBA(0, 89, 178, 1)
         CalendarHeaderFill: =RGBA(0, 51, 102, 1)
         Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: =gallSelected.FechaLimite
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -312,6 +349,7 @@ AddNewOpportunityScreen_1 As screen:
         ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         ChevronHoverFill: =RGBA(255, 255, 255, 1)
         Default: =gallSelected.Usuarios
+        DefaultSelectedItems: =gallSelected.Usuarios
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -340,6 +378,7 @@ AddNewOpportunityScreen_1 As screen:
         ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         ChevronHoverFill: =RGBA(255, 255, 255, 1)
         Default: =gallSelected.Curso
+        DefaultSelectedItems: =gallSelected.Curso
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -369,6 +408,7 @@ AddNewOpportunityScreen_1 As screen:
         ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         ChevronHoverFill: =RGBA(255, 255, 255, 1)
         Default: =gallSelected.Calificacion
+        DefaultSelectedItems: =gallSelected.Calificacion
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -397,6 +437,7 @@ AddNewOpportunityScreen_1 As screen:
         ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         ChevronHoverFill: =RGBA(255, 255, 255, 1)
         Default: =gallSelected.Estado
+        DefaultSelectedItems: =gallSelected.Estado
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
