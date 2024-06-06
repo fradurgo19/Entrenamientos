@@ -162,11 +162,11 @@ AddNewOpportunityScreen_1 As screen:
     Gallery3 As gallery.galleryVertical:
         BorderColor: =RGBA(0, 89, 178, 1)
         DelayItemLoading: =true
-        Height: =329
+        Height: =504
         Items: ='Asignación Entrenamientos'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =99
+        TemplateSize: =118
         Y: =472
         ZIndex: =18
 
@@ -174,11 +174,12 @@ AddNewOpportunityScreen_1 As screen:
             BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Height: =25
+            Height: =47
             OnSelect: =Select(Parent)
             Size: =12
             Text: =ThisItem.Usuarios.Value
-            Width: =225
+            VerticalAlign: =VerticalAlign.Top
+            Width: =295
             Y: =7
             ZIndex: =1
 
@@ -191,8 +192,8 @@ AddNewOpportunityScreen_1 As screen:
             Size: =10
             Text: =ThisItem.Curso.Value
             VerticalAlign: =VerticalAlign.Top
-            Width: =253
-            X: =225
+            Width: =195
+            X: =295
             Y: =7
             ZIndex: =2
 
@@ -213,12 +214,12 @@ AddNewOpportunityScreen_1 As screen:
             BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Height: =32
+            Height: =34
             OnSelect: =Select(Parent)
             Size: =12
             Text: =ThisItem.Usuarios_x003a_Cargo.Value
-            Width: =225
-            Y: =33
+            Width: =136
+            Y: =65
             ZIndex: =4
 
         Label6_4 As label:
