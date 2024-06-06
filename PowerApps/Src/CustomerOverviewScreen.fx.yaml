@@ -367,43 +367,6 @@
                 Y: =248.47933884297524
                 ZIndex: =15
 
-            Rating1_7 As rating:
-                AccessibleLabel: =""
-                BorderColor: =RGBA(0, 89, 178, 1)
-                BorderStyle: =BorderStyle.Solid
-                BorderThickness: =0
-                ContentLanguage: =""
-                Default: =GalleryCustumer.Selected.Prueba
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =Rating1_7.Fill
-                DisplayMode: =If(false,DisplayMode.Disabled,true,DisplayMode.View,DisplayMode.Edit)
-                Fill: =RGBA(0, 0, 0, 0)
-                FocusedBorderColor: =Self.BorderColor
-                FocusedBorderThickness: =2
-                Height: =22
-                HoverFill: =Rating1_7.Fill
-                Max: =5
-                PressedFill: =Rating1_7.Fill
-                RatingFill: =RGBA(294, 191, 0, 1)
-                ShowValue: =true
-                TabIndex: =0
-                Visible: =Rating1_7.Value > 0
-                Width: =113
-                X: =373.48837209302314
-                Y: =283.4418604651157
-                ZIndex: =16
-
-            Rectangle8_1 As rectangle:
-                BorderColor: =RGBA(0, 89, 178, 1)
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =30
-                TabIndex: =0
-                Visible: =Rating1_7.Value > 0
-                Width: =120
-                X: =374.1627906976744
-                Y: =282.4186046511628
-                ZIndex: =17
-
             TextBox4_167 As label:
                 BorderColor: =RGBA(0, 89, 178, 1)
                 Color: =RGBA(0, 0, 0, 0.70196078)
@@ -421,11 +384,25 @@
                 Text: =GalleryCustumer.Selected.Prueba
                 Tooltip: ="Link Cuestionario"
                 VerticalAlign: =VerticalAlign.Top
-                Visible: =Rating1_7.Value = 0
+                Visible: =
                 Width: =212
                 X: =370
                 Y: =282.41
                 ZIndex: =18
+
+            HtmlText1_1 As htmlViewer:
+                Color: =RGBA(0, 0, 0, 0.70196078)
+                Font: =Font.'Lato Light'
+                Height: =91
+                HoverBorderColor: =HtmlText1_1.BorderColor
+                HtmlText: =GalleryCustumer.Selected.Prueba
+                PressedBorderColor: =HtmlText1_1.BorderColor
+                Size: =15
+                Tooltip: ="Link Tema"
+                Width: =277
+                X: =337
+                Y: =290
+                ZIndex: =19
 
         DataCard4 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)

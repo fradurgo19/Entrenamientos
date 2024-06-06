@@ -5724,66 +5724,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CustomerOverviewScreen.Canvas1.DataCard3.Rectangle8_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "CustomerOverviewScreen.Canvas1.DataCard3.Rectangle8_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "CustomerOverviewScreen",
-                "type": "CustomerOverviewScreen.Canvas1.DataCard3.Rectangle8_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "CustomerOverviewScreen.Canvas1.DataCard3.Rating1_7.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "CustomerOverviewScreen.Canvas1.DataCard3.Rating1_7.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "CustomerOverviewScreen",
-                "type": "CustomerOverviewScreen.Canvas1.DataCard3.Rating1_7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "CustomerOverviewScreen.Canvas1.DataCard4.Image4_4.AccessibleLabel"
                 }
               ],
@@ -8603,19 +8543,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CustomerOverviewScreen.Canvas1.DataCard3.Rating1_7.Default"
+                  "fullyQualifiedName": "CustomerOverviewScreen.Canvas1.DataCard3.HtmlText1_1.HtmlText"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CustomerOverviewScreen.Canvas1.DataCard3.Rating1_7.Default",
+                  "fullyQualifiedName": "CustomerOverviewScreen.Canvas1.DataCard3.HtmlText1_1.HtmlText",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "Default",
+                "member": "HtmlText",
                 "module": "CustomerOverviewScreen",
-                "type": "CustomerOverviewScreen.Canvas1.DataCard3.Rating1_7"
+                "type": "CustomerOverviewScreen.Canvas1.DataCard3.HtmlText1_1"
               }
             }
           ],
