@@ -585,9 +585,11 @@
             <strong>Links al final del correo, encontrará el link del Curso y de la Prueba</strong>
             </p>
             <p>Por favor, revisen este mensaje con detenimiento y realice la actividad en el tiempo contemplado. 🔍🕒</p>
-            <p>Saludos,<br/>Desarrollos Power Platform PARTEQUIPOS 💻🌟</p>
-            <h1><p>Url Recurso: "&TextEmailMessage2.Text&"</p>
-            <p>Url Cuestionario: "&TextEmailMessage2_1.Text&"</p>⚡️🚀</h1>
+            <p>Saludos,<br/>Soporte y Desarrollos Power Platform PARTEQUIPOS 💻🌟</p>
+            <h1>
+                <p>Url Recurso: <a href='" & TextEmailMessage2.Text & "' target='_blank'>Link al Recurso</a></p>
+                <p>Url Cuestionario: <a href='" & TextEmailMessage2_1.Text & "' target='_blank'>Link al Cuestionario</a></p>⚡️🚀
+            </h1>
             <h1>¡Atención! ENTRENAMIENTO PARTEQUIPOS ⚡️🚀</h1>
             </div>
             </body>
