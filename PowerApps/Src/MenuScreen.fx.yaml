@@ -247,7 +247,7 @@ MenuScreen As screen:
         FontWeight: =FontWeight.Bold
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        OnSelect: =Navigate(AddNewOpportunityScreen_1, ScreenTransition.Fade)
+        OnSelect: =Navigate('AddNewOpportunityScreen_1.', ScreenTransition.Fade)
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
         RadiusTopLeft: =30

@@ -449,7 +449,7 @@ ActiveWorkOrderScreen As screen:
         Height: =86
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        OnSelect: =Navigate(AddNewOpportunityScreen_1, ScreenTransition.Fade)
+        OnSelect: =Navigate('AddNewOpportunityScreen_1.', ScreenTransition.Fade)
         PaddingLeft: =35
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
