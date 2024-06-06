@@ -75,10 +75,10 @@ AddNewOpportunityScreen_1 As screen:
         NextArrow5 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
             BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(6, 26, 84, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =50
+            Height: =95
             Icon: =Icon.ChevronRight
             OnSelect: =Select(Parent)
             PaddingBottom: =16
@@ -144,6 +144,19 @@ AddNewOpportunityScreen_1 As screen:
             X: =16
             Y: =81
             ZIndex: =10
+
+        Icon10 As icon.Trash:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(6, 26, 84, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =43
+            Icon: =Icon.Trash
+            OnSelect: =Remove('Asignación Entrenamientos',ThisItem)
+            Width: =54
+            X: =499
+            Y: =59
+            ZIndex: =11
 
     Rectangle1_40 As rectangle:
         BorderColor: =RGBA(0, 89, 178, 1)
@@ -320,8 +333,8 @@ AddNewOpportunityScreen_1 As screen:
             
             Reset(ComboBox1); Reset(ComboBox1_1);Reset(ComboBox1_3);Reset(DatePicker2);Reset(ComboBox1_2)
         Width: =72
-        X: =452
-        Y: =22
+        X: =463
+        Y: =21
         ZIndex: =19
 
     DatePicker2 As datepicker:
@@ -465,7 +478,9 @@ AddNewOpportunityScreen_1 As screen:
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =39
         Icon: =Icon.Sync
-        OnSelect: =Reset(ComboBox1); Reset(ComboBox1_1);Reset(ComboBox1_3);Reset(DatePicker2);Reset(ComboBox1_2)
+        OnSelect: |-
+            =Set(gallSelected,Blank());
+            Reset(ComboBox1); Reset(ComboBox1_1);Reset(ComboBox1_3);Reset(DatePicker2);Reset(ComboBox1_2)
         Width: =55
         X: =510
         Y: =234
