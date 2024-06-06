@@ -105,7 +105,7 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =437.428571428572
+            Height: =516
             Width: =Parent.Width
             WidthFit: =false
             X: =0
@@ -116,7 +116,7 @@
                 BorderColor: =RGBA(230, 229, 229, 1)
                 BorderThickness: =1
                 Fill: =RGBA(255, 255, 255, 1)
-                Height: =435
+                Height: =495
                 TabIndex: =0
                 Width: =620
                 X: =10
@@ -319,7 +319,7 @@
             HtmlText1 As htmlViewer:
                 Color: =RGBA(0, 0, 0, 0.70196078)
                 Font: =Font.'Lato Light'
-                Height: =70
+                Height: =157
                 HoverBorderColor: =HtmlText1.BorderColor
                 HtmlText: =GalleryCustumer.Selected.Adjunto
                 PressedBorderColor: =HtmlText1.BorderColor
@@ -345,7 +345,7 @@
                 Text: ="REALIZA CURSO"
                 Width: =212
                 X: =40
-                Y: =342.2857142857142
+                Y: =452
                 ZIndex: =13
 
             TextBox1_46 As label:
@@ -393,7 +393,7 @@
             HtmlText1_1 As htmlViewer:
                 Color: =RGBA(0, 0, 0, 0.70196078)
                 Font: =Font.'Lato Light'
-                Height: =91
+                Height: =201
                 HoverBorderColor: =HtmlText1_1.BorderColor
                 HtmlText: =GalleryCustumer.Selected.Prueba
                 PressedBorderColor: =HtmlText1_1.BorderColor
@@ -409,7 +409,7 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =373.57142857142844
+            Height: =271
             Width: =Parent.Width
             WidthFit: =false
             X: =0
@@ -432,26 +432,26 @@
                 BorderColor: =RGBA(0, 89, 178, 1)
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                Height: =345
+                Height: =265
                 Image: =GalleryCustumer.Selected.RealizaCurso
                 ImagePosition: =ImagePosition.Fill
                 TabIndex: =0
                 Width: =620
                 X: =10
-                Y: =11
+                Y: =91
                 ZIndex: =2
 
             HtmlText1_3 As htmlViewer:
                 Color: =RGBA(0, 0, 0, 0.70196078)
                 Font: =Font.'Lato Light'
-                Height: =232
+                Height: =152
                 HoverBorderColor: =HtmlText1_3.BorderColor
                 HtmlText: =GalleryCustumer.Selected.RealizaCurso
                 PressedBorderColor: =HtmlText1_3.BorderColor
                 Size: =15
                 Width: =560
                 X: =40
-                Y: =40
+                Y: =120
                 ZIndex: =3
 
     Button1_4 As button:
