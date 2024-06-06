@@ -6,6 +6,109 @@ AddNewOpportunityScreen_1 As screen:
         UpdateContext({ResetOpportunity:false})
     Width: =Max(App.Width, App.DesignWidth)
 
+    "Gallery3 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
+        BorderColor: =RGBA(0, 89, 178, 1)
+        DelayItemLoading: =true
+        Height: =654
+        Items: ='Asignación Entrenamientos'
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: =Set(gallSelected,Gallery3.Selected)
+        TemplatePadding: =0
+        TemplateSize: =116
+        Y: =322
+        ZIndex: =1
+
+        Title10 As label:
+            Color: =RGBA(50, 49, 48, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Curso.Value
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 86
+            X: =16
+            Y: =8
+            ZIndex: =1
+
+        Subtitle8 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =12
+            Text: =ThisItem.Usuarios_x003a_Cargo.Value
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title10.Width
+            X: =Title10.X
+            Y: =Title10.Y + Title10.Height
+            ZIndex: =2
+
+        Body4 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =12
+            Text: =ThisItem.Usuarios.Value
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title10.Width
+            X: =Title10.X
+            Y: =Subtitle8.Y + Subtitle8.Height
+            ZIndex: =3
+
+        NextArrow5 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(166, 166, 166, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =50
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Tooltip: ="Ver los detalles del elemento"
+            Width: =50
+            X: =Parent.TemplateWidth - Self.Width - 12
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator6 As rectangle:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =5
+
+        Rectangle10 As rectangle:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Fill: =RGBA(0, 89, 178, 1)
+            Height: =Parent.TemplateHeight - Separator6.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =6
+
     Rectangle1_40 As rectangle:
         BorderColor: =RGBA(0, 89, 178, 1)
         Fill: =RGBA(6,26,84,1)
@@ -159,139 +262,6 @@ AddNewOpportunityScreen_1 As screen:
         Y: =108
         ZIndex: =17
 
-    Gallery3 As gallery.galleryVertical:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        DelayItemLoading: =true
-        Height: =654
-        Items: ='Asignación Entrenamientos'
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =118
-        Y: =322
-        ZIndex: =18
-
-        Label6 As label:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Height: =47
-            OnSelect: =Select(Parent)
-            Size: =12
-            Text: =ThisItem.Usuarios.Value
-            VerticalAlign: =VerticalAlign.Top
-            Width: =295
-            Y: =7
-            ZIndex: =1
-
-        Label6_1 As label:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Height: =47
-            OnSelect: =Select(Parent)
-            Size: =10
-            Text: =ThisItem.Curso.Value
-            VerticalAlign: =VerticalAlign.Top
-            Width: =195
-            X: =295
-            Y: =7
-            ZIndex: =2
-
-        Label6_2 As label:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Height: =31
-            OnSelect: =Select(Parent)
-            Size: =12
-            Text: =ThisItem.Calificacion.Value
-            Width: =39
-            X: =590
-            Y: =1
-            ZIndex: =3
-
-        Label6_3 As label:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Height: =34
-            OnSelect: =Select(Parent)
-            Size: =12
-            Text: =ThisItem.Usuarios_x003a_Cargo.Value
-            Width: =136
-            Y: =65
-            ZIndex: =4
-
-        Label6_4 As label:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Height: =32
-            OnSelect: =Select(Parent)
-            Size: =12
-            Text: =ThisItem.FechaAsignacion
-            Width: =149
-            X: =244
-            Y: =67
-            ZIndex: =5
-
-        Label6_5 As label:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Height: =32
-            OnSelect: =Select(Parent)
-            Size: =12
-            Text: =ThisItem.FechaLimite
-            Width: =149
-            X: =481
-            Y: =67
-            ZIndex: =6
-
-        Label7 As label:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(6, 26, 84, 1)
-            Height: =34
-            OnSelect: =Select(Parent)
-            Size: =10
-            Text: |-
-                ="Asignado:"
-            Width: =85
-            X: =159
-            Y: =65
-            ZIndex: =7
-
-        Label7_1 As label:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(6, 26, 84, 1)
-            Height: =34
-            OnSelect: =Select(Parent)
-            Size: =10
-            Text: |-
-                ="Limite:"
-            Width: =85
-            X: =393
-            Y: =65
-            ZIndex: =8
-
-        Label7_2 As label:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(6, 26, 84, 1)
-            Height: =34
-            OnSelect: =Select(Parent)
-            Size: =10
-            Text: |-
-                ="Calificación:"
-            Width: =85
-            X: =491
-            ZIndex: =9
-
     Icon8 As icon.Check:
         BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(255, 255, 255, 1)
@@ -331,7 +301,7 @@ AddNewOpportunityScreen_1 As screen:
         SelectedDateFill: =RGBA(0, 51, 102, 1)
         Size: =10
         Width: =251
-        Y: =233
+        Y: =226
         ZIndex: =23
 
     ComboBox1 As combobox:
@@ -341,6 +311,7 @@ AddNewOpportunityScreen_1 As screen:
         ChevronDisabledFill: =RGBA(244, 244, 244, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =gallSelected.Usuarios
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -355,6 +326,7 @@ AddNewOpportunityScreen_1 As screen:
         SearchFields: =["Value"]
         SearchItems: =Choices('Asignación Entrenamientos'.Usuarios,ComboBox1.SearchText)
         SelectionFill: =RGBA(0, 51, 102, 1)
+        SelectMultiple: =false
         Size: =10
         Width: =251
         Y: =197
@@ -367,6 +339,7 @@ AddNewOpportunityScreen_1 As screen:
         ChevronDisabledFill: =RGBA(244, 244, 244, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =gallSelected.Curso
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -384,7 +357,7 @@ AddNewOpportunityScreen_1 As screen:
         Size: =10
         Tooltip: ="Curso"
         Width: =251
-        X: =261
+        X: =251
         Y: =196
         ZIndex: =27
 
@@ -395,11 +368,12 @@ AddNewOpportunityScreen_1 As screen:
         ChevronDisabledFill: =RGBA(244, 244, 244, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =gallSelected.Calificacion
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayFields: =["Value"]
-        Height: =28
+        Height: =31
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(153, 205, 255, 1)
         InputTextPlaceholder: ="Calificación"
@@ -410,9 +384,9 @@ AddNewOpportunityScreen_1 As screen:
         SearchItems: =Choices('Asignación Entrenamientos'.Calificacion,ComboBox1_2.SearchText)
         SelectionFill: =RGBA(0, 51, 102, 1)
         Size: =10
-        Width: =174
-        X: =264
-        Y: =233
+        Width: =136
+        X: =504
+        Y: =195
         ZIndex: =28
 
     ComboBox1_3 As combobox:
@@ -422,11 +396,12 @@ AddNewOpportunityScreen_1 As screen:
         ChevronDisabledFill: =RGBA(244, 244, 244, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =gallSelected.Estado
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayFields: =["Value"]
-        Height: =29
+        Height: =27
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(153, 205, 255, 1)
         InputTextPlaceholder: ="Estado"
@@ -438,8 +413,8 @@ AddNewOpportunityScreen_1 As screen:
         SelectionFill: =RGBA(0, 51, 102, 1)
         Size: =10
         Width: =128
-        X: =512
-        Y: =197
+        X: =251
+        Y: =227
         ZIndex: =29
 
     Icon9 As icon.Sync:
