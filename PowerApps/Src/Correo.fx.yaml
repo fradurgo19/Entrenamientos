@@ -595,7 +595,7 @@
             </body>
             </html>");
             
-            Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text, EnvioCorreo &  TextEmailMessage2.Text & TextEmailMessage2_1.Text, {Importance:"High",Bcc:"analista.mantenimiento@partequipos.com",Cc:"auxiliar.garantiasbg@partequipos.com"});           
+            Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text, EnvioCorreo , {Importance:"High",Bcc:"analista.mantenimiento@partequipos.com",Cc:"auxiliar.garantiasbg@partequipos.com"});           
             Reset(TextEmailSubject2);           
             Reset(TextEmailMessage2);
             UpdateContext({CorreosConcatenados: ""});
