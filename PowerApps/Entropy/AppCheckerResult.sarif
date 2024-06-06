@@ -8183,36 +8183,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Correo.CorreosConcatenados2"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Correo.CorreosConcatenados2",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "CorreosConcatenados2",
-                "module": "Correo",
-                "type": "Correo"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "WorkOrderDetailScreen_1.Form3.Item"
                 }
               ],

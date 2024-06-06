@@ -227,8 +227,8 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         FocusedBorderThickness: =4
-        Height: =113
-        HintText: ="Links Temas y Pruebas."
+        Height: =55
+        HintText: ="Link Recurso"
         HoverBorderColor: =RGBA(0, 89, 178, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(153, 205, 255, 1)
@@ -237,7 +237,7 @@
         TabIndex: =If(PeopleBrowseGallery2.Visible, -1, 0)
         Width: =586
         X: =32
-        Y: =437
+        Y: =423
         ZIndex: =12
 
     PeopleBrowseGallery2 As gallery.PeoplePickerGallerySmall:
@@ -358,7 +358,7 @@
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(6, 26, 84, 1)
-            Height: =24
+            Height: =37
             OnSelect: =Select(Parent)
             Size: =8
             Text: =ThisItem.Prueba
@@ -378,10 +378,10 @@
                 =Select(Parent);
                 
                 UpdateContext({CorreoSeleccionado1: Gallery1.Selected.Label1_1.Text});
-                UpdateContext({CorreosConcatenados1: Concatenate(TextEmailMessage2.Text, ";", CorreoSeleccionado1)});
+                UpdateContext({CorreosConcatenados1: Concatenate(TextEmailMessage2.Text, "", CorreoSeleccionado1)});
                 
                 UpdateContext({CorreoSeleccionado2: Gallery1.Selected.Label1_2.Text});
-                UpdateContext({CorreosConcatenados2: Concatenate(TextEmailMessage2.Text, ";", CorreoSeleccionado2)})
+                UpdateContext({CorreosConcatenados2: Concatenate(TextEmailMessage2.Text, "", CorreoSeleccionado2)})
             Width: =35
             X: =230
             Y: =42
@@ -517,11 +517,11 @@
         Height: =40
         Icon: =Icon.Reload
         OnSelect: |-
-            =UpdateContext({CorreosConcatenados1: ""});
-            Reset(TextInputSearch_2)
+            =UpdateContext({CorreosConcatenados1: ""});UpdateContext({CorreosConcatenados2: ""});
+            Reset(TextInputSearch_2);Reset(TextEmailMessage2_1)
         Width: =38
         X: =570
-        Y: =383
+        Y: =370
         ZIndex: =18
 
     Icon1_1 As icon.Reload:
@@ -586,11 +586,14 @@
             </p>
             <p>Por favor, revisen este mensaje con detenimiento y realice la actividad en el tiempo contemplado. 🔍🕒</p>
             <p>Saludos,<br/>Desarrollos Power Platform PARTEQUIPOS 💻🌟</p>
+            <h1><p>Url Recurso: "&TextEmailMessage2.Text&"</p>
+            <p>Url Cuestionario: "&TextEmailMessage2_1.Text&"</p>⚡️🚀</h1>
+            <h1>¡Atención! ENTRENAMIENTO PARTEQUIPOS ⚡️🚀</h1>
             </div>
             </body>
             </html>");
             
-            Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text, EnvioCorreo &  TextEmailMessage2.Text, {Importance:"High",Bcc:"analista.mantenimiento@partequipos.com",Cc:"auxiliar.garantiasbg@partequipos.com"});           
+            Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text, EnvioCorreo &  TextEmailMessage2.Text & TextEmailMessage2_1.Text, {Importance:"High",Bcc:"analista.mantenimiento@partequipos.com",Cc:"auxiliar.garantiasbg@partequipos.com"});           
             Reset(TextEmailSubject2);           
             Reset(TextEmailMessage2);
             UpdateContext({CorreosConcatenados: ""});
@@ -618,6 +621,29 @@
         X: =214
         Y: =94
         ZIndex: =23
+
+    TextEmailMessage2_1 As text:
+        AccessibleLabel: ="Agregar un mensaje"
+        BorderColor: =RGBA(0, 89, 178, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =CorreosConcatenados2
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Height: =62
+        HintText: ="Link Cuestionario"
+        HoverBorderColor: =RGBA(0, 89, 178, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(153, 205, 255, 1)
+        Mode: =TextMode.MultiLine
+        Size: =12
+        TabIndex: =If(PeopleBrowseGallery2.Visible, -1, 0)
+        Width: =586
+        X: =32
+        Y: =489
+        ZIndex: =24
 
     Group1 As group:
         Height: =5
