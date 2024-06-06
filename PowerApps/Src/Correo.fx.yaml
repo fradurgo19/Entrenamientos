@@ -598,6 +598,8 @@
             Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text, EnvioCorreo , {Importance:"High",Bcc:"analista.mantenimiento@partequipos.com",Cc:"auxiliar.garantiasbg@partequipos.com"});           
             Reset(TextEmailSubject2);           
             Reset(TextEmailMessage2);
+            Reset(TextInputSearch_2);
+            Reset(TextInputSearch_3);
             UpdateContext({CorreosConcatenados: ""});
             UpdateContext({CorreosConcatenados1: ""});
             Navigate(OpportunityMessageScreen, ScreenTransition.Fade)
