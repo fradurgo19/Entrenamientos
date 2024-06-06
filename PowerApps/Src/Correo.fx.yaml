@@ -189,7 +189,7 @@
         BorderColor: =RGBA(0, 89, 178, 1)
         BorderThickness: =2
         Color: =RGBA(0, 0, 0, 1)
-        Default: ="ENTRENAMIENTOS PARTEQUIPOS"
+        Default: ="ENTRENAMIENTOS PARTEQUIPOS" & " / " & "CURSO" & " / " & Label1.Text
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -577,15 +577,15 @@
             <p>Por favor, revisen este mensaje con detenimiento y realice la actividad en el tiempo contemplado. 🔍🕒</p>
             <p>Saludos,<br/>Soporte y Desarrollos Power Platform PARTEQUIPOS 💻🌟</p>
             <h1>
-                <p>Url Recurso: <a href='" & TextEmailMessage2.Text & "' target='_blank'>Link al Recurso</a></p>
-                <p>Url Cuestionario: <a href='" & TextEmailMessage2_1.Text & "' target='_blank'>Link al Cuestionario</a></p>⚡️🚀
+                <p>Url Recurso: <a href='" & Label1_1.Text & "' target='_blank'>Link al Recurso</a></p>
+                <p>Url Cuestionario: <a href='" & Label1_2.Text & "' target='_blank'>Link al Cuestionario</a></p>⚡️🚀
             </h1>
             <h1>¡Atención! ENTRENAMIENTO PARTEQUIPOS Fecha Limite: "&DatePicker3.SelectedDate&"⚡️🚀</h1>
             </div>
             </body>
             </html>");
             
-            Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text, EnvioCorreo , {Importance:"High",Bcc:"analista.mantenimiento@partequipos.com",Cc:"auxiliar.garantiasbg@partequipos.com"});           
+            Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text, EnvioCorreo , {Importance:"High",Bcc:"analista.mantenimiento@partequipos.com"});           
             Reset(TextEmailSubject2);           
             Reset(TextEmailMessage2);
             Reset(TextInputSearch_2);
