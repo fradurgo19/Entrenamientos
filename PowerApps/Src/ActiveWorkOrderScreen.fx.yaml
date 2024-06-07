@@ -220,7 +220,7 @@ ActiveWorkOrderScreen As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =10
-            Text: =ThisItem.FechaAsignacion
+            Text: =ThisItem.FechaAprobo
             VerticalAlign: =VerticalAlign.Top
             Width: =203
             X: =396
@@ -239,7 +239,7 @@ ActiveWorkOrderScreen As screen:
             PaddingTop: =0
             Size: =11
             Text: |-
-                ="Asignación:"
+                ="FechaEstado:"
             VerticalAlign: =VerticalAlign.Top
             Width: =101
             X: =294
@@ -326,7 +326,8 @@ ActiveWorkOrderScreen As screen:
             BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(6, 26, 84, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
+            DisabledColor: =RGBA(204, 231, 246, 1)
+            DisplayMode: =DisplayMode.Disabled
             Height: =29
             Icon: =Icon.Trash
             OnSelect: =Remove('Asignación Entrenamientos',ThisItem)
@@ -707,7 +708,7 @@ ActiveWorkOrderScreen As screen:
         Icon: =Icon.Sync
         OnSelect: |-
             =Set(gallSelected,Blank());
-            Reset(ComboBox1_4); Reset(ComboBox1_5);Reset(ComboBox1_6);Reset(ComboBox1_7);Reset(DatePicker2_1)
+            Reset(ComboBox1_4); Reset(ComboBox1_5);Reset(ComboBox1_6);Reset(ComboBox1_7);Reset(DatePicker2_1);Reset(TextInputSearch_1)
         Width: =55
         X: =434
         Y: =29
