@@ -167,11 +167,16 @@
                     <strong>Links al final del correo, encontrará el link del Curso y de la Prueba</strong>
                     </p>
                     <p>Por favor, revisen este mensaje con detenimiento y realice la actividad en el tiempo contemplado. 🔍🕒</p>
-                    <p>Saludos,<br/>Desarrollos Power Platform PARTEQUIPOS 💻🌟</p>
+                    <p>Saludos,<br/>Soporte y Desarrollos Power Platform PARTEQUIPOS 💻🌟</p>
+                    <h1>
+                        <p>Url Recurso: <a href='" & DataCardValue34.Selected.Value & "' target='_blank'>Link al Recurso</a></p>
+                        <p>Url Cuestionario: <a href='" & DataCardValue35.Selected.Value & "' target='_blank'>Link al Cuestionario</a></p>⚡️🚀
+                    </h1>
+                    <h1>¡Atención! ENTRENAMIENTO PARTEQUIPOS Fecha Limite: "&DataCardValue46.Text&"⚡️🚀</h1>
                     </div>
                     </body>
-                    </html>
-                    ");
+                    </html>");
+                    
                     Office365Outlook.SendEmailV2(DataCardValue36.Selected.Value, "ENTRENAMIENTOS PARTEQUIPOS", EnvioCorreo, {Importance:"High",Bcc:"analista.mantenimiento@partequipos.com",Cc:"auxiliar.garantiasbg@partequipos.com"});       
                     Navigate(OpportunityMessageScreen,ScreenTransition.Fade)
                 PaddingBottom: =24
@@ -218,8 +223,8 @@
             Required: =false
             Update: =DataCardValue69.Attachments
             Width: =320
-            X: =1
-            Y: =9
+            X: =0
+            Y: =11
             ZIndex: =1
 
             DataCardKey69 As label:
@@ -306,7 +311,7 @@
             Height: =50
             Required: =false
             Update: =DataCardValue34.Selected
-            Width: =320
+            Width: =640
             X: =0
             Y: =6
             ZIndex: =1
@@ -578,8 +583,8 @@
             Height: =40
             Required: =false
             Width: =320
-            X: =1
-            Y: =8
+            X: =0
+            Y: =9
             ZIndex: =1
 
             DataCardKey13 As label:
@@ -619,11 +624,11 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,FechaLimite)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =123
             Required: =false
-            Width: =320
+            Width: =640
             X: =0
-            Y: =9
+            Y: =10
             ZIndex: =1
 
             DataCardKey46 As label:
@@ -1023,7 +1028,7 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Curso)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =218
             Required: =false
             Update: =DataCardValue28.Selected
             Width: =640
@@ -1057,7 +1062,7 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Height: =70
+                Height: =121
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
                 Items: =Choices([@'Asignación Entrenamientos'].Curso)

@@ -16,6 +16,7 @@ ActiveWorkOrderScreen As screen:
             =Sort(
                 Filter(
                     'Asignación Entrenamientos',
+                    (StartsWith(Estado.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text)) ||
                     (StartsWith(Usuarios.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text)) ||
                     (StartsWith(Curso.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text)) ||
                     (StartsWith(Calificacion.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text)) ||
@@ -443,7 +444,7 @@ ActiveWorkOrderScreen As screen:
         FocusedBorderThickness: =4
         Font: =Font.Lato
         Height: =58
-        HintText: ="Buscar por Usuario, Curso, Calificación o Cargo."
+        HintText: ="Buscar por Estado, Usuario, Curso, Calificación o Cargo."
         HoverBorderColor: =RGBA(32, 54, 71, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =ColorFade(RGBA(190, 202, 226, 0), 30%)
