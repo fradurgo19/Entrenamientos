@@ -1,7 +1,8 @@
 ActiveWorkOrderScreen As screen:
     Fill: =RGBA(237,242,246,1)
     Height: =Max(App.Height, App.DesignHeight)
-    OnVisible: =
+    OnVisible: |-
+        =UpdateContext({locShowConfirmDelete: false})
     Width: =Max(App.Width, App.DesignWidth)
 
     "GalleryWorkOrder As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
