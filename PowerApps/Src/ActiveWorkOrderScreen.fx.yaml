@@ -1,8 +1,7 @@
 ActiveWorkOrderScreen As screen:
     Fill: =RGBA(237,242,246,1)
     Height: =Max(App.Height, App.DesignHeight)
-    OnVisible: |-
-        =UpdateContext({locShowConfirmDelete: false})
+    OnVisible: =
     Width: =Max(App.Width, App.DesignWidth)
 
     "GalleryWorkOrder As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
@@ -331,7 +330,9 @@ ActiveWorkOrderScreen As screen:
             DisabledColor: =RGBA(204, 231, 246, 1)
             Height: =29
             Icon: =Icon.Trash
-            OnSelect: =Remove('Asignación Entrenamientos',ThisItem)
+            OnSelect: |
+                =Remove('Asignación Entrenamientos',ThisItem);
+                UpdateContext({locShowConfirmDelete: true})
             X: =460
             Y: =80
             ZIndex: =17
