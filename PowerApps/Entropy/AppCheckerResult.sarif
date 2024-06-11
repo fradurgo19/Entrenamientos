@@ -23,10 +23,9 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 44,
-                  "charOffset": 0,
+                  "charOffset": 2,
                   "snippet": {
-                    "text": "UpdateContext({locShowConfirmDelete: false})"
+                    "text": ""
                   }
                 }
               },
@@ -38,12 +37,16 @@
             }
           ],
           "message": {
+            "arguments": [
+              "Control",
+              "ObjNull"
+            ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrBehaviorPropertyExpected",
+          "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
           "ruleIndex": 0
         },
         {
@@ -8290,36 +8293,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ActiveWorkOrderScreen.locShowConfirmDelete"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ActiveWorkOrderScreen.locShowConfirmDelete",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "locShowConfirmDelete",
-                "module": "ActiveWorkOrderScreen",
-                "type": "ActiveWorkOrderScreen"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'AddNewOpportunityScreen_1.'.ResetOpportunity"
                 }
               ],
@@ -8464,6 +8437,36 @@
           },
           "ruleId": "app-InefficientDelayLoading",
           "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "MenuScreen_1.locShowConfirmDelete"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "MenuScreen_1.locShowConfirmDelete",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "locShowConfirmDelete",
+                "module": "MenuScreen_1",
+                "type": "MenuScreen_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -8832,16 +8835,16 @@
           "name": "PowerApps app checker",
           "rules": [
             {
-              "id": "app-ErrBehaviorPropertyExpected",
+              "id": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
               "messageStrings": {
                 "issue": {
-                  "text": "Behavior function in a non-behavior property. You can't use this property to change values elsewhere in the app."
+                  "text": "Expected {0} value."
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Move the behavior function to a behavior-based property."
+                  "Change the rule to produce a {0} value."
                 ],
                 "level": "High",
                 "primaryCategory": "formula",

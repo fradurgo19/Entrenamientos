@@ -2,8 +2,8 @@ App As appinfo:
     BackEnabled: =true
     MinScreenHeight: =320
     MinScreenWidth: =320
-    StartScreen: |-
-        =UpdateContext({locShowConfirmDelete: false})
+    StartScreen: |
+        =
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:

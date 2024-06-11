@@ -331,8 +331,7 @@ ActiveWorkOrderScreen As screen:
             Height: =29
             Icon: =Icon.Trash
             OnSelect: |
-                =Remove('Asignación Entrenamientos',ThisItem);
-                UpdateContext({locShowConfirmDelete: true})
+                =UpdateContext({locShowConfirmDelete: true})
             X: =460
             Y: =80
             ZIndex: =17
@@ -355,6 +354,66 @@ ActiveWorkOrderScreen As screen:
             X: =446
             Y: =13
             ZIndex: =18
+
+        Rectangle5 As rectangle:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Fill: =RGBA(0, 0, 0, 0.5)
+            Height: =208
+            OnSelect: =Select(Parent)
+            Visible: =locShowConfirmDelete
+            Width: =640
+            ZIndex: =19
+
+        Label7 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =70
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: ="¿Estás seguro de que deseas eliminar este elemento?"
+            Width: =560
+            X: =42
+            Y: =13
+            ZIndex: =20
+
+        Button5 As button:
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 51, 102, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =66
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+            OnSelect: |-
+                =Remove('Asignación Entrenamientos', ThisItem);
+                UpdateContext({locShowConfirmDelete: false})
+            Size: =24
+            Text: ="Aceptar"
+            Width: =167
+            X: =416
+            Y: =127
+            ZIndex: =21
+
+        Button5_1 As button:
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 51, 102, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =66
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+            OnSelect: =Select(Parent)
+            Size: =24
+            Text: ="Cancelar"
+            Width: =177
+            X: =60
+            Y: =127
+            ZIndex: =22
 
     Rectangle1_12 As rectangle:
         BorderColor: =RGBA(0, 89, 178, 1)
