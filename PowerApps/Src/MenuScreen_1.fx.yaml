@@ -1,8 +1,7 @@
 MenuScreen_1 As screen:
     BackgroundImage: =
     Height: =Max(App.Height, App.DesignHeight)
-    OnVisible: |-
-        =UpdateContext({locShowConfirmDelete: false})
+    OnVisible: =
     Width: =Max(App.Width, App.DesignWidth)
 
     Image7 As image:

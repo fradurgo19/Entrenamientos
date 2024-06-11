@@ -8293,36 +8293,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ActiveWorkOrderScreen.locShowConfirmDelete"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ActiveWorkOrderScreen.locShowConfirmDelete",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "locShowConfirmDelete",
-                "module": "ActiveWorkOrderScreen",
-                "type": "ActiveWorkOrderScreen"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'AddNewOpportunityScreen_1.'.ResetOpportunity"
                 }
               ],
@@ -8467,36 +8437,6 @@
           },
           "ruleId": "app-InefficientDelayLoading",
           "ruleIndex": 10
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "MenuScreen_1.locShowConfirmDelete"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "MenuScreen_1.locShowConfirmDelete",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "locShowConfirmDelete",
-                "module": "MenuScreen_1",
-                "type": "MenuScreen_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
         },
         {
           "locations": [
