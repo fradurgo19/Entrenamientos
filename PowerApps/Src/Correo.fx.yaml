@@ -574,7 +574,8 @@
             Le notificamos sobre el curso y la prueba Asignada:<br/><br/>
             <strong>Links al final del correo, encontrará el link del Curso y de la Prueba</strong>
             </p>
-            <p>Por favor, revisen este mensaje con detenimiento y realice la actividad en el tiempo contemplado. 🔍🕒</p>
+            <p>Por favor, revisen este mensaje con detenimiento y realice la actividad en el tiempo contemplado. 🔍🕒 </p>
+            <p>Recuerde que: "&TextEmailMessage2_2.Text&"🔍🕒⚡️🚀 </p>
             <p>Saludos,<br/>Soporte y Desarrollos Power Platform PARTEQUIPOS 💻🌟</p>
             <h1>
                 <p>Url Recurso: <a href='" & Label1_1.Text & "' target='_blank'>Link al Recurso</a></p>
@@ -590,6 +591,7 @@
             Reset(TextEmailMessage2);
             Reset(TextInputSearch_2);
             Reset(TextInputSearch_3);
+            Reset(TextEmailMessage2_2);
             UpdateContext({CorreosConcatenados: ""});
             UpdateContext({CorreosConcatenados1: ""});
             Navigate(OpportunityMessageScreen, ScreenTransition.Fade)
