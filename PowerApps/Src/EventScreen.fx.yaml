@@ -119,6 +119,18 @@ EventScreen As screen:
             Width: =4
             ZIndex: =6
 
+        Icon11_1 As icon.Trash:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(204, 231, 246, 1)
+            Height: =29
+            Icon: =Icon.Trash
+            OnSelect: |
+                =Remove('Usuarios Entrenamientos',ThisItem)
+            X: =448
+            Y: =10
+            ZIndex: =7
+
     Rectangle1_36 As rectangle:
         BorderColor: =RGBA(0, 89, 178, 1)
         Fill: =RGBA(6,26,84,1)
