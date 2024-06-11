@@ -36,7 +36,7 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(6, 26, 84, 1)
         FocusedBorderThickness: =20
-        Height: =76
+        Height: =65
         Overflow: =Overflow.Scroll
         PaddingBottom: =1
         PaddingLeft: =1
@@ -178,7 +178,7 @@
         PaddingLeft: =0
         Size: =18
         Text: ="*Asunto"
-        Width: =Parent.Width - Self.X * 2
+        Width: =227
         Wrap: =false
         X: =32
         Y: =212
@@ -523,8 +523,8 @@
             =UpdateContext({CorreosConcatenados: ""});UpdateContext({CorreosConcatenados1: ""});UpdateContext({CorreosConcatenados2: ""});Reset(TextInputSearch_3);
             Reset(TextInputSearch_2);Reset(TextEmailMessage2_1);Reset(TextEmailMessage2_2)
         Width: =63
-        X: =555
-        Y: =216
+        X: =558
+        Y: =208
         ZIndex: =19
 
     Button3 As button:
@@ -674,7 +674,7 @@
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =50
+        Height: =38
         HoverDateFill: =RGBA(153, 205, 255, 1)
         IconBackground: =RGBA(0, 51, 102, 1)
         SelectedDateFill: =RGBA(0, 51, 102, 1)
