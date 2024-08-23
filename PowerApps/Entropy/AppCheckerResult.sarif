@@ -8224,6 +8224,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.Captura de pantalla 2024-04-24 090742"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Captura de pantalla 2024-04-24 090742",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Captura de pantalla 2024-04-24 090742",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App"
                 }
               ],
