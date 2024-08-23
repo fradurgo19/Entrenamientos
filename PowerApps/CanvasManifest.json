@@ -1,7 +1,7 @@
 {
   "FormatVersion": "0.24",
   "Header": {
-    "DocVersion": "1.342",
+    "DocVersion": "1.343",
     "MinVersionToLoad": "1.331",
     "MSAppStructureVersion": "2.0"
   },
@@ -18,7 +18,7 @@
       "blockmovingcontrol": false,
       "cdsdataformatting": false,
       "classiccontrols": false,
-      "commentgeneratedformulas": true,
+      "commentgeneratedformulasv2": false,
       "consistentreturnschemafortabularfunctions": true,
       "copyandmerge": true,
       "dataflowanalysisenabled": false,
@@ -67,6 +67,7 @@
       "longlivingcache": false,
       "mobilenativerendering": false,
       "nativecdsexperimental": false,
+      "offlineprofilegenerationemitscolumns": false,
       "onegrid": false,
       "optimizedforteamsmeeting": false,
       "packagemodernruntime": false,
@@ -82,7 +83,6 @@
       "rtlsupport": false,
       "showclassicthemes": false,
       "smartemaildatacard": false,
-      "sqlstoredprocedureenabled": false,
       "supportcolumnnamesasidentifiers": true,
       "tabledoesntwraprecords": true,
       "usedisplaynamemetadata": false,
