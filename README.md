@@ -6,25 +6,25 @@ Descubre nuestra aplicación dinámica y personalizable, diseñada para optimiza
 
 Accede y organiza todo tu material educativo en un solo lugar. ¡Una biblioteca a tu medida, siempre a tu alcance!
 
-<img src="Gestion-Herramientas/Assets/Images/Captura de pantalla 2024-08-23 144201.png" width="15%" />
+<img src="PowerApps/Assets/Images/Captura de pantalla 2024-08-27 162611.png" width="15%" />
 
 ## 🎓 Seguimiento del Progreso Académico
 
 Realiza un seguimiento detallado de tu desempeño académico con gráficos y estadísticas. ¡Visualiza tu camino al éxito!
 
-<img src="Gestion-Herramientas/Assets/Images/Captura de pantalla 2024-08-23 144201.png" width="15%" />
+<img src="PowerApps/Assets/Images/Captura de pantalla 2024-08-27 162627.png" width="15%" />
 
 ## ✏️ Planificación de Sesiones de Estudio
 
 Planifica tus sesiones de estudio y maximiza tu tiempo. ¡Estudia de manera inteligente y logra todas tus metas!
 
-<img src="Gestion-Herramientas/Assets/Images/Captura de pantalla 2024-08-23 144201.png" width="15%" />
+<img src="PowerApps/Assets/Images/Captura de pantalla 2024-08-27 162711.png" width="15%" />
 
 ## 📊 Retroalimentación en Tiempo Real
 
 Recibe retroalimentación instantánea sobre tu desempeño y mejora continuamente. ¡Aprende de manera más efectiva con insights personalizados!
 
-<img src="Gestion-Herramientas/Assets/Images/Captura de pantalla 2024-08-23 144201.png" width="15%" />
+<img src="PowerApps/Assets/Images/Captura de pantalla 2024-08-27 162733.png" width="15%" />
 
 ### 👋 My Name is Frank Duran
 
