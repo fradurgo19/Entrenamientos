@@ -20,6 +20,13 @@ Planifica tus sesiones de estudio y maximiza tu tiempo. ¡Estudia de manera inte
 
 ![Captura de Pantalla](PowerApps/Assets/Images/Captura%20de%20pantalla%202024-08-23%20122510.png)
 
+## 📊 Retroalimentación en Tiempo Real
+
+Recibe retroalimentación instantánea sobre tu desempeño y mejora continuamente. ¡Aprende de manera más efectiva con insights personalizados!
+
+![Captura de Pantalla](PowerApps/Assets/Images/Captura%20de%20pantalla%202024-08-23%20122522.png)
+Este nuevo código se ajusta a la descripción de la aplicación académica, resaltando características
+
 ### 👋 My Name is Frank Duran
 
 *Industrial Engineer Specializing in Power Platform & Data Analytics*
@@ -49,9 +56,4 @@ I am particularly passionate about Data Science and continuously seek to expand 
 
 ⭐️ From [fradurgo19](https://github.com/fradurgo19)
 
-## 📊 Retroalimentación en Tiempo Real
 
-Recibe retroalimentación instantánea sobre tu desempeño y mejora continuamente. ¡Aprende de manera más efectiva con insights personalizados!
-
-![Captura de Pantalla](PowerApps/Assets/Images/Captura%20de%20pantalla%202024-08-23%20122522.png)
-Este nuevo código se ajusta a la descripción de la aplicación académica, resaltando características
