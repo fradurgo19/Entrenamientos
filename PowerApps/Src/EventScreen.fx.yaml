@@ -10,7 +10,7 @@ EventScreen As screen:
         DisabledBorderColor: =GalleryEvent.BorderColor
         DisabledFill: =GalleryEvent.Fill
         Fill: =RGBA(237, 237, 237, 1)
-        Height: =954
+        Height: =640
         HoverBorderColor: =GalleryEvent.BorderColor
         HoverFill: =GalleryEvent.Fill
         Items: =Search([@'Usuarios Entrenamientos'],TextInputSearch_4.Text,field_0)
@@ -21,9 +21,9 @@ EventScreen As screen:
         ShowNavigation: =true
         ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =116
+        TemplateSize: =97.11
         Visible: =CountRows(GalleryEvent.AllItems) > 0
-        Y: =180
+        Width: =360.56
         ZIndex: =1
 
         Title3 As label:
@@ -31,17 +31,18 @@ EventScreen As screen:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
+            Height: =21.1
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
+            Size: =7.89
             Text: =ThisItem.Title
             VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 86
-            X: =16
-            Y: =(Parent.TemplateHeight - (Self.Size*1.8 + Subtitle3.Size*1.8 + 2 + Body3.Size*1.8)) / 2
+            Width: =312.11
+            X: =9.01
+            Y: =5.53
             ZIndex: =1
 
         Subtitle3 As label:
@@ -49,18 +50,18 @@ EventScreen As screen:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
+            Height: =31.64
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =21
+            Size: =11.83
             Text: =ThisItem.field_0
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title3.Width
-            X: =Title3.X
-            Y: =Title3.Y + Title3.Height
+            Width: =312.11
+            X: =9.01
+            Y: =26.62
             ZIndex: =2
 
         Body3 As label:
@@ -68,18 +69,18 @@ EventScreen As screen:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
+            Height: =31.64
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =21
+            Size: =11.83
             Text: =ThisItem.field_1
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title3.Width
-            X: =Title3.X
-            Y: =Subtitle3.Y + Subtitle3.Height
+            Width: =312.11
+            X: =9.01
+            Y: =58.26
             ZIndex: =3
 
         NextArrow3 As icon.ChevronRight:
@@ -88,54 +89,56 @@ EventScreen As screen:
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =65
+            Height: =54.41
             Icon: =Icon.ChevronRight
             OnSelect: =Navigate(UsuarioDetailScreen, ScreenTransition.Fade)
-            PaddingBottom: =16
-            PaddingLeft: =16
-            PaddingRight: =16
-            PaddingTop: =16
+            PaddingBottom: =13.39
+            PaddingLeft: =13.39
+            PaddingRight: =9.01
+            PaddingTop: =9.01
             Tooltip: ="Ver los detalles del elemento"
-            Width: =85
-            X: =543
-            Y: =18
+            Width: =47.89
+            X: =305.92
+            Y: =15.07
             ZIndex: =4
 
         Separator3 As rectangle:
             BorderColor: =RGBA(0, 89, 178, 1)
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =8
+            Height: =6.7
             OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
-            Y: =Parent.TemplateHeight - Self.Height
+            Width: =360.56
+            Y: =90.41
             ZIndex: =5
 
         Rectangle7 As rectangle:
             BorderColor: =RGBA(0, 89, 178, 1)
             Fill: =RGBA(0, 89, 178, 1)
-            Height: =Parent.TemplateHeight - Separator3.Height
+            Height: =90.41
             OnSelect: =Select(Parent)
             Visible: =ThisItem.IsSelected
-            Width: =4
+            Width: =2.25
             ZIndex: =6
 
         Icon11_1 As icon.Trash:
             BorderColor: =RGBA(0, 89, 178, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(204, 231, 246, 1)
-            Height: =29
+            Height: =24.28
             Icon: =Icon.Trash
             OnSelect: |
                 =Remove('Usuarios Entrenamientos',ThisItem)
-            X: =448
-            Y: =10
+            Width: =36.06
+            X: =252.39
+            Y: =8.37
             ZIndex: =7
 
     Rectangle1_36 As rectangle:
         BorderColor: =RGBA(0, 89, 178, 1)
         Fill: =RGBA(6,26,84,1)
+        Height: =83.71
         TabIndex: =0
-        Width: =640
+        Width: =360.56
         ZIndex: =3
 
     Group3_4 As group:
@@ -148,9 +151,10 @@ EventScreen As screen:
         Rectangle1_37 As rectangle:
             BorderColor: =RGBA(0, 89, 178, 1)
             Fill: =RGBA(6, 26, 84, 1)
+            Height: =83.71
             OnSelect: =Back(ScreenTransition.UnCover)
             TabIndex: =0
-            Width: =100
+            Width: =56.34
             ZIndex: =4
 
         icon1_4 As icon.ChevronLeft:
@@ -158,13 +162,13 @@ EventScreen As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =56
+            Height: =46.88
             Icon: =Icon.ChevronLeft
             OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
             TabIndex: =0
-            Width: =54
-            X: =12
-            Y: =12
+            Width: =30.42
+            X: =6.76
+            Y: =10.05
             ZIndex: =5
 
     TextBox1_45 As label:
@@ -173,17 +177,21 @@ EventScreen As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
-        Height: =97
+        Height: =81.2
         HoverBorderColor: =TextBox1_45.BorderColor
         HoverColor: =TextBox1_45.Color
         HoverFill: =TextBox1_45.Fill
+        PaddingBottom: =4.19
+        PaddingLeft: =4.19
+        PaddingRight: =2.82
+        PaddingTop: =2.82
         PressedBorderColor: =TextBox1_45.BorderColor
         PressedColor: =TextBox1_45.Color
         PressedFill: =TextBox1_45.Fill
-        Size: =28
+        Size: =15.77
         Text: ="Usuarios"
-        Width: =523
-        X: =81
+        Width: =294.65
+        X: =45.63
         ZIndex: =7
 
     TextBox1_68 As label:
@@ -192,19 +200,23 @@ EventScreen As screen:
         Color: =RGBA(153, 153, 153, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.Lato
-        Height: =41
+        Height: =34.32
         HoverBorderColor: =TextBox1_68.BorderColor
         HoverColor: =TextBox1_68.Color
         HoverFill: =TextBox1_68.Fill
+        PaddingBottom: =4.19
+        PaddingLeft: =4.19
+        PaddingRight: =2.82
+        PaddingTop: =2.82
         PressedBorderColor: =TextBox1_68.BorderColor
         PressedColor: =TextBox1_68.Color
         PressedFill: =TextBox1_68.Fill
-        Size: =18
+        Size: =10.14
         Text: ="No event"
         Visible: =CountRows(GalleryEvent.AllItems) = 0
-        Width: =496
-        X: =72
-        Y: =595.3333333333322
+        Width: =279.44
+        X: =40.56
+        Y: =498.38
         ZIndex: =8
 
     TextInputSearch_4 As text:
@@ -217,31 +229,35 @@ EventScreen As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         FocusedBorderThickness: =4
         Font: =Font.Lato
-        Height: =77
+        Height: =64.46
         HintText: ="Buscar Usuario"
         HoverBorderColor: =RGBA(255, 255, 255, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =ColorFade(RGBA(190, 202, 226, 0), 30%)
+        PaddingBottom: =4.19
+        PaddingLeft: =10.05
+        PaddingRight: =2.82
+        PaddingTop: =2.82
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
         Reset: =
-        Size: =20
-        Width: =640
-        Y: =103
+        Size: =11.27
+        Width: =360.56
+        Y: =86.23
         ZIndex: =9
 
     icon2_1 As icon.Search:
         BorderColor: =RGBA(0, 89, 178, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =51
+        Height: =42.69
         Icon: =Icon.Search
         TabIndex: =0
-        Width: =51
-        X: =564.000000000003
-        Y: =114
+        Width: =28.73
+        X: =317.75
+        Y: =95.43
         ZIndex: =10
 
     Icon6_1 As icon.Add:
@@ -249,11 +265,11 @@ EventScreen As screen:
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =69
+        Height: =57.76
         Icon: =Icon.Add
         OnSelect: =Navigate(UsuarioDetailScreen_2, ScreenTransition.Fade)
-        Width: =94
-        X: =546
-        Y: =20
+        Width: =52.96
+        X: =307.61
+        Y: =16.74
         ZIndex: =11
 

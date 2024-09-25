@@ -11,9 +11,9 @@ CustomerScreen As screen:
     Rectangle1 As rectangle:
         BorderColor: =RGBA(0, 89, 178, 1)
         Fill: =RGBA(6, 26, 84, 1)
-        Height: =200
+        Height: =167.43
         TabIndex: =0
-        Width: =640
+        Width: =360.56
         ZIndex: =1
 
     GalleryCustumer As gallery.galleryVertical:
@@ -22,7 +22,7 @@ CustomerScreen As screen:
         BorderThickness: =2
         DisabledBorderColor: =GalleryCustumer.BorderColor
         DisabledFill: =GalleryCustumer.Fill
-        Height: =853
+        Height: =640
         HoverBorderColor: =GalleryCustumer.BorderColor
         HoverFill: =GalleryCustumer.Fill
         Items: |+
@@ -33,18 +33,18 @@ CustomerScreen As screen:
         PressedFill: =GalleryCustumer.Fill
         ShowNavigation: =true
         TemplatePadding: =
-        TemplateSize: =123
+        TemplateSize: =102.97
         Transition: =Transition.Pop
         Visible: =CountRows(GalleryCustumer.AllItems) > 0
-        Y: =200
+        Width: =360.56
         ZIndex: =2
 
         Rectangle1_2 As rectangle:
             BorderColor: =RGBA(0, 89, 178, 1)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =121.00000000000001
+            Height: =101.29
             TabIndex: =0
-            Width: =640
+            Width: =360.56
             ZIndex: =1
 
         TextBox1 As label:
@@ -52,18 +52,22 @@ CustomerScreen As screen:
             Color: =RGBA(61,171,186,1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.Lato
-            Height: =72.3931623931624
+            Height: =60.6
             HoverBorderColor: =TextBox1.BorderColor
             HoverColor: =TextBox1.Color
             HoverFill: =TextBox1.Fill
+            PaddingBottom: =4.19
+            PaddingLeft: =4.19
+            PaddingRight: =2.82
+            PaddingTop: =2.82
             PressedBorderColor: =TextBox1.BorderColor
             PressedColor: =TextBox1.Color
             PressedFill: =TextBox1.Fill
-            Size: =28
+            Size: =15.77
             Text: =ThisItem.field_2
-            Width: =592
-            X: =24
-            Y: =3.343734454845566
+            Width: =333.52
+            X: =13.52
+            Y: =2.8
             ZIndex: =2
 
         TextBox1_1 As label:
@@ -71,37 +75,41 @@ CustomerScreen As screen:
             Color: =RGBA(153, 153, 153, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.Lato
-            Height: =32.05982905982906
+            Height: =26.84
             HoverBorderColor: =TextBox1_1.BorderColor
             HoverColor: =TextBox1_1.Color
             HoverFill: =TextBox1_1.Fill
+            PaddingBottom: =4.19
+            PaddingLeft: =4.19
+            PaddingRight: =2.82
+            PaddingTop: =2.82
             PressedBorderColor: =TextBox1_1.BorderColor
             PressedColor: =TextBox1_1.Color
             PressedFill: =TextBox1_1.Fill
-            Size: =16
+            Size: =9.01
             Text: =ThisItem.field_6.Value
-            Width: =592
-            X: =24
-            Y: =68.70899470899465
+            Width: =333.52
+            X: =13.52
+            Y: =57.52
             ZIndex: =3
 
         Rectangle1_1 As rectangle:
             BorderColor: =RGBA(0, 89, 178, 1)
             Fill: =RGBA(204, 204, 204, 1)
-            Height: =1
+            Height: =0.84
             TabIndex: =0
-            Width: =640
-            Y: =121.060606060606
+            Width: =360.56
+            Y: =101.34
             ZIndex: =4
 
         Rectangle4 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =2
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =123
+            Height: =102.97
             OnSelect: =Navigate(CustomerOverviewScreen, ScreenTransition.Fade)
             TabIndex: =0
-            Width: =640
+            Width: =360.56
             ZIndex: =5
 
     TextBox1_12 As label:
@@ -110,17 +118,21 @@ CustomerScreen As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
-        Height: =97
+        Height: =81.2
         HoverBorderColor: =TextBox1_12.BorderColor
         HoverColor: =TextBox1_12.Color
         HoverFill: =TextBox1_12.Fill
+        PaddingBottom: =4.19
+        PaddingLeft: =4.19
+        PaddingRight: =2.82
+        PaddingTop: =2.82
         PressedBorderColor: =TextBox1_12.BorderColor
         PressedColor: =TextBox1_12.Color
         PressedFill: =TextBox1_12.Fill
-        Size: =28
+        Size: =15.77
         Text: ="Cursos"
-        Width: =194
-        X: =198
+        Width: =109.3
+        X: =111.55
         ZIndex: =7
 
     TextInputSearch As text:
@@ -133,32 +145,36 @@ CustomerScreen As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         FocusedBorderThickness: =4
         Font: =Font.Lato
-        Height: =66.4367816091954
+        Height: =55.62
         HintText: ="Buscar Curso"
         HoverBorderColor: =RGBA(0, 89, 178, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(190, 202, 226, 0), 30%)
+        PaddingBottom: =4.19
+        PaddingLeft: =10.05
+        PaddingRight: =2.82
+        PaddingTop: =2.82
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
         Reset: =ResetSearch
-        Size: =25
-        Width: =640
-        Y: =103
+        Size: =14.08
+        Width: =360.56
+        Y: =86.23
         ZIndex: =8
 
     icon2 As icon.Search:
         BorderColor: =RGBA(0, 89, 178, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =66
+        Height: =55.25
         Icon: =Icon.Reload
         OnSelect: =Reset(TextInputSearch)
         TabIndex: =0
-        Width: =54
-        X: =574
-        Y: =103
+        Width: =30.42
+        X: =323.38
+        Y: =86.23
         ZIndex: =9
 
     TextBoxNoCustomer As label:
@@ -167,19 +183,23 @@ CustomerScreen As screen:
         Color: =RGBA(153, 153, 153, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.Lato
-        Height: =41
+        Height: =34.32
         HoverBorderColor: =TextBoxNoCustomer.BorderColor
         HoverColor: =TextBoxNoCustomer.Color
         HoverFill: =TextBoxNoCustomer.Fill
+        PaddingBottom: =4.19
+        PaddingLeft: =4.19
+        PaddingRight: =2.82
+        PaddingTop: =2.82
         PressedBorderColor: =TextBoxNoCustomer.BorderColor
         PressedColor: =TextBoxNoCustomer.Color
         PressedFill: =TextBoxNoCustomer.Fill
-        Size: =18
+        Size: =10.14
         Text: ="No Customer Data"
         Visible: =CountRows(GalleryCustumer.AllItems) = 0
-        Width: =496
-        X: =72
-        Y: =604.1428571428578
+        Width: =279.44
+        X: =40.56
+        Y: =505.75
         ZIndex: =10
 
     Icon6 As icon.Add:
@@ -187,11 +207,11 @@ CustomerScreen As screen:
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =80
+        Height: =66.97
         Icon: =Icon.Add
         OnSelect: =Navigate(CustomerOverviewScreen_2, ScreenTransition.Fade)
-        Width: =94
-        X: =546
+        Width: =52.96
+        X: =307.61
         ZIndex: =15
 
     Group4 As group:
@@ -204,11 +224,11 @@ CustomerScreen As screen:
         Rectangle1_19 As rectangle:
             BorderColor: =RGBA(0, 89, 178, 1)
             Fill: =RGBA(54, 166, 182, 1)
-            Height: =82.5400390625
+            Height: =69.1
             OnSelect: =Navigate(EventScreen, ScreenTransition.Cover)
             TabIndex: =0
-            Width: =640
-            Y: =1053.4599609375
+            Width: =360.56
+            Y: =558
             ZIndex: =11
 
         TextBox1_17 As label:
@@ -217,19 +237,23 @@ CustomerScreen As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
-            Height: =60.860107421875
+            Height: =50.95
             HoverBorderColor: =TextBox1_17.BorderColor
             HoverColor: =TextBox1_17.Color
             HoverFill: =TextBox1_17.Fill
             OnSelect: =Navigate(EventScreen, ScreenTransition.Cover)
+            PaddingBottom: =4.19
+            PaddingLeft: =4.19
+            PaddingRight: =2.82
+            PaddingTop: =2.82
             PressedBorderColor: =TextBox1_17.BorderColor
             PressedColor: =TextBox1_17.Color
             PressedFill: =TextBox1_17.Fill
-            Size: =28
+            Size: =15.77
             Text: ="USUARIOS"
-            Width: =452
-            X: =32
-            Y: =1064.2999267578125
+            Width: =254.65
+            X: =18.03
+            Y: =558
             ZIndex: =12
 
         icon9 As icon.ArrowRight:
@@ -237,21 +261,22 @@ CustomerScreen As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =60
+            Height: =50.23
             Icon: =Icon.ArrowRight
             OnSelect: =Navigate(EventScreen, ScreenTransition.Cover)
             TabIndex: =0
-            Width: =82
-            X: =546
-            Y: =1064
+            Width: =46.2
+            X: =307.61
+            Y: =558
             ZIndex: =14
 
     Rectangle1_38 As rectangle:
         BorderColor: =RGBA(0, 89, 178, 1)
         Fill: =RGBA(6, 26, 84, 1)
+        Height: =83.71
         OnSelect: =Back(ScreenTransition.UnCover)
         TabIndex: =0
-        Width: =100
+        Width: =56.34
         ZIndex: =16
 
     icon1_9 As icon.ChevronLeft:
@@ -259,10 +284,10 @@ CustomerScreen As screen:
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =80
+        Height: =66.97
         Icon: =Icon.ChevronLeft
         OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
         TabIndex: =0
-        Width: =72
+        Width: =40.56
         ZIndex: =17
 

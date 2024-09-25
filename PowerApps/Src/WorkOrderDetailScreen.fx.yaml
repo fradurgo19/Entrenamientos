@@ -6,8 +6,9 @@
     Rectangle1_10 As rectangle:
         BorderColor: =RGBA(0, 89, 178, 1)
         Fill: =RGBA(6,26,84,1)
+        Height: =83.71
         TabIndex: =0
-        Width: =640
+        Width: =360.56
         ZIndex: =2
 
     Group3_1 As group:
@@ -20,9 +21,10 @@
         Rectangle1_11 As rectangle:
             BorderColor: =RGBA(0, 89, 178, 1)
             Fill: =RGBA(6, 26, 84, 1)
+            Height: =83.71
             OnSelect: =Back()
             TabIndex: =0
-            Width: =100
+            Width: =56.34
             ZIndex: =6
 
         icon1_1 As icon.ChevronLeft:
@@ -30,11 +32,11 @@
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =100
+            Height: =83.71
             Icon: =Icon.ChevronLeft
             OnSelect: =Navigate(ActiveWorkOrderScreen, ScreenTransition.Fade)
             TabIndex: =0
-            Width: =67
+            Width: =37.75
             ZIndex: =7
 
     TextBox1_22 As label:
@@ -43,24 +45,27 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
-        Height: =97.39130434782612
+        Height: =81.53
         HoverBorderColor: =TextBox1_22.BorderColor
         HoverColor: =TextBox1_22.Color
         HoverFill: =TextBox1_22.Fill
+        PaddingBottom: =4.19
+        PaddingLeft: =4.19
+        PaddingRight: =2.82
+        PaddingTop: =2.82
         PressedBorderColor: =TextBox1_22.BorderColor
         PressedColor: =TextBox1_22.Color
         PressedFill: =TextBox1_22.Fill
-        Size: =28
+        Size: =15.77
         Text: ="Detalles de Asignación"
-        Width: =411
-        X: =81
+        Width: =231.55
+        X: =45.63
         ZIndex: =9
 
     Canvas1_1 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =1035.4226804123711
-        Width: =Parent.Width
-        Y: =100.06185567010308
+        Height: =640
+        Width: =112.68
         ZIndex: =14
 
         DataCard3_1 As dataCard.blankCard:
@@ -68,8 +73,8 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =837.7142857142859
-            Width: =Parent.Width
+            Height: =701.28
+            Width: =112.68
             WidthFit: =false
             X: =0
             Y: =0
@@ -79,11 +84,11 @@
                 BorderColor: =RGBA(230, 229, 229, 1)
                 BorderThickness: =1
                 Fill: =RGBA(255, 255, 255, 1)
-                Height: =856.9090909090909
+                Height: =717.35
                 TabIndex: =0
-                Width: =620
-                X: =10
-                Y: =10
+                Width: =349.3
+                X: =5.63
+                Y: =8.37
                 ZIndex: =1
 
             TextBox4_178 As label:
@@ -92,19 +97,23 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =Font.'Lato Light'
                 FontWeight: =FontWeight.Semibold
-                Height: =33
+                Height: =27.63
                 HoverBorderColor: =TextBox4_178.BorderColor
                 HoverColor: =TextBox4_178.Color
                 HoverFill: =TextBox4_178.Fill
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
                 PressedBorderColor: =TextBox4_178.BorderColor
                 PressedColor: =TextBox4_178.Color
                 PressedFill: =TextBox4_178.Fill
-                Size: =15
+                Size: =8.45
                 Text: =GalleryWorkOrder.Selected.Calificacion.Value
                 VerticalAlign: =VerticalAlign.Top
-                Width: =560
-                X: =40
-                Y: =547
+                Width: =315.49
+                X: =22.54
+                Y: =457.92
                 ZIndex: =19
 
         DataCard2 As dataCard.blankCard:
@@ -112,10 +121,10 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =91
-            Width: =640
+            Height: =76.18
+            Width: =360.56
             X: =0
-            Y: =1
+            Y: =0.84
             ZIndex: =4
 
             iconMail1 As icon.Send:
@@ -126,7 +135,7 @@
                 DisabledFill: =RGBA(240, 240, 240, 0.5)
                 DisplayMode: =
                 Fill: =RGBA(6, 26, 84, 1)
-                Height: =83
+                Height: =69.48
                 Icon: =Icon.Send
                 OnSelect: |-
                     =Set(Mensaje,"si");
@@ -179,36 +188,39 @@
                     
                     Office365Outlook.SendEmailV2(DataCardValue36.Selected.Value, "ENTRENAMIENTOS PARTEQUIPOS", EnvioCorreo, {Importance:"High",Bcc:"analista.mantenimiento@partequipos.com",Cc:"auxiliar.garantiasbg@partequipos.com"});       
                     Navigate(OpportunityMessageScreen,ScreenTransition.Fade)
-                PaddingBottom: =24
-                PaddingLeft: =24
-                PaddingRight: =24
-                PaddingTop: =24
+                PaddingBottom: =20.09
+                PaddingLeft: =20.09
+                PaddingRight: =13.52
+                PaddingTop: =13.52
                 PressedFill: =RGBA(255, 255, 255, 0.3)
                 Tooltip: ="Enviar mensaje"
-                Width: =620
-                X: =9
-                Y: =9
+                Width: =349.3
+                X: =5.07
+                Y: =7.53
                 ZIndex: =1
 
             Label2 As label:
                 BorderColor: =RGBA(0, 89, 178, 1)
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =77
-                Size: =28
+                Height: =64.46
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =15.77
                 Text: ="Enviar Correo"
-                Width: =246
-                Y: =9
+                Width: =138.59
+                Y: =7.53
                 ZIndex: =2
 
     FormViewer3 As formViewer:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: ='Asignación Entrenamientos'
-        Height: =849
+        Height: =640
         Item: =GalleryWorkOrder.Selected
         NumberOfColumns: =2
-        Width: =640
-        Y: =107
+        Width: =360.56
         ZIndex: =15
 
         "'Curso: Adjunto_DataCard2' As typedDataCard.comboBoxViewCard":
@@ -219,25 +231,29 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Curso_x003a__x0020_Adjunto)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =41.86
             Required: =false
             Update: =DataCardValue34.Selected
-            Width: =640
+            Width: =180
             X: =0
-            Y: =6
+            Y: =4
             ZIndex: =1
 
             DataCardKey34 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =326.76
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =16.9
+                Y: =8.37
                 ZIndex: =1
 
             DataCardValue34 As combobox:
@@ -253,21 +269,24 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Height: =70
+                Height: =58.6
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
                 Items: =Choices([@'Asignación Entrenamientos'].Curso_x003a__x0020_Adjunto)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingBottom: =4.19
+                PaddingLeft: =0
+                PaddingRight: =2.82
+                PaddingTop: =2.82
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Asignación Entrenamientos'.Curso_x003a__x0020_Adjunto,DataCardValue34.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
-                Size: =21
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey34.Y + DataCardKey34.Height + 5
+                Size: =11.83
+                Width: =326.76
+                X: =16.9
+                Y: =52.74
                 ZIndex: =2
 
             ErrorMessage24 As label:
@@ -275,31 +294,35 @@
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Height: =10
+                Height: =8.37
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =24
+                Size: =13.52
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue34.Y + DataCardValue34.Height
+                Width: =326.76
+                X: =16.9
+                Y: =111.34
                 ZIndex: =3
 
             StarVisible24 As label:
                 Align: =Align.Center
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =DataCardKey34.Height
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
+                Width: =16.9
                 Wrap: =false
-                Y: =DataCardKey34.Y
+                Y: =8.37
                 ZIndex: =4
 
         "'Curso:Prueba_DataCard2' As typedDataCard.comboBoxViewCard":
@@ -310,25 +333,29 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Curso_x003a_Prueba)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =95
+            Height: =79.53
             Required: =false
             Update: =DataCardValue35.Selected
-            Width: =640
-            X: =0
-            Y: =7
+            Width: =180
+            X: =1
+            Y: =4
             ZIndex: =1
 
             DataCardKey35 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =326.76
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =16.9
+                Y: =8.37
                 ZIndex: =1
 
             DataCardValue35 As combobox:
@@ -344,21 +371,24 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Height: =70
+                Height: =58.6
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
                 Items: =Choices([@'Asignación Entrenamientos'].Curso_x003a_Prueba)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingBottom: =4.19
+                PaddingLeft: =0
+                PaddingRight: =2.82
+                PaddingTop: =2.82
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Asignación Entrenamientos'.Curso_x003a_Prueba,DataCardValue35.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
-                Size: =21
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey35.Y + DataCardKey35.Height + 5
+                Size: =11.83
+                Width: =326.76
+                X: =16.9
+                Y: =52.74
                 ZIndex: =2
 
             ErrorMessage25 As label:
@@ -366,31 +396,35 @@
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Height: =10
+                Height: =8.37
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =24
+                Size: =13.52
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue35.Y + DataCardValue35.Height
+                Width: =326.76
+                X: =16.9
+                Y: =111.34
                 ZIndex: =3
 
             StarVisible25 As label:
                 Align: =Align.Center
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =DataCardKey35.Height
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
+                Width: =16.9
                 Wrap: =false
-                Y: =DataCardKey35.Y
+                Y: =8.37
                 ZIndex: =4
 
         FechaAsignacion_DataCard1 As typedDataCard.textualViewCard:
@@ -401,24 +435,28 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,FechaAsignacion)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =33.49
             Required: =false
-            Width: =320
+            Width: =180
             X: =0
-            Y: =8
+            Y: =5
             ZIndex: =1
 
             DataCardKey13 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =146.48
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =16.9
+                Y: =8.37
                 ZIndex: =1
 
             DataCardValue13 As label:
@@ -427,14 +465,16 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Height: =33.49
+                PaddingBottom: =4.19
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =11.83
                 Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey13.Y + DataCardKey13.Height + 5
+                Width: =146.48
+                X: =16.9
+                Y: =52.74
                 ZIndex: =2
 
         FechaLimite_DataCard1 As typedDataCard.textualViewCard:
@@ -445,24 +485,28 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,FechaLimite)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =123
+            Height: =102.97
             Required: =false
-            Width: =640
-            X: =0
-            Y: =9
+            Width: =180
+            X: =1
+            Y: =5
             ZIndex: =1
 
             DataCardKey46 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =326.76
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =16.9
+                Y: =8.37
                 ZIndex: =1
 
             DataCardValue46 As label:
@@ -471,14 +515,16 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Height: =33.49
+                PaddingBottom: =4.19
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =11.83
                 Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey46.Y + DataCardKey46.Height + 5
+                Width: =326.76
+                X: =16.9
+                Y: =52.74
                 ZIndex: =2
 
         "'Datos adjuntos_DataCard1' As typedDataCard.attachmentsViewCard":
@@ -489,25 +535,29 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,'{Attachments}')
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =41.86
             Required: =false
             Update: =DataCardValue69.Attachments
-            Width: =320
+            Width: =180
             X: =0
-            Y: =10
+            Y: =6
             ZIndex: =1
 
             DataCardKey69 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =146.48
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =16.9
+                Y: =8.37
                 ZIndex: =1
 
             DataCardValue69 As attachments:
@@ -518,7 +568,7 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
-                Height: =520
+                Height: =435.31
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
                 IsInDataCard: =true
@@ -527,16 +577,15 @@
                 ItemHoverColor: =RGBA(0, 0, 0, 1)
                 ItemHoverFill: =RGBA(153, 205, 255, 1)
                 Items: =Parent.Default
-                PaddingBottom: =5
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PaddingRight: =5
-                PaddingTop: =5
+                PaddingBottom: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
-                Size: =21
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey69.Y + DataCardKey69.Height + 5
+                Size: =11.83
+                Width: =146.48
+                X: =16.9
+                Y: =52.74
                 ZIndex: =2
 
             ErrorMessage57 As label:
@@ -544,30 +593,34 @@
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Height: =10
+                Height: =8.37
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =24
+                Size: =13.52
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue69.Y + DataCardValue69.Height
+                Width: =146.48
+                X: =16.9
+                Y: =488.05
                 ZIndex: =3
 
             StarVisible58 As label:
                 Align: =Align.Center
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =DataCardKey69.Height
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
+                Width: =16.9
                 Wrap: =false
-                Y: =DataCardKey69.Y
+                Y: =8.37
                 ZIndex: =4
 
         "'Usuarios:Correo_DataCard2' As typedDataCard.comboBoxViewCard":
@@ -578,25 +631,29 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Usuarios_x003a_Correo)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =41.86
             Required: =false
             Update: =DataCardValue36.Selected
-            Width: =320
+            Width: =180
             X: =1
-            Y: =10
+            Y: =6
             ZIndex: =1
 
             DataCardKey36 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =146.48
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =16.9
+                Y: =8.37
                 ZIndex: =1
 
             DataCardValue36 As combobox:
@@ -612,21 +669,24 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Height: =70
+                Height: =58.6
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
                 Items: =Choices([@'Asignación Entrenamientos'].Usuarios_x003a_Correo)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingBottom: =4.19
+                PaddingLeft: =0
+                PaddingRight: =2.82
+                PaddingTop: =2.82
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Asignación Entrenamientos'.Usuarios_x003a_Correo,DataCardValue36.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
-                Size: =21
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey36.Y + DataCardKey36.Height + 5
+                Size: =11.83
+                Width: =146.48
+                X: =16.9
+                Y: =52.74
                 ZIndex: =2
 
             ErrorMessage26 As label:
@@ -634,31 +694,35 @@
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Height: =10
+                Height: =8.37
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =24
+                Size: =13.52
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue36.Y + DataCardValue36.Height
+                Width: =146.48
+                X: =16.9
+                Y: =111.34
                 ZIndex: =3
 
             StarVisible26 As label:
                 Align: =Align.Center
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =DataCardKey36.Height
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
+                Width: =16.9
                 Wrap: =false
-                Y: =DataCardKey36.Y
+                Y: =8.37
                 ZIndex: =4
 
         Usuarios_DataCard2 As typedDataCard.comboBoxViewCard:
@@ -669,10 +733,10 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Usuarios)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =41.86
             Required: =false
             Update: =DataCardValue23.Selected
-            Width: =640
+            Width: =180
             X: =0
             Y: =0
             ZIndex: =16
@@ -681,13 +745,17 @@
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =326.76
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =16.9
+                Y: =8.37
                 ZIndex: =1
 
             DataCardValue23 As combobox:
@@ -703,21 +771,24 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Height: =70
+                Height: =58.6
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
                 Items: =Choices([@'Asignación Entrenamientos'].Usuarios)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingBottom: =4.19
+                PaddingLeft: =0
+                PaddingRight: =2.82
+                PaddingTop: =2.82
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Asignación Entrenamientos'.Usuarios,DataCardValue23.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
-                Size: =21
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey23.Y + DataCardKey23.Height + 5
+                Size: =11.83
+                Width: =326.76
+                X: =16.9
+                Y: =52.74
                 ZIndex: =2
 
             ErrorMessage15 As label:
@@ -725,31 +796,35 @@
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Height: =10
+                Height: =8.37
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =24
+                Size: =13.52
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue23.Y + DataCardValue23.Height
+                Width: =326.76
+                X: =16.9
+                Y: =111.34
                 ZIndex: =3
 
             StarVisible15 As label:
                 Align: =Align.Center
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =DataCardKey23.Height
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
+                Width: =16.9
                 Wrap: =false
-                Y: =DataCardKey23.Y
+                Y: =8.37
                 ZIndex: =4
 
         Estado_DataCard2 As typedDataCard.comboBoxViewCard:
@@ -760,25 +835,29 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Estado)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =41.86
             Required: =false
             Update: =DataCardValue24.Selected
-            Width: =320
-            X: =0
-            Y: =1
+            Width: =180
+            X: =1
+            Y: =0
             ZIndex: =16
 
             DataCardKey24 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =146.48
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =16.9
+                Y: =8.37
                 ZIndex: =1
 
             DataCardValue24 As combobox:
@@ -794,21 +873,24 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Height: =70
+                Height: =58.6
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
                 Items: =Choices([@'Asignación Entrenamientos'].Estado)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingBottom: =4.19
+                PaddingLeft: =0
+                PaddingRight: =2.82
+                PaddingTop: =2.82
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Asignación Entrenamientos'.Estado,DataCardValue24.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
-                Size: =21
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey24.Y + DataCardKey24.Height + 5
+                Size: =11.83
+                Width: =146.48
+                X: =16.9
+                Y: =52.74
                 ZIndex: =2
 
             ErrorMessage16 As label:
@@ -816,31 +898,35 @@
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Height: =10
+                Height: =8.37
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =24
+                Size: =13.52
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue24.Y + DataCardValue24.Height
+                Width: =146.48
+                X: =16.9
+                Y: =111.34
                 ZIndex: =3
 
             StarVisible16 As label:
                 Align: =Align.Center
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =DataCardKey24.Height
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
+                Width: =16.9
                 Wrap: =false
-                Y: =DataCardKey24.Y
+                Y: =8.37
                 ZIndex: =4
 
         Calificacion_DataCard2 As typedDataCard.comboBoxViewCard:
@@ -851,11 +937,11 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Calificacion)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =41.86
             Required: =false
             Update: =DataCardValue25.Selected
-            Width: =320
-            X: =1
+            Width: =180
+            X: =0
             Y: =1
             ZIndex: =16
 
@@ -863,13 +949,17 @@
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =146.48
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =16.9
+                Y: =8.37
                 ZIndex: =1
 
             DataCardValue25 As combobox:
@@ -885,21 +975,24 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Height: =70
+                Height: =58.6
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
                 Items: =Choices([@'Asignación Entrenamientos'].Calificacion)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingBottom: =4.19
+                PaddingLeft: =0
+                PaddingRight: =2.82
+                PaddingTop: =2.82
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Asignación Entrenamientos'.Calificacion,DataCardValue25.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
-                Size: =21
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey25.Y + DataCardKey25.Height + 5
+                Size: =11.83
+                Width: =146.48
+                X: =16.9
+                Y: =52.74
                 ZIndex: =2
 
             ErrorMessage17 As label:
@@ -907,31 +1000,35 @@
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Height: =10
+                Height: =8.37
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =24
+                Size: =13.52
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue25.Y + DataCardValue25.Height
+                Width: =146.48
+                X: =16.9
+                Y: =111.34
                 ZIndex: =3
 
             StarVisible17 As label:
                 Align: =Align.Center
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =DataCardKey25.Height
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
+                Width: =16.9
                 Wrap: =false
-                Y: =DataCardKey25.Y
+                Y: =8.37
                 ZIndex: =4
 
         Observaciones_DataCard2 As typedDataCard.textualViewCard:
@@ -942,24 +1039,28 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Observaciones)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =33.49
             Required: =false
-            Width: =320
-            X: =0
-            Y: =2
+            Width: =180
+            X: =1
+            Y: =1
             ZIndex: =16
 
             DataCardKey26 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =146.48
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =16.9
+                Y: =8.37
                 ZIndex: =1
 
             DataCardValue26 As label:
@@ -968,14 +1069,16 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Height: =33.49
+                PaddingBottom: =4.19
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =11.83
                 Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey26.Y + DataCardKey26.Height + 5
+                Width: =146.48
+                X: =16.9
+                Y: =52.74
                 ZIndex: =2
 
         Aprobo_DataCard2 As typedDataCard.toggleViewCard:
@@ -986,10 +1089,10 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Aprobo)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =41.86
             Required: =false
-            Width: =320
-            X: =1
+            Width: =180
+            X: =0
             Y: =2
             ZIndex: =16
 
@@ -997,13 +1100,17 @@
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =146.48
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =16.9
+                Y: =8.37
                 ZIndex: =1
 
             DataCardValue27 As toggleSwitch:
@@ -1013,12 +1120,12 @@
                 DisplayMode: =Parent.DisplayMode
                 FalseFill: =RGBA(128, 130, 133, 1)
                 HandleFill: =RGBA(255, 255, 255, 1)
-                Height: =49
-                Size: =21
+                Height: =41.02
+                Size: =11.83
                 TrueFill: =RGBA(0, 51, 102, 1)
-                Width: =290
-                X: =30
-                Y: =DataCardKey27.Y + DataCardKey27.Height + 5
+                Width: =163.38
+                X: =16.9
+                Y: =52.74
                 ZIndex: =2
 
         Curso_DataCard2 As typedDataCard.comboBoxViewCard:
@@ -1029,25 +1136,29 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Curso)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =218
+            Height: =182.5
             Required: =false
             Update: =DataCardValue28.Selected
-            Width: =640
-            X: =0
-            Y: =3
+            Width: =180
+            X: =1
+            Y: =2
             ZIndex: =16
 
             DataCardKey28 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =326.76
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =16.9
+                Y: =8.37
                 ZIndex: =1
 
             DataCardValue28 As combobox:
@@ -1063,21 +1174,24 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Height: =121
+                Height: =101.29
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
                 Items: =Choices([@'Asignación Entrenamientos'].Curso)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingBottom: =4.19
+                PaddingLeft: =0
+                PaddingRight: =2.82
+                PaddingTop: =2.82
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Asignación Entrenamientos'.Curso,DataCardValue28.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
-                Size: =21
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey28.Y + DataCardKey28.Height + 5
+                Size: =11.83
+                Width: =326.76
+                X: =16.9
+                Y: =52.74
                 ZIndex: =2
 
             ErrorMessage18 As label:
@@ -1085,31 +1199,35 @@
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Height: =10
+                Height: =8.37
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =24
+                Size: =13.52
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue28.Y + DataCardValue28.Height
+                Width: =326.76
+                X: =16.9
+                Y: =154.03
                 ZIndex: =3
 
             StarVisible18 As label:
                 Align: =Align.Center
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =DataCardKey28.Height
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
+                Width: =16.9
                 Wrap: =false
-                Y: =DataCardKey28.Y
+                Y: =8.37
                 ZIndex: =4
 
         "'Usuarios:Sede_DataCard1' As typedDataCard.comboBoxViewCard":
@@ -1120,25 +1238,29 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Usuarios_x003a_Sede)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =41.86
             Required: =false
             Update: =DataCardValue29.Selected
-            Width: =320
+            Width: =180
             X: =0
-            Y: =4
+            Y: =3
             ZIndex: =16
 
             DataCardKey29 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =146.48
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =16.9
+                Y: =8.37
                 ZIndex: =1
 
             DataCardValue29 As combobox:
@@ -1154,21 +1276,24 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Height: =70
+                Height: =58.6
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
                 Items: =Choices([@'Asignación Entrenamientos'].Usuarios_x003a_Sede)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingBottom: =4.19
+                PaddingLeft: =0
+                PaddingRight: =2.82
+                PaddingTop: =2.82
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Asignación Entrenamientos'.Usuarios_x003a_Sede,DataCardValue29.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
-                Size: =21
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey29.Y + DataCardKey29.Height + 5
+                Size: =11.83
+                Width: =146.48
+                X: =16.9
+                Y: =52.74
                 ZIndex: =2
 
             ErrorMessage19 As label:
@@ -1176,31 +1301,35 @@
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Height: =10
+                Height: =8.37
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =24
+                Size: =13.52
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue29.Y + DataCardValue29.Height
+                Width: =146.48
+                X: =16.9
+                Y: =111.34
                 ZIndex: =3
 
             StarVisible19 As label:
                 Align: =Align.Center
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =DataCardKey29.Height
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
+                Width: =16.9
                 Wrap: =false
-                Y: =DataCardKey29.Y
+                Y: =8.37
                 ZIndex: =4
 
         "'Usuarios:Cargo_DataCard1' As typedDataCard.comboBoxViewCard":
@@ -1211,25 +1340,29 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Usuarios_x003a_Cargo)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =41.86
             Required: =false
             Update: =DataCardValue30.Selected
-            Width: =640
-            X: =0
-            Y: =5
+            Width: =180
+            X: =1
+            Y: =3
             ZIndex: =16
 
             DataCardKey30 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =326.76
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =16.9
+                Y: =8.37
                 ZIndex: =1
 
             DataCardValue30 As combobox:
@@ -1245,21 +1378,24 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Height: =70
+                Height: =58.6
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
                 Items: =Choices([@'Asignación Entrenamientos'].Usuarios_x003a_Cargo)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingBottom: =4.19
+                PaddingLeft: =0
+                PaddingRight: =2.82
+                PaddingTop: =2.82
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Asignación Entrenamientos'.Usuarios_x003a_Cargo,DataCardValue30.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
-                Size: =21
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey30.Y + DataCardKey30.Height + 5
+                Size: =11.83
+                Width: =326.76
+                X: =16.9
+                Y: =52.74
                 ZIndex: =2
 
             ErrorMessage20 As label:
@@ -1267,31 +1403,35 @@
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Semibold
-                Height: =10
+                Height: =8.37
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =24
+                Size: =13.52
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue30.Y + DataCardValue30.Height
+                Width: =326.76
+                X: =16.9
+                Y: =111.34
                 ZIndex: =3
 
             StarVisible20 As label:
                 Align: =Align.Center
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =DataCardKey30.Height
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
+                Width: =16.9
                 Wrap: =false
-                Y: =DataCardKey30.Y
+                Y: =8.37
                 ZIndex: =4
 
     Icon4 As icon.Edit:
@@ -1300,11 +1440,11 @@
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(6, 26, 84, 1)
-        Height: =58
+        Height: =48.55
         Icon: =Icon.Edit
         OnSelect: =Navigate(WorkOrderDetailScreen_1, ScreenTransition.Fade)
-        Width: =77
-        X: =548
-        Y: =20
+        Width: =43.38
+        X: =308.73
+        Y: =16.74
         ZIndex: =16
 

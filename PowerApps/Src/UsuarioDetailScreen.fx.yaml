@@ -6,8 +6,9 @@
     Rectangle1_14 As rectangle:
         BorderColor: =RGBA(0, 89, 178, 1)
         Fill: =RGBA(6,26,84,1)
+        Height: =83.71
         TabIndex: =0
-        Width: =640
+        Width: =360.56
         ZIndex: =2
 
     Group3_2 As group:
@@ -20,9 +21,10 @@
         Rectangle1_15 As rectangle:
             BorderColor: =RGBA(0, 89, 178, 1)
             Fill: =RGBA(6, 26, 84, 1)
+            Height: =83.71
             OnSelect: =Back()
             TabIndex: =0
-            Width: =100
+            Width: =56.34
             ZIndex: =6
 
         icon1_2 As icon.ChevronLeft:
@@ -30,11 +32,11 @@
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =97
+            Height: =81.2
             Icon: =Icon.ChevronLeft
             OnSelect: =Navigate(EventScreen, ScreenTransition.Fade)
             TabIndex: =0
-            Width: =67
+            Width: =37.75
             ZIndex: =7
 
     TextBox1_26 As label:
@@ -43,24 +45,27 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
-        Height: =97.39130434782612
+        Height: =81.53
         HoverBorderColor: =TextBox1_26.BorderColor
         HoverColor: =TextBox1_26.Color
         HoverFill: =TextBox1_26.Fill
+        PaddingBottom: =4.19
+        PaddingLeft: =4.19
+        PaddingRight: =2.82
+        PaddingTop: =2.82
         PressedBorderColor: =TextBox1_26.BorderColor
         PressedColor: =TextBox1_26.Color
         PressedFill: =TextBox1_26.Fill
-        Size: =28
+        Size: =15.77
         Text: ="Detalles De Usuario"
-        Width: =523
-        X: =81
+        Width: =294.65
+        X: =45.63
         ZIndex: =9
 
     Canvas1_2 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =1035.4226804123711
-        Width: =Parent.Width
-        Y: =100.06185567010308
+        Height: =640
+        Width: =112.68
         ZIndex: =14
 
         DataCard3_2 As dataCard.blankCard:
@@ -68,8 +73,8 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =1038
-            Width: =Parent.Width
+            Height: =868.95
+            Width: =112.68
             WidthFit: =false
             X: =0
             Y: =0
@@ -79,19 +84,18 @@
                 BorderColor: =RGBA(230, 229, 229, 1)
                 BorderThickness: =1
                 Fill: =RGBA(255, 255, 255, 1)
-                Height: =865
+                Height: =724.13
                 TabIndex: =0
-                Width: =630
+                Width: =354.93
                 ZIndex: =1
 
     FormViewer2 As formViewer:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: ='Usuarios Entrenamientos'
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =968
+        Height: =640
         Item: =GalleryEvent.Selected
-        Width: =640
-        Y: =163
+        Width: =360.56
         ZIndex: =15
 
         Nombre_DataCard1 As typedDataCard.textualViewCard:
@@ -102,9 +106,9 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Usuarios Entrenamientos'],DataSourceInfo.DisplayName,field_0)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =33.49
             Required: =false
-            Width: =640
+            Width: =360
             X: =0
             Y: =0
             ZIndex: =16
@@ -113,13 +117,17 @@
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =326.76
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =16.9
+                Y: =8.37
                 ZIndex: =1
 
             DataCardValue7 As label:
@@ -128,14 +136,16 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Height: =33.49
+                PaddingBottom: =4.19
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =11.83
                 Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey7.Y + DataCardKey7.Height + 5
+                Width: =326.76
+                X: =16.9
+                Y: =52.74
                 ZIndex: =2
 
         Correo_DataCard1 As typedDataCard.textualViewCard:
@@ -146,9 +156,9 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Usuarios Entrenamientos'],DataSourceInfo.DisplayName,field_1)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =119
+            Height: =99.62
             Required: =false
-            Width: =640
+            Width: =360
             X: =0
             Y: =1
             ZIndex: =16
@@ -157,13 +167,17 @@
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =326.76
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =16.9
+                Y: =8.37
                 ZIndex: =1
 
             DataCardValue8 As label:
@@ -172,14 +186,16 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Height: =33.49
+                PaddingBottom: =4.19
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =11.83
                 Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey8.Y + DataCardKey8.Height + 5
+                Width: =326.76
+                X: =16.9
+                Y: =52.74
                 ZIndex: =2
 
         Sede_DataCard1 As typedDataCard.textualViewCard:
@@ -190,9 +206,9 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Usuarios Entrenamientos'],DataSourceInfo.DisplayName,field_2)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =121
+            Height: =101.29
             Required: =false
-            Width: =640
+            Width: =360
             X: =0
             Y: =2
             ZIndex: =16
@@ -201,13 +217,17 @@
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =326.76
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =16.9
+                Y: =8.37
                 ZIndex: =1
 
             DataCardValue9 As label:
@@ -216,14 +236,16 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Height: =33.49
+                PaddingBottom: =4.19
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =11.83
                 Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey9.Y + DataCardKey9.Height + 5
+                Width: =326.76
+                X: =16.9
+                Y: =52.74
                 ZIndex: =2
 
         Cargo_DataCard1 As typedDataCard.textualViewCard:
@@ -234,9 +256,9 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Usuarios Entrenamientos'],DataSourceInfo.DisplayName,field_3)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =33.49
             Required: =false
-            Width: =640
+            Width: =360
             X: =0
             Y: =3
             ZIndex: =16
@@ -245,13 +267,17 @@
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =326.76
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =16.9
+                Y: =8.37
                 ZIndex: =1
 
             DataCardValue10 As label:
@@ -260,14 +286,16 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Height: =33.49
+                PaddingBottom: =4.19
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =11.83
                 Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey10.Y + DataCardKey10.Height + 5
+                Width: =326.76
+                X: =16.9
+                Y: =52.74
                 ZIndex: =2
 
         "'Cargo Entrenamientos_DataCard1' As typedDataCard.textualViewCard":
@@ -278,9 +306,9 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Usuarios Entrenamientos'],DataSourceInfo.DisplayName,field_4)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =117
+            Height: =97.95
             Required: =false
-            Width: =640
+            Width: =360
             X: =0
             Y: =4
             ZIndex: =16
@@ -289,13 +317,17 @@
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =326.76
                 Wrap: =false
-                X: =15
-                Y: =56
+                X: =8.45
+                Y: =46.88
                 ZIndex: =1
 
             DataCardValue11 As label:
@@ -304,14 +336,16 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Height: =33.49
+                PaddingBottom: =4.19
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =11.83
                 Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey11.Y + DataCardKey11.Height + 5
+                Width: =326.76
+                X: =16.9
+                Y: =91.25
                 ZIndex: =2
 
         Celular_DataCard1 As typedDataCard.textualViewCard:
@@ -322,9 +356,9 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Usuarios Entrenamientos'],DataSourceInfo.DisplayName,field_5)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =98
+            Height: =82.04
             Required: =false
-            Width: =640
+            Width: =360
             X: =0
             Y: =5
             ZIndex: =16
@@ -333,13 +367,17 @@
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =326.76
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =16.9
+                Y: =8.37
                 ZIndex: =1
 
             DataCardValue12 As label:
@@ -348,14 +386,16 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Height: =33.49
+                PaddingBottom: =4.19
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =11.83
                 Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey12.Y + DataCardKey12.Height + 5
+                Width: =326.76
+                X: =16.9
+                Y: =52.74
                 ZIndex: =2
 
         Documento_DataCard1 As typedDataCard.textualViewCard:
@@ -366,9 +406,9 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Usuarios Entrenamientos'],DataSourceInfo.DisplayName,Documento)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =33.49
             Required: =false
-            Width: =640
+            Width: =360
             X: =0
             Y: =6
             ZIndex: =16
@@ -377,13 +417,17 @@
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =48
-                Size: =21
+                Height: =40.18
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11.83
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =326.76
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =16.9
+                Y: =8.37
                 ZIndex: =1
 
             DataCardValue14 As label:
@@ -392,14 +436,16 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Height: =33.49
+                PaddingBottom: =4.19
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =11.83
                 Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey14.Y + DataCardKey14.Height + 5
+                Width: =326.76
+                X: =16.9
+                Y: =52.74
                 ZIndex: =2
 
     Icon4_1 As icon.Edit:
@@ -408,23 +454,23 @@
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(6, 26, 84, 1)
-        Height: =58
+        Height: =48.55
         Icon: =Icon.Edit
         OnSelect: =Navigate(UsuarioDetailScreen_1, ScreenTransition.Fade)
-        Width: =77
-        X: =548
-        Y: =20
+        Width: =43.38
+        X: =308.73
+        Y: =16.74
         ZIndex: =16
 
     Image3_3 As image:
         BorderColor: =RGBA(0, 89, 178, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =35
+        Height: =29.3
         Image: ='Captura de pantalla 2024-01-12 082706'
         ImagePosition: =ImagePosition.Fill
-        Width: =426
-        X: =199
-        Y: =114
+        Width: =240
+        X: =112.11
+        Y: =95.43
         ZIndex: =17
 

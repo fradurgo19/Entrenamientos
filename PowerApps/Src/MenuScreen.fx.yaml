@@ -1,8 +1,7 @@
 MenuScreen As screen:
-    BackgroundImage: ='Captura de pantalla 2024-04-04 130223'
-    Fill: =RGBA(232, 232, 232, 1)
+    BackgroundImage: =
     Height: =Max(App.Height, App.DesignHeight)
-    ImagePosition: =ImagePosition.Tile
+    ImagePosition: =ImagePosition.Fill
     Width: =Max(App.Width, App.DesignWidth)
 
     Button1_5 As button:
@@ -13,18 +12,22 @@ MenuScreen As screen:
         Fill: =RGBA(54,166,182,1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
-        Height: =86
+        Height: =71.99
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(Correo, ScreenTransition.Fade)
+        PaddingBottom: =4.19
+        PaddingLeft: =4.19
+        PaddingRight: =2.82
+        PaddingTop: =2.82
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Size: =28
+        Size: =15.77
         Text: ="Correo Masivo"
-        Width: =640
-        Y: =1029
+        Width: =360.56
+        Y: =568.01
         ZIndex: =2
 
     TextBox4_44 As label:
@@ -34,19 +37,23 @@ MenuScreen As screen:
         Fill: =RGBA(255, 0, 0, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
-        Height: =53
+        Height: =44.37
         HoverBorderColor: =TextBox4_44.BorderColor
         HoverColor: =TextBox4_44.Color
         HoverFill: =TextBox4_44.Fill
+        PaddingBottom: =4.19
+        PaddingLeft: =4.19
+        PaddingRight: =2.82
+        PaddingTop: =2.82
         PressedBorderColor: =TextBox4_44.BorderColor
         PressedColor: =TextBox4_44.Color
         PressedFill: =TextBox4_44.Fill
-        Size: =28
+        Size: =15.77
         Text: ="VER"
         Underline: =true
-        Width: =595
-        X: =45
-        Y: =203
+        Width: =335.21
+        X: =25.35
+        Y: =169.94
         ZIndex: =12
 
     TextBox4_48 As label:
@@ -56,19 +63,23 @@ MenuScreen As screen:
         Fill: =RGBA(255, 0, 0, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
-        Height: =72
+        Height: =60.27
         HoverBorderColor: =TextBox4_48.BorderColor
         HoverColor: =TextBox4_48.Color
         HoverFill: =TextBox4_48.Fill
+        PaddingBottom: =4.19
+        PaddingLeft: =4.19
+        PaddingRight: =2.82
+        PaddingTop: =2.82
         PressedBorderColor: =TextBox4_48.BorderColor
         PressedColor: =TextBox4_48.Color
         PressedFill: =TextBox4_48.Fill
-        Size: =28
+        Size: =15.77
         Text: ="AGREGAR"
         Underline: =true
-        Width: =595
-        X: =45.5
-        Y: =521
+        Width: =335.21
+        X: =25.63
+        Y: =436.15
         ZIndex: =13
 
     Button1 As button:
@@ -80,19 +91,23 @@ MenuScreen As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =53
+        Height: =44.37
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
+        PaddingBottom: =4.19
+        PaddingLeft: =4.19
+        PaddingRight: =2.82
+        PaddingTop: =2.82
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
         RadiusTopLeft: =30
         RadiusTopRight: =30
-        Size: =24
+        Size: =13.52
         Text: ="Cursos"
-        Width: =221
-        X: =22
-        Y: =275
+        Width: =124.51
+        X: =12.39
+        Y: =230.21
         ZIndex: =14
 
     Button1_1 As button:
@@ -104,19 +119,23 @@ MenuScreen As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =53
+        Height: =44.37
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(ActiveWorkOrderScreen, ScreenTransition.Fade)
+        PaddingBottom: =4.19
+        PaddingLeft: =4.19
+        PaddingRight: =2.82
+        PaddingTop: =2.82
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
         RadiusTopLeft: =30
         RadiusTopRight: =30
-        Size: =24
+        Size: =13.52
         Text: ="Asignaciones"
-        Width: =221
-        X: =22
-        Y: =356
+        Width: =124.51
+        X: =12.39
+        Y: =298.02
         ZIndex: =15
 
     Button1_2 As button:
@@ -128,19 +147,23 @@ MenuScreen As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =53
+        Height: =44.37
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(EventScreen, ScreenTransition.Fade)
+        PaddingBottom: =4.19
+        PaddingLeft: =4.19
+        PaddingRight: =2.82
+        PaddingTop: =2.82
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
         RadiusTopLeft: =30
         RadiusTopRight: =30
-        Size: =24
+        Size: =13.52
         Text: ="Usuarios"
-        Width: =221
-        X: =22
-        Y: =437
+        Width: =124.51
+        X: =12.39
+        Y: =365.83
         ZIndex: =16
 
     Button1_3 As button:
@@ -152,19 +175,23 @@ MenuScreen As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =37
+        Height: =30.97
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(AddNewOpportunityScreen, ScreenTransition.Fade)
+        PaddingBottom: =4.19
+        PaddingLeft: =4.19
+        PaddingRight: =2.82
+        PaddingTop: =2.82
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
         RadiusTopLeft: =30
         RadiusTopRight: =30
-        Size: =24
+        Size: =13.52
         Text: ="Asignación"
-        Width: =253
-        X: =35
-        Y: =625
+        Width: =142.54
+        X: =19.72
+        Y: =523.21
         ZIndex: =17
 
     TextBox4_47 As label:
@@ -175,17 +202,21 @@ MenuScreen As screen:
         Fill: =RGBA(255, 0, 0, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
-        Height: =81
+        Height: =67.81
         HoverBorderColor: =TextBox4_47.BorderColor
         HoverColor: =TextBox4_47.Color
         HoverFill: =TextBox4_47.Fill
+        PaddingBottom: =4.19
+        PaddingLeft: =4.19
+        PaddingRight: =2.82
+        PaddingTop: =2.82
         PressedBorderColor: =TextBox4_47.BorderColor
         PressedColor: =TextBox4_47.Color
         PressedFill: =TextBox4_47.Fill
-        Size: =28
+        Size: =15.77
         Text: ="OFERTA ENTRENAMIENTOS"
-        Width: =640
-        Y: =108
+        Width: =360.56
+        Y: =90.41
         ZIndex: =18
 
     Button1_11 As button:
@@ -197,19 +228,23 @@ MenuScreen As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =39
+        Height: =32.65
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(CustomerOverviewScreen_2, ScreenTransition.Fade)
+        PaddingBottom: =4.19
+        PaddingLeft: =4.19
+        PaddingRight: =2.82
+        PaddingTop: =2.82
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
         RadiusTopLeft: =30
         RadiusTopRight: =30
-        Size: =24
+        Size: =13.52
         Text: ="Nuevo Curso"
-        Width: =253
-        X: =35
-        Y: =751
+        Width: =142.54
+        X: =19.72
+        Y: =607.35
         ZIndex: =20
 
     Button1_13 As button:
@@ -221,19 +256,23 @@ MenuScreen As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =37
+        Height: =30.97
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(UsuarioDetailScreen_2, ScreenTransition.Fade)
+        PaddingBottom: =4.19
+        PaddingLeft: =4.19
+        PaddingRight: =2.82
+        PaddingTop: =2.82
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
         RadiusTopLeft: =30
         RadiusTopRight: =30
-        Size: =24
+        Size: =13.52
         Text: ="Nuevo Usuario"
-        Width: =253
-        X: =35
-        Y: =686
+        Width: =142.54
+        X: =19.72
+        Y: =574.28
         ZIndex: =21
 
     Button1_6 As button:
@@ -245,17 +284,22 @@ MenuScreen As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
+        Height: =33.49
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate('AddNewOpportunityScreen_1.', ScreenTransition.Fade)
+        PaddingBottom: =4.19
+        PaddingLeft: =4.19
+        PaddingRight: =2.82
+        PaddingTop: =2.82
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
         RadiusTopLeft: =30
         RadiusTopRight: =30
-        Size: =24
+        Size: =13.52
         Text: ="Asignación Masiva"
-        Width: =315
-        X: =303
-        Y: =622
+        Width: =177.46
+        X: =170.7
+        Y: =520.7
         ZIndex: =22
 

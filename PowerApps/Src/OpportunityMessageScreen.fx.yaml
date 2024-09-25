@@ -11,19 +11,23 @@ OpportunityMessageScreen As screen:
         Fill: =RGBA(54,166,182,1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
-        Height: =86
+        Height: =71.99
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
+        PaddingBottom: =4.19
+        PaddingLeft: =4.19
+        PaddingRight: =2.82
+        PaddingTop: =2.82
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Size: =23
+        Size: =12.96
         Text: ="Retornar a la lista de Cursos"
-        Width: =552
-        X: =44
-        Y: =781.7499999999985
+        Width: =310.99
+        X: =24.79
+        Y: =569
         ZIndex: =2
 
     TextBox1_39 As label:
@@ -32,18 +36,22 @@ OpportunityMessageScreen As screen:
         Color: =RGBA(0, 0, 0, 0.70196078)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.Lato
-        Height: =156
+        Height: =130.59
         HoverBorderColor: =TextBox1_39.BorderColor
         HoverColor: =TextBox1_39.Color
         HoverFill: =TextBox1_39.Fill
+        PaddingBottom: =4.19
+        PaddingLeft: =4.19
+        PaddingRight: =2.82
+        PaddingTop: =2.82
         PressedBorderColor: =TextBox1_39.BorderColor
         PressedColor: =TextBox1_39.Color
         PressedFill: =TextBox1_39.Fill
-        Size: =35
+        Size: =19.72
         Text: ="Asignación creada de manera correcta."
-        Width: =544.2857142857142
-        X: =48
-        Y: =417
+        Width: =306.64
+        X: =27.04
+        Y: =349.09
         ZIndex: =3
 
     Group10_1 As group:
@@ -56,11 +64,11 @@ OpportunityMessageScreen As screen:
         Circle2_1 As circle:
             BorderColor: =RGBA(0, 89, 178, 1)
             Fill: =RGBA(97,189,126,1)
-            Height: =176
+            Height: =99.15
             TabIndex: =0
-            Width: =176
-            X: =232
-            Y: =166
+            Width: =99.15
+            X: =130.7
+            Y: =138.97
             ZIndex: =4
 
         icon5_1 As icon.Check:
@@ -68,12 +76,12 @@ OpportunityMessageScreen As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =89.2394366197183
+            Height: =74.71
             Icon: =Icon.Check
             TabIndex: =0
-            Width: =89.2394366197183
-            X: =275.38028169014086
-            Y: =209.38028169014083
+            Width: =50.28
+            X: =155.14
+            Y: =175.28
             ZIndex: =5
 
     Button1_9 As button:
@@ -84,19 +92,23 @@ OpportunityMessageScreen As screen:
         Fill: =RGBA(54,166,182,1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
-        Height: =86
+        Height: =71.99
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(EventScreen, ScreenTransition.Fade)
+        PaddingBottom: =4.19
+        PaddingLeft: =4.19
+        PaddingRight: =2.82
+        PaddingTop: =2.82
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Size: =23
+        Size: =12.96
         Text: ="Retornar a la lista de Usuarios"
-        Width: =552
-        X: =44
-        Y: =894.5
+        Width: =310.99
+        X: =24.79
+        Y: =569
         ZIndex: =7
 
     Button1_10 As button:
@@ -107,18 +119,22 @@ OpportunityMessageScreen As screen:
         Fill: =RGBA(54,166,182,1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
-        Height: =86
+        Height: =71.99
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
+        PaddingBottom: =4.19
+        PaddingLeft: =4.19
+        PaddingRight: =2.82
+        PaddingTop: =2.82
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Size: =23
+        Size: =12.96
         Text: ="Asignar Curso"
-        Width: =552
-        X: =44
-        Y: =1008
+        Width: =310.99
+        X: =24.79
+        Y: =569
         ZIndex: =8
 
