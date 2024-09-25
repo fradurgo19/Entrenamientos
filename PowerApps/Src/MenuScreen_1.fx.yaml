@@ -6,7 +6,7 @@ MenuScreen_1 As screen:
 
     Container1 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
-        Height: =659
+        Height: =1136
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4
@@ -64,7 +64,7 @@ MenuScreen_1 As screen:
 
         Container4 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
-            Height: =572
+            Height: =1046
             RadiusBottomLeft: =4
             RadiusBottomRight: =4
             RadiusTopLeft: =4
@@ -98,7 +98,7 @@ MenuScreen_1 As screen:
                 Text: ="Ingresar"
                 Width: =124.51
                 X: =252
-                Y: =479
+                Y: =924
                 ZIndex: =1
 
             Timer1 As timer:
@@ -128,8 +128,8 @@ MenuScreen_1 As screen:
                 Image: ='cargador-frontal'
                 Visible: =varCargar
                 Width: =180.28
-                X: =72
-                Y: =140
+                X: =243
+                Y: =167
                 ZIndex: =3
 
             Image9 As image:
@@ -140,8 +140,8 @@ MenuScreen_1 As screen:
                 Image: =minicargador
                 Visible: =varCargar
                 Width: =171.27
-                X: =376
-                Y: =140
+                X: =252
+                Y: =570
                 ZIndex: =4
 
             Label1_5 As label:

@@ -1,305 +1,422 @@
 MenuScreen As screen:
-    BackgroundImage: =
+    BackgroundImage: |
+        ="data:image/svg+xml;utf8; "&EncodeUrl(
+        
+        "<svg width='100%' height='100%' id='svg' viewBox='0 0 1440 490' xmlns='http://www.w3.org/2000/svg' class='transition duration-300 ease-in-out delay-150'><style>
+                  .path-0{
+                    animation:pathAnim-0 4s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+                  }
+                  @keyframes pathAnim-0{
+                    0%{
+                      d: path('M 0,500 L 0,375 C 87.53571428571428,393.625 175.07142857142856,412.25 301,402 C 426.92857142857144,391.75 591.2499999999999,352.625 732,310 C 872.7500000000001,267.375 989.9285714285713,221.25 1104,194 C 1218.0714285714287,166.75 1329.0357142857142,158.375 1440,150 L 1440,500 L 0,500 Z');
+                    }
+                    25%{
+                      d: path('M 0,500 L 0,375 C 78.67857142857142,369.6607142857143 157.35714285714283,364.32142857142856 296,357 C 434.64285714285717,349.67857142857144 633.2500000000001,340.37500000000006 782,316 C 930.7499999999999,291.62499999999994 1029.642857142857,252.17857142857142 1131,222 C 1232.357142857143,191.82142857142858 1336.1785714285716,170.91071428571428 1440,150 L 1440,500 L 0,500 Z');
+                    }
+                    50%{
+                      d: path('M 0,500 L 0,375 C 99.10714285714286,376.7321428571429 198.21428571428572,378.4642857142857 324,373 C 449.7857142857143,367.5357142857143 602.25,354.875 733,319 C 863.75,283.125 972.7857142857142,224.03571428571428 1087,192 C 1201.2142857142858,159.96428571428572 1320.607142857143,154.98214285714286 1440,150 L 1440,500 L 0,500 Z');
+                    }
+                    75%{
+                      d: path('M 0,500 L 0,375 C 126.57142857142858,376.125 253.14285714285717,377.25 378,371 C 502.85714285714283,364.75 625.9999999999999,351.125 737,326 C 848.0000000000001,300.875 946.8571428571429,264.25 1062,233 C 1177.142857142857,201.75000000000003 1308.5714285714284,175.875 1440,150 L 1440,500 L 0,500 Z');
+                    }
+                    100%{
+                      d: path('M 0,500 L 0,375 C 87.53571428571428,393.625 175.07142857142856,412.25 301,402 C 426.92857142857144,391.75 591.2499999999999,352.625 732,310 C 872.7500000000001,267.375 989.9285714285713,221.25 1104,194 C 1218.0714285714287,166.75 1329.0357142857142,158.375 1440,150 L 1440,500 L 0,500 Z');
+                    }
+                  }</style><defs><linearGradient id='gradient' x1='0%' y1='50%' x2='100%' y2='50%'><stop offset='5%' stop-color='#8ed1fc'></stop><stop offset='95%' stop-color='#7bdcb5'></stop></linearGradient></defs><path d='M 0,500 L 0,375 C 87.53571428571428,393.625 175.07142857142856,412.25 301,402 C 426.92857142857144,391.75 591.2499999999999,352.625 732,310 C 872.7500000000001,267.375 989.9285714285713,221.25 1104,194 C 1218.0714285714287,166.75 1329.0357142857142,158.375 1440,150 L 1440,500 L 0,500 Z' stroke='none' stroke-width='0' fill='url(#gradient)' fill-opacity='0.265' class='transition-all duration-300 ease-in-out delay-150 path-0'></path><style>
+                  .path-1{
+                    animation:pathAnim-1 4s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+                  }
+                  @keyframes pathAnim-1{
+                    0%{
+                      d: path('M 0,500 L 0,475 C 149.75,470.125 299.5,465.25 407,445 C 514.5,424.75 579.75,389.12500000000006 677,362 C 774.25,334.87499999999994 903.5,316.25 1036,299 C 1168.5,281.75 1304.25,265.875 1440,250 L 1440,500 L 0,500 Z');
+                    }
+                    25%{
+                      d: path('M 0,500 L 0,475 C 81.21428571428572,483.8392857142857 162.42857142857144,492.67857142857144 292,475 C 421.57142857142856,457.32142857142856 599.5,413.12500000000006 734,377 C 868.5,340.87499999999994 959.5714285714287,312.82142857142856 1070,293 C 1180.4285714285713,273.17857142857144 1310.2142857142858,261.5892857142857 1440,250 L 1440,500 L 0,500 Z');
+                    }
+                    50%{
+                      d: path('M 0,500 L 0,475 C 82.28571428571428,482.375 164.57142857142856,489.75 294,472 C 423.42857142857144,454.25 599.9999999999999,411.37500000000006 732,381 C 864.0000000000001,350.62499999999994 951.4285714285713,332.75 1062,313 C 1172.5714285714287,293.25 1306.2857142857142,271.625 1440,250 L 1440,500 L 0,500 Z');
+                    }
+                    75%{
+                      d: path('M 0,500 L 0,475 C 91.28571428571428,475.4107142857143 182.57142857142856,475.82142857142856 325,452 C 467.42857142857144,428.17857142857144 661,380.125 777,363 C 893,345.875 931.4285714285716,359.67857142857144 1029,346 C 1126.5714285714284,332.32142857142856 1283.2857142857142,291.1607142857143 1440,250 L 1440,500 L 0,500 Z');
+                    }
+                    100%{
+                      d: path('M 0,500 L 0,475 C 149.75,470.125 299.5,465.25 407,445 C 514.5,424.75 579.75,389.12500000000006 677,362 C 774.25,334.87499999999994 903.5,316.25 1036,299 C 1168.5,281.75 1304.25,265.875 1440,250 L 1440,500 L 0,500 Z');
+                    }
+                  }</style><defs><linearGradient id='gradient' x1='0%' y1='50%' x2='100%' y2='50%'><
     Height: =Max(App.Height, App.DesignHeight)
     ImagePosition: =ImagePosition.Fill
     Width: =Max(App.Width, App.DesignWidth)
 
-    Button1_5 As button:
-        BorderThickness: =0
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(54,166,182,1)
-        Font: =Font.Lato
-        FontWeight: =FontWeight.Semibold
-        Height: =71.99
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        OnSelect: =Navigate(Correo, ScreenTransition.Fade)
-        PaddingBottom: =4.19
-        PaddingLeft: =4.19
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Size: =15.77
-        Text: ="Correo Masivo"
-        Width: =360.56
-        Y: =568.01
-        ZIndex: =2
+    Container6 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =1132
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =640
+        Y: =4
+        ZIndex: =23
 
-    TextBox4_44 As label:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(255, 0, 0, 1)
-        Font: =Font.'Lato Black'
-        FontWeight: =FontWeight.Bold
-        Height: =44.37
-        HoverBorderColor: =TextBox4_44.BorderColor
-        HoverColor: =TextBox4_44.Color
-        HoverFill: =TextBox4_44.Fill
-        PaddingBottom: =4.19
-        PaddingLeft: =4.19
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        PressedBorderColor: =TextBox4_44.BorderColor
-        PressedColor: =TextBox4_44.Color
-        PressedFill: =TextBox4_44.Fill
-        Size: =15.77
-        Text: ="VER"
-        Underline: =true
-        Width: =335.21
-        X: =25.35
-        Y: =169.94
-        ZIndex: =12
+        Container7 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =105
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =640
+            ZIndex: =1
 
-    TextBox4_48 As label:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(255, 0, 0, 1)
-        Font: =Font.'Lato Black'
-        FontWeight: =FontWeight.Bold
-        Height: =60.27
-        HoverBorderColor: =TextBox4_48.BorderColor
-        HoverColor: =TextBox4_48.Color
-        HoverFill: =TextBox4_48.Fill
-        PaddingBottom: =4.19
-        PaddingLeft: =4.19
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        PressedBorderColor: =TextBox4_48.BorderColor
-        PressedColor: =TextBox4_48.Color
-        PressedFill: =TextBox4_48.Fill
-        Size: =15.77
-        Text: ="AGREGAR"
-        Underline: =true
-        Width: =335.21
-        X: =25.63
-        Y: =436.15
-        ZIndex: =13
+            Container8 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Height: =101
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =629
+                X: =4
+                ZIndex: =1
 
-    Button1 As button:
-        BorderColor: =RGBA(221, 79, 14, 1)
-        BorderThickness: =4
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =44.37
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
-        PaddingBottom: =4.19
-        PaddingLeft: =4.19
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        RadiusBottomLeft: =30
-        RadiusBottomRight: =30
-        RadiusTopLeft: =30
-        RadiusTopRight: =30
-        Size: =13.52
-        Text: ="Cursos"
-        Width: =124.51
-        X: =12.39
-        Y: =230.21
-        ZIndex: =14
+                TextBox4_47 As label:
+                    Align: =Align.Center
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Fill: =RGBA(255, 0, 0, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
+                    Height: =67.81
+                    HoverBorderColor: =TextBox4_47.BorderColor
+                    HoverColor: =TextBox4_47.Color
+                    HoverFill: =TextBox4_47.Fill
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =560
+                    PaddingBottom: =4.19
+                    PaddingLeft: =4.19
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    PressedBorderColor: =TextBox4_47.BorderColor
+                    PressedColor: =TextBox4_47.Color
+                    PressedFill: =TextBox4_47.Fill
+                    Size: =15.77
+                    Text: ="OFERTA ENTRENAMIENTOS"
+                    Width: =360.56
+                    X: =48
+                    Y: =505
+                    ZIndex: =1
 
-    Button1_1 As button:
-        BorderColor: =RGBA(221, 79, 14, 1)
-        BorderThickness: =4
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =44.37
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        OnSelect: =Navigate(ActiveWorkOrderScreen, ScreenTransition.Fade)
-        PaddingBottom: =4.19
-        PaddingLeft: =4.19
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        RadiusBottomLeft: =30
-        RadiusBottomRight: =30
-        RadiusTopLeft: =30
-        RadiusTopRight: =30
-        Size: =13.52
-        Text: ="Asignaciones"
-        Width: =124.51
-        X: =12.39
-        Y: =298.02
-        ZIndex: =15
+        Container9 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =997
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =640
+            Y: =124
+            ZIndex: =2
 
-    Button1_2 As button:
-        BorderColor: =RGBA(221, 79, 14, 1)
-        BorderThickness: =4
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =44.37
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        OnSelect: =Navigate(EventScreen, ScreenTransition.Fade)
-        PaddingBottom: =4.19
-        PaddingLeft: =4.19
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        RadiusBottomLeft: =30
-        RadiusBottomRight: =30
-        RadiusTopLeft: =30
-        RadiusTopRight: =30
-        Size: =13.52
-        Text: ="Usuarios"
-        Width: =124.51
-        X: =12.39
-        Y: =365.83
-        ZIndex: =16
+            Button1_5 As button:
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(54,166,182,1)
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Semibold
+                Height: =71.99
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                OnSelect: =Navigate(Correo, ScreenTransition.Fade)
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =15.77
+                Text: ="Correo Masivo"
+                Width: =638
+                Y: =894
+                ZIndex: =1
 
-    Button1_3 As button:
-        BorderColor: =RGBA(152, 208, 70, 1)
-        BorderThickness: =4
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =30.97
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        OnSelect: =Navigate(AddNewOpportunityScreen, ScreenTransition.Fade)
-        PaddingBottom: =4.19
-        PaddingLeft: =4.19
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        RadiusBottomLeft: =30
-        RadiusBottomRight: =30
-        RadiusTopLeft: =30
-        RadiusTopRight: =30
-        Size: =13.52
-        Text: ="Asignación"
-        Width: =142.54
-        X: =19.72
-        Y: =523.21
-        ZIndex: =17
+            TextBox4_44 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(255, 0, 0, 1)
+                Font: =Font.'Lato Black'
+                FontWeight: =FontWeight.Bold
+                Height: =45
+                HoverBorderColor: =TextBox4_44.BorderColor
+                HoverColor: =TextBox4_44.Color
+                HoverFill: =TextBox4_44.Fill
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                PressedBorderColor: =TextBox4_44.BorderColor
+                PressedColor: =TextBox4_44.Color
+                PressedFill: =TextBox4_44.Fill
+                Size: =15.77
+                Text: ="VER"
+                Underline: =true
+                Width: =638
+                Y: =154
+                ZIndex: =2
 
-    TextBox4_47 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(255, 0, 0, 1)
-        Font: =Font.'Lato Black'
-        FontWeight: =FontWeight.Bold
-        Height: =67.81
-        HoverBorderColor: =TextBox4_47.BorderColor
-        HoverColor: =TextBox4_47.Color
-        HoverFill: =TextBox4_47.Fill
-        PaddingBottom: =4.19
-        PaddingLeft: =4.19
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        PressedBorderColor: =TextBox4_47.BorderColor
-        PressedColor: =TextBox4_47.Color
-        PressedFill: =TextBox4_47.Fill
-        Size: =15.77
-        Text: ="OFERTA ENTRENAMIENTOS"
-        Width: =360.56
-        Y: =90.41
-        ZIndex: =18
+            TextBox4_48 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(255, 0, 0, 1)
+                Font: =Font.'Lato Black'
+                FontWeight: =FontWeight.Bold
+                Height: =52
+                HoverBorderColor: =TextBox4_48.BorderColor
+                HoverColor: =TextBox4_48.Color
+                HoverFill: =TextBox4_48.Fill
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                PressedBorderColor: =TextBox4_48.BorderColor
+                PressedColor: =TextBox4_48.Color
+                PressedFill: =TextBox4_48.Fill
+                Size: =15.77
+                Text: ="AGREGAR"
+                Underline: =true
+                Width: =640
+                Y: =441
+                ZIndex: =3
 
-    Button1_11 As button:
-        BorderColor: =RGBA(152, 208, 70, 1)
-        BorderThickness: =4
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =32.65
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        OnSelect: =Navigate(CustomerOverviewScreen_2, ScreenTransition.Fade)
-        PaddingBottom: =4.19
-        PaddingLeft: =4.19
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        RadiusBottomLeft: =30
-        RadiusBottomRight: =30
-        RadiusTopLeft: =30
-        RadiusTopRight: =30
-        Size: =13.52
-        Text: ="Nuevo Curso"
-        Width: =142.54
-        X: =19.72
-        Y: =607.35
-        ZIndex: =20
+            Button1 As button:
+                BorderColor: =RGBA(221, 79, 14, 1)
+                BorderThickness: =4
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =44.37
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                RadiusBottomLeft: =30
+                RadiusBottomRight: =30
+                RadiusTopLeft: =30
+                RadiusTopRight: =30
+                Size: =13.52
+                Text: ="Cursos"
+                Width: =124.51
+                X: =40
+                Y: =235
+                ZIndex: =4
 
-    Button1_13 As button:
-        BorderColor: =RGBA(152, 208, 70, 1)
-        BorderThickness: =4
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =30.97
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        OnSelect: =Navigate(UsuarioDetailScreen_2, ScreenTransition.Fade)
-        PaddingBottom: =4.19
-        PaddingLeft: =4.19
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        RadiusBottomLeft: =30
-        RadiusBottomRight: =30
-        RadiusTopLeft: =30
-        RadiusTopRight: =30
-        Size: =13.52
-        Text: ="Nuevo Usuario"
-        Width: =142.54
-        X: =19.72
-        Y: =574.28
-        ZIndex: =21
+            Button1_1 As button:
+                BorderColor: =RGBA(221, 79, 14, 1)
+                BorderThickness: =4
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =44.37
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                OnSelect: =Navigate(ActiveWorkOrderScreen, ScreenTransition.Fade)
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                RadiusBottomLeft: =30
+                RadiusBottomRight: =30
+                RadiusTopLeft: =30
+                RadiusTopRight: =30
+                Size: =13.52
+                Text: ="Asignaciones"
+                Width: =124.51
+                X: =40
+                Y: =303
+                ZIndex: =5
 
-    Button1_6 As button:
-        BorderColor: =RGBA(152, 208, 70, 1)
-        BorderThickness: =4
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =33.49
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        OnSelect: =Navigate('AddNewOpportunityScreen_1.', ScreenTransition.Fade)
-        PaddingBottom: =4.19
-        PaddingLeft: =4.19
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        RadiusBottomLeft: =30
-        RadiusBottomRight: =30
-        RadiusTopLeft: =30
-        RadiusTopRight: =30
-        Size: =13.52
-        Text: ="Asignación Masiva"
-        Width: =177.46
-        X: =170.7
-        Y: =520.7
-        ZIndex: =22
+            Button1_2 As button:
+                BorderColor: =RGBA(221, 79, 14, 1)
+                BorderThickness: =4
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =44.37
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                OnSelect: =Navigate(EventScreen, ScreenTransition.Fade)
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                RadiusBottomLeft: =30
+                RadiusBottomRight: =30
+                RadiusTopLeft: =30
+                RadiusTopRight: =30
+                Size: =13.52
+                Text: ="Usuarios"
+                Width: =124.51
+                X: =40
+                Y: =370
+                ZIndex: =6
+
+            Button1_3 As button:
+                BorderColor: =RGBA(152, 208, 70, 1)
+                BorderThickness: =4
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30.97
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                OnSelect: =Navigate(AddNewOpportunityScreen, ScreenTransition.Fade)
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                RadiusBottomLeft: =30
+                RadiusBottomRight: =30
+                RadiusTopLeft: =30
+                RadiusTopRight: =30
+                Size: =13.52
+                Text: ="Asignación"
+                Width: =142.54
+                X: =47
+                Y: =528
+                ZIndex: =7
+
+            Button1_11 As button:
+                BorderColor: =RGBA(152, 208, 70, 1)
+                BorderThickness: =4
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =32.65
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                OnSelect: =Navigate(CustomerOverviewScreen_2, ScreenTransition.Fade)
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                RadiusBottomLeft: =30
+                RadiusBottomRight: =30
+                RadiusTopLeft: =30
+                RadiusTopRight: =30
+                Size: =13.52
+                Text: ="Nuevo Curso"
+                Width: =142.54
+                X: =40
+                Y: =802
+                ZIndex: =8
+
+            Button1_13 As button:
+                BorderColor: =RGBA(152, 208, 70, 1)
+                BorderThickness: =4
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30.97
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                OnSelect: =Navigate(UsuarioDetailScreen_2, ScreenTransition.Fade)
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                RadiusBottomLeft: =30
+                RadiusBottomRight: =30
+                RadiusTopLeft: =30
+                RadiusTopRight: =30
+                Size: =13.52
+                Text: ="Nuevo Usuario"
+                Width: =142.54
+                X: =40
+                Y: =599
+                ZIndex: =9
+
+            Button1_6 As button:
+                BorderColor: =RGBA(152, 208, 70, 1)
+                BorderThickness: =4
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =33.49
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                OnSelect: =Navigate('AddNewOpportunityScreen_1.', ScreenTransition.Fade)
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                RadiusBottomLeft: =30
+                RadiusBottomRight: =30
+                RadiusTopLeft: =30
+                RadiusTopRight: =30
+                Size: =13.52
+                Text: ="Asignación Masiva"
+                Width: =177.46
+                X: =40
+                Y: =671
+                ZIndex: =10
+
+            TextBox4_45 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(255, 0, 0, 1)
+                Font: =Font.'Lato Black'
+                FontWeight: =FontWeight.Bold
+                Height: =45
+                HoverBorderColor: =TextBox4_45.BorderColor
+                HoverColor: =TextBox4_45.Color
+                HoverFill: =TextBox4_45.Fill
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                PressedBorderColor: =TextBox4_45.BorderColor
+                PressedColor: =TextBox4_45.Color
+                PressedFill: =TextBox4_45.Fill
+                Size: =15.77
+                Text: ="Usuarios"
+                Underline: =true
+                Width: =638
+                Y: =6
+                ZIndex: =11
 
