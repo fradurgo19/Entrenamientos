@@ -115,15 +115,15 @@ ActiveWorkOrderScreen As screen:
                         'Asignación Entrenamientos',
                         If(IsBlank(gallSelected),Defaults('Asignación Entrenamientos'),gallSelected),
                         {
-                            Usuarios: ComboBox1_4.Selected,
-                            Curso: ComboBox1_5.Selected,
+                            Usuarios: ComboBox1_10.Selected,
+                            Curso: ComboBox1_9.Selected,
                             FechaLimite: DatePicker2_1.SelectedDate,
                             Calificacion: ComboBox1_6.Selected,
-                            Estado: ComboBox1_7.Selected
+                            Estado: ComboBox1_11.Selected
                         }
                     );
                     
-                    Reset(ComboBox1_4); Reset(ComboBox1_5);Reset(ComboBox1_6);Reset(ComboBox1_7);Reset(DatePicker2_1)
+                    Reset(ComboBox1_10); Reset(ComboBox1_11);Reset(ComboBox1_6);Reset(ComboBox1_9);Reset(DatePicker2_1)
                 Width: =40.56
                 X: =519
                 Y: =40
@@ -138,7 +138,7 @@ ActiveWorkOrderScreen As screen:
                 Icon: =Icon.Sync
                 OnSelect: |-
                     =Set(gallSelected,Blank());
-                    Reset(ComboBox1_4); Reset(ComboBox1_5);Reset(ComboBox1_6);Reset(ComboBox1_7);Reset(DatePicker2_1);Reset(TextInputSearch_1)
+                    Reset(ComboBox1_10); Reset(ComboBox1_9);Reset(ComboBox1_11);Reset(DatePicker2_1);Reset(TextInputSearch_1)
                 Width: =30.99
                 X: =476
                 Y: =41
@@ -165,8 +165,8 @@ ActiveWorkOrderScreen As screen:
                 DisabledFill: =RGBA(255, 255, 255, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.Lato
-                Height: =28
-                HintText: ="Buscar por Estado, Usuario, Curso, Calificación o Cargo."
+                Height: =58
+                HintText: ="Buscar por Estado, Usuario o Curso."
                 HoverBorderColor: =RGBA(32, 54, 71, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =ColorFade(RGBA(190, 202, 226, 0), 30%)
@@ -242,7 +242,7 @@ ActiveWorkOrderScreen As screen:
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                Height: =28
+                Height: =57
                 HoverDateFill: =RGBA(153, 205, 255, 1)
                 IconBackground: =RGBA(0, 51, 102, 1)
                 PaddingBottom: =4.19
@@ -254,74 +254,6 @@ ActiveWorkOrderScreen As screen:
                 X: =432
                 Y: =1
                 ZIndex: =4
-
-            ComboBox1_4 As combobox:
-                BorderColor: =RGBA(0, 89, 178, 1)
-                ChevronBackground: =RGBA(0, 51, 102, 1)
-                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-                ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                Default: =gallSelected.Usuarios
-                DefaultSelectedItems: =gallSelected.Usuarios
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                DisplayFields: =["Value"]
-                Height: =22
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(153, 205, 255, 1)
-                InputTextPlaceholder: ="Usuario"
-                Items: =Choices([@'Asignación Entrenamientos'].Usuarios)
-                PaddingBottom: =8.37
-                PaddingLeft: =8.37
-                PaddingRight: =5.63
-                PaddingTop: =5.63
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(0, 89, 178, 1)
-                SearchFields: =["Value"]
-                SearchItems: =Choices('Asignación Entrenamientos'.Usuarios,ComboBox1_4.SearchText)
-                SelectionFill: =RGBA(0, 51, 102, 1)
-                SelectMultiple: =false
-                Size: =10
-                Width: =155
-                X: =465
-                Y: =29
-                ZIndex: =5
-
-            ComboBox1_5 As combobox:
-                BorderColor: =RGBA(0, 89, 178, 1)
-                ChevronBackground: =RGBA(0, 51, 102, 1)
-                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-                ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                Default: =gallSelected.Curso
-                DefaultSelectedItems: =gallSelected.Curso
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                DisplayFields: =["Value"]
-                Height: =23
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(153, 205, 255, 1)
-                InputTextPlaceholder: ="Seleccionar Curso"
-                Items: =Choices([@'Asignación Entrenamientos'].Curso)
-                PaddingBottom: =8.37
-                PaddingLeft: =8.37
-                PaddingRight: =5.63
-                PaddingTop: =5.63
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(0, 89, 178, 1)
-                SearchFields: =["Value"]
-                SearchItems: =Choices('Asignación Entrenamientos'.Curso,ComboBox1_5.SearchText)
-                SelectionFill: =RGBA(0, 51, 102, 1)
-                Size: =10
-                Tooltip: ="Curso"
-                Width: =236
-                X: =66
-                Y: =28
-                ZIndex: =6
 
             ComboBox1_6 As combobox:
                 BorderColor: =RGBA(0, 89, 178, 1)
@@ -336,7 +268,7 @@ ActiveWorkOrderScreen As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayFields: =["Value"]
-                Height: =28
+                Height: =57
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
                 InputTextPlaceholder: ="Calificación"
@@ -356,49 +288,15 @@ ActiveWorkOrderScreen As screen:
                 Y: =1
                 ZIndex: =7
 
-            ComboBox1_7 As combobox:
-                BorderColor: =RGBA(0, 89, 178, 1)
-                ChevronBackground: =RGBA(0, 51, 102, 1)
-                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-                ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                Default: =gallSelected.Estado
-                DefaultSelectedItems: =gallSelected.Estado
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                DisplayFields: =["Value"]
-                Height: =22.6
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(153, 205, 255, 1)
-                InputTextPlaceholder: ="Estado"
-                Items: =Choices([@'Asignación Entrenamientos'].Estado)
-                PaddingBottom: =8.37
-                PaddingLeft: =8.37
-                PaddingRight: =5.63
-                PaddingTop: =5.63
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(0, 89, 178, 1)
-                SearchFields: =["Value"]
-                SearchItems: =Choices('Asignación Entrenamientos'.Estado,ComboBox1_7.SearchText)
-                SelectionFill: =RGBA(0, 51, 102, 1)
-                Size: =10
-                Width: =163
-                X: =302
-                Y: =29
-                ZIndex: =8
-
         Container13 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
-            Height: =846
+            Height: =786
             RadiusBottomLeft: =4
             RadiusBottomRight: =4
             RadiusTopLeft: =4
             RadiusTopRight: =4
-            Width: =589
-            X: =17
-            Y: =178
+            Width: =626
+            Y: =235
             ZIndex: =3
 
             "GalleryWorkOrder As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
@@ -414,11 +312,11 @@ ActiveWorkOrderScreen As screen:
                     =Sort(
                         Filter(
                             'Asignación Entrenamientos',
-                            (StartsWith(Estado.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text)) ||
-                            (StartsWith(Usuarios.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text)) ||
-                            (StartsWith(Curso.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text)) ||
-                            (StartsWith(Calificacion.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text)) ||
-                            (StartsWith(Usuarios_x003a_Cargo.Value, TextInputSearch_1.Text) || IsBlank(TextInputSearch_1.Text))&&
+                            TextInputSearch_1.Text in Estado.Value || TextInputSearch_1.Text in Usuarios.Value  || TextInputSearch_1.Text in Curso.Value  && 
+                            (Calificacion.Value = ComboBox1_6.Selected.Value || IsBlank(ComboboxCanvas2.Selected.Value)) && 
+                            (Curso.Value =  ComboBox1_9.Selected.Value || IsBlank(ComboBox1_9.Selected.Value)) &&
+                            (Estado.Value = ComboBox1_11.Selected.Value || IsBlank(ComboBox1_11.Selected.Value)) &&
+                            (Usuarios.Value = ComboBox1_10.Selected.Value || IsBlank(ComboBox1_10.Selected.Value)) &&
                             (FechaLimite >= DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate)) && (FechaLimite <= DatePicker1_1.SelectedDate || IsBlank(DatePicker1_1.SelectedDate))
                         ),
                         Modified,
@@ -782,4 +680,166 @@ ActiveWorkOrderScreen As screen:
                 Text: ="Asignación Masiva"
                 Width: =614
                 ZIndex: =1
+
+        Container12_1 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =45
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =626
+            Y: =178
+            ZIndex: =5
+
+            DatePicker1_2 As datepicker:
+                BorderColor: =RGBA(204, 231, 246, 1)
+                CalendarHeaderFill: =RGBA(0, 51, 102, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DefaultDate: =
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Lighter
+                Height: =48.55
+                HoverDateFill: =RGBA(153, 205, 255, 1)
+                IconBackground: =RGBA(0, 51, 102, 1)
+                PaddingBottom: =4.19
+                PaddingLeft: =10.05
+                PaddingRight: =2.82
+                SelectedDateFill: =RGBA(0, 51, 102, 1)
+                Size: =8.45
+                Tooltip: ="Inicio"
+                Visible: =false
+                Width: =85.63
+                X: =223.66
+                Y: =
+                ZIndex: =2
+
+            DatePicker1_3 As datepicker:
+                BorderColor: =RGBA(204, 231, 246, 1)
+                CalendarHeaderFill: =RGBA(0, 51, 102, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DefaultDate: =
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Lighter
+                Height: =48.55
+                HoverDateFill: =RGBA(153, 205, 255, 1)
+                IconBackground: =RGBA(0, 51, 102, 1)
+                PaddingBottom: =4.19
+                PaddingLeft: =10.05
+                PaddingRight: =2.82
+                SelectedDateFill: =RGBA(0, 51, 102, 1)
+                Size: =8.45
+                Tooltip: ="Fin"
+                Visible: =false
+                Width: =90.7
+                X: =309.3
+                Y: =
+                ZIndex: =3
+
+            ComboBox1_10 As combobox:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                ChevronBackground: =RGBA(0, 51, 102, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                Default: =gallSelected.Usuarios
+                DefaultSelectedItems: =gallSelected.Usuarios
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                Height: =39
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
+                InputTextPlaceholder: ="Usuario"
+                Items: =Choices([@'Asignación Entrenamientos'].Usuarios)
+                PaddingBottom: =8.37
+                PaddingLeft: =8.37
+                PaddingRight: =5.63
+                PaddingTop: =5.63
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(0, 89, 178, 1)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Asignación Entrenamientos'.Usuarios,ComboBox1_10.SearchText)
+                SelectionFill: =RGBA(0, 51, 102, 1)
+                SelectMultiple: =false
+                Size: =10
+                Width: =155
+                X: =465
+                Y: =6
+                ZIndex: =5
+
+            ComboBox1_9 As combobox:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                ChevronBackground: =RGBA(0, 51, 102, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                Default: =gallSelected.Curso
+                DefaultSelectedItems: =gallSelected.Curso
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                Height: =39
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
+                InputTextPlaceholder: ="Seleccionar Curso"
+                Items: =Choices([@'Asignación Entrenamientos'].Curso)
+                PaddingBottom: =8.37
+                PaddingLeft: =8.37
+                PaddingRight: =5.63
+                PaddingTop: =5.63
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(0, 89, 178, 1)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Asignación Entrenamientos'.Curso,ComboBox1_9.SearchText)
+                SelectionFill: =RGBA(0, 51, 102, 1)
+                Size: =10
+                Tooltip: ="Curso"
+                Width: =236
+                X: =66
+                Y: =6
+                ZIndex: =6
+
+            ComboBox1_11 As combobox:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                ChevronBackground: =RGBA(0, 51, 102, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                Default: =gallSelected.Estado
+                DefaultSelectedItems: =gallSelected.Estado
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                Height: =39
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
+                InputTextPlaceholder: ="Estado"
+                Items: =Choices([@'Asignación Entrenamientos'].Estado)
+                PaddingBottom: =8.37
+                PaddingLeft: =8.37
+                PaddingRight: =5.63
+                PaddingTop: =5.63
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(0, 89, 178, 1)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Asignación Entrenamientos'.Estado,ComboBox1_11.SearchText)
+                SelectionFill: =RGBA(0, 51, 102, 1)
+                Size: =10
+                Width: =163
+                X: =302
+                Y: =6
+                ZIndex: =8
 

@@ -274,7 +274,9 @@ CustomerScreen As screen:
                             colOfertas,
                             TextInputSearch.Text in field_2 && 
                             (field_7.Value = ComboboxCanvas2.Selected.Value || IsBlank(ComboboxCanvas2.Selected.Value)) && 
-                            (field_6.Value = ComboboxCanvas2_1.Selected.Value || IsBlank(ComboboxCanvas2_1.Selected.Value)) && 
+                            (field_6.Value = ComboboxCanvas2_1.Selected.Value || IsBlank(ComboboxCanvas2_1.Selected.Value)) &&
+                            (field_4.Value = ComboboxCanvas2_6.Selected.Value || IsBlank(ComboboxCanvas2_6.Selected.Value)) &&
+                            (field_3.Vaule = ComboboxCanvas2_7.Selected.Value || IsBlank(ComboboxCanvas2_7.Selected.Value)) &&
                             (Created = DatePickerCanvas1.SelectedDate || IsBlank(DatePickerCanvas1.SelectedDate))
                         ),
                         Modified,
@@ -501,7 +503,7 @@ CustomerScreen As screen:
                         DisplayMode: =DisplayMode.Edit
                         Height: =42
                         OnSelect: =Launch(TextBox1_2.Text)
-                        Text: ="Ir al recutrso"
+                        Text: ="Ir al Recurso"
                         Width: =61
                         X: =0
                         Y: =0
@@ -596,7 +598,7 @@ CustomerScreen As screen:
                     DisabledColor: =RGBA(0, 0, 0, 1)
                     Height: =49
                     Icon: =Icon.Reload
-                    OnSelect: =Reset(TextInputSearch); Reset(ComboboxCanvas2);Reset(DatePickerCanvas1);Reset(GalleryCustumer);Reset(ComboboxCanvas2_1)
+                    OnSelect: =Reset(TextInputSearch); Reset(ComboboxCanvas2);Reset(DatePickerCanvas1);Reset(GalleryCustumer);Reset(ComboboxCanvas2_1);Reset(ComboboxCanvas2_6);Reset(ComboboxCanvas2_7)
                     PaddingBottom: =5
                     PaddingLeft: =5
                     PaddingRight: =5
@@ -623,7 +625,17 @@ CustomerScreen As screen:
                     DisplayMode: =DisplayMode.Edit
                     Height: =55
                     InputTextPlaceholder: ="Modelo"
-                    Items: =["Ficha", "Plataforma","Virtual","Video","Presencial Interno","Presencial Fabrica","Presencial Tercero"]
+                    Items: |+
+                        =Distinct(Ungroup('Ofertas de Entrenamientos', field_4), Value)
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                     Width: =133
                     X: =0
                     Y: =0
@@ -669,8 +681,8 @@ CustomerScreen As screen:
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
-                Width: =103
-                X: =246
+                Width: =251
+                X: =97
                 ZIndex: =11
 
                 "ComboboxCanvas2_7 As 'Cuadro combinado'.pcfdataset":
@@ -679,7 +691,7 @@ CustomerScreen As screen:
                     Height: =55
                     InputTextPlaceholder: ="Marca"
                     Items: |+
-                        =["Ammann", "Case","Hitachi","Okada","Link Belt","Liugong","Yanmar","Todas las marcas"]
+                        =Distinct(Ungroup('Ofertas de Entrenamientos', field_3), Value)
                         
                         
                         
@@ -690,8 +702,9 @@ CustomerScreen As screen:
                         
                         
                         
-                    Width: =99
-                    X: =4
+                    SelectMultiple: =true
+                    Width: =232
+                    X: =0
                     Y: =0
                     ZIndex: =1
 
