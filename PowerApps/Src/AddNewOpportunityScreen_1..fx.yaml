@@ -128,72 +128,6 @@
                 Width: =640
                 ZIndex: =14
 
-                Button1_17 As button:
-                    BorderThickness: =0
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =ColorFade(RGBA(255, 255, 255, 1), 70%)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    DisplayMode: =
-                    Fill: =RGBA(54,166,182,1)
-                    Font: =Font.Lato
-                    FontWeight: =FontWeight.Semibold
-                    Height: =59
-                    HoverColor: =RGBA(255, 255, 255, 1)
-                    HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-                    LayoutMinHeight: =70
-                    LayoutMinWidth: =280
-                    OnSelect: |-
-                        =SubmitForm(Form1_1);
-                        ResetForm(Form1_1);
-                        NewForm(Form1_1); 
-                        
-                        SubmitForm(Form1_2);
-                        ResetForm(Form1_2);
-                        NewForm(Form1_2); 
-                        
-                        SubmitForm(Form1_3);
-                        ResetForm(Form1_3);
-                        NewForm(Form1_3); 
-                        
-                        SubmitForm(Form1_4);
-                        ResetForm(Form1_4);
-                        NewForm(Form1_4); 
-                        
-                        SubmitForm(Form1_5);
-                        ResetForm(Form1_5);
-                        NewForm(Form1_5);
-                        
-                        SubmitForm(Form1_6);
-                        ResetForm(Form1_6);
-                        NewForm(Form1_6);
-                        
-                        SubmitForm(Form1_7);
-                        ResetForm(Form1_7);
-                        NewForm(Form1_7);
-                        
-                        SubmitForm(Form1_8);
-                        ResetForm(Form1_8);
-                        NewForm(Form1_8);
-                        
-                        SubmitForm(Form1_9);
-                        ResetForm(Form1_9);
-                        NewForm(Form1_9);
-                        
-                        Navigate(OpportunityMessageScreen, ScreenTransition.Fade)
-                    PaddingBottom: =4.19
-                    PaddingLeft: =45.21
-                    PaddingRight: =2.82
-                    PaddingTop: =2.82
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
-                    Size: =15.77
-                    Text: ="Enviar"
-                    Width: =640
-                    Y: =30968
-                    ZIndex: =2
-
                 Form1_1 As form:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     BorderColor: =RGBA(0, 89, 178, 1)
@@ -206,7 +140,7 @@
                     LayoutMinWidth: =150
                     Width: =225
                     Y: =33
-                    ZIndex: =5
+                    ZIndex: =1
 
                     FechaLimite_DataCard4 As typedDataCard.dateEditCard:
                         BorderColor: =RGBA(0, 89, 178, 1)
@@ -520,7 +454,7 @@
                     Width: =212
                     X: =235
                     Y: =5
-                    ZIndex: =6
+                    ZIndex: =2
 
                     FechaLimite_DataCard5 As typedDataCard.dateEditCard:
                         BorderColor: =RGBA(0, 89, 178, 1)
@@ -834,7 +768,7 @@
                     Width: =198
                     X: =442
                     Y: =33
-                    ZIndex: =7
+                    ZIndex: =3
 
                     FechaLimite_DataCard6 As typedDataCard.dateEditCard:
                         BorderColor: =RGBA(0, 89, 178, 1)
@@ -1145,7 +1079,7 @@
                     Width: =215
                     X: =237
                     Y: =1376
-                    ZIndex: =8
+                    ZIndex: =4
 
                     FechaLimite_DataCard8 As typedDataCard.dateEditCard:
                         BorderColor: =RGBA(0, 89, 178, 1)
@@ -1459,7 +1393,7 @@
                     Width: =223
                     X: =237
                     Y: =14141
-                    ZIndex: =9
+                    ZIndex: =5
 
                     FechaLimite_DataCard11 As typedDataCard.dateEditCard:
                         BorderColor: =RGBA(0, 89, 178, 1)
@@ -1773,7 +1707,7 @@
                     Width: =210
                     X: =430
                     Y: =1376
-                    ZIndex: =10
+                    ZIndex: =6
 
                     FechaLimite_DataCard9 As typedDataCard.dateEditCard:
                         BorderColor: =RGBA(0, 89, 178, 1)
@@ -2086,7 +2020,7 @@
                     LayoutMinWidth: =320
                     Width: =235
                     Y: =1376
-                    ZIndex: =11
+                    ZIndex: =7
 
                     FechaLimite_DataCard7 As typedDataCard.dateEditCard:
                         BorderColor: =RGBA(0, 89, 178, 1)
@@ -2399,7 +2333,7 @@
                     LayoutMinWidth: =320
                     Width: =237
                     Y: =14141
-                    ZIndex: =12
+                    ZIndex: =8
 
                     FechaLimite_DataCard10 As typedDataCard.dateEditCard:
                         BorderColor: =RGBA(0, 89, 178, 1)
@@ -2713,7 +2647,7 @@
                     Width: =210
                     X: =430
                     Y: =14476
-                    ZIndex: =13
+                    ZIndex: =9
 
                     FechaLimite_DataCard12 As typedDataCard.dateEditCard:
                         BorderColor: =RGBA(0, 89, 178, 1)
@@ -3013,4 +2947,70 @@
                             Wrap: =false
                             Y: =8.37
                             ZIndex: =4
+
+                Button1_17 As button:
+                    BorderThickness: =0
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =ColorFade(RGBA(255, 255, 255, 1), 70%)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayMode: =
+                    Fill: =RGBA(54,166,182,1)
+                    Font: =Font.Lato
+                    FontWeight: =FontWeight.Semibold
+                    Height: =59
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    OnSelect: |-
+                        =SubmitForm(Form1_1);
+                        ResetForm(Form1_1);
+                        NewForm(Form1_1); 
+                        
+                        SubmitForm(Form1_2);
+                        ResetForm(Form1_2);
+                        NewForm(Form1_2); 
+                        
+                        SubmitForm(Form1_3);
+                        ResetForm(Form1_3);
+                        NewForm(Form1_3); 
+                        
+                        SubmitForm(Form1_4);
+                        ResetForm(Form1_4);
+                        NewForm(Form1_4); 
+                        
+                        SubmitForm(Form1_5);
+                        ResetForm(Form1_5);
+                        NewForm(Form1_5);
+                        
+                        SubmitForm(Form1_6);
+                        ResetForm(Form1_6);
+                        NewForm(Form1_6);
+                        
+                        SubmitForm(Form1_7);
+                        ResetForm(Form1_7);
+                        NewForm(Form1_7);
+                        
+                        SubmitForm(Form1_8);
+                        ResetForm(Form1_8);
+                        NewForm(Form1_8);
+                        
+                        SubmitForm(Form1_9);
+                        ResetForm(Form1_9);
+                        NewForm(Form1_9);
+                        
+                        Navigate(OpportunityMessageScreen, ScreenTransition.Fade)
+                    PaddingBottom: =4.19
+                    PaddingLeft: =45.21
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Size: =15.77
+                    Text: ="Enviar"
+                    Width: =640
+                    Y: =30968
+                    ZIndex: =10
 
