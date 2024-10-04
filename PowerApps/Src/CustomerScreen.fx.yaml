@@ -302,6 +302,18 @@ CustomerScreen As screen:
                     Y: =28
                     ZIndex: =4
 
+                ButtonCanvas1 As Botón:
+                    Appearance: ='ButtonCanvas.Appearance'.Primary
+                    BasePaletteColor: =RGBA(156, 220, 79, 1)
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =36
+                    OnSelect: =Launch(TextBox1_2.Text)
+                    Text: ="Ir al recutrso"
+                    Width: =54
+                    X: =567
+                    Y: =38
+                    ZIndex: =5
+
         Container19 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
             Height: =73
