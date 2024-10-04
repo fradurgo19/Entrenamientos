@@ -582,8 +582,14 @@
                 DelayItemLoading: =true
                 Height: =776
                 Items: |-
-                    =
-                    Search('Ofertas de Entrenamientos',TextInputSearch_3.Text,field_2)
+                    =Sort(
+                        Filter(
+                            'Ofertas de Entrenamientos',
+                        (TextInputSearch_3.Text in field_0 || TextInputSearch_3.Text in field_2 || TextInputSearch_3.Text in Adjunto || TextInputSearch_3.Text in Prueba || IsBlank(TextInputSearch_3.Text)) 
+                        ),
+                        Modified,
+                        SortOrder.Descending
+                    )
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 ShowNavigation: =true
@@ -694,7 +700,15 @@
                     BorderThickness: =3
                     DelayItemLoading: =true
                     Height: =612
-                    Items: =Search([@'Usuarios Entrenamientos'],TextInputSearch_2.Text,field_4)
+                    Items: |-
+                        =Sort(
+                            Filter(
+                                [@'Usuarios Entrenamientos'],
+                            (TextInputSearch_2.Text in field_0 || TextInputSearch_2.Text in field_1 || TextInputSearch_2.Text in field_2 || TextInputSearch_2.Text in field_3 || IsBlank(TextInputSearch_2.Text)) 
+                            ),
+                            Modified,
+                            SortOrder.Descending
+                        )
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
                     LayoutMinWidth: =320
