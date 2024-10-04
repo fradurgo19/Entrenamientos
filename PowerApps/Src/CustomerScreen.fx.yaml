@@ -107,7 +107,7 @@ CustomerScreen As screen:
 
         Container17 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
-            Height: =55
+            Height: =51
             RadiusBottomLeft: =4
             RadiusBottomRight: =4
             RadiusTopLeft: =4
@@ -116,78 +116,147 @@ CustomerScreen As screen:
             Y: =83
             ZIndex: =2
 
-            TextInputSearch As text:
-                BorderColor: =RGBA(163,171,193,1)
-                BorderThickness: =2
-                Color: =RGBA(79, 90, 94, 1)
-                Default: =""
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.Lato
-                Height: =55.62
-                HintText: ="Buscar Curso"
-                HoverBorderColor: =RGBA(0, 89, 178, 1)
-                HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =ColorFade(RGBA(190, 202, 226, 0), 30%)
-                PaddingBottom: =4.19
-                PaddingLeft: =10.05
-                PaddingRight: =2.82
-                PaddingTop: =2.82
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Reset: =ResetSearch
-                Size: =12
-                Width: =232
-                X: =6
-                Y: |
-                    =
-                ZIndex: =1
+            Container70 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Height: =51
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =103
+                X: =244
+                ZIndex: =7
 
-            "DatePickerCanvas1 As 'Selector de fecha'":
-                Appearance: ='DatePickerCanvas.Appearance'.FilledLighter
-                DisplayMode: =DisplayMode.Edit
-                Height: =55
-                Placeholder: ="Fecha de Modificado."
-                Width: =181
-                X: =458
-                Y: =0
-                ZIndex: =3
+                "ComboboxCanvas2 As 'Cuadro combinado'.pcfdataset":
+                    Appearance: ='ComboboxCanvas.Appearance'.FilledLighter
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =46
+                    InputTextPlaceholder: ="Estado"
+                    Items: =["Disponible", "Para Creación"]
+                    Width: =103
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
 
-            "ComboboxCanvas2 As 'Cuadro combinado'.pcfdataset":
-                Appearance: ='ComboboxCanvas.Appearance'.FilledLighter
-                DisplayMode: =DisplayMode.Edit
-                Height: =55
-                InputTextPlaceholder: ="Estado"
-                Items: =["Disponible", "Para Creación"]
-                Width: =105
-                X: =238
-                Y: =0
-                ZIndex: =4
+            Container71 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Height: =51
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =132
+                X: =442
+                ZIndex: =8
 
-            "ComboboxCanvas2_1 As 'Cuadro combinado'.pcfdataset":
-                Appearance: ='ComboboxCanvas.Appearance'.FilledLighter
-                DisplayMode: =DisplayMode.Edit
+                "DatePickerCanvas1 As 'Selector de fecha'":
+                    Appearance: ='DatePickerCanvas.Appearance'.FilledLighter
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =46
+                    Placeholder: ="Fecha"
+                    Width: =129
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+            Container72 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Height: =51
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =93
+                X: =348
+                ZIndex: =9
+
+                "ComboboxCanvas2_1 As 'Cuadro combinado'.pcfdataset":
+                    Appearance: ='ComboboxCanvas.Appearance'.FilledLighter
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =48
+                    InputTextPlaceholder: ="Recurso"
+                    Items: =["Ficha", "Plataforma","Virtual","Video","Presencial Interno","Presencial Fabrica","Presencial Tercero"]
+                    Width: =101
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+            Container73_1 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Light
                 Height: =55
-                InputTextPlaceholder: ="Recurso"
-                Items: =["Ficha", "Plataforma","Virtual","Video","Presencial Interno","Presencial Fabrica","Presencial Tercero"]
-                Width: =115
-                X: =343
-                Y: =0
-                ZIndex: =5
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =65
+                X: =574
+                ZIndex: =11
+
+                icon2_3 As icon.Search:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(0, 0, 0, 1)
+                    Height: =49
+                    Icon: =Icon.Reload
+                    OnSelect: =Reset(TextInputSearch); Reset(ComboboxCanvas2);Reset(DatePickerCanvas1);Reset(GalleryCustumer);Reset(ComboboxCanvas2_1)
+                    PaddingBottom: =5
+                    PaddingLeft: =5
+                    PaddingRight: =5
+                    PaddingTop: =5
+                    TabIndex: =0
+                    Width: =63
+                    ZIndex: =1
+
+            Container69 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Height: =51
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =243
+                X: =1
+                ZIndex: =12
+
+                TextInputSearch As text:
+                    BorderColor: =RGBA(163,171,193,1)
+                    BorderThickness: =2
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =""
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(0, 0, 0, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.Lato
+                    Height: =48
+                    HintText: ="Buscar Curso"
+                    HoverBorderColor: =RGBA(0, 89, 178, 1)
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =ColorFade(RGBA(190, 202, 226, 0), 30%)
+                    PaddingBottom: =4.19
+                    PaddingLeft: =10.05
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Reset: =ResetSearch
+                    Size: =12
+                    Width: =240
+                    Y: |
+                        =
+                    ZIndex: =1
 
         Container18 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
-            Height: =897
+            Height: =857
             RadiusBottomLeft: =4
             RadiusBottomRight: =4
             RadiusTopLeft: =4
             RadiusTopRight: =4
             Width: =640
-            Y: =150
+            Y: =189
             ZIndex: =3
 
             GalleryCustumer As gallery.galleryVertical:
@@ -196,7 +265,7 @@ CustomerScreen As screen:
                 BorderThickness: =2
                 DisabledBorderColor: =GalleryCustumer.BorderColor
                 DisabledFill: =GalleryCustumer.Fill
-                Height: =897
+                Height: =852
                 HoverBorderColor: =GalleryCustumer.BorderColor
                 HoverFill: =GalleryCustumer.Fill
                 Items: |+
@@ -225,6 +294,7 @@ CustomerScreen As screen:
                 TemplateSize: =102.97
                 Transition: =Transition.Pop
                 Visible: =CountRows(GalleryCustumer.AllItems) > 0
+                Y: =5
                 ZIndex: =2
 
                 Rectangle1_2 As rectangle:
@@ -302,18 +372,6 @@ CustomerScreen As screen:
                     X: =349
                     Y: =28
                     ZIndex: =4
-
-                ButtonCanvas1 As Botón:
-                    Appearance: ='ButtonCanvas.Appearance'.Primary
-                    BasePaletteColor: =RGBA(156, 220, 79, 1)
-                    DisplayMode: =DisplayMode.Edit
-                    Height: =36
-                    OnSelect: =Launch(TextBox1_2.Text)
-                    Text: ="Ir al recutrso"
-                    Width: =54
-                    X: =567
-                    Y: =38
-                    ZIndex: =5
 
                 TextBox1_3 As label:
                     BorderColor: =RGBA(0, 89, 178, 1)
@@ -425,6 +483,30 @@ CustomerScreen As screen:
                     X: =398
                     ZIndex: =10
 
+                Container75 As groupContainer.manualLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    Height: =43
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Width: =61
+                    X: =567
+                    Y: =21
+                    ZIndex: =11
+
+                    ButtonCanvas1 As Botón:
+                        Appearance: ='ButtonCanvas.Appearance'.Primary
+                        BasePaletteColor: =RGBA(156, 220, 79, 1)
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =42
+                        OnSelect: =Launch(TextBox1_2.Text)
+                        Text: ="Ir al recutrso"
+                        Width: =61
+                        X: =0
+                        Y: =0
+                        ZIndex: =1
+
         Container19 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
             Height: =73
@@ -485,4 +567,131 @@ CustomerScreen As screen:
                 X: =573
                 Y: =9
                 ZIndex: =3
+
+        Container17_1 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =55
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =640
+            Y: =134
+            ZIndex: =5
+
+            Container71_1 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Height: =55
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =64
+                X: =574
+                ZIndex: =8
+
+                icon2_4 As icon.Search:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(0, 0, 0, 1)
+                    Height: =49
+                    Icon: =Icon.Reload
+                    OnSelect: =Reset(TextInputSearch); Reset(ComboboxCanvas2);Reset(DatePickerCanvas1);Reset(GalleryCustumer);Reset(ComboboxCanvas2_1)
+                    PaddingBottom: =5
+                    PaddingLeft: =5
+                    PaddingRight: =5
+                    PaddingTop: =5
+                    TabIndex: =0
+                    Width: =63
+                    X: =1
+                    Y: =5
+                    ZIndex: =1
+
+            Container72_1 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Height: =55
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =133
+                X: =441
+                ZIndex: =9
+
+                "ComboboxCanvas2_4 As 'Cuadro combinado'.pcfdataset":
+                    Appearance: ='ComboboxCanvas.Appearance'.FilledLighter
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =55
+                    InputTextPlaceholder: ="Modelo"
+                    Items: =["Ficha", "Plataforma","Virtual","Video","Presencial Interno","Presencial Fabrica","Presencial Tercero"]
+                    Width: =133
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+            Container73_2 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Height: =55
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =91
+                X: =350
+                ZIndex: =10
+
+                "ComboboxCanvas2_6 As 'Cuadro combinado'.pcfdataset":
+                    Appearance: ='ComboboxCanvas.Appearance'.FilledLighter
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =55
+                    InputTextPlaceholder: ="Tipo"
+                    Items: |+
+                        =["Mantenimiento", "Servicio","Diagnostico","Reparacion","Operación","Funcionamiento","Estructura","Administracion","Telemetria"]
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    Width: =87
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+            Container73_3 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Height: =55
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =103
+                X: =246
+                ZIndex: =11
+
+                "ComboboxCanvas2_7 As 'Cuadro combinado'.pcfdataset":
+                    Appearance: ='ComboboxCanvas.Appearance'.FilledLighter
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =55
+                    InputTextPlaceholder: ="Marca"
+                    Items: |+
+                        =["Ammann", "Case","Hitachi","Okada","Link Belt","Liugong","Yanmar","Todas las marcas"]
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    Width: =99
+                    X: =4
+                    Y: =0
+                    ZIndex: =1
 

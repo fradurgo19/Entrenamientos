@@ -3014,19 +3014,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CustomerScreen.Container15.Container17.DatePickerCanvas1.AccessibleLabel"
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container17.Container69.TextInputSearch.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CustomerScreen.Container15.Container17.DatePickerCanvas1.AccessibleLabel",
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container17.Container69.TextInputSearch.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "CustomerScreen",
-                "type": "CustomerScreen.Container15.Container17.DatePickerCanvas1"
+                "type": "CustomerScreen.Container15.Container17.Container69.TextInputSearch"
               }
             }
           ],
@@ -3044,19 +3044,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CustomerScreen.Container15.Container17.ComboboxCanvas2.AccessibleLabel"
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container17.Container71.DatePickerCanvas1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CustomerScreen.Container15.Container17.ComboboxCanvas2.AccessibleLabel",
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container17.Container71.DatePickerCanvas1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "CustomerScreen",
-                "type": "CustomerScreen.Container15.Container17.ComboboxCanvas2"
+                "type": "CustomerScreen.Container15.Container17.Container71.DatePickerCanvas1"
               }
             }
           ],
@@ -3074,19 +3074,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CustomerScreen.Container15.Container17.TextInputSearch.AccessibleLabel"
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container18.GalleryCustumer.Container75.ButtonCanvas1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CustomerScreen.Container15.Container17.TextInputSearch.AccessibleLabel",
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container18.GalleryCustumer.Container75.ButtonCanvas1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "CustomerScreen",
-                "type": "CustomerScreen.Container15.Container17.TextInputSearch"
+                "type": "CustomerScreen.Container15.Container18.GalleryCustumer.Container75.ButtonCanvas1"
               }
             }
           ],
@@ -5384,6 +5384,156 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container17.Container73_1.icon2_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container17.Container73_1.icon2_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "CustomerScreen",
+                "type": "CustomerScreen.Container15.Container17.Container73_1.icon2_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container17_1.Container73_3.ComboboxCanvas2_7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container17_1.Container73_3.ComboboxCanvas2_7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "CustomerScreen",
+                "type": "CustomerScreen.Container15.Container17_1.Container73_3.ComboboxCanvas2_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container17_1.Container73_2.ComboboxCanvas2_6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container17_1.Container73_2.ComboboxCanvas2_6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "CustomerScreen",
+                "type": "CustomerScreen.Container15.Container17_1.Container73_2.ComboboxCanvas2_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container17_1.Container71_1.icon2_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container17_1.Container71_1.icon2_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "CustomerScreen",
+                "type": "CustomerScreen.Container15.Container17_1.Container71_1.icon2_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container17_1.Container72_1.ComboboxCanvas2_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container17_1.Container72_1.ComboboxCanvas2_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "CustomerScreen",
+                "type": "CustomerScreen.Container15.Container17_1.Container72_1.ComboboxCanvas2_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "WorkOrderDetailScreen_1.Container65.ButtonCanvas3.AccessibleLabel"
                 }
               ],
@@ -7514,19 +7664,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CustomerScreen.Container15.Container17.ComboboxCanvas2_1.AccessibleLabel"
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container17.Container70.ComboboxCanvas2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CustomerScreen.Container15.Container17.ComboboxCanvas2_1.AccessibleLabel",
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container17.Container70.ComboboxCanvas2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "CustomerScreen",
-                "type": "CustomerScreen.Container15.Container17.ComboboxCanvas2_1"
+                "type": "CustomerScreen.Container15.Container17.Container70.ComboboxCanvas2"
               }
             }
           ],
@@ -7544,19 +7694,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CustomerScreen.Container15.Container18.GalleryCustumer.ButtonCanvas1.AccessibleLabel"
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container17.Container72.ComboboxCanvas2_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CustomerScreen.Container15.Container18.GalleryCustumer.ButtonCanvas1.AccessibleLabel",
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container17.Container72.ComboboxCanvas2_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "CustomerScreen",
-                "type": "CustomerScreen.Container15.Container18.GalleryCustumer.ButtonCanvas1"
+                "type": "CustomerScreen.Container15.Container17.Container72.ComboboxCanvas2_1"
               }
             }
           ],
