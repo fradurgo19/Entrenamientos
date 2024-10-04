@@ -80,16 +80,16 @@ MenuScreen As screen:
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
-                Width: =629
+                Width: =636
                 X: =4
                 ZIndex: =1
 
                 TextBox4_47 As label:
                     Align: =Align.Center
                     BorderColor: =RGBA(0, 89, 178, 1)
-                    Color: =RGBA(255, 255, 255, 1)
+                    Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
-                    Fill: =RGBA(255, 0, 0, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
                     Font: =Font.'Lato Black'
                     FontWeight: =FontWeight.Bold
                     Height: =Parent.Height
@@ -107,10 +107,24 @@ MenuScreen As screen:
                     PressedFill: =TextBox4_47.Fill
                     Size: =15.77
                     Text: ="ENTRENAMIENTOS"
-                    Width: =Parent.Width
+                    Width: =400
                     X: =48
                     Y: =505
                     ZIndex: =1
+
+                Image3_7 As image:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Height: =29.3
+                    Image: ='Captura de pantalla 2024-01-12 082706'
+                    ImagePosition: =ImagePosition.Fill
+                    LayoutMinHeight: =320
+                    LayoutMinWidth: =320
+                    Width: =240
+                    X: =112.11
+                    Y: =95.43
+                    ZIndex: =2
 
         Container9 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
@@ -145,6 +159,10 @@ MenuScreen As screen:
                 RadiusTopRight: =0
                 Size: =15.77
                 Text: ="Correo Masivo"
+                Visible: |-
+                    =User().Email = "analista.mantenimiento@partequipos.com" || 
+                    User().Email = "jestrada@partequipos.com" || 
+                    User().Email = "auxiliar.garantiasbg@partequipos.com"
                 Width: =638
                 Y: =894
                 ZIndex: =1
