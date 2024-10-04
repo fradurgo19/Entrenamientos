@@ -248,7 +248,9 @@
                     Reset(TextEmailMessage2_2);
                     UpdateContext({CorreosConcatenados: ""});
                     UpdateContext({CorreosConcatenados1: ""});
-                    Navigate(OpportunityMessageScreen, ScreenTransition.Fade)
+                    Navigate(OpportunityMessageScreen, ScreenTransition.Fade);
+                    UpdateContext({CorreosConcatenados: ""});UpdateContext({CorreosConcatenados1: ""});UpdateContext({CorreosConcatenados2: ""});Reset(TextInputSearch_3);
+                    Reset(TextInputSearch_2);Reset(TextEmailMessage2_1);Reset(TextEmailMessage2_2)
                     
                 PaddingBottom: =4.19
                 PaddingLeft: =4.19
@@ -373,7 +375,7 @@
                 BorderColor: =RGBA(0, 89, 178, 1)
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
-                Default: =CorreosConcatenados2
+                Default: =
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
