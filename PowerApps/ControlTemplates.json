@@ -69,6 +69,21 @@
     "OverridableProperties": {},
     "Version": "2.4.0"
   },
+  "Cuadro combinado": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_ComboboxCanvas",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_ComboboxCanvas",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "Cuadro combinado",
+    "Version": "0.0.41"
+  },
   "dataCard": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -96,21 +111,6 @@
     "Name": "datepicker",
     "OverridableProperties": {},
     "Version": "2.6.0"
-  },
-  "Desplegable": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_DropdownCanvas",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": true,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "PowerApps_CoreControls_DropdownCanvas",
-    "OverridableProperties": {},
-    "TemplateDisplayName": "Desplegable",
-    "Version": "0.0.42"
   },
   "fluidGrid": {
     "CustomGroupControlTemplateName": "",

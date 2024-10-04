@@ -5,7 +5,8 @@ CustomerScreen As screen:
         =UpdateContext({ResetSearch:true});
         UpdateContext({ResetSearch:false});
         If(IsEmpty(CustomerFeedbackList), ClearCollect(CustomerFeedbackList, CustomerFeedback));
-        If(IsEmpty(CustomerOpportunityList), ClearCollect(CustomerOpportunityList, CustomerOpportunity))
+        If(IsEmpty(CustomerOpportunityList), ClearCollect(CustomerOpportunityList, CustomerOpportunity));
+        ClearCollect(colOfertas,'Ofertas de Entrenamientos')
     Width: =Max(App.Width, App.DesignWidth)
 
     Container15 As groupContainer.manualLayoutContainer:
@@ -39,6 +40,7 @@ CustomerScreen As screen:
                 ZIndex: =1
 
             TextBox1_12 As label:
+                Align: =Align.Center
                 BorderColor: =RGBA(0, 89, 178, 1)
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -57,8 +59,8 @@ CustomerScreen As screen:
                 PressedFill: =TextBox1_12.Fill
                 Size: =15.77
                 Text: ="Cursos"
-                Width: =109.3
-                X: =257
+                Width: =168
+                X: =198
                 Y: =2
                 ZIndex: =2
 
@@ -145,24 +147,23 @@ CustomerScreen As screen:
                     =
                 ZIndex: =1
 
-            DropdownCanvas1 As Desplegable.pcfdataset:
-                Appearance: ='DropdownCanvas.Appearance'.FilledLighter
-                DisplayMode: =DisplayMode.Edit
-                Height: =55
-                Items: =Distinct('Ofertas de Entrenamientos',field_7)
-                Width: =162
-                X: =238
-                Y: =0
-                ZIndex: =2
-
             "DatePickerCanvas1 As 'Selector de fecha'":
                 Appearance: ='DatePickerCanvas.Appearance'.FilledLighter
                 DisplayMode: =DisplayMode.Edit
                 Height: =55
-                Width: =239
-                X: =400
+                Width: =209
+                X: =430
                 Y: =0
                 ZIndex: =3
+
+            "ComboboxCanvas2 As 'Cuadro combinado'.pcfdataset":
+                DisplayMode: =DisplayMode.Edit
+                Height: =55
+                Items: =["Disponible", "Para Creación"]
+                Width: =192
+                X: =238
+                Y: =0
+                ZIndex: =4
 
         Container18 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
@@ -187,9 +188,9 @@ CustomerScreen As screen:
                 Items: |+
                     =Sort(
                         Filter(
-                            'Ofertas de Entrenamientos',
+                            colOfertas,
                             TextInputSearch.Text in field_2 && 
-                            (field_7 = DropdownCanvas1.Selected.Value || IsBlank(DropdownCanvas1.Selected.Value)) && 
+                            (field_7.Value = ComboboxCanvas1.Selected. || IsBlank(ComboboxCanvas1.SelectedItems)) && 
                             (Created = DatePickerCanvas1.SelectedDate || IsBlank(DatePickerCanvas1.SelectedDate))
                         ),
                         Created,
