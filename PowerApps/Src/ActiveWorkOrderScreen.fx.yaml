@@ -250,8 +250,9 @@ ActiveWorkOrderScreen As screen:
                 PaddingRight: =2.82
                 SelectedDateFill: =RGBA(0, 51, 102, 1)
                 Size: =5.63
-                Width: =183
-                X: =437
+                Width: =188
+                X: =432
+                Y: =1
                 ZIndex: =4
 
             ComboBox1_4 As combobox:
@@ -282,10 +283,10 @@ ActiveWorkOrderScreen As screen:
                 SearchItems: =Choices('Asignación Entrenamientos'.Usuarios,ComboBox1_4.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
-                Size: =5.63
-                Width: =141
-                X: =167
-                Y: =28
+                Size: =10
+                Width: =155
+                X: =465
+                Y: =29
                 ZIndex: =5
 
             ComboBox1_5 As combobox:
@@ -301,7 +302,7 @@ ActiveWorkOrderScreen As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayFields: =["Value"]
-                Height: =25
+                Height: =23
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
                 InputTextPlaceholder: ="Seleccionar Curso"
@@ -315,11 +316,11 @@ ActiveWorkOrderScreen As screen:
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Asignación Entrenamientos'.Curso,ComboBox1_5.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
-                Size: =5.63
+                Size: =10
                 Tooltip: ="Curso"
-                Width: =135
-                X: =302
-                Y: =3
+                Width: =236
+                X: =66
+                Y: =28
                 ZIndex: =6
 
             ComboBox1_6 As combobox:
@@ -335,7 +336,7 @@ ActiveWorkOrderScreen As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayFields: =["Value"]
-                Height: =22
+                Height: =28
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
                 InputTextPlaceholder: ="Calificación"
@@ -349,10 +350,10 @@ ActiveWorkOrderScreen As screen:
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Asignación Entrenamientos'.Calificacion,ComboBox1_6.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
-                Size: =5.63
-                Width: =204
-                X: =309
-                Y: =28
+                Size: =10
+                Width: =130
+                X: =302
+                Y: =1
                 ZIndex: =7
 
             ComboBox1_7 As combobox:
@@ -382,10 +383,10 @@ ActiveWorkOrderScreen As screen:
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Asignación Entrenamientos'.Estado,ComboBox1_7.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
-                Size: =5.63
+                Size: =10
                 Width: =163
-                X: =1
-                Y: =28
+                X: =302
+                Y: =29
                 ZIndex: =8
 
         Container13 As groupContainer.manualLayoutContainer:
@@ -467,12 +468,12 @@ ActiveWorkOrderScreen As screen:
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Size: =7.32
+                    Size: =11
                     Text: =ThisItem.Curso.Value
                     VerticalAlign: =VerticalAlign.Top
                     Width: =246.76
-                    X: =58.03
-                    Y: =43.53
+                    X: =90
+                    Y: =42
                     ZIndex: =2
 
                 Body1 As label:
@@ -485,11 +486,11 @@ ActiveWorkOrderScreen As screen:
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Size: =6.76
+                    Size: =11
                     Text: =ThisItem.Usuarios_x003a_Cargo.Value
                     VerticalAlign: =VerticalAlign.Top
                     Width: =176.34
-                    X: =58.03
+                    X: =92
                     Y: =99.62
                     ZIndex: =3
 
@@ -536,7 +537,7 @@ ActiveWorkOrderScreen As screen:
                     Text: =ThisItem.Calificacion.Value
                     VerticalAlign: =VerticalAlign.Top
                     Width: =113
-                    X: =81.13
+                    X: =92
                     Y: =140.64
                     ZIndex: =7
 
@@ -544,17 +545,17 @@ ActiveWorkOrderScreen As screen:
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =25.95
+                    Height: =19
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Size: =8.45
+                    Size: =11
                     Text: |-
                         ="Curso:"
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =38.87
+                    Width: =49
                     X: =9.01
                     Y: =53.58
                     ZIndex: =8
@@ -563,17 +564,17 @@ ActiveWorkOrderScreen As screen:
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =22.6
+                    Height: =22
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Size: =8.45
+                    Size: =11
                     Text: |-
                         ="Cargo:"
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =38.87
+                    Width: =59
                     X: =9.01
                     Y: =99.62
                     ZIndex: =9
@@ -588,7 +589,7 @@ ActiveWorkOrderScreen As screen:
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Size: =8.45
+                    Size: =11
                     Text: |-
                         ="Calificación:"
                     VerticalAlign: =VerticalAlign.Top
@@ -602,17 +603,17 @@ ActiveWorkOrderScreen As screen:
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Fill: =RGBA(6, 26, 84, 1)
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =15.91
+                    Height: =14
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Size: =5.63
+                    Size: =11
                     Text: =ThisItem.FechaAprobo
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =114.37
-                    X: =336
+                    Width: =213
+                    X: =354
                     Y: =128
                     ZIndex: =11
 
@@ -620,38 +621,38 @@ ActiveWorkOrderScreen As screen:
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =20.09
+                    Height: =20
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Size: =6.2
+                    Size: =11
                     Text: |-
                         ="FechaEstado:"
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =56.9
-                    X: =278
-                    Y: =122
+                    Width: =111
+                    X: =243
+                    Y: =121
                     ZIndex: =12
 
                 Subtitle1_5 As label:
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =17.58
+                    Height: =15
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Size: =6.2
+                    Size: =11
                     Text: |-
                         ="Asignó:"
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =43.38
-                    X: =292
-                    Y: =105
+                    Width: =76
+                    X: =278
+                    Y: =106
                     ZIndex: =13
 
                 Title1_2 As label:
@@ -659,17 +660,17 @@ ActiveWorkOrderScreen As screen:
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Fill: =RGBA(6, 26, 84, 1)
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =20.09
+                    Height: =22
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Size: =5.63
+                    Size: =11
                     Text: =ThisItem.Author.DisplayName
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =137.46
-                    X: =336
+                    Width: =213
+                    X: =354
                     Y: =106
                     ZIndex: =14
 
@@ -677,19 +678,19 @@ ActiveWorkOrderScreen As screen:
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =20.09
+                    Height: =21
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Size: =6.2
+                    Size: =11
                     Text: |-
                         ="Fecha Limite:"
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =56.9
-                    X: =278
-                    Y: =142
+                    Width: =111
+                    X: =243
+                    Y: =140
                     ZIndex: =15
 
                 Title1_3 As label:
@@ -697,18 +698,18 @@ ActiveWorkOrderScreen As screen:
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Fill: =RGBA(6, 26, 84, 1)
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =15.91
+                    Height: =20
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Size: =5.63
+                    Size: =11
                     Text: =ThisItem.FechaLimite
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =114.37
-                    X: =336
-                    Y: =146
+                    Width: =213
+                    X: =354
+                    Y: =142
                     ZIndex: =16
 
                 Icon11 As icon.Trash:
