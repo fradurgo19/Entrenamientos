@@ -224,13 +224,13 @@ CustomerScreen As screen:
                 TemplateSize: =102.97
                 Transition: =Transition.Pop
                 Visible: =CountRows(GalleryCustumer.AllItems) > 0
-                ZIndex: =1
+                ZIndex: =2
 
                 Rectangle1_2 As rectangle:
                     BorderColor: =RGBA(139, 154, 159, 1)
                     BorderThickness: =1
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =101.29
+                    Height: =101
                     TabIndex: =0
                     Width: =640
                     ZIndex: =1
@@ -252,7 +252,7 @@ CustomerScreen As screen:
                     PressedColor: =TextBox1.Color
                     PressedFill: =TextBox1.Fill
                     Text: =ThisItem.field_2
-                    Width: =234
+                    Width: =222
                     Y: =21
                     ZIndex: =2
 
@@ -275,7 +275,7 @@ CustomerScreen As screen:
                     Size: =10
                     Text: =ThisItem.field_6.Value
                     Width: =64
-                    X: =251
+                    X: =215
                     Y: =36
                     ZIndex: =3
 
@@ -284,7 +284,7 @@ CustomerScreen As screen:
                     Color: =RGBA(153, 153, 153, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Font: =Font.Lato
-                    Height: =56
+                    Height: =62
                     HoverBorderColor: =TextBox1_2.BorderColor
                     HoverColor: =TextBox1_2.Color
                     HoverFill: =TextBox1_2.Fill
@@ -298,7 +298,7 @@ CustomerScreen As screen:
                     Size: =10
                     Text: =ThisItem.Adjunto
                     Width: =201
-                    X: =333
+                    X: =349
                     Y: =28
                     ZIndex: =4
 
@@ -313,6 +313,116 @@ CustomerScreen As screen:
                     X: =567
                     Y: =38
                     ZIndex: =5
+
+                TextBox1_3 As label:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.Lato
+                    Height: =21
+                    HoverBorderColor: =TextBox1_3.BorderColor
+                    HoverColor: =TextBox1_3.Color
+                    HoverFill: =TextBox1_3.Fill
+                    PaddingBottom: =4.19
+                    PaddingLeft: =4.19
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    PressedBorderColor: =TextBox1_3.BorderColor
+                    PressedColor: =TextBox1_3.Color
+                    PressedFill: =TextBox1_3.Fill
+                    Size: =10
+                    Text: ="Curso"
+                    Width: =122
+                    ZIndex: =6
+
+                TextBox1_4 As label:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.Lato
+                    Height: =21
+                    HoverBorderColor: =TextBox1_4.BorderColor
+                    HoverColor: =TextBox1_4.Color
+                    HoverFill: =TextBox1_4.Fill
+                    PaddingBottom: =4.19
+                    PaddingLeft: =4.19
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    PressedBorderColor: =TextBox1_4.BorderColor
+                    PressedColor: =TextBox1_4.Color
+                    PressedFill: =TextBox1_4.Fill
+                    Size: =10
+                    Text: ="Tipo"
+                    Width: =50
+                    X: =222
+                    ZIndex: =7
+
+                TextBox1_5 As label:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.Lato
+                    Height: =21
+                    HoverBorderColor: =TextBox1_5.BorderColor
+                    HoverColor: =TextBox1_5.Color
+                    HoverFill: =TextBox1_5.Fill
+                    PaddingBottom: =4.19
+                    PaddingLeft: =4.19
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    PressedBorderColor: =TextBox1_5.BorderColor
+                    PressedColor: =TextBox1_5.Color
+                    PressedFill: =TextBox1_5.Fill
+                    Size: =10
+                    Text: ="Estado"
+                    Width: =50
+                    X: =279
+                    ZIndex: =8
+
+                TextBox1_6 As label:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(153, 153, 153, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.Lato
+                    Height: =26
+                    HoverBorderColor: =TextBox1_6.BorderColor
+                    HoverColor: =TextBox1_6.Color
+                    HoverFill: =TextBox1_6.Fill
+                    PaddingBottom: =4.19
+                    PaddingLeft: =4.19
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    PressedBorderColor: =TextBox1_6.BorderColor
+                    PressedColor: =TextBox1_6.Color
+                    PressedFill: =TextBox1_6.Fill
+                    Size: =10
+                    Text: =ThisItem.field_7.Value
+                    Width: =80
+                    X: =269
+                    Y: =38
+                    ZIndex: =9
+
+                TextBox1_7 As label:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.Lato
+                    Height: =21
+                    HoverBorderColor: =TextBox1_7.BorderColor
+                    HoverColor: =TextBox1_7.Color
+                    HoverFill: =TextBox1_7.Fill
+                    PaddingBottom: =4.19
+                    PaddingLeft: =4.19
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    PressedBorderColor: =TextBox1_7.BorderColor
+                    PressedColor: =TextBox1_7.Color
+                    PressedFill: =TextBox1_7.Fill
+                    Size: =10
+                    Text: ="Recurso"
+                    Width: =60
+                    X: =398
+                    ZIndex: =10
 
         Container19 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
