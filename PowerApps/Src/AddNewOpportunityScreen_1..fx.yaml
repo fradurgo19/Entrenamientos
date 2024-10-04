@@ -117,8 +117,9 @@
             Container40 As groupContainer.verticalAutoLayoutContainer:
                 DropShadow: =DropShadow.Light
                 Height: =1066
+                LayoutAlignItems: =LayoutAlignItems.Stretch
                 LayoutDirection: =LayoutDirection.Vertical
-                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                 LayoutMode: =LayoutMode.Auto
                 RadiusBottomLeft: =4
                 RadiusBottomRight: =4
@@ -209,9 +210,10 @@
                     DataSource: ='Asignación Entrenamientos'
                     DefaultMode: =FormMode.New
                     Fill: =RGBA(204, 222, 240, 1)
-                    Height: =256
+                    FillPortions: =0
+                    Height: =100
                     LayoutMinHeight: =250
-                    LayoutMinWidth: =320
+                    LayoutMinWidth: =150
                     Width: =225
                     Y: =33
                     ZIndex: =5
@@ -227,9 +229,9 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue59.SelectedDate
-                        Width: =121
-                        X: =0
-                        Y: =2
+                        Width: =213
+                        X: =2
+                        Y: =0
                         ZIndex: =1
 
                         DataCardKey59 As label:
@@ -322,7 +324,7 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue1_1.Selected
-                        Width: =121
+                        Width: =213
                         X: =0
                         Y: =0
                         ZIndex: =17
@@ -424,9 +426,9 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue6_1.Selected
-                        Width: =121
-                        X: =0
-                        Y: =1
+                        Width: =213
+                        X: =1
+                        Y: =0
                         ZIndex: =17
 
                         DataCardKey6_1 As label:
@@ -521,7 +523,8 @@
                     DataSource: ='Asignación Entrenamientos'
                     DefaultMode: =FormMode.New
                     Fill: =RGBA(232, 244, 217, 1)
-                    Height: =198
+                    FillPortions: =0
+                    Height: =100
                     LayoutMinHeight: =250
                     LayoutMinWidth: =320
                     Width: =212
@@ -540,9 +543,9 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue60.SelectedDate
-                        Width: =114
-                        X: =0
-                        Y: =2
+                        Width: =213
+                        X: =2
+                        Y: =0
                         ZIndex: =1
 
                         DataCardKey60 As label:
@@ -635,7 +638,7 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue1_2.Selected
-                        Width: =114
+                        Width: =213
                         X: =0
                         Y: =0
                         ZIndex: =17
@@ -737,9 +740,9 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue6_2.Selected
-                        Width: =114
-                        X: =0
-                        Y: =1
+                        Width: =213
+                        X: =1
+                        Y: =0
                         ZIndex: =17
 
                         DataCardKey6_2 As label:
@@ -834,7 +837,8 @@
                     DataSource: ='Asignación Entrenamientos'
                     DefaultMode: =FormMode.New
                     Fill: =RGBA(204, 231, 246, 1)
-                    Height: =203
+                    FillPortions: =0
+                    Height: =100
                     LayoutMinHeight: =250
                     LayoutMinWidth: =320
                     Width: =198
@@ -853,9 +857,9 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue61.SelectedDate
-                        Width: =112
-                        X: =0
-                        Y: =2
+                        Width: =213
+                        X: =2
+                        Y: =0
                         ZIndex: =1
 
                         DataCardKey61 As label:
@@ -948,7 +952,7 @@
                         Height: =91.25
                         Required: =false
                         Update: =DataCardValue1_3.Selected
-                        Width: =112
+                        Width: =213
                         X: =0
                         Y: =0
                         ZIndex: =17
@@ -1050,9 +1054,9 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue6_3.Selected
-                        Width: =112
-                        X: =0
-                        Y: =1
+                        Width: =213
+                        X: =1
+                        Y: =0
                         ZIndex: =17
 
                         DataCardKey6_3 As label:
@@ -1145,7 +1149,8 @@
                     DataSource: ='Asignación Entrenamientos'
                     DefaultMode: =FormMode.New
                     Fill: =RGBA(204, 231, 246, 1)
-                    Height: =202
+                    FillPortions: =0
+                    Height: =100
                     LayoutMinHeight: =250
                     LayoutMinWidth: =320
                     Width: =215
@@ -1164,9 +1169,9 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue63.SelectedDate
-                        Width: =116
-                        X: =0
-                        Y: =2
+                        Width: =213
+                        X: =2
+                        Y: =0
                         ZIndex: =1
 
                         DataCardKey63 As label:
@@ -1259,7 +1264,7 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue1_4.Selected
-                        Width: =116
+                        Width: =213
                         X: =0
                         Y: =0
                         ZIndex: =17
@@ -1361,9 +1366,9 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue6_4.Selected
-                        Width: =116
-                        X: =0
-                        Y: =1
+                        Width: =213
+                        X: =1
+                        Y: =0
                         ZIndex: =17
 
                         DataCardKey6_4 As label:
@@ -1458,7 +1463,8 @@
                     DataSource: ='Asignación Entrenamientos'
                     DefaultMode: =FormMode.New
                     Fill: =RGBA(232, 244, 217, 1)
-                    Height: =201
+                    FillPortions: =0
+                    Height: =100
                     LayoutMinHeight: =250
                     LayoutMinWidth: =320
                     Width: =223
@@ -1477,9 +1483,9 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue66.SelectedDate
-                        Width: =120
-                        X: =0
-                        Y: =2
+                        Width: =213
+                        X: =2
+                        Y: =0
                         ZIndex: =1
 
                         DataCardKey66 As label:
@@ -1572,7 +1578,7 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue1_5.Selected
-                        Width: =120
+                        Width: =213
                         X: =0
                         Y: =0
                         ZIndex: =17
@@ -1674,9 +1680,9 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue6_5.Selected
-                        Width: =120
-                        X: =0
-                        Y: =1
+                        Width: =213
+                        X: =1
+                        Y: =0
                         ZIndex: =17
 
                         DataCardKey6_5 As label:
@@ -1771,7 +1777,8 @@
                     DataSource: ='Asignación Entrenamientos'
                     DefaultMode: =FormMode.New
                     Fill: =RGBA(253, 222, 207, 1)
-                    Height: =212
+                    FillPortions: =0
+                    Height: =100
                     LayoutMinHeight: =250
                     LayoutMinWidth: =320
                     Width: =210
@@ -1790,9 +1797,9 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue64.SelectedDate
-                        Width: =119
-                        X: =0
-                        Y: =2
+                        Width: =213
+                        X: =2
+                        Y: =0
                         ZIndex: =1
 
                         DataCardKey64 As label:
@@ -1885,7 +1892,7 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue1_6.Selected
-                        Width: =119
+                        Width: =213
                         X: =0
                         Y: =0
                         ZIndex: =17
@@ -1987,9 +1994,9 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue6_6.Selected
-                        Width: =119
-                        X: =0
-                        Y: =1
+                        Width: =213
+                        X: =1
+                        Y: =0
                         ZIndex: =17
 
                         DataCardKey6_6 As label:
@@ -2084,7 +2091,8 @@
                     DataSource: ='Asignación Entrenamientos'
                     DefaultMode: =FormMode.New
                     Fill: =RGBA(232, 244, 217, 1)
-                    Height: =202
+                    FillPortions: =0
+                    Height: =100
                     LayoutMinHeight: =250
                     LayoutMinWidth: =320
                     Width: =235
@@ -2102,9 +2110,9 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue62.SelectedDate
-                        Width: =126
-                        X: =0
-                        Y: =2
+                        Width: =213
+                        X: =2
+                        Y: =0
                         ZIndex: =1
 
                         DataCardKey62 As label:
@@ -2197,7 +2205,7 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue1_7.Selected
-                        Width: =126
+                        Width: =213
                         X: =0
                         Y: =0
                         ZIndex: =17
@@ -2299,9 +2307,9 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue6_7.Selected
-                        Width: =126
-                        X: =0
-                        Y: =1
+                        Width: =213
+                        X: =1
+                        Y: =0
                         ZIndex: =17
 
                         DataCardKey6_7 As label:
@@ -2396,7 +2404,8 @@
                     DataSource: ='Asignación Entrenamientos'
                     DefaultMode: =FormMode.New
                     Fill: =RGBA(253, 222, 207, 1)
-                    Height: =201
+                    FillPortions: =0
+                    Height: =100
                     LayoutMinHeight: =250
                     LayoutMinWidth: =320
                     Width: =237
@@ -2414,9 +2423,9 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue65.SelectedDate
-                        Width: =127
-                        X: =0
-                        Y: =2
+                        Width: =213
+                        X: =2
+                        Y: =0
                         ZIndex: =1
 
                         DataCardKey65 As label:
@@ -2509,7 +2518,7 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue1_8.Selected
-                        Width: =127
+                        Width: =213
                         X: =0
                         Y: =0
                         ZIndex: =17
@@ -2611,9 +2620,9 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue6_8.Selected
-                        Width: =127
-                        X: =0
-                        Y: =1
+                        Width: =213
+                        X: =1
+                        Y: =0
                         ZIndex: =17
 
                         DataCardKey6_8 As label:
@@ -2708,7 +2717,8 @@
                     DataSource: ='Asignación Entrenamientos'
                     DefaultMode: =FormMode.New
                     Fill: =RGBA(204, 231, 246, 1)
-                    Height: =198
+                    FillPortions: =0
+                    Height: =100
                     LayoutMinHeight: =250
                     LayoutMinWidth: =320
                     Width: =210
@@ -2727,9 +2737,9 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue67.SelectedDate
-                        Width: =119
-                        X: =0
-                        Y: =2
+                        Width: =213
+                        X: =2
+                        Y: =0
                         ZIndex: =1
 
                         DataCardKey67 As label:
@@ -2822,7 +2832,7 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue1_9.Selected
-                        Width: =119
+                        Width: =213
                         X: =0
                         Y: =0
                         ZIndex: =17
@@ -2924,9 +2934,9 @@
                         Height: =41.86
                         Required: =false
                         Update: =DataCardValue6_9.Selected
-                        Width: =119
-                        X: =0
-                        Y: =1
+                        Width: =213
+                        X: =1
+                        Y: =0
                         ZIndex: =17
 
                         DataCardKey6_9 As label:
