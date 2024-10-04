@@ -309,16 +309,21 @@ ActiveWorkOrderScreen As screen:
                 Height: =846
                 HoverBorderColor: =GalleryWorkOrder.BorderColor
                 HoverFill: =GalleryWorkOrder.Fill
-                Items: |-
+                Items: |
                     =Sort(
                         Filter(
                             'Asignación Entrenamientos',
-                            TextInputSearch_1.Text in Estado.Value || TextInputSearch_1.Text in Usuarios.Value  || TextInputSearch_1.Text in Curso.Value  && 
+                            (
+                                TextInputSearch_1.Text in Estado.Value || 
+                                TextInputSearch_1.Text in Usuarios.Value || 
+                                TextInputSearch_1.Text in Curso.Value
+                            ) &&
                             (Calificacion.Value = ComboBox1_6.Selected.Value || IsBlank(ComboboxCanvas2.Selected.Value)) && 
                             (Curso.Value =  ComboBox1_9.Selected.Value || IsBlank(ComboBox1_9.Selected.Value)) &&
                             (Estado.Value = ComboBox1_11.Selected.Value || IsBlank(ComboBox1_11.Selected.Value)) &&
                             (Usuarios.Value = ComboBox1_10.Selected.Value || IsBlank(ComboBox1_10.Selected.Value)) &&
-                            (FechaLimite >= DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate)) && (FechaLimite <= DatePicker1_1.SelectedDate || IsBlank(DatePicker1_1.SelectedDate))
+                            (FechaLimite >= DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate)) && 
+                            (FechaLimite <= DatePicker1_1.SelectedDate || IsBlank(DatePicker1_1.SelectedDate))
                         ),
                         Modified,
                         SortOrder.Descending
