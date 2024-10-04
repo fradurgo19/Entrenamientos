@@ -180,7 +180,7 @@ EventScreen As screen:
                 DisabledBorderColor: =GalleryEvent.BorderColor
                 DisabledFill: =GalleryEvent.Fill
                 Fill: =RGBA(237, 237, 237, 1)
-                Height: =942
+                Height: =982
                 HoverBorderColor: =GalleryEvent.BorderColor
                 HoverFill: =GalleryEvent.Fill
                 Items: =Search([@'Usuarios Entrenamientos'],TextInputSearch_4.Text,field_0)
@@ -190,11 +190,11 @@ EventScreen As screen:
                 PressedFill: =GalleryEvent.Fill
                 ShowNavigation: =true
                 ShowScrollbar: =false
+                TemplateFill: =If(ThisItem.IsSelected, Color.LightSkyBlue, Color.White)
                 TemplatePadding: =0
                 TemplateSize: =97.11
                 Visible: =CountRows(GalleryEvent.AllItems) > 0
                 Width: =634
-                Y: =40
                 ZIndex: =1
 
                 Subtitle3 As label:

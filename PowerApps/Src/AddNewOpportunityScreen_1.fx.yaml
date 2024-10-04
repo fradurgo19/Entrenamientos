@@ -40,7 +40,7 @@ AddNewOpportunityScreen_1 As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
-                Height: =82
+                Height: =65
                 HoverBorderColor: =TextBox1_61.BorderColor
                 HoverColor: =TextBox1_61.Color
                 HoverFill: =TextBox1_61.Fill
@@ -54,7 +54,7 @@ AddNewOpportunityScreen_1 As screen:
                 Size: =15.77
                 Text: ="Nueva Asignación"
                 Width: =191.55
-                X: =170
+                X: =162
                 ZIndex: =2
 
             Group5_10 As group:

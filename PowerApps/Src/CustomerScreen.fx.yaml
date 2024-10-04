@@ -220,6 +220,7 @@ CustomerScreen As screen:
                 PressedBorderColor: =GalleryCustumer.BorderColor
                 PressedFill: =GalleryCustumer.Fill
                 ShowNavigation: =true
+                TemplateFill: =If(ThisItem.IsSelected, Color.LightSkyBlue, Color.White)
                 TemplatePadding: =
                 TemplateSize: =102.97
                 Transition: =Transition.Pop
@@ -237,8 +238,8 @@ CustomerScreen As screen:
 
                 TextBox1 As label:
                     BorderColor: =RGBA(0, 89, 178, 1)
-                    Color: =RGBA(61,171,186,1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Color: =RGBA(40, 134, 222, 1)
+                    DisabledColor: =RGBA(139, 154, 159, 1)
                     Font: =Font.Lato
                     Height: =80
                     HoverBorderColor: =TextBox1.BorderColor
@@ -252,14 +253,14 @@ CustomerScreen As screen:
                     PressedColor: =TextBox1.Color
                     PressedFill: =TextBox1.Fill
                     Text: =ThisItem.field_2
-                    Width: =222
+                    Width: =221
                     Y: =21
                     ZIndex: =2
 
                 TextBox1_1 As label:
                     BorderColor: =RGBA(0, 89, 178, 1)
-                    Color: =RGBA(153, 153, 153, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Color: =RGBA(15, 108, 189, 1)
+                    DisabledColor: =RGBA(139, 154, 159, 1)
                     Font: =Font.Lato
                     Height: =28
                     HoverBorderColor: =TextBox1_1.BorderColor
@@ -274,15 +275,15 @@ CustomerScreen As screen:
                     PressedFill: =TextBox1_1.Fill
                     Size: =10
                     Text: =ThisItem.field_6.Value
-                    Width: =64
-                    X: =215
+                    Width: =50
+                    X: =222
                     Y: =36
                     ZIndex: =3
 
                 TextBox1_2 As label:
                     BorderColor: =RGBA(0, 89, 178, 1)
-                    Color: =RGBA(153, 153, 153, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Color: =RGBA(15, 108, 189, 1)
+                    DisabledColor: =RGBA(139, 154, 159, 1)
                     Font: =Font.Lato
                     Height: =62
                     HoverBorderColor: =TextBox1_2.BorderColor
@@ -381,8 +382,8 @@ CustomerScreen As screen:
 
                 TextBox1_6 As label:
                     BorderColor: =RGBA(0, 89, 178, 1)
-                    Color: =RGBA(153, 153, 153, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Color: =RGBA(15, 108, 189, 1)
+                    DisabledColor: =RGBA(139, 154, 159, 1)
                     Font: =Font.Lato
                     Height: =26
                     HoverBorderColor: =TextBox1_6.BorderColor
@@ -397,8 +398,8 @@ CustomerScreen As screen:
                     PressedFill: =TextBox1_6.Fill
                     Size: =10
                     Text: =ThisItem.field_7.Value
-                    Width: =80
-                    X: =269
+                    Width: =70
+                    X: =279
                     Y: =38
                     ZIndex: =9
 

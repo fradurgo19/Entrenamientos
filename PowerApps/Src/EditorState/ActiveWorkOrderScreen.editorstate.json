@@ -4443,7 +4443,14 @@
     "galleryTemplate1_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "TemplateFill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "RGBA(0, 0, 0, 0)",
+          "InvariantPropertyName": "TemplateFill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "ItemAccessibleLabel",
         {
           "AFDDataSourceName": "",
@@ -4476,7 +4483,7 @@
         {
           "Category": "Design",
           "PropertyName": "TemplateFill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Behavior",

@@ -432,6 +432,7 @@ ActiveWorkOrderScreen As screen:
                 Reset: |
                     =
                 ShowNavigation: =true
+                TemplateFill: =If(ThisItem.IsSelected, Color.LightSkyBlue, Color.White)
                 TemplatePadding: =0
                 TemplateSize: =180.82
                 Transition: =Transition.Pop
