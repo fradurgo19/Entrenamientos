@@ -92,7 +92,7 @@ MenuScreen As screen:
                     Fill: =RGBA(255, 0, 0, 1)
                     Font: =Font.'Lato Black'
                     FontWeight: =FontWeight.Bold
-                    Height: =67.81
+                    Height: =Parent.Height
                     HoverBorderColor: =TextBox4_47.BorderColor
                     HoverColor: =TextBox4_47.Color
                     HoverFill: =TextBox4_47.Fill
@@ -107,7 +107,7 @@ MenuScreen As screen:
                     PressedFill: =TextBox4_47.Fill
                     Size: =15.77
                     Text: ="OFERTA ENTRENAMIENTOS"
-                    Width: =360.56
+                    Width: =Parent.Width
                     X: =48
                     Y: =505
                     ZIndex: =1
@@ -222,9 +222,14 @@ MenuScreen As screen:
                 RadiusTopRight: =30
                 Size: =13.52
                 Text: ="Cursos"
+                Visible: |+
+                    =User().Email = "analista.mantenimiento@partequipos.com" || 
+                    User().Email = "jestrada@partequipos.com" || 
+                    User().Email = "auxiliar.garantiasbg@partequipos.com"
+                    
                 Width: =124.51
-                X: =40
-                Y: =235
+                X: =386
+                Y: =221
                 ZIndex: =4
 
             Button1_1 As button:
@@ -250,9 +255,14 @@ MenuScreen As screen:
                 RadiusTopRight: =30
                 Size: =13.52
                 Text: ="Asignaciones"
+                Visible: |+
+                    =User().Email = "analista.mantenimiento@partequipos.com" || 
+                    User().Email = "jestrada@partequipos.com" || 
+                    User().Email = "auxiliar.garantiasbg@partequipos.com"
+                    
                 Width: =124.51
-                X: =40
-                Y: =303
+                X: =47
+                Y: =224
                 ZIndex: =5
 
             Button1_2 As button:
@@ -278,9 +288,14 @@ MenuScreen As screen:
                 RadiusTopRight: =30
                 Size: =13.52
                 Text: ="Usuarios"
+                Visible: |+
+                    =User().Email = "analista.mantenimiento@partequipos.com" || 
+                    User().Email = "jestrada@partequipos.com" || 
+                    User().Email = "auxiliar.garantiasbg@partequipos.com"
+                    
                 Width: =124.51
                 X: =40
-                Y: =370
+                Y: =355
                 ZIndex: =6
 
             Button1_3 As button:
@@ -306,9 +321,14 @@ MenuScreen As screen:
                 RadiusTopRight: =30
                 Size: =13.52
                 Text: ="Asignación"
+                Visible: |+
+                    =User().Email = "analista.mantenimiento@partequipos.com" || 
+                    User().Email = "jestrada@partequipos.com" || 
+                    User().Email = "auxiliar.garantiasbg@partequipos.com"
+                    
                 Width: =142.54
                 X: =47
-                Y: =528
+                Y: =513
                 ZIndex: =7
 
             Button1_11 As button:
@@ -334,9 +354,14 @@ MenuScreen As screen:
                 RadiusTopRight: =30
                 Size: =13.52
                 Text: ="Nuevo Curso"
+                Visible: |+
+                    =User().Email = "analista.mantenimiento@partequipos.com" || 
+                    User().Email = "jestrada@partequipos.com" || 
+                    User().Email = "auxiliar.garantiasbg@partequipos.com"
+                    
                 Width: =142.54
-                X: =40
-                Y: =802
+                X: =386
+                Y: =522
                 ZIndex: =8
 
             Button1_13 As button:
@@ -362,9 +387,14 @@ MenuScreen As screen:
                 RadiusTopRight: =30
                 Size: =13.52
                 Text: ="Nuevo Usuario"
+                Visible: |+
+                    =User().Email = "analista.mantenimiento@partequipos.com" || 
+                    User().Email = "jestrada@partequipos.com" || 
+                    User().Email = "auxiliar.garantiasbg@partequipos.com"
+                    
                 Width: =142.54
-                X: =40
-                Y: =599
+                X: =386
+                Y: =613
                 ZIndex: =9
 
             Button1_6 As button:
@@ -390,9 +420,14 @@ MenuScreen As screen:
                 RadiusTopRight: =30
                 Size: =13.52
                 Text: ="Asignación Masiva"
+                Visible: |+
+                    =User().Email = "analista.mantenimiento@partequipos.com" || 
+                    User().Email = "jestrada@partequipos.com" || 
+                    User().Email = "auxiliar.garantiasbg@partequipos.com"
+                    
                 Width: =177.46
-                X: =40
-                Y: =671
+                X: =47
+                Y: =610
                 ZIndex: =10
 
             TextBox4_45 As label:
