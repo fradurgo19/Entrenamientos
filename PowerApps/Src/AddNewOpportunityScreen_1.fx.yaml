@@ -6,516 +6,495 @@ AddNewOpportunityScreen_1 As screen:
         UpdateContext({ResetOpportunity:false})
     Width: =Max(App.Width, App.DesignWidth)
 
-    "Gallery3 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
-        BorderColor: =RGBA(0, 89, 178, 1)
-        DelayItemLoading: =true
-        Height: =547.49
-        Items: ='Asignación Entrenamientos'
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        OnSelect: =Set(gallSelected,Gallery3.Selected)
-        TemplatePadding: =0
-        TemplateSize: =97.11
-        Width: =360.56
-        Y: =93
-        ZIndex: =1
+    Container41 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =1136
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =640
+        ZIndex: =31
 
-        Title10 As label:
-            Color: =RGBA(50, 49, 48, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =21.1
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =7.89
-            Text: =ThisItem.Curso.Value
-            VerticalAlign: =VerticalAlign.Top
-            Width: =312.11
-            X: =9.01
-            Y: =6.7
+        Container42 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =65
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =640
             ZIndex: =1
 
-        Subtitle8 As label:
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =18.08
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =6.76
-            Text: =ThisItem.FechaLimite
-            VerticalAlign: =VerticalAlign.Top
-            Width: =312.11
-            X: =7.89
-            Y: =50.23
+            Rectangle1_40 As rectangle:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Fill: =RGBA(6,26,84,1)
+                Height: =70
+                TabIndex: =0
+                Width: =640
+                ZIndex: =1
+
+            TextBox1_61 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Semibold
+                Height: =82
+                HoverBorderColor: =TextBox1_61.BorderColor
+                HoverColor: =TextBox1_61.Color
+                HoverFill: =TextBox1_61.Fill
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                PressedBorderColor: =TextBox1_61.BorderColor
+                PressedColor: =TextBox1_61.Color
+                PressedFill: =TextBox1_61.Fill
+                Size: =15.77
+                Text: ="Nueva Asignación"
+                Width: =191.55
+                X: =170
+                ZIndex: =2
+
+            Group5_10 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =5
+
+                Circle1_12 As circle:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =30
+                    OnSelect: =Navigate(CustomerOverviewScreen, ScreenTransition.Fade)
+                    TabIndex: =0
+                    Width: =36
+                    X: =5
+                    Y: =17
+                    ZIndex: =3
+
+                icon4_8 As icon.Cancel:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(6,26,84,1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(244, 244, 244, 1)
+                    Height: =31
+                    Icon: =Icon.Cancel
+                    OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
+                    TabIndex: =0
+                    Width: =25
+                    X: =11
+                    Y: =17
+                    ZIndex: =4
+
+            Icon8 As icon.Check:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =46.04
+                Icon: =Icon.Check
+                OnSelect: |-
+                    =Patch(
+                        'Asignación Entrenamientos',
+                        If(IsBlank(gallSelected),Defaults('Asignación Entrenamientos'),gallSelected),
+                        {
+                            Usuarios: ComboBox1.Selected,
+                            Curso: ComboBox1_1.Selected,
+                            FechaLimite: DatePicker2.SelectedDate,
+                            Calificacion: ComboBox1_2.Selected,
+                            Estado: ComboBox1_3.Selected
+                        }
+                    );
+                    
+                    Reset(ComboBox1); Reset(ComboBox1_1);Reset(ComboBox1_3);Reset(DatePicker2);Reset(ComboBox1_2)
+                Width: =40.56
+                X: =516
+                Y: =24
+                ZIndex: =6
+
+            Image3_8 As image:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Height: =29.3
+                Image: ='Captura de pantalla 2024-01-12 082706'
+                ImagePosition: =ImagePosition.Fill
+                Width: =240
+                X: =400
+                Y: =
+                ZIndex: =7
+
+        Container43 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =927
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =640
+            Y: =145
             ZIndex: =2
 
-        Body4 As label:
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =18.08
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =6.76
-            Text: =ThisItem.Usuarios.Value
-            VerticalAlign: =VerticalAlign.Top
-            Width: =312.11
-            X: =7.89
-            Y: =27.63
+            "Gallery3 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
+                BorderColor: =RGBA(255, 255, 255, 1)
+                BorderThickness: =1
+                DelayItemLoading: =true
+                Height: =924
+                Items: ='Asignación Entrenamientos'
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                OnSelect: =Set(gallSelected,Gallery3.Selected)
+                TemplateFill: =If(ThisItem.IsSelected, Color.LightSkyBlue, Color.White)
+                TemplatePadding: =0
+                TemplateSize: =97.11
+                ZIndex: =1
+
+                Title10 As label:
+                    Color: =RGBA(50, 49, 48, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =21
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =12
+                    Text: =ThisItem.Curso.Value
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =478
+                    X: =9.01
+                    Y: =6.7
+                    ZIndex: =1
+
+                Subtitle8 As label:
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =18.08
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =12
+                    Text: =ThisItem.FechaLimite
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =312.11
+                    X: =7.89
+                    Y: =50.23
+                    ZIndex: =2
+
+                Body4 As label:
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =18
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =12
+                    Text: =ThisItem.Usuarios.Value
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =532
+                    X: =7.89
+                    Y: =27.63
+                    ZIndex: =3
+
+                NextArrow5 As icon.ChevronRight:
+                    AccessibleLabel: =Self.Tooltip
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(6, 26, 84, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(244, 244, 244, 1)
+                    Height: =79.53
+                    Icon: =Icon.ChevronRight
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =13.39
+                    PaddingLeft: =13.39
+                    PaddingRight: =9.01
+                    PaddingTop: =9.01
+                    Tooltip: ="Ver los detalles del elemento"
+                    Width: =46
+                    X: =589
+                    Y: =6
+                    ZIndex: =4
+
+                Rectangle10 As rectangle:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Fill: =RGBA(0, 89, 178, 1)
+                    Height: =90.41
+                    OnSelect: =Select(Parent)
+                    Visible: =ThisItem.IsSelected
+                    Width: =2.25
+                    ZIndex: =6
+
+                Body4_3 As label:
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =19.25
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =12
+                    Text: =ThisItem.Calificacion.Value
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =30.99
+                    X: =509
+                    Y: =5
+                    ZIndex: =9
+
+                Subtitle8_1 As label:
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =18.08
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =12
+                    Text: =ThisItem.Estado.Value
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =312.11
+                    X: =9.01
+                    Y: =67.81
+                    ZIndex: =10
+
+                Icon10 As icon.Trash:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(6, 26, 84, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(244, 244, 244, 1)
+                    Height: =36
+                    Icon: =Icon.Trash
+                    OnSelect: =Remove('Asignación Entrenamientos',ThisItem)
+                    Width: =30.42
+                    X: =549
+                    Y: =45
+                    ZIndex: =11
+
+        Container44 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =64
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =640
+            Y: =1072
             ZIndex: =3
 
-        NextArrow5 As icon.ChevronRight:
-            AccessibleLabel: =Self.Tooltip
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(6, 26, 84, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =79.53
-            Icon: =Icon.ChevronRight
-            OnSelect: =Select(Parent)
-            PaddingBottom: =13.39
-            PaddingLeft: =13.39
-            PaddingRight: =9.01
-            PaddingTop: =9.01
-            Tooltip: ="Ver los detalles del elemento"
-            Width: =28.17
-            X: =325.63
-            Y: =8.79
+            Button1_18 As button:
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =ColorFade(RGBA(255, 255, 255, 1), 70%)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =
+                Fill: =RGBA(54,166,182,1)
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Semibold
+                Height: =63
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                OnSelect: |-
+                    =
+                    
+                    
+                    Navigate(OpportunityMessageScreen, ScreenTransition.Fade)
+                PaddingBottom: =4.19
+                PaddingLeft: =45.21
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =15.77
+                Text: ="Salir"
+                Width: =640
+                Y: =1
+                ZIndex: =1
+
+        Container45 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =80
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =640
+            Y: =65
             ZIndex: =4
 
-        Separator6 As rectangle:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =6.7
-            OnSelect: =Select(Parent)
-            Width: =360.56
-            Y: =90.41
-            ZIndex: =5
+            DatePicker2 As datepicker:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                CalendarHeaderFill: =RGBA(0, 51, 102, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DefaultDate: =gallSelected.FechaLimite
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Height: =38
+                HoverDateFill: =RGBA(153, 205, 255, 1)
+                IconBackground: =RGBA(0, 51, 102, 1)
+                PaddingBottom: =4.19
+                PaddingLeft: =10.05
+                PaddingRight: =2.82
+                SelectedDateFill: =RGBA(0, 51, 102, 1)
+                Size: =11
+                Width: =228
+                Y: =
+                ZIndex: =1
 
-        Rectangle10 As rectangle:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Fill: =RGBA(0, 89, 178, 1)
-            Height: =90.41
-            OnSelect: =Select(Parent)
-            Visible: =ThisItem.IsSelected
-            Width: =2.25
-            ZIndex: =6
+            ComboBox1 As combobox:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                ChevronBackground: =RGBA(0, 51, 102, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                Default: =gallSelected.Usuarios
+                DefaultSelectedItems: =gallSelected.Usuarios
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                Height: =39
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
+                InputTextPlaceholder: ="Usuario"
+                Items: =Choices([@'Asignación Entrenamientos'].Usuarios)
+                PaddingBottom: =8.37
+                PaddingLeft: =8.37
+                PaddingRight: =5.63
+                PaddingTop: =5.63
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(0, 89, 178, 1)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Asignación Entrenamientos'.Usuarios,ComboBox1.SearchText)
+                SelectionFill: =RGBA(0, 51, 102, 1)
+                SelectMultiple: =false
+                Width: =319
+                Y: =38
+                ZIndex: =2
 
-        Body4_3 As label:
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =19.25
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =6.76
-            Text: =ThisItem.Calificacion.Value
-            VerticalAlign: =VerticalAlign.Top
-            Width: =30.99
-            X: =325.07
-            Y: =6.7
-            ZIndex: =9
+            ComboBox1_1 As combobox:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                ChevronBackground: =RGBA(0, 51, 102, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                Default: =gallSelected.Curso
+                DefaultSelectedItems: =gallSelected.Curso
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                Height: =39
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
+                InputTextPlaceholder: ="Seleccionar Curso"
+                Items: =Choices([@'Asignación Entrenamientos'].Curso)
+                PaddingBottom: =8.37
+                PaddingLeft: =8.37
+                PaddingRight: =5.63
+                PaddingTop: =5.63
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(0, 89, 178, 1)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Asignación Entrenamientos'.Curso,ComboBox1_1.SearchText)
+                SelectionFill: =RGBA(0, 51, 102, 1)
+                Tooltip: ="Curso"
+                Width: =316
+                X: =319
+                Y: =38
+                ZIndex: =3
 
-        Subtitle8_1 As label:
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =18.08
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =6.76
-            Text: =ThisItem.Estado.Value
-            VerticalAlign: =VerticalAlign.Top
-            Width: =312.11
-            X: =9.01
-            Y: =67.81
-            ZIndex: =10
+            ComboBox1_2 As combobox:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                ChevronBackground: =RGBA(0, 51, 102, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                Default: =gallSelected.Calificacion
+                DefaultSelectedItems: =gallSelected.Calificacion
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                Height: =38
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
+                InputTextPlaceholder: ="Calificación"
+                Items: =Choices([@'Asignación Entrenamientos'].Calificacion)
+                PaddingBottom: =8.37
+                PaddingLeft: =8.37
+                PaddingRight: =5.63
+                PaddingTop: =5.63
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(0, 89, 178, 1)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Asignación Entrenamientos'.Calificacion,ComboBox1_2.SearchText)
+                SelectionFill: =RGBA(0, 51, 102, 1)
+                Width: =137
+                X: =392
+                ZIndex: =4
 
-        Icon10 As icon.Trash:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(6, 26, 84, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =36
-            Icon: =Icon.Trash
-            OnSelect: =Remove('Asignación Entrenamientos',ThisItem)
-            Width: =30.42
-            X: =281.13
-            Y: =49.39
-            ZIndex: =11
+            ComboBox1_3 As combobox:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                ChevronBackground: =RGBA(0, 51, 102, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                Default: =gallSelected.Estado
+                DefaultSelectedItems: =gallSelected.Estado
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                Height: =38
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
+                InputTextPlaceholder: ="Estado"
+                Items: =Choices([@'Asignación Entrenamientos'].Estado)
+                PaddingBottom: =8.37
+                PaddingLeft: =8.37
+                PaddingRight: =5.63
+                PaddingTop: =5.63
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(0, 89, 178, 1)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Asignación Entrenamientos'.Estado,ComboBox1_3.SearchText)
+                SelectionFill: =RGBA(0, 51, 102, 1)
+                Width: =164
+                X: =228
+                Y: =
+                ZIndex: =5
 
-    Rectangle1_40 As rectangle:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Fill: =RGBA(6,26,84,1)
-        Height: =83.71
-        TabIndex: =0
-        Width: =360.56
-        ZIndex: =2
-
-    TextBox1_61 As label:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Font: =Font.Lato
-        FontWeight: =FontWeight.Semibold
-        Height: =83.71
-        HoverBorderColor: =TextBox1_61.BorderColor
-        HoverColor: =TextBox1_61.Color
-        HoverFill: =TextBox1_61.Fill
-        PaddingBottom: =4.19
-        PaddingLeft: =4.19
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        PressedBorderColor: =TextBox1_61.BorderColor
-        PressedColor: =TextBox1_61.Color
-        PressedFill: =TextBox1_61.Fill
-        Size: =15.77
-        Text: ="Nueva Asignación"
-        Width: =191.55
-        X: =13.44
-        ZIndex: =3
-
-    Rectangle1_41 As rectangle:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Fill: =RGBA(216, 223, 238, 1)
-        Height: =0.84
-        TabIndex: =0
-        Width: =360.56
-        Y: =154.87
-        ZIndex: =7
-
-    TextBox1_66 As label:
-        Align: =TextPosition.Left
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(0, 0, 0, 0.70196078)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Font: =Font.Lato
-        FontWeight: =FontWeight.Semibold
-        Height: =62.79
-        HoverBorderColor: =TextBox1_66.BorderColor
-        HoverColor: =TextBox1_66.Color
-        HoverFill: =TextBox1_66.Fill
-        PaddingBottom: =4.19
-        PaddingLeft: =4.19
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        PressedBorderColor: =TextBox1_66.BorderColor
-        PressedColor: =TextBox1_66.Color
-        PressedFill: =TextBox1_66.Fill
-        Size: =14.08
-        Text: ="Asignar"
-        Width: =102.54
-        X: =15.37
-        Y: =92.09
-        ZIndex: =8
-
-    Button1_18 As button:
-        BorderThickness: =0
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =ColorFade(RGBA(255, 255, 255, 1), 70%)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        DisplayMode: =
-        Fill: =RGBA(54,166,182,1)
-        Font: =Font.Lato
-        FontWeight: =FontWeight.Semibold
-        Height: =71.99
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        OnSelect: |-
-            =
-            
-            
-            Navigate(OpportunityMessageScreen, ScreenTransition.Fade)
-        PaddingBottom: =4.19
-        PaddingLeft: =45.21
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Size: =15.77
-        Text: ="Salir"
-        Width: =360.56
-        Y: =569
-        ZIndex: =10
-
-    Image3_9 As image:
-        ApplyEXIFOrientation: =false
-        BorderColor: =RGBA(0, 89, 178, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(193, 193, 193, 0)
-        DisplayMode: =
-        Height: =43.53
-        Image: ='group-13'
-        OnSelect: =
-        TabIndex: =0
-        Width: =33.24
-        X: =117.75
-        Y: =597
-        ZIndex: =11
-
-    Group5_10 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =12
-
-        Circle1_12 As circle:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =30.99
-            OnSelect: =Navigate(CustomerOverviewScreen, ScreenTransition.Fade)
-            TabIndex: =0
-            Width: =30.99
-            X: =318.55
-            Y: =18.78
-            ZIndex: =4
-
-        icon4_8 As icon.Cancel:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(6,26,84,1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =31.57
-            Icon: =Icon.Cancel
-            OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
-            TabIndex: =0
-            Width: =21.25
-            X: =323.42
-            Y: =25.95
-            ZIndex: =5
-
-    Rectangle9_2 As rectangle:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Fill: =RGBA(212,212,212,1)
-        FocusedBorderThickness: =0
-        Height: =0.84
-        TabIndex: =0
-        Width: =360.56
-        Y: =640
-        ZIndex: =15
-
-    Image3_8 As image:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =29.3
-        Image: ='Captura de pantalla 2024-01-12 082706'
-        ImagePosition: =ImagePosition.Fill
-        Width: =240
-        X: =120.56
-        Y: =90.41
-        ZIndex: =17
-
-    Icon8 As icon.Check:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =46.04
-        Icon: =Icon.Check
-        OnSelect: |-
-            =Patch(
-                'Asignación Entrenamientos',
-                If(IsBlank(gallSelected),Defaults('Asignación Entrenamientos'),gallSelected),
-                {
-                    Usuarios: ComboBox1.Selected,
-                    Curso: ComboBox1_1.Selected,
-                    FechaLimite: DatePicker2.SelectedDate,
-                    Calificacion: ComboBox1_2.Selected,
-                    Estado: ComboBox1_3.Selected
-                }
-            );
-            
-            Reset(ComboBox1); Reset(ComboBox1_1);Reset(ComboBox1_3);Reset(DatePicker2);Reset(ComboBox1_2)
-        Width: =40.56
-        X: =260.85
-        Y: =17.58
-        ZIndex: =19
-
-    DatePicker2 As datepicker:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        CalendarHeaderFill: =RGBA(0, 51, 102, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DefaultDate: =gallSelected.FechaLimite
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =23.44
-        HoverDateFill: =RGBA(153, 205, 255, 1)
-        IconBackground: =RGBA(0, 51, 102, 1)
-        PaddingBottom: =4.19
-        PaddingLeft: =10.05
-        PaddingRight: =2.82
-        SelectedDateFill: =RGBA(0, 51, 102, 1)
-        Size: =5.63
-        Width: =141.41
-        Y: =189.19
-        ZIndex: =23
-
-    ComboBox1 As combobox:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        ChevronBackground: =RGBA(0, 51, 102, 1)
-        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-        ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        ChevronHoverFill: =RGBA(255, 255, 255, 1)
-        Default: =gallSelected.Usuarios
-        DefaultSelectedItems: =gallSelected.Usuarios
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        DisplayFields: =["Value"]
-        Height: =25.11
-        HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =RGBA(153, 205, 255, 1)
-        InputTextPlaceholder: ="Usuario"
-        Items: =Choices([@'Asignación Entrenamientos'].Usuarios)
-        PaddingBottom: =8.37
-        PaddingLeft: =8.37
-        PaddingRight: =5.63
-        PaddingTop: =5.63
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =RGBA(0, 89, 178, 1)
-        SearchFields: =["Value"]
-        SearchItems: =Choices('Asignación Entrenamientos'.Usuarios,ComboBox1.SearchText)
-        SelectionFill: =RGBA(0, 51, 102, 1)
-        SelectMultiple: =false
-        Size: =5.63
-        Width: =141.41
-        Y: =164.92
-        ZIndex: =26
-
-    ComboBox1_1 As combobox:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        ChevronBackground: =RGBA(0, 51, 102, 1)
-        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-        ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        ChevronHoverFill: =RGBA(255, 255, 255, 1)
-        Default: =gallSelected.Curso
-        DefaultSelectedItems: =gallSelected.Curso
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        DisplayFields: =["Value"]
-        Height: =25.11
-        HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =RGBA(153, 205, 255, 1)
-        InputTextPlaceholder: ="Seleccionar Curso"
-        Items: =Choices([@'Asignación Entrenamientos'].Curso)
-        PaddingBottom: =8.37
-        PaddingLeft: =8.37
-        PaddingRight: =5.63
-        PaddingTop: =5.63
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =RGBA(0, 89, 178, 1)
-        SearchFields: =["Value"]
-        SearchItems: =Choices('Asignación Entrenamientos'.Curso,ComboBox1_1.SearchText)
-        SelectionFill: =RGBA(0, 51, 102, 1)
-        Size: =5.63
-        Tooltip: ="Curso"
-        Width: =141.41
-        X: =141.41
-        Y: =164.08
-        ZIndex: =27
-
-    ComboBox1_2 As combobox:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        ChevronBackground: =RGBA(0, 51, 102, 1)
-        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-        ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        ChevronHoverFill: =RGBA(255, 255, 255, 1)
-        Default: =gallSelected.Calificacion
-        DefaultSelectedItems: =gallSelected.Calificacion
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        DisplayFields: =["Value"]
-        Height: =25.95
-        HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =RGBA(153, 205, 255, 1)
-        InputTextPlaceholder: ="Calificación"
-        Items: =Choices([@'Asignación Entrenamientos'].Calificacion)
-        PaddingBottom: =8.37
-        PaddingLeft: =8.37
-        PaddingRight: =5.63
-        PaddingTop: =5.63
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =RGBA(0, 89, 178, 1)
-        SearchFields: =["Value"]
-        SearchItems: =Choices('Asignación Entrenamientos'.Calificacion,ComboBox1_2.SearchText)
-        SelectionFill: =RGBA(0, 51, 102, 1)
-        Size: =5.63
-        Width: =76.62
-        X: =283.94
-        Y: =163.24
-        ZIndex: =28
-
-    ComboBox1_3 As combobox:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        ChevronBackground: =RGBA(0, 51, 102, 1)
-        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-        ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        ChevronHoverFill: =RGBA(255, 255, 255, 1)
-        Default: =gallSelected.Estado
-        DefaultSelectedItems: =gallSelected.Estado
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        DisplayFields: =["Value"]
-        Height: =22.6
-        HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =RGBA(153, 205, 255, 1)
-        InputTextPlaceholder: ="Estado"
-        Items: =Choices([@'Asignación Entrenamientos'].Estado)
-        PaddingBottom: =8.37
-        PaddingLeft: =8.37
-        PaddingRight: =5.63
-        PaddingTop: =5.63
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =RGBA(0, 89, 178, 1)
-        SearchFields: =["Value"]
-        SearchItems: =Choices('Asignación Entrenamientos'.Estado,ComboBox1_3.SearchText)
-        SelectionFill: =RGBA(0, 51, 102, 1)
-        Size: =5.63
-        Width: =72.11
-        X: =141.41
-        Y: =190.03
-        ZIndex: =29
-
-    Icon9 As icon.Sync:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(6, 26, 84, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =32.65
-        Icon: =Icon.Sync
-        OnSelect: |-
-            =Set(gallSelected,Blank());
-            Reset(ComboBox1); Reset(ComboBox1_1);Reset(ComboBox1_3);Reset(DatePicker2);Reset(ComboBox1_2)
-        Width: =30.99
-        X: =287.32
-        Y: =195.89
-        ZIndex: =30
+            Icon9 As icon.Sync:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(6, 26, 84, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =32.65
+                Icon: =Icon.Sync
+                OnSelect: |-
+                    =Set(gallSelected,Blank());
+                    Reset(ComboBox1); Reset(ComboBox1_1);Reset(ComboBox1_3);Reset(DatePicker2);Reset(ComboBox1_2)
+                Width: =30.99
+                X: =592
+                ZIndex: =6
 

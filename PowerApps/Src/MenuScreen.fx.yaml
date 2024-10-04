@@ -455,3 +455,36 @@ MenuScreen As screen:
                 Y: =6
                 ZIndex: =11
 
+            Button1_19 As button:
+                BorderColor: =RGBA(221, 79, 14, 1)
+                BorderThickness: =4
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =44.37
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                OnSelect: =Navigate(EventScreen, ScreenTransition.Fade)
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                RadiusBottomLeft: =30
+                RadiusBottomRight: =30
+                RadiusTopLeft: =30
+                RadiusTopRight: =30
+                Size: =13.52
+                Text: ="Usuarios"
+                Visible: |+
+                    =User().Email = "analista.mantenimiento@partequipos.com" || 
+                    User().Email = "jestrada@partequipos.com" || 
+                    User().Email = "auxiliar.garantiasbg@partequipos.com"
+                    
+                Width: =124.51
+                X: =56
+                Y: =80
+                ZIndex: =12
+
