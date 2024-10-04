@@ -151,6 +151,7 @@ CustomerScreen As screen:
                 Appearance: ='DatePickerCanvas.Appearance'.FilledLighter
                 DisplayMode: =DisplayMode.Edit
                 Height: =55
+                Placeholder: ="Fecha de Modificado."
                 Width: =209
                 X: =430
                 Y: =0
@@ -160,6 +161,7 @@ CustomerScreen As screen:
                 Appearance: ='ComboboxCanvas.Appearance'.FilledLighter
                 DisplayMode: =DisplayMode.Edit
                 Height: =55
+                InputTextPlaceholder: ="Estado del Recurso"
                 Items: =["Disponible", "Para Creación"]
                 Width: =192
                 X: =238
