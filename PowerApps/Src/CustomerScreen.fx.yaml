@@ -146,6 +146,7 @@ CustomerScreen As screen:
                 ZIndex: =1
 
             DropdownCanvas1 As Desplegable.pcfdataset:
+                Appearance: ='DropdownCanvas.Appearance'.FilledLighter
                 DisplayMode: =DisplayMode.Edit
                 Height: =55
                 Items: =Distinct('Ofertas de Entrenamientos',field_7)
@@ -155,10 +156,11 @@ CustomerScreen As screen:
                 ZIndex: =2
 
             "DatePickerCanvas1 As 'Selector de fecha'":
+                Appearance: ='DatePickerCanvas.Appearance'.FilledLighter
                 DisplayMode: =DisplayMode.Edit
                 Height: =55
-                Width: =202
-                X: =437
+                Width: =239
+                X: =400
                 Y: =0
                 ZIndex: =3
 
@@ -187,12 +189,13 @@ CustomerScreen As screen:
                         Filter(
                             'Ofertas de Entrenamientos',
                             TextInputSearch.Text in field_2 && 
-                            (field_7.Value = DropdownCanvas1.Selected.Value || IsBlank(DropdownCanvas1.Selected.Value)) && 
+                            (field_7 = DropdownCanvas1.Selected.Value || IsBlank(DropdownCanvas1.Selected.Value)) && 
                             (Created = DatePickerCanvas1.SelectedDate || IsBlank(DatePickerCanvas1.SelectedDate))
                         ),
                         Created,
                         SortOrder.Descending
                     )
+                    
                     
                     
                     
