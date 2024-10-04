@@ -138,7 +138,7 @@ ActiveWorkOrderScreen As screen:
                 Icon: =Icon.Sync
                 OnSelect: |-
                     =Set(gallSelected,Blank());
-                    Reset(ComboBox1_10); Reset(ComboBox1_9);Reset(ComboBox1_11);Reset(DatePicker2_1);Reset(TextInputSearch_1)
+                    Reset(ComboBox1_10); Reset(ComboBox1_9);Reset(ComboBox1_11);Reset(DatePicker2_1);Reset(TextInputSearch_1);Reset(ComboBox1_6) 
                 Width: =30.99
                 X: =476
                 Y: =41

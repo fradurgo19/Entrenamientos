@@ -128,8 +128,8 @@ MenuScreen_1 As screen:
                 Image: ='cargador-frontal'
                 Visible: =varCargar
                 Width: =180.28
-                X: =243
-                Y: =167
+                X: =223
+                Y: =164
                 ZIndex: =3
 
             Image9 As image:
@@ -140,8 +140,8 @@ MenuScreen_1 As screen:
                 Image: =minicargador
                 Visible: =varCargar
                 Width: =171.27
-                X: =252
-                Y: =570
+                X: =228
+                Y: =573
                 ZIndex: =4
 
             Label1_5 As label:
