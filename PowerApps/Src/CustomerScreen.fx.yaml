@@ -8,286 +8,287 @@ CustomerScreen As screen:
         If(IsEmpty(CustomerOpportunityList), ClearCollect(CustomerOpportunityList, CustomerOpportunity))
     Width: =Max(App.Width, App.DesignWidth)
 
-    Rectangle1 As rectangle:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Fill: =RGBA(6, 26, 84, 1)
-        Height: =167.43
-        TabIndex: =0
-        Width: =360.56
-        ZIndex: =1
+    Container15 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =1120
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =640
+        ZIndex: =18
 
-    GalleryCustumer As gallery.galleryVertical:
-        '#CopilotOverlayLabel': ="Filtrada"
-        BorderColor: =RGBA(0, 89, 178, 1)
-        BorderThickness: =2
-        DisabledBorderColor: =GalleryCustumer.BorderColor
-        DisabledFill: =GalleryCustumer.Fill
-        Height: =640
-        HoverBorderColor: =GalleryCustumer.BorderColor
-        HoverFill: =GalleryCustumer.Fill
-        Items: |+
-            =Search([@'Ofertas de Entrenamientos'],TextInputSearch.Text,field_2)
-            
-        Layout: =Layout.Vertical
-        PressedBorderColor: =GalleryCustumer.BorderColor
-        PressedFill: =GalleryCustumer.Fill
-        ShowNavigation: =true
-        TemplatePadding: =
-        TemplateSize: =102.97
-        Transition: =Transition.Pop
-        Visible: =CountRows(GalleryCustumer.AllItems) > 0
-        Width: =360.56
-        ZIndex: =2
-
-        Rectangle1_2 As rectangle:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =101.29
-            TabIndex: =0
-            Width: =360.56
+        Container16 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =83
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =640
             ZIndex: =1
 
-        TextBox1 As label:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(61,171,186,1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.Lato
-            Height: =60.6
-            HoverBorderColor: =TextBox1.BorderColor
-            HoverColor: =TextBox1.Color
-            HoverFill: =TextBox1.Fill
-            PaddingBottom: =4.19
-            PaddingLeft: =4.19
-            PaddingRight: =2.82
-            PaddingTop: =2.82
-            PressedBorderColor: =TextBox1.BorderColor
-            PressedColor: =TextBox1.Color
-            PressedFill: =TextBox1.Fill
-            Size: =15.77
-            Text: =ThisItem.field_2
-            Width: =333.52
-            X: =13.52
-            Y: =2.8
+            Rectangle1 As rectangle:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Fill: =RGBA(6, 26, 84, 1)
+                Height: =81
+                TabIndex: =0
+                Width: =638
+                X: =2
+                Y: =2
+                ZIndex: =1
+
+            TextBox1_12 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Semibold
+                Height: =81.2
+                HoverBorderColor: =TextBox1_12.BorderColor
+                HoverColor: =TextBox1_12.Color
+                HoverFill: =TextBox1_12.Fill
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                PressedBorderColor: =TextBox1_12.BorderColor
+                PressedColor: =TextBox1_12.Color
+                PressedFill: =TextBox1_12.Fill
+                Size: =15.77
+                Text: ="Cursos"
+                Width: =109.3
+                X: =257
+                Y: =2
+                ZIndex: =2
+
+            Icon6 As icon.Add:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =66.97
+                Icon: =Icon.Add
+                OnSelect: =Navigate(CustomerOverviewScreen_2, ScreenTransition.Fade)
+                Width: =52.96
+                X: =567
+                Y: =9
+                ZIndex: =3
+
+            icon1_9 As icon.ChevronLeft:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =66.97
+                Icon: =Icon.ChevronLeft
+                OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
+                TabIndex: =0
+                Width: =40.56
+                X: =17
+                Y: =15
+                ZIndex: =4
+
+        Container17 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =55
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =640
+            Y: =83
             ZIndex: =2
 
-        TextBox1_1 As label:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(153, 153, 153, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.Lato
-            Height: =26.84
-            HoverBorderColor: =TextBox1_1.BorderColor
-            HoverColor: =TextBox1_1.Color
-            HoverFill: =TextBox1_1.Fill
-            PaddingBottom: =4.19
-            PaddingLeft: =4.19
-            PaddingRight: =2.82
-            PaddingTop: =2.82
-            PressedBorderColor: =TextBox1_1.BorderColor
-            PressedColor: =TextBox1_1.Color
-            PressedFill: =TextBox1_1.Fill
-            Size: =9.01
-            Text: =ThisItem.field_6.Value
-            Width: =333.52
-            X: =13.52
-            Y: =57.52
+            TextInputSearch As text:
+                BorderColor: =RGBA(163,171,193,1)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                Default: =""
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.Lato
+                Height: =55.62
+                HintText: ="Buscar Curso"
+                HoverBorderColor: =RGBA(0, 89, 178, 1)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(190, 202, 226, 0), 30%)
+                PaddingBottom: =4.19
+                PaddingLeft: =10.05
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Reset: =ResetSearch
+                Size: =14.08
+                Width: =623
+                X: =6
+                Y: |
+                    =
+                ZIndex: =1
+
+            icon2 As icon.Search:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =55.25
+                Icon: =Icon.Reload
+                OnSelect: =Reset(TextInputSearch)
+                TabIndex: =0
+                Width: =30.42
+                X: =599
+                Y: =
+                ZIndex: =2
+
+        Container18 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =897
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =640
+            Y: =150
             ZIndex: =3
 
-        Rectangle1_1 As rectangle:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Fill: =RGBA(204, 204, 204, 1)
-            Height: =0.84
-            TabIndex: =0
-            Width: =360.56
-            Y: =101.34
+            GalleryCustumer As gallery.galleryVertical:
+                '#CopilotOverlayLabel': ="Filtrada"
+                BorderColor: =RGBA(0, 89, 178, 1)
+                BorderThickness: =2
+                DisabledBorderColor: =GalleryCustumer.BorderColor
+                DisabledFill: =GalleryCustumer.Fill
+                Height: =897
+                HoverBorderColor: =GalleryCustumer.BorderColor
+                HoverFill: =GalleryCustumer.Fill
+                Items: |+
+                    =Search([@'Ofertas de Entrenamientos'],TextInputSearch.Text,field_2)
+                    
+                Layout: =Layout.Vertical
+                PressedBorderColor: =GalleryCustumer.BorderColor
+                PressedFill: =GalleryCustumer.Fill
+                ShowNavigation: =true
+                TemplatePadding: =
+                TemplateSize: =102.97
+                Transition: =Transition.Pop
+                Visible: =CountRows(GalleryCustumer.AllItems) > 0
+                ZIndex: =1
+
+                Rectangle1_2 As rectangle:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =101.29
+                    TabIndex: =0
+                    Width: =640
+                    ZIndex: =1
+
+                TextBox1 As label:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(61,171,186,1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.Lato
+                    Height: =39
+                    HoverBorderColor: =TextBox1.BorderColor
+                    HoverColor: =TextBox1.Color
+                    HoverFill: =TextBox1.Fill
+                    PaddingBottom: =4.19
+                    PaddingLeft: =4.19
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    PressedBorderColor: =TextBox1.BorderColor
+                    PressedColor: =TextBox1.Color
+                    PressedFill: =TextBox1.Fill
+                    Size: =15.77
+                    Text: =ThisItem.field_2
+                    Width: =518
+                    X: =13.52
+                    Y: =11
+                    ZIndex: =2
+
+                TextBox1_1 As label:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(153, 153, 153, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.Lato
+                    Height: =9
+                    HoverBorderColor: =TextBox1_1.BorderColor
+                    HoverColor: =TextBox1_1.Color
+                    HoverFill: =TextBox1_1.Fill
+                    PaddingBottom: =4.19
+                    PaddingLeft: =4.19
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    PressedBorderColor: =TextBox1_1.BorderColor
+                    PressedColor: =TextBox1_1.Color
+                    PressedFill: =TextBox1_1.Fill
+                    Size: =9.01
+                    Text: =ThisItem.field_6.Value
+                    Width: =265
+                    X: =13.52
+                    Y: =70
+                    ZIndex: =3
+
+        Container19 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =73
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =640
+            Y: =1047
             ZIndex: =4
 
-        Rectangle4 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =2
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =102.97
-            OnSelect: =Navigate(CustomerOverviewScreen, ScreenTransition.Fade)
-            TabIndex: =0
-            Width: =360.56
-            ZIndex: =5
+            Rectangle1_19 As rectangle:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Fill: =RGBA(54, 166, 182, 1)
+                Height: =69.1
+                OnSelect: =Navigate(EventScreen, ScreenTransition.Cover)
+                TabIndex: =0
+                Width: =640
+                Y: |
+                    =
+                ZIndex: =1
 
-    TextBox1_12 As label:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Font: =Font.Lato
-        FontWeight: =FontWeight.Semibold
-        Height: =81.2
-        HoverBorderColor: =TextBox1_12.BorderColor
-        HoverColor: =TextBox1_12.Color
-        HoverFill: =TextBox1_12.Fill
-        PaddingBottom: =4.19
-        PaddingLeft: =4.19
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        PressedBorderColor: =TextBox1_12.BorderColor
-        PressedColor: =TextBox1_12.Color
-        PressedFill: =TextBox1_12.Fill
-        Size: =15.77
-        Text: ="Cursos"
-        Width: =109.3
-        X: =111.55
-        ZIndex: =7
+            TextBox1_17 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Semibold
+                Height: =50.95
+                HoverBorderColor: =TextBox1_17.BorderColor
+                HoverColor: =TextBox1_17.Color
+                HoverFill: =TextBox1_17.Fill
+                OnSelect: =Navigate(EventScreen, ScreenTransition.Cover)
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                PressedBorderColor: =TextBox1_17.BorderColor
+                PressedColor: =TextBox1_17.Color
+                PressedFill: =TextBox1_17.Fill
+                Size: =15.77
+                Text: ="USUARIOS"
+                Width: =254.65
+                X: =30
+                Y: =9
+                ZIndex: =2
 
-    TextInputSearch As text:
-        BorderColor: =RGBA(163,171,193,1)
-        BorderThickness: =2
-        Color: =RGBA(255, 255, 255, 1)
-        Default: =""
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.Lato
-        Height: =55.62
-        HintText: ="Buscar Curso"
-        HoverBorderColor: =RGBA(0, 89, 178, 1)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(190, 202, 226, 0), 30%)
-        PaddingBottom: =4.19
-        PaddingLeft: =10.05
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Reset: =ResetSearch
-        Size: =14.08
-        Width: =360.56
-        Y: =86.23
-        ZIndex: =8
-
-    icon2 As icon.Search:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =55.25
-        Icon: =Icon.Reload
-        OnSelect: =Reset(TextInputSearch)
-        TabIndex: =0
-        Width: =30.42
-        X: =323.38
-        Y: =86.23
-        ZIndex: =9
-
-    TextBoxNoCustomer As label:
-        Align: =LayoutAlignItems.Center
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(153, 153, 153, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Font: =Font.Lato
-        Height: =34.32
-        HoverBorderColor: =TextBoxNoCustomer.BorderColor
-        HoverColor: =TextBoxNoCustomer.Color
-        HoverFill: =TextBoxNoCustomer.Fill
-        PaddingBottom: =4.19
-        PaddingLeft: =4.19
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        PressedBorderColor: =TextBoxNoCustomer.BorderColor
-        PressedColor: =TextBoxNoCustomer.Color
-        PressedFill: =TextBoxNoCustomer.Fill
-        Size: =10.14
-        Text: ="No Customer Data"
-        Visible: =CountRows(GalleryCustumer.AllItems) = 0
-        Width: =279.44
-        X: =40.56
-        Y: =505.75
-        ZIndex: =10
-
-    Icon6 As icon.Add:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =66.97
-        Icon: =Icon.Add
-        OnSelect: =Navigate(CustomerOverviewScreen_2, ScreenTransition.Fade)
-        Width: =52.96
-        X: =307.61
-        ZIndex: =15
-
-    Group4 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =15
-
-        Rectangle1_19 As rectangle:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Fill: =RGBA(54, 166, 182, 1)
-            Height: =69.1
-            OnSelect: =Navigate(EventScreen, ScreenTransition.Cover)
-            TabIndex: =0
-            Width: =360.56
-            Y: =558
-            ZIndex: =11
-
-        TextBox1_17 As label:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            Height: =50.95
-            HoverBorderColor: =TextBox1_17.BorderColor
-            HoverColor: =TextBox1_17.Color
-            HoverFill: =TextBox1_17.Fill
-            OnSelect: =Navigate(EventScreen, ScreenTransition.Cover)
-            PaddingBottom: =4.19
-            PaddingLeft: =4.19
-            PaddingRight: =2.82
-            PaddingTop: =2.82
-            PressedBorderColor: =TextBox1_17.BorderColor
-            PressedColor: =TextBox1_17.Color
-            PressedFill: =TextBox1_17.Fill
-            Size: =15.77
-            Text: ="USUARIOS"
-            Width: =254.65
-            X: =18.03
-            Y: =558
-            ZIndex: =12
-
-        icon9 As icon.ArrowRight:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =50.23
-            Icon: =Icon.ArrowRight
-            OnSelect: =Navigate(EventScreen, ScreenTransition.Cover)
-            TabIndex: =0
-            Width: =46.2
-            X: =307.61
-            Y: =558
-            ZIndex: =14
-
-    Rectangle1_38 As rectangle:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Fill: =RGBA(6, 26, 84, 1)
-        Height: =83.71
-        OnSelect: =Back(ScreenTransition.UnCover)
-        TabIndex: =0
-        Width: =56.34
-        ZIndex: =16
-
-    icon1_9 As icon.ChevronLeft:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =66.97
-        Icon: =Icon.ChevronLeft
-        OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
-        TabIndex: =0
-        Width: =40.56
-        ZIndex: =17
+            icon9 As icon.ArrowRight:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =50.23
+                Icon: =Icon.ArrowRight
+                OnSelect: =Navigate(EventScreen, ScreenTransition.Cover)
+                TabIndex: =0
+                Width: =46.2
+                X: =573
+                Y: =9
+                ZIndex: =3
 
