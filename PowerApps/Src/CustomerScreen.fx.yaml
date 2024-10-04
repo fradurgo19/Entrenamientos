@@ -198,7 +198,7 @@ CustomerScreen As screen:
                     DisabledColor: =RGBA(0, 0, 0, 1)
                     Height: =49
                     Icon: =Icon.Reload
-                    OnSelect: =Reset(TextInputSearch); Reset(ComboboxCanvas2);Reset(DatePickerCanvas1);Reset(GalleryCustumer);Reset(ComboboxCanvas2_1)
+                    OnSelect: =Reset(TextInputSearch); Reset(ComboboxCanvas2);Reset(DatePickerCanvas1);Reset(GalleryCustumer);Reset(ComboboxCanvas2_1);Reset(ComboboxCanvas2_4)  
                     PaddingBottom: =5
                     PaddingLeft: =5
                     PaddingRight: =5
@@ -275,13 +275,15 @@ CustomerScreen As screen:
                             TextInputSearch.Text in field_2 && 
                             (field_7.Value = ComboboxCanvas2.Selected.Value || IsBlank(ComboboxCanvas2.Selected.Value)) && 
                             (field_6.Value = ComboboxCanvas2_1.Selected.Value || IsBlank(ComboboxCanvas2_1.Selected.Value)) &&
-                            (field_4.Value = ComboboxCanvas2_6.Selected.Value || IsBlank(ComboboxCanvas2_6.Selected.Value)) &&
-                            (field_3.Vaule = ComboboxCanvas2_7.Selected.Value || IsBlank(ComboboxCanvas2_7.Selected.Value)) &&
+                            (IsBlank(ComboboxCanvas2_7.Selected.Value) || !IsBlank(LookUp(field_3, Value = ComboboxCanvas2_7.Selected.Value))) &&
+                            (IsBlank(ComboboxCanvas2_4.Selected.Value) || !IsBlank(LookUp(field_4, Value = ComboboxCanvas2_4.Selected.Value))) &&
+                            (field_1.Value = ComboboxCanvas2_6.Selected.Value || IsBlank(ComboboxCanvas2_6.Selected.Value)) &&
                             (Created = DatePickerCanvas1.SelectedDate || IsBlank(DatePickerCanvas1.SelectedDate))
                         ),
                         Modified,
                         SortOrder.Descending
                     )
+                    
                     
                     
                     
@@ -598,7 +600,7 @@ CustomerScreen As screen:
                     DisabledColor: =RGBA(0, 0, 0, 1)
                     Height: =49
                     Icon: =Icon.Reload
-                    OnSelect: =Reset(TextInputSearch); Reset(ComboboxCanvas2);Reset(DatePickerCanvas1);Reset(GalleryCustumer);Reset(ComboboxCanvas2_1);Reset(ComboboxCanvas2_6);Reset(ComboboxCanvas2_7)
+                    OnSelect: =Reset(TextInputSearch); Reset(ComboboxCanvas2);Reset(DatePickerCanvas1);Reset(GalleryCustumer);Reset(ComboboxCanvas2_1);Reset(ComboboxCanvas2_6);Reset(ComboboxCanvas2_7);Reset(ComboboxCanvas2_4)
                     PaddingBottom: =5
                     PaddingLeft: =5
                     PaddingRight: =5
@@ -703,7 +705,7 @@ CustomerScreen As screen:
                         
                         
                     SelectMultiple: =true
-                    Width: =232
+                    Width: =243
                     X: =0
                     Y: =0
                     ZIndex: =1

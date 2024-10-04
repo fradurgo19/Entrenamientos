@@ -302,6 +302,7 @@ ActiveWorkOrderScreen As screen:
             "GalleryWorkOrder As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
                 '#CopilotOverlayLabel': ="Filtrada"
                 BorderColor: =RGBA(0, 89, 178, 1)
+                BorderThickness: =1
                 DelayItemLoading: =true
                 DisabledBorderColor: =GalleryWorkOrder.BorderColor
                 DisabledFill: =GalleryWorkOrder.Fill
@@ -408,7 +409,7 @@ ActiveWorkOrderScreen As screen:
                     PaddingTop: =9.01
                     Tooltip: ="Ver los detalles del elemento"
                     Width: =58.03
-                    X: =537
+                    X: =550
                     Y: =10
                     ZIndex: =4
 
@@ -622,8 +623,8 @@ ActiveWorkOrderScreen As screen:
                     OnSelect: |
                         =Remove('Asignación Entrenamientos',ThisItem)
                     Width: =36.06
-                    X: =473
-                    Y: =21
+                    X: =471
+                    Y: =32
                     ZIndex: =17
 
                 Title1_4 As label:
@@ -644,6 +645,16 @@ ActiveWorkOrderScreen As screen:
                     X: =251.27
                     Y: =10.88
                     ZIndex: =18
+
+                Rectangle5 As rectangle:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Fill: =RGBA(0, 51, 102, 1)
+                    Height: =1
+                    OnSelect: =Select(Parent)
+                    Width: =599
+                    X: =9
+                    Y: =177
+                    ZIndex: =19
 
         Container14 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
