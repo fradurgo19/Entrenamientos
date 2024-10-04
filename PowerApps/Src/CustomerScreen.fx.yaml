@@ -710,3 +710,17 @@ CustomerScreen As screen:
                     Y: =0
                     ZIndex: =1
 
+            TextCanvas2_1 As Texto:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Font: =Font.'Lato Black'
+                FontColor: =RGBA(0, 0, 0, 1)
+                Height: =36
+                Size: =15
+                Text: |-
+                    ="Q: " & CountRows(GalleryCustumer.AllItems)
+                Width: =64
+                X: =13
+                Y: =9
+                ZIndex: =12
+

@@ -249,7 +249,7 @@ ActiveWorkOrderScreen As screen:
                 PaddingLeft: =10.05
                 PaddingRight: =2.82
                 SelectedDateFill: =RGBA(0, 51, 102, 1)
-                Size: =5.63
+                Size: =10
                 Width: =188
                 X: =432
                 Y: =1
@@ -857,4 +857,18 @@ ActiveWorkOrderScreen As screen:
                 X: =302
                 Y: =6
                 ZIndex: =8
+
+            TextCanvas2 As Texto:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Font: =Font.'Lato Black'
+                FontColor: =RGBA(0, 0, 0, 1)
+                Height: =36
+                Size: =15
+                Text: |-
+                    ="Q: " &CountRows(GalleryWorkOrder.AllItems)
+                Width: =64
+                X: =2
+                Y: =9
+                ZIndex: =9
 

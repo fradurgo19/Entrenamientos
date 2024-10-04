@@ -92,7 +92,7 @@ EventScreen As screen:
                 PressedFill: =TextBox1_45.Fill
                 Size: =15.77
                 Text: ="Usuarios"
-                Width: =294.65
+                Width: =157
                 X: =185
                 Y: =2
                 ZIndex: =5
@@ -109,6 +109,20 @@ EventScreen As screen:
                 X: =569
                 Y: =13
                 ZIndex: =6
+
+            TextCanvas2_2 As Texto:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Font: =Font.'Lato Black'
+                FontColor: =RGBA(255, 255, 255, 1)
+                Height: =36
+                Size: =15
+                Text: |-
+                    ="Cantidad:" & CountRows(GalleryEvent.AllItems)
+                Width: =115
+                X: =420
+                Y: =24
+                ZIndex: =7
 
         Container21 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
