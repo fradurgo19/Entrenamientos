@@ -57,7 +57,7 @@ CustomerScreen As screen:
                 PressedBorderColor: =TextBox1_12.BorderColor
                 PressedColor: =TextBox1_12.Color
                 PressedFill: =TextBox1_12.Fill
-                Size: =15.77
+                Size: =16
                 Text: ="Cursos"
                 Width: =168
                 X: =198
@@ -98,7 +98,7 @@ CustomerScreen As screen:
                 DisabledColor: =RGBA(244, 244, 244, 1)
                 Height: =61
                 Icon: =Icon.Reload
-                OnSelect: =Reset(TextInputSearch); Reset(ComboboxCanvas2);Reset(DatePickerCanvas1);
+                OnSelect: =Reset(TextInputSearch); Reset(ComboboxCanvas2);Reset(DatePickerCanvas1);Reset(GalleryCustumer);Reset(ComboboxCanvas2_1)
                 TabIndex: =0
                 Width: =50
                 X: =493
@@ -140,7 +140,7 @@ CustomerScreen As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Reset: =ResetSearch
-                Size: =14.08
+                Size: =12
                 Width: =232
                 X: =6
                 Y: |
@@ -152,8 +152,8 @@ CustomerScreen As screen:
                 DisplayMode: =DisplayMode.Edit
                 Height: =55
                 Placeholder: ="Fecha de Modificado."
-                Width: =209
-                X: =430
+                Width: =181
+                X: =458
                 Y: =0
                 ZIndex: =3
 
@@ -161,12 +161,23 @@ CustomerScreen As screen:
                 Appearance: ='ComboboxCanvas.Appearance'.FilledLighter
                 DisplayMode: =DisplayMode.Edit
                 Height: =55
-                InputTextPlaceholder: ="Estado del Recurso"
+                InputTextPlaceholder: ="Estado"
                 Items: =["Disponible", "Para Creación"]
-                Width: =192
+                Width: =105
                 X: =238
                 Y: =0
                 ZIndex: =4
+
+            "ComboboxCanvas2_1 As 'Cuadro combinado'.pcfdataset":
+                Appearance: ='ComboboxCanvas.Appearance'.FilledLighter
+                DisplayMode: =DisplayMode.Edit
+                Height: =55
+                InputTextPlaceholder: ="Recurso"
+                Items: =["Ficha", "Plataforma","Virtual","Video","Presencial Interno","Presencial Fabrica","Presencial Tercero"]
+                Width: =115
+                X: =343
+                Y: =0
+                ZIndex: =5
 
         Container18 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
@@ -194,6 +205,7 @@ CustomerScreen As screen:
                             colOfertas,
                             TextInputSearch.Text in field_2 && 
                             (field_7.Value = ComboboxCanvas2.Selected.Value || IsBlank(ComboboxCanvas2.Selected.Value)) && 
+                            (field_6.Value = ComboboxCanvas2_1.Selected.Value || IsBlank(ComboboxCanvas2_1.Selected.Value)) && 
                             (Created = DatePickerCanvas1.SelectedDate || IsBlank(DatePickerCanvas1.SelectedDate))
                         ),
                         Modified,
@@ -215,7 +227,8 @@ CustomerScreen As screen:
                 ZIndex: =1
 
                 Rectangle1_2 As rectangle:
-                    BorderColor: =RGBA(0, 89, 178, 1)
+                    BorderColor: =RGBA(139, 154, 159, 1)
+                    BorderThickness: =1
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =101.29
                     TabIndex: =0
@@ -227,7 +240,7 @@ CustomerScreen As screen:
                     Color: =RGBA(61,171,186,1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Font: =Font.Lato
-                    Height: =30
+                    Height: =80
                     HoverBorderColor: =TextBox1.BorderColor
                     HoverColor: =TextBox1.Color
                     HoverFill: =TextBox1.Fill
@@ -239,8 +252,8 @@ CustomerScreen As screen:
                     PressedColor: =TextBox1.Color
                     PressedFill: =TextBox1.Fill
                     Text: =ThisItem.field_2
-                    Width: =616
-                    Y: =10
+                    Width: =234
+                    Y: =21
                     ZIndex: =2
 
                 TextBox1_1 As label:
@@ -248,7 +261,7 @@ CustomerScreen As screen:
                     Color: =RGBA(153, 153, 153, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Font: =Font.Lato
-                    Height: =17
+                    Height: =28
                     HoverBorderColor: =TextBox1_1.BorderColor
                     HoverColor: =TextBox1_1.Color
                     HoverFill: =TextBox1_1.Fill
@@ -259,12 +272,35 @@ CustomerScreen As screen:
                     PressedBorderColor: =TextBox1_1.BorderColor
                     PressedColor: =TextBox1_1.Color
                     PressedFill: =TextBox1_1.Fill
-                    Size: =9.01
+                    Size: =10
                     Text: =ThisItem.field_6.Value
-                    Width: =205
-                    X: =16
-                    Y: =42
+                    Width: =64
+                    X: =251
+                    Y: =36
                     ZIndex: =3
+
+                TextBox1_2 As label:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(153, 153, 153, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.Lato
+                    Height: =56
+                    HoverBorderColor: =TextBox1_2.BorderColor
+                    HoverColor: =TextBox1_2.Color
+                    HoverFill: =TextBox1_2.Fill
+                    PaddingBottom: =4.19
+                    PaddingLeft: =4.19
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    PressedBorderColor: =TextBox1_2.BorderColor
+                    PressedColor: =TextBox1_2.Color
+                    PressedFill: =TextBox1_2.Fill
+                    Size: =10
+                    Text: =ThisItem.Adjunto
+                    Width: =201
+                    X: =333
+                    Y: =28
+                    ZIndex: =4
 
         Container19 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light

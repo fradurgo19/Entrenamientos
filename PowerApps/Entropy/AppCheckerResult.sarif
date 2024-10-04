@@ -7884,6 +7884,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container17.ComboboxCanvas2_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container17.ComboboxCanvas2_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "CustomerScreen",
+                "type": "CustomerScreen.Container15.Container17.ComboboxCanvas2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Mensaje"
                 }
               ],
