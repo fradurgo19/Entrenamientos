@@ -434,6 +434,7 @@ ActiveWorkOrderScreen As screen:
                 ShowNavigation: =true
                 TemplatePadding: =0
                 TemplateSize: =180.82
+                Transition: =Transition.Pop
                 Visible: =CountRows(GalleryWorkOrder.AllItems) > 0
                 Width: =578
                 X: =10
@@ -471,7 +472,7 @@ ActiveWorkOrderScreen As screen:
                     Size: =11
                     Text: =ThisItem.Curso.Value
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =246.76
+                    Width: =351
                     X: =90
                     Y: =42
                     ZIndex: =2
@@ -603,7 +604,7 @@ ActiveWorkOrderScreen As screen:
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Fill: =RGBA(6, 26, 84, 1)
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =14
+                    Height: =20
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
                     PaddingLeft: =0
@@ -614,7 +615,7 @@ ActiveWorkOrderScreen As screen:
                     VerticalAlign: =VerticalAlign.Top
                     Width: =213
                     X: =354
-                    Y: =128
+                    Y: =127
                     ZIndex: =11
 
                 Subtitle1_4 As label:
@@ -633,7 +634,7 @@ ActiveWorkOrderScreen As screen:
                     VerticalAlign: =VerticalAlign.Top
                     Width: =111
                     X: =243
-                    Y: =121
+                    Y: =127
                     ZIndex: =12
 
                 Subtitle1_5 As label:
@@ -652,7 +653,7 @@ ActiveWorkOrderScreen As screen:
                     VerticalAlign: =VerticalAlign.Top
                     Width: =76
                     X: =278
-                    Y: =106
+                    Y: =99
                     ZIndex: =13
 
                 Title1_2 As label:
@@ -671,7 +672,7 @@ ActiveWorkOrderScreen As screen:
                     VerticalAlign: =VerticalAlign.Top
                     Width: =213
                     X: =354
-                    Y: =106
+                    Y: =99
                     ZIndex: =14
 
                 Subtitle1_6 As label:
@@ -689,8 +690,8 @@ ActiveWorkOrderScreen As screen:
                         ="Fecha Limite:"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =111
-                    X: =243
-                    Y: =140
+                    X: =240
+                    Y: =153
                     ZIndex: =15
 
                 Title1_3 As label:
@@ -709,7 +710,7 @@ ActiveWorkOrderScreen As screen:
                     VerticalAlign: =VerticalAlign.Top
                     Width: =213
                     X: =354
-                    Y: =142
+                    Y: =153
                     ZIndex: =16
 
                 Icon11 As icon.Trash:
