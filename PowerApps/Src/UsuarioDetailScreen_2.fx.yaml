@@ -3,149 +3,13 @@
     Height: =Max(App.Height, App.DesignHeight)
     Width: =Max(App.Width, App.DesignWidth)
 
-    Rectangle1_26 As rectangle:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Fill: =RGBA(6,26,84,1)
-        Height: =83.71
-        TabIndex: =0
-        Width: =360.56
-        ZIndex: =2
-
-    Group3_5 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =8
-
-        Rectangle1_27 As rectangle:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Fill: =RGBA(6, 26, 84, 1)
-            Height: =83.71
-            OnSelect: =Back()
-            TabIndex: =0
-            Width: =56.34
-            ZIndex: =6
-
-        icon1_10 As icon.ChevronLeft:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =81.2
-            Icon: =Icon.ChevronLeft
-            OnSelect: =Back()
-            TabIndex: =0
-            Width: =37.75
-            ZIndex: =7
-
-    TextBox1_28 As label:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Font: =Font.Lato
-        FontWeight: =FontWeight.Semibold
-        Height: =81.53
-        HoverBorderColor: =TextBox1_28.BorderColor
-        HoverColor: =TextBox1_28.Color
-        HoverFill: =TextBox1_28.Fill
-        PaddingBottom: =4.19
-        PaddingLeft: =4.19
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        PressedBorderColor: =TextBox1_28.BorderColor
-        PressedColor: =TextBox1_28.Color
-        PressedFill: =TextBox1_28.Fill
-        Size: =15.77
-        Text: ="Nuevo Usuario"
-        Width: =294.65
-        X: =45.63
-        ZIndex: =9
-
-    Canvas1_7 As fluidGrid.fluidGridWithBlankCard:
-        BorderThickness: =0
-        Height: =640
-        Width: =112.68
-        ZIndex: =14
-
-        DataCard3_5 As dataCard.blankCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =667.2
-            Width: =112.68
-            WidthFit: =false
-            X: =0
-            Y: =0
-            ZIndex: =3
-
-            Rectangle1_28 As rectangle:
-                BorderColor: =RGBA(230, 229, 229, 1)
-                BorderThickness: =1
-                Fill: =RGBA(255, 255, 255, 1)
-                Height: =717.35
-                TabIndex: =0
-                Width: =349.3
-                X: =5.63
-                Y: =7.61
-                ZIndex: =1
-
-        DataCard5_1 As dataCard.blankCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =83.71
-            Width: =360.56
-            X: =0
-            Y: =0.84
-            ZIndex: =4
-
-            iconMail1_3 As icon.Send:
-                BorderColor: =RGBA(0, 89, 178, 1)
-                Color: =RGBA(255, 255, 255, 1)
-                DisabledBorderColor: =RGBA(255, 0, 0, 1)
-                DisabledColor: =RGBA(244, 244, 244, 1)
-                DisabledFill: =RGBA(240, 240, 240, 0.5)
-                DisplayMode: =
-                Fill: =RGBA(6, 26, 84, 1)
-                Height: =69.48
-                Icon: =Icon.Send
-                OnSelect: =NewForm(Form2_1);SubmitForm(Form2_1);ResetForm(Form2_1);Navigate(OpportunityMessageScreen, ScreenTransition.Fade)
-                PaddingBottom: =20.09
-                PaddingLeft: =20.09
-                PaddingRight: =13.52
-                PaddingTop: =13.52
-                PressedFill: =RGBA(255, 255, 255, 0.3)
-                Tooltip: ="Enviar mensaje"
-                Width: =349.3
-                X: =11.27
-                Y: =14.23
-                ZIndex: =1
-
-            Label4_1 As label:
-                BorderColor: =RGBA(0, 89, 178, 1)
-                Color: =RGBA(255, 255, 255, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =69.48
-                PaddingBottom: =4.19
-                PaddingLeft: =4.19
-                PaddingRight: =2.82
-                PaddingTop: =2.82
-                Size: =15.77
-                Text: ="Nuevo Usuario"
-                Width: =142.54
-                X: =11.27
-                Y: =14.23
-                ZIndex: =2
-
     Form2_1 As form:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: ='Usuarios Entrenamientos'
         DefaultMode: =FormMode.New
-        Height: =640
+        Height: =433
         Width: =360.56
+        Y: =155
         ZIndex: =15
 
         Nombre_DataCard2_1 As typedDataCard.textualEditCard:
@@ -845,4 +709,87 @@
         X: =120.56
         Y: =83.71
         ZIndex: =16
+
+    Container34 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =482
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =640
+        Y: =653
+        ZIndex: =17
+
+        Container35 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =68
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =633
+            ZIndex: =1
+
+            Rectangle1_26 As rectangle:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Fill: =RGBA(6,26,84,1)
+                Height: =68
+                TabIndex: =0
+                Width: =360.56
+                X: =40
+                ZIndex: =1
+
+            Group3_5 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =4
+
+                Rectangle1_27 As rectangle:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Fill: =RGBA(6, 26, 84, 1)
+                    Height: =68
+                    OnSelect: =Back()
+                    TabIndex: =0
+                    Width: =56.34
+                    X: =40
+                    ZIndex: =2
+
+                icon1_10 As icon.ChevronLeft:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(244, 244, 244, 1)
+                    Height: =68
+                    Icon: =Icon.ChevronLeft
+                    OnSelect: =Back()
+                    TabIndex: =0
+                    Width: =37.75
+                    X: =40
+                    ZIndex: =3
+
+            TextBox1_28 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Semibold
+                Height: =68
+                HoverBorderColor: =TextBox1_28.BorderColor
+                HoverColor: =TextBox1_28.Color
+                HoverFill: =TextBox1_28.Fill
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                PressedBorderColor: =TextBox1_28.BorderColor
+                PressedColor: =TextBox1_28.Color
+                PressedFill: =TextBox1_28.Fill
+                Size: =15.77
+                Text: ="Nuevo Usuario"
+                Width: =294.65
+                X: =85.63
+                ZIndex: =5
 
