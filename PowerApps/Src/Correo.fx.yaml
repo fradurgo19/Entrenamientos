@@ -32,67 +32,6 @@
         Y: =113.01
         ZIndex: =1
 
-    Label3 As label:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        BorderThickness: =3
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(6, 26, 84, 1)
-        FocusedBorderThickness: =20
-        Height: =54.41
-        Overflow: =Overflow.Scroll
-        PaddingBottom: =0.84
-        PaddingLeft: =0.84
-        PaddingRight: =0.56
-        PaddingTop: =0.56
-        Size: =6.76
-        Text: =CorreosConcatenados
-        Tooltip: ="Borre e ingrese correos de la lista"
-        VerticalAlign: =VerticalAlign.Top
-        Width: =330.14
-        X: =18.03
-        Y: =113.01
-        ZIndex: =2
-
-    RectQuickActionBar2 As rectangle:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Fill: =RGBA(6, 26, 84, 1)
-        Height: =73.67
-        Width: =84.51
-        ZIndex: =3
-
-    LblAppName2 As label:
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(6, 26, 84, 1)
-        Height: =73.67
-        PaddingBottom: =4.19
-        PaddingLeft: =0
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        Size: =15.21
-        Text: ="Correo electrónico"
-        Width: =193.8
-        Wrap: =false
-        X: =65.35
-        ZIndex: =4
-
-    LblRecipientCount2 As label:
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Height: =33.49
-        PaddingBottom: =4.19
-        PaddingLeft: =0
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        Size: =10.14
-        Text: ="Correos"
-        Width: =360.56
-        Wrap: =false
-        X: =18.03
-        Y: =74.51
-        ZIndex: =5
-
     AddIcon2 As icon.Add:
         BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(0, 89, 178, 1)
@@ -121,153 +60,6 @@
         X: =304.79
         Y: =113.01
         ZIndex: =7
-
-    EmailPeopleGallery2 As gallery.SelectedUsersGallery:
-        AccessibleLabel: ="Personas seleccionadas por el usuario"
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Fill: =TextSearchBox2.Fill
-        Height: =0
-        Items: |-
-            =/*Collection of user selected people*/
-            MyPeople
-        Layout: =Layout.Vertical
-        ShowScrollbar: =Self.Height >= 304
-        TemplatePadding: =4.19
-        TemplateSize: =39.35
-        Width: =360.56
-        WrapCount: =2
-        X: =15.21
-        Y: =183.33
-        ZIndex: =8
-
-        Rectangle6 As rectangle:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Fill: =RGBA(0, 51, 102, 1)
-            Height: =39.35
-            OnSelect: =Select(Parent)
-            Width: =176.06
-            ZIndex: =1
-
-        Title5 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =2
-            Height: =39.35
-            OnSelect: =Set(_selectedUser, ThisItem)
-            PaddingBottom: =4.19
-            PaddingLeft: =8.37
-            PaddingRight: =2.82
-            PaddingTop: =2.82
-            Size: =10.14
-            TabIndex: =If(PeopleBrowseGallery2.Visible, -1, 0)
-            Text: =ThisItem.DisplayName
-            Width: =155.21
-            Wrap: =false
-            ZIndex: =2
-
-        iconRemove2 As icon.Cancel:
-            AccessibleLabel: =iconRemove2.Tooltip
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =Title5.Color
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =39.35
-            Icon: =Icon.Cancel
-            OnSelect: =Remove(MyPeople, LookUp(MyPeople, UserPrincipalName = ThisItem.UserPrincipalName))
-            PaddingBottom: =7.53
-            PaddingLeft: =7.53
-            PaddingRight: =5.07
-            PaddingTop: =5.07
-            TabIndex: =If(PeopleBrowseGallery2.Visible, -1, 0)
-            Tooltip: ="Seleccione esta opción para quitar el usuario de la colección."
-            Width: =26.48
-            X: =149.58
-            ZIndex: =3
-
-    LblEmailSubject2 As label:
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Height: =33.49
-        PaddingBottom: =4.19
-        PaddingLeft: =0
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        Size: =10.14
-        Text: ="*Asunto"
-        Width: =127.89
-        Wrap: =false
-        X: =18.03
-        Y: =177.47
-        ZIndex: =9
-
-    TextEmailSubject2 As text:
-        AccessibleLabel: ="Se requiere un asunto para enviar un correo electrónico."
-        BorderColor: =RGBA(0, 89, 178, 1)
-        BorderThickness: =2
-        Color: =RGBA(0, 0, 0, 1)
-        Default: ="ENTRENAMIENTOS PARTEQUIPOS" & " / " & "CURSO" & " / " & Label1.Text
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        FocusedBorderThickness: =4
-        Height: =26.79
-        HintText: ="Agregar un asunto"
-        HoverBorderColor: =RGBA(0, 89, 178, 1)
-        HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =RGBA(153, 205, 255, 1)
-        PaddingBottom: =4.19
-        PaddingLeft: =10.05
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        Size: =6.76
-        TabIndex: =If(PeopleBrowseGallery2.Visible, -1, 0)
-        Width: =330.14
-        X: =18.03
-        Y: =272.91
-        ZIndex: =10
-
-    LblEmailMessage2 As label:
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Height: =33.49
-        PaddingBottom: =4.19
-        PaddingLeft: =0
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        Size: =10.14
-        Text: ="Mensaje"
-        Width: =112.68
-        Wrap: =false
-        X: =18.03
-        Y: =298.86
-        ZIndex: =11
-
-    TextEmailMessage2 As text:
-        AccessibleLabel: ="Agregar un mensaje"
-        BorderColor: =RGBA(0, 89, 178, 1)
-        BorderThickness: =2
-        Color: =RGBA(0, 0, 0, 1)
-        Default: =CorreosConcatenados1
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        FocusedBorderThickness: =4
-        Height: =46.04
-        HintText: ="Link Recurso"
-        HoverBorderColor: =RGBA(0, 89, 178, 1)
-        HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =RGBA(153, 205, 255, 1)
-        Mode: =TextMode.MultiLine
-        PaddingBottom: =4.19
-        PaddingLeft: =10.05
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        Size: =6.76
-        TabIndex: =If(PeopleBrowseGallery2.Visible, -1, 0)
-        Width: =330.14
-        X: =18.03
-        Y: =332.34
-        ZIndex: =12
 
     PeopleBrowseGallery2 As gallery.PeoplePickerGallerySmall:
         AccessibleLabel: ="Resultados de la búsqueda de usuarios"
@@ -350,449 +142,712 @@
             Y: =86.23
             ZIndex: =4
 
-    Gallery1 As gallery.galleryVertical:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        BorderThickness: =3
-        DelayItemLoading: =true
-        Height: =426.94
-        Items: |-
-            =
-            Search('Ofertas de Entrenamientos',TextInputSearch_3.Text,field_2)
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        ShowNavigation: =true
-        TemplatePadding: =4.19
-        TemplateSize: =107.15
-        Width: =162.82
-        X: =15.21
-        Y: =213.06
-        ZIndex: =14
+    Container48 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =1134
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =640
+        ZIndex: =27
 
-        Label1 As label:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(6, 26, 84, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =30.97
-            OnSelect: =Select(Parent)
-            PaddingBottom: =4.19
-            PaddingLeft: =4.19
-            PaddingRight: =2.82
-            PaddingTop: =2.82
-            Size: =5.63
-            Text: =ThisItem.field_2
-            Width: =157.18
-            Y: =4.19
+        Container49 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =76
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =636
+            X: =4
+            Y: =4
             ZIndex: =1
 
-        Label1_1 As label:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(6, 26, 84, 1)
-            Height: =20.09
-            OnSelect: =Select(Parent)
-            PaddingBottom: =4.19
-            PaddingLeft: =4.19
-            PaddingRight: =2.82
-            PaddingTop: =2.82
-            Size: =4.51
-            Text: =ThisItem.Adjunto
-            Width: =157.18
-            Y: =41.86
+            LblAppName2 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(6, 26, 84, 1)
+                Height: =73.67
+                PaddingBottom: =4.19
+                PaddingLeft: =0
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =15.21
+                Text: ="Correo electrónico"
+                Width: =489
+                Wrap: =false
+                X: =45
+                Y: =
+                ZIndex: =2
+
+            Button3 As button:
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(152, 208, 70, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =73.67
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                OnSelect: |+
+                    =Set(varimagen,Image3.Image);
+                    Set(EnvioCorreo,"<!DOCTYPE html>
+                    <html>
+                    <head>
+                    <title>¡Importante! ENTRENAMIENTOS PARTEQUIPOS</title>
+                    <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        background-color: #f2f2f2;
+                    }
+                    h1 {
+                        color: #333333;
+                        text-align: center;
+                    }
+                    .message {
+                        background-color: #ffffff;
+                        border-radius: 10px;
+                        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                        padding: 20px;
+                        margin: 20px auto;
+                        max-width: 600px;
+                    }
+                    .message img {
+                        display: block;
+                        margin: 0 auto;
+                    }
+                    </style>
+                    </head>
+                    <body>
+                    <div class='message'>
+                    <img src='https://i.imgur.com/38jHGbX.png' alt='Imagen' style='display: block; margin: 0 auto; max-width: 100%; height: auto;' /><br/>
+                    <h1>¡Atención! ENTRENAMIENTO PARTEQUIPOS / "&Label1.Text&"⚡️🚀</h1>
+                    <p>Estimado Colaborador,<br/><br/>
+                    Le notificamos sobre el curso y la prueba Asignada:<br/><br/>
+                    <strong>Links al final del correo, encontrará el link del Curso y de la Prueba</strong>
+                    </p>
+                    <p>Por favor, revisen este mensaje con detenimiento y realice la actividad en el tiempo contemplado. 🔍🕒 </p>
+                    <p>Recuerde que: "&TextEmailMessage2_2.Text&"🔍🕒⚡️🚀 </p>
+                    <p>Saludos,<br/>Soporte y Desarrollos Power Platform PARTEQUIPOS 💻🌟</p>
+                    <h1>
+                        <p>Url Recurso: <a href='" & Label1_1.Text & "' target='_blank'>Link al Recurso</a></p>
+                        <p>Url Cuestionario: <a href='" & Label1_2.Text & "' target='_blank'>Link al Cuestionario</a></p>⚡️🚀
+                    </h1>
+                    <h1>¡Atención! ENTRENAMIENTO PARTEQUIPOS Fecha Limite: "&DatePicker3.SelectedDate&"⚡️🚀</h1>
+                    </div>
+                    </body>
+                    </html>");
+                    
+                    Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text, EnvioCorreo , {Importance:"High",Bcc:"analista.mantenimiento@partequipos.com",Cc:"auxiliar.garantiasbg@partequipos.com"});           
+                    Reset(TextEmailSubject2);           
+                    Reset(TextEmailMessage2);
+                    Reset(TextInputSearch_2);
+                    Reset(TextInputSearch_3);
+                    Reset(TextEmailMessage2_2);
+                    UpdateContext({CorreosConcatenados: ""});
+                    UpdateContext({CorreosConcatenados1: ""});
+                    Navigate(OpportunityMessageScreen, ScreenTransition.Fade)
+                    
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                RadiusBottomLeft: =1
+                RadiusBottomRight: =1
+                RadiusTopLeft: =1
+                RadiusTopRight: =1
+                Size: =11.27
+                Text: ="Enviar"
+                Width: =101.41
+                X: =535
+                Y: =
+                ZIndex: =5
+
+            Image3 As image:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Height: =29.3
+                Image: ='Captura de pantalla 2024-01-12 082706'
+                ImagePosition: =ImagePosition.Fill
+                Width: =227.61
+                X: =308
+                ZIndex: =6
+
+            Group1 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =3
+                ZIndex: =6
+
+                Rectangle1_8 As rectangle:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Fill: =RGBA(6, 26, 84, 1)
+                    Height: =73
+                    OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
+                    TabIndex: =0
+                    Width: =45
+                    Y: =
+                    ZIndex: =3
+
+                icon1_5 As icon.ChevronLeft:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(244, 244, 244, 1)
+                    Height: =73
+                    Icon: =Icon.ChevronLeft
+                    OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
+                    TabIndex: =0
+                    Width: =28
+                    Y: =
+                    ZIndex: =4
+
+        Container50 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =68
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =636
+            X: =4
+            Y: =80
             ZIndex: =2
 
-        Label1_2 As label:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(6, 26, 84, 1)
-            Height: =30.97
-            OnSelect: =Select(Parent)
-            PaddingBottom: =4.19
-            PaddingLeft: =4.19
-            PaddingRight: =2.82
-            PaddingTop: =2.82
-            Size: =4.51
-            Text: =ThisItem.Prueba
-            Width: =157.18
-            Y: =76.18
+            Label3 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                BorderThickness: =3
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(6, 26, 84, 1)
+                FocusedBorderThickness: =20
+                Height: =68
+                Overflow: =Overflow.Scroll
+                PaddingBottom: =0.84
+                PaddingLeft: =0.84
+                PaddingRight: =0.56
+                PaddingTop: =0.56
+                Size: =10
+                Text: =CorreosConcatenados
+                Tooltip: ="Borre e ingrese correos de la lista"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =574
+                X: =61
+                Y: =
+                ZIndex: =1
+
+            LblRecipientCount2 As label:
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =68
+                PaddingBottom: =4.19
+                PaddingLeft: =0
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =11
+                Text: |-
+                    ="Correos:"
+                Width: =61
+                Wrap: =false
+                Y: =
+                ZIndex: =2
+
+        Container51 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =34
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =636
+            X: =4
+            Y: =148
             ZIndex: =3
 
-        Icon3 As icon.Folder:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(255, 255, 0, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(0, 0, 0, 1)
-            Height: =34.32
-            Icon: =Icon.Post
-            OnSelect: |-
-                =Select(Parent);
-                
-                UpdateContext({CorreoSeleccionado1: Gallery1.Selected.Label1_1.Text});
-                UpdateContext({CorreosConcatenados1: Concatenate(TextEmailMessage2.Text, "", CorreoSeleccionado1)});
-                
-                UpdateContext({CorreoSeleccionado2: Gallery1.Selected.Label1_2.Text});
-                UpdateContext({CorreosConcatenados2: Concatenate(TextEmailMessage2.Text, "", CorreoSeleccionado2)})
-            Width: =19.72
-            X: =129.58
-            Y: =35.16
+            TextEmailMessage2_2 As text:
+                AccessibleLabel: ="Agregar un mensaje"
+                BorderColor: =RGBA(0, 89, 178, 1)
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =CorreosConcatenados2
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                FocusedBorderThickness: =4
+                Height: =33
+                HintText: ="Escriba comentarios"
+                HoverBorderColor: =RGBA(0, 89, 178, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
+                Mode: =TextMode.MultiLine
+                PaddingBottom: =4.19
+                PaddingLeft: =10.05
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =10
+                TabIndex: =If(PeopleBrowseGallery2.Visible, -1, 0)
+                Width: =537
+                X: =63
+                Y: =1
+                ZIndex: =1
+
+            LblEmailSubject2 As label:
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =33.49
+                PaddingBottom: =4.19
+                PaddingLeft: =0
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =10.14
+                Text: |-
+                    ="*Asunto:"
+                Width: =63
+                Wrap: =false
+                Y: =1
+                ZIndex: =2
+
+            Icon1_1 As icon.Reload:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =30.14
+                Icon: =Icon.Reload
+                OnSelect: |-
+                    =UpdateContext({CorreosConcatenados: ""});UpdateContext({CorreosConcatenados1: ""});UpdateContext({CorreosConcatenados2: ""});Reset(TextInputSearch_3);
+                    Reset(TextInputSearch_2);Reset(TextEmailMessage2_1);Reset(TextEmailMessage2_2)
+                Width: =35.49
+                X: =600
+                Y: =1
+                ZIndex: =3
+
+        Container52 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =29
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =636
+            X: =4
+            Y: =182
             ZIndex: =4
 
-    Gallery1_1 As gallery.galleryVertical:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        BorderThickness: =3
-        DelayItemLoading: =true
-        Height: =428.62
-        Items: =Search([@'Usuarios Entrenamientos'],TextInputSearch_2.Text,field_4)
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        ShowNavigation: =true
-        TemplatePadding: =4.19
-        TemplateSize: =55.25
-        Width: =163.94
-        X: =185.92
-        Y: =211.38
-        ZIndex: =15
+            TextEmailSubject2 As text:
+                AccessibleLabel: ="Se requiere un asunto para enviar un correo electrónico."
+                BorderColor: =RGBA(0, 89, 178, 1)
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                Default: ="ENTRENAMIENTOS PARTEQUIPOS" & " / " & "CURSO" & " / " & Label1.Text
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                FocusedBorderThickness: =4
+                Height: =27
+                HintText: ="Agregar un asunto"
+                HoverBorderColor: =RGBA(0, 89, 178, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
+                PaddingBottom: =4.19
+                PaddingLeft: =10.05
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =10
+                TabIndex: =If(PeopleBrowseGallery2.Visible, -1, 0)
+                Width: =570
+                X: =64
+                Y: =
+                ZIndex: =1
 
-        Label1_3 As label:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(6, 26, 84, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =22.6
-            OnSelect: =Select(Parent)
-            PaddingBottom: =4.19
-            PaddingLeft: =4.19
-            PaddingRight: =2.82
-            PaddingTop: =2.82
-            Size: =5.63
-            Text: =ThisItem.field_0
-            Width: =169.58
-            ZIndex: =1
+            LblEmailSubject2_1 As label:
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =33.49
+                PaddingBottom: =4.19
+                PaddingLeft: =0
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =10.14
+                Text: |-
+                    ="Curso:"
+                Width: =64
+                Wrap: =false
+                Y: =
+                ZIndex: =2
 
-        Label1_4 As label:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(6, 26, 84, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =20.09
-            OnSelect: =Select(Parent)
-            PaddingBottom: =4.19
-            PaddingLeft: =4.19
-            PaddingRight: =2.82
-            PaddingTop: =2.82
-            Size: =5.63
-            Text: =ThisItem.field_1
-            Width: =169.58
-            Y: =34.32
-            ZIndex: =2
+        Container53 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =101
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =636
+            X: =4
+            Y: =211
+            ZIndex: =5
 
-        Icon2 As icon.Mail:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(255, 255, 0, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(0, 0, 0, 1)
-            Height: =32.65
-            Icon: =Icon.Mail
-            OnSelect: |-
-                =Select(Parent);UpdateContext({CorreoSeleccionado: Gallery1_1.Selected.Label1_4.Text});
-                UpdateContext({CorreosConcatenados: Concatenate(Label3.Text, CorreoSeleccionado,"; ")})
-            Width: =21.41
-            X: =129.01
-            Y: =21.77
-            ZIndex: =3
+            TextEmailMessage2 As text:
+                AccessibleLabel: ="Agregar un mensaje"
+                BorderColor: =RGBA(0, 89, 178, 1)
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =CorreosConcatenados1
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                FocusedBorderThickness: =4
+                Height: =33
+                HintText: ="Link Recurso"
+                HoverBorderColor: =RGBA(0, 89, 178, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
+                Mode: =TextMode.MultiLine
+                PaddingBottom: =4.19
+                PaddingLeft: =10.05
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =10
+                TabIndex: =If(PeopleBrowseGallery2.Visible, -1, 0)
+                Width: =636
+                Y: =31
+                ZIndex: =1
 
-        Label5 As label:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =12.56
-            OnSelect: =Select(Parent)
-            PaddingBottom: =4.19
-            PaddingLeft: =4.19
-            PaddingRight: =2.82
-            PaddingTop: =2.82
-            Size: =5.63
-            Text: =ThisItem.field_4
-            Width: =158.31
-            Y: =21.77
-            ZIndex: =4
+            TextEmailMessage2_1 As text:
+                AccessibleLabel: ="Agregar un mensaje"
+                BorderColor: =RGBA(0, 89, 178, 1)
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =CorreosConcatenados2
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                FocusedBorderThickness: =4
+                Height: =31
+                HintText: ="Link Cuestionario"
+                HoverBorderColor: =RGBA(0, 89, 178, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
+                Mode: =TextMode.MultiLine
+                PaddingBottom: =4.19
+                PaddingLeft: =10.05
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                Size: =10
+                TabIndex: =If(PeopleBrowseGallery2.Visible, -1, 0)
+                Width: =634
+                Y: =
+                ZIndex: =2
 
-    TextInputSearch_2 As text:
-        BorderThickness: =3
-        Color: =RGBA(0, 0, 0, 1)
-        Default: =""
-        DisabledBorderColor: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(0, 0, 0, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Font: =Font.Lato
-        Height: =39.35
-        HintText: ="Buscar y Seleccionar Usuario "
-        HoverBorderColor: =RGBA(255, 255, 255, 1)
-        HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =ColorFade(RGBA(190, 202, 226, 0), 30%)
-        PaddingBottom: =4.19
-        PaddingLeft: =10.05
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        RadiusBottomLeft: =20
-        RadiusBottomRight: =20
-        RadiusTopLeft: =20
-        RadiusTopRight: =20
-        Reset: =
-        Size: =6.76
-        Width: =162.82
-        X: =185.35
-        Y: =470.47
-        ZIndex: =16
+            DatePicker3 As datepicker:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                CalendarHeaderFill: =RGBA(0, 51, 102, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Height: =36
+                HoverDateFill: =RGBA(153, 205, 255, 1)
+                IconBackground: =RGBA(0, 51, 102, 1)
+                PaddingBottom: =4.19
+                PaddingLeft: =10.05
+                PaddingRight: =2.82
+                SelectedDateFill: =RGBA(0, 51, 102, 1)
+                Size: =10
+                Width: =634
+                Y: =64
+                ZIndex: =3
 
-    TextInputSearch_3 As text:
-        BorderThickness: =3
-        Color: =RGBA(0, 0, 0, 1)
-        Default: =""
-        DisabledBorderColor: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(0, 0, 0, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Font: =Font.Lato
-        Height: =39.35
-        HintText: ="Buscar y Seleccionar Curso"
-        HoverBorderColor: =RGBA(255, 255, 255, 1)
-        HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =ColorFade(RGBA(190, 202, 226, 0), 30%)
-        PaddingBottom: =4.19
-        PaddingLeft: =10.05
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        RadiusBottomLeft: =20
-        RadiusBottomRight: =20
-        RadiusTopLeft: =20
-        RadiusTopRight: =20
-        Reset: =
-        Size: =6.76
-        Width: =162.82
-        X: =15.21
-        Y: =470.47
-        ZIndex: =17
+        Container54 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =780
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =316
+            X: =4
+            Y: =354
+            ZIndex: =6
 
-    Icon1_1 As icon.Reload:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =30.14
-        Icon: =Icon.Reload
-        OnSelect: |-
-            =UpdateContext({CorreosConcatenados: ""});UpdateContext({CorreosConcatenados1: ""});UpdateContext({CorreosConcatenados2: ""});Reset(TextInputSearch_3);
-            Reset(TextInputSearch_2);Reset(TextEmailMessage2_1);Reset(TextEmailMessage2_2)
-        Width: =35.49
-        X: =314.37
-        Y: =174.13
-        ZIndex: =19
+            Gallery1 As gallery.galleryVertical:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                BorderThickness: =3
+                DelayItemLoading: =true
+                Height: =776
+                Items: |-
+                    =
+                    Search('Ofertas de Entrenamientos',TextInputSearch_3.Text,field_2)
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                ShowNavigation: =true
+                TemplatePadding: =4.19
+                TemplateSize: =107.15
+                Width: =311
+                X: =1
+                Y: =4
+                ZIndex: =1
 
-    Button3 As button:
-        BorderThickness: =0
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(152, 208, 70, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =73.67
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        OnSelect: |+
-            =Set(varimagen,Image3.Image);
-            Set(EnvioCorreo,"<!DOCTYPE html>
-            <html>
-            <head>
-            <title>¡Importante! ENTRENAMIENTOS PARTEQUIPOS</title>
-            <style>
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #f2f2f2;
-            }
-            h1 {
-                color: #333333;
-                text-align: center;
-            }
-            .message {
-                background-color: #ffffff;
-                border-radius: 10px;
-                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-                padding: 20px;
-                margin: 20px auto;
-                max-width: 600px;
-            }
-            .message img {
-                display: block;
-                margin: 0 auto;
-            }
-            </style>
-            </head>
-            <body>
-            <div class='message'>
-            <img src='https://i.imgur.com/38jHGbX.png' alt='Imagen' style='display: block; margin: 0 auto; max-width: 100%; height: auto;' /><br/>
-            <h1>¡Atención! ENTRENAMIENTO PARTEQUIPOS / "&Label1.Text&"⚡️🚀</h1>
-            <p>Estimado Colaborador,<br/><br/>
-            Le notificamos sobre el curso y la prueba Asignada:<br/><br/>
-            <strong>Links al final del correo, encontrará el link del Curso y de la Prueba</strong>
-            </p>
-            <p>Por favor, revisen este mensaje con detenimiento y realice la actividad en el tiempo contemplado. 🔍🕒 </p>
-            <p>Recuerde que: "&TextEmailMessage2_2.Text&"🔍🕒⚡️🚀 </p>
-            <p>Saludos,<br/>Soporte y Desarrollos Power Platform PARTEQUIPOS 💻🌟</p>
-            <h1>
-                <p>Url Recurso: <a href='" & Label1_1.Text & "' target='_blank'>Link al Recurso</a></p>
-                <p>Url Cuestionario: <a href='" & Label1_2.Text & "' target='_blank'>Link al Cuestionario</a></p>⚡️🚀
-            </h1>
-            <h1>¡Atención! ENTRENAMIENTO PARTEQUIPOS Fecha Limite: "&DatePicker3.SelectedDate&"⚡️🚀</h1>
-            </div>
-            </body>
-            </html>");
-            
-            Office365Outlook.SendEmailV2(Label3.Text, TextEmailSubject2.Text, EnvioCorreo , {Importance:"High",Bcc:"analista.mantenimiento@partequipos.com",Cc:"auxiliar.garantiasbg@partequipos.com"});           
-            Reset(TextEmailSubject2);           
-            Reset(TextEmailMessage2);
-            Reset(TextInputSearch_2);
-            Reset(TextInputSearch_3);
-            Reset(TextEmailMessage2_2);
-            UpdateContext({CorreosConcatenados: ""});
-            UpdateContext({CorreosConcatenados1: ""});
-            Navigate(OpportunityMessageScreen, ScreenTransition.Fade)
-            
-        PaddingBottom: =4.19
-        PaddingLeft: =4.19
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        RadiusBottomLeft: =1
-        RadiusBottomRight: =1
-        RadiusTopLeft: =1
-        RadiusTopRight: =1
-        Size: =11.27
-        Text: ="Enviar"
-        Width: =101.41
-        X: =259.15
-        ZIndex: =22
+                Label1 As label:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =30.97
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =4.19
+                    PaddingLeft: =4.19
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    Size: =5.63
+                    Text: =ThisItem.field_2
+                    Width: =270
+                    Y: =4.19
+                    ZIndex: =1
 
-    Image3 As image:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =29.3
-        Image: ='Captura de pantalla 2024-01-12 082706'
-        ImagePosition: =ImagePosition.Fill
-        Width: =227.61
-        X: =120.56
-        Y: =78.69
-        ZIndex: =23
+                Label1_1 As label:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =20
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =4.19
+                    PaddingLeft: =4.19
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    Size: =4.51
+                    Text: =ThisItem.Adjunto
+                    Width: =270
+                    Y: =41.86
+                    ZIndex: =2
 
-    TextEmailMessage2_1 As text:
-        AccessibleLabel: ="Agregar un mensaje"
-        BorderColor: =RGBA(0, 89, 178, 1)
-        BorderThickness: =2
-        Color: =RGBA(0, 0, 0, 1)
-        Default: =CorreosConcatenados2
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        FocusedBorderThickness: =4
-        Height: =51.9
-        HintText: ="Link Cuestionario"
-        HoverBorderColor: =RGBA(0, 89, 178, 1)
-        HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =RGBA(153, 205, 255, 1)
-        Mode: =TextMode.MultiLine
-        PaddingBottom: =4.19
-        PaddingLeft: =10.05
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        Size: =6.76
-        TabIndex: =If(PeopleBrowseGallery2.Visible, -1, 0)
-        Width: =330.14
-        X: =18.03
-        Y: =376.71
-        ZIndex: =24
+                Label1_2 As label:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =30.97
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =4.19
+                    PaddingLeft: =4.19
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    Size: =4.51
+                    Text: =ThisItem.Prueba
+                    Width: =270
+                    Y: =76.18
+                    ZIndex: =3
 
-    Group1 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =24
+                Icon3 As icon.Folder:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(255, 255, 0, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(244, 244, 244, 1)
+                    Fill: =RGBA(0, 0, 0, 1)
+                    Height: =34.32
+                    Icon: =Icon.Post
+                    OnSelect: |-
+                        =Select(Parent);
+                        
+                        UpdateContext({CorreoSeleccionado1: Gallery1.Selected.Label1_1.Text});
+                        UpdateContext({CorreosConcatenados1: Concatenate(TextEmailMessage2.Text, "", CorreoSeleccionado1)});
+                        
+                        UpdateContext({CorreoSeleccionado2: Gallery1.Selected.Label1_2.Text});
+                        UpdateContext({CorreosConcatenados2: Concatenate(TextEmailMessage2.Text, "", CorreoSeleccionado2)})
+                    Width: =19.72
+                    X: =270
+                    Y: =27
+                    ZIndex: =4
 
-        Rectangle1_8 As rectangle:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Fill: =RGBA(6, 26, 84, 1)
-            Height: =73.67
-            OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
-            TabIndex: =0
-            Width: =55.21
-            ZIndex: =20
+        Container54_1 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =779
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =318
+            X: =320
+            Y: =354
+            ZIndex: =7
 
-        icon1_5 As icon.ChevronLeft:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =73.67
-            Icon: =Icon.ChevronLeft
-            OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
-            TabIndex: =0
-            Width: =35.49
-            ZIndex: =21
+            Container56 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Height: =775
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =318
+                ZIndex: =3
 
-    DatePicker3 As datepicker:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        CalendarHeaderFill: =RGBA(0, 51, 102, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =31.81
-        HoverDateFill: =RGBA(153, 205, 255, 1)
-        IconBackground: =RGBA(0, 51, 102, 1)
-        PaddingBottom: =4.19
-        PaddingLeft: =10.05
-        PaddingRight: =2.82
-        SelectedDateFill: =RGBA(0, 51, 102, 1)
-        Size: =8.45
-        Width: =331.83
-        X: =18.03
-        Y: =428.62
-        ZIndex: =25
+                Gallery1_1 As gallery.galleryVertical:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    BorderThickness: =3
+                    DelayItemLoading: =true
+                    Height: =612
+                    Items: =Search([@'Usuarios Entrenamientos'],TextInputSearch_2.Text,field_4)
+                    Layout: =Layout.Vertical
+                    LayoutMinHeight: =287
+                    LayoutMinWidth: =320
+                    LoadingSpinner: =LoadingSpinner.Data
+                    ShowNavigation: =true
+                    TemplatePadding: =4.19
+                    TemplateSize: =91
+                    Width: =
+                    X: =
+                    Y: =
+                    ZIndex: =1
 
-    TextEmailMessage2_2 As text:
-        AccessibleLabel: ="Agregar un mensaje"
-        BorderColor: =RGBA(0, 89, 178, 1)
-        BorderThickness: =2
-        Color: =RGBA(0, 0, 0, 1)
-        Default: =CorreosConcatenados2
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        FocusedBorderThickness: =4
-        Height: =51.9
-        HintText: ="Escriba comentarios"
-        HoverBorderColor: =RGBA(0, 89, 178, 1)
-        HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =RGBA(153, 205, 255, 1)
-        Mode: =TextMode.MultiLine
-        PaddingBottom: =4.19
-        PaddingLeft: =10.05
-        PaddingRight: =2.82
-        PaddingTop: =2.82
-        Size: =6.76
-        TabIndex: =If(PeopleBrowseGallery2.Visible, -1, 0)
-        Width: =331.83
-        X: =18.03
-        Y: =211.8
-        ZIndex: =26
+                    Label1_3 As label:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =34
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =4.19
+                        PaddingLeft: =4.19
+                        PaddingRight: =2.82
+                        PaddingTop: =2.82
+                        Size: =5.63
+                        Text: =ThisItem.field_0
+                        Width: =303
+                        ZIndex: =1
+
+                    Label1_4 As label:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =25
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =4.19
+                        PaddingLeft: =4.19
+                        PaddingRight: =2.82
+                        PaddingTop: =2.82
+                        Size: =5.63
+                        Text: =ThisItem.field_1
+                        Width: =303
+                        Y: =66
+                        ZIndex: =2
+
+                    Icon2 As icon.Mail:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Color: =RGBA(255, 255, 0, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Fill: =RGBA(0, 0, 0, 1)
+                        Height: =32.65
+                        Icon: =Icon.Mail
+                        OnSelect: |-
+                            =Select(Parent);UpdateContext({CorreoSeleccionado: Gallery1_1.Selected.Label1_4.Text});
+                            UpdateContext({CorreosConcatenados: Concatenate(Label3.Text, CorreoSeleccionado,"; ")})
+                        Width: =21.41
+                        X: =282
+                        Y: =34
+                        ZIndex: =3
+
+                    TextCanvas1 As Texto:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =23
+                        Size: =10
+                        Text: =ThisItem.field_4
+                        Width: =282
+                        X: =0
+                        Y: =36
+                        ZIndex: =4
+
+        Container55 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =27
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =320
+            X: =320
+            Y: =312
+            ZIndex: =8
+
+            TextInputSearch_2 As text:
+                BorderThickness: =3
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =""
+                DisabledBorderColor: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Font: =Font.Lato
+                Height: =26
+                HintText: ="Buscar y Seleccionar Usuario "
+                HoverBorderColor: =RGBA(255, 255, 255, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =ColorFade(RGBA(190, 202, 226, 0), 30%)
+                PaddingBottom: =4.19
+                PaddingLeft: =10.05
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Reset: =
+                Size: =6.76
+                Width: =317
+                X: =3
+                Y: =
+                ZIndex: =1
+
+        Container58 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =27
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =316
+            X: =4
+            Y: =312
+            ZIndex: =9
+
+            TextInputSearch_3 As text:
+                BorderThickness: =3
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =""
+                DisabledBorderColor: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Font: =Font.Lato
+                Height: =27
+                HintText: ="Buscar y Seleccionar Curso"
+                HoverBorderColor: =RGBA(255, 255, 255, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =ColorFade(RGBA(190, 202, 226, 0), 30%)
+                PaddingBottom: =4.19
+                PaddingLeft: =10.05
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Reset: =
+                Size: =6.76
+                Width: =299
+                X: =17
+                Y: =
+                ZIndex: =1
 
