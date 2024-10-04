@@ -54,8 +54,8 @@ ActiveWorkOrderScreen As screen:
                 Size: =15.77
                 Text: ="Asignaciones Activas"
                 Width: =327
-                X: =133
-                Y: =40
+                X: =131
+                Y: =25
                 ZIndex: =2
 
             Group5 As group:
@@ -99,8 +99,8 @@ ActiveWorkOrderScreen As screen:
                 Icon: =Icon.Add
                 OnSelect: =Navigate(AddNewOpportunityScreen, ScreenTransition.Fade)
                 Width: =33.24
-                X: =572
-                Y: =40
+                X: =573
+                Y: =32
                 ZIndex: =6
 
             Icon8_1 As icon.Check:
@@ -125,8 +125,8 @@ ActiveWorkOrderScreen As screen:
                     
                     Reset(ComboBox1_4); Reset(ComboBox1_5);Reset(ComboBox1_6);Reset(ComboBox1_7);Reset(DatePicker2_1)
                 Width: =40.56
-                X: =524
-                Y: =50
+                X: =519
+                Y: =40
                 ZIndex: =7
 
             Icon9_1 As icon.Sync:
@@ -140,8 +140,8 @@ ActiveWorkOrderScreen As screen:
                     =Set(gallSelected,Blank());
                     Reset(ComboBox1_4); Reset(ComboBox1_5);Reset(ComboBox1_6);Reset(ComboBox1_7);Reset(DatePicker2_1);Reset(TextInputSearch_1)
                 Width: =30.99
-                X: =489
-                Y: =50
+                X: =476
+                Y: =41
                 ZIndex: =8
 
         Container12 As groupContainer.manualLayoutContainer:
