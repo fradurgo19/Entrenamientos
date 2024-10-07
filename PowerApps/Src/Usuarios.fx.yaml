@@ -64,19 +64,6 @@ Usuarios As screen:
                 Y: =
                 ZIndex: =3
 
-            Icon6_3 As icon.Add:
-                BorderColor: =RGBA(0, 89, 178, 1)
-                Color: =RGBA(255, 255, 255, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(244, 244, 244, 1)
-                Height: =66.97
-                Icon: =Icon.Add
-                OnSelect: =Navigate(CustomerOverviewScreen_2, ScreenTransition.Fade)
-                Width: =52.96
-                X: =567
-                Y: =9
-                ZIndex: =4
-
             icon2_5 As icon.Search:
                 BorderColor: =RGBA(0, 89, 178, 1)
                 Color: =RGBA(255, 255, 255, 1)
@@ -90,20 +77,6 @@ Usuarios As screen:
                 X: =493
                 Y: =14
                 ZIndex: =5
-
-            icon1_12 As icon.ChevronLeft:
-                BorderColor: =RGBA(0, 89, 178, 1)
-                Color: =RGBA(255, 255, 255, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(244, 244, 244, 1)
-                Height: =66.97
-                Icon: =Icon.ChevronLeft
-                OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
-                TabIndex: =0
-                Width: =40.56
-                X: =17
-                Y: =15
-                ZIndex: =6
 
         Container17_2 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
@@ -700,7 +673,7 @@ Usuarios As screen:
                 BorderColor: =RGBA(0, 89, 178, 1)
                 Fill: =RGBA(54, 166, 182, 1)
                 Height: =69.1
-                OnSelect: =Navigate(EventScreen, ScreenTransition.Cover)
+                OnSelect: =Navigate(Login, ScreenTransition.Cover)
                 TabIndex: =0
                 Width: =640
                 Y: |
@@ -726,7 +699,7 @@ Usuarios As screen:
                 PressedColor: =TextBox1_27.Color
                 PressedFill: =TextBox1_27.Fill
                 Size: =15.77
-                Text: ="USUARIOS"
+                Text: ="Login"
                 Width: =254.65
                 X: =30
                 Y: =9
@@ -739,7 +712,7 @@ Usuarios As screen:
                 DisabledColor: =RGBA(244, 244, 244, 1)
                 Height: =50.23
                 Icon: =Icon.ArrowRight
-                OnSelect: =Navigate(EventScreen, ScreenTransition.Cover)
+                OnSelect: =Navigate(Login, ScreenTransition.Cover)
                 TabIndex: =0
                 Width: =46.2
                 X: =573

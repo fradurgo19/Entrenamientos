@@ -8074,66 +8074,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Usuarios.Container15_1.Container16_1.Icon6_3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Usuarios.Container15_1.Container16_1.Icon6_3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Usuarios",
-                "type": "Usuarios.Container15_1.Container16_1.Icon6_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Usuarios.Container15_1.Container16_1.Icon6_3.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Usuarios.Container15_1.Container16_1.Icon6_3.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Usuarios",
-                "type": "Usuarios.Container15_1.Container16_1.Icon6_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Usuarios.Container15_1.Container16_1.icon2_5.AccessibleLabel"
                 }
               ],
@@ -8147,36 +8087,6 @@
                 "member": "AccessibleLabel",
                 "module": "Usuarios",
                 "type": "Usuarios.Container15_1.Container16_1.icon2_5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Usuarios.Container15_1.Container16_1.icon1_12.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Usuarios.Container15_1.Container16_1.icon1_12.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Usuarios",
-                "type": "Usuarios.Container15_1.Container16_1.icon1_12"
               }
             }
           ],
@@ -8805,36 +8715,6 @@
               },
               "properties": {
                 "member": "_selectedUser",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.varUsuarioLogueado"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.varUsuarioLogueado",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "varUsuarioLogueado",
                 "module": "App",
                 "type": "App"
               }
