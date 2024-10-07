@@ -259,8 +259,8 @@
                         PressedFill: =TextBox4_156.Fill
                         Text: ="TIPO DE ACTIVIDAD"
                         Width: =239
-                        X: =189
-                        Y: =79
+                        X: =284
+                        Y: =72
                         ZIndex: =5
 
                     TextBox4_157 As label:
@@ -374,8 +374,8 @@
                         PressedFill: =TextBox4_162.Fill
                         Text: ="ESTADO DEL RECURSO"
                         Width: =320
-                        X: =208.45
-                        Y: =138.97
+                        X: =280
+                        Y: =139
                         ZIndex: =10
 
                     TextBox4_166 As label:
@@ -398,8 +398,8 @@
                         Text: =GalleryCustumer.Selected.field_7.Value
                         VerticalAlign: =VerticalAlign.Top
                         Width: =200
-                        X: =208.45
-                        Y: =165.75
+                        X: =284
+                        Y: =171
                         ZIndex: =11
 
                     HtmlText1 As htmlViewer:
@@ -417,7 +417,7 @@
                         Tooltip: ="Link Tema"
                         Width: =262
                         X: =22.54
-                        Y: =234.4
+                        Y: =251
                         ZIndex: =12
 
                     TextBox4_161 As label:
@@ -461,8 +461,8 @@
                         PressedFill: =TextBox1_46.Fill
                         Text: ="PRUEBA"
                         Width: =237
-                        X: =208.82
-                        Y: =208.01
+                        X: =363
+                        Y: =242
                         ZIndex: =15
 
                     TextBox4_167 As label:
@@ -495,7 +495,7 @@
                     HtmlText1_1 As htmlViewer:
                         Color: =RGBA(0, 0, 0, 0.70196078)
                         Font: =Font.'Lato Light'
-                        Height: =168.27
+                        Height: =133
                         HoverBorderColor: =HtmlText1_1.BorderColor
                         HtmlText: =GalleryCustumer.Selected.Prueba
                         PaddingBottom: =4.19
@@ -506,8 +506,8 @@
                         Size: =8.45
                         Tooltip: ="Link Tema"
                         Width: =156.06
-                        X: =189.86
-                        Y: =242.77
+                        X: =362
+                        Y: =276
                         ZIndex: =19
 
                 DataCard4 As dataCard.blankCard:

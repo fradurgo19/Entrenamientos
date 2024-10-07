@@ -6244,19 +6244,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Rectangle1_4.AccessibleLabel"
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container79.Form4.Marca_DataCard2.DataCardValue55.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Rectangle1_4.AccessibleLabel",
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container79.Form4.Marca_DataCard2.DataCardValue55.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "CustomerOverviewScreen_1",
-                "type": "CustomerOverviewScreen_1.Rectangle1_4"
+                "type": "CustomerOverviewScreen_1.Container77.Container79.Form4.Marca_DataCard2.DataCardValue55"
               }
             }
           ],
@@ -6274,19 +6274,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Rectangle1_9.AccessibleLabel"
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container79.Form4.Modelo_DataCard1.DataCardValue48.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Rectangle1_9.AccessibleLabel",
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container79.Form4.Modelo_DataCard1.DataCardValue48.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "CustomerOverviewScreen_1",
-                "type": "CustomerOverviewScreen_1.Rectangle1_9"
+                "type": "CustomerOverviewScreen_1.Container77.Container79.Form4.Modelo_DataCard1.DataCardValue48"
               }
             }
           ],
@@ -6304,19 +6304,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.icon1_7.AccessibleLabel"
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container79.Form4.Actividades_DataCard1.DataCardValue44.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.icon1_7.AccessibleLabel",
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container79.Form4.Actividades_DataCard1.DataCardValue44.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "CustomerOverviewScreen_1",
-                "type": "CustomerOverviewScreen_1.icon1_7"
+                "type": "CustomerOverviewScreen_1.Container77.Container79.Form4.Actividades_DataCard1.DataCardValue44"
               }
             }
           ],
@@ -6334,19 +6334,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.Actividades_DataCard1.DataCardValue44.AccessibleLabel"
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container18.GalleryCustumer.Container81.Icon1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.Actividades_DataCard1.DataCardValue44.AccessibleLabel",
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container18.GalleryCustumer.Container81.Icon1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "CustomerScreen",
+                "type": "CustomerScreen.Container15.Container18.GalleryCustumer.Container81.Icon1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container18.GalleryCustumer.Container81.Icon1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CustomerScreen.Container15.Container18.GalleryCustumer.Container81.Icon1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "CustomerOverviewScreen_1",
-                "type": "CustomerOverviewScreen_1.Form4.Actividades_DataCard1.DataCardValue44"
+                "module": "CustomerScreen",
+                "type": "CustomerScreen.Container15.Container18.GalleryCustumer.Container81.Icon1"
               }
             }
           ],
@@ -6364,19 +6394,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.Marca_DataCard2.DataCardValue55.AccessibleLabel"
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container78.icon1_7.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.Marca_DataCard2.DataCardValue55.AccessibleLabel",
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container78.icon1_7.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "CustomerOverviewScreen_1",
-                "type": "CustomerOverviewScreen_1.Form4.Marca_DataCard2.DataCardValue55"
+                "type": "CustomerOverviewScreen_1.Container77.Container78.icon1_7"
               }
             }
           ],
@@ -6394,19 +6424,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.Modelo_DataCard1.DataCardValue48.AccessibleLabel"
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container78.Rectangle1_4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.Modelo_DataCard1.DataCardValue48.AccessibleLabel",
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container78.Rectangle1_4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "CustomerOverviewScreen_1",
-                "type": "CustomerOverviewScreen_1.Form4.Modelo_DataCard1.DataCardValue48"
+                "type": "CustomerOverviewScreen_1.Container77.Container78.Rectangle1_4"
               }
             }
           ],
@@ -6424,19 +6454,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.Consecutivo_DataCard1.DataCardValue45.AccessibleLabel"
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container79.Form4.'Realiza Curso_DataCard1'.DataCardValue54.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.Consecutivo_DataCard1.DataCardValue45.AccessibleLabel",
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container79.Form4.'Realiza Curso_DataCard1'.DataCardValue54.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "CustomerOverviewScreen_1",
-                "type": "CustomerOverviewScreen_1.Form4.Consecutivo_DataCard1.DataCardValue45"
+                "type": "CustomerOverviewScreen_1.Container77.Container79.Form4.'Realiza Curso_DataCard1'.DataCardValue54"
               }
             }
           ],
@@ -6454,19 +6484,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.Alcance_DataCard1.DataCardValue49.AccessibleLabel"
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container79.Form4.Prueba_DataCard1.DataCardValue53.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.Alcance_DataCard1.DataCardValue49.AccessibleLabel",
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container79.Form4.Prueba_DataCard1.DataCardValue53.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "CustomerOverviewScreen_1",
-                "type": "CustomerOverviewScreen_1.Form4.Alcance_DataCard1.DataCardValue49"
+                "type": "CustomerOverviewScreen_1.Container77.Container79.Form4.Prueba_DataCard1.DataCardValue53"
               }
             }
           ],
@@ -6484,19 +6514,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.'Estado del Recurso_DataCard1'.DataCardValue51.AccessibleLabel"
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container79.Form4.Adjunto_DataCard1.DataCardValue52.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.'Estado del Recurso_DataCard1'.DataCardValue51.AccessibleLabel",
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container79.Form4.Adjunto_DataCard1.DataCardValue52.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "CustomerOverviewScreen_1",
-                "type": "CustomerOverviewScreen_1.Form4.'Estado del Recurso_DataCard1'.DataCardValue51"
+                "type": "CustomerOverviewScreen_1.Container77.Container79.Form4.Adjunto_DataCard1.DataCardValue52"
               }
             }
           ],
@@ -6514,19 +6544,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.Recurso_DataCard1.DataCardValue50.AccessibleLabel"
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container79.Form4.Recurso_DataCard1.DataCardValue50.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.Recurso_DataCard1.DataCardValue50.AccessibleLabel",
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container79.Form4.Recurso_DataCard1.DataCardValue50.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "CustomerOverviewScreen_1",
-                "type": "CustomerOverviewScreen_1.Form4.Recurso_DataCard1.DataCardValue50"
+                "type": "CustomerOverviewScreen_1.Container77.Container79.Form4.Recurso_DataCard1.DataCardValue50"
               }
             }
           ],
@@ -6544,19 +6574,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.Adjunto_DataCard1.DataCardValue52.AccessibleLabel"
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container79.Form4.'Estado del Recurso_DataCard1'.DataCardValue51.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.Adjunto_DataCard1.DataCardValue52.AccessibleLabel",
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container79.Form4.'Estado del Recurso_DataCard1'.DataCardValue51.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "CustomerOverviewScreen_1",
-                "type": "CustomerOverviewScreen_1.Form4.Adjunto_DataCard1.DataCardValue52"
+                "type": "CustomerOverviewScreen_1.Container77.Container79.Form4.'Estado del Recurso_DataCard1'.DataCardValue51"
               }
             }
           ],
@@ -6574,19 +6604,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.Prueba_DataCard1.DataCardValue53.AccessibleLabel"
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container79.Form4.Alcance_DataCard1.DataCardValue49.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.Prueba_DataCard1.DataCardValue53.AccessibleLabel",
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container79.Form4.Alcance_DataCard1.DataCardValue49.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "CustomerOverviewScreen_1",
-                "type": "CustomerOverviewScreen_1.Form4.Prueba_DataCard1.DataCardValue53"
+                "type": "CustomerOverviewScreen_1.Container77.Container79.Form4.Alcance_DataCard1.DataCardValue49"
               }
             }
           ],
@@ -6604,49 +6634,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.'Realiza Curso_DataCard1'.DataCardValue54.AccessibleLabel"
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container79.Form4.Consecutivo_DataCard1.DataCardValue45.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.'Realiza Curso_DataCard1'.DataCardValue54.AccessibleLabel",
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container79.Form4.Consecutivo_DataCard1.DataCardValue45.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "CustomerOverviewScreen_1",
-                "type": "CustomerOverviewScreen_1.Form4.'Realiza Curso_DataCard1'.DataCardValue54"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.icon3_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.icon3_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "CustomerOverviewScreen_1",
-                "type": "CustomerOverviewScreen_1.icon3_1"
+                "type": "CustomerOverviewScreen_1.Container77.Container79.Form4.Consecutivo_DataCard1.DataCardValue45"
               }
             }
           ],
@@ -8823,19 +8823,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.Item"
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container79.Form4.Item"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CustomerOverviewScreen_1.Form4.Item",
+                  "fullyQualifiedName": "CustomerOverviewScreen_1.Container77.Container79.Form4.Item",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Item",
                 "module": "CustomerOverviewScreen_1",
-                "type": "CustomerOverviewScreen_1.Form4"
+                "type": "CustomerOverviewScreen_1.Container77.Container79.Form4"
               }
             }
           ],

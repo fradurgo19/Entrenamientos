@@ -489,26 +489,48 @@ CustomerScreen As screen:
 
                 Container75 As groupContainer.manualLayoutContainer:
                     DropShadow: =DropShadow.Light
-                    Height: =43
+                    Height: =36
                     RadiusBottomLeft: =4
                     RadiusBottomRight: =4
                     RadiusTopLeft: =4
                     RadiusTopRight: =4
-                    Width: =61
-                    X: =567
-                    Y: =21
+                    Width: =55
+                    X: =571
+                    Y: =55
                     ZIndex: =11
 
                     ButtonCanvas1 As Botón:
                         Appearance: ='ButtonCanvas.Appearance'.Primary
                         BasePaletteColor: =RGBA(156, 220, 79, 1)
                         DisplayMode: =DisplayMode.Edit
-                        Height: =42
+                        Height: =36
                         OnSelect: =Launch(TextBox1_2.Text)
                         Text: ="Ir al Recurso"
-                        Width: =61
+                        Width: =55
                         X: =0
                         Y: =0
+                        ZIndex: =1
+
+                Container81 As groupContainer.manualLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    Height: =29
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Width: =55
+                    X: =571
+                    Y: =9
+                    ZIndex: =12
+
+                    Icon1 As icon.Edit:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =29
+                        Icon: =Icon.Edit
+                        OnSelect: =Navigate(CustomerOverviewScreen, ScreenTransition.Fade)
+                        Width: =55
                         ZIndex: =1
 
         Container19 As groupContainer.manualLayoutContainer:
