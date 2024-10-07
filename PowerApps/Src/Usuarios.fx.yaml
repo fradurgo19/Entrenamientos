@@ -6,7 +6,9 @@ Usuarios As screen:
         UpdateContext({ResetSearch:false});
         If(IsEmpty(CustomerFeedbackList), ClearCollect(CustomerFeedbackList, CustomerFeedback));
         If(IsEmpty(CustomerOpportunityList), ClearCollect(CustomerOpportunityList, CustomerOpportunity));
-        ClearCollect(colAsignaciones,'Asignación Entrenamientos')
+        ClearCollect(colAsignaciones,'Asignación Entrenamientos');
+        Reset(TextInputCanvas1);
+        Reset(TextInputCanvas1_1)
     Width: =Max(App.Width, App.DesignWidth)
 
     Container15_1 As groupContainer.manualLayoutContainer:
@@ -71,7 +73,7 @@ Usuarios As screen:
                 DisabledColor: =RGBA(244, 244, 244, 1)
                 Height: =61
                 Icon: =Icon.Reload
-                OnSelect: =Reset(TextInputSearch_5); Reset(ComboboxCanvas2_2);Reset(DatePickerCanvas1_1);Reset(GalleryCustumer_1);Reset(ComboboxCanvas2_3)
+                OnSelect: =Reset(TextInputSearch_5); Reset(ComboboxCanvas2_2);Reset(DatePickerCanvas1_1);Reset(GalleryCustumer_1);Reset(ComboboxCanvas2_3);Reset(DatePickerCanvas1_2)
                 TabIndex: =0
                 Width: =50
                 X: =493
@@ -191,7 +193,7 @@ Usuarios As screen:
                     DisabledColor: =RGBA(0, 0, 0, 1)
                     Height: =49
                     Icon: =Icon.Reload
-                    OnSelect: =Reset(TextInputSearch_5); Reset(ComboboxCanvas2_2);Reset(DatePickerCanvas1_1);Reset(GalleryCustumer_1);Reset(ComboboxCanvas2_3)
+                    OnSelect: =Reset(TextInputSearch_5); Reset(ComboboxCanvas2_2);Reset(DatePickerCanvas1_1);Reset(GalleryCustumer_1);Reset(ComboboxCanvas2_3);Reset(DatePickerCanvas1_2)
                     PaddingBottom: =5
                     PaddingLeft: =5
                     PaddingRight: =5
