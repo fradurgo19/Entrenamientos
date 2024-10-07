@@ -49,6 +49,8 @@ MenuScreen As screen:
                   }</style><path d='M 0,500 L 0,475 C 148.07142857142856,469.7678571428571 296.1428571428571,464.5357142857143 419,465 C 541.8571428571429,465.4642857142857 639.5,471.62500000000006 740,437 C 840.5,402.37499999999994 943.8571428571429,326.96428571428567 1061,289 C 1178.142857142857,251.0357142857143 1309.0714285714284,250.51785714285717 1440,250 L 1440,500 L 0,500 Z' stroke='none' stroke-width='0' fill='url(#gradient)' fill-opacity='0.265' class='transition-all duration-300 ease-in-out delay-150 path-1' transform='rotate(-180 720 250)'></path></svg>")
     Height: =Max(App.Height, App.DesignHeight)
     ImagePosition: =ImagePosition.Fill
+    OnVisible: |
+        =
     Width: =Max(App.Width, App.DesignWidth)
 
     Container6 As groupContainer.manualLayoutContainer:
@@ -492,7 +494,7 @@ MenuScreen As screen:
                 Height: =44.37
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-                OnSelect: =Navigate(EventScreen, ScreenTransition.Fade)
+                OnSelect: =Navigate(Login, ScreenTransition.Fade)
                 PaddingBottom: =4.19
                 PaddingLeft: =4.19
                 PaddingRight: =2.82
@@ -502,7 +504,7 @@ MenuScreen As screen:
                 RadiusTopLeft: =30
                 RadiusTopRight: =30
                 Size: =13.52
-                Text: ="Usuarios"
+                Text: ="Login"
                 Visible: |+
                     =User().Email = "analista.mantenimiento@partequipos.com" || 
                     User().Email = "jestrada@partequipos.com" || 
