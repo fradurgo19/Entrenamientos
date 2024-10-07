@@ -368,6 +368,7 @@ Login As screen:
                                 Notify("Error en Contraseña", NotificationType.Error, 2000),
                                 
                                 // Si todo es correcto
+                                Set(varUsuarioLogueado, TextInputCanvas1.Value), // Define la variable con el usuario logueado
                                 Navigate(Usuarios, ScreenTransition.Fade)
                             )
                         )
