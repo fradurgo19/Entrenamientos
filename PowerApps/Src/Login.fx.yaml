@@ -50,7 +50,7 @@ Login As screen:
     Height: =Max(App.Height, App.DesignHeight)
     ImagePosition: =ImagePosition.Fill
     OnVisible: |-
-        =Set(pw_visible,false);ClearCollect(colUsuarios, 
+        =Set(pw_visible,true);ClearCollect(colUsuarios, 
           {Usuario: "diegorios_25@hotmail.com", Contrasena: "1023925002"}, 
           {Usuario: "tiqueducuaraluis@gmail.com", Contrasena: "1023939561"}, 
           {Usuario: "camilomanrrique7@gmail.com", Contrasena: "1007671256"}, 
