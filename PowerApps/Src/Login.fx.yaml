@@ -234,7 +234,7 @@ Login As screen:
                     DisplayMode: =DisplayMode.Edit
                     FontSize: =18
                     Height: =67
-                    Placeholder: ="Ingrese Usuario"
+                    Placeholder: ="Ingrese Usuario (Correo)"
                     Width: =388
                     X: =0
                     Y: =4
@@ -311,6 +311,7 @@ Login As screen:
                     Height: =72
                     Size: =18
                     Text: ="Contraseña"
+                    Weight: ='TextCanvas.Weight'.Semibold
                     Width: =394
                     X: =0
                     Y: =0
@@ -334,6 +335,7 @@ Login As screen:
                     Height: =72
                     Size: =18
                     Text: ="Usuario"
+                    Weight: ='TextCanvas.Weight'.Semibold
                     Width: =394
                     X: =0
                     Y: =0
