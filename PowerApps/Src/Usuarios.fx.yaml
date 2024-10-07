@@ -296,7 +296,7 @@ Usuarios As screen:
                             (Calificacion.Value = ComboboxCanvas2_3.Selected.Value || IsBlank(ComboboxCanvas2_3.Selected.Value)) &&
                             (FechaLimite <= DatePickerCanvas1_1.SelectedDate || IsBlank(DatePickerCanvas1_1.SelectedDate)) &&
                             (FechaAsignacion <= DatePickerCanvas1_2.SelectedDate || IsBlank(DatePickerCanvas1_2.SelectedDate)) &&
-                            (Usuarios.Value = varUsuarioLogueado)  // Asegúrate de que el campo corresponde al usuario
+                            (Usuarios_x003a_Correo.Value = varUsuarioLogueado)  // Asegúrate de que el campo corresponde al usuario
                         ),
                         Modified,
                         SortOrder.Descending
