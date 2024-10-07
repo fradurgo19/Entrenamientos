@@ -230,8 +230,9 @@ Login As screen:
                 ZIndex: =12
 
                 "TextInputCanvas1 As 'Entrada de texto'":
+                    BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
-                    FontSize: =15
+                    FontSize: =18
                     Height: =67
                     Width: =388
                     X: =0
@@ -251,8 +252,9 @@ Login As screen:
                 ZIndex: =13
 
                 "TextInputCanvas1_1 As 'Entrada de texto'":
+                    BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
-                    FontSize: =15
+                    FontSize: =18
                     Height: =67
                     Type: =If(pw_visible, 'TextInputCanvas.Type'.Text,'TextInputCanvas.Type'.Password)
                     Width: =388
@@ -304,7 +306,7 @@ Login As screen:
                     Align: ='TextCanvas.Align'.Center
                     DisplayMode: =DisplayMode.Edit
                     Height: =72
-                    Size: =16
+                    Size: =18
                     Text: ="Contraseña"
                     Width: =394
                     X: =0
@@ -327,9 +329,48 @@ Login As screen:
                     Align: ='TextCanvas.Align'.Center
                     DisplayMode: =DisplayMode.Edit
                     Height: =72
-                    Size: =16
+                    Size: =18
                     Text: ="Usuario"
                     Width: =394
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+            Container83 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Height: =72
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =394
+                X: =122
+                Y: =738
+                ZIndex: =17
+
+                ButtonCanvas4 As Botón:
+                    BasePaletteColor: =RGBA(156, 220, 79, 1)
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =72
+                    OnSelect: |+
+                        =If(
+                            !IsBlank(
+                                LookUp(
+                                    colUsuarios,
+                                    Usuario = TextInputCanvas1.Value
+                                )
+                            ) && LookUp(
+                                colUsuarios,
+                                Usuario = TextInputCanvas1.Value
+                            ).Contrasena = TextInputCanvas1_1.Value,
+                            
+                            Set(varUsuarioLogueado, TextInputCanvas1.Value),
+                            Navigate(Usuarios, ScreenTransition.Fade),
+                            
+                            Notify("Usuario o contraseña incorrectos", NotificationType.Error)
+                        )
+                        
+                    Width: =392
                     X: =0
                     Y: =0
                     ZIndex: =1

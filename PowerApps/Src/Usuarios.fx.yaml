@@ -1,0 +1,748 @@
+Usuarios As screen:
+    Fill: =RGBA(247, 247, 247, 1)
+    Height: =Max(App.Height, App.DesignHeight)
+    OnVisible: |-
+        =UpdateContext({ResetSearch:true});
+        UpdateContext({ResetSearch:false});
+        If(IsEmpty(CustomerFeedbackList), ClearCollect(CustomerFeedbackList, CustomerFeedback));
+        If(IsEmpty(CustomerOpportunityList), ClearCollect(CustomerOpportunityList, CustomerOpportunity));
+        ClearCollect(colOfertas,'Ofertas de Entrenamientos')
+    Width: =Max(App.Width, App.DesignWidth)
+
+    Container15_1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =1120
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =640
+        ZIndex: =1
+
+        Container16_1 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =83
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =640
+            ZIndex: =1
+
+            Rectangle1_1 As rectangle:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Fill: =RGBA(6, 26, 84, 1)
+                Height: =81
+                TabIndex: =0
+                Width: =638
+                X: =2
+                Y: =2
+                ZIndex: =2
+
+            TextBox1_16 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Semibold
+                Height: =81.2
+                HoverBorderColor: =TextBox1_16.BorderColor
+                HoverColor: =TextBox1_16.Color
+                HoverFill: =TextBox1_16.Fill
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                PressedBorderColor: =TextBox1_16.BorderColor
+                PressedColor: =TextBox1_16.Color
+                PressedFill: =TextBox1_16.Fill
+                Size: =16
+                Text: ="Cursos"
+                Width: =168
+                X: =198
+                Y: =
+                ZIndex: =3
+
+            Icon6_3 As icon.Add:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =66.97
+                Icon: =Icon.Add
+                OnSelect: =Navigate(CustomerOverviewScreen_2, ScreenTransition.Fade)
+                Width: =52.96
+                X: =567
+                Y: =9
+                ZIndex: =4
+
+            icon2_5 As icon.Search:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =61
+                Icon: =Icon.Reload
+                OnSelect: =Reset(TextInputSearch_5); Reset(ComboboxCanvas2_2);Reset(DatePickerCanvas1_1);Reset(GalleryCustumer_1);Reset(ComboboxCanvas2_3)
+                TabIndex: =0
+                Width: =50
+                X: =493
+                Y: =14
+                ZIndex: =5
+
+            icon1_12 As icon.ChevronLeft:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =66.97
+                Icon: =Icon.ChevronLeft
+                OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
+                TabIndex: =0
+                Width: =40.56
+                X: =17
+                Y: =15
+                ZIndex: =6
+
+        Container17_2 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =51
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =640
+            Y: =83
+            ZIndex: =7
+
+            Container69_1 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Height: =51
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =243
+                X: =1
+                ZIndex: =8
+
+                TextInputSearch_5 As text:
+                    BorderColor: =RGBA(163,171,193,1)
+                    BorderThickness: =2
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =""
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(0, 0, 0, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.Lato
+                    Height: =48
+                    HintText: ="Buscar Curso"
+                    HoverBorderColor: =RGBA(0, 89, 178, 1)
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =ColorFade(RGBA(190, 202, 226, 0), 30%)
+                    PaddingBottom: =4.19
+                    PaddingLeft: =10.05
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Reset: =ResetSearch
+                    Size: =12
+                    Width: =240
+                    Y: |
+                        =
+                    ZIndex: =9
+
+            Container70_1 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Height: =51
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =103
+                X: =244
+                ZIndex: =10
+
+                "ComboboxCanvas2_2 As 'Cuadro combinado'.pcfdataset":
+                    Appearance: ='ComboboxCanvas.Appearance'.FilledLighter
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =46
+                    InputTextPlaceholder: ="Estado"
+                    Items: =["Disponible", "Para Creación"]
+                    Width: =103
+                    X: =0
+                    Y: =0
+                    ZIndex: =11
+
+            Container72_2 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Height: =51
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =93
+                X: =348
+                ZIndex: =12
+
+                "ComboboxCanvas2_3 As 'Cuadro combinado'.pcfdataset":
+                    Appearance: ='ComboboxCanvas.Appearance'.FilledLighter
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =48
+                    InputTextPlaceholder: ="Recurso"
+                    Items: =["Ficha", "Plataforma","Virtual","Video","Presencial Interno","Presencial Fabrica","Presencial Tercero"]
+                    Width: =93
+                    X: =0
+                    Y: =0
+                    ZIndex: =13
+
+            Container71_2 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Height: =51
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =132
+                X: =442
+                ZIndex: =14
+
+                "DatePickerCanvas1_1 As 'Selector de fecha'":
+                    Appearance: ='DatePickerCanvas.Appearance'.FilledLighter
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =46
+                    Placeholder: ="Fecha"
+                    Width: =129
+                    X: =0
+                    Y: =0
+                    ZIndex: =15
+
+            Container73_4 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Height: =51
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =65
+                X: =574
+                ZIndex: =16
+
+                icon2_6 As icon.Search:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(0, 0, 0, 1)
+                    Height: =49
+                    Icon: =Icon.Reload
+                    OnSelect: =Reset(TextInputSearch_5); Reset(ComboboxCanvas2_2);Reset(DatePickerCanvas1_1);Reset(GalleryCustumer_1);Reset(ComboboxCanvas2_3);Reset(ComboboxCanvas2_5)  
+                    PaddingBottom: =5
+                    PaddingLeft: =5
+                    PaddingRight: =5
+                    PaddingTop: =5
+                    TabIndex: =0
+                    Width: =63
+                    ZIndex: =17
+
+        Container17_3 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =55
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =640
+            Y: =134
+            ZIndex: =18
+
+            Container73_5 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Height: =55
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =251
+                X: =97
+                ZIndex: =19
+
+                "ComboboxCanvas2_8 As 'Cuadro combinado'.pcfdataset":
+                    Appearance: ='ComboboxCanvas.Appearance'.FilledLighter
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =55
+                    InputTextPlaceholder: ="Marca"
+                    Items: |+
+                        =Distinct(Ungroup('Ofertas de Entrenamientos', field_3), Value)
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    SelectMultiple: =true
+                    Width: =243
+                    X: =0
+                    Y: =0
+                    ZIndex: =20
+
+            Container73_6 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Height: =55
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =91
+                X: =350
+                ZIndex: =21
+
+                "ComboboxCanvas2_9 As 'Cuadro combinado'.pcfdataset":
+                    Appearance: ='ComboboxCanvas.Appearance'.FilledLighter
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =55
+                    InputTextPlaceholder: ="Tipo"
+                    Items: |+
+                        =["Mantenimiento", "Servicio","Diagnostico","Reparacion","Operación","Funcionamiento","Estructura","Administracion","Telemetria"]
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    Width: =87
+                    X: =0
+                    Y: =0
+                    ZIndex: =22
+
+            Container72_3 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Height: =55
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =133
+                X: =441
+                ZIndex: =23
+
+                "ComboboxCanvas2_5 As 'Cuadro combinado'.pcfdataset":
+                    Appearance: ='ComboboxCanvas.Appearance'.FilledLighter
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =55
+                    InputTextPlaceholder: ="Modelo"
+                    Items: |+
+                        =Distinct(Ungroup('Ofertas de Entrenamientos', field_4), Value)
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    Width: =133
+                    X: =0
+                    Y: =0
+                    ZIndex: =24
+
+            Container71_3 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Height: =55
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =64
+                X: =574
+                ZIndex: =25
+
+                icon2_7 As icon.Search:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(0, 0, 0, 1)
+                    Height: =49
+                    Icon: =Icon.Reload
+                    OnSelect: =Reset(TextInputSearch_5); Reset(ComboboxCanvas2_2);Reset(DatePickerCanvas1_1);Reset(GalleryCustumer_1);Reset(ComboboxCanvas2_3);Reset(ComboboxCanvas2_9);Reset(ComboboxCanvas2_8);Reset(ComboboxCanvas2_5)
+                    PaddingBottom: =5
+                    PaddingLeft: =5
+                    PaddingRight: =5
+                    PaddingTop: =5
+                    TabIndex: =0
+                    Width: =63
+                    X: =1
+                    Y: =5
+                    ZIndex: =26
+
+            TextCanvas2_3 As Texto:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Font: =Font.'Lato Black'
+                FontColor: =RGBA(0, 0, 0, 1)
+                Height: =36
+                Size: =15
+                Text: |-
+                    ="Q: " & CountRows(GalleryCustumer_1.AllItems)
+                Width: =64
+                X: =13
+                Y: =9
+                ZIndex: =27
+
+        Container18_1 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =857
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =640
+            Y: =189
+            ZIndex: =28
+
+            GalleryCustumer_1 As gallery.galleryVertical:
+                '#CopilotOverlayLabel': ="Filtrada"
+                BorderColor: =RGBA(0, 89, 178, 1)
+                BorderThickness: =2
+                DisabledBorderColor: =GalleryCustumer_1.BorderColor
+                DisabledFill: =GalleryCustumer_1.Fill
+                Height: =852
+                HoverBorderColor: =GalleryCustumer_1.BorderColor
+                HoverFill: =GalleryCustumer_1.Fill
+                Items: |+
+                    =Sort(
+                        Filter(
+                            colOfertas,
+                            TextInputSearch_5.Text in field_2 && 
+                            (field_7.Value = ComboboxCanvas2_2.Selected.Value || IsBlank(ComboboxCanvas2_2.Selected.Value)) && 
+                            (field_6.Value = ComboboxCanvas2_3.Selected.Value || IsBlank(ComboboxCanvas2_3.Selected.Value)) &&
+                            (IsBlank(ComboboxCanvas2_8.Selected.Value) || !IsBlank(LookUp(field_3, Value = ComboboxCanvas2_8.Selected.Value))) &&
+                            (IsBlank(ComboboxCanvas2_5.Selected.Value) || !IsBlank(LookUp(field_4, Value = ComboboxCanvas2_5.Selected.Value))) &&
+                            (field_1.Value = ComboboxCanvas2_9.Selected.Value || IsBlank(ComboboxCanvas2_9.Selected.Value)) &&
+                            (Created = DatePickerCanvas1_1.SelectedDate || IsBlank(DatePickerCanvas1_1.SelectedDate))
+                        ),
+                        Modified,
+                        SortOrder.Descending
+                    )
+                    
+                    
+                    
+                    
+                    
+                    
+                Layout: =Layout.Vertical
+                PressedBorderColor: =GalleryCustumer_1.BorderColor
+                PressedFill: =GalleryCustumer_1.Fill
+                ShowNavigation: =true
+                TemplateFill: =If(ThisItem.IsSelected, Color.LightSkyBlue, Color.White)
+                TemplatePadding: =
+                TemplateSize: =102.97
+                Transition: =Transition.Pop
+                Visible: =CountRows(GalleryCustumer_1.AllItems) > 0
+                Y: =5
+                ZIndex: =29
+
+                Rectangle1_6 As rectangle:
+                    BorderColor: =RGBA(139, 154, 159, 1)
+                    BorderThickness: =1
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =101
+                    TabIndex: =0
+                    Width: =640
+                    ZIndex: =30
+
+                TextBox1_8 As label:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.Lato
+                    Height: =21
+                    HoverBorderColor: =TextBox1_8.BorderColor
+                    HoverColor: =TextBox1_8.Color
+                    HoverFill: =TextBox1_8.Fill
+                    PaddingBottom: =4.19
+                    PaddingLeft: =4.19
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    PressedBorderColor: =TextBox1_8.BorderColor
+                    PressedColor: =TextBox1_8.Color
+                    PressedFill: =TextBox1_8.Fill
+                    Size: =10
+                    Text: ="Curso"
+                    Width: =122
+                    ZIndex: =31
+
+                TextBox1_9 As label:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.Lato
+                    Height: =21
+                    HoverBorderColor: =TextBox1_9.BorderColor
+                    HoverColor: =TextBox1_9.Color
+                    HoverFill: =TextBox1_9.Fill
+                    PaddingBottom: =4.19
+                    PaddingLeft: =4.19
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    PressedBorderColor: =TextBox1_9.BorderColor
+                    PressedColor: =TextBox1_9.Color
+                    PressedFill: =TextBox1_9.Fill
+                    Size: =10
+                    Text: ="Tipo"
+                    Width: =50
+                    X: =222
+                    ZIndex: =32
+
+                TextBox1_10 As label:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.Lato
+                    Height: =21
+                    HoverBorderColor: =TextBox1_10.BorderColor
+                    HoverColor: =TextBox1_10.Color
+                    HoverFill: =TextBox1_10.Fill
+                    PaddingBottom: =4.19
+                    PaddingLeft: =4.19
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    PressedBorderColor: =TextBox1_10.BorderColor
+                    PressedColor: =TextBox1_10.Color
+                    PressedFill: =TextBox1_10.Fill
+                    Size: =10
+                    Text: ="Estado"
+                    Width: =50
+                    X: =279
+                    ZIndex: =33
+
+                TextBox1_18 As label:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.Lato
+                    Height: =21
+                    HoverBorderColor: =TextBox1_18.BorderColor
+                    HoverColor: =TextBox1_18.Color
+                    HoverFill: =TextBox1_18.Fill
+                    PaddingBottom: =4.19
+                    PaddingLeft: =4.19
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    PressedBorderColor: =TextBox1_18.BorderColor
+                    PressedColor: =TextBox1_18.Color
+                    PressedFill: =TextBox1_18.Fill
+                    Size: =10
+                    Text: ="Recurso"
+                    Width: =60
+                    X: =398
+                    ZIndex: =34
+
+                Container81_1 As groupContainer.manualLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    Height: =29
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Width: =55
+                    X: =571
+                    Y: =9
+                    ZIndex: =35
+
+                    Icon1_2 As icon.Edit:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =29
+                        Icon: =Icon.Edit
+                        OnSelect: =Navigate(CustomerOverviewScreen, ScreenTransition.Fade)
+                        Width: =55
+                        ZIndex: =36
+
+                TextBox1_19 As label:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(40, 134, 222, 1)
+                    DisabledColor: =RGBA(139, 154, 159, 1)
+                    Font: =Font.Lato
+                    Height: =80
+                    HoverBorderColor: =TextBox1_19.BorderColor
+                    HoverColor: =TextBox1_19.Color
+                    HoverFill: =TextBox1_19.Fill
+                    PaddingBottom: =4.19
+                    PaddingLeft: =4.19
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    PressedBorderColor: =TextBox1_19.BorderColor
+                    PressedColor: =TextBox1_19.Color
+                    PressedFill: =TextBox1_19.Fill
+                    Text: =ThisItem.field_2
+                    Width: =221
+                    Y: =21
+                    ZIndex: =37
+
+                TextBox1_20 As label:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(15, 108, 189, 1)
+                    DisabledColor: =RGBA(139, 154, 159, 1)
+                    Font: =Font.Lato
+                    Height: =62
+                    HoverBorderColor: =TextBox1_20.BorderColor
+                    HoverColor: =TextBox1_20.Color
+                    HoverFill: =TextBox1_20.Fill
+                    PaddingBottom: =4.19
+                    PaddingLeft: =4.19
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    PressedBorderColor: =TextBox1_20.BorderColor
+                    PressedColor: =TextBox1_20.Color
+                    PressedFill: =TextBox1_20.Fill
+                    Size: =10
+                    Text: =ThisItem.Adjunto
+                    Width: =201
+                    X: =349
+                    Y: =28
+                    ZIndex: =38
+
+                TextBox1_21 As label:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(15, 108, 189, 1)
+                    DisabledColor: =RGBA(139, 154, 159, 1)
+                    Font: =Font.Lato
+                    Height: =28
+                    HoverBorderColor: =TextBox1_21.BorderColor
+                    HoverColor: =TextBox1_21.Color
+                    HoverFill: =TextBox1_21.Fill
+                    PaddingBottom: =4.19
+                    PaddingLeft: =4.19
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    PressedBorderColor: =TextBox1_21.BorderColor
+                    PressedColor: =TextBox1_21.Color
+                    PressedFill: =TextBox1_21.Fill
+                    Size: =10
+                    Text: =ThisItem.field_6.Value
+                    Width: =50
+                    X: =222
+                    Y: =36
+                    ZIndex: =39
+
+                TextBox1_25 As label:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(15, 108, 189, 1)
+                    DisabledColor: =RGBA(139, 154, 159, 1)
+                    Font: =Font.Lato
+                    Height: =26
+                    HoverBorderColor: =TextBox1_25.BorderColor
+                    HoverColor: =TextBox1_25.Color
+                    HoverFill: =TextBox1_25.Fill
+                    PaddingBottom: =4.19
+                    PaddingLeft: =4.19
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    PressedBorderColor: =TextBox1_25.BorderColor
+                    PressedColor: =TextBox1_25.Color
+                    PressedFill: =TextBox1_25.Fill
+                    Size: =10
+                    Text: =ThisItem.field_7.Value
+                    Width: =70
+                    X: =279
+                    Y: =38
+                    ZIndex: =40
+
+                Container75_1 As groupContainer.manualLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    Height: =36
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Width: =55
+                    X: =571
+                    Y: =55
+                    ZIndex: =41
+
+                    ButtonCanvas1_1 As Botón:
+                        Appearance: ='ButtonCanvas.Appearance'.Primary
+                        BasePaletteColor: =RGBA(156, 220, 79, 1)
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =36
+                        OnSelect: =Launch(TextBox1_20.Text)
+                        Text: ="Ir al Recurso"
+                        Width: =55
+                        X: =0
+                        Y: =0
+                        ZIndex: =42
+
+        Container19_1 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =73
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =640
+            Y: =1047
+            ZIndex: =43
+
+            Rectangle1_22 As rectangle:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Fill: =RGBA(54, 166, 182, 1)
+                Height: =69.1
+                OnSelect: =Navigate(EventScreen, ScreenTransition.Cover)
+                TabIndex: =0
+                Width: =640
+                Y: |
+                    =
+                ZIndex: =44
+
+            TextBox1_27 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Semibold
+                Height: =50.95
+                HoverBorderColor: =TextBox1_27.BorderColor
+                HoverColor: =TextBox1_27.Color
+                HoverFill: =TextBox1_27.Fill
+                OnSelect: =Navigate(EventScreen, ScreenTransition.Cover)
+                PaddingBottom: =4.19
+                PaddingLeft: =4.19
+                PaddingRight: =2.82
+                PaddingTop: =2.82
+                PressedBorderColor: =TextBox1_27.BorderColor
+                PressedColor: =TextBox1_27.Color
+                PressedFill: =TextBox1_27.Fill
+                Size: =15.77
+                Text: ="USUARIOS"
+                Width: =254.65
+                X: =30
+                Y: =9
+                ZIndex: =45
+
+            icon9_1 As icon.ArrowRight:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =50.23
+                Icon: =Icon.ArrowRight
+                OnSelect: =Navigate(EventScreen, ScreenTransition.Cover)
+                TabIndex: =0
+                Width: =46.2
+                X: =573
+                Y: =9
+                ZIndex: =46
+
