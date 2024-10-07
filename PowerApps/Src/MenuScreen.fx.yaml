@@ -491,7 +491,7 @@ MenuScreen As screen:
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 Fill: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
-                Height: =44.37
+                Height: =50
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
                 OnSelect: =Navigate(Login, ScreenTransition.Fade)
@@ -510,8 +510,8 @@ MenuScreen As screen:
                     User().Email = "jestrada@partequipos.com" || 
                     User().Email = "auxiliar.garantiasbg@partequipos.com"
                     
-                Width: =124.51
-                X: =56
-                Y: =80
+                Width: =212
+                X: =201
+                Y: =77
                 ZIndex: =12
 
