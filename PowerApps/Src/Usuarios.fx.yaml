@@ -346,7 +346,7 @@ Usuarios As screen:
                     PressedFill: =TextBox1_8.Fill
                     Size: =10
                     Text: ="Curso"
-                    Width: =122
+                    Width: =69
                     ZIndex: =31
 
                 TextBox1_9 As label:
@@ -368,7 +368,7 @@ Usuarios As screen:
                     Size: =10
                     Text: ="Usuario"
                     Width: =68
-                    X: =160
+                    X: =171
                     ZIndex: =32
 
                 TextBox1_10 As label:
@@ -436,7 +436,7 @@ Usuarios As screen:
                     Size: =10
                     Text: =ThisItem.Curso.Value
                     Width: =160
-                    Y: =28
+                    Y: =21
                     ZIndex: =37
 
                 TextBox1_20 As label:
@@ -549,10 +549,10 @@ Usuarios As screen:
                     PressedBorderColor: =TextBox1_30.BorderColor
                     PressedColor: =TextBox1_30.Color
                     PressedFill: =TextBox1_30.Fill
-                    Size: =10
-                    Text: ="Fecha Límite"
-                    Width: =88
-                    X: =349
+                    Size: =9
+                    Text: ="Fecha de Asignación"
+                    Width: =122
+                    X: =342
                     ZIndex: =42
 
                 TextBox1_31 As label:
@@ -560,7 +560,7 @@ Usuarios As screen:
                     Color: =RGBA(15, 108, 189, 1)
                     DisabledColor: =RGBA(139, 154, 159, 1)
                     Font: =Font.Lato
-                    Height: =63
+                    Height: =29
                     HoverBorderColor: =TextBox1_31.BorderColor
                     HoverColor: =TextBox1_31.Color
                     HoverFill: =TextBox1_31.Fill
@@ -571,11 +571,11 @@ Usuarios As screen:
                     PressedBorderColor: =TextBox1_31.BorderColor
                     PressedColor: =TextBox1_31.Color
                     PressedFill: =TextBox1_31.Fill
-                    Size: =10
-                    Text: =ThisItem.FechaLimite
-                    Width: =88
-                    X: =349
-                    Y: =28
+                    Size: =9
+                    Text: =ThisItem.FechaAsignacion
+                    Width: =102
+                    X: =352
+                    Y: =21
                     ZIndex: =43
 
                 TextBox1_32 As label:
@@ -597,7 +597,7 @@ Usuarios As screen:
                     Size: =10
                     Text: ="Calificación"
                     Width: =81
-                    X: =451
+                    X: =469
                     ZIndex: =44
 
                 TextBox1_33 As label:
@@ -645,6 +645,52 @@ Usuarios As screen:
                     X: =495
                     Y: =58
                     ZIndex: =46
+
+                TextBox1_35 As label:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.Lato
+                    Height: =21
+                    HoverBorderColor: =TextBox1_35.BorderColor
+                    HoverColor: =TextBox1_35.Color
+                    HoverFill: =TextBox1_35.Fill
+                    PaddingBottom: =4.19
+                    PaddingLeft: =4.19
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    PressedBorderColor: =TextBox1_35.BorderColor
+                    PressedColor: =TextBox1_35.Color
+                    PressedFill: =TextBox1_35.Fill
+                    Size: =9
+                    Text: ="Fecha Límite"
+                    Width: =88
+                    X: =359
+                    Y: =50
+                    ZIndex: =47
+
+                TextBox1_36 As label:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    Color: =RGBA(15, 108, 189, 1)
+                    DisabledColor: =RGBA(139, 154, 159, 1)
+                    Font: =Font.Lato
+                    Height: =29
+                    HoverBorderColor: =TextBox1_36.BorderColor
+                    HoverColor: =TextBox1_36.Color
+                    HoverFill: =TextBox1_36.Fill
+                    PaddingBottom: =4.19
+                    PaddingLeft: =4.19
+                    PaddingRight: =2.82
+                    PaddingTop: =2.82
+                    PressedBorderColor: =TextBox1_36.BorderColor
+                    PressedColor: =TextBox1_36.Color
+                    PressedFill: =TextBox1_36.Fill
+                    Size: =9
+                    Text: =ThisItem.FechaLimite
+                    Width: =102
+                    X: =352
+                    Y: =69
+                    ZIndex: =48
 
         Container19_1 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
