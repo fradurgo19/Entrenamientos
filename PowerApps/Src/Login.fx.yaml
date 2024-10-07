@@ -234,6 +234,7 @@ Login As screen:
                     DisplayMode: =DisplayMode.Edit
                     FontSize: =18
                     Height: =67
+                    Placeholder: ="Ingrese Usuario"
                     Width: =388
                     X: =0
                     Y: =4
@@ -252,10 +253,12 @@ Login As screen:
                 ZIndex: =13
 
                 "TextInputCanvas1_1 As 'Entrada de texto'":
+                    AccessibleLabel: ="Ingrese Contraseña"
                     BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
                     FontSize: =18
                     Height: =67
+                    Placeholder: ="Ingrese Contraseña"
                     Type: =If(pw_visible, 'TextInputCanvas.Type'.Text,'TextInputCanvas.Type'.Password)
                     Width: =388
                     X: =0
@@ -267,7 +270,7 @@ Login As screen:
                     Color: =RGBA(0, 89, 178, 1)
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     DisabledColor: =RGBA(244, 244, 244, 1)
-                    Height: =50
+                    Height: =40
                     Icon: =Icon.Hide
                     OnSelect: =Set(pw_visible,false)
                     Visible: =If(pw_visible,true,false)
@@ -281,11 +284,11 @@ Login As screen:
                     Color: =RGBA(0, 89, 178, 1)
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     DisabledColor: =RGBA(244, 244, 244, 1)
-                    Height: =47
+                    Height: =40
                     Icon: =Icon.View
                     OnSelect: =Set(pw_visible,true)
                     Visible: =If(pw_visible,false,true)
-                    Width: =61
+                    Width: =58
                     X: =330
                     Y: =21
                     ZIndex: =3
