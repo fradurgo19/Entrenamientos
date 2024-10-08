@@ -206,6 +206,7 @@ Login As screen:
             ZIndex: =6
 
             TextBox4_46 As label:
+                Align: =Align.Center
                 BorderColor: =RGBA(0, 89, 178, 1)
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
