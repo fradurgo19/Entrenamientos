@@ -194,7 +194,7 @@ MenuScreen As screen:
                 Fill: =RGBA(255, 0, 0, 1)
                 Font: =Font.'Lato Black'
                 FontWeight: =FontWeight.Bold
-                Height: =45
+                Height: =52
                 HoverBorderColor: =TextBox4_44.BorderColor
                 HoverColor: =TextBox4_44.Color
                 HoverFill: =TextBox4_44.Fill
@@ -477,7 +477,7 @@ MenuScreen As screen:
                 Fill: =RGBA(255, 0, 0, 1)
                 Font: =Font.'Lato Black'
                 FontWeight: =FontWeight.Bold
-                Height: =45
+                Height: =52
                 HoverBorderColor: =TextBox4_45.BorderColor
                 HoverColor: =TextBox4_45.Color
                 HoverFill: =TextBox4_45.Fill
