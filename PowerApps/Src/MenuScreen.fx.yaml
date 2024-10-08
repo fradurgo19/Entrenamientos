@@ -187,6 +187,7 @@ MenuScreen As screen:
                 ZIndex: =1
 
             TextBox4_44 As label:
+                Align: =Align.Center
                 BorderColor: =RGBA(0, 89, 178, 1)
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -212,6 +213,7 @@ MenuScreen As screen:
                 ZIndex: =2
 
             TextBox4_48 As label:
+                Align: =Align.Center
                 BorderColor: =RGBA(0, 89, 178, 1)
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -468,6 +470,7 @@ MenuScreen As screen:
                 ZIndex: =10
 
             TextBox4_45 As label:
+                Align: =Align.Center
                 BorderColor: =RGBA(0, 89, 178, 1)
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
