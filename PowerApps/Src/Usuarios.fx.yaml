@@ -36,7 +36,7 @@ Usuarios As screen:
                 Fill: =RGBA(6, 26, 84, 1)
                 Height: =81
                 TabIndex: =0
-                Width: =638
+                Width: =389
                 X: =2
                 Y: =2
                 ZIndex: =2
@@ -62,8 +62,7 @@ Usuarios As screen:
                 Size: =16
                 Text: ="Cursos"
                 Width: =168
-                X: =198
-                Y: =
+                X: =45
                 ZIndex: =3
 
             icon2_5 As icon.Search:
@@ -76,9 +75,33 @@ Usuarios As screen:
                 OnSelect: =Reset(TextInputSearch_5); Reset(ComboboxCanvas2_2);Reset(DatePickerCanvas1_1);Reset(GalleryCustumer_1);Reset(ComboboxCanvas2_3);Reset(DatePickerCanvas1_2)
                 TabIndex: =0
                 Width: =50
-                X: =493
-                Y: =14
+                X: =277
+                Y: =12
                 ZIndex: =5
+
+            Container85 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Height: =83
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =249
+                X: =391
+                ZIndex: =6
+
+                Image3_10 As image:
+                    BorderColor: =RGBA(0, 89, 178, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Height: =Parent.Height
+                    Image: ='Captura de pantalla 2024-01-12 082706'
+                    LayoutMinHeight: =320
+                    LayoutMinWidth: =320
+                    Width: =Parent.Width
+                    X: =10
+                    ZIndex: =1
 
         Container17_2 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
