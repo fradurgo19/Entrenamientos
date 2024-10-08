@@ -64,6 +64,16 @@ MenuScreen As screen:
         Y: =4
         ZIndex: =23
 
+        HtmlText2 As htmlViewer:
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Height: =1027
+            HtmlText: |
+                ="<div></div>"
+            Size: =21
+            Width: =640
+            Y: =105
+            ZIndex: =1
+
         Container7 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
             Height: =105
@@ -72,7 +82,7 @@ MenuScreen As screen:
             RadiusTopLeft: =4
             RadiusTopRight: =4
             Width: =640
-            ZIndex: =1
+            ZIndex: =2
 
             Container8 As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.Light
@@ -144,7 +154,7 @@ MenuScreen As screen:
             RadiusTopRight: =4
             Width: =640
             Y: =124
-            ZIndex: =2
+            ZIndex: =3
 
             Button1_5 As button:
                 BorderThickness: =0
