@@ -245,7 +245,7 @@ MenuScreen As screen:
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 Fill: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
-                Height: =44.37
+                Height: =45
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -50%)
                 OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
@@ -264,7 +264,7 @@ MenuScreen As screen:
                     User().Email = "jestrada@partequipos.com" || 
                     User().Email = "auxiliar.garantiasbg@partequipos.com"
                     
-                Width: =124.51
+                Width: =125
                 X: =386
                 Y: =221
                 ZIndex: =4
@@ -278,7 +278,7 @@ MenuScreen As screen:
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 Fill: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
-                Height: =44.37
+                Height: =45
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
                 OnSelect: =Navigate(ActiveWorkOrderScreen, ScreenTransition.Fade)
@@ -297,7 +297,7 @@ MenuScreen As screen:
                     User().Email = "jestrada@partequipos.com" || 
                     User().Email = "auxiliar.garantiasbg@partequipos.com"
                     
-                Width: =124.51
+                Width: =125
                 X: =47
                 Y: =224
                 ZIndex: =5
@@ -311,7 +311,7 @@ MenuScreen As screen:
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 Fill: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
-                Height: =44.37
+                Height: =45
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
                 OnSelect: =Navigate(EventScreen, ScreenTransition.Fade)
@@ -330,9 +330,9 @@ MenuScreen As screen:
                     User().Email = "jestrada@partequipos.com" || 
                     User().Email = "auxiliar.garantiasbg@partequipos.com"
                     
-                Width: =124.51
-                X: =40
-                Y: =355
+                Width: =125
+                X: =47
+                Y: =333
                 ZIndex: =6
 
             Button1_3 As button:
@@ -344,7 +344,7 @@ MenuScreen As screen:
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 Fill: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
-                Height: =30.97
+                Height: =45
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
                 OnSelect: =Navigate(AddNewOpportunityScreen, ScreenTransition.Fade)
@@ -363,9 +363,9 @@ MenuScreen As screen:
                     User().Email = "jestrada@partequipos.com" || 
                     User().Email = "auxiliar.garantiasbg@partequipos.com"
                     
-                Width: =142.54
+                Width: =125
                 X: =47
-                Y: =513
+                Y: =524
                 ZIndex: =7
 
             Button1_11 As button:
@@ -377,7 +377,7 @@ MenuScreen As screen:
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 Fill: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
-                Height: =32.65
+                Height: =45
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
                 OnSelect: =Navigate(CustomerOverviewScreen_2, ScreenTransition.Fade)
@@ -396,9 +396,9 @@ MenuScreen As screen:
                     User().Email = "jestrada@partequipos.com" || 
                     User().Email = "auxiliar.garantiasbg@partequipos.com"
                     
-                Width: =142.54
-                X: =386
-                Y: =522
+                Width: =125
+                X: =394
+                Y: =524
                 ZIndex: =8
 
             Button1_13 As button:
@@ -410,7 +410,7 @@ MenuScreen As screen:
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 Fill: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
-                Height: =30.97
+                Height: =45
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
                 OnSelect: =Navigate(UsuarioDetailScreen_2, ScreenTransition.Fade)
@@ -429,9 +429,9 @@ MenuScreen As screen:
                     User().Email = "jestrada@partequipos.com" || 
                     User().Email = "auxiliar.garantiasbg@partequipos.com"
                     
-                Width: =142.54
-                X: =386
-                Y: =613
+                Width: =125
+                X: =394
+                Y: =645
                 ZIndex: =9
 
             Button1_6 As button:
@@ -443,7 +443,7 @@ MenuScreen As screen:
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 Fill: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
-                Height: =33.49
+                Height: =45
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
                 OnSelect: =Navigate('AddNewOpportunityScreen_1.', ScreenTransition.Fade)
@@ -462,9 +462,9 @@ MenuScreen As screen:
                     User().Email = "jestrada@partequipos.com" || 
                     User().Email = "auxiliar.garantiasbg@partequipos.com"
                     
-                Width: =177.46
+                Width: =125
                 X: =47
-                Y: =610
+                Y: =645
                 ZIndex: =10
 
             TextBox4_45 As label:
