@@ -206,10 +206,10 @@ MenuScreen As screen:
                 PressedColor: =TextBox4_44.Color
                 PressedFill: =TextBox4_44.Fill
                 Size: =15.77
-                Text: ="Ver"
+                Text: ="Verificar"
                 Underline: =true
                 Width: =638
-                Y: =154
+                Y: =221
                 ZIndex: =2
 
             TextBox4_48 As label:
@@ -235,7 +235,7 @@ MenuScreen As screen:
                 Text: ="Agregar"
                 Underline: =true
                 Width: =640
-                Y: =441
+                Y: =508
                 ZIndex: =3
 
             Button1 As button:
@@ -268,7 +268,7 @@ MenuScreen As screen:
                     
                 Width: =125
                 X: =386
-                Y: =221
+                Y: =288
                 ZIndex: =4
 
             Button1_1 As button:
@@ -301,7 +301,7 @@ MenuScreen As screen:
                     
                 Width: =125
                 X: =47
-                Y: =224
+                Y: =291
                 ZIndex: =5
 
             Button1_2 As button:
@@ -334,7 +334,7 @@ MenuScreen As screen:
                     
                 Width: =125
                 X: =47
-                Y: =333
+                Y: =400
                 ZIndex: =6
 
             Button1_3 As button:
@@ -367,7 +367,7 @@ MenuScreen As screen:
                     
                 Width: =125
                 X: =47
-                Y: =524
+                Y: =591
                 ZIndex: =7
 
             Button1_11 As button:
@@ -400,7 +400,7 @@ MenuScreen As screen:
                     
                 Width: =125
                 X: =394
-                Y: =524
+                Y: =591
                 ZIndex: =8
 
             Button1_13 As button:
@@ -433,7 +433,7 @@ MenuScreen As screen:
                     
                 Width: =125
                 X: =394
-                Y: =645
+                Y: =712
                 ZIndex: =9
 
             Button1_6 As button:
@@ -466,7 +466,7 @@ MenuScreen As screen:
                     
                 Width: =125
                 X: =47
-                Y: =645
+                Y: =712
                 ZIndex: =10
 
             TextBox4_45 As label:
@@ -524,7 +524,7 @@ MenuScreen As screen:
                     User().Email = "auxiliar.garantiasbg@partequipos.com"
                     
                 Width: =212
-                X: =201
-                Y: =77
+                X: =214
+                Y: =114
                 ZIndex: =12
 
