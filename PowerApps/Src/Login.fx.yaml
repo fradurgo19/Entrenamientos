@@ -158,7 +158,7 @@ Login As screen:
                     Width: =400
                     X: =48
                     Y: =505
-                    ZIndex: =3
+                    ZIndex: =2
 
                 Container68_1 As groupContainer.manualLayoutContainer:
                     DropShadow: =DropShadow.Light
@@ -169,7 +169,7 @@ Login As screen:
                     RadiusBottomRight: =4
                     RadiusTopLeft: =4
                     RadiusTopRight: =4
-                    ZIndex: =4
+                    ZIndex: =3
 
                     Image3_9 As image:
                         BorderColor: =RGBA(0, 89, 178, 1)
@@ -180,6 +180,19 @@ Login As screen:
                         Width: =212
                         X: =10
                         ZIndex: =5
+
+            icon1_12 As icon.ChevronLeft:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =66.97
+                Icon: =Icon.ChevronLeft
+                OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
+                TabIndex: =0
+                Width: =40.56
+                X: =15
+                Y: =17
+                ZIndex: =3
 
         Container9_1 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
