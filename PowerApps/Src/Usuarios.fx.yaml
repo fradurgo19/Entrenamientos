@@ -36,7 +36,7 @@ Usuarios As screen:
                 Fill: =RGBA(6, 26, 84, 1)
                 Height: =81
                 TabIndex: =0
-                Width: =389
+                Width: =455
                 X: =2
                 Y: =2
                 ZIndex: =2
@@ -62,7 +62,7 @@ Usuarios As screen:
                 Size: =16
                 Text: ="Cursos"
                 Width: =168
-                X: =45
+                X: =158
                 ZIndex: =3
 
             icon2_5 As icon.Search:
@@ -75,8 +75,8 @@ Usuarios As screen:
                 OnSelect: =Reset(TextInputSearch_5); Reset(ComboboxCanvas2_2);Reset(DatePickerCanvas1_1);Reset(GalleryCustumer_1);Reset(ComboboxCanvas2_3);Reset(DatePickerCanvas1_2)
                 TabIndex: =0
                 Width: =50
-                X: =277
-                Y: =12
+                X: =394
+                Y: =10
                 ZIndex: =5
 
             Container85 As groupContainer.horizontalAutoLayoutContainer:
@@ -87,8 +87,8 @@ Usuarios As screen:
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
-                Width: =249
-                X: =391
+                Width: =182
+                X: =457
                 ZIndex: =6
 
                 Image3_10 As image:
@@ -294,13 +294,13 @@ Usuarios As screen:
 
         Container18_1 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
-            Height: =857
+            Height: =838
             RadiusBottomLeft: =4
             RadiusBottomRight: =4
             RadiusTopLeft: =4
             RadiusTopRight: =4
             Width: =640
-            Y: =189
+            Y: =207
             ZIndex: =28
 
             GalleryCustumer_1 As gallery.galleryVertical:
