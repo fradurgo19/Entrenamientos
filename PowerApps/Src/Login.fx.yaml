@@ -290,21 +290,21 @@ Login As screen:
                     Visible: =If(pw_visible,true,false)
                     Width: =58
                     X: =330
-                    Y: =21
+                    Y: =17
                     ZIndex: =2
 
                 Icon12 As icon.View:
                     BorderColor: =RGBA(0, 89, 178, 1)
                     Color: =RGBA(255, 0, 0, 1)
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(244, 244, 244, 1)
+                    DisabledBorderColor: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(255, 0, 0, 1)
                     Height: =40
                     Icon: =Icon.View
                     OnSelect: =Set(pw_visible,true)
                     Visible: =If(pw_visible,false,true)
                     Width: =58
                     X: =330
-                    Y: =21
+                    Y: =17
                     ZIndex: =3
 
             Container82_3 As groupContainer.manualLayoutContainer:
