@@ -310,7 +310,7 @@ Usuarios As screen:
                 BorderThickness: =2
                 DisabledBorderColor: =GalleryCustumer_1.BorderColor
                 DisabledFill: =GalleryCustumer_1.Fill
-                Height: =852
+                Height: =808
                 HoverBorderColor: =GalleryCustumer_1.BorderColor
                 HoverFill: =GalleryCustumer_1.Fill
                 Items: |+
@@ -769,7 +769,7 @@ Usuarios As screen:
                 HoverBorderColor: =TextBox1_27.BorderColor
                 HoverColor: =TextBox1_27.Color
                 HoverFill: =TextBox1_27.Fill
-                OnSelect: =Navigate(EventScreen, ScreenTransition.Cover)
+                OnSelect: =Navigate(Login, ScreenTransition.Cover)
                 PaddingBottom: =4.19
                 PaddingLeft: =4.19
                 PaddingRight: =2.82

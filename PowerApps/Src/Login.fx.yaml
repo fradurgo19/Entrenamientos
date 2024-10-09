@@ -50,7 +50,7 @@ Login As screen:
     Height: =Max(App.Height, App.DesignHeight)
     ImagePosition: =ImagePosition.Fill
     OnVisible: |-
-        =Set(pw_visible,true);ClearCollect(colUsuarios, 
+        =Set(pw_visible,false);ClearCollect(colUsuarios, 
           {Usuario: "diegorios_25@hotmail.com", Contrasena: "1023925002"}, 
           {Usuario: "tiqueducuaraluis@gmail.com", Contrasena: "1023939561"}, 
           {Usuario: "camilomanrrique7@gmail.com", Contrasena: "1007671256"}, 
@@ -282,8 +282,8 @@ Login As screen:
                 Icon7 As icon.Hide:
                     BorderColor: =RGBA(0, 89, 178, 1)
                     Color: =RGBA(255, 0, 0, 1)
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(244, 244, 244, 1)
+                    DisabledBorderColor: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(255, 0, 0, 1)
                     Height: =40
                     Icon: =Icon.Hide
                     OnSelect: =Set(pw_visible,false)
@@ -394,4 +394,16 @@ Login As screen:
                     X: =0
                     Y: =0
                     ZIndex: =1
+
+            Icon13 As icon.Undo:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =40
+                Icon: =Icon.Undo
+                OnSelect: =Reset(TextInputCanvas1);Reset(TextInputCanvas1_1)
+                Width: =54
+                X: =556
+                Y: =95
+                ZIndex: =18
 
