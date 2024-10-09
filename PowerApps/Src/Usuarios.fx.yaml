@@ -105,7 +105,7 @@ Usuarios As screen:
 
         Container17_2 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
-            Height: =51
+            Height: =63
             RadiusBottomLeft: =4
             RadiusBottomRight: =4
             RadiusTopLeft: =4
@@ -116,7 +116,7 @@ Usuarios As screen:
 
             Container69_1 As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.Light
-                Height: =51
+                Height: =62
                 RadiusBottomLeft: =4
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
@@ -135,7 +135,7 @@ Usuarios As screen:
                     DisabledFill: =RGBA(244, 244, 244, 1)
                     FocusedBorderThickness: =4
                     Font: =Font.Lato
-                    Height: =48
+                    Height: =59
                     HintText: ="Buscar Curso"
                     HoverBorderColor: =RGBA(0, 89, 178, 1)
                     HoverColor: =RGBA(0, 0, 0, 1)
@@ -157,7 +157,7 @@ Usuarios As screen:
 
             Container70_1 As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.Light
-                Height: =51
+                Height: =62
                 RadiusBottomLeft: =4
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
@@ -169,7 +169,7 @@ Usuarios As screen:
                 "ComboboxCanvas2_2 As 'Cuadro combinado'.pcfdataset":
                     Appearance: ='ComboboxCanvas.Appearance'.FilledLighter
                     DisplayMode: =DisplayMode.Edit
-                    Height: =51
+                    Height: =58
                     InputTextPlaceholder: ="Estado"
                     Items: =["Habilitado", "Aprobado","Reprobado","No Aplica","Inscrito","Caduco"]
                     Width: =170
@@ -179,7 +179,7 @@ Usuarios As screen:
 
             Container72_2 As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.Light
-                Height: =51
+                Height: =62
                 RadiusBottomLeft: =4
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
@@ -191,7 +191,7 @@ Usuarios As screen:
                 "ComboboxCanvas2_3 As 'Cuadro combinado'.pcfdataset":
                     Appearance: ='ComboboxCanvas.Appearance'.FilledLighter
                     DisplayMode: =DisplayMode.Edit
-                    Height: =48
+                    Height: =58
                     InputTextPlaceholder: ="Calificación"
                     Items: =["1", "2","3","4","5"]
                     Width: =156
@@ -201,7 +201,7 @@ Usuarios As screen:
 
             Container73_4 As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.Light
-                Height: =51
+                Height: =62
                 RadiusBottomLeft: =4
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
@@ -214,7 +214,7 @@ Usuarios As screen:
                     BorderColor: =RGBA(0, 89, 178, 1)
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     DisabledColor: =RGBA(0, 0, 0, 1)
-                    Height: =49
+                    Height: =42
                     Icon: =Icon.Reload
                     OnSelect: =Reset(TextInputSearch_5); Reset(ComboboxCanvas2_2);Reset(DatePickerCanvas1_1);Reset(GalleryCustumer_1);Reset(ComboboxCanvas2_3);Reset(DatePickerCanvas1_2)
                     PaddingBottom: =5
@@ -223,17 +223,18 @@ Usuarios As screen:
                     PaddingTop: =5
                     TabIndex: =0
                     Width: =63
+                    Y: =12
                     ZIndex: =17
 
         Container17_3 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
-            Height: =55
+            Height: =72
             RadiusBottomLeft: =4
             RadiusBottomRight: =4
             RadiusTopLeft: =4
             RadiusTopRight: =4
             Width: =640
-            Y: =134
+            Y: =146
             ZIndex: =18
 
             TextCanvas2_3 As Texto:
@@ -241,18 +242,18 @@ Usuarios As screen:
                 DisplayMode: =DisplayMode.Edit
                 Font: =Font.'Lato Black'
                 FontColor: =RGBA(0, 0, 0, 1)
-                Height: =36
+                Height: =66
                 Size: =15
                 Text: |-
                     ="Q: " & CountRows(GalleryCustumer_1.AllItems)
                 Width: =64
                 X: =13
-                Y: =9
+                Y: =0
                 ZIndex: =27
 
             Container84 As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.Light
-                Height: =55
+                Height: =66
                 RadiusBottomLeft: =4
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
@@ -264,7 +265,7 @@ Usuarios As screen:
                 "DatePickerCanvas1_1 As 'Selector de fecha'":
                     Appearance: ='DatePickerCanvas.Appearance'.FilledLighter
                     DisplayMode: =DisplayMode.Edit
-                    Height: =55
+                    Height: =60
                     Placeholder: ="Fecha Límite"
                     Width: =272
                     X: =0
@@ -273,7 +274,7 @@ Usuarios As screen:
 
             Container84_1 As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.Light
-                Height: =55
+                Height: =66
                 RadiusBottomLeft: =4
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
@@ -285,22 +286,22 @@ Usuarios As screen:
                 "DatePickerCanvas1_2 As 'Selector de fecha'":
                     Appearance: ='DatePickerCanvas.Appearance'.FilledLighter
                     DisplayMode: =DisplayMode.Edit
-                    Height: =55
+                    Height: =61
                     Placeholder: ="Fecha de Asignación"
-                    Width: =272
+                    Width: =266
                     X: =0
                     Y: =0
                     ZIndex: =1
 
         Container18_1 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
-            Height: =838
+            Height: =813
             RadiusBottomLeft: =4
             RadiusBottomRight: =4
             RadiusTopLeft: =4
             RadiusTopRight: =4
             Width: =640
-            Y: =207
+            Y: =232
             ZIndex: =28
 
             GalleryCustumer_1 As gallery.galleryVertical:
