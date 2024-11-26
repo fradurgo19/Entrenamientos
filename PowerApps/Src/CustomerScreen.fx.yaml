@@ -133,6 +133,8 @@ CustomerScreen As screen:
                     Height: =46
                     InputTextPlaceholder: ="Estado"
                     Items: =["Disponible", "Para Creación"]
+                    Required: =false
+                    TriggerOutput: ="Keypress"
                     Width: =103
                     X: =0
                     Y: =0
@@ -176,6 +178,8 @@ CustomerScreen As screen:
                     Height: =48
                     InputTextPlaceholder: ="Recurso"
                     Items: =["Ficha", "Plataforma","Virtual","Video","Presencial Interno","Presencial Fabrica","Presencial Tercero"]
+                    Required: =false
+                    TriggerOutput: ="Keypress"
                     Width: =92
                     X: =0
                     Y: =0
@@ -660,6 +664,8 @@ CustomerScreen As screen:
                         
                         
                         
+                    Required: =false
+                    TriggerOutput: ="Keypress"
                     Width: =133
                     X: =0
                     Y: =0
@@ -693,6 +699,8 @@ CustomerScreen As screen:
                         
                         
                         
+                    Required: =false
+                    TriggerOutput: ="Keypress"
                     Width: =87
                     X: =0
                     Y: =0
@@ -726,7 +734,9 @@ CustomerScreen As screen:
                         
                         
                         
+                    Required: =false
                     SelectMultiple: =true
+                    TriggerOutput: ="Keypress"
                     Width: =243
                     X: =0
                     Y: =0

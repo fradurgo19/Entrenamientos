@@ -14,19 +14,6 @@
         "Type": 0,
         "WizardStep": null
       },
-      "Align": {
-        "EnabledForFlyout": false,
-        "HelperUI": null,
-        "Hidden": false,
-        "PropertyGroupName": "",
-        "PropertyKind": 1,
-        "SectionIndex": 2,
-        "SectionName": null,
-        "SectionType": "SizeAndPositioningSection",
-        "ShowInCanvasInlineActionBar": false,
-        "Type": 0,
-        "WizardStep": null
-      },
       "Appearance": {
         "EnabledForFlyout": false,
         "HelperUI": null,
@@ -235,7 +222,7 @@
         "Type": 0,
         "WizardStep": null
       },
-      "Mode": {
+      "IsSearchable": {
         "EnabledForFlyout": false,
         "HelperUI": null,
         "Hidden": false,
@@ -244,6 +231,19 @@
         "SectionIndex": 1,
         "SectionName": null,
         "SectionType": "BehaviorSection",
+        "ShowInCanvasInlineActionBar": false,
+        "Type": 0,
+        "WizardStep": null
+      },
+      "Items": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 0,
+        "SectionName": null,
+        "SectionType": "GeneralSection",
         "ShowInCanvasInlineActionBar": false,
         "Type": 0,
         "WizardStep": null
@@ -300,20 +300,7 @@
         "Type": 0,
         "WizardStep": null
       },
-      "Placeholder": {
-        "EnabledForFlyout": false,
-        "HelperUI": null,
-        "Hidden": false,
-        "PropertyGroupName": "",
-        "PropertyKind": 1,
-        "SectionIndex": 0,
-        "SectionName": null,
-        "SectionType": "GeneralSection",
-        "ShowInCanvasInlineActionBar": false,
-        "Type": 0,
-        "WizardStep": null
-      },
-      "TriggerOutput": {
+      "SelectMultiple": {
         "EnabledForFlyout": false,
         "HelperUI": null,
         "Hidden": false,
@@ -326,7 +313,7 @@
         "Type": 0,
         "WizardStep": null
       },
-      "Type": {
+      "TriggerOutput": {
         "EnabledForFlyout": false,
         "HelperUI": null,
         "Hidden": false,
@@ -403,9 +390,9 @@
       "PfxDefaultValue": null
     }
   ],
-  "ControlConstructor": "TextInputCanvas",
+  "ControlConstructor": "ComboboxCanvas",
   "ControlNamespace": "PowerApps.CoreControls",
-  "DisplayNameKey": "TextInputCanvas",
+  "DisplayNameKey": "ComboboxCanvas",
   "IncludedProperties": [
     {
       "Category": "design",
@@ -576,72 +563,15 @@
       "WebDefaultValue": ""
     }
   ],
-  "Name": "Entrada de texto",
+  "Name": "Cuadro combinado",
   "Properties": [
-    {
-      "Category": "data",
-      "DefaultValue": "Start",
-      "Description": "Mostrar el texto utilizando la alineación de texto seleccionada.",
-      "DescriptionResourceString": "TextInputCanvas_Align_Desc",
-      "DisplayName": "Alinear",
-      "DisplayNameResourceString": "TextInputCanvas_Align",
-      "EnumValues": [
-        {
-          "Description": "Inicio",
-          "DisplayName": "Inicio",
-          "IsDefaultValue": true,
-          "Name": "Start",
-          "Value": "Start"
-        },
-        {
-          "Description": "Final",
-          "DisplayName": "Final",
-          "IsDefaultValue": false,
-          "Name": "End",
-          "Value": "End"
-        },
-        {
-          "Description": "Centrar",
-          "DisplayName": "Centrar",
-          "IsDefaultValue": false,
-          "Name": "Center",
-          "Value": "Center"
-        },
-        {
-          "Description": "Justificar",
-          "DisplayName": "Justificar",
-          "IsDefaultValue": false,
-          "Name": "Justify",
-          "Value": "Justify"
-        }
-      ],
-      "HelperUI": null,
-      "Hidden": false,
-      "IsDataSourceProperty": false,
-      "IsLinkableToParentTheme": false,
-      "IsPrimaryBehavioral": false,
-      "IsPrimaryInput": false,
-      "IsPrimaryOutput": false,
-      "IsResettable": false,
-      "IsResettableToManifestDefault": false,
-      "Name": "Align",
-      "ParentDataSetName": "",
-      "PassThroughProperty": "",
-      "PfxDefaultValue": "",
-      "PhoneDefaultValue": "Start",
-      "Required": false,
-      "ShouldAutoBind": false,
-      "Type": 1,
-      "Usage": 2,
-      "WebDefaultValue": "Start"
-    },
     {
       "Category": "data",
       "DefaultValue": "",
       "Description": "Etiqueta para los lectores de pantalla.",
-      "DescriptionResourceString": "TextInputCanvas_AccessibleLabel_Desc",
+      "DescriptionResourceString": "ComboboxCanvas_AccessibleLabel_Desc",
       "DisplayName": "Etiqueta accesible",
-      "DisplayNameResourceString": "TextInputCanvas_AccessibleLabel",
+      "DisplayNameResourceString": "ComboboxCanvas_AccessibleLabel",
       "EnumValues": [],
       "HelperUI": null,
       "Hidden": false,
@@ -665,110 +595,11 @@
     },
     {
       "Category": "data",
-      "DefaultValue": "-1",
-      "Description": "La longitud máxima del contenido de la entrada de texto.",
-      "DescriptionResourceString": "TextInputCanvas_MaxLength_Desc",
-      "DisplayName": "Longitud máxima",
-      "DisplayNameResourceString": "TextInputCanvas_MaxLength",
-      "EnumValues": [],
-      "HelperUI": "",
-      "Hidden": false,
-      "IsDataSourceProperty": false,
-      "IsLinkableToParentTheme": false,
-      "IsPrimaryBehavioral": false,
-      "IsPrimaryInput": false,
-      "IsPrimaryOutput": false,
-      "IsResettable": false,
-      "IsResettableToManifestDefault": false,
-      "Name": "MaxLength",
-      "ParentDataSetName": "",
-      "PassThroughProperty": "",
-      "PfxDefaultValue": "",
-      "PhoneDefaultValue": "",
-      "Required": false,
-      "ShouldAutoBind": false,
-      "Type": 16,
-      "Usage": 0,
-      "WebDefaultValue": ""
-    },
-    {
-      "Category": "data",
-      "DefaultValue": "SingleLine",
-      "Description": "Tipo de entrada de texto: línea única o multilínea.",
-      "DescriptionResourceString": "TextInputCanvas_Mode_Desc",
-      "DisplayName": "Modo",
-      "DisplayNameResourceString": "TextInputCanvas_Mode",
-      "EnumValues": [
-        {
-          "Description": "Línea única",
-          "DisplayName": "Línea única",
-          "IsDefaultValue": true,
-          "Name": "SingleLine",
-          "Value": "SingleLine"
-        },
-        {
-          "Description": "Multilínea",
-          "DisplayName": "Multilínea",
-          "IsDefaultValue": false,
-          "Name": "Multiline",
-          "Value": "Multiline"
-        }
-      ],
-      "HelperUI": null,
-      "Hidden": false,
-      "IsDataSourceProperty": false,
-      "IsLinkableToParentTheme": false,
-      "IsPrimaryBehavioral": false,
-      "IsPrimaryInput": false,
-      "IsPrimaryOutput": false,
-      "IsResettable": false,
-      "IsResettableToManifestDefault": false,
-      "Name": "Mode",
-      "ParentDataSetName": "",
-      "PassThroughProperty": "",
-      "PfxDefaultValue": "",
-      "PhoneDefaultValue": "SingleLine",
-      "Required": false,
-      "ShouldAutoBind": false,
-      "Type": 1,
-      "Usage": 0,
-      "WebDefaultValue": "SingleLine"
-    },
-    {
-      "Category": "data",
-      "DefaultValue": "",
-      "Description": "El texto de marcador de posición de la entrada de texto.",
-      "DescriptionResourceString": "TextInputCanvas_Placeholder_Desc",
-      "DisplayName": "Texto de marcador de posición",
-      "DisplayNameResourceString": "TextInputCanvas_Placeholder",
-      "EnumValues": [],
-      "HelperUI": null,
-      "Hidden": false,
-      "IsDataSourceProperty": false,
-      "IsLinkableToParentTheme": false,
-      "IsPrimaryBehavioral": false,
-      "IsPrimaryInput": false,
-      "IsPrimaryOutput": false,
-      "IsResettable": false,
-      "IsResettableToManifestDefault": false,
-      "Name": "Placeholder",
-      "ParentDataSetName": "",
-      "PassThroughProperty": "",
-      "PfxDefaultValue": "",
-      "PhoneDefaultValue": "",
-      "Required": false,
-      "ShouldAutoBind": false,
-      "Type": 6,
-      "Usage": 0,
-      "WebDefaultValue": ""
-    },
-    {
-      "Category": "data",
       "DefaultValue": "false",
-      "Description": "Indica si este control debe contener texto.",
-      "DescriptionResourceString": "TextInputCanvas_Required_Desc",
+      "Description": "Indica si este control debe contener un valor de cuadro combinado.",
+      "DescriptionResourceString": "ComboboxCanvas_Required_Desc",
       "DisplayName": "Obligatorio",
-      "DisplayNameResourceString": "TextInputCanvas_Required",
+      "DisplayNameResourceString": "ComboboxCanvas_Required",
       "EnumValues": [],
       "HelperUI": "",
       "Hidden": false,
@@ -792,34 +623,12 @@
     },
     {
       "Category": "data",
-      "DefaultValue": "Text",
-      "Description": "Tipo de contenido de la entrada de texto: texto sin formato, contraseña o búsqueda.",
-      "DescriptionResourceString": "TextInputCanvas_Type_Desc",
-      "DisplayName": "Tipo",
-      "DisplayNameResourceString": "TextInputCanvas_Type",
-      "EnumValues": [
-        {
-          "Description": "Contraseña",
-          "DisplayName": "Contraseña",
-          "IsDefaultValue": false,
-          "Name": "Password",
-          "Value": "Password"
-        },
-        {
-          "Description": "Búsqueda",
-          "DisplayName": "Búsqueda",
-          "IsDefaultValue": false,
-          "Name": "Search",
-          "Value": "Search"
-        },
-        {
-          "Description": "Texto",
-          "DisplayName": "Texto",
-          "IsDefaultValue": true,
-          "Name": "Text",
-          "Value": "Text"
-        }
-      ],
+      "DefaultValue": "false",
+      "Description": "Indica si este control permite seleccionar más de un elemento a la vez.",
+      "DescriptionResourceString": "ComboboxCanvas_SelectMultiple_Desc",
+      "DisplayName": "Permitir selecciones múltiples",
+      "DisplayNameResourceString": "ComboboxCanvas_SelectMultiple",
+      "EnumValues": [],
       "HelperUI": null,
       "Hidden": false,
       "IsDataSourceProperty": false,
@@ -829,40 +638,25 @@
       "IsPrimaryOutput": false,
       "IsResettable": false,
       "IsResettableToManifestDefault": false,
-      "Name": "Type",
+      "Name": "SelectMultiple",
       "ParentDataSetName": "",
       "PassThroughProperty": "",
       "PfxDefaultValue": "",
-      "PhoneDefaultValue": "Text",
+      "PhoneDefaultValue": "",
       "Required": false,
       "ShouldAutoBind": false,
-      "Type": 1,
+      "Type": 20,
       "Usage": 0,
-      "WebDefaultValue": "Text"
+      "WebDefaultValue": ""
     },
     {
       "Category": "data",
-      "DefaultValue": "None",
-      "Description": "El estado actual de la entrada de texto, con respecto a la validación.",
-      "DescriptionResourceString": "TextInputCanvas_ValidationState_Desc",
-      "DisplayName": "Estado de validación",
-      "DisplayNameResourceString": "TextInputCanvas_ValidationState",
-      "EnumValues": [
-        {
-          "Description": "Error",
-          "DisplayName": "Error",
-          "IsDefaultValue": false,
-          "Name": "Error",
-          "Value": "Error"
-        },
-        {
-          "Description": "Ninguno",
-          "DisplayName": "Ninguno",
-          "IsDefaultValue": true,
-          "Name": "None",
-          "Value": "None"
-        }
-      ],
+      "DefaultValue": ", ",
+      "Description": "Texto que se utiliza para separar los valores de elemento seleccionados cuando el control permite selecciones múltiples.",
+      "DescriptionResourceString": "ComboboxCanvas_MultiValueDelimiter_Desc",
+      "DisplayName": "Delimitador de varios valores",
+      "DisplayNameResourceString": "ComboboxCanvas_MultiValueDelimiter",
+      "EnumValues": [],
       "HelperUI": "",
       "Hidden": false,
       "IsDataSourceProperty": false,
@@ -872,35 +666,7 @@
       "IsPrimaryOutput": false,
       "IsResettable": false,
       "IsResettableToManifestDefault": false,
-      "Name": "ValidationState",
-      "ParentDataSetName": "",
-      "PassThroughProperty": "",
-      "PfxDefaultValue": "",
-      "PhoneDefaultValue": "None",
-      "Required": false,
-      "ShouldAutoBind": false,
-      "Type": 1,
-      "Usage": 2,
-      "WebDefaultValue": "None"
-    },
-    {
-      "Category": "data",
-      "DefaultValue": "",
-      "Description": "Texto que aparece en un control o que el usuario escribe en un control.",
-      "DescriptionResourceString": "TextInputCanvas_Value_Desc",
-      "DisplayName": "Valor",
-      "DisplayNameResourceString": "TextInputCanvas_Value",
-      "EnumValues": [],
-      "HelperUI": "",
-      "Hidden": false,
-      "IsDataSourceProperty": false,
-      "IsLinkableToParentTheme": false,
-      "IsPrimaryBehavioral": false,
-      "IsPrimaryInput": true,
-      "IsPrimaryOutput": true,
-      "IsResettable": true,
-      "IsResettableToManifestDefault": false,
-      "Name": "Value",
+      "Name": "MultiValueDelimiter",
       "ParentDataSetName": "",
       "PassThroughProperty": "",
       "PfxDefaultValue": "",
@@ -908,7 +674,91 @@
       "Required": false,
       "ShouldAutoBind": false,
       "Type": 6,
-      "Usage": 2,
+      "Usage": 0,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "true",
+      "Description": "Permitir la búsqueda de elementos.",
+      "DescriptionResourceString": "ComboboxCanvas_IsSearchable_Desc",
+      "DisplayName": "Permitir búsqueda",
+      "DisplayNameResourceString": "ComboboxCanvas_IsSearchable",
+      "EnumValues": [],
+      "HelperUI": null,
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsLinkableToParentTheme": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "IsResettableToManifestDefault": false,
+      "Name": "IsSearchable",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PfxDefaultValue": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 20,
+      "Usage": 0,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "Buscar elementos",
+      "Description": "Texto de marcador de posición del cuadro combinado.",
+      "DescriptionResourceString": "ComboboxCanvas_InputTextPlaceholder_Desc",
+      "DisplayName": "Texto de marcador de posición",
+      "DisplayNameResourceString": "ComboboxCanvas_InputTextPlaceholder",
+      "EnumValues": [],
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsLinkableToParentTheme": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "IsResettableToManifestDefault": false,
+      "Name": "InputTextPlaceholder",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PfxDefaultValue": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 6,
+      "Usage": 0,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "",
+      "Description": "Texto que se utiliza para buscar la lista de elementos.",
+      "DescriptionResourceString": "ComboboxCanvas_SearchText_Desc",
+      "DisplayName": "Texto de búsqueda",
+      "DisplayNameResourceString": "ComboboxCanvas_SearchText",
+      "EnumValues": [],
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsLinkableToParentTheme": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "IsResettableToManifestDefault": false,
+      "Name": "SearchText",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PfxDefaultValue": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 6,
+      "Usage": 1,
       "WebDefaultValue": ""
     },
     {
@@ -1137,6 +987,49 @@
     },
     {
       "Category": "data",
+      "DefaultValue": "None",
+      "Description": "El estado actual del cuadro combinado, con respecto a la validación.",
+      "DescriptionResourceString": "ComboboxCanvas_ValidationState_Desc",
+      "DisplayName": "Estado de validación",
+      "DisplayNameResourceString": "ComboboxCanvas_ValidationState",
+      "EnumValues": [
+        {
+          "Description": "Error",
+          "DisplayName": "Error",
+          "IsDefaultValue": false,
+          "Name": "Error",
+          "Value": "Error"
+        },
+        {
+          "Description": "Ninguno",
+          "DisplayName": "Ninguno",
+          "IsDefaultValue": true,
+          "Name": "None",
+          "Value": "None"
+        }
+      ],
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsLinkableToParentTheme": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "IsResettableToManifestDefault": false,
+      "Name": "ValidationState",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PfxDefaultValue": "",
+      "PhoneDefaultValue": "None",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 1,
+      "Usage": 2,
+      "WebDefaultValue": "None"
+    },
+    {
+      "Category": "data",
       "DefaultValue": "",
       "Description": "Color de fondo del control.",
       "DescriptionResourceString": "Fill_Description",
@@ -1144,7 +1037,7 @@
       "DisplayNameResourceString": "Fill",
       "EnumValues": [],
       "HelperUI": null,
-      "Hidden": true,
+      "Hidden": false,
       "IsDataSourceProperty": false,
       "IsLinkableToParentTheme": true,
       "IsPrimaryBehavioral": false,
@@ -1445,30 +1338,30 @@
     },
     {
       "Category": "data",
-      "DefaultValue": "FocusOut",
-      "Description": "Cuándo se debe desencadenar la función OnChange.\r\n\r\nPérdida del foco: solo desencadena OnChange cuando el control de entrada de texto pierde el foco.\r\n\r\nRetrasada: desencadena OnChange tras un retraso de medio segundo. Es útil para retrasar operaciones que consumen muchos recursos hasta que el usuario termine de introducir texto (es decir, para filtrar cuándo se utiliza la entrada en otras fórmulas).\r\n\r\nPresión de teclas: desencadena OnChange inmediatamente a medida que el usuario escribe.",
+      "DefaultValue": "Keypress",
+      "Description": "When to trigger the OnChange function.\r\n\r\nFocusOut: Triggers OnChange only when the text input control loses focus.\r\n\r\nDelayed: Triggers OnChange after a half-second delay. Useful for delaying expensive operations until user completes inputting text (i.e. for filtering when input is used in other formulas).\r\n\r\nKeypress: Triggers OnChange immediately as the user types.",
       "DescriptionResourceString": "TriggerOutput_Description",
-      "DisplayName": "Salida del desencadenador",
+      "DisplayName": "Trigger output",
       "DisplayNameResourceString": "TriggerOutput",
       "EnumValues": [
         {
-          "Description": "Retrasada",
-          "DisplayName": "Retrasada",
+          "Description": "Delayed",
+          "DisplayName": "Delayed",
           "IsDefaultValue": false,
           "Name": "Delayed",
           "Value": "Delayed"
         },
         {
-          "Description": "Pérdida del foco",
-          "DisplayName": "Pérdida del foco",
-          "IsDefaultValue": true,
+          "Description": "Focus out",
+          "DisplayName": "Focus out",
+          "IsDefaultValue": false,
           "Name": "FocusOut",
           "Value": "FocusOut"
         },
         {
-          "Description": "Presión de teclas",
-          "DisplayName": "Presión de teclas",
-          "IsDefaultValue": false,
+          "Description": "Key press",
+          "DisplayName": "Key press",
+          "IsDefaultValue": true,
           "Name": "Keypress",
           "Value": "Keypress"
         }
@@ -1486,12 +1379,12 @@
       "ParentDataSetName": "",
       "PassThroughProperty": "",
       "PfxDefaultValue": "",
-      "PhoneDefaultValue": "FocusOut",
+      "PhoneDefaultValue": "Keypress",
       "Required": false,
       "ShouldAutoBind": false,
       "Type": 1,
       "Usage": 0,
-      "WebDefaultValue": "FocusOut"
+      "WebDefaultValue": "Keypress"
     },
     {
       "Category": "design",
@@ -1550,6 +1443,118 @@
       "WebDefaultValue": ""
     },
     {
+      "Category": "data",
+      "DefaultValue": "",
+      "Description": "El origen de datos que contiene los elementos que aparecen en el control.",
+      "DescriptionResourceString": "El origen de datos que contiene los elementos que aparecen en el control.",
+      "DisplayName": "Origen de datos(##PCFDatasetItems##)",
+      "DisplayNameResourceString": "Origen de datos",
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": true,
+      "IsLinkableToParentTheme": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": true,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "IsResettableToManifestDefault": false,
+      "Name": "Items",
+      "NullDefaultValue": "",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PfxDefaultValue": "[\"Item 1\", \"Item 2\", \"Item 3\"]",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 26,
+      "Usage": 0,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "",
+      "Description": "El origen de datos que contiene los elementos que aparecen en el control.",
+      "DescriptionResourceString": "El origen de datos que contiene los elementos que aparecen en el control.",
+      "DisplayName": "Origen de datos(##PCFDatasetSelected##)",
+      "DisplayNameResourceString": "Origen de datos",
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsLinkableToParentTheme": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": true,
+      "IsResettableToManifestDefault": false,
+      "Name": "Selected",
+      "NullDefaultValue": "",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "Items",
+      "PfxDefaultValue": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 5,
+      "Usage": 1,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "",
+      "Description": "El origen de datos que contiene los elementos que aparecen en el control.",
+      "DescriptionResourceString": "El origen de datos que contiene los elementos que aparecen en el control.",
+      "DisplayName": "Origen de datos(##PCFDatasetSelectedItems##)",
+      "DisplayNameResourceString": "Origen de datos",
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsLinkableToParentTheme": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": true,
+      "IsResettableToManifestDefault": false,
+      "Name": "SelectedItems",
+      "NullDefaultValue": "",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "Items",
+      "PfxDefaultValue": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 26,
+      "Usage": 1,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "",
+      "Description": "El origen de datos que contiene los elementos que aparecen en el control.",
+      "DescriptionResourceString": "El origen de datos que contiene los elementos que aparecen en el control.",
+      "DisplayName": "Origen de datos(##PCFDatasetDefaultSelectedItems##)",
+      "DisplayNameResourceString": "Origen de datos",
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsLinkableToParentTheme": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "IsResettableToManifestDefault": false,
+      "Name": "DefaultSelectedItems",
+      "NullDefaultValue": "",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "Items",
+      "PfxDefaultValue": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 26,
+      "Usage": 0,
+      "WebDefaultValue": ""
+    },
+    {
       "Category": "design",
       "DefaultValue": "",
       "Description": "",
@@ -1576,6 +1581,28 @@
       "Type": 3,
       "Usage": 0,
       "WebDefaultValue": ""
+    }
+  ],
+  "PropertyDependencies": [
+    {
+      "Input": "DefaultSelectedItems",
+      "Output": "Selected",
+      "RequiredFor": ""
+    },
+    {
+      "Input": "DefaultSelectedItems",
+      "Output": "SelectedItems",
+      "RequiredFor": ""
+    },
+    {
+      "Input": "Items",
+      "Output": "Selected",
+      "RequiredFor": ""
+    },
+    {
+      "Input": "Items",
+      "Output": "SelectedItems",
+      "RequiredFor": ""
     }
   ],
   "Resources": [
@@ -1632,357 +1659,357 @@
       "IsControlSpecific": false,
       "LoadingOrder": 8,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"ManifestTemplate\",\"Data\":{\"ConstructorName\":\"PowerApps.CoreControls.TextInputCanvas\",\"CustomControlId\":\"PowerApps.CoreControls.TextInputCanvas\",\"IsVirtual\":true,\"Properties\":{\"Resources\":[{\"Name\":\"/PCF/prop-types.js\",\"LoadOrder\":1,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/react-fela.js\",\"LoadOrder\":2,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela.js\",\"LoadOrder\":3,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela-dom.js\",\"LoadOrder\":4,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/common/js/container.js\",\"LoadOrder\":5,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PCFControls/js/PCFControlWrapper.js\",\"LoadOrder\":6,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PcfControlProxy/js/PcfControlProxy.js\",\"LoadOrder\":7,\"Type\":0,\"LibraryName\":null}],\"GroupDefinitions\":null,\"DataSetDefinitions\":{},\"Properties\":{\"Align\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"Start\"},\"AccessibleLabel\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"MaxLength\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"-1\"},\"Mode\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"SingleLine\"},\"Placeholder\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Required\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"false\"},\"Type\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"Text\"},\"ValidationState\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"None\"},\"Value\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"BasePaletteColor\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Font\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontSize\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontColor\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontWeight\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontItalic\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"false\"},\"FontUnderline\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"false\"},\"FontStrikethrough\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"false\"},\"Fill\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Appearance\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"FilledDarker\"},\"BorderStyle\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"BorderThickness\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"BorderColor\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"BorderRadius\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"PaddingTop\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"PaddingRight\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"PaddingBottom\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"PaddingLeft\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"TriggerOutput\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"FocusOut\"},\"TabIndex\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Tooltip\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"}},\"FeatureUsage\":null},\"Events\":null,\"CommonEvents\":{\"OnChange\":{\"EventName\":\"OnChange\"}},\"DesignMap\":null,\"PropertyDependencies\":[],\"Children\":null}}",
+      "Path": "{\"Id\":\"ManifestTemplate\",\"Data\":{\"ConstructorName\":\"PowerApps.CoreControls.ComboboxCanvas\",\"CustomControlId\":\"PowerApps.CoreControls.ComboboxCanvas\",\"IsVirtual\":true,\"Properties\":{\"Resources\":[{\"Name\":\"/PCF/prop-types.js\",\"LoadOrder\":1,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/react-fela.js\",\"LoadOrder\":2,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela.js\",\"LoadOrder\":3,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela-dom.js\",\"LoadOrder\":4,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/common/js/container.js\",\"LoadOrder\":5,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PCFControls/js/PCFControlWrapper.js\",\"LoadOrder\":6,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PcfControlProxy/js/PcfControlProxy.js\",\"LoadOrder\":7,\"Type\":0,\"LibraryName\":null}],\"GroupDefinitions\":null,\"DataSetDefinitions\":{\"Items\":{\"DisplayName\":\"Origen de datos\",\"Type\":\"Grid\",\"Columns\":{},\"Primary\":true,\"InitialDataSetFetch\":true,\"CDSDataSetOptions\":null}},\"Properties\":{\"AccessibleLabel\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Required\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"false\"},\"SelectMultiple\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"false\"},\"MultiValueDelimiter\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\", \"},\"IsSearchable\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"true\"},\"InputTextPlaceholder\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"Buscar elementos\"},\"SearchText\":{\"Required\":true,\"Usage\":2,\"DefaultValue\":\"\"},\"BasePaletteColor\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Font\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontSize\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontColor\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontWeight\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontItalic\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"false\"},\"FontUnderline\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"false\"},\"FontStrikethrough\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"false\"},\"ValidationState\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"None\"},\"Fill\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Appearance\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"FilledDarker\"},\"BorderStyle\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"BorderThickness\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"BorderColor\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"BorderRadius\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"PaddingTop\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"PaddingRight\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"PaddingBottom\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"PaddingLeft\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"TriggerOutput\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"Keypress\"},\"TabIndex\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Tooltip\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Items\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Selected\":{\"Required\":true,\"Usage\":2,\"DefaultValue\":\"\"},\"SelectedItems\":{\"Required\":true,\"Usage\":2,\"DefaultValue\":\"\"},\"DefaultSelectedItems\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"}},\"FeatureUsage\":[{\"IsRequired\":true,\"Name\":\"ExplicitCommonEvents\"},{\"IsRequired\":true,\"Name\":\"PreventDefaultSort\"}]},\"Events\":null,\"CommonEvents\":{\"OnChange\":{\"EventName\":\"OnChange\"}},\"DesignMap\":null,\"PropertyDependencies\":[{\"Input\":\"DefaultSelectedItems\",\"Output\":\"Selected\",\"RequiredFor\":\"\"},{\"Input\":\"DefaultSelectedItems\",\"Output\":\"SelectedItems\",\"RequiredFor\":\"\"},{\"Input\":\"Items\",\"Output\":\"Selected\",\"RequiredFor\":\"\"},{\"Input\":\"Items\",\"Output\":\"SelectedItems\",\"RequiredFor\":\"\"}],\"Children\":null}}",
       "Type": 3
     },
     {
       "IsControlSpecific": false,
       "LoadingOrder": 9,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"ManifestPropertyTypes\",\"Data\":{\"Properties\":[{\"Name\":\"Align\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"AccessibleLabel\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"MaxLength\",\"Type\":\"Whole_None\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Mode\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Placeholder\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Required\",\"Type\":\"TwoOptions\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Type\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"ValidationState\",\"Type\":\"Enum\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Value\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"\",\"IsPrimary\":true,\"IsIncluded\":false},{\"Name\":\"BasePaletteColor\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"ColorPalette\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Font\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"Font\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontSize\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontColor\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"FontColor\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontWeight\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"FontWeight\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontItalic\",\"Type\":\"TwoOptions\",\"ComplexType\":\"Italics\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontUnderline\",\"Type\":\"TwoOptions\",\"ComplexType\":\"Underline\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontStrikethrough\",\"Type\":\"TwoOptions\",\"ComplexType\":\"Strikethrough\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Fill\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"FillColor\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Appearance\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BorderStyle\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"BorderStyle\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BorderThickness\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BorderColor\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"Color\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BorderRadius\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PaddingTop\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PaddingRight\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PaddingBottom\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PaddingLeft\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"TriggerOutput\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"TabIndex\",\"Type\":\"Whole_None\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Tooltip\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PCFTeamsTheme\",\"Type\":\"String\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"X\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Y\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Width\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Height\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Visible\",\"Type\":\"Boolean\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"DisplayMode\",\"Type\":\"DisplayMode\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true}]}}",
+      "Path": "{\"Id\":\"ManifestPropertyTypes\",\"Data\":{\"Properties\":[{\"Name\":\"AccessibleLabel\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Required\",\"Type\":\"TwoOptions\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"SelectMultiple\",\"Type\":\"TwoOptions\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"MultiValueDelimiter\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"IsSearchable\",\"Type\":\"TwoOptions\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"InputTextPlaceholder\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"SearchText\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BasePaletteColor\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"ColorPalette\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Font\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"Font\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontSize\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontColor\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"FontColor\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontWeight\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"FontWeight\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontItalic\",\"Type\":\"TwoOptions\",\"ComplexType\":\"Italics\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontUnderline\",\"Type\":\"TwoOptions\",\"ComplexType\":\"Underline\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontStrikethrough\",\"Type\":\"TwoOptions\",\"ComplexType\":\"Strikethrough\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"ValidationState\",\"Type\":\"Enum\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Fill\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"FillColor\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Appearance\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BorderStyle\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"BorderStyle\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BorderThickness\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BorderColor\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"Color\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BorderRadius\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PaddingTop\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PaddingRight\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PaddingBottom\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PaddingLeft\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"TriggerOutput\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"TabIndex\",\"Type\":\"Whole_None\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Tooltip\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Items\",\"Type\":\"DataSet\",\"ComplexType\":\"None\",\"IsPrimary\":true,\"IsIncluded\":false},{\"Name\":\"Selected\",\"Type\":\"Object\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"SelectedItems\",\"Type\":\"DataSet\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"DefaultSelectedItems\",\"Type\":\"DataSet\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PCFTeamsTheme\",\"Type\":\"String\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"X\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Y\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Width\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Height\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Visible\",\"Type\":\"Boolean\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"DisplayMode\",\"Type\":\"DisplayMode\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true}]}}",
       "Type": 3
     },
     {
       "IsControlSpecific": false,
       "LoadingOrder": 10,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"PowerAppsControlInfo\",\"Data\":{\"TemplateVersion\":1,\"Version\":\"0.0.45\",\"IsFirstParty\":true}}",
+      "Path": "{\"Id\":\"PowerAppsControlInfo\",\"Data\":{\"TemplateVersion\":1,\"Version\":\"0.0.47\",\"IsFirstParty\":true}}",
       "Type": 3
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 11,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/TextInputCanvas.js",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/ComboboxCanvas.js",
       "Type": 0
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 10,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1033.resx",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1033.resx",
       "Type": 2
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1025.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1025.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1026.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1026.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1027.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1027.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1028.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1028.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1029.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1029.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1030.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1030.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1031.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1031.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1032.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1032.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1033.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1033.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1035.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1035.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1036.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1036.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1037.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1037.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1038.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1038.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1040.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1040.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1041.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1041.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1042.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1042.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1043.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1043.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1044.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1044.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1045.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1045.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1046.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1046.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1048.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1048.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1049.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1049.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1050.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1050.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1051.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1051.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1053.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1053.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1054.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1054.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1055.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1055.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1057.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1057.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1058.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1058.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1060.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1060.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1061.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1061.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1062.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1062.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1063.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1063.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1066.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1066.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1069.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1069.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1081.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1081.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1086.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1086.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1087.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1087.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1110.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.1110.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.2052.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.2052.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.2070.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.2070.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.2074.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.2074.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.3076.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.3076.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.3082.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.3082.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.3098.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_ComboboxCanvas/strings/ComboboxCanvas.3098.json",
       "Type": 5
     },
     {
       "IsControlSpecific": false,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"TextInputCanvas\":\"Entrada de texto\",\"TextInputCanvas_Align\":\"Alinear\",\"TextInputCanvas_Align_Desc\":\"Mostrar el texto utilizando la alineación de texto seleccionada.\",\"TextInputCanvas_Align_Start\":\"Inicio\",\"TextInputCanvas_Align_End\":\"Final\",\"TextInputCanvas_Align_Center\":\"Centrar\",\"TextInputCanvas_Align_Justify\":\"Justificar\",\"TextInputCanvas_AccessibleLabel\":\"Etiqueta accesible\",\"TextInputCanvas_AccessibleLabel_Desc\":\"Etiqueta para los lectores de pantalla.\",\"TextInputCanvas_Mode\":\"Modo\",\"TextInputCanvas_Mode_Desc\":\"Tipo de entrada de texto: línea única o multilínea.\",\"TextInputCanvas_Mode_SingleLine\":\"Línea única\",\"TextInputCanvas_Mode_Multiline\":\"Multilínea\",\"TextInputCanvas_Required\":\"Obligatorio\",\"TextInputCanvas_Required_Desc\":\"Indica si este control debe contener texto.\",\"TextInputCanvas_Value\":\"Valor\",\"TextInputCanvas_Value_Desc\":\"Texto que aparece en un control o que el usuario escribe en un control.\",\"TextInputCanvas_Placeholder\":\"Texto de marcador de posición\",\"TextInputCanvas_Placeholder_Desc\":\"El texto de marcador de posición de la entrada de texto.\",\"TextInputCanvas_Type\":\"Tipo\",\"TextInputCanvas_Type_Desc\":\"Tipo de contenido de la entrada de texto: texto sin formato, contraseña o búsqueda.\",\"TextInputCanvas_Type_Text\":\"Texto\",\"TextInputCanvas_Type_Password\":\"Contraseña\",\"TextInputCanvas_Type_Search\":\"Búsqueda\",\"TextInputCanvas_MaxLength\":\"Longitud máxima\",\"TextInputCanvas_MaxLength_Desc\":\"La longitud máxima del contenido de la entrada de texto.\",\"Base_Palette_Color\":\"Paleta de colores\",\"Base_Palette_Color_description\":\"Elija una paleta de colores que sea diferente del tema.\",\"TextInputCanvas_ValidationState\":\"Estado de validación\",\"TextInputCanvas_ValidationState_Desc\":\"El estado actual de la entrada de texto, con respecto a la validación.\",\"TextInputCanvas_ValidationState_None\":\"Ninguno\",\"TextInputCanvas_ValidationState_Error\":\"Error\",\"Font_Size\":\"Tamaño de fuente\",\"Font_Size_description\":\"Establezca el tamaño de fuente para el texto mostrado.\",\"Font\":\"Fuente\",\"Font_description\":\"El nombre de la familia de fuentes en la que aparece el texto\",\"Font_Color\":\"Color de fuente\",\"Font_Color_description\":\"El color del texto del control\",\"Font_Weight\":\"Espesor de la fuente\",\"Font_Weight_description\":\"El grosor del texto de un control\",\"Italic\":\"Cursiva\",\"Underline\":\"Subrayado\",\"Strikethrough\":\"Tachado\",\"Fill\":\"Relleno\",\"Fill_Description\":\"Color de fondo del control.\",\"BorderStyle\":\"Estilo de los bordes\",\"BorderStyle_Description\":\"Estilo de los bordes alrededor del control\",\"BorderStyle_Dashed\":\"Con guiones\",\"BorderStyle_Dotted\":\"De puntos\",\"BorderStyle_None\":\"Ninguno\",\"BorderStyle_Solid\":\"Continuo\",\"BorderThickness\":\"Grosor de los bordes\",\"BorderThickness_Description\":\"Grosor o ancho de los bordes alrededor del control.\",\"BorderColor\":\"Color de los bordes\",\"BorderColor_Description\":\"Color de los bordes alrededor del control.\",\"BorderRadius\":\"Radio de los bordes\",\"BorderRadius_Description\":\"Redondez de las esquinas del control. Un valor de 0 es perfectamente cuadrado.\",\"PaddingTop\":\"Superior\",\"PaddingTop_Description\":\"El valor del relleno superior del control.\",\"PaddingRight\":\"Derecho\",\"PaddingRight_Description\":\"El valor del relleno derecho del control.\",\"PaddingBottom\":\"Inferior\",\"PaddingBottom_Description\":\"El valor del relleno inferior del control.\",\"PaddingLeft\":\"Izquierdo\",\"PaddingLeft_Description\":\"El valor del relleno izquierdo del control.\",\"HoverBorderColor\":\"Color de los bordes al mantener el puntero\",\"HoverBorderColor_Description\":\"Color de los bordes mientras se mantiene el puntero sobre el control.\",\"PressedBorderColor\":\"Color de los bordes al presionar\",\"PressedBorderColor_Description\":\"Color de los bordes mientras se presiona o selecciona el control.\",\"FocusedBorderColor\":\"Color de los bordes cuando tiene el foco\",\"FocusedBorderColor_Description\":\"Color de los bordes mientras el control tiene el foco.\",\"DisabledBorderColor\":\"Color de los bordes cuando está deshabilitado\",\"DisabledBorderColor_Description\":\"Color de los bordes mientras el control está deshabilitado.\",\"Appearance\":\"Apariencia\",\"Appearance_Description\":\"Apariencia de los bordes y el relleno del control\",\"Appearance_FilledDarker\":\"Relleno más oscuro\",\"Appearance_FilledLighter\":\"Relleno más claro\",\"Appearance_Outline\":\"Contorno\",\"TriggerOutput\":\"Salida del desencadenador\",\"TriggerOutput_Description\":\"Cuándo se debe desencadenar la función OnChange.\\r\\n\\r\\nPérdida del foco: solo desencadena OnChange cuando el control de entrada de texto pierde el foco.\\r\\n\\r\\nRetrasada: desencadena OnChange tras un retraso de medio segundo. Es útil para retrasar operaciones que consumen muchos recursos hasta que el usuario termine de introducir texto (es decir, para filtrar cuándo se utiliza la entrada en otras fórmulas).\\r\\n\\r\\nPresión de teclas: desencadena OnChange inmediatamente a medida que el usuario escribe.\",\"TriggerOutput_Delayed\":\"Retrasada\",\"TriggerOutput_FocusOut\":\"Pérdida del foco\",\"TriggerOutput_Keypress\":\"Presión de teclas\"}}}",
+      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"ComboboxCanvas\":\"Cuadro combinado\",\"ComboboxCanvas_AccessibleLabel\":\"Etiqueta accesible\",\"ComboboxCanvas_AccessibleLabel_Desc\":\"Etiqueta para los lectores de pantalla.\",\"ComboboxCanvas_Required\":\"Obligatorio\",\"ComboboxCanvas_Required_Desc\":\"Indica si este control debe contener un valor de cuadro combinado.\",\"ComboboxCanvas_Desc\":\"Permitir que los usuarios elijan uno o más valores en un conjunto de opciones.\",\"ComboboxCanvas_Items\":\"Origen de datos\",\"ComboboxCanvas_Items_Desc\":\"El origen de datos que contiene los elementos que aparecen en el control.\",\"ComboboxCanvas_SelectMultiple\":\"Permitir selecciones múltiples\",\"ComboboxCanvas_SelectMultiple_Desc\":\"Indica si este control permite seleccionar más de un elemento a la vez.\",\"ComboboxCanvas_MultiValueDelimiter\":\"Delimitador de varios valores\",\"ComboboxCanvas_MultiValueDelimiter_Desc\":\"Texto que se utiliza para separar los valores de elemento seleccionados cuando el control permite selecciones múltiples.\",\"ComboboxCanvas_IsSearchable\":\"Permitir búsqueda\",\"ComboboxCanvas_IsSearchable_Desc\":\"Permitir la búsqueda de elementos.\",\"ComboboxCanvas_InputTextPlaceholder\":\"Texto de marcador de posición\",\"ComboboxCanvas_InputTextPlaceholder_Desc\":\"Texto de marcador de posición del cuadro combinado.\",\"ComboboxCanvas_SearchText\":\"Texto de búsqueda\",\"ComboboxCanvas_SearchText_Desc\":\"Texto que se utiliza para buscar la lista de elementos.\",\"Base_Palette_Color\":\"Paleta de colores\",\"Base_Palette_Color_description\":\"Elija una paleta de colores que sea diferente del tema.\",\"Font_Size\":\"Tamaño de fuente\",\"Font_Size_description\":\"Establezca el tamaño de fuente para el texto mostrado.\",\"ComboboxCanvas_ValidationState\":\"Estado de validación\",\"ComboboxCanvas_ValidationState_Desc\":\"El estado actual del cuadro combinado, con respecto a la validación.\",\"ComboboxCanvas_ValidationState_None\":\"Ninguno\",\"ComboboxCanvas_ValidationState_Error\":\"Error\",\"Font\":\"Fuente\",\"Font_description\":\"El nombre de la familia de fuentes en la que aparece el texto\",\"Font_Color\":\"Color de fuente\",\"Font_Color_description\":\"El color del texto del control\",\"Font_Weight\":\"Espesor de la fuente\",\"Font_Weight_description\":\"El grosor del texto de un control\",\"Italic\":\"Cursiva\",\"Underline\":\"Subrayado\",\"Strikethrough\":\"Tachado\",\"Default_Value_Placeholder\":\"Buscar elementos\",\"Fill\":\"Relleno\",\"Fill_Description\":\"Color de fondo del control.\",\"BorderStyle\":\"Estilo de los bordes\",\"BorderStyle_Description\":\"Estilo de los bordes alrededor del control\",\"BorderStyle_Dashed\":\"Con guiones\",\"BorderStyle_Dotted\":\"De puntos\",\"BorderStyle_None\":\"Ninguno\",\"BorderStyle_Solid\":\"Continuo\",\"BorderThickness\":\"Grosor de los bordes\",\"BorderThickness_Description\":\"Grosor o ancho de los bordes alrededor del control.\",\"BorderColor\":\"Color de los bordes\",\"BorderColor_Description\":\"Color de los bordes alrededor del control.\",\"BorderRadius\":\"Radio de los bordes\",\"BorderRadius_Description\":\"Redondez de las esquinas del control. Un valor de 0 es perfectamente cuadrado.\",\"PaddingTop\":\"Superior\",\"PaddingTop_Description\":\"El valor del relleno superior del control.\",\"PaddingRight\":\"Derecho\",\"PaddingRight_Description\":\"El valor del relleno derecho del control.\",\"PaddingBottom\":\"Inferior\",\"PaddingBottom_Description\":\"El valor del relleno inferior del control.\",\"PaddingLeft\":\"Izquierdo\",\"PaddingLeft_Description\":\"El valor del relleno izquierdo del control.\",\"HoverBorderColor\":\"Color de los bordes al mantener el puntero\",\"HoverBorderColor_Description\":\"Color de los bordes mientras se mantiene el puntero sobre el control.\",\"PressedBorderColor\":\"Color de los bordes al presionar\",\"PressedBorderColor_Description\":\"Color de los bordes mientras se presiona o selecciona el control.\",\"FocusedBorderColor\":\"Color de los bordes cuando tiene el foco\",\"FocusedBorderColor_Description\":\"Color de los bordes mientras el control tiene el foco.\",\"DisabledBorderColor\":\"Color de los bordes cuando está deshabilitado\",\"DisabledBorderColor_Description\":\"Color de los bordes mientras el control está deshabilitado.\",\"Appearance\":\"Apariencia\",\"Appearance_Description\":\"Apariencia de los bordes y el relleno del control\",\"Appearance_FilledDarker\":\"Relleno más oscuro\",\"Appearance_FilledLighter\":\"Relleno más claro\",\"Appearance_Outline\":\"Contorno\",\"TriggerOutput\":\"Trigger output\",\"TriggerOutput_Description\":\"When to trigger the OnChange function.\\r\\n\\r\\nFocusOut: Triggers OnChange only when the text input control loses focus.\\r\\n\\r\\nDelayed: Triggers OnChange after a half-second delay. Useful for delaying expensive operations until user completes inputting text (i.e. for filtering when input is used in other formulas).\\r\\n\\r\\nKeypress: Triggers OnChange immediately as the user types.\",\"TriggerOutput_Delayed\":\"Delayed\",\"TriggerOutput_FocusOut\":\"Focus out\",\"TriggerOutput_Keypress\":\"Key press\"}}}",
       "Type": 3
     },
     {
@@ -2012,5 +2039,5 @@
     "supportResettableProperties": "true",
     "supportSetFocus": "true"
   },
-  "Version": "0.0.45"
+  "Version": "0.0.47"
 }

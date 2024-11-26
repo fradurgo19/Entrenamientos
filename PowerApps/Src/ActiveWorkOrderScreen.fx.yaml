@@ -325,7 +325,7 @@ ActiveWorkOrderScreen As screen:
                             (FechaLimite >= DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate)) && 
                             (FechaLimite <= DatePicker1_1.SelectedDate || IsBlank(DatePicker1_1.SelectedDate))
                         ),
-                        Modified,
+                        Created,
                         SortOrder.Descending
                     )
                 Layout: =Layout.Vertical

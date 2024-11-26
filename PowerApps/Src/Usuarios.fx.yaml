@@ -172,6 +172,8 @@ Usuarios As screen:
                     Height: =58
                     InputTextPlaceholder: ="Estado"
                     Items: =["Habilitado", "Aprobado","Reprobado","No Aplica","Inscrito","Caduco"]
+                    Required: =false
+                    TriggerOutput: ="Keypress"
                     Width: =170
                     X: =0
                     Y: =0
@@ -194,6 +196,8 @@ Usuarios As screen:
                     Height: =58
                     InputTextPlaceholder: ="Calificación"
                     Items: =["1", "2","3","4","5"]
+                    Required: =false
+                    TriggerOutput: ="Keypress"
                     Width: =156
                     X: =0
                     Y: =0
