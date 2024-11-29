@@ -359,7 +359,7 @@ ActiveWorkOrderScreen As screen:
                     Size: =10.14
                     Text: =ThisItem.Usuarios.Value
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =558
+                    Width: =541
                     X: =9
                     Y: =10.88
                     ZIndex: =1
@@ -368,7 +368,7 @@ ActiveWorkOrderScreen As screen:
                     Color: =RGBA(6, 26, 84, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =53.58
+                    Height: =36
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
                     PaddingLeft: =0
@@ -542,25 +542,6 @@ ActiveWorkOrderScreen As screen:
                     Y: =121
                     ZIndex: =12
 
-                Subtitle1_5 As label:
-                    Color: =RGBA(0, 0, 0, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =22
-                    OnSelect: =Select(Parent)
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Size: =11
-                    Text: |-
-                        ="Asignó:"
-                    VerticalAlign: =VerticalAlign.Top
-                    Width: =76
-                    X: =278
-                    Y: =78
-                    ZIndex: =13
-
                 Title1_2 As label:
                     Color: =RGBA(255, 255, 255, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -647,7 +628,7 @@ ActiveWorkOrderScreen As screen:
                     Text: =ThisItem.Estado.Value
                     VerticalAlign: =VerticalAlign.Top
                     Width: =57.46
-                    X: =251.27
+                    X: =414
                     Y: =10.88
                     ZIndex: =18
 
@@ -659,6 +640,35 @@ ActiveWorkOrderScreen As screen:
                     Width: =608
                     Y: =177
                     ZIndex: =19
+
+                Container87 As groupContainer.manualLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    Height: =29
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Width: =70
+                    X: =268
+                    Y: =78
+                    ZIndex: =20
+
+                    Subtitle1_5 As label:
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                        Height: =25
+                        OnSelect: =
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =11
+                        Text: |-
+                            ="Asignó:"
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =69
+                        ZIndex: =1
 
         Container14 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
