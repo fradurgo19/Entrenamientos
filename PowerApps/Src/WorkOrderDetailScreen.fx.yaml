@@ -126,9 +126,11 @@
                     BorderColor: =RGBA(0, 89, 178, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="Curso_x003a__x0020_Adjunto"
-                    Default: =ThisItem.Curso_x003a__x0020_Adjunto
+                    Default: |-
+                        =ThisItem.'Curso: Adjunto'
                     DisplayMode: =DisplayMode.View
-                    DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Curso_x003a__x0020_Adjunto)
+                    DisplayName: |-
+                        =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,'Curso: Adjunto')
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =41.86
                     Required: =false
@@ -171,7 +173,8 @@
                         Height: =58.6
                         HoverColor: =RGBA(0, 0, 0, 1)
                         HoverFill: =RGBA(153, 205, 255, 1)
-                        Items: =Choices([@'Asignación Entrenamientos'].Curso_x003a__x0020_Adjunto)
+                        Items: |-
+                            =Choices([@'Asignación Entrenamientos'].'Curso: Adjunto')
                         PaddingBottom: =4.19
                         PaddingLeft: =0
                         PaddingRight: =2.82
@@ -179,7 +182,8 @@
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(0, 89, 178, 1)
                         SearchFields: =["Value"]
-                        SearchItems: =Choices('Asignación Entrenamientos'.Curso_x003a__x0020_Adjunto,DataCardValue34.SearchText)
+                        SearchItems: |-
+                            =Choices('Asignación Entrenamientos'.'Curso: Adjunto',DataCardValue34.SearchText)
                         SelectionFill: =RGBA(0, 51, 102, 1)
                         SelectMultiple: =false
                         Size: =11.83
@@ -228,9 +232,11 @@
                     BorderColor: =RGBA(0, 89, 178, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="Curso_x003a_Prueba"
-                    Default: =ThisItem.Curso_x003a_Prueba
+                    Default: |-
+                        =ThisItem.'Curso:Prueba'
                     DisplayMode: =DisplayMode.View
-                    DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Curso_x003a_Prueba)
+                    DisplayName: |-
+                        =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,'Curso:Prueba')
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =79.53
                     Required: =false
@@ -273,7 +279,8 @@
                         Height: =58.6
                         HoverColor: =RGBA(0, 0, 0, 1)
                         HoverFill: =RGBA(153, 205, 255, 1)
-                        Items: =Choices([@'Asignación Entrenamientos'].Curso_x003a_Prueba)
+                        Items: |-
+                            =Choices([@'Asignación Entrenamientos'].'Curso:Prueba')
                         PaddingBottom: =4.19
                         PaddingLeft: =0
                         PaddingRight: =2.82
@@ -281,7 +288,8 @@
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(0, 89, 178, 1)
                         SearchFields: =["Value"]
-                        SearchItems: =Choices('Asignación Entrenamientos'.Curso_x003a_Prueba,DataCardValue35.SearchText)
+                        SearchItems: |-
+                            =Choices('Asignación Entrenamientos'.'Curso:Prueba',DataCardValue35.SearchText)
                         SelectionFill: =RGBA(0, 51, 102, 1)
                         SelectMultiple: =false
                         Size: =11.83
@@ -430,9 +438,9 @@
                     BorderColor: =RGBA(0, 89, 178, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="{Attachments}"
-                    Default: =ThisItem.'{Attachments}'
+                    Default: =ThisItem.'Datos adjuntos'
                     DisplayMode: =DisplayMode.View
-                    DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,'{Attachments}')
+                    DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,'Datos adjuntos')
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =41.86
                     Required: =false
@@ -526,9 +534,11 @@
                     BorderColor: =RGBA(0, 89, 178, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="Usuarios_x003a_Correo"
-                    Default: =ThisItem.Usuarios_x003a_Correo
+                    Default: |-
+                        =ThisItem.'Usuarios:Correo'
                     DisplayMode: =DisplayMode.View
-                    DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Usuarios_x003a_Correo)
+                    DisplayName: |-
+                        =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,'Usuarios:Correo')
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =41.86
                     Required: =false
@@ -571,7 +581,8 @@
                         Height: =58.6
                         HoverColor: =RGBA(0, 0, 0, 1)
                         HoverFill: =RGBA(153, 205, 255, 1)
-                        Items: =Choices([@'Asignación Entrenamientos'].Usuarios_x003a_Correo)
+                        Items: |-
+                            =Choices([@'Asignación Entrenamientos'].'Usuarios:Correo')
                         PaddingBottom: =4.19
                         PaddingLeft: =0
                         PaddingRight: =2.82
@@ -579,7 +590,8 @@
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(0, 89, 178, 1)
                         SearchFields: =["Value"]
-                        SearchItems: =Choices('Asignación Entrenamientos'.Usuarios_x003a_Correo,DataCardValue36.SearchText)
+                        SearchItems: |-
+                            =Choices('Asignación Entrenamientos'.'Usuarios:Correo',DataCardValue36.SearchText)
                         SelectionFill: =RGBA(0, 51, 102, 1)
                         SelectMultiple: =false
                         Size: =11.83
@@ -1133,9 +1145,11 @@
                     BorderColor: =RGBA(0, 89, 178, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="Usuarios_x003a_Sede"
-                    Default: =ThisItem.Usuarios_x003a_Sede
+                    Default: |-
+                        =ThisItem.'Usuarios:Sede'
                     DisplayMode: =DisplayMode.View
-                    DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Usuarios_x003a_Sede)
+                    DisplayName: |-
+                        =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,'Usuarios:Sede')
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =41.86
                     Required: =false
@@ -1178,7 +1192,8 @@
                         Height: =58.6
                         HoverColor: =RGBA(0, 0, 0, 1)
                         HoverFill: =RGBA(153, 205, 255, 1)
-                        Items: =Choices([@'Asignación Entrenamientos'].Usuarios_x003a_Sede)
+                        Items: |-
+                            =Choices([@'Asignación Entrenamientos'].'Usuarios:Sede')
                         PaddingBottom: =4.19
                         PaddingLeft: =0
                         PaddingRight: =2.82
@@ -1186,7 +1201,8 @@
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(0, 89, 178, 1)
                         SearchFields: =["Value"]
-                        SearchItems: =Choices('Asignación Entrenamientos'.Usuarios_x003a_Sede,DataCardValue29.SearchText)
+                        SearchItems: |-
+                            =Choices('Asignación Entrenamientos'.'Usuarios:Sede',DataCardValue29.SearchText)
                         SelectionFill: =RGBA(0, 51, 102, 1)
                         SelectMultiple: =false
                         Size: =11.83
@@ -1235,9 +1251,11 @@
                     BorderColor: =RGBA(0, 89, 178, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="Usuarios_x003a_Cargo"
-                    Default: =ThisItem.Usuarios_x003a_Cargo
+                    Default: |-
+                        =ThisItem.'Usuarios:Cargo'
                     DisplayMode: =DisplayMode.View
-                    DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Usuarios_x003a_Cargo)
+                    DisplayName: |-
+                        =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,'Usuarios:Cargo')
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =41.86
                     Required: =false
@@ -1280,7 +1298,8 @@
                         Height: =58.6
                         HoverColor: =RGBA(0, 0, 0, 1)
                         HoverFill: =RGBA(153, 205, 255, 1)
-                        Items: =Choices([@'Asignación Entrenamientos'].Usuarios_x003a_Cargo)
+                        Items: |-
+                            =Choices([@'Asignación Entrenamientos'].'Usuarios:Cargo')
                         PaddingBottom: =4.19
                         PaddingLeft: =0
                         PaddingRight: =2.82
@@ -1288,7 +1307,8 @@
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(0, 89, 178, 1)
                         SearchFields: =["Value"]
-                        SearchItems: =Choices('Asignación Entrenamientos'.Usuarios_x003a_Cargo,DataCardValue30.SearchText)
+                        SearchItems: |-
+                            =Choices('Asignación Entrenamientos'.'Usuarios:Cargo',DataCardValue30.SearchText)
                         SelectionFill: =RGBA(0, 51, 102, 1)
                         SelectMultiple: =false
                         Size: =11.83

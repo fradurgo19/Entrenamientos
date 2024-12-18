@@ -1,0 +1,170 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
+# Content may be incomplete and subject to change.
+# This file is read-only and should only be used to review changes made within Power Apps Studio.
+# This file isn't used when loading the app. External editing, merging and conflict resolution are
+# not supported.
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  MenuScreen_1:
+    Properties:
+      Fill: =RGBA(255, 255, 255, 1)
+      Height: =Max(App.Height, App.DesignHeight)
+      LoadingSpinnerColor: =RGBA(0, 51, 102, 1)
+      Width: =Max(App.Width, App.DesignWidth)
+    Children:
+      - Container1:
+          Control: GroupContainer@1.3.0
+          Variant: ManualLayout
+          Properties:
+            Height: =1136
+            Width: =631
+          Children:
+            - Container2:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  Height: =78
+                  Width: =631
+                Children:
+                  - Container3:
+                      Control: GroupContainer@1.3.0
+                      Variant: AutoLayout
+                      Properties:
+                        Height: =78
+                        LayoutDirection: =LayoutDirection.Horizontal
+                        Width: =631
+                      Children:
+                        - TextBox4_49:
+                            Control: Label@2.5.1
+                            Properties:
+                              Align: =Align.Center
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              Color: =RGBA(255, 255, 255, 1)
+                              Fill: =RGBA(255, 0, 0, 1)
+                              Font: =Font.'Lato Black'
+                              FontWeight: =FontWeight.Bold
+                              Height: =Parent.Height
+                              HoverBorderColor: =TextBox4_49.BorderColor
+                              HoverColor: =TextBox4_49.Color
+                              HoverFill: =TextBox4_49.Fill
+                              PaddingBottom: =4.19
+                              PaddingLeft: =4.19
+                              PaddingRight: =2.82
+                              PaddingTop: =2.82
+                              PressedBorderColor: =TextBox4_49.BorderColor
+                              PressedColor: =TextBox4_49.Color
+                              PressedFill: =TextBox4_49.Fill
+                              Size: =15.77
+                              Text: ="OFERTA ENTRENAMIENTOS"
+                              Width: =Parent.Width
+                              Y: =215
+            - Container4:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  Height: =1046
+                  Width: =631
+                  Y: =78
+                Children:
+                  - Button1_14:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =RGBA(221, 79, 14, 1)
+                        BorderThickness: =4
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Height: =46
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                        OnSelect: =Set(varCargar, true);Set(varTiempo, true)
+                        PaddingBottom: =4.19
+                        PaddingLeft: =4.19
+                        PaddingRight: =2.82
+                        PaddingTop: =2.82
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =Self.Fill
+                        PressedFill: =Self.Color
+                        RadiusBottomLeft: =30
+                        RadiusBottomRight: =30
+                        RadiusTopLeft: =30
+                        RadiusTopRight: =30
+                        Size: =13.52
+                        Text: ="Ingresar"
+                        Width: =124.51
+                        X: =252
+                        Y: =924
+                  - Timer1:
+                      Control: Timer@2.1.0
+                      Properties:
+                        AutoStart: =varTiempo
+                        BorderColor: =ColorFade(Self.Fill, -15%)
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =ColorFade(Self.BorderColor, 70%)
+                        DisabledColor: =ColorFade(Self.Fill, 90%)
+                        DisabledFill: =ColorFade(Self.Fill, 70%)
+                        Duration: =7000
+                        Fill: =RGBA(0, 51, 102, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =60
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                        OnTimerEnd: =Set(varCargar,false);Navigate(MenuScreen,ScreenTransition.Fade)
+                        PaddingBottom: =4.19
+                        PaddingLeft: =4.19
+                        PaddingRight: =2.82
+                        PaddingTop: =2.82
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =Self.Fill
+                        PressedFill: =Self.Color
+                        Size: =7.32
+                        Visible: =false
+                        Width: =157.75
+                        X: =133
+                        Y: =180
+                  - Image8:
+                      Control: Image@2.2.3
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Height: =240
+                        Image: ='cargador-frontal'
+                        Visible: =varCargar
+                        Width: =180.28
+                        X: =223
+                        Y: =164
+                  - Image9:
+                      Control: Image@2.2.3
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Height: =240
+                        Image: =minicargador
+                        Visible: =varCargar
+                        Width: =171.27
+                        X: =228
+                        Y: =573
+                  - Label1_5:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Color: =RGBA(255, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Height: =66
+                        PaddingBottom: =4.19
+                        PaddingLeft: =4.19
+                        PaddingRight: =2.82
+                        PaddingTop: =2.82
+                        Size: =16.9
+                        Text: ="Bienvenido a la App"
+                        Underline: =true
+                        Width: =360.56
+                        X: =133
+                        Y: =39

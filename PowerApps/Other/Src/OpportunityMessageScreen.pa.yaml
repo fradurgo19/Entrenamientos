@@ -1,0 +1,168 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
+# Content may be incomplete and subject to change.
+# This file is read-only and should only be used to review changes made within Power Apps Studio.
+# This file isn't used when loading the app. External editing, merging and conflict resolution are
+# not supported.
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  OpportunityMessageScreen:
+    Properties:
+      Fill: =RGBA(237,242,246,1)
+      Height: =Max(App.Height, App.DesignHeight)
+      LoadingSpinnerColor: =RGBA(0, 51, 102, 1)
+      Width: =Max(App.Width, App.DesignWidth)
+    Children:
+      - Container46:
+          Control: GroupContainer@1.3.0
+          Variant: ManualLayout
+          Properties:
+            Height: =401
+            Width: =640
+          Children:
+            - TextBox1_39:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =LayoutAlignItems.Center
+                  BorderColor: =RGBA(0, 89, 178, 1)
+                  Color: =RGBA(0, 0, 0, 0.70196078)
+                  Font: =Font.Lato
+                  Height: =87
+                  HoverBorderColor: =TextBox1_39.BorderColor
+                  HoverColor: =TextBox1_39.Color
+                  HoverFill: =TextBox1_39.Fill
+                  PaddingBottom: =4.19
+                  PaddingLeft: =4.19
+                  PaddingRight: =2.82
+                  PaddingTop: =2.82
+                  PressedBorderColor: =TextBox1_39.BorderColor
+                  PressedColor: =TextBox1_39.Color
+                  PressedFill: =TextBox1_39.Fill
+                  Size: =19.72
+                  Text: ="Asignación creada de manera correcta."
+                  Width: =306.64
+                  X: =172
+                  Y: =240
+            - Circle2_1:
+                Control: Circle@2.3.0
+                Group: Group10_1
+                Properties:
+                  BorderColor: =RGBA(0, 89, 178, 1)
+                  Fill: =RGBA(97,189,126,1)
+                  Height: =87
+                  TabIndex: =0
+                  Width: =85
+                  X: =287
+                  Y: =35
+            - icon5_1:
+                Control: Classic/Icon@2.5.0
+                Group: Group10_1
+                Properties:
+                  BorderColor: =RGBA(0, 89, 178, 1)
+                  Color: =RGBA(255, 255, 255, 1)
+                  Height: =74
+                  Icon: =Icon.Check
+                  TabIndex: =0
+                  Width: =43
+                  X: =306
+                  Y: =46
+      - Container47:
+          Control: GroupContainer@1.3.0
+          Variant: ManualLayout
+          Properties:
+            Height: =735
+            Width: =640
+            Y: =401
+          Children:
+            - Button1_10:
+                Control: Classic/Button@2.2.0
+                Properties:
+                  BorderColor: =ColorFade(Self.Fill, -15%)
+                  BorderThickness: =0
+                  Color: =RGBA(255, 255, 255, 1)
+                  DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                  Fill: =RGBA(54,166,182,1)
+                  Font: =Font.Lato
+                  Height: =71.99
+                  HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                  HoverColor: =RGBA(255, 255, 255, 1)
+                  HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                  OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
+                  PaddingBottom: =4.19
+                  PaddingLeft: =4.19
+                  PaddingRight: =2.82
+                  PaddingTop: =2.82
+                  PressedBorderColor: =Self.Fill
+                  PressedColor: =Self.Fill
+                  PressedFill: =Self.Color
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                  Size: =12.96
+                  Text: ="Asignar Curso"
+                  Width: =310.99
+                  X: =168
+                  Y: =192
+            - Button1_9:
+                Control: Classic/Button@2.2.0
+                Properties:
+                  BorderColor: =ColorFade(Self.Fill, -15%)
+                  BorderThickness: =0
+                  Color: =RGBA(255, 255, 255, 1)
+                  DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                  Fill: =RGBA(54,166,182,1)
+                  Font: =Font.Lato
+                  Height: =71.99
+                  HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                  HoverColor: =RGBA(255, 255, 255, 1)
+                  HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                  OnSelect: =Navigate(EventScreen, ScreenTransition.Fade)
+                  PaddingBottom: =4.19
+                  PaddingLeft: =4.19
+                  PaddingRight: =2.82
+                  PaddingTop: =2.82
+                  PressedBorderColor: =Self.Fill
+                  PressedColor: =Self.Fill
+                  PressedFill: =Self.Color
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                  Size: =12.96
+                  Text: ="Retornar a la lista de Usuarios"
+                  Width: =310.99
+                  X: =168
+                  Y: =556
+            - Button1_8:
+                Control: Classic/Button@2.2.0
+                Properties:
+                  BorderColor: =ColorFade(Self.Fill, -15%)
+                  BorderThickness: =0
+                  Color: =RGBA(255, 255, 255, 1)
+                  DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                  Fill: =RGBA(54,166,182,1)
+                  Font: =Font.Lato
+                  Height: =71.99
+                  HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                  HoverColor: =RGBA(255, 255, 255, 1)
+                  HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                  OnSelect: =Navigate(CustomerScreen, ScreenTransition.Fade)
+                  PaddingBottom: =4.19
+                  PaddingLeft: =4.19
+                  PaddingRight: =2.82
+                  PaddingTop: =2.82
+                  PressedBorderColor: =Self.Fill
+                  PressedColor: =Self.Fill
+                  PressedFill: =Self.Color
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                  Size: =12.96
+                  Text: ="Retornar a la lista de Cursos"
+                  Width: =310.99
+                  X: =168
+                  Y: =397

@@ -1,0 +1,1065 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
+# Content may be incomplete and subject to change.
+# This file is read-only and should only be used to review changes made within Power Apps Studio.
+# This file isn't used when loading the app. External editing, merging and conflict resolution are
+# not supported.
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  AddNewOpportunityScreen:
+    Properties:
+      Fill: =RGBA(232, 232, 232, 1)
+      Height: =Max(App.Height, App.DesignHeight)
+      LoadingSpinnerColor: =RGBA(0, 51, 102, 1)
+      OnVisible: |-
+        =UpdateContext({ResetOpportunity:true});
+        UpdateContext({ResetOpportunity:false})
+      Width: =Max(App.Width, App.DesignWidth)
+    Children:
+      - Rectangle1_34:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Fill: =RGBA(216, 223, 238, 1)
+            Height: =0.84
+            TabIndex: =0
+            Width: =360.56
+            Y: =154.87
+      - Rectangle9:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Fill: =RGBA(212,212,212,1)
+            FocusedBorderThickness: =0
+            Height: =0.84
+            TabIndex: =0
+            Width: =360.56
+            Y: =639.16
+      - Container26:
+          Control: GroupContainer@1.3.0
+          Variant: ManualLayout
+          Properties:
+            Height: =1134
+            Width: =640
+          Children:
+            - Container27:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  Height: =89
+                  Width: =640
+                  Y: =5
+                Children:
+                  - Rectangle1_33:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Fill: =RGBA(6,26,84,1)
+                        Height: =83.71
+                        TabIndex: =0
+                        Width: =640
+                        Y: =
+                  - TextBox1_59:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        Font: =Font.Lato
+                        FontWeight: =FontWeight.Semibold
+                        Height: =83.71
+                        HoverBorderColor: =TextBox1_59.BorderColor
+                        HoverColor: =TextBox1_59.Color
+                        HoverFill: =TextBox1_59.Fill
+                        PaddingBottom: =4.19
+                        PaddingLeft: =4.19
+                        PaddingRight: =2.82
+                        PaddingTop: =2.82
+                        PressedBorderColor: =TextBox1_59.BorderColor
+                        PressedColor: =TextBox1_59.Color
+                        PressedFill: =TextBox1_59.Fill
+                        Size: =15.77
+                        Text: ="Nueva Asignación"
+                        Width: =223
+                        X: =129
+                        Y: =
+                  - Circle1_10:
+                      Control: Circle@2.3.0
+                      Group: Group5_8
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =30.99
+                        OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
+                        TabIndex: =0
+                        Width: =32.68
+                        X: =24
+                        Y: =24
+                  - icon4_6:
+                      Control: Classic/Icon@2.5.0
+                      Group: Group5_8
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Color: =RGBA(6,26,84,1)
+                        Height: =30.97
+                        Icon: =Icon.Cancel
+                        OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
+                        TabIndex: =0
+                        Width: =21.97
+                        X: =29
+                        Y: =24
+                  - Image3_1:
+                      Control: Image@2.2.3
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Height: =83
+                        Image: ='Captura de pantalla 2024-01-12 082706'
+                        ImagePosition: =ImagePosition.Fill
+                        Width: =240
+                        X: =400
+            - Container28:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  Height: =966
+                  Width: =640
+                  Y: =94
+                Children:
+                  - Form1:
+                      Control: Form@2.4.2
+                      Variant: Classic
+                      Layout: Vertical
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        DataSource: ='Asignación Entrenamientos'
+                        DefaultMode: =FormMode.New
+                        Height: =964
+                      Children:
+                        - 'Curso: Adjunto_DataCard1':
+                            Control: TypedDataCard@1.0.6
+                            Variant: ClassicComboBoxView
+                            Properties:
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              DataField: ="Curso_x003a__x0020_Adjunto"
+                              Default: |-
+                                =ThisItem.'Curso: Adjunto'
+                              DisplayName: |-
+                                =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,'Curso: Adjunto')
+                              Height: =41.86
+                              Required: =false
+                              Update: =DataCardValue31.Selected
+                              Y: =8
+                            Children:
+                              - DataCardKey31:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: =Parent.DisplayName
+                                    Width: =326.76
+                                    Wrap: =false
+                                    X: =16.9
+                                    Y: =8.37
+                              - DataCardValue31:
+                                  Control: Classic/ComboBox@2.4.0
+                                  Properties:
+                                    AccessibleLabel: ="Valor Automatico"
+                                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                    ChevronBackground: =RGBA(0, 51, 102, 1)
+                                    ChevronFill: =RGBA(255, 255, 255, 1)
+                                    ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                                    DefaultSelectedItems: =Parent.Default
+                                    DisplayFields: =["Value"]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Font: =Font.'Open Sans'
+                                    Height: =58.6
+                                    HoverFill: =RGBA(153, 205, 255, 1)
+                                    InputTextPlaceholder: ="Valor Automatico"
+                                    Items: |-
+                                      =Choices([@'Asignación Entrenamientos'].'Curso: Adjunto')
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =0
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    PressedColor: =RGBA(255, 255, 255, 1)
+                                    PressedFill: =RGBA(0, 89, 178, 1)
+                                    SearchFields: =["Value"]
+                                    SelectMultiple: =false
+                                    SelectionColor: =RGBA(255, 255, 255, 1)
+                                    SelectionFill: =RGBA(0, 51, 102, 1)
+                                    Size: =11.83
+                                    Tooltip: ="Valor Automatico"
+                                    Width: =326.76
+                                    X: =16.9
+                                    Y: =52.74
+                              - ErrorMessage21:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(168, 0, 0, 1)
+                                    Font: =Font.'Open Sans'
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =8.37
+                                    Live: =Live.Assertive
+                                    PaddingBottom: =0
+                                    PaddingLeft: =0
+                                    PaddingRight: =0
+                                    PaddingTop: =0
+                                    Size: =13.52
+                                    Text: =Parent.Error
+                                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                    Width: =326.76
+                                    X: =16.9
+                                    Y: =111.34
+                              - StarVisible21:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    Align: =Align.Center
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =16.9
+                                    Wrap: =false
+                                    Y: =8.37
+                        - Curso:Prueba_DataCard1:
+                            Control: TypedDataCard@1.0.6
+                            Variant: ClassicComboBoxView
+                            Properties:
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              DataField: ="Curso_x003a_Prueba"
+                              Default: =ThisItem.'Curso:Prueba'
+                              DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,'Curso:Prueba')
+                              Height: =41.86
+                              Required: =false
+                              Update: =DataCardValue32.Selected
+                              Y: =9
+                            Children:
+                              - DataCardKey32:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: =Parent.DisplayName
+                                    Width: =326.76
+                                    Wrap: =false
+                                    X: =16.9
+                                    Y: =8.37
+                              - DataCardValue32:
+                                  Control: Classic/ComboBox@2.4.0
+                                  Properties:
+                                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                    ChevronBackground: =RGBA(0, 51, 102, 1)
+                                    ChevronFill: =RGBA(255, 255, 255, 1)
+                                    ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                                    DefaultSelectedItems: =Parent.Default
+                                    DisplayFields: =["Value"]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Font: =Font.'Open Sans'
+                                    Height: =58.6
+                                    HoverFill: =RGBA(153, 205, 255, 1)
+                                    Items: =Choices([@'Asignación Entrenamientos'].'Curso:Prueba')
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =0
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    PressedColor: =RGBA(255, 255, 255, 1)
+                                    PressedFill: =RGBA(0, 89, 178, 1)
+                                    SearchFields: =["Value"]
+                                    SelectMultiple: =false
+                                    SelectionColor: =RGBA(255, 255, 255, 1)
+                                    SelectionFill: =RGBA(0, 51, 102, 1)
+                                    Size: =11.83
+                                    Width: =326.76
+                                    X: =16.9
+                                    Y: =52.74
+                              - ErrorMessage22:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(168, 0, 0, 1)
+                                    Font: =Font.'Open Sans'
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =8.37
+                                    Live: =Live.Assertive
+                                    PaddingBottom: =0
+                                    PaddingLeft: =0
+                                    PaddingRight: =0
+                                    PaddingTop: =0
+                                    Size: =13.52
+                                    Text: =Parent.Error
+                                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                    Width: =326.76
+                                    X: =16.9
+                                    Y: =111.34
+                              - StarVisible22:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    Align: =Align.Center
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =16.9
+                                    Wrap: =false
+                                    Y: =8.37
+                        - Usuarios:Correo_DataCard1:
+                            Control: TypedDataCard@1.0.6
+                            Variant: ClassicComboBoxView
+                            Properties:
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              DataField: ="Usuarios_x003a_Correo"
+                              Default: =ThisItem.'Usuarios:Correo'
+                              DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,'Usuarios:Correo')
+                              Height: =41.86
+                              Required: =false
+                              Update: =DataCardValue33.Selected
+                              Y: =10
+                            Children:
+                              - DataCardKey33:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: =Parent.DisplayName
+                                    Width: =326.76
+                                    Wrap: =false
+                                    X: =16.9
+                                    Y: =8.37
+                              - DataCardValue33:
+                                  Control: Classic/ComboBox@2.4.0
+                                  Properties:
+                                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                    ChevronBackground: =RGBA(0, 51, 102, 1)
+                                    ChevronFill: =RGBA(255, 255, 255, 1)
+                                    ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                                    DefaultSelectedItems: =Parent.Default
+                                    DisplayFields: =["Value"]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Font: =Font.'Open Sans'
+                                    Height: =58.6
+                                    HoverFill: =RGBA(153, 205, 255, 1)
+                                    Items: =Choices([@'Asignación Entrenamientos'].'Usuarios:Correo')
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =0
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    PressedColor: =RGBA(255, 255, 255, 1)
+                                    PressedFill: =RGBA(0, 89, 178, 1)
+                                    SearchFields: =["Value"]
+                                    SelectMultiple: =false
+                                    SelectionColor: =RGBA(255, 255, 255, 1)
+                                    SelectionFill: =RGBA(0, 51, 102, 1)
+                                    Size: =11.83
+                                    Width: =326.76
+                                    X: =16.9
+                                    Y: =52.74
+                              - ErrorMessage23:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(168, 0, 0, 1)
+                                    Font: =Font.'Open Sans'
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =8.37
+                                    Live: =Live.Assertive
+                                    PaddingBottom: =0
+                                    PaddingLeft: =0
+                                    PaddingRight: =0
+                                    PaddingTop: =0
+                                    Size: =13.52
+                                    Text: =Parent.Error
+                                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                    Width: =326.76
+                                    X: =16.9
+                                    Y: =111.34
+                              - StarVisible23:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    Align: =Align.Center
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =16.9
+                                    Wrap: =false
+                                    Y: =8.37
+                        - Usuarios_DataCard1:
+                            Control: TypedDataCard@1.0.6
+                            Variant: ClassicComboBoxEdit
+                            Properties:
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              DataField: ="Usuarios"
+                              Default: =ThisItem.Usuarios
+                              DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Usuarios)
+                              Height: =41.86
+                              Required: =false
+                              Update: =DataCardValue1.Selected
+                              Y: =0
+                            Children:
+                              - DataCardKey1:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: =Parent.DisplayName
+                                    Width: =326.76
+                                    Wrap: =false
+                                    X: =16.9
+                                    Y: =8.37
+                              - DataCardValue1:
+                                  Control: Classic/ComboBox@2.4.0
+                                  Properties:
+                                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                    ChevronBackground: =RGBA(0, 51, 102, 1)
+                                    ChevronFill: =RGBA(255, 255, 255, 1)
+                                    ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                                    DefaultSelectedItems: =Parent.Default
+                                    DisplayFields: =["Value"]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Font: =Font.'Open Sans'
+                                    Height: =58.6
+                                    HoverFill: =RGBA(153, 205, 255, 1)
+                                    Items: =Choices([@'Asignación Entrenamientos'].Usuarios)
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    PressedColor: =RGBA(255, 255, 255, 1)
+                                    PressedFill: =RGBA(0, 89, 178, 1)
+                                    SearchFields: =["Value"]
+                                    SelectMultiple: =false
+                                    SelectionColor: =RGBA(255, 255, 255, 1)
+                                    SelectionFill: =RGBA(0, 51, 102, 1)
+                                    Size: =11.83
+                                    Tooltip: =Parent.DisplayName
+                                    Width: =326.76
+                                    X: =16.9
+                                    Y: =52.74
+                              - ErrorMessage1:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(168, 0, 0, 1)
+                                    Font: =Font.'Open Sans'
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =8.37
+                                    Live: =Live.Assertive
+                                    PaddingBottom: =0
+                                    PaddingLeft: =0
+                                    PaddingRight: =0
+                                    PaddingTop: =0
+                                    Size: =13.52
+                                    Text: =Parent.Error
+                                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                    Width: =326.76
+                                    X: =16.9
+                                    Y: =111.34
+                              - StarVisible1:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    Align: =Align.Center
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =16.9
+                                    Wrap: =false
+                                    Y: =8.37
+                        - Curso_DataCard1:
+                            Control: TypedDataCard@1.0.6
+                            Variant: ClassicComboBoxEdit
+                            Properties:
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              DataField: ="Curso"
+                              Default: =ThisItem.Curso
+                              DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Curso)
+                              Height: =41.86
+                              Required: =false
+                              Update: =DataCardValue6.Selected
+                              Y: =1
+                            Children:
+                              - DataCardKey6:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: =Parent.DisplayName
+                                    Width: =326.76
+                                    Wrap: =false
+                                    X: =16.9
+                                    Y: =8.37
+                              - DataCardValue6:
+                                  Control: Classic/ComboBox@2.4.0
+                                  Properties:
+                                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                    ChevronBackground: =RGBA(0, 51, 102, 1)
+                                    ChevronFill: =RGBA(255, 255, 255, 1)
+                                    ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                                    DefaultSelectedItems: =Parent.Default
+                                    DisplayFields: =["Value"]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Font: =Font.'Open Sans'
+                                    Height: =58.6
+                                    HoverFill: =RGBA(153, 205, 255, 1)
+                                    Items: =Choices([@'Asignación Entrenamientos'].Curso)
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    PressedColor: =RGBA(255, 255, 255, 1)
+                                    PressedFill: =RGBA(0, 89, 178, 1)
+                                    SearchFields: =["Value"]
+                                    SelectMultiple: =false
+                                    SelectionColor: =RGBA(255, 255, 255, 1)
+                                    SelectionFill: =RGBA(0, 51, 102, 1)
+                                    Size: =11.83
+                                    Tooltip: =Parent.DisplayName
+                                    Width: =326.76
+                                    X: =16.9
+                                    Y: =52.74
+                              - ErrorMessage6:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(168, 0, 0, 1)
+                                    Font: =Font.'Open Sans'
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =8.37
+                                    Live: =Live.Assertive
+                                    PaddingBottom: =0
+                                    PaddingLeft: =0
+                                    PaddingRight: =0
+                                    PaddingTop: =0
+                                    Size: =13.52
+                                    Text: =Parent.Error
+                                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                    Width: =326.76
+                                    X: =16.9
+                                    Y: =111.34
+                              - StarVisible6:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    Align: =Align.Center
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =16.9
+                                    Wrap: =false
+                                    Y: =8.37
+                        - Estado_DataCard1:
+                            Control: TypedDataCard@1.0.6
+                            Variant: ClassicComboBoxEdit
+                            Properties:
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              DataField: ="Estado"
+                              Default: =ThisItem.Estado
+                              DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Estado)
+                              Height: =41.86
+                              Required: =false
+                              Update: =DataCardValue2.Selected
+                              Y: =4
+                            Children:
+                              - DataCardKey2:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: =Parent.DisplayName
+                                    Width: =326.76
+                                    Wrap: =false
+                                    X: =16.9
+                                    Y: =8.37
+                              - DataCardValue2:
+                                  Control: Classic/ComboBox@2.4.0
+                                  Properties:
+                                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                    ChevronBackground: =RGBA(0, 51, 102, 1)
+                                    ChevronFill: =RGBA(255, 255, 255, 1)
+                                    ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                                    DefaultSelectedItems: =Parent.Default
+                                    DisplayFields: =["Value"]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Font: =Font.'Open Sans'
+                                    Height: =58.6
+                                    HoverFill: =RGBA(153, 205, 255, 1)
+                                    Items: =Choices([@'Asignación Entrenamientos'].Estado)
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    PressedColor: =RGBA(255, 255, 255, 1)
+                                    PressedFill: =RGBA(0, 89, 178, 1)
+                                    SearchFields: =["Value"]
+                                    SelectMultiple: =false
+                                    SelectionColor: =RGBA(255, 255, 255, 1)
+                                    SelectionFill: =RGBA(0, 51, 102, 1)
+                                    Size: =11.83
+                                    Tooltip: =Parent.DisplayName
+                                    Width: =326.76
+                                    X: =16.9
+                                    Y: =52.74
+                              - ErrorMessage2:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(168, 0, 0, 1)
+                                    Font: =Font.'Open Sans'
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =8.37
+                                    Live: =Live.Assertive
+                                    PaddingBottom: =0
+                                    PaddingLeft: =0
+                                    PaddingRight: =0
+                                    PaddingTop: =0
+                                    Size: =13.52
+                                    Text: =Parent.Error
+                                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                    Width: =326.76
+                                    X: =16.9
+                                    Y: =111.34
+                              - StarVisible2:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    Align: =Align.Center
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =16.9
+                                    Wrap: =false
+                                    Y: =8.37
+                        - Observaciones_DataCard1:
+                            Control: TypedDataCard@1.0.6
+                            Variant: ClassicTextualEdit
+                            Properties:
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              DataField: ="Observaciones"
+                              Default: =ThisItem.Observaciones
+                              DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Observaciones)
+                              Height: =41.86
+                              MaxLength: =DataSourceInfo([@'Asignación Entrenamientos'], DataSourceInfo.MaxLength, Observaciones)
+                              Required: =false
+                              Update: =DataCardValue4.Text
+                              Y: =5
+                            Children:
+                              - DataCardKey4:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: =Parent.DisplayName
+                                    Width: =326.76
+                                    Wrap: =false
+                                    X: =16.9
+                                    Y: =8.37
+                              - DataCardValue4:
+                                  Control: Classic/TextInput@2.3.2
+                                  Properties:
+                                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                    Default: =Parent.Default
+                                    DelayOutput: =true
+                                    DisplayMode: =Parent.DisplayMode
+                                    Font: =Font.'Open Sans'
+                                    Height: =58.6
+                                    HoverBorderColor: =RGBA(0, 89, 178, 1)
+                                    HoverFill: =RGBA(153, 205, 255, 1)
+                                    MaxLength: =Parent.MaxLength
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    RadiusBottomLeft: =0
+                                    RadiusBottomRight: =0
+                                    RadiusTopLeft: =0
+                                    RadiusTopRight: =0
+                                    Size: =11.83
+                                    Tooltip: =Parent.DisplayName
+                                    Width: =326.76
+                                    X: =16.9
+                                    Y: =52.74
+                              - ErrorMessage4:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(168, 0, 0, 1)
+                                    Font: =Font.'Open Sans'
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =8.37
+                                    Live: =Live.Assertive
+                                    PaddingBottom: =0
+                                    PaddingLeft: =0
+                                    PaddingRight: =0
+                                    PaddingTop: =0
+                                    Size: =13.52
+                                    Text: =Parent.Error
+                                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                    Width: =326.76
+                                    X: =16.9
+                                    Y: =111.34
+                              - StarVisible4:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    Align: =Align.Center
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =16.9
+                                    Wrap: =false
+                                    Y: =8.37
+                        - Calificacion_DataCard1:
+                            Control: TypedDataCard@1.0.6
+                            Variant: ClassicComboBoxEdit
+                            Properties:
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              DataField: ="Calificacion"
+                              Default: =ThisItem.Calificacion
+                              DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Calificacion)
+                              Height: =41.86
+                              Required: =false
+                              Update: =DataCardValue3.Selected
+                              Y: =6
+                            Children:
+                              - DataCardKey3:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: =Parent.DisplayName
+                                    Width: =326.76
+                                    Wrap: =false
+                                    X: =16.9
+                                    Y: =8.37
+                              - DataCardValue3:
+                                  Control: Classic/ComboBox@2.4.0
+                                  Properties:
+                                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                    ChevronBackground: =RGBA(0, 51, 102, 1)
+                                    ChevronFill: =RGBA(255, 255, 255, 1)
+                                    ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                                    DefaultSelectedItems: =Parent.Default
+                                    DisplayFields: =["Value"]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Font: =Font.'Open Sans'
+                                    Height: =58.6
+                                    HoverFill: =RGBA(153, 205, 255, 1)
+                                    Items: =Choices([@'Asignación Entrenamientos'].Calificacion)
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    PressedColor: =RGBA(255, 255, 255, 1)
+                                    PressedFill: =RGBA(0, 89, 178, 1)
+                                    SearchFields: =["Value"]
+                                    SelectMultiple: =false
+                                    SelectionColor: =RGBA(255, 255, 255, 1)
+                                    SelectionFill: =RGBA(0, 51, 102, 1)
+                                    Size: =11.83
+                                    Tooltip: =Parent.DisplayName
+                                    Width: =326.76
+                                    X: =16.9
+                                    Y: =52.74
+                              - ErrorMessage3:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(168, 0, 0, 1)
+                                    Font: =Font.'Open Sans'
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =8.37
+                                    Live: =Live.Assertive
+                                    PaddingBottom: =0
+                                    PaddingLeft: =0
+                                    PaddingRight: =0
+                                    PaddingTop: =0
+                                    Size: =13.52
+                                    Text: =Parent.Error
+                                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                    Width: =326.76
+                                    X: =16.9
+                                    Y: =111.34
+                              - StarVisible3:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    Align: =Align.Center
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =16.9
+                                    Wrap: =false
+                                    Y: =8.37
+                        - Aprobo_DataCard1:
+                            Control: TypedDataCard@1.0.6
+                            Variant: ClassicToggleEdit
+                            Properties:
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              DataField: ="Aprobo"
+                              Default: =ThisItem.Aprobo
+                              DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Aprobo)
+                              Height: =41.86
+                              Required: =false
+                              Update: =DataCardValue5.Value
+                              Y: =7
+                            Children:
+                              - DataCardKey5:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: =Parent.DisplayName
+                                    Width: =326.76
+                                    Wrap: =false
+                                    X: =16.9
+                                    Y: =8.37
+                              - DataCardValue5:
+                                  Control: Classic/Toggle@2.1.0
+                                  Properties:
+                                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                    Default: =Parent.Default
+                                    DisplayMode: =Parent.DisplayMode
+                                    Font: =Font.'Open Sans'
+                                    Height: =41.02
+                                    Size: =11.83
+                                    Tooltip: =Parent.DisplayName
+                                    TrueFill: =RGBA(0, 51, 102, 1)
+                                    Width: =157.18
+                                    X: =16.9
+                                    Y: =52.74
+                              - ErrorMessage5:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(168, 0, 0, 1)
+                                    Font: =Font.'Open Sans'
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =8.37
+                                    Live: =Live.Assertive
+                                    PaddingBottom: =0
+                                    PaddingLeft: =0
+                                    PaddingRight: =0
+                                    PaddingTop: =0
+                                    Size: =13.52
+                                    Text: =Parent.Error
+                                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                    Width: =326.76
+                                    X: =16.9
+                                    Y: =93.76
+                              - StarVisible5:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    Align: =Align.Center
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =16.9
+                                    Wrap: =false
+                                    Y: =8.37
+            - Container29:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  Height: =71
+                  Width: =640
+                  Y: =1060
+                Children:
+                  - Button1_16:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =ColorFade(Self.Fill, -15%)
+                        BorderThickness: =0
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =ColorFade(RGBA(255, 255, 255, 1), 70%)
+                        DisplayMode: =
+                        Fill: =RGBA(54,166,182,1)
+                        Font: =Font.Lato
+                        Height: =71.99
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                        OnSelect: =SubmitForm(Form1);ResetForm(Form1);NewForm(Form1); Navigate(OpportunityMessageScreen, ScreenTransition.Fade)
+                        PaddingBottom: =4.19
+                        PaddingLeft: =45.21
+                        PaddingRight: =2.82
+                        PaddingTop: =2.82
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =Self.Fill
+                        PressedFill: =Self.Color
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Size: =15.77
+                        Text: ="Enviar"
+                        Width: =633
+                        X: =5
+                  - Image3_6:
+                      Control: Image@2.2.3
+                      Properties:
+                        ApplyEXIFOrientation: =false
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        DisabledFill: =RGBA(193, 193, 193, 0)
+                        DisplayMode: =
+                        Height: =43.53
+                        Image: ='group-13'
+                        OnSelect: =
+                        TabIndex: =0
+                        Width: =33.24
+                        X: =60
+                        Y: =1

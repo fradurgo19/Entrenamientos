@@ -326,9 +326,9 @@ Usuarios As screen:
                             (Calificacion.Value = ComboboxCanvas2_3.Selected.Value || IsBlank(ComboboxCanvas2_3.Selected.Value)) &&
                             (FechaLimite <= DatePickerCanvas1_1.SelectedDate || IsBlank(DatePickerCanvas1_1.SelectedDate)) &&
                             (FechaAsignacion <= DatePickerCanvas1_2.SelectedDate || IsBlank(DatePickerCanvas1_2.SelectedDate)) &&
-                            (Usuarios_x003a_Correo.Value = varUsuarioLogueado)  // Asegúrate de que el campo corresponde al usuario
+                            ('Usuarios:Correo'.Value = varUsuarioLogueado)  // Asegúrate de que el campo corresponde al usuario
                         ),
-                        Modified,
+                        Modificado,
                         SortOrder.Descending
                     )
                     
@@ -496,7 +496,8 @@ Usuarios As screen:
                     PressedColor: =TextBox1_20.Color
                     PressedFill: =TextBox1_20.Fill
                     Size: =10
-                    Text: =ThisItem.Curso_x003a__x0020_Adjunto.Value
+                    Text: |-
+                        =ThisItem.'Curso: Adjunto'.Value
                     Visible: =false
                     Width: =62
                     X: =532
@@ -520,7 +521,8 @@ Usuarios As screen:
                     PressedColor: =TextBox1_21.Color
                     PressedFill: =TextBox1_21.Fill
                     Size: =10
-                    Text: =ThisItem.Usuarios_x003a_Correo.Value
+                    Text: |-
+                        =ThisItem.'Usuarios:Correo'.Value
                     Width: =107
                     X: =168
                     Y: =28
@@ -688,7 +690,8 @@ Usuarios As screen:
                     PressedColor: =TextBox1_34.Color
                     PressedFill: =TextBox1_34.Fill
                     Size: =10
-                    Text: =ThisItem.Curso_x003a_Prueba.Value
+                    Text: |-
+                        =ThisItem.'Curso:Prueba'.Value
                     Visible: =false
                     Width: =73
                     X: =495

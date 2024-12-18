@@ -144,7 +144,7 @@
                         PressedColor: =TextBox1_13.Color
                         PressedFill: =TextBox1_13.Fill
                         Size: =16
-                        Text: =GalleryCustumer.Selected.field_2
+                        Text: =GalleryCustumer.Selected.Actividades
                         Width: =616
                         ZIndex: =1
 
@@ -234,7 +234,7 @@
                         PressedColor: =TextBox4_110.Color
                         PressedFill: =TextBox4_110.Fill
                         Size: =8.45
-                        Text: =GalleryCustumer.Selected.field_0
+                        Text: =GalleryCustumer.Selected.Consecutivo
                         VerticalAlign: =VerticalAlign.Top
                         Width: =149.3
                         X: =24
@@ -281,7 +281,7 @@
                         PressedColor: =TextBox4_157.Color
                         PressedFill: =TextBox4_157.Fill
                         Size: =8.45
-                        Text: =GalleryCustumer.Selected.field_1.Value
+                        Text: =GalleryCustumer.Selected.'Tipo de actividad'.Value
                         VerticalAlign: =VerticalAlign.Top
                         Width: =217
                         X: =327
@@ -327,7 +327,7 @@
                         PressedBorderColor: =TextBox4_158.BorderColor
                         PressedColor: =TextBox4_158.Color
                         PressedFill: =TextBox4_158.Fill
-                        Text: =GalleryCustumer.Selected.field_6.Value
+                        Text: =GalleryCustumer.Selected.Recurso.Value
                         VerticalAlign: =VerticalAlign.Top
                         Width: =250
                         X: =24
@@ -395,7 +395,7 @@
                         PressedBorderColor: =TextBox4_166.BorderColor
                         PressedColor: =TextBox4_166.Color
                         PressedFill: =TextBox4_166.Fill
-                        Text: =GalleryCustumer.Selected.field_7.Value
+                        Text: =GalleryCustumer.Selected.'Estado del Recurso'.Value
                         VerticalAlign: =VerticalAlign.Top
                         Width: =200
                         X: =286
@@ -517,7 +517,7 @@
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(244, 244, 244, 1)
                         Height: =267
-                        Image: =GalleryCustumer.Selected.RealizaCurso
+                        Image: =GalleryCustumer.Selected.'Realiza Curso'
                         ImagePosition: =ImagePosition.Fill
                         TabIndex: =0
                         Width: =624
@@ -530,7 +530,7 @@
                         Font: =Font.'Lato Light'
                         Height: =198
                         HoverBorderColor: =HtmlText1_3.BorderColor
-                        HtmlText: =GalleryCustumer.Selected.RealizaCurso
+                        HtmlText: =GalleryCustumer.Selected.'Realiza Curso'
                         PaddingBottom: =4.19
                         PaddingLeft: =4.19
                         PaddingRight: =2.82

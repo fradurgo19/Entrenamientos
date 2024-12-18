@@ -325,7 +325,7 @@ ActiveWorkOrderScreen As screen:
                             (FechaLimite >= DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate)) && 
                             (FechaLimite <= DatePicker1_1.SelectedDate || IsBlank(DatePicker1_1.SelectedDate))
                         ),
-                        Created,
+                        Creado,
                         SortOrder.Descending
                     )
                 Layout: =Layout.Vertical
@@ -393,7 +393,8 @@ ActiveWorkOrderScreen As screen:
                     PaddingRight: =0
                     PaddingTop: =0
                     Size: =11
-                    Text: =ThisItem.Usuarios_x003a_Cargo.Value
+                    Text: |-
+                        =ThisItem.'Usuarios:Cargo'.Value
                     VerticalAlign: =VerticalAlign.Top
                     Width: =176.34
                     X: =92
@@ -554,7 +555,7 @@ ActiveWorkOrderScreen As screen:
                     PaddingRight: =0
                     PaddingTop: =0
                     Size: =11
-                    Text: =ThisItem.Author.DisplayName
+                    Text: =ThisItem.'Creado por'.DisplayName
                     VerticalAlign: =VerticalAlign.Top
                     Width: =213
                     X: =354

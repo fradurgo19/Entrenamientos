@@ -886,9 +886,11 @@
                     BorderColor: =RGBA(0, 89, 178, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="Usuarios_x003a_Sede"
-                    Default: =ThisItem.Usuarios_x003a_Sede
+                    Default: |-
+                        =ThisItem.'Usuarios:Sede'
                     DisplayMode: =DisplayMode.View
-                    DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Usuarios_x003a_Sede)
+                    DisplayName: |-
+                        =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,'Usuarios:Sede')
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =41.86
                     Required: =false
@@ -931,7 +933,8 @@
                         Height: =58.6
                         HoverColor: =RGBA(0, 0, 0, 1)
                         HoverFill: =RGBA(153, 205, 255, 1)
-                        Items: =Choices([@'Asignación Entrenamientos'].Usuarios_x003a_Sede)
+                        Items: |-
+                            =Choices([@'Asignación Entrenamientos'].'Usuarios:Sede')
                         PaddingBottom: =4.19
                         PaddingLeft: =0
                         PaddingRight: =2.82
@@ -939,7 +942,8 @@
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(0, 89, 178, 1)
                         SearchFields: =["Value"]
-                        SearchItems: =Choices('Asignación Entrenamientos'.Usuarios_x003a_Sede,DataCardValue42.SearchText)
+                        SearchItems: |-
+                            =Choices('Asignación Entrenamientos'.'Usuarios:Sede',DataCardValue42.SearchText)
                         SelectionFill: =RGBA(0, 51, 102, 1)
                         SelectMultiple: =false
                         Size: =11.83
@@ -988,9 +992,11 @@
                     BorderColor: =RGBA(0, 89, 178, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="Usuarios_x003a_Cargo"
-                    Default: =ThisItem.Usuarios_x003a_Cargo
+                    Default: |-
+                        =ThisItem.'Usuarios:Cargo'
                     DisplayMode: =DisplayMode.View
-                    DisplayName: =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,Usuarios_x003a_Cargo)
+                    DisplayName: |-
+                        =DataSourceInfo([@'Asignación Entrenamientos'],DataSourceInfo.DisplayName,'Usuarios:Cargo')
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =41.86
                     Required: =false
@@ -1033,7 +1039,8 @@
                         Height: =58.6
                         HoverColor: =RGBA(0, 0, 0, 1)
                         HoverFill: =RGBA(153, 205, 255, 1)
-                        Items: =Choices([@'Asignación Entrenamientos'].Usuarios_x003a_Cargo)
+                        Items: |-
+                            =Choices([@'Asignación Entrenamientos'].'Usuarios:Cargo')
                         PaddingBottom: =4.19
                         PaddingLeft: =0
                         PaddingRight: =2.82
@@ -1041,7 +1048,8 @@
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(0, 89, 178, 1)
                         SearchFields: =["Value"]
-                        SearchItems: =Choices('Asignación Entrenamientos'.Usuarios_x003a_Cargo,DataCardValue43.SearchText)
+                        SearchItems: |-
+                            =Choices('Asignación Entrenamientos'.'Usuarios:Cargo',DataCardValue43.SearchText)
                         SelectionFill: =RGBA(0, 51, 102, 1)
                         SelectMultiple: =false
                         Size: =11.83

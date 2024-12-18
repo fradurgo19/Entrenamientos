@@ -1,0 +1,465 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
+# Content may be incomplete and subject to change.
+# This file is read-only and should only be used to review changes made within Power Apps Studio.
+# This file isn't used when loading the app. External editing, merging and conflict resolution are
+# not supported.
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  AddNewOpportunityScreen_1:
+    Properties:
+      Fill: =RGBA(232, 232, 232, 1)
+      Height: =Max(App.Height, App.DesignHeight)
+      LoadingSpinnerColor: =RGBA(0, 51, 102, 1)
+      OnVisible: |-
+        =UpdateContext({ResetOpportunity:true});
+        UpdateContext({ResetOpportunity:false})
+      Width: =Max(App.Width, App.DesignWidth)
+    Children:
+      - Container41:
+          Control: GroupContainer@1.3.0
+          Variant: ManualLayout
+          Properties:
+            Height: =1136
+            Width: =640
+          Children:
+            - Container42:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  Height: =65
+                  Width: =640
+                Children:
+                  - Rectangle1_40:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Fill: =RGBA(6,26,84,1)
+                        Height: =70
+                        TabIndex: =0
+                        Width: =640
+                  - TextBox1_61:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        Font: =Font.Lato
+                        FontWeight: =FontWeight.Semibold
+                        Height: =65
+                        HoverBorderColor: =TextBox1_61.BorderColor
+                        HoverColor: =TextBox1_61.Color
+                        HoverFill: =TextBox1_61.Fill
+                        PaddingBottom: =4.19
+                        PaddingLeft: =4.19
+                        PaddingRight: =2.82
+                        PaddingTop: =2.82
+                        PressedBorderColor: =TextBox1_61.BorderColor
+                        PressedColor: =TextBox1_61.Color
+                        PressedFill: =TextBox1_61.Fill
+                        Size: =15.77
+                        Text: ="Nueva Asignación"
+                        Width: =191.55
+                        X: =162
+                  - Circle1_12:
+                      Control: Circle@2.3.0
+                      Group: Group5_10
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =30
+                        OnSelect: =Navigate(CustomerOverviewScreen, ScreenTransition.Fade)
+                        TabIndex: =0
+                        Width: =36
+                        X: =5
+                        Y: =17
+                  - icon4_8:
+                      Control: Classic/Icon@2.5.0
+                      Group: Group5_10
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Color: =RGBA(6,26,84,1)
+                        Height: =31
+                        Icon: =Icon.Cancel
+                        OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
+                        TabIndex: =0
+                        Width: =25
+                        X: =11
+                        Y: =17
+                  - Icon8:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =46.04
+                        Icon: =Icon.Check
+                        OnSelect: |-
+                          =Patch(
+                              'Asignación Entrenamientos',
+                              If(IsBlank(gallSelected),Defaults('Asignación Entrenamientos'),gallSelected),
+                              {
+                                  Usuarios: ComboBox1.Selected,
+                                  Curso: ComboBox1_1.Selected,
+                                  FechaLimite: DatePicker2.SelectedDate,
+                                  Calificacion: ComboBox1_2.Selected,
+                                  Estado: ComboBox1_3.Selected
+                              }
+                          );
+
+                          Reset(ComboBox1); Reset(ComboBox1_1);Reset(ComboBox1_3);Reset(DatePicker2);Reset(ComboBox1_2)
+                        Width: =40.56
+                        X: =516
+                        Y: =24
+                  - Image3_8:
+                      Control: Image@2.2.3
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Height: =29.3
+                        Image: ='Captura de pantalla 2024-01-12 082706'
+                        ImagePosition: =ImagePosition.Fill
+                        Width: =240
+                        X: =400
+                        Y: =
+            - Container43:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  Height: =927
+                  Width: =640
+                  Y: =145
+                Children:
+                  - Gallery3:
+                      Control: Gallery@2.15.0
+                      Variant: BrowseLayout_Vertical_ThreeTextVariant_ver5.0
+                      Properties:
+                        BorderColor: =RGBA(255, 255, 255, 1)
+                        BorderThickness: =1
+                        Height: =924
+                        Items: ='Asignación Entrenamientos'
+                        OnSelect: =Set(gallSelected,Gallery3.Selected)
+                        TemplateFill: =If(ThisItem.IsSelected, Color.LightSkyBlue, Color.White)
+                        TemplateSize: =97.11
+                      Children:
+                        - Title10:
+                            Control: Label@2.5.1
+                            Properties:
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(50, 49, 48, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                              Height: =21
+                              OnSelect: =Select(Parent)
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =12
+                              Text: =ThisItem.Curso.Value
+                              VerticalAlign: =VerticalAlign.Top
+                              Width: =478
+                              X: =9.01
+                              Y: =6.7
+                        - Subtitle8:
+                            Control: Label@2.5.1
+                            Properties:
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                              Height: =18.08
+                              OnSelect: =Select(Parent)
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =12
+                              Text: =ThisItem.FechaLimite
+                              VerticalAlign: =VerticalAlign.Top
+                              Width: =312.11
+                              X: =7.89
+                              Y: =50.23
+                        - Body4:
+                            Control: Label@2.5.1
+                            Properties:
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                              Height: =18
+                              OnSelect: =Select(Parent)
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =12
+                              Text: =ThisItem.Usuarios.Value
+                              VerticalAlign: =VerticalAlign.Top
+                              Width: =532
+                              X: =7.89
+                              Y: =27.63
+                        - NextArrow5:
+                            Control: Classic/Icon@2.5.0
+                            Properties:
+                              AccessibleLabel: =Self.Tooltip
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              Color: =RGBA(6, 26, 84, 1)
+                              Height: =79.53
+                              Icon: =Icon.ChevronRight
+                              OnSelect: =Select(Parent)
+                              PaddingBottom: =13.39
+                              PaddingLeft: =13.39
+                              PaddingRight: =9.01
+                              PaddingTop: =9.01
+                              Tooltip: ="Ver los detalles del elemento"
+                              Width: =46
+                              X: =589
+                              Y: =6
+                        - Rectangle10:
+                            Control: Rectangle@2.3.0
+                            Properties:
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              Fill: =RGBA(0, 89, 178, 1)
+                              Height: =90.41
+                              OnSelect: =Select(Parent)
+                              Visible: =ThisItem.IsSelected
+                              Width: =2.25
+                        - Body4_3:
+                            Control: Label@2.5.1
+                            Properties:
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                              Height: =19.25
+                              OnSelect: =Select(Parent)
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =12
+                              Text: =ThisItem.Calificacion.Value
+                              VerticalAlign: =VerticalAlign.Top
+                              Width: =30.99
+                              X: =509
+                              Y: =5
+                        - Subtitle8_1:
+                            Control: Label@2.5.1
+                            Properties:
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                              Height: =18.08
+                              OnSelect: =Select(Parent)
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =12
+                              Text: =ThisItem.Estado.Value
+                              VerticalAlign: =VerticalAlign.Top
+                              Width: =312.11
+                              X: =9.01
+                              Y: =67.81
+                        - Icon10:
+                            Control: Classic/Icon@2.5.0
+                            Properties:
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              Color: =RGBA(6, 26, 84, 1)
+                              Height: =36
+                              Icon: =Icon.Trash
+                              OnSelect: =Remove('Asignación Entrenamientos',ThisItem)
+                              Width: =30.42
+                              X: =549
+                              Y: =45
+            - Container44:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  Height: =64
+                  Width: =640
+                  Y: =1072
+                Children:
+                  - Button1_18:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =ColorFade(Self.Fill, -15%)
+                        BorderThickness: =0
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =ColorFade(RGBA(255, 255, 255, 1), 70%)
+                        DisplayMode: =
+                        Fill: =RGBA(54,166,182,1)
+                        Font: =Font.Lato
+                        Height: =63
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                        OnSelect: |-
+                          =
+
+
+                          Navigate(OpportunityMessageScreen, ScreenTransition.Fade)
+                        PaddingBottom: =4.19
+                        PaddingLeft: =45.21
+                        PaddingRight: =2.82
+                        PaddingTop: =2.82
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =Self.Fill
+                        PressedFill: =Self.Color
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Size: =15.77
+                        Text: ="Salir"
+                        Width: =640
+                        Y: =1
+            - Container45:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  Height: =80
+                  Width: =640
+                  Y: =65
+                Children:
+                  - DatePicker2:
+                      Control: Classic/DatePicker@2.6.0
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        DefaultDate: =gallSelected.FechaLimite
+                        Font: =Font.'Open Sans'
+                        Height: =38
+                        IconBackground: =RGBA(0, 51, 102, 1)
+                        IconFill: =RGBA(255, 255, 255, 1)
+                        PaddingBottom: =4.19
+                        PaddingLeft: =10.05
+                        PaddingRight: =2.82
+                        Size: =11
+                        Width: =228
+                        Y: =
+                  - ComboBox1:
+                      Control: Classic/ComboBox@2.4.0
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        ChevronBackground: =RGBA(0, 51, 102, 1)
+                        ChevronFill: =RGBA(255, 255, 255, 1)
+                        ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                        Default: =gallSelected.Usuarios
+                        DefaultSelectedItems: =gallSelected.Usuarios
+                        DisplayFields: =["Value"]
+                        Font: =Font.'Open Sans'
+                        Height: =39
+                        HoverFill: =RGBA(153, 205, 255, 1)
+                        InputTextPlaceholder: ="Usuario"
+                        Items: =Choices([@'Asignación Entrenamientos'].Usuarios)
+                        PaddingBottom: =8.37
+                        PaddingLeft: =8.37
+                        PaddingRight: =5.63
+                        PaddingTop: =5.63
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =RGBA(0, 89, 178, 1)
+                        SearchFields: =["Value"]
+                        SelectMultiple: =false
+                        SelectionColor: =RGBA(255, 255, 255, 1)
+                        SelectionFill: =RGBA(0, 51, 102, 1)
+                        Size: =11
+                        Width: =319
+                        Y: =38
+                  - ComboBox1_1:
+                      Control: Classic/ComboBox@2.4.0
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        ChevronBackground: =RGBA(0, 51, 102, 1)
+                        ChevronFill: =RGBA(255, 255, 255, 1)
+                        ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                        Default: =gallSelected.Curso
+                        DefaultSelectedItems: =gallSelected.Curso
+                        DisplayFields: =["Value"]
+                        Font: =Font.'Open Sans'
+                        Height: =39
+                        HoverFill: =RGBA(153, 205, 255, 1)
+                        InputTextPlaceholder: ="Seleccionar Curso"
+                        Items: =Choices([@'Asignación Entrenamientos'].Curso)
+                        PaddingBottom: =8.37
+                        PaddingLeft: =8.37
+                        PaddingRight: =5.63
+                        PaddingTop: =5.63
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =RGBA(0, 89, 178, 1)
+                        SearchFields: =["Value"]
+                        SelectionColor: =RGBA(255, 255, 255, 1)
+                        SelectionFill: =RGBA(0, 51, 102, 1)
+                        Size: =11
+                        Tooltip: ="Curso"
+                        Width: =316
+                        X: =319
+                        Y: =38
+                  - ComboBox1_2:
+                      Control: Classic/ComboBox@2.4.0
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        ChevronBackground: =RGBA(0, 51, 102, 1)
+                        ChevronFill: =RGBA(255, 255, 255, 1)
+                        ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                        Default: =gallSelected.Calificacion
+                        DefaultSelectedItems: =gallSelected.Calificacion
+                        DisplayFields: =["Value"]
+                        Font: =Font.'Open Sans'
+                        Height: =38
+                        HoverFill: =RGBA(153, 205, 255, 1)
+                        InputTextPlaceholder: ="Calificación"
+                        Items: =Choices([@'Asignación Entrenamientos'].Calificacion)
+                        PaddingBottom: =8.37
+                        PaddingLeft: =8.37
+                        PaddingRight: =5.63
+                        PaddingTop: =5.63
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =RGBA(0, 89, 178, 1)
+                        SearchFields: =["Value"]
+                        SelectionColor: =RGBA(255, 255, 255, 1)
+                        SelectionFill: =RGBA(0, 51, 102, 1)
+                        Size: =11
+                        Width: =137
+                        X: =392
+                  - ComboBox1_3:
+                      Control: Classic/ComboBox@2.4.0
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        ChevronBackground: =RGBA(0, 51, 102, 1)
+                        ChevronFill: =RGBA(255, 255, 255, 1)
+                        ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                        Default: =gallSelected.Estado
+                        DefaultSelectedItems: =gallSelected.Estado
+                        DisplayFields: =["Value"]
+                        Font: =Font.'Open Sans'
+                        Height: =38
+                        HoverFill: =RGBA(153, 205, 255, 1)
+                        InputTextPlaceholder: ="Estado"
+                        Items: =Choices([@'Asignación Entrenamientos'].Estado)
+                        PaddingBottom: =8.37
+                        PaddingLeft: =8.37
+                        PaddingRight: =5.63
+                        PaddingTop: =5.63
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =RGBA(0, 89, 178, 1)
+                        SearchFields: =["Value"]
+                        SelectionColor: =RGBA(255, 255, 255, 1)
+                        SelectionFill: =RGBA(0, 51, 102, 1)
+                        Size: =11
+                        Width: =164
+                        X: =228
+                        Y: =
+                  - Icon9:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Color: =RGBA(6, 26, 84, 1)
+                        Height: =32.65
+                        Icon: =Icon.Sync
+                        OnSelect: |-
+                          =Set(gallSelected,Blank());
+                          Reset(ComboBox1); Reset(ComboBox1_1);Reset(ComboBox1_3);Reset(DatePicker2);Reset(ComboBox1_2)
+                        Width: =30.99
+                        X: =592

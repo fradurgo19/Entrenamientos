@@ -1,0 +1,269 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
+# Content may be incomplete and subject to change.
+# This file is read-only and should only be used to review changes made within Power Apps Studio.
+# This file isn't used when loading the app. External editing, merging and conflict resolution are
+# not supported.
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  EventScreen:
+    Properties:
+      Fill: =RGBA(232, 232, 232, 1)
+      Height: =Max(App.Height, App.DesignHeight)
+      LoadingSpinnerColor: =RGBA(0, 51, 102, 1)
+      Width: =Max(App.Width, App.DesignWidth)
+    Children:
+      - TextBox1_68:
+          Control: Label@2.5.1
+          Properties:
+            Align: =LayoutAlignItems.Center
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(153, 153, 153, 1)
+            Font: =Font.Lato
+            Height: =34.32
+            HoverBorderColor: =TextBox1_68.BorderColor
+            HoverColor: =TextBox1_68.Color
+            HoverFill: =TextBox1_68.Fill
+            PaddingBottom: =4.19
+            PaddingLeft: =4.19
+            PaddingRight: =2.82
+            PaddingTop: =2.82
+            PressedBorderColor: =TextBox1_68.BorderColor
+            PressedColor: =TextBox1_68.Color
+            PressedFill: =TextBox1_68.Fill
+            Size: =10.14
+            Text: ="No event"
+            Visible: =CountRows(GalleryEvent.AllItems) = 0
+            Width: =279.44
+            X: =40.56
+            Y: =498.38
+      - Container11:
+          Control: GroupContainer@1.3.0
+          Variant: ManualLayout
+          Properties:
+            Height: =1130
+            Width: =634
+            X: =6
+            Y: =5
+          Children:
+            - Container20:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  Height: =83
+                  Width: =634
+                Children:
+                  - Rectangle1_36:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Fill: =RGBA(6,26,84,1)
+                        Height: =83.71
+                        TabIndex: =0
+                        Width: =634
+                        Y: =
+                  - icon1_4:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =46.88
+                        Icon: =Icon.ChevronLeft
+                        OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
+                        TabIndex: =0
+                        Width: =30.42
+                        X: =28
+                        Y: =13
+                  - TextBox1_45:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        Font: =Font.Lato
+                        FontWeight: =FontWeight.Semibold
+                        Height: =81.2
+                        HoverBorderColor: =TextBox1_45.BorderColor
+                        HoverColor: =TextBox1_45.Color
+                        HoverFill: =TextBox1_45.Fill
+                        PaddingBottom: =4.19
+                        PaddingLeft: =4.19
+                        PaddingRight: =2.82
+                        PaddingTop: =2.82
+                        PressedBorderColor: =TextBox1_45.BorderColor
+                        PressedColor: =TextBox1_45.Color
+                        PressedFill: =TextBox1_45.Fill
+                        Size: =15.77
+                        Text: ="Usuarios"
+                        Width: =157
+                        X: =185
+                        Y: =2
+                  - Icon6_1:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =57.76
+                        Icon: =Icon.Add
+                        OnSelect: =Navigate(UsuarioDetailScreen_2, ScreenTransition.Fade)
+                        Width: =52.96
+                        X: =569
+                        Y: =13
+                  - TextCanvas2_2:
+                      Control: Text@0.0.47
+                      Properties:
+                        Align: ='TextCanvas.Align'.Center
+                        Font: =Font.'Lato Black'
+                        FontColor: =RGBA(255, 255, 255, 1)
+                        Height: =36
+                        Size: =15
+                        Text: ="Cantidad:" & CountRows(GalleryEvent.AllItems)
+                        Width: =115
+                        X: =420
+                        Y: =24
+            - Container21:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  Height: =65
+                  Width: =634
+                  Y: =83
+                Children:
+                  - TextInputSearch_4:
+                      Control: Classic/TextInput@2.3.2
+                      Properties:
+                        BorderColor: =RGBA(163,171,193,1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        Default: =""
+                        DisabledBorderColor: =RGBA(255, 255, 255, 1)
+                        DisabledColor: =RGBA(0, 0, 0, 1)
+                        Font: =Font.Lato
+                        Height: =64.46
+                        HintText: ="Buscar Usuario"
+                        HoverBorderColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =ColorFade(RGBA(190, 202, 226, 0), 30%)
+                        PaddingBottom: =4.19
+                        PaddingLeft: =10.05
+                        PaddingRight: =2.82
+                        PaddingTop: =2.82
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Reset: =
+                        Size: =11.27
+                        Width: =631
+                        Y: =
+                  - icon2_1:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Color: =RGBA(0, 0, 0, 1)
+                        Height: =42.69
+                        Icon: =Icon.Search
+                        TabIndex: =0
+                        Width: =28.73
+                        X: =588
+                        Y: =11
+            - Container22:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  Height: =982
+                  Width: =634
+                  Y: =148
+                Children:
+                  - GalleryEvent:
+                      Control: Gallery@2.15.0
+                      Variant: BrowseLayout_Vertical_ThreeTextVariant_ver5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        BorderThickness: =1
+                        Fill: =RGBA(237, 237, 237, 1)
+                        Height: =982
+                        Items: =Search([@'Usuarios Entrenamientos'],TextInputSearch_4.Text,'Nombre (field_0)')
+                        ShowNavigation: =true
+                        ShowScrollbar: =false
+                        TemplateFill: =If(ThisItem.IsSelected, Color.LightSkyBlue, Color.White)
+                        TemplateSize: =97.11
+                        Visible: =CountRows(GalleryEvent.AllItems) > 0
+                        Width: =634
+                      Children:
+                        - Subtitle3:
+                            Control: Label@2.5.1
+                            Properties:
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                              Height: =25
+                              OnSelect: =Select(Parent)
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =11.83
+                              Text: =ThisItem.'Nombre (field_0)'
+                              VerticalAlign: =VerticalAlign.Top
+                              Width: =508
+                              X: =9.01
+                              Y: =19
+                        - Body3:
+                            Control: Label@2.5.1
+                            Properties:
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                              Height: =31.64
+                              OnSelect: =Select(Parent)
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =11.83
+                              Text: =ThisItem.Correo
+                              VerticalAlign: =VerticalAlign.Top
+                              Width: =312.11
+                              X: =9
+                              Y: =62
+                        - NextArrow3:
+                            Control: Classic/Icon@2.5.0
+                            Properties:
+                              AccessibleLabel: =Self.Tooltip
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              Color: =RGBA(0, 0, 0, 1)
+                              Fill: =RGBA(255, 255, 255, 1)
+                              Height: =54.41
+                              Icon: =Icon.ChevronRight
+                              OnSelect: =Navigate(UsuarioDetailScreen, ScreenTransition.Fade)
+                              PaddingBottom: =13.39
+                              PaddingLeft: =13.39
+                              PaddingRight: =9.01
+                              PaddingTop: =9.01
+                              Tooltip: ="Ver los detalles del elemento"
+                              Width: =47.89
+                              X: =580
+                              Y: =8
+                        - Icon11_1:
+                            Control: Classic/Icon@2.5.0
+                            Properties:
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              Color: =RGBA(0, 0, 0, 1)
+                              DisabledColor: =RGBA(204, 231, 246, 1)
+                              Height: =24.28
+                              Icon: =Icon.Trash
+                              OnSelect: |
+                                =Remove('Usuarios Entrenamientos',ThisItem)
+                              Width: =36.06
+                              X: =517
+                              Y: =8
+                        - Rectangle6:
+                            Control: Rectangle@2.3.0
+                            Properties:
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              Fill: =RGBA(0, 51, 102, 1)
+                              Height: =0
+                              OnSelect: =Select(Parent)
+                              Width: =625
+                              X: =9
+                              Y: =93

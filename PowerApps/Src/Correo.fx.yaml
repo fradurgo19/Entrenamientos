@@ -585,9 +585,9 @@
                     =Sort(
                         Filter(
                             'Ofertas de Entrenamientos',
-                        (TextInputSearch_3.Text in field_0 || TextInputSearch_3.Text in field_2 || TextInputSearch_3.Text in Adjunto || TextInputSearch_3.Text in Prueba || IsBlank(TextInputSearch_3.Text)) 
+                        (TextInputSearch_3.Text in Consecutivo || TextInputSearch_3.Text in Actividades || TextInputSearch_3.Text in Adjunto || TextInputSearch_3.Text in Prueba || IsBlank(TextInputSearch_3.Text)) 
                         ),
-                        Modified,
+                        Modificado,
                         SortOrder.Descending
                     )
                 Layout: =Layout.Vertical
@@ -614,7 +614,7 @@
                     PaddingRight: =2.82
                     PaddingTop: =2.82
                     Size: =10
-                    Text: =ThisItem.field_2
+                    Text: =ThisItem.Actividades
                     Width: =270
                     Y: =4.19
                     ZIndex: =1
@@ -704,9 +704,9 @@
                         =Sort(
                             Filter(
                                 [@'Usuarios Entrenamientos'],
-                            (TextInputSearch_2.Text in field_0 || TextInputSearch_2.Text in field_1 || TextInputSearch_2.Text in field_2 || TextInputSearch_2.Text in field_3 || IsBlank(TextInputSearch_2.Text)) 
+                            (TextInputSearch_2.Text in 'Nombre (field_0)' || TextInputSearch_2.Text in Correo || TextInputSearch_2.Text in Sede || TextInputSearch_2.Text in Cargo || IsBlank(TextInputSearch_2.Text)) 
                             ),
-                            Modified,
+                            Modificado,
                             SortOrder.Descending
                         )
                     Layout: =Layout.Vertical
@@ -734,7 +734,7 @@
                         PaddingRight: =2.82
                         PaddingTop: =2.82
                         Size: =10
-                        Text: =ThisItem.field_0
+                        Text: =ThisItem.'Nombre (field_0)'
                         Width: =303
                         ZIndex: =1
 
@@ -750,7 +750,7 @@
                         PaddingRight: =2.82
                         PaddingTop: =2.82
                         Size: =9
-                        Text: =ThisItem.field_1
+                        Text: =ThisItem.Correo
                         Width: =303
                         Y: =88
                         ZIndex: =2
@@ -775,7 +775,7 @@
                         DisplayMode: =DisplayMode.Edit
                         Height: =17
                         Size: =12
-                        Text: =ThisItem.field_4
+                        Text: =ThisItem.'Cargo Entrenamientos'
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =254
                         X: =0

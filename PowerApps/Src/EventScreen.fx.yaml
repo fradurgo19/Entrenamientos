@@ -198,7 +198,7 @@ EventScreen As screen:
                 Height: =982
                 HoverBorderColor: =GalleryEvent.BorderColor
                 HoverFill: =GalleryEvent.Fill
-                Items: =Search([@'Usuarios Entrenamientos'],TextInputSearch_4.Text,field_0)
+                Items: =Search([@'Usuarios Entrenamientos'],TextInputSearch_4.Text,'Nombre (field_0)')
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 PressedBorderColor: =GalleryEvent.BorderColor
@@ -224,7 +224,7 @@ EventScreen As screen:
                     PaddingRight: =0
                     PaddingTop: =0
                     Size: =11.83
-                    Text: =ThisItem.field_0
+                    Text: =ThisItem.'Nombre (field_0)'
                     VerticalAlign: =VerticalAlign.Top
                     Width: =508
                     X: =9.01
@@ -243,7 +243,7 @@ EventScreen As screen:
                     PaddingRight: =0
                     PaddingTop: =0
                     Size: =11.83
-                    Text: =ThisItem.field_1
+                    Text: =ThisItem.Correo
                     VerticalAlign: =VerticalAlign.Top
                     Width: =312.11
                     X: =9

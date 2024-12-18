@@ -276,15 +276,15 @@ CustomerScreen As screen:
                     =Sort(
                         Filter(
                             colOfertas,
-                            TextInputSearch.Text in field_2 && 
-                            (field_7.Value = ComboboxCanvas2.Selected.Value || IsBlank(ComboboxCanvas2.Selected.Value)) && 
-                            (field_6.Value = ComboboxCanvas2_1.Selected.Value || IsBlank(ComboboxCanvas2_1.Selected.Value)) &&
-                            (IsBlank(ComboboxCanvas2_7.Selected.Value) || !IsBlank(LookUp(field_3, Value = ComboboxCanvas2_7.Selected.Value))) &&
-                            (IsBlank(ComboboxCanvas2_4.Selected.Value) || !IsBlank(LookUp(field_4, Value = ComboboxCanvas2_4.Selected.Value))) &&
-                            (field_1.Value = ComboboxCanvas2_6.Selected.Value || IsBlank(ComboboxCanvas2_6.Selected.Value)) &&
-                            (Created = DatePickerCanvas1.SelectedDate || IsBlank(DatePickerCanvas1.SelectedDate))
+                            TextInputSearch.Text in Actividades && 
+                            ('Estado del Recurso'.Value = ComboboxCanvas2.Selected.Value || IsBlank(ComboboxCanvas2.Selected.Value)) && 
+                            (Recurso.Value = ComboboxCanvas2_1.Selected.Value || IsBlank(ComboboxCanvas2_1.Selected.Value)) &&
+                            (IsBlank(ComboboxCanvas2_7.Selected.Value) || !IsBlank(LookUp(Marca, Value = ComboboxCanvas2_7.Selected.Value))) &&
+                            (IsBlank(ComboboxCanvas2_4.Selected.Value) || !IsBlank(LookUp(Modelo, Value = ComboboxCanvas2_4.Selected.Value))) &&
+                            ('Tipo de actividad'.Value = ComboboxCanvas2_6.Selected.Value || IsBlank(ComboboxCanvas2_6.Selected.Value)) &&
+                            (Creado = DatePickerCanvas1.SelectedDate || IsBlank(DatePickerCanvas1.SelectedDate))
                         ),
-                        Modified,
+                        Modificado,
                         SortOrder.Descending
                     )
                     
@@ -331,7 +331,7 @@ CustomerScreen As screen:
                     PressedColor: =TextBox1.Color
                     PressedFill: =TextBox1.Fill
                     Size: =13
-                    Text: =ThisItem.field_2
+                    Text: =ThisItem.Actividades
                     Width: =221
                     Y: =28
                     ZIndex: =2
@@ -353,7 +353,7 @@ CustomerScreen As screen:
                     PressedColor: =TextBox1_1.Color
                     PressedFill: =TextBox1_1.Fill
                     Size: =10
-                    Text: =ThisItem.field_6.Value
+                    Text: =ThisItem.Recurso.Value
                     Width: =50
                     X: =222
                     Y: =36
@@ -464,7 +464,7 @@ CustomerScreen As screen:
                     PressedColor: =TextBox1_6.Color
                     PressedFill: =TextBox1_6.Fill
                     Size: =10
-                    Text: =ThisItem.field_7.Value
+                    Text: =ThisItem.'Estado del Recurso'.Value
                     Width: =70
                     X: =279
                     Y: =38
@@ -655,7 +655,7 @@ CustomerScreen As screen:
                     Height: =55
                     InputTextPlaceholder: ="Modelo"
                     Items: |+
-                        =Distinct(Ungroup('Ofertas de Entrenamientos', field_4), Value)
+                        =Distinct(Ungroup('Ofertas de Entrenamientos', Modelo), Value)
                         
                         
                         
@@ -724,7 +724,7 @@ CustomerScreen As screen:
                     Height: =55
                     InputTextPlaceholder: ="Marca"
                     Items: |+
-                        =Distinct(Ungroup('Ofertas de Entrenamientos', field_3), Value)
+                        =Distinct(Ungroup('Ofertas de Entrenamientos', Marca), Value)
                         
                         
                         

@@ -1,0 +1,432 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
+# Content may be incomplete and subject to change.
+# This file is read-only and should only be used to review changes made within Power Apps Studio.
+# This file isn't used when loading the app. External editing, merging and conflict resolution are
+# not supported.
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  UsuarioDetailScreen:
+    Properties:
+      Fill: =RGBA(237, 242, 246, 1)
+      Height: =Max(App.Height, App.DesignHeight)
+      LoadingSpinnerColor: =RGBA(0, 51, 102, 1)
+      Width: =Max(App.Width, App.DesignWidth)
+    Children:
+      - Container59:
+          Control: GroupContainer@1.3.0
+          Variant: ManualLayout
+          Properties:
+            Height: =1135
+            Width: =640
+          Children:
+            - Container60:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  Height: =83
+                  Width: =640
+                Children:
+                  - Rectangle1_14:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Fill: =RGBA(6,26,84,1)
+                        Height: =83.71
+                        TabIndex: =0
+                        Width: =640
+                        Y: =
+                  - icon1_2:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =81.2
+                        Icon: =Icon.ChevronLeft
+                        OnSelect: =Navigate(EventScreen, ScreenTransition.Fade)
+                        TabIndex: =0
+                        Width: =37.75
+                        X: =21
+                        Y: =2
+                  - TextBox1_26:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        Font: =Font.Lato
+                        FontWeight: =FontWeight.Semibold
+                        Height: =81.53
+                        HoverBorderColor: =TextBox1_26.BorderColor
+                        HoverColor: =TextBox1_26.Color
+                        HoverFill: =TextBox1_26.Fill
+                        PaddingBottom: =4.19
+                        PaddingLeft: =4.19
+                        PaddingRight: =2.82
+                        PaddingTop: =2.82
+                        PressedBorderColor: =TextBox1_26.BorderColor
+                        PressedColor: =TextBox1_26.Color
+                        PressedFill: =TextBox1_26.Fill
+                        Size: =15.77
+                        Text: ="Detalles De Usuario"
+                        Width: =225
+                        X: =161
+                  - Icon4_1:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        Fill: =RGBA(6, 26, 84, 1)
+                        Height: =48.55
+                        Icon: =Icon.Edit
+                        OnSelect: =Navigate(UsuarioDetailScreen_1, ScreenTransition.Fade)
+                        Width: =43.38
+                        X: =574
+                        Y: =16
+            - Container61:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  Height: =1052
+                  Width: =640
+                  Y: =83
+                Children:
+                  - FormViewer2:
+                      Control: FormViewer@2.3.4
+                      Properties:
+                        BorderColor: =RGBA(0, 89, 178, 1)
+                        DataSource: ='Usuarios Entrenamientos'
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =1052
+                        Item: =GalleryEvent.Selected
+                      Children:
+                        - Nombre_DataCard1:
+                            Control: TypedDataCard@1.0.6
+                            Variant: ClassicTextualView
+                            Properties:
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              DataField: ="field_0"
+                              Default: =ThisItem.'Nombre (field_0)'
+                              DisplayName: =DataSourceInfo([@'Usuarios Entrenamientos'],DataSourceInfo.DisplayName,'Nombre (field_0)')
+                              Height: =33.49
+                              Required: =false
+                              Y: =0
+                            Children:
+                              - DataCardKey7:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: =Parent.DisplayName
+                                    Width: =326.76
+                                    Wrap: =false
+                                    X: =16.9
+                                    Y: =8.37
+                              - DataCardValue7:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 89, 178, 1)
+                                    DisplayMode: =Parent.DisplayMode
+                                    Font: =Font.'Open Sans'
+                                    Height: =33.49
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =0
+                                    PaddingRight: =0
+                                    PaddingTop: =0
+                                    Size: =11.83
+                                    Text: =Parent.Default
+                                    Width: =326.76
+                                    X: =16.9
+                                    Y: =52.74
+                        - Correo_DataCard1:
+                            Control: TypedDataCard@1.0.6
+                            Variant: ClassicTextualView
+                            Properties:
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              DataField: ="field_1"
+                              Default: =ThisItem.Correo
+                              DisplayName: =DataSourceInfo([@'Usuarios Entrenamientos'],DataSourceInfo.DisplayName,Correo)
+                              Height: =99.62
+                              Required: =false
+                              Y: =1
+                            Children:
+                              - DataCardKey8:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: =Parent.DisplayName
+                                    Width: =326.76
+                                    Wrap: =false
+                                    X: =16.9
+                                    Y: =8.37
+                              - DataCardValue8:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 89, 178, 1)
+                                    DisplayMode: =Parent.DisplayMode
+                                    Font: =Font.'Open Sans'
+                                    Height: =33.49
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =0
+                                    PaddingRight: =0
+                                    PaddingTop: =0
+                                    Size: =11.83
+                                    Text: =Parent.Default
+                                    Width: =326.76
+                                    X: =16.9
+                                    Y: =52.74
+                        - Sede_DataCard1:
+                            Control: TypedDataCard@1.0.6
+                            Variant: ClassicTextualView
+                            Properties:
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              DataField: ="field_2"
+                              Default: =ThisItem.Sede
+                              DisplayName: =DataSourceInfo([@'Usuarios Entrenamientos'],DataSourceInfo.DisplayName,Sede)
+                              Height: =101.29
+                              Required: =false
+                              Y: =2
+                            Children:
+                              - DataCardKey9:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: =Parent.DisplayName
+                                    Width: =326.76
+                                    Wrap: =false
+                                    X: =16.9
+                                    Y: =8.37
+                              - DataCardValue9:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 89, 178, 1)
+                                    DisplayMode: =Parent.DisplayMode
+                                    Font: =Font.'Open Sans'
+                                    Height: =33.49
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =0
+                                    PaddingRight: =0
+                                    PaddingTop: =0
+                                    Size: =11.83
+                                    Text: =Parent.Default
+                                    Width: =326.76
+                                    X: =16.9
+                                    Y: =52.74
+                        - Cargo_DataCard1:
+                            Control: TypedDataCard@1.0.6
+                            Variant: ClassicTextualView
+                            Properties:
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              DataField: ="field_3"
+                              Default: =ThisItem.Cargo
+                              DisplayName: =DataSourceInfo([@'Usuarios Entrenamientos'],DataSourceInfo.DisplayName,Cargo)
+                              Height: =33.49
+                              Required: =false
+                              Y: =3
+                            Children:
+                              - DataCardKey10:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: =Parent.DisplayName
+                                    Width: =326.76
+                                    Wrap: =false
+                                    X: =16.9
+                                    Y: =8.37
+                              - DataCardValue10:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 89, 178, 1)
+                                    DisplayMode: =Parent.DisplayMode
+                                    Font: =Font.'Open Sans'
+                                    Height: =33.49
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =0
+                                    PaddingRight: =0
+                                    PaddingTop: =0
+                                    Size: =11.83
+                                    Text: =Parent.Default
+                                    Width: =326.76
+                                    X: =16.9
+                                    Y: =52.74
+                        - Cargo Entrenamientos_DataCard1:
+                            Control: TypedDataCard@1.0.6
+                            Variant: ClassicTextualView
+                            Properties:
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              DataField: ="field_4"
+                              Default: =ThisItem.'Cargo Entrenamientos'
+                              DisplayName: =DataSourceInfo([@'Usuarios Entrenamientos'],DataSourceInfo.DisplayName,'Cargo Entrenamientos')
+                              Height: =97.95
+                              Required: =false
+                              Y: =4
+                            Children:
+                              - DataCardKey11:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: =Parent.DisplayName
+                                    Width: =326.76
+                                    Wrap: =false
+                                    X: =8.45
+                                    Y: =46.88
+                              - DataCardValue11:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 89, 178, 1)
+                                    DisplayMode: =Parent.DisplayMode
+                                    Font: =Font.'Open Sans'
+                                    Height: =33.49
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =0
+                                    PaddingRight: =0
+                                    PaddingTop: =0
+                                    Size: =11.83
+                                    Text: =Parent.Default
+                                    Width: =326.76
+                                    X: =16.9
+                                    Y: =91.25
+                        - Celular_DataCard1:
+                            Control: TypedDataCard@1.0.6
+                            Variant: ClassicTextualView
+                            Properties:
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              DataField: ="field_5"
+                              Default: =ThisItem.Celular
+                              DisplayName: =DataSourceInfo([@'Usuarios Entrenamientos'],DataSourceInfo.DisplayName,Celular)
+                              Height: =82.04
+                              Required: =false
+                              Y: =5
+                            Children:
+                              - DataCardKey12:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: =Parent.DisplayName
+                                    Width: =326.76
+                                    Wrap: =false
+                                    X: =16.9
+                                    Y: =8.37
+                              - DataCardValue12:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 89, 178, 1)
+                                    DisplayMode: =Parent.DisplayMode
+                                    Font: =Font.'Open Sans'
+                                    Height: =33.49
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =0
+                                    PaddingRight: =0
+                                    PaddingTop: =0
+                                    Size: =11.83
+                                    Text: =Parent.Default
+                                    Width: =326.76
+                                    X: =16.9
+                                    Y: =52.74
+                        - Documento_DataCard1:
+                            Control: TypedDataCard@1.0.6
+                            Variant: ClassicTextualView
+                            Properties:
+                              BorderColor: =RGBA(0, 89, 178, 1)
+                              DataField: ="Documento"
+                              Default: =ThisItem.Documento
+                              DisplayName: =DataSourceInfo([@'Usuarios Entrenamientos'],DataSourceInfo.DisplayName,Documento)
+                              Height: =33.49
+                              Required: =false
+                              Y: =6
+                            Children:
+                              - DataCardKey14:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 89, 178, 1)
+                                    Font: =Font.'Open Sans'
+                                    Height: =40.18
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =4.19
+                                    PaddingRight: =2.82
+                                    PaddingTop: =2.82
+                                    Size: =11.83
+                                    Text: =Parent.DisplayName
+                                    Width: =326.76
+                                    Wrap: =false
+                                    X: =16.9
+                                    Y: =8.37
+                              - DataCardValue14:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 89, 178, 1)
+                                    DisplayMode: =Parent.DisplayMode
+                                    Font: =Font.'Open Sans'
+                                    Height: =33.49
+                                    PaddingBottom: =4.19
+                                    PaddingLeft: =0
+                                    PaddingRight: =0
+                                    PaddingTop: =0
+                                    Size: =11.83
+                                    Text: =Parent.Default
+                                    Width: =326.76
+                                    X: =16.9
+                                    Y: =52.74
