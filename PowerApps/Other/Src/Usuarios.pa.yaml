@@ -148,7 +148,7 @@ Screens:
                         X: =244
                       Children:
                         - ComboboxCanvas2_2:
-                            Control: ComboBox@0.0.48
+                            Control: ComboBox@0.0.49
                             Properties:
                               Appearance: ='ComboboxCanvas.Appearance'.FilledLighter
                               Height: =58
@@ -164,7 +164,7 @@ Screens:
                         X: =417
                       Children:
                         - ComboboxCanvas2_3:
-                            Control: ComboBox@0.0.48
+                            Control: ComboBox@0.0.49
                             Properties:
                               Appearance: ='ComboboxCanvas.Appearance'.FilledLighter
                               Height: =58
@@ -204,7 +204,7 @@ Screens:
                   Y: =146
                 Children:
                   - TextCanvas2_3:
-                      Control: Text@0.0.47
+                      Control: Text@0.0.50
                       Properties:
                         Align: ='TextCanvas.Align'.Center
                         Font: =Font.'Lato Black'
@@ -224,7 +224,7 @@ Screens:
                         X: =360
                       Children:
                         - DatePickerCanvas1_1:
-                            Control: DatePicker@0.0.38
+                            Control: DatePicker@0.0.42
                             Properties:
                               Appearance: ='DatePickerCanvas.Appearance'.FilledLighter
                               Height: =60
@@ -239,7 +239,7 @@ Screens:
                         X: =90
                       Children:
                         - DatePickerCanvas1_2:
-                            Control: DatePicker@0.0.38
+                            Control: DatePicker@0.0.42
                             Properties:
                               Appearance: ='DatePickerCanvas.Appearance'.FilledLighter
                               Height: =61
@@ -374,7 +374,7 @@ Screens:
                               Y: =62
                             Children:
                               - ButtonCanvas1_2:
-                                  Control: Button@0.0.43
+                                  Control: Button@0.0.44
                                   Properties:
                                     Appearance: ='ButtonCanvas.Appearance'.Primary
                                     BasePaletteColor: =RGBA(227, 106, 244, 1)
@@ -496,7 +496,7 @@ Screens:
                               Y: =10
                             Children:
                               - ButtonCanvas1_1:
-                                  Control: Button@0.0.43
+                                  Control: Button@0.0.44
                                   Properties:
                                     Appearance: ='ButtonCanvas.Appearance'.Primary
                                     BasePaletteColor: =RGBA(156, 220, 79, 1)

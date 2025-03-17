@@ -91,6 +91,7 @@ Screens:
                         - Marca_DataCard2:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicComboBoxMultiSelectEdit
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="field_3"
@@ -189,6 +190,7 @@ Screens:
                         - Adjunto_DataCard1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicTextualEdit
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="Adjunto"
@@ -285,6 +287,7 @@ Screens:
                         - Prueba_DataCard1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicTextualEdit
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="Prueba"
@@ -381,6 +384,7 @@ Screens:
                         - Realiza Curso_DataCard1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicTextualEdit
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="RealizaCurso"
@@ -476,6 +480,7 @@ Screens:
                         - Actividades_DataCard1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicTextualEdit
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="field_2"
@@ -571,6 +576,7 @@ Screens:
                         - Modelo_DataCard1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicComboBoxMultiSelectEdit
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="field_4"
@@ -669,6 +675,7 @@ Screens:
                         - Consecutivo_DataCard1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicTextualEdit
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="field_0"
@@ -764,6 +771,7 @@ Screens:
                         - Alcance_DataCard1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicTextualEdit
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="field_5"
@@ -860,6 +868,7 @@ Screens:
                         - Estado del Recurso_DataCard1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicComboBoxEdit
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="field_7"
@@ -959,6 +968,7 @@ Screens:
                         - Recurso_DataCard1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicComboBoxEdit
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="field_6"

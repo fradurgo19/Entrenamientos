@@ -151,6 +151,7 @@ Screens:
                         - Correo_DataCard1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicTextualView
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="field_1"
@@ -339,6 +340,7 @@ Screens:
                         - Celular_DataCard1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicTextualView
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="field_5"
@@ -386,6 +388,7 @@ Screens:
                         - Documento_DataCard1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicTextualView
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="Documento"

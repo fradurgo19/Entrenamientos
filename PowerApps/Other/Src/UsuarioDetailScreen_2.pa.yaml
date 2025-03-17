@@ -206,6 +206,7 @@ Screens:
                         - Correo_DataCard2_1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicTextualEdit
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="field_1"
@@ -376,6 +377,7 @@ Screens:
                         - Cargo_DataCard2_1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicTextualEdit
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="field_3"
@@ -471,6 +473,7 @@ Screens:
                         - Cargo Entrenamientos_DataCard2_1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicTextualEdit
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="field_4"
@@ -660,6 +663,7 @@ Screens:
                         - Documento_DataCard2_1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicNumberEdit
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="Documento"

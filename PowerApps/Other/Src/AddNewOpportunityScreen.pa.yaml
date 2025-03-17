@@ -243,6 +243,7 @@ Screens:
                         - Curso:Prueba_DataCard1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicComboBoxView
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="Curso_x003a_Prueba"
@@ -341,6 +342,7 @@ Screens:
                         - Usuarios:Correo_DataCard1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicComboBoxView
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="Usuarios_x003a_Correo"
@@ -538,6 +540,7 @@ Screens:
                         - Curso_DataCard1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicComboBoxEdit
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="Curso"
@@ -637,6 +640,7 @@ Screens:
                         - Estado_DataCard1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicComboBoxEdit
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="Estado"
@@ -736,6 +740,7 @@ Screens:
                         - Observaciones_DataCard1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicTextualEdit
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="Observaciones"
@@ -831,6 +836,7 @@ Screens:
                         - Calificacion_DataCard1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicComboBoxEdit
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="Calificacion"
@@ -930,6 +936,7 @@ Screens:
                         - Aprobo_DataCard1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicToggleEdit
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="Aprobo"

@@ -3,12 +3,14 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2024-12-09T15:53:48.7500000Z",
+      "LastChangedTimeString": "2025-03-10T16:21:55.9460000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
       "{Attachments}": "Datos adjuntos",
       "{Attachments}@odata.type": "{Attachments} ({Attachments}@odata.type)",
+      "{ContentType}": "Tipo de contenido",
+      "{ContentType}#Id": "Tipo de contenido Id",
       "{FilenameWithExtension}": "Nombre de archivo con extensión",
       "{FullPath}": "Ruta de acceso completa",
       "{HasAttachments}": "Tiene datos adjuntos",

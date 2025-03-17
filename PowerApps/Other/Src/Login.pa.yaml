@@ -227,7 +227,7 @@ Screens:
                         Y: =180
                       Children:
                         - TextInputCanvas1:
-                            Control: TextInput@0.0.51
+                            Control: TextInput@0.0.53
                             Properties:
                               FontSize: =18
                               Height: =67
@@ -244,7 +244,7 @@ Screens:
                         Y: =463
                       Children:
                         - TextInputCanvas1_1:
-                            Control: TextInput@0.0.51
+                            Control: TextInput@0.0.53
                             Properties:
                               AccessibleLabel: ="Ingrese Contraseña"
                               FontSize: =18
@@ -291,7 +291,7 @@ Screens:
                         Y: =358
                       Children:
                         - TextCanvas3:
-                            Control: Text@0.0.47
+                            Control: Text@0.0.50
                             Properties:
                               Align: ='TextCanvas.Align'.Center
                               Height: =72
@@ -309,7 +309,7 @@ Screens:
                         Y: =79
                       Children:
                         - TextCanvas3_1:
-                            Control: Text@0.0.47
+                            Control: Text@0.0.50
                             Properties:
                               Align: ='TextCanvas.Align'.Center
                               Height: =72
@@ -327,7 +327,7 @@ Screens:
                         Y: =738
                       Children:
                         - ButtonCanvas4:
-                            Control: Button@0.0.43
+                            Control: Button@0.0.44
                             Properties:
                               BasePaletteColor: =RGBA(156, 220, 79, 1)
                               FontSize: =18

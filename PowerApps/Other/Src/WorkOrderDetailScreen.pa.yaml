@@ -506,6 +506,7 @@ Screens:
                         - Usuarios:Correo_DataCard2:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicComboBoxView
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="Usuarios_x003a_Correo"
@@ -705,6 +706,7 @@ Screens:
                         - Estado_DataCard2:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicComboBoxView
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="Estado"
@@ -805,6 +807,7 @@ Screens:
                         - Calificacion_DataCard2:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicComboBoxView
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="Calificacion"
@@ -904,6 +907,7 @@ Screens:
                         - Observaciones_DataCard2:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicTextualView
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="Observaciones"
@@ -953,6 +957,7 @@ Screens:
                         - Aprobo_DataCard2:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicToggleView
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="Aprobo"
@@ -1096,6 +1101,7 @@ Screens:
                         - Usuarios:Sede_DataCard1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicComboBoxView
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="Usuarios_x003a_Sede"
@@ -1195,6 +1201,7 @@ Screens:
                         - Usuarios:Cargo_DataCard1:
                             Control: TypedDataCard@1.0.6
                             Variant: ClassicComboBoxView
+                            IsLocked: true
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
                               DataField: ="Usuarios_x003a_Cargo"
