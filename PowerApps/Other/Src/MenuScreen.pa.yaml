@@ -1,9 +1,8 @@
 # ************************************************************************************************
-# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
-# Content may be incomplete and subject to change.
-# This file is read-only and should only be used to review changes made within Power Apps Studio.
-# This file isn't used when loading the app. External editing, merging and conflict resolution are
-# not supported.
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
 # 
 # For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
 # ************************************************************************************************
@@ -173,7 +172,7 @@ Screens:
                         Visible: |-
                           =User().Email = "analista.mantenimiento@partequipos.com" || 
                           User().Email = "jestrada@partequipos.com" || 
-                          User().Email = "auxiliar.garantiasbg@partequipos.com"
+                          User().Email = "dgomez@partequipos.com"
                         Width: =638
                         Y: =894
                   - TextBox4_44:
@@ -257,7 +256,7 @@ Screens:
                         Visible: |+
                           =User().Email = "analista.mantenimiento@partequipos.com" || 
                           User().Email = "jestrada@partequipos.com" || 
-                          User().Email = "auxiliar.garantiasbg@partequipos.com"
+                          User().Email = "dgomez@partequipos.com"
 
                         Width: =125
                         X: =426
@@ -293,7 +292,7 @@ Screens:
                         Visible: |+
                           =User().Email = "analista.mantenimiento@partequipos.com" || 
                           User().Email = "jestrada@partequipos.com" || 
-                          User().Email = "auxiliar.garantiasbg@partequipos.com"
+                          User().Email = "dgomez@partequipos.com"
 
                         Width: =125
                         X: =89
@@ -329,7 +328,7 @@ Screens:
                         Visible: |+
                           =User().Email = "analista.mantenimiento@partequipos.com" || 
                           User().Email = "jestrada@partequipos.com" || 
-                          User().Email = "auxiliar.garantiasbg@partequipos.com"
+                          User().Email = "dgomez@partequipos.com"
 
                         Width: =125
                         X: =89
@@ -365,7 +364,7 @@ Screens:
                         Visible: |+
                           =User().Email = "analista.mantenimiento@partequipos.com" || 
                           User().Email = "jestrada@partequipos.com" || 
-                          User().Email = "auxiliar.garantiasbg@partequipos.com"
+                          User().Email = "dgomez@partequipos.com"
 
                         Width: =125
                         X: =89
@@ -401,7 +400,7 @@ Screens:
                         Visible: |+
                           =User().Email = "analista.mantenimiento@partequipos.com" || 
                           User().Email = "jestrada@partequipos.com" || 
-                          User().Email = "auxiliar.garantiasbg@partequipos.com"
+                          User().Email = "dgomez@partequipos.com"
 
                         Width: =125
                         X: =434
@@ -437,7 +436,7 @@ Screens:
                         Visible: |+
                           =User().Email = "analista.mantenimiento@partequipos.com" || 
                           User().Email = "jestrada@partequipos.com" || 
-                          User().Email = "auxiliar.garantiasbg@partequipos.com"
+                          User().Email = "dgomez@partequipos.com"
 
                         Width: =125
                         X: =434
@@ -473,7 +472,7 @@ Screens:
                         Visible: |+
                           =User().Email = "analista.mantenimiento@partequipos.com" || 
                           User().Email = "jestrada@partequipos.com" || 
-                          User().Email = "auxiliar.garantiasbg@partequipos.com"
+                          User().Email = "dgomez@partequipos.com"
 
                         Width: =125
                         X: =89
@@ -534,7 +533,7 @@ Screens:
                         Visible: |+
                           =User().Email = "analista.mantenimiento@partequipos.com" || 
                           User().Email = "jestrada@partequipos.com" || 
-                          User().Email = "auxiliar.garantiasbg@partequipos.com"
+                          User().Email = "dgomez@partequipos.com"
 
                         Width: =212
                         X: =214

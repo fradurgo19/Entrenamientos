@@ -1,9 +1,8 @@
 # ************************************************************************************************
-# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
-# Content may be incomplete and subject to change.
-# This file is read-only and should only be used to review changes made within Power Apps Studio.
-# This file isn't used when loading the app. External editing, merging and conflict resolution are
-# not supported.
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
 # 
 # For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
 # ************************************************************************************************
@@ -94,6 +93,7 @@ Screens:
                 Children:
                   - FormViewer2:
                       Control: FormViewer@2.3.4
+                      Layout: Vertical
                       Properties:
                         BorderColor: =RGBA(0, 89, 178, 1)
                         DataSource: ='Usuarios Entrenamientos'
@@ -102,7 +102,7 @@ Screens:
                         Item: =GalleryEvent.Selected
                       Children:
                         - Nombre_DataCard1:
-                            Control: TypedDataCard@1.0.6
+                            Control: TypedDataCard@1.0.7
                             Variant: ClassicTextualView
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
@@ -111,10 +111,12 @@ Screens:
                               DisplayName: =DataSourceInfo([@'Usuarios Entrenamientos'],DataSourceInfo.DisplayName,'Nombre (field_0)')
                               Height: =33.49
                               Required: =false
+                              X: =0
                               Y: =0
                             Children:
                               - DataCardKey7:
                                   Control: Label@2.5.1
+                                  MetadataKey: FieldName
                                   Properties:
                                     AutoHeight: =true
                                     BorderColor: =RGBA(0, 0, 0, 1)
@@ -133,6 +135,7 @@ Screens:
                                     Y: =8.37
                               - DataCardValue7:
                                   Control: Label@2.5.1
+                                  MetadataKey: FieldValue
                                   Properties:
                                     AutoHeight: =true
                                     BorderColor: =RGBA(0, 89, 178, 1)
@@ -149,7 +152,7 @@ Screens:
                                     X: =16.9
                                     Y: =52.74
                         - Correo_DataCard1:
-                            Control: TypedDataCard@1.0.6
+                            Control: TypedDataCard@1.0.7
                             Variant: ClassicTextualView
                             IsLocked: true
                             Properties:
@@ -159,10 +162,12 @@ Screens:
                               DisplayName: =DataSourceInfo([@'Usuarios Entrenamientos'],DataSourceInfo.DisplayName,Correo)
                               Height: =99.62
                               Required: =false
+                              X: =0
                               Y: =1
                             Children:
                               - DataCardKey8:
                                   Control: Label@2.5.1
+                                  MetadataKey: FieldName
                                   Properties:
                                     AutoHeight: =true
                                     BorderColor: =RGBA(0, 0, 0, 1)
@@ -181,6 +186,7 @@ Screens:
                                     Y: =8.37
                               - DataCardValue8:
                                   Control: Label@2.5.1
+                                  MetadataKey: FieldValue
                                   Properties:
                                     AutoHeight: =true
                                     BorderColor: =RGBA(0, 89, 178, 1)
@@ -197,7 +203,7 @@ Screens:
                                     X: =16.9
                                     Y: =52.74
                         - Sede_DataCard1:
-                            Control: TypedDataCard@1.0.6
+                            Control: TypedDataCard@1.0.7
                             Variant: ClassicTextualView
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
@@ -206,10 +212,12 @@ Screens:
                               DisplayName: =DataSourceInfo([@'Usuarios Entrenamientos'],DataSourceInfo.DisplayName,Sede)
                               Height: =101.29
                               Required: =false
+                              X: =0
                               Y: =2
                             Children:
                               - DataCardKey9:
                                   Control: Label@2.5.1
+                                  MetadataKey: FieldName
                                   Properties:
                                     AutoHeight: =true
                                     BorderColor: =RGBA(0, 0, 0, 1)
@@ -228,6 +236,7 @@ Screens:
                                     Y: =8.37
                               - DataCardValue9:
                                   Control: Label@2.5.1
+                                  MetadataKey: FieldValue
                                   Properties:
                                     AutoHeight: =true
                                     BorderColor: =RGBA(0, 89, 178, 1)
@@ -244,7 +253,7 @@ Screens:
                                     X: =16.9
                                     Y: =52.74
                         - Cargo_DataCard1:
-                            Control: TypedDataCard@1.0.6
+                            Control: TypedDataCard@1.0.7
                             Variant: ClassicTextualView
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
@@ -253,10 +262,12 @@ Screens:
                               DisplayName: =DataSourceInfo([@'Usuarios Entrenamientos'],DataSourceInfo.DisplayName,Cargo)
                               Height: =33.49
                               Required: =false
+                              X: =0
                               Y: =3
                             Children:
                               - DataCardKey10:
                                   Control: Label@2.5.1
+                                  MetadataKey: FieldName
                                   Properties:
                                     AutoHeight: =true
                                     BorderColor: =RGBA(0, 0, 0, 1)
@@ -275,6 +286,7 @@ Screens:
                                     Y: =8.37
                               - DataCardValue10:
                                   Control: Label@2.5.1
+                                  MetadataKey: FieldValue
                                   Properties:
                                     AutoHeight: =true
                                     BorderColor: =RGBA(0, 89, 178, 1)
@@ -291,7 +303,7 @@ Screens:
                                     X: =16.9
                                     Y: =52.74
                         - Cargo Entrenamientos_DataCard1:
-                            Control: TypedDataCard@1.0.6
+                            Control: TypedDataCard@1.0.7
                             Variant: ClassicTextualView
                             Properties:
                               BorderColor: =RGBA(0, 89, 178, 1)
@@ -300,10 +312,12 @@ Screens:
                               DisplayName: =DataSourceInfo([@'Usuarios Entrenamientos'],DataSourceInfo.DisplayName,'Cargo Entrenamientos')
                               Height: =97.95
                               Required: =false
+                              X: =0
                               Y: =4
                             Children:
                               - DataCardKey11:
                                   Control: Label@2.5.1
+                                  MetadataKey: FieldName
                                   Properties:
                                     AutoHeight: =true
                                     BorderColor: =RGBA(0, 0, 0, 1)
@@ -322,6 +336,7 @@ Screens:
                                     Y: =46.88
                               - DataCardValue11:
                                   Control: Label@2.5.1
+                                  MetadataKey: FieldValue
                                   Properties:
                                     AutoHeight: =true
                                     BorderColor: =RGBA(0, 89, 178, 1)
@@ -338,7 +353,7 @@ Screens:
                                     X: =16.9
                                     Y: =91.25
                         - Celular_DataCard1:
-                            Control: TypedDataCard@1.0.6
+                            Control: TypedDataCard@1.0.7
                             Variant: ClassicTextualView
                             IsLocked: true
                             Properties:
@@ -348,10 +363,12 @@ Screens:
                               DisplayName: =DataSourceInfo([@'Usuarios Entrenamientos'],DataSourceInfo.DisplayName,Celular)
                               Height: =82.04
                               Required: =false
+                              X: =0
                               Y: =5
                             Children:
                               - DataCardKey12:
                                   Control: Label@2.5.1
+                                  MetadataKey: FieldName
                                   Properties:
                                     AutoHeight: =true
                                     BorderColor: =RGBA(0, 0, 0, 1)
@@ -370,6 +387,7 @@ Screens:
                                     Y: =8.37
                               - DataCardValue12:
                                   Control: Label@2.5.1
+                                  MetadataKey: FieldValue
                                   Properties:
                                     AutoHeight: =true
                                     BorderColor: =RGBA(0, 89, 178, 1)
@@ -386,7 +404,7 @@ Screens:
                                     X: =16.9
                                     Y: =52.74
                         - Documento_DataCard1:
-                            Control: TypedDataCard@1.0.6
+                            Control: TypedDataCard@1.0.7
                             Variant: ClassicTextualView
                             IsLocked: true
                             Properties:
@@ -396,10 +414,12 @@ Screens:
                               DisplayName: =DataSourceInfo([@'Usuarios Entrenamientos'],DataSourceInfo.DisplayName,Documento)
                               Height: =33.49
                               Required: =false
+                              X: =0
                               Y: =6
                             Children:
                               - DataCardKey14:
                                   Control: Label@2.5.1
+                                  MetadataKey: FieldName
                                   Properties:
                                     AutoHeight: =true
                                     BorderColor: =RGBA(0, 0, 0, 1)
@@ -418,6 +438,7 @@ Screens:
                                     Y: =8.37
                               - DataCardValue14:
                                   Control: Label@2.5.1
+                                  MetadataKey: FieldValue
                                   Properties:
                                     AutoHeight: =true
                                     BorderColor: =RGBA(0, 89, 178, 1)

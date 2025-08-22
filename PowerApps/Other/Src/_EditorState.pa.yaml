@@ -6,8 +6,25 @@
 # 
 # For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
 # ************************************************************************************************
-App:
-  Properties:
-    MinScreenHeight: =320
-    MinScreenWidth: =320
-    Theme: =PowerAppsTheme
+EditorState:
+  ScreensOrder:
+    - MenuScreen_1
+    - MenuScreen
+    - Login
+    - Usuarios
+    - CustomerScreen
+    - CustomerOverviewScreen
+    - CustomerOverviewScreen_1
+    - CustomerOverviewScreen_2
+    - ActiveWorkOrderScreen
+    - WorkOrderDetailScreen
+    - WorkOrderDetailScreen_1
+    - EventScreen
+    - UsuarioDetailScreen
+    - UsuarioDetailScreen_1
+    - UsuarioDetailScreen_2
+    - AddNewOpportunityScreen
+    - AddNewOpportunityScreen_1.
+    - AddNewOpportunityScreen_1
+    - OpportunityMessageScreen
+    - Correo

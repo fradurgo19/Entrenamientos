@@ -1,9 +1,8 @@
 # ************************************************************************************************
-# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
-# Content may be incomplete and subject to change.
-# This file is read-only and should only be used to review changes made within Power Apps Studio.
-# This file isn't used when loading the app. External editing, merging and conflict resolution are
-# not supported.
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
 # 
 # For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
 # ************************************************************************************************
@@ -121,7 +120,7 @@ Screens:
                         X: =244
                       Children:
                         - ComboboxCanvas2:
-                            Control: ComboBox@0.0.49
+                            Control: ComboBox@0.0.51
                             Properties:
                               Appearance: ='ComboboxCanvas.Appearance'.FilledLighter
                               Height: =46
@@ -137,7 +136,7 @@ Screens:
                         X: =442
                       Children:
                         - DatePickerCanvas1:
-                            Control: DatePicker@0.0.42
+                            Control: DatePicker@0.0.46
                             Properties:
                               Appearance: ='DatePickerCanvas.Appearance'.FilledLighter
                               Height: =46
@@ -152,7 +151,7 @@ Screens:
                         X: =348
                       Children:
                         - ComboboxCanvas2_1:
-                            Control: ComboBox@0.0.49
+                            Control: ComboBox@0.0.51
                             Properties:
                               Appearance: ='ComboboxCanvas.Appearance'.FilledLighter
                               Height: =48
@@ -449,7 +448,7 @@ Screens:
                               Y: =38
                             Children:
                               - ButtonCanvas1:
-                                  Control: Button@0.0.44
+                                  Control: Button@0.0.45
                                   Properties:
                                     Appearance: ='ButtonCanvas.Appearance'.Primary
                                     BasePaletteColor: =RGBA(156, 220, 79, 1)
@@ -573,7 +572,7 @@ Screens:
                         X: =441
                       Children:
                         - ComboboxCanvas2_4:
-                            Control: ComboBox@0.0.49
+                            Control: ComboBox@0.0.51
                             Properties:
                               Appearance: ='ComboboxCanvas.Appearance'.FilledLighter
                               Height: =55
@@ -599,7 +598,7 @@ Screens:
                         X: =350
                       Children:
                         - ComboboxCanvas2_6:
-                            Control: ComboBox@0.0.49
+                            Control: ComboBox@0.0.51
                             Properties:
                               Appearance: ='ComboboxCanvas.Appearance'.FilledLighter
                               Height: =55
@@ -626,7 +625,7 @@ Screens:
                         X: =97
                       Children:
                         - ComboboxCanvas2_7:
-                            Control: ComboBox@0.0.49
+                            Control: ComboBox@0.0.51
                             Properties:
                               Appearance: ='ComboboxCanvas.Appearance'.FilledLighter
                               Height: =55
@@ -646,7 +645,7 @@ Screens:
                               SelectMultiple: =true
                               Width: =243
                   - TextCanvas2_1:
-                      Control: Text@0.0.50
+                      Control: Text@0.0.51
                       Properties:
                         Align: ='TextCanvas.Align'.Center
                         Font: =Font.'Lato Black'
