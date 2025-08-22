@@ -788,3 +788,52 @@ Screens:
                                     Width: =16.9
                                     Wrap: =false
                                     Y: =8.37
+      - Container33_1:
+          Control: GroupContainer@1.3.0
+          Variant: ManualLayout
+          Properties:
+            Height: =76
+            Width: =640
+            Y: =1060
+          Children:
+            - Button1_20:
+                Control: Classic/Button@2.2.0
+                Properties:
+                  BorderColor: =ColorFade(Self.Fill, -15%)
+                  BorderThickness: =0
+                  Color: =RGBA(255, 255, 255, 1)
+                  DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                  Fill: =RGBA(54, 166, 182, 1)
+                  Font: =Font.Lato
+                  Height: =71.99
+                  HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                  HoverColor: =RGBA(255, 255, 255, 1)
+                  HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                  OnSelect: =NewForm([@Form2_1]);SubmitForm([@Form2_1]);ResetForm([@Form2_1]);Navigate(EventScreen, ScreenTransition.Fade)
+                  PaddingBottom: =4.19
+                  PaddingLeft: =29.3
+                  PaddingRight: =2.82
+                  PaddingTop: =2.82
+                  PressedBorderColor: =Self.Fill
+                  PressedColor: =Self.Fill
+                  PressedFill: =Self.Color
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                  Size: =15.77
+                  Text: ="Nuevo"
+                  Width: =640
+                  Y: =4
+            - icon3_3:
+                Control: Classic/Icon@2.5.0
+                Properties:
+                  BorderColor: =RGBA(0, 89, 178, 1)
+                  Color: =RGBA(255, 255, 255, 1)
+                  Height: =36.83
+                  Icon: =Icon.Save
+                  OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
+                  TabIndex: =0
+                  Width: =53
+                  X: =141
+                  Y: =22

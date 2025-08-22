@@ -799,3 +799,56 @@
                         Y: =8.37
                         ZIndex: =4
 
+    Container33_1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =76
+        maximumHeight: =11360
+        maximumWidth: =640
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =640
+        Y: =1060
+        ZIndex: =18
+
+        Button1_20 As button:
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(54, 166, 182, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =71.99
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+            OnSelect: =NewForm([@Form2_1]);SubmitForm([@Form2_1]);ResetForm([@Form2_1]);Navigate(EventScreen, ScreenTransition.Fade)
+            PaddingBottom: =4.19
+            PaddingLeft: =29.3
+            PaddingRight: =2.82
+            PaddingTop: =2.82
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =15.77
+            Text: ="Nuevo"
+            Width: =640
+            Y: =4
+            ZIndex: =1
+
+        icon3_3 As icon:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =36.83
+            Icon: =Icon.Save
+            OnSelect: =Navigate(MenuScreen, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =53
+            X: =141
+            Y: =22
+            ZIndex: =2
+
